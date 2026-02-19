@@ -7,21 +7,21 @@ import { getAllShoes, getBrands } from '@/lib/data'
 const PURPOSE_CARDS = [
   {
     title: '데일리',
-    desc: '매일 신는 든든한 트레이너',
+    desc: '매일 달려도 발을 든든하게 받쳐주는 트레이너',
     href: '/shoes?category=daily',
     color: '#C8FF00',
     imageSlug: 'novablast-5',
   },
   {
     title: '슈퍼트레이너',
-    desc: '템포·인터벌을 위한 플레이티드 트레이너',
+    desc: '템포·인터벌 훈련 한계를 끌어올리는 플레이티드 트레이너',
     href: '/shoes?category=super-trainer',
     color: '#FBBF24',
     imageSlug: 'superblast-2',
   },
   {
     title: '레이싱',
-    desc: '기록을 위한 카본 플레이트 레이서',
+    desc: '카본 플레이트로 목표 기록을 단축하는 레이서',
     href: '/shoes?category=racing',
     color: '#F87171',
     imageSlug: 'alphafly-3',

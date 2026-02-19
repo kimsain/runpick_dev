@@ -18,7 +18,7 @@
       "price": 199000,
       "priceFormatted": "199,000원",
       "description": "젤-님버스 28은 '편안함'을 최우선으로 만든 맥스 쿠셔닝 데일리화야. FF BLAST+ 폼에 PureGEL이 받쳐줘서 착지가 정말 부드럽고, 전작보다 24g 가벼워졌는데 포근한 느낌은 그대로야. 반발력은 기대하지 말고, 이지런이나 회복 러닝에서 발을 편하게 감싸주는 게 이 신발의 본분이야. 일상 착용이나 워킹에도 최고 수준이야.",
-      "shortDescription": "PureGEL + FF BLAST의 포근한 일상 겸용화",
+      "shortDescription": "PureGEL + FF BLAST+의 포근한 쿠셔닝, 이지런·일상 겸용 맥스 데일리",
       "imageUrl": "/shoes/gel-nimbus-28.webp",
       "specs": {
         "weight": 283,
@@ -70,8 +70,8 @@
       "subcategoryId": "max-cushion",
       "price": 219000,
       "priceFormatted": "219,000원",
-      "description": "글라이드라이드 맥스 2는 '알아서 앞으로 굴러가는' 느낌의 맥스 쿠셔닝 데일리야. GUIDESOLE 로커 구조가 자연스럽게 앞으로 밀어줘서 힘을 덜 쓰고도 페이스 유지가 돼. 46mm 스택인데 261g으로 가벼워서 장거리에서 다리 피로가 확 줄어. 다만 전족부 착지 러너에게는 쿠셔닝이 부족하게 느껴질 수 있어.",
-      "shortDescription": "GUIDESOLE 로커의 알아서 굴리는 맥스 쿠셔닝 데일리",
+      "description": "글라이드라이드 맥스 2는 '알아서 앞으로 굴러가는' 느낌의 맥스 쿠셔닝 데일리야. GUIDESOLE 로커 구조가 자연스럽게 앞으로 밀어줘서 힘을 덜 쓰고도 페이스 유지가 돼. FF BLAST MAX와 FF BLAST PLUS 듀얼 폼이 46mm 스택을 채우는데, 261g으로 가벼워서 장거리에서 다리 피로가 확 줄어. 다만 전족부 착지 러너에게는 로커 이점이 적고 쿠셔닝도 부족하게 느껴질 수 있어.",
+      "shortDescription": "GUIDESOLE 로커가 알아서 굴려주는 46mm 맥스 쿠셔닝 데일리",
       "imageUrl": "/shoes/glideride-max-2.webp",
       "specs": {
         "weight": 261,
@@ -126,7 +126,7 @@
       "price": 199000,
       "priceFormatted": "199,000원",
       "description": "젤-카야노 32는 32년 동안 검증된 아식스의 대표 안정화야. 4D GUIDANCE SYSTEM이 과회내를 억지스럽지 않게 잡아줘서 교정 느낌이 자연스럽고, FF BLAST+ 폼이 푹신하되 물렁거리지 않아. 역대 카야노 중 힐 트랜지션이 가장 좋아졌는데, 300g으로 무거운 편이라 빠른 페이스에는 안 맞아. APMA 인증까지 받은, 안정화의 정석이야.",
-      "shortDescription": "4D Guidance 32년 검증 안정화의 교과서",
+      "shortDescription": "4D GUIDANCE SYSTEM으로 자연스럽게 교정하는 32년 검증 안정화",
       "imageUrl": "/shoes/gel-kayano-32.webp",
       "specs": {
         "weight": 300,
@@ -147,7 +147,7 @@
       ],
       "cons": [
         "300g으로 무거워서 빠른 페이스에서는 부담이 돼",
-        "반발력이 거의 없어서 역동적인 라이드를 원하는 러너에게 아쉬움"
+        "반발력이 거의 없어서 역동적인 라이드를 원하는 러너에게는 답답하게 느껴질 수 있음"
       ],
       "bestFor": [
         "과회내가 있어서 안정성 교정이 필요한 러너",
@@ -178,8 +178,8 @@
       "subcategoryId": "all-rounder",
       "price": 169000,
       "priceFormatted": "169,000원",
-      "description": "노바블라스트 5는 한 켤레로 다 해먹는 올라운더 데일리야. FF BLAST MAX 폼이 착지할 때는 부드럽고 밀어낼 때는 통통 튀는 느낌이라, 이지런에서는 편하고 템포런에서는 은근 활기차게 나가. 255g에 16만원대라서 가성비도 좋은데, 부드러운 폼 특성상 측면 안정성은 좀 아쉬운 편이야.",
-      "shortDescription": "통통 튀는 FF BLAST MAX의 재밌는 올라운더",
+      "description": "노바블라스트 5는 한 켤레로 다 해먹는 올라운더 데일리야. FF BLAST MAX 폼이 착지할 때는 부드럽고 밀어낼 때는 통통 튀는 느낌이라, 이지런에서는 편하고 템포런에서는 은근 활기차게 나가. 41.5mm 힐 스택에 255g 경량이라 장거리도 부담 없는데, 부드러운 폼 특성상 측면 안정성은 좀 아쉬운 편이야. 16만원대 가성비까지 갖춘 아식스의 만능 데일리야.",
+      "shortDescription": "FF BLAST MAX 통통 튀는 반발력, 이지런부터 템포런까지 소화하는 올라운더",
       "imageUrl": "/shoes/novablast-5.webp",
       "specs": {
         "weight": 255,
@@ -231,8 +231,8 @@
       "subcategoryId": "no-plate",
       "price": 249000,
       "priceFormatted": "249,000원",
-      "description": "슈퍼블라스트 2는 안정감을 중시하는 러너를 위한 슈퍼 트레이너야. FF TURBO+와 FF BLAST+ 듀얼 폼이 넓은 베이스 위에 올라가 있어서 맥스 스택인데도 흔들림이 적고, 장거리에서 꾸준히 편안하게 달릴 수 있어. 빠른 페이스에서의 날카로움보다는 안정적으로 거리를 쌓는 훈련에 딱 맞는 신발이야.",
-      "shortDescription": "FF TURBO+ 넓은 베이스의 안정형 슈퍼 트레이너",
+      "description": "슈퍼블라스트 2는 안정감을 중시하는 러너를 위한 슈퍼 트레이너야. FF TURBO+와 FF BLAST+ 듀얼 폼이 넓은 베이스 위에 올라가 있어서 45mm 맥스 스택인데도 흔들림이 적고, 장거리에서 꾸준히 편안하게 달릴 수 있어. 내구성도 슈퍼 트레이너 중 최상급이라 훈련량이 많아도 오래 쓸 수 있는데, 빠른 페이스에서의 날카로움보다는 안정적으로 거리를 쌓는 훈련에 딱 맞는 신발이야.",
+      "shortDescription": "FF TURBO+ + FF BLAST+ 듀얼 폼의 넓은 베이스, 안정성 최상급 슈퍼 트레이너",
       "imageUrl": "/shoes/superblast-2.webp",
       "specs": {
         "weight": 250,
@@ -285,8 +285,8 @@
       "subcategoryId": "no-plate",
       "price": 299000,
       "priceFormatted": "299,000원",
-      "description": "메가블라스트는 아식스 블라스트 시리즈의 최상위 모델이야. FF TURBO² 폼이 220g밖에 안 되면서도 쿠셔닝과 반발을 다 잡아서, 이지런에서는 편하고 템포런에서는 치고 나가고 레이스에도 뛸 수 있어. 플레이트 없이 순수 폼 성능만으로 이 정도라 진짜 만능인데, 가격이 30만원 가까이라 그건 각오해야 돼.",
-      "shortDescription": "FF TURBO² 220g 로테이션 킬러급 만능기",
+      "description": "메가블라스트는 아식스 블라스트 시리즈의 최상위 모델이야. FF TURBO² 폼이 46mm 스택으로 쿠셔닝과 반발을 동시에 잡으면서 220g밖에 안 돼서, 이지런에서는 편하고 템포런에서는 치고 나가고 레이스에도 뛸 수 있어. 플레이트 없이 순수 폼 성능만으로 이 정도 다재다능함은 진짜 만능인데, 가격이 30만원 가까이라 그건 각오해야 돼.",
+      "shortDescription": "FF TURBO² 폼의 폭발적 반발력, 220g 로테이션 킬러급 만능 슈퍼 트레이너",
       "imageUrl": "/shoes/megablast.webp",
       "specs": {
         "weight": 220,
@@ -338,7 +338,7 @@
       "price": 229000,
       "priceFormatted": "229,000원",
       "description": "소닉블라스트는 Pebax Astroplate를 넣은 플레이티드 슈퍼 트레이너야. FF TURBO²와 FF BLAST MAX 사이에 플레이트가 끼어 있어서 빠른 페이스에서 전족부 추진력이 확 살아나는데, 느린 페이스에서는 오히려 딱딱하게 느껴져. 인터벌이나 템포런 같은 스피드 훈련에서 진가를 발휘하는 신발이지, 이지런용은 아니야.",
-      "shortDescription": "Pebax Astroplate의 날카로운 스피드 트레이너",
+      "shortDescription": "Pebax Astroplate + FF TURBO²의 날카로운 전족부 추진력, 스피드 트레이너",
       "imageUrl": "/shoes/sonicblast.webp",
       "specs": {
         "weight": 255,
@@ -391,8 +391,8 @@
       "subcategoryId": "carbon-plate",
       "price": 199000,
       "priceFormatted": "199,000원",
-      "description": "매직 스피드 5는 카본 플레이트 달린 슈퍼 트레이너를 합리적인 가격에 경험할 수 있는 신발이야. FF LEAP 폼이 즉각적인 반발력을 주고, 193g밖에 안 돼서 인터벌이나 템포런 할 때 발이 가볍게 돌아가. 다만 쿠셔닝은 보호적인 편이 아니라서, 이지런보다는 빠른 훈련이나 레이스 시뮬레이션에 맞는 신발이야.",
-      "shortDescription": "20만원 이하 193g 풀 카본 입문 트레이너",
+      "description": "매직 스피드 5는 카본 플레이트 달린 슈퍼 트레이너를 합리적인 가격에 경험할 수 있는 신발이야. FF LEAP 폼이 즉각적인 반발력을 주고, 193g밖에 안 돼서 인터벌이나 템포런 할 때 발이 가볍게 돌아가. 에너지 리턴 64.6%에 낮은 스택이 지면 감각도 살려줘서 코너링이 민첩한데, 쿠셔닝은 보호적인 편이 아니라서 이지런보다는 빠른 훈련이나 레이스 시뮬레이션에 맞는 신발이야.",
+      "shortDescription": "FF LEAP + 풀 카본 플레이트, 20만원 이하 193g 가성비 카본 트레이너",
       "imageUrl": "/shoes/magic-speed-5.webp",
       "specs": {
         "weight": 193,
@@ -445,8 +445,8 @@
       "subcategoryId": "half",
       "price": 439000,
       "priceFormatted": "439,000원",
-      "description": "메타스피드 레이는 129g이라는 경이적인 무게의 초경량 레이싱 머신이야. FF LEAP 폼이 트램펄린처럼 깊게 눌렸다가 튕겨 나오는데, 3/4 카본 플레이트가 전족부·중족부 착지에서 추진력을 극대화해. km당 4분 이하에서 진가를 발휘하는 엘리트 전용이라, 힐 착지나 느린 페이스에서는 극도로 불안정해.",
-      "shortDescription": "129g FF LEAP 트램펄린 반발의 엘리트 전용",
+      "description": "메타스피드 레이는 129g이라는 경이적인 무게의 초경량 레이싱 머신이야. FF LEAP 폼이 트램펄린처럼 깊게 눌렸다가 튕겨 나오면서 에너지 리턴 81%를 달성하고, 3/4 카본 플레이트가 전족부·중족부 착지에서 추진력을 극대화해. MATRYX 어퍼는 가벼우면서도 통기성이 좋아서 레이스 내내 발이 쾌적한데, km당 4분 이하 엘리트 전용이라 힐 착지나 느린 페이스에서는 극도로 불안정해.",
+      "shortDescription": "FF LEAP 에너지 리턴 81%, 129g 초경량 엘리트 전용 레이싱 머신",
       "imageUrl": "/shoes/metaspeed-ray.webp",
       "specs": {
         "weight": 129,
@@ -471,7 +471,7 @@
       ],
       "bestFor": [
         "전족부·중족부 착지의 엘리트 러너",
-        "10K·하프마라톤 자기 기록 도전",
+        "10K·하프마라톤에서 자기 기록에 도전하는 러너",
         "km당 4분 이하 레이스 페이스를 유지할 수 있는 러너"
       ],
       "technologies": [
@@ -498,8 +498,8 @@
       "subcategoryId": "full",
       "price": 259000,
       "priceFormatted": "259,000원",
-      "description": "S4+ 요기리는 서브4 풀마라톤을 목표로 하는 러너를 위한 안정적인 카본 레이싱화야. FF TURBO+ 상층이 반발을, FlyteFoam 하층이 안정성을 잡아주는 듀얼 구조라 첫 카본화인데도 불안하지 않아. 아웃솔 그립이 0.93점으로 역대급이라 비 오는 날에도 안심인데, 상위 모델만큼 날카롭진 않아.",
-      "shortDescription": "듀얼 폼 구조의 안정적인 서브4 첫 카본화",
+      "description": "S4+ 요기리는 서브4 풀마라톤을 목표로 하는 러너를 위한 안정적인 카본 레이싱화야. FF TURBO+ 상층이 반발을, FlyteFoam 하층이 안정성을 잡아주는 듀얼 구조라 첫 카본화인데도 불안하지 않아. 아웃솔 그립이 0.93점으로 역대급이라 비 오는 날 레이스에도 안심이고, 259,000원에 풀 카본 플레이트 경험이 가능해서 가성비도 좋은데, 상위 모델만큼의 날카로운 반발은 기대하기 어려워.",
+      "shortDescription": "FF TURBO+ + FlyteFoam 듀얼 구조, 안정적으로 입문하는 서브4 카본 레이싱화",
       "imageUrl": "/shoes/yogiri-s4-plus.webp",
       "specs": {
         "weight": 229,
@@ -552,7 +552,7 @@
       "price": 329000,
       "priceFormatted": "329,000원",
       "description": "메타스피드 스카이 도쿄는 보폭을 늘려 속도를 올리는 스트라이드형 러너를 위한 슈퍼슈야. 카본 플레이트 위에 FF LEAP, 아래에 FF TURBO+를 배치해서 뒤꿈치는 플러시하게 받아주고 전족부에서는 스냅 있게 밀어줘. 170g에 5K부터 풀마라톤까지 대응하는데, 힐 쿠셔닝이 부드러운 만큼 느린 페이스에서는 효율이 떨어져.",
-      "shortDescription": "보폭형 러너 전용 170g 플러시 카본 레이서",
+      "shortDescription": "FF LEAP + FF TURBO+의 플러시한 착지감, 보폭형 러너 전용 170g 카본 레이서",
       "imageUrl": "/shoes/metaspeed-sky-tokyo.webp",
       "specs": {
         "weight": 170,
@@ -605,7 +605,7 @@
       "price": 329000,
       "priceFormatted": "329,000원",
       "description": "메타스피드 엣지 도쿄는 발 회전수를 높여 속도를 내는 케이던스형 러너를 위한 슈퍼슈야. Sky 도쿄와 반대로 카본 플레이트 위에 FF TURBO+, 아래에 FF LEAP를 배치하고, 스쿠프드 플레이트가 뒤꿈치에서 전족부로 빠르게 떨어지는 전환을 유도해. 160g으로 오르막에서 특히 효율적인데, 스트라이드형 러너에게는 보폭을 강제로 줄여서 안 맞아.",
-      "shortDescription": "케이던스형 전용 160g 빠른 전환 카본 레이서",
+      "shortDescription": "스쿠프드 플레이트로 빠른 발 회전을 유도하는 케이던스형 전용 160g 카본 레이서",
       "imageUrl": "/shoes/metaspeed-edge-tokyo.webp",
       "specs": {
         "weight": 160,
@@ -630,7 +630,7 @@
       ],
       "bestFor": [
         "빠른 발 회전으로 가속하는 케이던스형 러너",
-        "5K부터 풀마라톤까지 다양한 거리의 레이스",
+        "5K~풀마라톤 다양한 거리를 넘나드는 러너",
         "오르막이 많은 코스의 대회를 준비하는 러너"
       ],
       "technologies": [

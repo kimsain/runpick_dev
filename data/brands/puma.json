@@ -18,7 +18,7 @@
       "price": 168000,
       "priceFormatted": "₩168,000",
       "description": "Velocity NITRO 4는 NITRO 폼 라인업 중 가장 입문하기 쉬운 포지션의 가성비 훈련화야. 전작의 이중 밀도 미드솔 대신 풀레이어 NitroFoam 단일 구조로 바뀌면서 224g에서 착지감이 더 일관적이고 경쾌해졌어. Pumagrip 아웃솔이 젖은 노면에서도 끈적하게 붙어줘서 훈련 초반 워밍업 구간부터 믿음직해. 다만 스택이 33.7mm로 높지 않아서 아스팔트 장거리에서는 발바닥이 일찍 피로해질 수 있어.",
-      "shortDescription": "NitroFoam 224g NITRO 라인 입문 데일리",
+      "shortDescription": "NitroFoam 단일 구조의 경쾌한 반발력, NITRO 입문 데일리 훈련화",
       "imageUrl": "/shoes/velocity-nitro-4.webp",
       "specs": {
         "weight": 227,
@@ -42,7 +42,7 @@
         "반발력이 중간 수준이라 4분/km 이하 페이스로 달리고 싶은 러너에게는 추진력이 부족하게 느껴져"
       ],
       "bestFor": [
-        "NITRO 폼을 처음 써보는 입문자가 합리적 가격에 시작하기 좋은 데일리 훈련화",
+        "합리적 가격으로 NITRO 폼을 처음 경험하고 싶은 입문 러너",
         "이지 페이스(6~5분/km)로 주 3~4회 훈련하면서 다양한 거리를 커버하고 싶은 러너",
         "가벼운 신발로 짧은 인터벌부터 롱슬로런까지 한 켤레로 쓰고 싶은 러너"
       ],
@@ -70,8 +70,8 @@
       "subcategoryId": "max-cushion",
       "price": 229000,
       "priceFormatted": "₩229,000",
-      "description": "MagMax NITRO 2는 푸마가 맥스 쿠셔닝 카테고리에 진입하면서 내놓은 독특한 기하학 구조의 데일리화야. 맥스쿠셔닝 경쟁이 치열한 시장에 NitroFoam을 높이 쌓아 44.9/36.1mm 스택을 구현했는데, RTINGS 기준 힐·포어풋 쿠셔닝 모두 8.9/10으로 균일하게 높아. Believe in the Run 리뷰어는 “Velocity NITRO 4의 경쾌한 주행감을 높은 스택으로 그대로 올려놓은 느낌”이라고 표현할 만큼 NITRO 폼 특유의 탄성이 스택이 높아도 죽지 않아. 다만 267g 무게와 높은 미드솔 플랫폼이 좁은 발볼 러너에게는 측면 안정감 부족으로 이어질 수 있어.",
-      "shortDescription": "NitroFoam 45mm 푸마 맥스 스택 쿠셔닝",
+      "description": "MagMax NITRO 2는 NitroFoam을 높이 쌓아 힐 44.9mm 스택을 구현한 맥스쿠셔닝 데일리화야. RTINGS 기준 힐·포어풋 쿠셔닝 8.9/10으로 균일하게 높고, NITRO 폼 특유의 탄성이 스택이 높아도 살아있어 뭉근하지 않아. 다만 267g 무게와 높은 플랫폼이 맞물려 발볼이 좁거나 발목이 약한 러너는 측면 흔들림을 느낄 수 있어.",
+      "shortDescription": "NitroFoam 힐 45mm 스택의 탄성 살아있는 맥스쿠셔닝 데일리",
       "imageUrl": "/shoes/magmax-nitro-2.webp",
       "specs": {
         "weight": 290,
@@ -124,7 +124,7 @@
       "price": 229000,
       "priceFormatted": "₩229,000",
       "description": "Magnify NITRO 3는 NITRO FOAM PLUS를 채운 261g의 데일리 트레이너야. 힐 37.4mm 스택에 뒤꿈치 착지 충격 흡수 136 SA로 데일리 훈련 수준의 보호력은 확실히 챙겼어. 포어풋 에너지 리턴이 73.6%라 이지런 페이스에서도 착지 후 다음 스텝으로 자연스럽게 넘어가는 흐름이 좋아. 다만 스택 대비 반발력이 강하지 않아서 인터벌이나 템포 구간을 이 신발 하나로 소화하려 하면 한계가 느껴져.",
-      "shortDescription": "NITRO FOAM PLUS SA 136 힐 프로텍션",
+      "shortDescription": "NITRO FOAM PLUS 힐 충격흡수 SA 136, 데일리 장거리 훈련화",
       "imageUrl": "/shoes/magnify-nitro-3.webp",
       "specs": {
         "weight": 260,
@@ -176,8 +176,8 @@
       "subcategoryId": "stability",
       "price": 202000,
       "priceFormatted": "₩202,000",
-      "description": "ForeverRun NITRO 2는 “일상 러너를 위한 안정화”라는 포지션을 명확히 잡은 291g의 내구성 특화 데일리야. 핵심은 RunGuide 기술인데, 발뒤꿈치 클립과 NitroFoam의 외곽을 더 단단하게 처리해 중심부 폼이 내측으로 무너지지 않도록 발을 보내줘. 기존 안정화들이 쓰던 딱딱한 TPU 포스트 대신 이중 밀도 폼으로 안정성을 구현해서 뻣뻣하지 않고 자연스러운 착지 경험이야. 다만 291g 무게는 동급 안정화 중에서도 무거운 편이라, 빠른 페이스 훈련에는 부담이 돼.",
-      "shortDescription": "RunGuide 이중 밀도 291g 내구성 안정화",
+      "description": "ForeverRun NITRO 2는 RunGuide 기술로 TPU 포스트 대신 이중 밀도 NitroFoam으로 안정성을 구현한 291g 데일리야. 딱딱함 없이 발을 중심선으로 자연스럽게 유도하고, 힐 충격흡수 SA 139로 과내전 러너의 착지 피로를 줄여줘. 다만 291g은 안정화 중에서도 무거운 편이라 빠른 페이스 훈련에는 부담이 돼.",
+      "shortDescription": "RunGuide 이중 밀도 NitroFoam, 뻣뻣함 없는 데일리 안정화",
       "imageUrl": "/shoes/foreverrun-nitro-2.webp",
       "specs": {
         "weight": 295,
@@ -229,8 +229,8 @@
       "subcategoryId": "light-plate",
       "price": 209000,
       "priceFormatted": "₩209,000",
-      "description": "Deviate NITRO 3는 NITRO ELITE PEBA 폼과 카본 플레이트를 조합한 268g의 슈퍼 트레이너야. 전작 Deviate NITRO 2보다 드롭을 8mm에서 10mm로 높여서 힐 착지 러너가 카본 플레이트 추진력을 더 자연스럽게 활용할 수 있어졌어. Believe in the Run은 “플레이티드 데일리 트레이너의 기준선”으로 꼽을 만큼 이 포지션에서 신뢰도가 높아. 268g으로 레이싱화보다 무겁지만, 반복 템포 훈련을 고반발 느낌으로 소화하고 싶은 러너에게는 그 무게를 감수할 이유가 충분해.",
-      "shortDescription": "NITRO ELITE PEBA 카본 10mm 드롭 트레이너",
+      "description": "Deviate NITRO 3는 NITRO ELITE PEBA 폼과 카본 플레이트를 조합한 268g의 슈퍼 트레이너야. 드롭 10mm로 힐 착지 러너도 플레이트 추진력을 자연스럽게 활용할 수 있고, Believe in the Run이 “플레이티드 데일리 트레이너의 기준선”으로 꼽은 신뢰도 높은 포지션이야. 레이싱화보다 무겁지만 템포 훈련을 고반발로 반복하고 싶은 러너에게 충분한 이유가 있어.",
+      "shortDescription": "NITRO ELITE PEBA + 카본 플레이트, 10mm 드롭 템포 트레이너",
       "imageUrl": "/shoes/deviate-nitro-3.webp",
       "specs": {
         "weight": 250,
@@ -282,8 +282,8 @@
       "subcategoryId": "light-plate",
       "price": 214000,
       "priceFormatted": "₩214,000",
-      "description": "Deviate NITRO 4는 “플레이티드 데일리 트레이너의 기준선”이었던 DN3를 이어받아 무게를 약 14g 줄인 업그레이드 버전이야. 아웃솔 러버에 컷아웃을 추가하고 두께를 약간 얇게 처리하면서 DN3보다 반 온스 가벼워졌는데, NitroFoam의 단단하면서도 즉각적인 반응성은 그대로 유지했어. Believe in the Run은 NitroFoam의 이 특유의 단단한 반발감이 다른 슈퍼 트레이너들과 DN 시리즈를 차별화하는 핵심이라고 짚었어. 드롭이 DN3의 10mm에서 8mm로 내려가서 미드풋~포어풋 착지 러너에게 더 잘 맞는 세팅이야.",
-      "shortDescription": "DN3 경량화 NitroFoam 8mm 드롭 카본 트레이너",
+      "description": "Deviate NITRO 4는 DN3에서 아웃솔 컷아웃으로 약 14g을 줄이면서 NitroFoam 특유의 단단한 즉각 반응성을 그대로 유지한 카본 트레이너야. 드롭이 10mm에서 8mm로 낮아져 미드풋~포어풋 착지 러너에게 더 잘 맞는 세팅이야. NitroFoam의 단단한 반발감이 부드러운 쿠셔닝을 선호하는 러너에게는 거칠게 느껴질 수 있어.",
+      "shortDescription": "DN3 대비 14g 경량화, NitroFoam 단단한 반발의 카본 트레이너",
       "imageUrl": "/shoes/deviate-nitro-4.webp",
       "specs": {
         "weight": 250,
@@ -335,8 +335,8 @@
       "subcategoryId": "full",
       "price": 386000,
       "priceFormatted": "₩386,000",
-      "description": "Deviate NITRO Elite 3는 푸마가 처음으로 PEBA 계열이 아닌 알리파틱 TPU(ATPU) 폼으로 전환한 레이싱화야. 푸마는 이 ATPU 폼이 이전 NITRO 폼 대비 에너지 리턴을 83%에서 93%로 끌어올렸다고 밝혔고, RTINGS 실측에서도 힐 84.8%·포어풋 82.4%로 최상위권 반발력을 기록했어. 약 200g 전후 무게로 Nike Vaporfly, ASICS Metaspeed Paris와 동급 경량 포지션이며, Doctors of Running은 “5km~하프마라톤에 공격적이고 경쟁력 있는 레이서”로 평가했어. 다만 PEBA 기반 레이서들에 비해 쿠셔닝이 단단한 편이라 40km 이후 피로 구간에서는 발 보호가 아쉬울 수 있어.",
-      "shortDescription": "ATPU ER 85% 카본 5km~하프 레이서",
+      "description": "Deviate NITRO Elite 3는 PEBA 대신 ATPU 폼으로 전환한 레이싱화야. RTINGS 실측 힐 ER 84.8%·포어풋 82.4%로 최상위권 반발력이고, 약 200g 전후 경량 포지션에서 Doctors of Running은 “5km~하프마라톤에 공격적인 레이서”로 평가했어. PEBA 레이서보다 쿠셔닝이 단단해 풀마라톤 후반 발 보호는 아쉬울 수 있어.",
+      "shortDescription": "ATPU 폼 ER 85% 카본 플레이트, 5km~하프 공격적 레이서",
       "imageUrl": "/shoes/deviate-nitro-elite-3.webp",
       "specs": {
         "weight": 194,
@@ -388,8 +388,8 @@
       "subcategoryId": "full",
       "price": 390000,
       "priceFormatted": "₩390,000",
-      "description": "Deviate NITRO Elite 4는 Elite 3에서 확립한 ATPU 폼 노선을 이어받으면서 어퍼를 Ultraweave로 전환해 경량화를 더 밀어붙인 레이싱화야. PEBA 기반이 아님에도 Believe in the Run은 “더 놀라운 건 PEBA 없이 이걸 해냈다는 것”이라고 짚었어. Ultraweave 메시에 종이처럼 얇은 텅, 힐·칼라 패딩 최소화, 얇은 Pumagrip 러버 커버로 극도로 미니멀한 어퍼 구성이야. 어퍼가 얇아진 만큼 발등 압박에 민감한 러너는 신발 핏을 직접 신어보고 결정하는 게 좋아.",
-      "shortDescription": "Ultraweave ATPU 카본 극경량 레이서",
+      "description": "Deviate NITRO Elite 4는 Elite 3의 ATPU 폼 노선을 이어받아 Ultraweave 어퍼로 경량화를 더 밀어붙인 레이싱화야. Believe in the Run은 “PEBA 없이 이걸 해냈다”고 평가할 만큼 최상위 반발 성능을 유지했어. 미니멀 어퍼 구조라 발등 압박에 민감한 러너는 직접 신어보고 결정하는 게 좋아.",
+      "shortDescription": "Ultraweave + ATPU 카본 플레이트, Elite 3보다 극경량 레이서",
       "imageUrl": "/shoes/deviate-nitro-elite-4.png",
       "specs": {
         "weight": 170,
@@ -441,8 +441,8 @@
       "subcategoryId": "full",
       "price": 460000,
       "priceFormatted": "₩460,000",
-      "description": "FAST-R Nitro Elite 3는 173g으로 푸마 라인업 중 가장 가벼운 레이서야. 힐 구간 NitroFoam Elite 미드솔을 포어풋과 분리된 티어드롭 형태로 깎아내서 무게를 극단까지 줄이면서도 착지 시 완충 기능은 유지했어. RunRepeat 실측 기준 힐 ER 80.4%·포어풋 ER 82.6%로 레이싱화 최상위권 반발력이고, 아웃솔 두께도 3.1mm로 레이싱화치고 내구성이 확보돼 있어. 어퍼가 최소화돼 있어서 발볼이 넓거나 발등이 높은 러너에게는 핏이 좁게 느껴질 수 있어.",
-      "shortDescription": "173g 푸마 최경량 티어드롭 힐 카본 레이서",
+      "description": "FAST-R Nitro Elite 3는 티어드롭 형태로 깎은 NitroFoam Elite 힐 구조로 173g을 달성한 푸마 최경량 레이서야. RunRepeat 실측 힐 ER 80.4%·포어풋 82.6%로 최상위 반발력을 유지하면서 아웃솔 3.1mm로 내구성도 확보했어. 미니멀 어퍼라 발볼이 넓거나 발등이 높은 러너는 핏이 좁게 느껴질 수 있어.",
+      "shortDescription": "173g 푸마 최경량, NitroFoam Elite 티어드롭 힐 카본 레이서",
       "imageUrl": "/shoes/fast-r-nitro-elite-3.webp",
       "specs": {
         "weight": 170,

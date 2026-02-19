@@ -17,8 +17,8 @@
       "subcategoryId": "all-rounder",
       "price": 168000,
       "priceFormatted": "₩168,000",
-      "description": "Ride 18는 써코니의 대표 데일리 워크호스야 — Molly Seidel도 훈련용으로 신었던 라인의 18번째 버전. 미드솔은 PEBA가 아닌 TPU 기반 PWRRUN 폼이라 275g에 충격 흡수(SA 141/116)는 탄탄한데, 슈퍼폼 특유의 통통 튀는 느낌보다는 묵직하고 안정적인 라이드야. 전통적인 아워글래스 형태 플랫폼이라 착지에서 토오프까지 전환이 깔끔하고, RTINGS 기준 에너지 리턴 80.7%로 이 가격대치고 반발력도 나쁘지 않아. 다만 PEBA 폼 데일리화에 익숙한 러너에게는 다소 둔탁하게 느껴질 수 있어.",
-      "shortDescription": "PWRRUN TPU 275g 아워글래스 데일리 워크호스",
+      "description": "Ride 18는 TPU 기반 PWRRUN 폼(SA 141/116)과 아워글래스 플랫폼을 갖춘 데일리 워크호스야. 충격 흡수가 탄탄하고 착지에서 토오프까지 전환이 깔끔하며 에너지 리턴 80.7%로 가성비가 좋아. 이지런부터 10km 템포까지 두루 쓸 수 있지만, PEBA 폼에 익숙한 러너에게는 통통 튀는 느낌보다 묵직한 라이드로 느껴질 수 있어.",
+      "shortDescription": "PWRRUN TPU 폼 275g, 안정적인 착지·전환의 데일리 워크호스",
       "imageUrl": "/shoes/ride-18.webp",
       "specs": {
         "weight": 275,
@@ -71,7 +71,7 @@
       "price": 147000,
       "priceFormatted": "₩147,000",
       "description": "Kinvara 16는 207g에 4mm 드롭이라는 조합으로 '발이 가볍게 움직이는 느낌'을 최우선에 둔 경량 데일리야. PWRRUN 폼에 28mm 힐 스택으로 쿠셔닝이 적당히 받쳐주면서도 발 아래 직접 닿는 감각이 살아 있어. 낮은 드롭 덕에 착지부터 지면 반응까지 빠르게 연결돼서 리듬 훈련이나 가벼운 템포런에서 발놀림이 경쾌해. 다만 SA 109/100으로 쿠셔닝 수치 자체는 이 라인에서 가장 낮아서, 장거리 러닝에서 쿠셔닝이 부족하다고 느끼는 러너가 있어.",
-      "shortDescription": "가볍게 페이스 올리기 좋은 경량 데일리",
+      "shortDescription": "PWRRUN 폼 207g 4mm 저드롭, 발 가볍게 리듬 타는 경량 데일리",
       "imageUrl": "/shoes/kinvara-16.webp",
       "specs": {
         "weight": 207,
@@ -124,7 +124,7 @@
       "price": 224000,
       "priceFormatted": "₩224,000",
       "description": "Triumph 23는 써코니 라인업에서 최고급 쿠셔닝을 담당하는 프리미엄 데일리야. PWRRUN HG 폼이 SA 149/136으로 라인업 내 가장 높은 충격 흡수를 자랑하면서도, '소프트하고 바운시하다'는 리뷰어들의 평가처럼 둔탁하지 않고 약간 탱글거리는 감각이 있어. 10mm 드롭에 힐 스택 42mm로 뒤꿈치 착지 러너가 장거리에서 다리를 아낄 수 있게 설계됐어. 다만 전족부 착지 러너에게는 10mm 드롭이 과해서 앞발이 일찍 바닥에 닿는 느낌이 들 수 있어.",
-      "shortDescription": "PWRRUN HG SA 149 42mm 프리미엄 쿠셔닝",
+      "shortDescription": "PWRRUN HG SA 149 42mm 힐 스택, 탱글한 감각의 프리미엄 맥스쿠션",
       "imageUrl": "/shoes/triumph-23.webp",
       "specs": {
         "weight": 263,
@@ -150,7 +150,7 @@
       "bestFor": [
         "하프 이상 장거리 훈련에서 뒤꿈치 착지로 다리를 보호하고 싶은 러너",
         "이지런을 매일 신을 만큼 편하면서도 약간 바운시한 쿠셔닝 데일리를 원하는 러너",
-        "완주 위주 풀마라톤 레이서가 레이스 전 주간 데일리로 발을 아낄 때"
+        "풀마라톤 전 주간 훈련에서 발을 아끼고 싶은 완주 중심 러너"
       ],
       "technologies": [
         "맥스 쿠셔닝 폼",
@@ -176,8 +176,8 @@
       "subcategoryId": "stability",
       "price": 188000,
       "priceFormatted": "₩188,000",
-      "description": "Guide 18는 PWRRUN 폼에 HOLLOW TECH 구조를 더해 경도를 높이는 방식으로 안정성을 만들어내는 데일리야. 미드풋 내측을 밀어올리는 포스트형 안정화가 아니라, 아웃솔에 속이 빈 공간을 내서 폼 밀도 차이로 발이 쏠리는 걸 자연스럽게 잡아줘. Believe in the Run 리뷰어는 “클리프턴이 느껴야 할 방식 — 넓고 안정적이고 쿠셔닝 있고 로커도 있다”고 표현했어. 다만 Doctors of Running은 '경증 안정화 수준'이라고 평가해서, 뚜렷한 오버프로네이션 교정을 원하는 러너에게는 안정성이 부족하게 느껴질 수 있어.",
-      "shortDescription": "HOLLOW TECH 경사 폼 부드러운 경증 안정화",
+      "description": "Guide 18는 PWRRUN 폼에 HOLLOW TECH 구조를 더한 경증 안정 데일리야. 포스트형이 아닌 아웃솔 공간 설계로 폼 밀도 차이를 만들어 발 쏠림을 자연스럽게 잡아줘. 부드러운 로커와 6mm 드롭으로 이지런에서 장거리까지 편하게 쓸 수 있지만, 뚜렷한 오버프로네이션 교정이 필요한 러너에게는 지지력이 충분하지 않을 수 있어.",
+      "shortDescription": "HOLLOW TECH 구조 272g, 포스트 없이 자연스러운 경증 안정화",
       "imageUrl": "/shoes/guide-18.webp",
       "specs": {
         "weight": 272,
@@ -229,8 +229,8 @@
       "subcategoryId": "stability",
       "price": 195000,
       "priceFormatted": "₩195,000",
-      "description": "Hurricane 25는 안정화 슈즈 중 유일하게 슈퍼폼 미드솔을 품은 신발이야. PWRRUN PB가 발 아래에 깔리고, PWRRUN 크래들이 내측에서 감싸는 이중 밀도 구조에 Center Path 기술로 착지 흐름을 중앙으로 유도해. SA 151/140으로 안정화 라인에서 가장 높은 충격 흡수를 보여주면서도 에너지 리턴 74%를 유지하는 게 포인트야. Doctors of Running은 '경증-중간 안정화'로 분류하면서 '프리미엄 안정화 중 가장 가볍다'고 했어. Guide보다 무거운 이유는 이 이중 폼 구조와 더 두꺼운 지지 크래들 때문이야.",
-      "shortDescription": "PWRRUN PB 슈퍼폼 + 크래들 프리미엄 안정화",
+      "description": "Hurricane 25는 PWRRUN PB를 발 아래에, PWRRUN 크래들을 내측에 배치한 이중 밀도 안정화야. Center Path 기술이 착지 흐름을 중앙으로 유도하고 SA 151/140으로 안정화 라인 최고 충격 흡수를 자랑해. 283g으로 프리미엄 안정화 중 가벼운 편이지만 경증-중간 수준의 안정성이라 심한 오버프로네이션에는 부족할 수 있어.",
+      "shortDescription": "PWRRUN PB + 크래들 이중 폼 283g, SA 151 프리미엄 안정화",
       "imageUrl": "/shoes/hurricane-25.webp",
       "specs": {
         "weight": 283,
@@ -282,8 +282,8 @@
       "subcategoryId": "stability",
       "price": 191000,
       "priceFormatted": "₩191,000",
-      "description": "Tempus 2는 XT-600 웨지라는 독특한 경사 구조로 안정성을 만들어내는 안정화야 — 내측에 딱딱한 포스트를 넣는 방식이 아니라, 외측에서 내측으로 기울어진 쐐기형 폼 블록이 발이 안쪽으로 쏠리는 걸 물리적으로 막아줘. 264g에 에너지 리턴 69.9~72.2%로 써코니 안정화 3종 중 가장 가벼운 편이라 어느 정도 페이스도 소화해. 8mm 드롭과 33/25mm 스택 조합이라 너무 높지 않은 쿠셔닝에서 지면 감각을 원하는 러너에게 잘 맞아. 다만 아웃솔 내구성이 0.4mm로 이 라인에서 가장 얇아서 마모에 취약한 편이야.",
-      "shortDescription": "XT-600 웨지 264g 경량 쐐기형 안정화",
+      "description": "Tempus 2는 XT-600 웨지 구조로 안정성을 만들어내는 안정화야. 포스트 대신 외측에서 내측으로 기울어진 쐐기형 폼 블록이 발의 안쪽 쏠림을 막아줘. 264g에 에너지 리턴 72%로 써코니 안정화 3종 중 가장 가벼워서 데일리부터 템포런까지 소화할 수 있지만, 아웃솔이 0.4mm로 얇아 고빈도 훈련에서 마모가 빠를 수 있어.",
+      "shortDescription": "XT-600 웨지 264g 8mm 드롭, 자연스러운 경사 구조 경량 안정화",
       "imageUrl": "/shoes/tempus-2.webp",
       "specs": {
         "weight": 269,
@@ -335,8 +335,8 @@
       "subcategoryId": "no-plate",
       "price": 251000,
       "priceFormatted": "₩251,000",
-      "description": "Endorphin Trainer는 PWRRUN PB 대신 IncrediRun(TPEE 기반) 폼을 상단에, PWRRUN을 하단에 배치한 이중 레이어 무플레이트 슈퍼 트레이너야. Doctors of Running은 'NB SC Elite 3의 더 무거운 데일리 트레이너 버전 같다'고 표현했어 — 플레이트 없이도 꽤 바운시한 감각이야. 힐 에너지 리턴 74%, 전족부 79.2%로 데일리화보다 확실히 반응성이 좋으면서도 SA 138/112로 쿠셔닝도 넉넉해. 다만 285g으로 슈퍼 트레이너치고 무겁고, 하단 PWRRUN 레이어가 다소 둔탁하다는 평이 있어.",
-      "shortDescription": "IncrediRun 이중 레이어 285g 바운시 트레이너",
+      "description": "Endorphin Trainer는 IncrediRun(TPEE) 상단 + PWRRUN 하단 이중 레이어의 무플레이트 슈퍼 트레이너야. 전족부 에너지 리턴 79%로 플레이트 없이도 바운시한 감각이고 SA 138/112로 쿠셔닝도 넉넉해. 285g으로 슈퍼 트레이너치고 무거운 편이라 인터벌보다는 이지런~템포 범위에서 주로 쓰는 훈련화야.",
+      "shortDescription": "IncrediRun + PWRRUN 이중 레이어 285g, 무플레이트 바운시 슈퍼 트레이너",
       "imageUrl": "/shoes/endorphin-trainer.webp",
       "specs": {
         "weight": 286,
@@ -360,7 +360,7 @@
         "하단 PWRRUN 레이어가 상대적으로 단단해서 전족부 착지 러너는 발바닥이 딱딱하게 느껴진다는 평이 있어"
       ],
       "bestFor": [
-        "플레이트 없이 바운시한 훈련화를 찾는 러너, 특히 이지런부터 하프마라톤 페이스 훈련까지 한 켤레로 쓰고 싶을 때",
+        "이지런부터 하프마라톤 페이스 훈련까지 무플레이트 바운시 트레이너 한 켤레로 커버하고 싶은 러너",
         "슈퍼슈즈의 레이스데이를 위해 비슷한 감각을 학습할 훈련화가 필요한 러너",
         "이지런에서도 어느 정도 쿠셔닝 보호가 필요한 고중량 러너"
       ],
@@ -388,8 +388,8 @@
       "subcategoryId": "light-plate",
       "price": 209000,
       "priceFormatted": "₩209,000",
-      "description": "Endorphin Azura는 PWRRUN PB 폼에 나일론 플레이트를 얹어서 Trainer(무플레이트)와 Speed 5(나일론 플레이트) 사이에 위치한 신발이야. RTINGS 기준 에너지 리턴 80.9~82.8%로 Speed 5와 비슷한 수준의 반발력을 242g에 제공해. 40/32mm 스택 덕에 쿠셔닝도 Trainer에 가깝고, 나일론 플레이트가 전족부 추진력을 더해줘. Trainer보다 43g 가볍고 반발력이 더 강하며, Speed 5와 비슷한 반발력에 쿠셔닝은 더 두꺼워.",
-      "shortDescription": "PWRRUN PB 나일론 플레이트 242g 올라운더",
+      "description": "Endorphin Azura는 PWRRUN PB + 나일론 플레이트 조합으로 Trainer와 Speed 5 사이를 채우는 신발이야. 에너지 리턴 80.9~82.8%로 Speed 5 수준의 반발력을 242g에 제공하고, 40/32mm 스택으로 쿠셔닝도 두꺼워. Trainer보다 43g 가볍고 Speed 5보다 쿠셔닝이 좋은 올라운더야.",
+      "shortDescription": "PWRRUN PB 나일론 플레이트 242g ER 82%, Trainer-Speed 5 사이 올라운더",
       "imageUrl": "/shoes/endorphin-azura.png",
       "specs": {
         "weight": 240,
@@ -441,8 +441,8 @@
       "subcategoryId": "light-plate",
       "price": 209000,
       "priceFormatted": "₩209,000",
-      "description": "Endorphin Speed 5는 PWRRUN PB(PEBA 기반 비드 폼) + 나일론 플레이트 조합으로 써코니 트레이너 라인 중 최고 반발력을 자랑하는 경량 슈퍼 트레이너야. RTINGS 기준 에너지 리턴 82.1~82.6%는 Azura·Trainer와 비교해 라인 최고 수준이고, 238g으로 훈련화인데 경쟁사 일부 레이싱화보다도 가벼워. Doctors of Running은 '이지런부터 인터벌까지 커버하는 만능 나일론 플레이트 트레이너·레이서'로 평가했어. 다만 36/28mm 스택이라 장거리 이지런에서 쿠셔닝이 다소 부족하게 느껴질 수 있어.",
-      "shortDescription": "PWRRUN PB ER 82% 238g 만능 나일론 플레이트",
+      "description": "Endorphin Speed 5는 PWRRUN PB + 나일론 플레이트로 써코니 트레이너 라인 최고 반발력(ER 82%)을 자랑하는 경량 슈퍼 트레이너야. 238g으로 이지런부터 인터벌·하프마라톤 레이스까지 커버하는 만능 나일론 플레이트 슈즈야. 다만 36/28mm 스택이라 30km 이상 장거리 이지런에서는 쿠셔닝이 부족하게 느껴질 수 있어.",
+      "shortDescription": "PWRRUN PB + 나일론 플레이트 238g ER 82%, 이지런~레이스 만능 슈퍼 트레이너",
       "imageUrl": "/shoes/endorphin-speed-5.webp",
       "specs": {
         "weight": 238,
@@ -494,8 +494,8 @@
       "subcategoryId": "full",
       "price": 390000,
       "priceFormatted": "₩390,000",
-      "description": "Endorphin Elite 2는 써코니의 레이싱 플래그십 — IncrediRun(TPEE) 폼에 카본 플레이트를 얹어서 현재 시장에서 가장 소프트하고 바운시한 장거리 레이싱화를 목표로 만들었어. RTINGS 기준 에너지 리턴 85.8~86.4%는 써코니 라인업 최고 수치이고, 197g에 39.9mm 힐 스택이라 풀마라톤 후반에서도 발이 충분히 보호받아. Believe in the Run은 '내가 Hoka Cielo X1에서 좋아했던 모든 것이 거의 2온스나 가벼운 무게로 여기 있다'고 했어. 다만 안정성이 낮아서 좌우 흔들림 교정 능력이 부족하고 전족부가 좁아 발볼 넓은 러너에게는 불편할 수 있어.",
-      "shortDescription": "IncrediRun ER 86% 197g 최고 바운스 카본",
+      "description": "Endorphin Elite 2는 IncrediRun(TPEE) 폼 + 카본 플레이트로 써코니 라인업 최고 반발력(ER 86%)을 구현한 레이싱 플래그십이야. 197g에 39.9mm 힐 스택이라 풀마라톤 후반에도 발이 보호받으면서 최고 수준의 바운스를 제공해. 다만 안정성이 낮고 전족부가 좁아 폼이 불안정하거나 발볼이 넓은 러너에게는 불편할 수 있어.",
+      "shortDescription": "IncrediRun + 카본 플레이트 197g ER 86%, 써코니 최고 바운스 레이싱 플래그십",
       "imageUrl": "/shoes/endorphin-elite-2.webp",
       "specs": {
         "weight": 199,
@@ -519,8 +519,8 @@
         "전족부가 좁아서 발볼이 넓은 러너는 레이스 중 발가락이 눌려 불편할 수 있어"
       ],
       "bestFor": [
-        "안정적인 달리기 폼을 가진 서브3.5~서브3 러너가 풀마라톤 레이스에서 기록 단축을 목표로 할 때",
-        "소프트하면서도 강한 반발력을 원하는 러너 — 단단한 카본화가 불편했던 러너에게 적합",
+        "안정적인 달리기 폼으로 풀마라톤 기록 단축을 목표로 하는 서브3.5~서브3 러너",
+        "단단한 카본화가 불편했던, 소프트하면서도 강한 반발력을 원하는 러너",
         "훈련은 Speed 5나 Trainer로 하고 레이스데이만 최고의 슈즈를 신고 싶은 러너"
       ],
       "technologies": [
@@ -547,8 +547,8 @@
       "subcategoryId": "full",
       "price": 361000,
       "priceFormatted": "₩361,000",
-      "description": "Endorphin Pro 4는 PWRRUN PB + 카본 플레이트 조합의 레이싱화로, Elite 2보다 13g 더 무겁고 에너지 리턴도 약 13% 낮아. Elite 2가 IncrediRun 신폼을 채택한 반면 Pro 4는 PWRRUN PB(PEBA 비드 폼)를 유지하는데, 이 차이가 중량 및 반발력 차이의 주된 원인이야. 220g에 에너지 리턴 71.7~83.2%는 RTINGS와 RunRepeat 측정값 격차가 커서 실제 체감은 중간 어딘가일 거야. 구조적으로는 Elite 2보다 안정적이고 적당히 반응성 있는 풀마라톤 레이서야.",
-      "shortDescription": "PWRRUN PB 카본 220g 엔트리 레이스화",
+      "description": "Endorphin Pro 4는 PWRRUN PB + 카본 플레이트의 레이싱화로, Elite 2(IncrediRun)보다 안정적인 구조야. 220g에 에너지 리턴 71~83%로 측정값 편차가 있지만 Elite 2보다 구조적으로 더 안정적이고 폼 컨트롤이 직관적이야. 현재 Pro 5가 출시된 시점에서는 두 모델 모두 선택 가능하다면 Pro 5가 대부분의 러너에게 유리해.",
+      "shortDescription": "PWRRUN PB + 카본 플레이트 220g, 안정적인 구조의 엔트리 카본 레이싱화",
       "imageUrl": "/shoes/endorphin-pro-4.webp",
       "specs": {
         "weight": 212,
@@ -572,8 +572,8 @@
         "Pro 5가 220g→212g으로 가벼워지고 반발력도 개선됐어서, 현재 시점에서 두 모델 다 구매 가능하다면 Pro 5가 대부분의 러너에게 유리해"
       ],
       "bestFor": [
-        "서브4 목표의 풀마라톤 러너로 처음 카본 레이싱화를 시도하는 경우",
-        "Elite 2의 불안정한 느낌이 걱정되는 러너가 카본 레이싱 경험을 쌓을 때",
+        "처음 카본 레이싱화를 시도하는 서브4 목표의 풀마라톤 러너",
+        "Elite 2의 불안정한 느낌이 걱정돼 더 안정적인 카본화로 레이싱 경험을 쌓고 싶은 러너",
         "Pro 5보다 저렴한 가격으로 써코니 카본 레이싱화를 원하는 러너"
       ],
       "technologies": [
@@ -600,8 +600,8 @@
       "subcategoryId": "full",
       "price": 361000,
       "priceFormatted": "₩361,000",
-      "description": "Endorphin Pro 5는 Pro 4 대비 약 8g 감량(220g→212g)하고 에너지 리턴을 71%대에서 82%대로 끌어올린 업그레이드 버전이야. PWRRUN PB + 카본 플레이트 구조는 동일하지만 폼 배합과 지오메트리를 개선해서 Elite 2(IncrediRun)에 가까운 반발력을 내면서도 Pro 4의 접근 가능한 가격대를 유지해. 212g에 RTINGS 기준 에너지 리턴 82.4%는 같은 가격 카테고리에서 경쟁력 있는 수치야. Pro 4와 Pro 5를 모두 선택할 수 있는 상황이라면 Pro 5가 거의 모든 면에서 낫다고 봐.",
-      "shortDescription": "Pro 4 경량화 212g ER 82% 카본 업그레이드",
+      "description": "Endorphin Pro 5는 Pro 4 대비 8g 감량(220g→212g)하고 에너지 리턴을 71%대에서 82%대로 끌어올린 업그레이드 버전이야. PWRRUN PB + 카본 플레이트 구조는 동일하지만 폼 배합·지오메트리 개선으로 Elite 2에 가까운 반발력을 내면서 Pro 4의 가격을 유지해. 두 모델 모두 구매 가능하다면 Pro 5가 거의 모든 면에서 나아.",
+      "shortDescription": "PWRRUN PB + 카본 플레이트 212g ER 82%, Pro 4 대비 경량·고반발 업그레이드",
       "imageUrl": "/shoes/endorphin-pro-5.webp",
       "specs": {
         "weight": 206,
@@ -625,7 +625,7 @@
         "리뷰 소스가 RTINGS 단일이라 장기 내구성·핏 정보가 부족해서 첫 레이스 전 충분한 테스트 기간이 필요해"
       ],
       "bestFor": [
-        "서브3.5~서브3 목표 풀마라톤 러너로 카본 레이싱화의 쿠셔닝 보호와 반발력 둘 다 원하는 경우",
+        "카본화의 쿠셔닝 보호와 반발력 둘 다 원하는 서브3.5~서브3 목표 풀마라톤 러너",
         "Pro 4를 써봤고 더 가볍고 바운시한 버전으로 업그레이드하고 싶은 러너",
         "Elite 2의 가격이 부담스럽지만 Elite 2에 가까운 퍼포먼스를 원하는 러너"
       ],

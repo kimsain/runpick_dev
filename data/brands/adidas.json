@@ -18,7 +18,7 @@
       "price": 159000,
       "priceFormatted": "159,000원",
       "description": "슈퍼노바 라이즈 3은 PEBA 폼인 Dreamstrike+가 들어간 가성비 데일리화야. 전작보다 20% 부드러워지면서도 261g으로 가벼워서 이지런부터 장거리까지 편하게 커버해. 세미 로커 구조라 착지-토오프 전환이 자연스럽고, 아웃솔 접지력도 좋아서 젖은 노면에서도 안심이야. 다만 미드풋~토박스가 좁아서 발볼 넓은 러너는 불편할 수 있어.",
-      "shortDescription": "Dreamstrike+ PEBA의 15만원대 가성비 데일리",
+      "shortDescription": "Dreamstrike+ PEBA 폼의 가성비 데일리, 이지런부터 장거리까지 커버",
       "imageUrl": "/shoes/supernova-rise-3.webp",
       "specs": {
         "weight": 261,
@@ -39,7 +39,7 @@
       ],
       "cons": [
         "미드풋~토박스가 좁아서 발볼 넓은 러너에게는 답답할 수 있음",
-        "PEBA 폼인데 반발력은 기대만큼 강하지 않아서 템포에는 부족"
+        "PEBA 폼인데 반발력이 기대만큼 강하지 않아서 템포 훈련에는 부족함이 느껴져"
       ],
       "bestFor": [
         "편한 쿠셔닝의 데일리화가 필요한 입문자~중급 러너",
@@ -70,8 +70,8 @@
       "subcategoryId": "max-cushion",
       "price": 199000,
       "priceFormatted": "199,000원",
-      "description": "슈퍼노바 프리마 2는 Dreamstrike+ 폼에 Support Rods가 들어가서 푹신하면서도 발이 안 흔들리는 맥스 쿠셔닝 데일리야. 반발력보다는 보호력에 초점이 맞춰져 있어서 이지런·장거리에서 편안하고, 50마일 넘게 신어도 마모가 거의 없을 정도로 내구성이 좋아. 다만 반발력이 부족해서 빠른 페이스에는 안 맞아.",
-      "shortDescription": "Support Rods로 흐물거림 없는 맥스 쿠셔닝",
+      "description": "슈퍼노바 프리마 2는 Dreamstrike+ 폼에 Support Rods가 들어가서 푹신하면서도 발이 안 흔들리는 맥스 쿠셔닝 데일리야. 반발력보다 보호력에 초점이 맞춰져 있어서 이지런·장거리에서 편안하고, 50마일 넘게 신어도 마모가 거의 없을 정도로 내구성이 좋아. Support Rods로 전족부가 약간 딱딱하게 느껴질 수 있어서 빠른 페이스에는 안 맞아.",
+      "shortDescription": "Dreamstrike+ + Support Rods, 흔들림 없는 맥스 쿠셔닝 데일리",
       "imageUrl": "/shoes/supernova-prima-2.webp",
       "specs": {
         "weight": 279,
@@ -125,7 +125,7 @@
       "price": 179000,
       "priceFormatted": "179,000원",
       "description": "슈퍼노바 솔루션 2.0은 안정화인데 딱딱하지 않은 게 장점인 마일드 안정화야. Dreamstrike+ 폼에 듀얼 밀도 서포트 로드가 들어가서 과하지 않게 잡아주고, 에너지 리턴 68%로 안정화치고 바운시한 편이거든. 261g으로 가벼워서 데일리부터 가볍게 페이스 올리는 것까지 커버해. 강한 교정이 필요한 러너에게는 부족할 수 있어.",
-      "shortDescription": "듀얼 밀도 서포트의 바운시한 경량 안정화",
+      "shortDescription": "Dreamstrike+ 듀얼 밀도 서포트의 바운시한 마일드 안정화",
       "imageUrl": "/shoes/supernova-solution-2.webp",
       "specs": {
         "weight": 261,
@@ -145,7 +145,7 @@
         "261g으로 안정화 중에서 가벼운 편이라 약간의 업템포도 가능"
       ],
       "cons": [
-        "안정성이 마일드해서 강한 오버프로네이션 러너에게는 교정력 부족",
+        "안정성이 마일드해서 강한 오버프로네이션 러너에게는 교정력이 부족해 충분히 잡아주지 못해",
         "텅이 두껍고 거싯이 없어서 좌우로 밀리며 핏이 불안정할 수 있어"
       ],
       "bestFor": [
@@ -178,7 +178,7 @@
       "price": 149000,
       "priceFormatted": "149,000원",
       "description": "아디제로 SL 2는 14만원대에 Lightstrike Pro가 들어간 가성비 최강 올라운더야. 듀얼 폼 구조라 에너지 리턴 56%로 괜찮은 반발력이 있고, 236g으로 가벼워서 이지런부터 템포까지 부담 없이 써. 통기성이 5/5점으로 최상위라 여름에도 쾌적하고. 다만 미드풋이 좁고 안정성 지원이 없어서 발볼 넓거나 프로네이션이 있으면 안 맞아.",
-      "shortDescription": "14만원대 Lightstrike Pro 경량 올라운더",
+      "shortDescription": "14만원대 Lightstrike Pro 듀얼 폼, 이지런~템포 경량 올라운더",
       "imageUrl": "/shoes/adizero-sl-2.webp",
       "specs": {
         "weight": 236,
@@ -231,7 +231,7 @@
       "price": 169000,
       "priceFormatted": "169,000원",
       "description": "아디오스 9는 아디오스 프로 4와 같은 Lightstrike Pro 폼을 플레이트 없이 쓰는 초경량 스피드 슈즈야. 176g밖에 안 되는데 에너지 리턴이 77%나 돼서 플레이트 없이도 충분히 빨라. 스택이 낮아서 지면 감각이 좋고 발놀림이 자연스러운 게 장점이야. 다만 쿠셔닝이 거의 없어서 10K 넘으면 발바닥에 부담이 오니까 단거리 전용으로 쓰는 게 좋아.",
-      "shortDescription": "176g 내추럴 지면감의 초경량 스피드슈즈",
+      "shortDescription": "176g Lightstrike Pro, 플레이트 없이 내추럴한 초경량 스피드슈즈",
       "imageUrl": "/shoes/adizero-adios-9.webp",
       "specs": {
         "weight": 176,
@@ -283,7 +283,7 @@
       "price": 209000,
       "priceFormatted": "209,000원",
       "description": "에보 SL은 100% Lightstrike Pro를 플레이트 없이 쓰는 다재다능한 슈퍼 트레이너야. 에너지 리턴 74%로 슈퍼슈즈급 반발력이 있는데, 카본 로드가 없어서 부드럽고 바운시하게 달려. 224g으로 가벼워서 이지런부터 템포·장거리까지 어떤 페이스에서든 잘 맞아. 다만 아웃솔이 얇아서 500km쯤 되면 뒤꿈치 쪽 고무가 벗겨질 수 있어.",
-      "shortDescription": "Lightstrike Pro 100%의 만능 슈퍼폼 트레이너",
+      "shortDescription": "Lightstrike Pro 100% 에너지 리턴 74%, 이지런~레이스 만능 트레이너",
       "imageUrl": "/shoes/adizero-evo-sl.webp",
       "specs": {
         "weight": 224,
@@ -335,7 +335,7 @@
       "price": 179000,
       "priceFormatted": "179,000원",
       "description": "보스턴 13은 빠른 페이스에서 진가를 발휘하는 가성비 슈퍼 트레이너야. Lightstrike Pro 듀얼 폼에 EnergyRods가 들어가서 10K 페이스 이상에서 스냅감 있게 밀어주고, 전족부 에너지 리턴 70%로 포어풋 착지 러너에게 특히 좋아. 255g으로 가벼워지고 핏도 개선됐는데, 17만원대라 가성비가 뛰어나. 다만 이지런에서는 좀 딱딱하게 느껴져.",
-      "shortDescription": "17만원대 EnergyRods 포어풋 추진 트레이너",
+      "shortDescription": "17만원대 Lightstrike Pro + EnergyRods, 포어풋 추진 슈퍼 트레이너",
       "imageUrl": "/shoes/adizero-boston-13.webp",
       "specs": {
         "weight": 255,
@@ -389,7 +389,7 @@
       "price": 219000,
       "priceFormatted": "219,000원",
       "description": "타쿠미 센 11은 슈퍼슈즈만큼 빠르면서 접지감은 더 좋은 중간 스택 레이서야. 전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는데, 스택이 낮아서 발이 땅에 잘 닿는 느낌이 있거든. 184g으로 가볍고 핏도 밀착돼서 5K~10K 레이스에 딱 맞아. LIGHTLOCK 어퍼가 전혀 안 늘어나니까 발가락 여유가 필요하면 주의해야 해.",
-      "shortDescription": "184g 접지감 살린 중간 스택 레이서",
+      "shortDescription": "184g EnergyRods 2.0, 전족부 리턴 80%의 중간 스택 경량 레이서",
       "imageUrl": "/shoes/adizero-takumi-sen-11.webp",
       "specs": {
         "weight": 184,
@@ -444,7 +444,7 @@
       "price": 349000,
       "priceFormatted": "349,000원",
       "description": "프라임 X3 스트렁은 50mm 스택에 카본 플레이트 + EnergyRods 2.0이 들어간 실험적 맥시멀 트레이너야. 에너지 리턴 77%에 충격 흡수 160 SA로 장거리 훈련에서 쿠셔닝과 추진력이 압도적인데, 대회 규격(40mm) 초과라 공식 레이스에는 신을 수 없어. 전작보다 플랫폼이 넓어져서 안정감이 좋아졌고, 체중이 있는 러너일수록 추진력을 더 잘 뽑아먹을 수 있어.",
-      "shortDescription": "50mm 대회 규격 초과 맥시멀 훈련 전용기",
+      "shortDescription": "50mm 스택 EnergyRods 2.0, 대회 규격 초과 맥시멀 훈련 전용기",
       "imageUrl": "/shoes/adizero-prime-x3-strung.webp",
       "specs": {
         "weight": 291,
@@ -464,7 +464,7 @@
         "체중이 실릴수록 추진력이 극대화돼서 80kg+ 러너에게 특히 좋아"
       ],
       "cons": [
-        "WA 규격 초과(50mm)라서 공식 대회에서는 착용 불가",
+        "WA 규격 초과(50mm)라서 공식 대회에서는 착용할 수 없어",
         "291g에 34만원대라 훈련 전용으로만 쓰기엔 부담스러운 가격"
       ],
       "bestFor": [
@@ -499,7 +499,7 @@
       "price": 299000,
       "priceFormatted": "299,000원",
       "description": "아디오스 프로 4는 '밟으면 밟을수록 돌아오는' 타입의 마라톤 슈퍼슈즈야. A-TPU 기반 Lightstrike Pro가 에너지 리턴 80%를 넘기면서, 5개 EnergyRods가 발뼈 구조를 따라 자연스럽게 앞으로 밀어줘. 부드러우면서도 추진력이 확실해서 하프부터 풀마라톤까지 레이스 전 구간에서 꾸준히 힘을 줘. 다만 토박스가 좁아서 반사이즈 업은 거의 필수이고, 훈련용으로 매일 신기엔 내구성이 아까워.",
-      "shortDescription": "에너지 리턴 80% 돌파한 EnergyRods 레이서",
+      "shortDescription": "에너지 리턴 80.4% 달성, EnergyRods 2.0 탑재 마라톤 슈퍼슈즈",
       "imageUrl": "/shoes/adizero-adios-pro-4.webp",
       "specs": {
         "weight": 200,
@@ -523,7 +523,7 @@
         "A-TPU 전환으로 전작 대비 내구성이 떨어져서 훈련 겸용은 비추"
       ],
       "bestFor": [
-        "하프~풀마라톤에서 자기 기록을 노리는 중급~상급 레이서",
+        "하프~풀마라톤 기록 단축을 노리는 중급~상급 러너",
         "높은 에너지 리턴을 활용할 수 있는 중족부~전족부 착지 러너",
         "레이스 데이 전용으로 최대 퍼포먼스를 원하는 러너"
       ],
@@ -553,7 +553,7 @@
       "price": 599000,
       "priceFormatted": "599,000원",
       "description": "프로 에보 2는 138g짜리 극초경량 엘리트 마라톤 레이서야. 3mm 초저드롭에 60% 로커가 공격적으로 앞으로 밀어줘서, 서브 3:30/km 페이스에서 진가를 발휘해. 전족부 스택이 3mm 높아지면서 에너지 효율이 5% 좋아졌는데, 느린 페이스에서는 오히려 불편해서 순수 레이스 데이 전용이야. 59만원이라 대부분의 러너에게는 비현실적인 가격이긴 해.",
-      "shortDescription": "138g 3mm 드롭의 엘리트 전용 극초경량기",
+      "shortDescription": "138g Lightstrike Pro Evo, 3mm 드롭 엘리트 전용 극초경량 레이서",
       "imageUrl": "/shoes/adizero-pro-evo-2.webp",
       "specs": {
         "weight": 138,
@@ -577,8 +577,8 @@
         "젖은 노면 그립이 부족하고 내구성이 낮아서 레이스 전용으로만 사용 가능"
       ],
       "bestFor": [
-        "서브엘리트~엘리트 러너의 마라톤 레이스 데이 전용",
-        "서브 3:30/km 페이스를 유지하는 전족부 착지 레이서",
+        "서브엘리트~엘리트 수준의 마라톤 레이스 데이에 최대 퍼포먼스를 원하는 러너",
+        "서브 3:30/km 페이스를 유지하는 전족부 착지 러너",
         "기록 경신을 위해 극한의 경량과 반발력이 필요한 경험 많은 러너"
       ],
       "technologies": [
