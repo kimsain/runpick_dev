@@ -129,7 +129,7 @@ export default function MethodologyPage() {
         <p className="text-accent text-sm font-body tracking-widest uppercase mb-4">
           METHODOLOGY
         </p>
-        <h1 className="font-display text-5xl text-primary leading-none mb-6">
+        <h1 className="font-display text-2xl text-primary leading-none mb-6">
           점수 산정 방법
         </h1>
         <p className="text-secondary font-body text-lg max-w-2xl">
@@ -140,7 +140,7 @@ export default function MethodologyPage() {
 
       {/* 데이터 수집 방법 */}
       <section className="mb-16">
-        <h2 className="font-display text-2xl text-primary tracking-widest uppercase mb-8">
+        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
           데이터 소스
         </h2>
         <div className="space-y-4">
@@ -177,7 +177,7 @@ export default function MethodologyPage() {
 
       {/* 점수 산정 방식 */}
       <section className="mb-16">
-        <h2 className="font-display text-2xl text-primary tracking-widest uppercase mb-8">
+        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
           6개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
@@ -214,7 +214,7 @@ export default function MethodologyPage() {
 
       {/* 신뢰도 등급 */}
       <section className="mb-16">
-        <h2 className="font-display text-2xl text-primary tracking-widest uppercase mb-8">
+        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
           신뢰도 등급
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
@@ -247,7 +247,7 @@ export default function MethodologyPage() {
 
       {/* 한계 및 주의사항 */}
       <section className="mb-16">
-        <h2 className="font-display text-2xl text-primary tracking-widest uppercase mb-8">
+        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
           한계 및 주의사항
         </h2>
         <div className="bg-card border border-elevated p-6 space-y-4">

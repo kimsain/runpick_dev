@@ -42,7 +42,7 @@ export default function HeroSection() {
         <p className="text-secondary text-sm font-body tracking-widest uppercase mb-4">
           러닝화 탐색 플랫폼
         </p>
-        <h1 className="font-display text-hero leading-none text-accent mb-4">
+        <h1 className="font-display text-xl sm:text-2xl lg:text-hero leading-none text-accent mb-4">
           FIND YOUR
           <br />
           RUN
