@@ -35,31 +35,18 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
-      {/* Checker Grid Background */}
-      <div className="absolute inset-0 grid grid-cols-4">
-        {[0, 1, 2, 3].map((col) => (
-          <div
-            key={col}
-            className="flex flex-col"
-            style={{ transform: `translateY(${col % 2 === 0 ? '-5%' : '5%'})` }}
-          >
-            {[0, 1, 2, 3, 4, 5].map((row) => {
-              const idx = col * 6 + row
-              const slug = CHECKER_SLUGS[idx]
-              const imageSrc = `/images/shoes/${slug}.webp`
-              return (
-                <div key={row} className="relative flex-1 min-h-0">
-                  <Image
-                    src={imageSrc}
-                    alt={slug}
-                    fill
-                    sizes="25vw"
-                    className="object-contain p-2"
-                    style={{ opacity: 0.25 }}
-                  />
-                </div>
-              )
-            })}
+      {/* Grid Background */}
+      <div className="absolute inset-0 grid grid-cols-4 grid-rows-6 gap-1">
+        {CHECKER_SLUGS.map((slug) => (
+          <div key={slug} className="relative">
+            <Image
+              src={`/images/shoes/${slug}.webp`}
+              alt={slug}
+              fill
+              sizes="25vw"
+              className="object-contain p-2"
+              style={{ opacity: 0.25 }}
+            />
           </div>
         ))}
       </div>
