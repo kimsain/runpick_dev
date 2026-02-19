@@ -6,11 +6,11 @@ import { getAllShoes, getBrands } from '@/lib/data'
 
 const PURPOSE_CARDS = [
   {
-    title: '입문',
-    desc: '처음 러닝, 부담 없이 시작하기',
+    title: '안정화',
+    desc: '오버프로네이션을 잡아주는 서포트 슈즈',
     href: '/shoes?category=daily',
     color: '#38BDF8',
-    imageSlug: 'pegasus-41',
+    imageSlug: 'gel-kayano-32',
   },
   {
     title: '데일리',
