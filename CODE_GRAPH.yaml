@@ -1,7 +1,7 @@
 # CODE_GRAPH.yaml — Committed to git, treated like README
 metadata:
   generated_at: "2026-02-19T00:00:00Z"
-  last_synced_at: "2026-02-19T00:00:00Z"
+  last_synced_at: "2026-02-19T09:00:00Z"
   root_dir: "."
   tech_stack: ["TypeScript", "Next.js 14", "React 18", "Tailwind CSS v3", "Recharts", "Framer Motion"]
   architecture_pattern: "layered"
@@ -18,7 +18,7 @@ modules:
         exports:
           - name: "Shoe"
             signature: "interface Shoe"
-            description: "Full shoe record: id, brandId, categoryId (daily|super-trainer|racing), specs, pros/cons/bestFor, slug, officialUrl"
+            description: "Full shoe record: id, brandId, categoryId (daily|super-trainer|racing), specs, pros/cons/bestFor, slug, officialUrl, confidence (high|medium|low)"
           - name: "Brand"
             signature: "interface Brand"
             description: "Brand metadata: id, name, nameKo, logo, color, description"
@@ -37,6 +37,7 @@ modules:
     constraints:
       - "categoryId is a union literal: 'daily' | 'super-trainer' | 'racing' — never a free string"
       - "imageUrl in JSON is relative to /shoes/ (e.g. /shoes/pegasus-41.webp); components prepend /images to get public path"
+      - "confidence is optional ('high'|'medium'|'low'); populated by scripts/add_confidence.py from checkpoint.json"
     data_flow: "Defined once, imported by lib/data and every component that accepts Shoe or Brand props"
     error_patterns: []
     test_location: "none"
@@ -79,7 +80,10 @@ modules:
     error_patterns:
       - "Returns undefined (not throws) when slug not found; callers call notFound()"
     test_location: "none"
-    notes: "data/brands/puma.json and saucony.json had unescaped ASCII double-quotes fixed to Unicode curly quotes (\u201c\u201d) during initial setup"
+    notes: |
+      data/brands/puma.json and saucony.json had unescaped ASCII double-quotes fixed to Unicode curly quotes during initial setup.
+      All 86 shoes now have a 'confidence' field injected by scripts/add_confidence.py (reads research/2026-02-18/checkpoint.json).
+      shortDescriptions are all unique (rewritten 2026-02-19); avoid reusing category-level templates.
 
   app-layout:
     description: "Root Next.js App Router layout: global metadata, Google Fonts (Bebas Neue + Outfit), fixed nav, footer"
@@ -93,7 +97,7 @@ modules:
             description: "Site-wide OG/SEO metadata with metadataBase https://runpick.vercel.app"
           - name: "RootLayout"
             signature: "default function RootLayout"
-            description: "Wraps all pages; renders fixed header (RUNPICK logo + 탐색 link) and footer"
+            description: "Wraps all pages; renders fixed header (RUNPICK logo + 탐색 link) and footer (includes '점수 산정 방법' link to /methodology)"
       - path: "app/globals.css"
         role: "config"
         exports: []
@@ -118,19 +122,20 @@ modules:
         exports:
           - name: "HomePage"
             signature: "default function HomePage()"
-            description: "Server component; PURPOSE_CARDS constant defines 4 hardcoded category links with imageSlug references"
+            description: "Server component; PURPOSE_CARDS defines 3 category links (daily=novablast-5, super-trainer, racing); featured = confidence=high shoes sorted by total spec score, top 8"
       - path: "components/HeroSection.tsx"
         role: "core-logic"
         exports:
           - name: "HeroSection"
             signature: "default function HeroSection()"
-            description: "100vh full-bleed hero; falls back to first shoe if 'vaporfly-4' slug not found"
+            description: "100vh full-bleed hero; 12-shoe checker grid background (CHECKER_SLUGS hardcoded)"
     dependencies:
       internal: ["lib-data", "components-display"]
       external: ["next/link", "next/image"]
     constraints:
       - "PURPOSE_CARDS.imageSlug values must match existing shoe slugs or the card renders without an image"
-      - "Featured grid = first 8 shoes from getAllShoes() — reflects brand import order in lib/data"
+      - "Featured grid = top 8 shoes filtered by confidence==='high', sorted by cushioning+responsiveness+stability+durability desc"
+      - "Dailly PURPOSE_CARD imageSlug is 'novablast-5'"
     data_flow: "getAllShoes() + getBrands() → JSX render"
     error_patterns: []
     test_location: "none"
@@ -193,13 +198,13 @@ modules:
         exports:
           - name: "ShoeCard"
             signature: "default function ShoeCard({ shoe, priority? })"
-            description: "aspect-[3/4] card with hover slide-up overlay; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
+            description: "aspect-[3/4] card with hover slide-up overlay; confidence badge (top-right: 검증됨/참고용/평가중); price in text-primary; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
       - path: "components/HeroSection.tsx"
         role: "core-logic"
         exports:
           - name: "HeroSection"
             signature: "default function HeroSection()"
-            description: "Full-bleed 100vh hero with FIND YOUR RUN headline and CTA to /shoes"
+            description: "Full-bleed 100vh hero with 12-shoe 3×4 checker grid background (opacity 0.25, stagger by column); FIND YOUR RUN headline and CTA to /shoes"
       - path: "components/RelatedShoes.tsx"
         role: "core-logic"
         exports:
@@ -212,6 +217,8 @@ modules:
     constraints:
       - "imageUrl from JSON starts with /shoes/ — components prepend /images to resolve to public/images/shoes/"
       - "ShoeCard specColors map must be kept in sync with Tailwind config spec-* color aliases"
+      - "ShoeCard confidence badge: high=green (검증됨), medium=yellow (참고용), low/undefined=gray (평가중); badge omitted if confidence is undefined"
+      - "CHECKER_SLUGS in HeroSection: hardcoded list of 12 slugs — must exist in public/images/shoes/*.webp"
     data_flow: "Shoe prop → JSX (no client state)"
     error_patterns: []
     test_location: "none"
@@ -295,6 +302,46 @@ modules:
     test_location: "none"
     notes: ""
 
+  app-methodology:
+    description: "Static methodology explanation page for end users: data sources, scoring formula, confidence levels, limitations"
+    entry_point: "app/methodology/page.tsx"
+    key_files:
+      - path: "app/methodology/page.tsx"
+        role: "core-logic"
+        exports:
+          - name: "MethodologyPage"
+            signature: "default function MethodologyPage()"
+            description: "Server component; 5 sections: data sources, spec scoring, confidence levels, limitations; Korean; linked from footer"
+    dependencies:
+      internal: []
+      external: ["next/link"]
+    constraints:
+      - "No data dependencies — fully static content"
+      - "Linked from app/layout.tsx footer as '점수 산정 방법'"
+    data_flow: "Static — no getAllShoes() call"
+    error_patterns: []
+    test_location: "none"
+    notes: "Companion technical doc at docs/METHODOLOGY.md"
+
+  scripts:
+    description: "Python utility scripts for data maintenance"
+    entry_point: "scripts/add_confidence.py"
+    key_files:
+      - path: "scripts/add_confidence.py"
+        role: "core-logic"
+        exports: []
+    dependencies:
+      internal: []
+      external: ["python3 stdlib (json, pathlib)"]
+    constraints:
+      - "Reads research/2026-02-18/checkpoint.json; key format is '{brandId}/{slug}'"
+      - "Writes confidence field to data/brands/*.json in-place"
+      - "Default confidence is 'low' when checkpoint entry is missing"
+    data_flow: "checkpoint.json → data/brands/*.json (in-place mutation)"
+    error_patterns: []
+    test_location: "none"
+    notes: "Run after adding new shoes to checkpoint.json to keep confidence fields in sync"
+
   app-seo:
     description: "Auto-generated sitemap.xml and robots.txt via Next.js Metadata API"
     entry_point: "app/sitemap.ts"
@@ -350,6 +397,8 @@ dependency_graph:
   app-shoes-detail: ["lib-data", "components-charts", "components-display"]
   app-seo: ["lib-data"]
   app-layout: []
+  app-methodology: []
+  scripts: []
   components-browser: ["lib-types", "components-display", "components-filters"]
   components-display: ["lib-types"]
   components-filters: ["lib-types"]
