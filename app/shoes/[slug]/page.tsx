@@ -141,7 +141,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 <ul className="space-y-2">
                   {shoe.pros.map((pro, i) => (
                     <li key={i} className="flex gap-2 text-xs font-body text-secondary">
-                      <span className="text-spec-response mt-0.5 shrink-0">+</span>
+                      <span className="text-spec-response mt-1 shrink-0">+</span>
                       {pro}
                     </li>
                   ))}
@@ -154,7 +154,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 <ul className="space-y-2">
                   {shoe.cons.map((con, i) => (
                     <li key={i} className="flex gap-2 text-xs font-body text-secondary">
-                      <span className="text-spec-durability mt-0.5 shrink-0">−</span>
+                      <span className="text-spec-durability mt-1 shrink-0">−</span>
                       {con}
                     </li>
                   ))}
@@ -172,7 +172,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
               {shoe.bestFor.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-xs font-body px-3 py-1.5 bg-accent/10 text-accent border border-accent/20"
+                  className="text-xs font-body px-3 py-2 bg-accent/10 text-accent border border-accent/20"
                 >
                   {tag}
                 </span>
@@ -190,7 +190,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 {shoe.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-xs font-body px-3 py-1.5 bg-elevated text-secondary border border-elevated"
+                    className="text-xs font-body px-3 py-2 bg-elevated text-secondary border border-elevated"
                   >
                     {tech}
                   </span>

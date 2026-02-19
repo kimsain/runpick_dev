@@ -152,7 +152,7 @@ export default function MethodologyPage() {
                 <h3 className="font-body text-primary font-bold text-base">
                   {source.name}
                 </h3>
-                <span className="text-xs font-body text-accent bg-accent/10 px-2 py-0.5">
+                <span className="text-xs font-body text-accent bg-accent/10 px-2 py-1">
                   {source.type}
                 </span>
               </div>

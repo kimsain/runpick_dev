@@ -102,7 +102,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               <button
                 key={c.id}
                 onClick={() => updateParam('category', c.id === 'all' ? '' : c.id)}
-                className={`text-xs font-body px-3 py-1.5 border transition-colors min-h-[44px] flex items-center ${
+                className={`text-xs font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center ${
                   category === c.id
                     ? 'border-accent text-accent bg-accent/10'
                     : 'border-elevated text-secondary hover:border-secondary'
@@ -137,7 +137,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   }`}
                 >
                   {selectedBrands.includes(brand.id) && (
-                    <svg className="w-2.5 h-2.5 text-base" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-3 h-3 text-base" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                     </svg>
                   )}
