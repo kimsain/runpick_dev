@@ -31,7 +31,7 @@
           "heel": 37,
           "forefoot": 27
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 9
       },
       "pros": [
@@ -72,11 +72,11 @@
       "subcategoryId": "max-cushion",
       "price": 179000,
       "priceFormatted": "₩179,000",
-      "description": "보메로 18은 '발을 구름 위에 올려놓는' 맥스 쿠셔닝 데일리화야. ZoomX 위에 ReactX가 받쳐주는 듀얼 폼 구조라 힐 착지가 정말 부드럽고, 44mm 스택 덕분에 장거리 이지런에서도 발바닥 피로가 적어. 힐 충격 흡수 147 SA로 관절 보호가 뛰어나지만, 298g으로 좀 무겁고 전족부 반발력은 기대 이하라 빠른 페이스에서는 답답할 수 있어.",
+      "description": "보메로 18은 '발을 구름 위에 올려놓는' 맥스 쿠셔닝 데일리화야. ZoomX 위에 ReactX가 받쳐주는 듀얼 폼 구조라 힐 착지가 정말 부드럽고, 44mm 스택 덕분에 장거리 이지런에서도 발바닥 피로가 적어. 힐 충격 흡수 147 SA로 관절 보호가 뛰어나지만, 325g으로 좀 무겁고 전족부 반발력은 기대 이하라 빠른 페이스에서는 답답할 수 있어.",
       "shortDescription": "ZoomX + ReactX 듀얼 폼의 44mm 맥스 쿠셔닝 데일리",
       "imageUrl": "/shoes/vomero-18.webp",
       "specs": {
-        "weight": 298,
+        "weight": 325,
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 6,
@@ -86,7 +86,7 @@
           "heel": 44,
           "forefoot": 34
         },
-        "weightScore": 2,
+        "weightScore": 1,
         "valueScore": 9
       },
       "pros": [
@@ -140,7 +140,7 @@
           "heel": 43,
           "forefoot": 33
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 7
       },
       "pros": [
@@ -178,11 +178,11 @@
       "subcategoryId": "max-cushion",
       "price": 289000,
       "priceFormatted": "₩289,000",
-      "description": "보메로 프리미엄은 나이키 러닝화 중 가장 극단적인 쿠셔닝을 경험할 수 있는 신발이야. 55mm 스택에 Air Zoom 유닛이 4개나 들어가서 착지할 때 '반중력' 느낌이 나고, 힐 충격 흡수 173 SA로 관절 보호가 압도적이야. 밀어낼 때 바운스도 독특한데, 329g으로 무거워서 빠르게 달리기엔 부담이고 이지런·회복 러닝 전용으로 생각하는 게 좋아.",
+      "description": "보메로 프리미엄은 나이키 러닝화 중 가장 극단적인 쿠셔닝을 경험할 수 있는 신발이야. 55mm 스택에 Air Zoom 유닛이 4개나 들어가서 착지할 때 '반중력' 느낌이 나고, 힐 충격 흡수 173 SA로 관절 보호가 압도적이야. 밀어낼 때 바운스도 독특한데, 351g으로 무거워서 빠르게 달리기엔 부담이고 이지런·회복 러닝 전용으로 생각하는 게 좋아.",
       "shortDescription": "Air Zoom 4개 탑재 55mm 스택, 나이키 최강 쿠셔닝 데일리",
       "imageUrl": "/shoes/vomero-premium.webp",
       "specs": {
-        "weight": 329,
+        "weight": 351,
         "drop": 10,
         "cushioning": 8,
         "responsiveness": 8,
@@ -201,7 +201,7 @@
         "55mm 스택인데 베이스가 넓어서 생각보다 안 흔들려"
       ],
       "cons": [
-        "329g이라 이지런 외에는 무겁게 느껴져서 속도 내기 어려움",
+        "351g이라 이지런 외에는 무겁게 느껴져서 속도 내기 어려움",
         "에너지 리턴 63~64%로 가격(28만원대) 대비 반발력은 기대 이하"
       ],
       "bestFor": [
@@ -299,7 +299,7 @@
           "heel": 42,
           "forefoot": 32
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 8
       },
       "pros": [
@@ -354,7 +354,7 @@
           "heel": 30,
           "forefoot": 22
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 10
       },
       "pros": [
@@ -463,7 +463,7 @@
           "heel": 40,
           "forefoot": 32
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 8
       },
       "pros": [
@@ -504,11 +504,11 @@
       "subcategoryId": "half",
       "price": 219000,
       "priceFormatted": "₩219,000",
-      "description": "스트릭플라이 2는 '로드 위의 트랙 스파이크'라 불리는 초경량 단거리 레이싱화야. 130g밖에 안 되는데 에너지 리턴이 78%나 돼서 밟을수록 앞으로 치고 나가는 느낌이 강해. 드롭 4mm에 스파이크 라스트 기반이라 전족부 착지 러너에게 최적화돼 있어. 쿠셔닝이 거의 없어서 5K 넘으면 종아리에 부담이 확 오니까 단거리 전용으로 써야 해.",
-      "shortDescription": "ZoomX 130g 초경량, 로드 위의 트랙 스파이크 단거리 레이서",
+      "description": "스트릭플라이 2는 '로드 위의 트랙 스파이크'라 불리는 초경량 단거리 레이싱화야. 144g밖에 안 되는데 에너지 리턴이 78%나 돼서 밟을수록 앞으로 치고 나가는 느낌이 강해. 드롭 4mm에 스파이크 라스트 기반이라 전족부 착지 러너에게 최적화돼 있어. 쿠셔닝이 거의 없어서 5K 넘으면 종아리에 부담이 확 오니까 단거리 전용으로 써야 해.",
+      "shortDescription": "ZoomX 144g 초경량, 로드 위의 트랙 스파이크 단거리 레이서",
       "imageUrl": "/shoes/streakfly-2.webp",
       "specs": {
-        "weight": 130,
+        "weight": 144,
         "drop": 4,
         "cushioning": 3,
         "responsiveness": 10,
@@ -518,11 +518,11 @@
           "heel": 27,
           "forefoot": 23
         },
-        "weightScore": 10,
+        "weightScore": 9,
         "valueScore": 3
       },
       "pros": [
-        "130g이라 발에 아무것도 안 신은 것 같은 경량감",
+        "144g이라 발에 아무것도 안 신은 것 같은 경량감",
         "에너지 리턴 78%로 슈퍼슈즈급 반발력이 있어서 속도가 잘 붙어",
         "와플 아웃솔이라 젖은 노면에서도 미끄러짐 없이 접지력이 좋아"
       ],
@@ -557,11 +557,11 @@
       "subcategoryId": "half",
       "price": 309000,
       "priceFormatted": "₩309,000",
-      "description": "베이퍼플라이 4는 슈퍼슈즈의 원조답게 '빠를수록 빛나는' 레이싱화야. 167g으로 역대 가장 가볍고, 카본 Flyplate 각도가 20도로 올라가면서 추진력이 더 공격적이 됐어. 에너지 리턴 78%에 전작보다 스택이 낮아져서 접지감도 좋아졌고, 전족부 착지 러너에게 특히 효율이 높아. 5K~하프에서 최고의 무기이고, 65kg 이하 가벼운 러너라면 풀마라톤도 충분히 커버돼.",
-      "shortDescription": "ZoomX 167g 역대 최경량, 에너지 리턴 78% 원조 카본 레이서",
+      "description": "베이퍼플라이 4는 슈퍼슈즈의 원조답게 '빠를수록 빛나는' 레이싱화야. 184g으로 역대 가장 가볍고, 카본 Flyplate 각도가 20도로 올라가면서 추진력이 더 공격적이 됐어. 에너지 리턴 78%에 전작보다 스택이 낮아져서 접지감도 좋아졌고, 전족부 착지 러너에게 특히 효율이 높아. 5K~하프에서 최고의 무기이고, 65kg 이하 가벼운 러너라면 풀마라톤도 충분히 커버돼.",
+      "shortDescription": "ZoomX 184g 역대 최경량, 에너지 리턴 78% 원조 카본 레이서",
       "imageUrl": "/shoes/vaporfly-4.webp",
       "specs": {
-        "weight": 167,
+        "weight": 184,
         "drop": 6,
         "cushioning": 5,
         "responsiveness": 10,
@@ -575,7 +575,7 @@
         "valueScore": 3
       },
       "pros": [
-        "167g으로 역대 가장 가벼워서 발이 거의 안 느껴질 정도",
+        "184g으로 역대 가장 가벼워서 발이 거의 안 느껴질 정도",
         "에너지 리턴 78%에 접지감까지 좋아져서 빠를수록 효율이 올라가",
         "카본 Flyplate 각도 20도로 토오프 때 공격적인 추진력"
       ],

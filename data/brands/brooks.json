@@ -31,7 +31,7 @@
           "heel": 36.2,
           "forefoot": 25.8
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 9
       },
       "pros": [
@@ -72,11 +72,11 @@
       "subcategoryId": "lightweight",
       "price": 189000,
       "priceFormatted": "₩189,000",
-      "description": "Hyperion 3는 플레이트나 별도 보강재 없이 233g을 달성한 브룩스의 경량 템포 트레이너야. DNA Flash 폼만으로 에너지 리턴 56~74% 수준을 뽑아내서 자연스러운 발 움직임을 유지하면서도 속도를 올릴 수 있어. 발이 지면에 착지할 때 과하게 튕기는 느낌 없이 흐름이 부드러워서 인터벌보다는 템포런과 편안한 스피드 훈련에 딱 맞아. 다만 스택이 36.5/25.2mm로 얕은 편이라 30km 넘는 장거리에서는 발바닥 피로가 쌓일 수 있어.",
-      "shortDescription": "233g DNA Flash 폼, 플레이트 없이 자연스러운 경량 템포화",
+      "description": "Hyperion 3는 플레이트나 별도 보강재 없이 244g을 달성한 브룩스의 경량 템포 트레이너야. DNA Flash 폼만으로 에너지 리턴 56~74% 수준을 뽑아내서 자연스러운 발 움직임을 유지하면서도 속도를 올릴 수 있어. 발이 지면에 착지할 때 과하게 튕기는 느낌 없이 흐름이 부드러워서 인터벌보다는 템포런과 편안한 스피드 훈련에 딱 맞아. 다만 스택이 36.5/25.2mm로 얕은 편이라 30km 넘는 장거리에서는 발바닥 피로가 쌓일 수 있어.",
+      "shortDescription": "244g DNA Flash 폼, 플레이트 없이 자연스러운 경량 템포화",
       "imageUrl": "/shoes/hyperion-3.png",
       "specs": {
-        "weight": 233,
+        "weight": 244,
         "drop": 8,
         "cushioning": 4,
         "responsiveness": 6,
@@ -90,7 +90,7 @@
         "valueScore": 7
       },
       "pros": [
-        "플레이트 없이 233g이라 발이 자유롭게 움직이면서도 가벼워서 템포 훈련에서 발이 빠르게 돌아와",
+        "플레이트 없이 244g이라 발이 자유롭게 움직이면서도 가벼워서 템포 훈련에서 발이 빠르게 돌아와",
         "DNA Flash 폼이 착지-추진 전환이 매끄럽게 연결돼서 리듬 잡기가 쉬워",
         "데일리 훈련화보다 훨씬 가벼운데 쿠셔닝은 충분해서 매일 신어도 발이 안 피곤해"
       ],
@@ -131,7 +131,7 @@
       "shortDescription": "DNA Loft V3 로커 구조, 넓고 안정적인 맥스 스택 데일리 트레이너",
       "imageUrl": "/shoes/ghost-max-3.png",
       "specs": {
-        "weight": 318,
+        "weight": 303,
         "drop": 6,
         "cushioning": 5,
         "responsiveness": 5,
@@ -141,7 +141,7 @@
           "heel": 38.5,
           "forefoot": 31.2
         },
-        "weightScore": 1,
+        "weightScore": 2,
         "valueScore": 7
       },
       "pros": [
@@ -196,7 +196,7 @@
           "heel": 38.5,
           "forefoot": 28.2
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 6
       },
       "pros": [
@@ -251,7 +251,7 @@
           "heel": 38,
           "forefoot": 30
         },
-        "weightScore": 1,
+        "weightScore": 2,
         "valueScore": 6
       },
       "pros": [
@@ -306,7 +306,7 @@
           "heel": 45,
           "forefoot": 39
         },
-        "weightScore": 0,
+        "weightScore": 1,
         "valueScore": 5
       },
       "pros": [
@@ -361,7 +361,7 @@
           "heel": 40.9,
           "forefoot": 27.3
         },
-        "weightScore": 1,
+        "weightScore": 2,
         "valueScore": 8
       },
       "pros": [
@@ -416,7 +416,7 @@
           "heel": 45.6,
           "forefoot": 35
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 7
       },
       "pros": [

@@ -21,7 +21,7 @@
       "shortDescription": "NitroFoam 단일 구조의 경쾌한 반발력, NITRO 입문 데일리 훈련화",
       "imageUrl": "/shoes/velocity-nitro-4.webp",
       "specs": {
-        "weight": 227,
+        "weight": 245,
         "drop": 10,
         "cushioning": 5,
         "responsiveness": 9,
@@ -36,7 +36,7 @@
       },
       "pros": [
         "풀레이어 NitroFoam 단일 구조라 힐에서 포어풋까지 착지감이 균일하고 경쾌해",
-        "224g 가벼운 무게에 Pumagrip 아웃솔이라 이지런부터 빠른 템포런까지 여러 용도로 쓰기 편해",
+        "245g에 Pumagrip 아웃솔이라 이지런부터 빠른 템포런까지 여러 용도로 쓰기 편해",
         "16만원대 가격에 NITRO 폼 경험을 시작할 수 있는 라인업 최적 입문 포지션이야"
       ],
       "cons": [
@@ -86,7 +86,7 @@
           "heel": 46,
           "forefoot": 38
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 5
       },
       "pros": [
@@ -141,7 +141,7 @@
           "heel": 40,
           "forefoot": 30
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 7
       },
       "pros": [
@@ -182,11 +182,11 @@
       "subcategoryId": "stability",
       "price": 199000,
       "priceFormatted": "₩199,000",
-      "description": "ForeverRun NITRO 2는 RunGuide 기술로 TPU 포스트 대신 이중 밀도 NitroFoam으로 안정성을 구현한 291g 데일리야. 딱딱함 없이 발을 중심선으로 자연스럽게 유도하고, 힐 충격흡수 SA 139로 과내전 러너의 착지 피로를 줄여줘. 다만 291g은 안정화 중에서도 무거운 편이라 빠른 페이스 훈련에는 부담이 돼.",
+      "description": "ForeverRun NITRO 2는 RunGuide 기술로 TPU 포스트 대신 이중 밀도 NitroFoam으로 안정성을 구현한 283g 데일리야. 딱딱함 없이 발을 중심선으로 자연스럽게 유도하고, 힐 충격흡수 SA 139로 과내전 러너의 착지 피로를 줄여줘. 다만 291g은 안정화 중에서도 무거운 편이라 빠른 페이스 훈련에는 부담이 돼.",
       "shortDescription": "RunGuide 이중 밀도 NitroFoam, 뻣뻣함 없는 데일리 안정화",
       "imageUrl": "/shoes/foreverrun-nitro-2.webp",
       "specs": {
-        "weight": 295,
+        "weight": 283,
         "drop": 10,
         "cushioning": 5,
         "responsiveness": 7,
@@ -196,7 +196,7 @@
           "heel": 38,
           "forefoot": 28
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 7
       },
       "pros": [
@@ -205,7 +205,7 @@
         "1mm 이상의 아웃솔 내구성 덕분에 고볼륨 훈련에도 밑창 마모가 느려 오래 신을 수 있어"
       ],
       "cons": [
-        "291g 무게는 같은 안정화 카테고리에서도 무거운 편이라 5분/km 이하 빠른 페이스에서는 발이 무겁게 느껴져",
+        "283g 무게는 같은 안정화 카테고리에서도 무거운 편이라 5분/km 이하 빠른 페이스에서는 발이 무겁게 느껴져",
         "반발력이 60.5%로 낮아서 빠른 페이스를 원하는 러너가 신으면 추진력이 부족하게 느껴져"
       ],
       "bestFor": [
@@ -241,7 +241,7 @@
       "shortDescription": "NITRO ELITE PEBA + 카본 플레이트, 10mm 드롭 템포 트레이너",
       "imageUrl": "/shoes/deviate-nitro-3.webp",
       "specs": {
-        "weight": 250,
+        "weight": 268,
         "drop": 10,
         "cushioning": 5,
         "responsiveness": 7,
@@ -306,7 +306,7 @@
           "heel": 38,
           "forefoot": 30
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 6
       },
       "pros": [
@@ -351,7 +351,7 @@
       "shortDescription": "ATPU 폼 ER 85% 카본 플레이트, 5km~하프 공격적 레이서",
       "imageUrl": "/shoes/deviate-nitro-elite-3.webp",
       "specs": {
-        "weight": 194,
+        "weight": 209,
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 10,
@@ -361,7 +361,7 @@
           "heel": 40,
           "forefoot": 32
         },
-        "weightScore": 7,
+        "weightScore": 6,
         "valueScore": 4
       },
       "pros": [

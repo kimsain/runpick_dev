@@ -31,7 +31,7 @@
           "heel": 43.5,
           "forefoot": 35.5
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 7
       },
       "pros": [
@@ -86,7 +86,7 @@
           "heel": 46,
           "forefoot": 40
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 7
       },
       "pros": [
@@ -143,7 +143,7 @@
           "heel": 40,
           "forefoot": 32
         },
-        "weightScore": 1,
+        "weightScore": 2,
         "valueScore": 8
       },
       "pros": [
@@ -253,7 +253,7 @@
           "heel": 45,
           "forefoot": 37
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 7
       },
       "pros": [
@@ -309,7 +309,7 @@
           "heel": 46,
           "forefoot": 38
         },
-        "weightScore": 5,
+        "weightScore": 6,
         "valueScore": 5
       },
       "pros": [
@@ -626,11 +626,11 @@
       "subcategoryId": "full",
       "price": 329000,
       "priceFormatted": "₩329,000",
-      "description": "메타스피드 엣지 도쿄는 발 회전수를 높여 속도를 내는 케이던스형 러너를 위한 슈퍼슈야. Sky 도쿄와 반대로 카본 플레이트 위에 FF TURBO+, 아래에 FF LEAP를 배치하고, 스쿠프드 플레이트가 뒤꿈치에서 전족부로 빠르게 떨어지는 전환을 유도해. 160g으로 오르막에서 특히 효율적인데, 스트라이드형 러너에게는 보폭을 강제로 줄여서 안 맞아.",
-      "shortDescription": "스쿠프드 플레이트로 빠른 발 회전을 유도하는 케이던스형 전용 160g 카본 레이서",
+      "description": "메타스피드 엣지 도쿄는 발 회전수를 높여 속도를 내는 케이던스형 러너를 위한 슈퍼슈야. Sky 도쿄와 반대로 카본 플레이트 위에 FF TURBO+, 아래에 FF LEAP를 배치하고, 스쿠프드 플레이트가 뒤꿈치에서 전족부로 빠르게 떨어지는 전환을 유도해. 170g으로 오르막에서 특히 효율적인데, 스트라이드형 러너에게는 보폭을 강제로 줄여서 안 맞아.",
+      "shortDescription": "스쿠프드 플레이트로 빠른 발 회전을 유도하는 케이던스형 전용 170g 카본 레이서",
       "imageUrl": "/shoes/metaspeed-edge-tokyo.webp",
       "specs": {
-        "weight": 160,
+        "weight": 170,
         "drop": 5,
         "cushioning": 6,
         "responsiveness": 10,
@@ -646,7 +646,7 @@
       "pros": [
         "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해",
         "뒤꿈치 FF TURBO+라 Sky보다 힐 착지가 안정적이야",
-        "160g 초경량에 오르막에서 특히 효율적인 추진력"
+        "170g 초경량에 오르막에서 특히 효율적인 추진력"
       ],
       "cons": [
         "스트라이드형 러너에게는 짧은 보폭을 강제해서 맞지 않아",

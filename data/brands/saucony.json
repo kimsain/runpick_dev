@@ -18,10 +18,10 @@
       "price": 159000,
       "priceFormatted": "₩159,000",
       "description": "Ride 18는 TPU 기반 PWRRUN 폼(SA 141/116)과 아워글래스 플랫폼을 갖춘 데일리 워크호스야. 충격 흡수가 탄탄하고 착지에서 토오프까지 전환이 깔끔하며 에너지 리턴 80.7%로 가성비가 좋아. 이지런부터 10km 템포까지 두루 쓸 수 있지만, PEBA 폼에 익숙한 러너에게는 통통 튀는 느낌보다 묵직한 라이드로 느껴질 수 있어.",
-      "shortDescription": "PWRRUN TPU 폼 275g, 안정적인 착지·전환의 데일리 워크호스",
+      "shortDescription": "PWRRUN TPU 폼 259g, 안정적인 착지·전환의 데일리 워크호스",
       "imageUrl": "/shoes/ride-18.webp",
       "specs": {
-        "weight": 275,
+        "weight": 259,
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 7,
@@ -31,13 +31,13 @@
           "heel": 37,
           "forefoot": 29
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 9
       },
       "pros": [
         "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해",
         "아워글래스 플랫폼이라 미드풋 착지에서 자연스럽게 토오프로 넘어가는 전환감이 깔끔해",
-        "275g에 에너지 리턴 80%대라 이 가격대 데일리화 중 가성비가 좋아"
+        "259g에 에너지 리턴 80%대라 이 가격대 데일리화 중 가성비가 좋아"
       ],
       "cons": [
         "PEBA 폼 트레이너에 익숙한 러너는 PWRRUN의 TPU 질감이 상대적으로 무겁고 덜 바운시하게 느껴질 수 있어",
@@ -141,7 +141,7 @@
           "heel": 37,
           "forefoot": 27
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 8
       },
       "pros": [
@@ -196,7 +196,7 @@
           "heel": 35,
           "forefoot": 29
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 9
       },
       "pros": [
@@ -251,7 +251,7 @@
           "heel": 38,
           "forefoot": 32
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 8
       },
       "pros": [
@@ -306,7 +306,7 @@
           "heel": 33,
           "forefoot": 25
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 8
       },
       "pros": [
@@ -361,7 +361,7 @@
           "heel": 39.5,
           "forefoot": 31.5
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 6
       },
       "pros": [
@@ -416,7 +416,7 @@
           "heel": 40,
           "forefoot": 32
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 8
       },
       "pros": [
@@ -526,7 +526,7 @@
           "heel": 39.5,
           "forefoot": 31.5
         },
-        "weightScore": 6,
+        "weightScore": 7,
         "valueScore": 3
       },
       "pros": [
@@ -636,7 +636,7 @@
           "heel": 39.5,
           "forefoot": 31.5
         },
-        "weightScore": 6,
+        "weightScore": 7,
         "valueScore": 4
       },
       "pros": [
