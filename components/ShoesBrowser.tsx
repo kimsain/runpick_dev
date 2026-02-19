@@ -38,6 +38,11 @@ export default function ShoesBrowser({
       result = result.filter((s) => s.categoryId === category)
     }
 
+    const subcategory = searchParams.get('subcategory')
+    if (subcategory) {
+      result = result.filter((s) => s.subcategoryId === subcategory)
+    }
+
     const maxPrice = searchParams.get('maxPrice')
     if (maxPrice) {
       result = result.filter((s) => s.price <= Number(maxPrice))

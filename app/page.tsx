@@ -8,7 +8,7 @@ const PURPOSE_CARDS = [
   {
     title: '안정화',
     desc: '오버프로네이션을 잡아주는 서포트 슈즈',
-    href: '/shoes?category=daily',
+    href: '/shoes?subcategory=stability',
     color: '#38BDF8',
     imageSlug: 'gel-kayano-32',
   },
