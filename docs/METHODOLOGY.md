@@ -47,21 +47,31 @@ normalized = ((raw - range_min) / (range_max - range_min)) * 10
 2. 복수 소스가 있으면 산술 평균 적용.
 3. 단일 소스만 있으면 해당 점수를 그대로 사용하되 신뢰도를 `low`로 설정.
 
+### 정성 리뷰 보정 / Qualitative Correction
+
+실측 데이터 유무와 관계없이 Stability, Durability에 정성 리뷰 키워드 분석 결과를 ±1 보정합니다.
+
+- **Stability +1**: stable, stiff, firm, supportive, stability 언급
+- **Stability -1**: unstable, wobbly, sloppy 언급
+- **Durability +1**: durable, long-lasting, holds up, outsole wear 포지티브 언급
+- **Durability -1**: wears fast, breaks down, poor durability 언급
+
 ## 신뢰도 등급 / Confidence Levels
 
-각 신발의 데이터 출처 수와 실측 데이터 유무에 따라 3단계로 구분:
+각 신발의 데이터 출처 수와 실측 데이터 유무에 따라 4단계로 구분:
 
 | 등급 | 영문 | 기준 |
 |------|------|------|
-| 검증됨 | `high` | 3개 이상 소스에서 실측 데이터 확인 (RunRepeat 또는 RTINGS + 2개 이상 전문가 리뷰) |
-| 참고용 | `medium` | 1–2개 소스 또는 일부 실측 데이터 |
-| 평가중 | `low` | 단일 소스 또는 제한적 데이터 (1개 소스만 confirmed) |
+| 최고 신뢰 | `very-high` | RunRepeat found AND RTINGS found |
+| 검증됨 | `high` | (RunRepeat OR RTINGS) found AND 정성 리뷰 1개 이상 found/partial |
+| 참고용 | `medium` | RunRepeat/RTINGS 모두 없음 AND 정성 리뷰 2개 이상 found/partial |
+| 평가중 | `low` | 그 외 (정성 리뷰 1개 이하) |
 
 ### 데이터 타입
 
 ```typescript
 // lib/types.ts
-confidence?: 'high' | 'medium' | 'low'
+confidence?: 'very-high' | 'high' | 'medium' | 'low'
 ```
 
 ## 스크립트 사용법 / Script Usage

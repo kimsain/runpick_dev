@@ -165,7 +165,7 @@
       ],
       "slug": "fresh-foam-x-more-v6",
       "officialUrl": "https://www.newbalance.com/pd/fresh-foam-x-more-v6/MMORV6-50399.html",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "fuelcell-rebel-v5",
@@ -185,7 +185,7 @@
         "cushioning": 7,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
@@ -235,8 +235,8 @@
       "specs": {
         "weight": 220,
         "drop": 6,
-        "cushioning": 8,
-        "responsiveness": 6,
+        "cushioning": 5,
+        "responsiveness": 7,
         "stability": 6,
         "durability": 6,
         "stackHeight": {
@@ -271,7 +271,7 @@
       ],
       "slug": "fuelcell-propel-v5",
       "officialUrl": "https://www.newbalance.com/pd/fuelcell-propel-v5/MFCPRV5-46570.html",
-      "confidence": "medium"
+      "confidence": "very-high"
     },
     {
       "id": "fuelcell-sc-elite-v5",

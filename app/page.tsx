@@ -32,7 +32,7 @@ export default function HomePage() {
   const allShoes = getAllShoes()
   const brands = getBrands()
   const featured = allShoes
-    .filter(s => s.confidence === 'high')
+    .filter(s => s.confidence === 'very-high' || s.confidence === 'high')
     .sort((a, b) => {
       const scoreA = a.specs.cushioning + a.specs.responsiveness + a.specs.stability + a.specs.durability
       const scoreB = b.specs.cushioning + b.specs.responsiveness + b.specs.stability + b.specs.durability

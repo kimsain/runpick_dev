@@ -23,9 +23,9 @@
       "specs": {
         "weight": 275,
         "drop": 8,
-        "cushioning": 8,
-        "responsiveness": 5,
-        "stability": 8,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 42,
@@ -59,7 +59,7 @@
       ],
       "slug": "clifton-10",
       "officialUrl": "https://www.hoka.com/en/us/road-running/clifton-10/1162030.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "bondi-9",
@@ -76,9 +76,9 @@
       "specs": {
         "weight": 297,
         "drop": 5,
-        "cushioning": 8,
-        "responsiveness": 6,
-        "stability": 7,
+        "cushioning": 6,
+        "responsiveness": 7,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 43,
@@ -112,7 +112,7 @@
       ],
       "slug": "bondi-9",
       "officialUrl": "https://www.hoka.com/en/us/road-running/bondi-9/1162011.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "arahi-8",
@@ -129,9 +129,9 @@
       "specs": {
         "weight": 264,
         "drop": 8,
-        "cushioning": 8,
+        "cushioning": 5,
         "responsiveness": 6,
-        "stability": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 41,
@@ -165,7 +165,7 @@
       ],
       "slug": "arahi-8",
       "officialUrl": "https://www.hoka.com/en/us/road-running/arahi-8/1168690.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "mach-x-3",
@@ -182,9 +182,9 @@
       "specs": {
         "weight": 289,
         "drop": 5,
-        "cushioning": 8,
-        "responsiveness": 7,
-        "stability": 6,
+        "cushioning": 6,
+        "responsiveness": 8,
+        "stability": 7,
         "durability": 6,
         "stackHeight": {
           "heel": 44,
@@ -218,7 +218,7 @@
       ],
       "slug": "mach-x-3",
       "officialUrl": "https://www.hoka.com/en/us/road-running/mach-x-3/1168720.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "cielo-x1-3-0",
@@ -288,8 +288,8 @@
       "specs": {
         "weight": 210,
         "drop": 7,
-        "cushioning": 8,
-        "responsiveness": 8,
+        "cushioning": 6,
+        "responsiveness": 10,
         "stability": 5,
         "durability": 6,
         "stackHeight": {
@@ -324,7 +324,7 @@
       ],
       "slug": "rocket-x-3",
       "officialUrl": "https://www.hoka.com/en/us/road-running/rocket-x-3/1168724.html",
-      "confidence": "high"
+      "confidence": "very-high"
     }
   ]
 }

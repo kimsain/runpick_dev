@@ -23,7 +23,7 @@
       "specs": {
         "weight": 258,
         "drop": 10,
-        "cushioning": 7,
+        "cushioning": 5,
         "responsiveness": 5,
         "stability": 8,
         "durability": 6,
@@ -59,7 +59,7 @@
       ],
       "slug": "wave-rider-29",
       "officialUrl": "https://usa.mizuno.com/running-wave-rider-29-mens",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "wave-sky-9",
@@ -76,10 +76,10 @@
       "specs": {
         "weight": 284,
         "drop": 6,
-        "cushioning": 8,
-        "responsiveness": 5,
+        "cushioning": 6,
+        "responsiveness": 4,
         "stability": 10,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 44,
           "forefoot": 38
@@ -112,7 +112,7 @@
       ],
       "slug": "wave-sky-9",
       "officialUrl": "https://usa.mizuno.com/running-wave-sky-9-mens",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "neo-vista-2",
@@ -129,8 +129,8 @@
       "specs": {
         "weight": 267,
         "drop": 8,
-        "cushioning": 9,
-        "responsiveness": 6,
+        "cushioning": 7,
+        "responsiveness": 7,
         "stability": 4,
         "durability": 6,
         "stackHeight": {
@@ -165,7 +165,7 @@
       ],
       "slug": "neo-vista-2",
       "officialUrl": "https://usa.mizuno.com/running-mizuno-neo-vista-2-mens",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "neo-zen",
@@ -182,9 +182,9 @@
       "specs": {
         "weight": 240,
         "drop": 6,
-        "cushioning": 8,
-        "responsiveness": 7,
-        "stability": 3,
+        "cushioning": 6,
+        "responsiveness": 9,
+        "stability": 4,
         "durability": 6,
         "stackHeight": {
           "heel": 40,
@@ -218,7 +218,7 @@
       ],
       "slug": "neo-zen",
       "officialUrl": "https://usa.mizuno.com/running-mens-mizuno-neo-zen-running-shoe/",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "wave-rebellion-flash-3",
@@ -235,9 +235,9 @@
       "specs": {
         "weight": 244,
         "drop": 3,
-        "cushioning": 9,
-        "responsiveness": 7,
-        "stability": 7,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 37.5,
@@ -271,7 +271,7 @@
       ],
       "slug": "wave-rebellion-flash-3",
       "officialUrl": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "hyperwarp-pure",
@@ -291,7 +291,7 @@
         "cushioning": 8,
         "responsiveness": 8,
         "stability": 7,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 34,
           "forefoot": 30.5
@@ -324,7 +324,7 @@
       ],
       "slug": "hyperwarp-pure",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pure-running-shoe/",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "hyperwarp-elite",
@@ -377,7 +377,7 @@
       ],
       "slug": "hyperwarp-elite",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-elite-unisex",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "hyperwarp-pro",
@@ -430,7 +430,7 @@
       ],
       "slug": "hyperwarp-pro",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pro-unisex",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "id": "wave-rebellion-pro-3",
@@ -447,8 +447,8 @@
       "specs": {
         "weight": 218,
         "drop": 4,
-        "cushioning": 9,
-        "responsiveness": 7,
+        "cushioning": 7,
+        "responsiveness": 8,
         "stability": 5,
         "durability": 6,
         "stackHeight": {
@@ -483,7 +483,7 @@
       ],
       "slug": "wave-rebellion-pro-3",
       "officialUrl": "https://usa.mizuno.com/running-unisex-wave-rebellion-pro-3-running-shoe/",
-      "confidence": "high"
+      "confidence": "very-high"
     }
   ]
 }

@@ -75,25 +75,32 @@ const SPEC_ITEMS = [
 
 const CONFIDENCE_LEVELS = [
   {
+    label: '최고 신뢰',
+    labelEn: 'Verified',
+    badge: 'bg-blue-500/20 text-blue-400',
+    description:
+      'RunRepeat와 RTINGS 두 실측 측정 데이터가 모두 확인된 경우. 계측 장비 기반 데이터 2종과 전문가 리뷰를 종합한 최고 신뢰도입니다.',
+  },
+  {
     label: '검증됨',
     labelEn: 'High',
     badge: 'bg-green-500/20 text-green-400',
     description:
-      '3개 이상 소스에서 실측 데이터가 확인된 경우. RunRepeat 또는 RTINGS의 실측 데이터 + 2개 이상 전문가 리뷰가 존재합니다.',
+      'RunRepeat 또는 RTINGS 실측 데이터 + 전문가 리뷰 1개 이상이 확인된 경우.',
   },
   {
     label: '참고용',
     labelEn: 'Medium',
     badge: 'bg-yellow-500/20 text-yellow-400',
     description:
-      '1–2개 소스에서 데이터가 확인되거나, 일부 실측 데이터만 존재하는 경우.',
+      '실측 데이터 없이 전문가 리뷰 2개 이상이 확인된 경우.',
   },
   {
     label: '평가중',
     labelEn: 'Low',
     badge: 'bg-red-500/20 text-red-400',
     description:
-      '단일 소스에서만 데이터가 확인되거나, 제한적인 데이터만 존재하는 경우.',
+      '전문가 리뷰 1개 이하 또는 제한적인 데이터만 존재하는 경우.',
   },
 ]
 
@@ -157,8 +164,9 @@ export default function MethodologyPage() {
           4개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
-          각 스펙은 0–10점으로 정규화됩니다. 실측 장비 데이터가 있는 경우 이를
-          우선 적용하고, 없는 경우 전문가 리뷰 점수를 변환합니다.
+          각 스펙은 0–10점으로 정규화됩니다. 쿠션·반응은 실측 데이터(SA, ER%)를
+          최우선으로 적용하고, 안정·내구는 실측 기준값에 전문가 리뷰 키워드 분석
+          결과를 ±1 보정하여 반영합니다.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {SPEC_ITEMS.map((spec) => (
@@ -192,7 +200,7 @@ export default function MethodologyPage() {
           신뢰도 등급
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
-          수집된 데이터의 양과 출처 수에 따라 각 신발의 점수 신뢰도를 3단계로
+          수집된 데이터의 양과 출처 수에 따라 각 신발의 점수 신뢰도를 4단계로
           구분합니다.
         </p>
         <div className="space-y-4">

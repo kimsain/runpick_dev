@@ -23,9 +23,9 @@
       "specs": {
         "weight": 286,
         "drop": 10,
-        "cushioning": 7,
+        "cushioning": 5,
         "responsiveness": 6,
-        "stability": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 36.2,
@@ -59,7 +59,7 @@
       ],
       "slug": "ghost-17",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-17/110442.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "hyperion-3",
@@ -76,9 +76,9 @@
       "specs": {
         "weight": 233,
         "drop": 8,
-        "cushioning": 7,
+        "cushioning": 4,
         "responsiveness": 6,
-        "stability": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 36.5,
@@ -112,7 +112,7 @@
       ],
       "slug": "hyperion-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-3/110465.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "ghost-max-3",
@@ -129,9 +129,9 @@
       "specs": {
         "weight": 318,
         "drop": 6,
-        "cushioning": 8,
+        "cushioning": 5,
         "responsiveness": 5,
-        "stability": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 38.5,
@@ -165,7 +165,7 @@
       ],
       "slug": "ghost-max-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-3/110464.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "glycerin-22",
@@ -182,9 +182,9 @@
       "specs": {
         "weight": 289,
         "drop": 10,
-        "cushioning": 7,
+        "cushioning": 5,
         "responsiveness": 6,
-        "stability": 7,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 38.5,
@@ -218,7 +218,7 @@
       ],
       "slug": "glycerin-22",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-22/110445.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "glycerin-23",
@@ -344,7 +344,7 @@
         "cushioning": 6,
         "responsiveness": 5,
         "stability": 9,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 40.9,
           "forefoot": 27.3
@@ -394,9 +394,9 @@
       "specs": {
         "weight": 281,
         "drop": 6,
-        "cushioning": 8,
-        "responsiveness": 7,
-        "stability": 8,
+        "cushioning": 6,
+        "responsiveness": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 45.6,
@@ -430,7 +430,7 @@
       ],
       "slug": "hyperion-max-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-max-3/110467.html",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "hyperion-elite-5",
@@ -447,9 +447,9 @@
       "specs": {
         "weight": 196,
         "drop": 8,
-        "cushioning": 8,
-        "responsiveness": 8,
-        "stability": 6,
+        "cushioning": 6,
+        "responsiveness": 10,
+        "stability": 7,
         "durability": 6,
         "stackHeight": {
           "heel": 37.6,
@@ -483,7 +483,7 @@
       ],
       "slug": "hyperion-elite-5",
       "officialUrl": "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-5/100049.html",
-      "confidence": "high"
+      "confidence": "very-high"
     }
   ]
 }

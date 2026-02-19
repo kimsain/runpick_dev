@@ -35,16 +35,19 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (
           <div className={`absolute top-2 right-2 z-10 flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${
+            shoe.confidence === 'very-high' ? 'text-blue-400' :
             shoe.confidence === 'high' ? 'text-green-400' :
             shoe.confidence === 'medium' ? 'text-yellow-400' :
             'text-secondary'
           }`}>
             <span className={`w-1.5 h-1.5 rounded-full inline-block ${
+              shoe.confidence === 'very-high' ? 'bg-blue-400' :
               shoe.confidence === 'high' ? 'bg-green-400' :
               shoe.confidence === 'medium' ? 'bg-yellow-400' :
               'bg-secondary'
             }`} />
-            {shoe.confidence === 'high' ? '검증됨' :
+            {shoe.confidence === 'very-high' ? '최고 신뢰' :
+             shoe.confidence === 'high' ? '검증됨' :
              shoe.confidence === 'medium' ? '참고용' : '평가중'}
           </div>
         )}

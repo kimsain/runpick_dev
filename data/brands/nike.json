@@ -23,9 +23,9 @@
       "specs": {
         "weight": 281,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 5,
-        "stability": 6,
+        "cushioning": 4,
+        "responsiveness": 6,
+        "stability": 7,
         "durability": 8,
         "stackHeight": {
           "heel": 37,
@@ -59,7 +59,7 @@
       ],
       "slug": "pegasus-41",
       "officialUrl": "https://runrepeat.com/nike-pegasus-41",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "vomero-18",
@@ -76,10 +76,10 @@
       "specs": {
         "weight": 298,
         "drop": 10,
-        "cushioning": 9,
-        "responsiveness": 5,
-        "stability": 7,
-        "durability": 7,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 8,
+        "durability": 8,
         "stackHeight": {
           "heel": 44,
           "forefoot": 34
@@ -111,7 +111,7 @@
       ],
       "slug": "vomero-18",
       "officialUrl": "https://runrepeat.com/nike-vomero-18",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "vomero-plus",
@@ -123,14 +123,14 @@
       "price": 229000,
       "priceFormatted": "229,000원",
       "description": "보메로 플러스는 보메로 18보다 한 단계 더 바운시한 '뛰는 맛'이 있는 맥스 쿠셔닝화야. 풀렝스 ZoomX라서 착지하면 찰떡처럼 받아주고, 밀어낼 때는 에너지 리턴 68%로 은근 탄력 있게 나가. 이지런은 물론이고 가볍게 페이스 올려도 잘 따라와. 다만 토박스가 좁은 편이라 발볼 넓으면 불편할 수 있어.",
-      "shortDescription": "풀렝스 ZoomX의 바운시한 만능 쿠셔닝",
+      "shortDescription": "풀렝스 ZoomX의 바운시한 맥스 쿠셔닝 데일리",
       "imageUrl": "/shoes/vomero-plus.webp",
       "specs": {
         "weight": 281,
         "drop": 10,
-        "cushioning": 9,
-        "responsiveness": 6,
-        "stability": 7,
+        "cushioning": 6,
+        "responsiveness": 8,
+        "stability": 8,
         "durability": 7,
         "stackHeight": {
           "heel": 43,
@@ -161,7 +161,7 @@
       ],
       "slug": "vomero-plus",
       "officialUrl": "https://runrepeat.com/nike-vomero-plus",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "vomero-premium",
@@ -178,9 +178,9 @@
       "specs": {
         "weight": 329,
         "drop": 10,
-        "cushioning": 10,
-        "responsiveness": 5,
-        "stability": 9,
+        "cushioning": 8,
+        "responsiveness": 8,
+        "stability": 8,
         "durability": 8,
         "stackHeight": {
           "heel": 55,
@@ -213,7 +213,7 @@
       ],
       "slug": "vomero-premium",
       "officialUrl": "https://runrepeat.com/nike-vomero-premium",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "structure-26",
@@ -230,9 +230,9 @@
       "specs": {
         "weight": 298,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 4,
-        "stability": 7,
+        "cushioning": 5,
+        "responsiveness": 6,
+        "stability": 8,
         "durability": 8,
         "stackHeight": {
           "heel": 38,
@@ -264,7 +264,7 @@
       ],
       "slug": "structure-26",
       "officialUrl": "https://runrepeat.com/nike-structure-26",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "structure-plus",
@@ -276,7 +276,7 @@
       "price": 199000,
       "priceFormatted": "199,000원",
       "description": "스트럭처 플러스는 '안정화인데 쿠셔닝도 좋은' 걸 원하는 러너를 위한 신발이야. ZoomX + ReactX 듀얼 폼에 높은 사이드월이 붙어서 푹신하면서도 발이 안 흔들려. 42mm 스택인데도 안정감이 괜찮아서 장거리 이지런에 좋은데, 힐-토 트랜지션이 좀 뚝뚝 끊기는 게 아쉬운 점이야.",
-      "shortDescription": "ZoomX + 사이드월로 안정성과 쿠셔닝 동시에",
+      "shortDescription": "ZoomX + 사이드월의 맥스 쿠셔닝 안정화",
       "imageUrl": "/shoes/structure-plus.webp",
       "specs": {
         "weight": 295,
@@ -387,9 +387,9 @@
       "specs": {
         "weight": 238,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 7,
-        "stability": 7,
+        "cushioning": 4,
+        "responsiveness": 8,
+        "stability": 8,
         "durability": 7,
         "stackHeight": {
           "heel": 34,
@@ -422,7 +422,7 @@
       ],
       "slug": "pegasus-plus",
       "officialUrl": "https://runrepeat.com/nike-pegasus-plus",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "zoom-fly-6",
@@ -439,9 +439,9 @@
       "specs": {
         "weight": 244,
         "drop": 8,
-        "cushioning": 8,
-        "responsiveness": 7,
-        "stability": 9,
+        "cushioning": 5,
+        "responsiveness": 8,
+        "stability": 10,
         "durability": 8,
         "stackHeight": {
           "heel": 40,
@@ -475,7 +475,7 @@
       ],
       "slug": "zoom-fly-6",
       "officialUrl": "https://runrepeat.com/nike-zoom-fly-6",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "streakfly-2",
@@ -492,8 +492,8 @@
       "specs": {
         "weight": 130,
         "drop": 4,
-        "cushioning": 4,
-        "responsiveness": 9,
+        "cushioning": 3,
+        "responsiveness": 10,
         "stability": 2,
         "durability": 3,
         "stackHeight": {
@@ -526,7 +526,7 @@
       ],
       "slug": "streakfly-2",
       "officialUrl": "https://runrepeat.com/nike-streakfly-2",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "vaporfly-4",
@@ -543,9 +543,9 @@
       "specs": {
         "weight": 167,
         "drop": 6,
-        "cushioning": 7,
-        "responsiveness": 9,
-        "stability": 5,
+        "cushioning": 5,
+        "responsiveness": 10,
+        "stability": 6,
         "durability": 3,
         "stackHeight": {
           "heel": 35,
@@ -578,7 +578,7 @@
       ],
       "slug": "vaporfly-4",
       "officialUrl": "https://runrepeat.com/nike-vaporfly-4",
-      "confidence": "high"
+      "confidence": "very-high"
     },
     {
       "id": "alphafly-3",
@@ -595,9 +595,9 @@
       "specs": {
         "weight": 198,
         "drop": 8,
-        "cushioning": 8,
-        "responsiveness": 9,
-        "stability": 4,
+        "cushioning": 5,
+        "responsiveness": 10,
+        "stability": 5,
         "durability": 4,
         "stackHeight": {
           "heel": 40,
@@ -632,7 +632,7 @@
       ],
       "slug": "alphafly-3",
       "officialUrl": "https://runrepeat.com/nike-alphafly-3",
-      "confidence": "high"
+      "confidence": "very-high"
     }
   ]
 }
