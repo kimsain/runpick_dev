@@ -33,24 +33,31 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
     >
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
-        {shoe.confidence && (
-          <div className={`absolute top-2 right-2 z-10 flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${
-            shoe.confidence === 'very-high' ? 'text-blue-400' :
+        {shoe.confidence && (() => {
+          const colorClass = shoe.confidence === 'very-high' ? 'text-blue-400' :
             shoe.confidence === 'high' ? 'text-green-400' :
-            shoe.confidence === 'medium' ? 'text-yellow-400' :
-            'text-secondary'
-          }`}>
-            <span className={`w-1.5 h-1.5 rounded-full inline-block ${
-              shoe.confidence === 'very-high' ? 'bg-blue-400' :
-              shoe.confidence === 'high' ? 'bg-green-400' :
-              shoe.confidence === 'medium' ? 'bg-yellow-400' :
-              'bg-secondary'
-            }`} />
-            {shoe.confidence === 'very-high' ? '최고 신뢰' :
-             shoe.confidence === 'high' ? '검증됨' :
-             shoe.confidence === 'medium' ? '참고용' : '평가중'}
-          </div>
-        )}
+            shoe.confidence === 'medium' ? 'text-yellow-400' : 'text-secondary'
+          const dotClass = shoe.confidence === 'very-high' ? 'bg-blue-400' :
+            shoe.confidence === 'high' ? 'bg-green-400' :
+            shoe.confidence === 'medium' ? 'bg-yellow-400' : 'bg-secondary'
+          const label = shoe.confidence === 'very-high' ? 'VERIFIED' :
+            shoe.confidence === 'high' ? 'RELIABLE' :
+            shoe.confidence === 'medium' ? 'LIMITED' : 'PENDING'
+          const tooltipText = shoe.confidence === 'very-high' ? 'RunRepeat + RTINGS 실측 데이터 완비' :
+            shoe.confidence === 'high' ? '실측 데이터 + 전문가 리뷰 확인' :
+            shoe.confidence === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
+          return (
+            <div className="absolute top-2 right-2 z-10 group/badge">
+              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
+                <span className={`w-1.5 h-1.5 rounded-full inline-block ${dotClass}`} />
+                {label}
+              </div>
+              <div className="absolute top-full right-0 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-2.5 py-1.5 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
+                {tooltipText}
+              </div>
+            </div>
+          )
+        })()}
         <Image
           src={imagePath}
           alt={shoe.name}

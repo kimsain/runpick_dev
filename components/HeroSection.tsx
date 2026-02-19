@@ -85,9 +85,9 @@ export default function HeroSection() {
         </p>
         <Link
           href="/shoes"
-          className="inline-flex items-center gap-3 bg-accent text-base font-display text-xl px-8 py-4 hover:bg-accent/90 transition-colors min-h-[44px]"
+          className="inline-flex items-center gap-3 bg-accent text-base font-display text-xl px-6 py-4 hover:bg-accent/90 transition-colors min-h-[44px]"
         >
-          {totalCount}개 신발 탐색 →
+          신발 탐색 →
         </Link>
       </div>
     </section>
