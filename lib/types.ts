@@ -11,6 +11,8 @@ export interface Specs {
   stability: number
   durability: number
   stackHeight: StackHeight
+  weightScore?: number   // 0-10, 가벼울수록 높음
+  valueScore?: number    // 0-10, (쿠션+반응+안정+내구)÷가격 정규화
 }
 
 export interface Shoe {

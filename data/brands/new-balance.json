@@ -16,7 +16,7 @@
       "categoryId": "daily",
       "subcategoryId": "all-rounder",
       "price": 189000,
-      "priceFormatted": "₩164,000",
+      "priceFormatted": "₩189,000",
       "description": "880 v15는 NB 라인업에서 Rebel과 1080 사이 중간 포지션을 채우는 올라운더 데일리화야. Fresh Foam X 폼 2겹 구조로 39.4mm 힐 스택을 쌓으면서도 286.6g에 묶어뒀어. 쿠셔닝은 푹신하지 않고 탄탄하게 받쳐주는 타입이라 이지런부터 6분대 페이스까지 리듬이 잘 맞아. 다만 스택이 높아진 만큼 전작보다 무거워서 빠른 타임런에는 어울리지 않아.",
       "shortDescription": "Fresh Foam X 2겹 39mm 스택 287g, 탄탄한 반발의 올라운더 데일리",
       "imageUrl": "/shoes/fresh-foam-x-880v15.webp",
@@ -30,7 +30,9 @@
         "stackHeight": {
           "heel": 39.4,
           "forefoot": 32.1
-        }
+        },
+        "weightScore": 2,
+        "valueScore": 8
       },
       "pros": [
         "Fresh Foam X 2겹 구조가 힐 39.4mm 스택을 받쳐줘서 장거리에서도 착지 충격이 잘 분산돼",
@@ -69,7 +71,7 @@
       "categoryId": "daily",
       "subcategoryId": "max-cushion",
       "price": 209000,
-      "priceFormatted": "₩231,000",
+      "priceFormatted": "₩209,000",
       "description": "1080 v15는 NB 데일리 플래그십으로, 새로운 슈퍼크리티컬 폼 'Infinion'이 250.3g 가벼운 무게와 높은 쿠셔닝을 동시에 잡아줘. 38.4mm 힐 스택이 착지를 부드럽게 흡수하면서 자연스럽게 앞으로 굴려줘서 장거리 피로가 눈에 띄게 적어. 다만 Infinion은 반발보다 흡수 성향이 강해서 빠른 페이스에서는 탄력이 부족하게 느껴질 수 있어.",
       "shortDescription": "Infinion 슈퍼크리티컬 폼 38.4mm 250g, NB 프리미엄 데일리 플래그십",
       "imageUrl": "/shoes/fresh-foam-x-1080v15.webp",
@@ -83,7 +85,9 @@
         "stackHeight": {
           "heel": 38.4,
           "forefoot": 30.6
-        }
+        },
+        "weightScore": 4,
+        "valueScore": 7
       },
       "pros": [
         "Infinion 슈퍼크리티컬 폼 덕분에 맥스 쿠셔닝 급이면서 250.3g으로 가벼워 장거리에서 발이 안 무거워",
@@ -122,7 +126,7 @@
       "categoryId": "daily",
       "subcategoryId": "max-cushion",
       "price": 209000,
-      "priceFormatted": "₩233,000",
+      "priceFormatted": "₩209,000",
       "description": "More v6는 힐 41.8mm/포어풋 37.1mm 맥스스택에 4.7mm 극저드롭을 조합한 독특한 포지션의 맥스 쿠셔닝화야. 스택을 최대로 쌓으면서 드롭을 낮춰 전발 착지를 자연스럽게 유도하고, 전족부 에너지 리턴 71.2%로 이지런화치고는 탄성도 살아있어. 다만 302g으로 무거워서 언덕이나 고강도 훈련에는 부담이 돼.",
       "shortDescription": "Fresh Foam X 맥스스택 42/37mm 4.7mm 극저드롭, 전족부 ER 71% 데일리",
       "imageUrl": "/shoes/fresh-foam-x-more-v6.webp",
@@ -136,7 +140,9 @@
         "stackHeight": {
           "heel": 44,
           "forefoot": 40
-        }
+        },
+        "weightScore": 0,
+        "valueScore": 6
       },
       "pros": [
         "힐 41.8mm/전족부 37.1mm 맥스스택이 장거리 착지 충격을 일관되게 흡수해줘서 다리 피로가 늦게 와",
@@ -175,7 +181,7 @@
       "categoryId": "super-trainer",
       "subcategoryId": "no-plate",
       "price": 189000,
-      "priceFormatted": "₩249,000",
+      "priceFormatted": "₩189,000",
       "description": "Rebel v5는 카본 플레이트 없이 FuelCell PEBA 블렌드 폼과 미드솔 캐비티 구조로 전족부 에너지 리턴 75.2%를 끌어낸 227g 데일리 트레이너야. v5에서 스택이 +5mm 올라가 35/29mm가 되면서 쿠셔닝과 반발을 동시에 강화했어. Kinvara 특유의 경쾌한 발걸음 감각이 있어서 이지런부터 4~5분대 템포런까지 커버되지만, 측면 안정성이 낮아서 발목 약한 러너는 긴 거리에서 흔들릴 수 있어.",
       "shortDescription": "FuelCell PEBA 캐비티 ER 75% 227g, 플레이트 없이 바운시한 슈퍼 트레이너",
       "imageUrl": "/shoes/fuelcell-rebel-v5.webp",
@@ -189,7 +195,9 @@
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
-        }
+        },
+        "weightScore": 5,
+        "valueScore": 7
       },
       "pros": [
         "FuelCell PEBA 블렌드 폼이 전족부 에너지 리턴 75.2%를 내줘서 플레이트 없이도 착지 후 튕김이 분명해",
@@ -228,7 +236,7 @@
       "categoryId": "super-trainer",
       "subcategoryId": "light-plate",
       "price": 169000,
-      "priceFormatted": "₩213,000",
+      "priceFormatted": "₩169,000",
       "description": "Propel v5는 FuelCell 폼에 플레이트를 조합한 엔트리 FuelCell 트레이너야. 전족부 에너지 리턴 75.3%로 Rebel과 수치가 같지만, 플레이트 덕분에 착지-토오프 전환이 더 직선적으로 느껴져. 힐/전족부 쿠셔닝이 6.5/10으로 얇아서 30km 이상 장거리보다 5~10km 인터벌·페이스런에 잘 맞아.",
       "shortDescription": "FuelCell 폼 + 플레이트 ER 75%, 가성비 높은 엔트리 FuelCell 템포 트레이너",
       "imageUrl": "/shoes/fuelcell-propel-v5.webp",
@@ -242,7 +250,9 @@
         "stackHeight": {
           "heel": 37,
           "forefoot": 31
-        }
+        },
+        "weightScore": 5,
+        "valueScore": 8
       },
       "pros": [
         "FuelCell 폼 + 플레이트 조합이 전족부 에너지 리턴 75.3%를 내줘서 착지-토오프 전환이 군더더기 없어",
@@ -281,7 +291,7 @@
       "categoryId": "racing",
       "subcategoryId": "full",
       "price": 349000,
-      "priceFormatted": "₩390,000",
+      "priceFormatted": "₩349,000",
       "description": "SC Elite v5는 드롭을 4mm에서 8.9mm로 높이고 전족부 스택을 줄여 더 적극적인 카본 반응을 끌어낸 NB 탑 레이서야. 힐/전족부 에너지 리턴 84.8/84.6%에 전족부 가이던스 구조 덕분에 레이스 후반 피로해도 착지 안정성이 유지돼. 200.5g이지만 동급 A-TPU 레이서 대비 무게가 무거운 게 약점이야.",
       "shortDescription": "FuelCell 카본 ER 85% 8.9mm 드롭 200g, NB 최상위 풀마라톤 레이서",
       "imageUrl": "/shoes/fuelcell-sc-elite-v5.webp",
@@ -295,7 +305,9 @@
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
-        }
+        },
+        "weightScore": 6,
+        "valueScore": 3
       },
       "pros": [
         "FuelCell + 카본 플레이트 조합으로 힐/전족부 에너지 리턴 84.8/84.6%를 달성해서 카본화 중 상위권 반발력을 제공해",

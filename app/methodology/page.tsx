@@ -71,6 +71,22 @@ const SPEC_ITEMS = [
       '아웃솔 고무 마모도, 미드솔 변형, 장거리 착용 후 상태 등 내구성 관련 데이터를 종합합니다.',
     basis: '아웃솔 내구성 평가 0–10점',
   },
+  {
+    name: '무게',
+    nameEn: 'Weight',
+    color: 'var(--spec-weight)',
+    description:
+      '측정 무게(g) 기준. 가벼울수록 높은 점수. RunRepeat/RTINGS 실측 데이터 역정규화.',
+    basis: '전 모델 실측 무게 역정규화 0–10점',
+  },
+  {
+    name: '가성비',
+    nameEn: 'Value',
+    color: 'var(--spec-value)',
+    description:
+      '가격 대비 성능. (쿠션+반응+안정+내구) ÷ 가격 비율을 전 모델 대비 정규화.',
+    basis: '성능 합산 ÷ 가격 비율 정규화 0–10점',
+  },
 ]
 
 const CONFIDENCE_LEVELS = [
@@ -161,7 +177,7 @@ export default function MethodologyPage() {
       {/* 점수 산정 방식 */}
       <section className="mb-16">
         <h2 className="font-display text-2xl text-primary tracking-widest uppercase mb-8">
-          4개 스펙 점수
+          6개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
           각 스펙은 0–10점으로 정규화됩니다. 쿠션·반응은 실측 데이터(SA, ER%)를

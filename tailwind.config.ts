@@ -21,6 +21,8 @@ const config: Config = {
         "spec-response": "#c8ff00",
         "spec-stability": "#fbbf24",
         "spec-durability": "#f87171",
+        "spec-weight": "#a78bfa",
+        "spec-value": "#fb923c",
       },
       fontFamily: {
         display: ["Bebas Neue", "sans-serif"],

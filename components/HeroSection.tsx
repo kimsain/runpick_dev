@@ -3,24 +3,11 @@ import Link from 'next/link'
 import { getAllShoes } from '@/lib/data'
 
 const CHECKER_SLUGS = [
-  'alphafly-3',
-  'bondi-9',
-  'adizero-adios-pro-4',
-  'novablast-5',
-  'gel-nimbus-28',
-  'fuelcell-sc-elite-v5',
-  'endorphin-elite-2',
-  'wave-rebellion-pro-3',
-  'ghost-17',
-  'vomero-premium',
-  'deviate-nitro-elite-3',
-  'metaspeed-sky-tokyo',
-  'pegasus-41',
-  'clifton-10',
-  'ride-18',
-  'gel-kayano-32',
-  'hyperion-3',
-  'velocity-nitro-4',
+  'alphafly-3', 'bondi-9', 'adizero-adios-pro-4', 'novablast-5',
+  'gel-nimbus-28', 'fuelcell-sc-elite-v5',
+  'endorphin-elite-2', 'wave-rebellion-pro-3',
+  'ghost-17', 'vomero-premium',
+  'deviate-nitro-elite-3', 'metaspeed-sky-tokyo',
 ]
 
 export default function HeroSection() {
@@ -30,7 +17,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
       {/* Grid Background */}
-      <div className="absolute inset-0 grid grid-cols-3 grid-rows-6 gap-1">
+      <div className="absolute inset-0 grid grid-cols-3 grid-rows-4 gap-1">
         {CHECKER_SLUGS.map((slug) => (
           <div key={slug} className="relative">
             <Image

@@ -12,6 +12,8 @@ const SPEC_BARS: { key: keyof typeof specColors; label: string }[] = [
   { key: 'responsiveness', label: '반응' },
   { key: 'stability', label: '안정' },
   { key: 'durability', label: '내구' },
+  { key: 'weightScore', label: '무게' },
+  { key: 'valueScore', label: '가성비' },
 ]
 
 const specColors = {
@@ -19,6 +21,8 @@ const specColors = {
   responsiveness: 'bg-spec-response',
   stability: 'bg-spec-stability',
   durability: 'bg-spec-durability',
+  weightScore: 'bg-spec-weight',
+  valueScore: 'bg-spec-value',
 }
 
 export default function ShoeCard({ shoe, priority = false }: Props) {
@@ -92,7 +96,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
         {/* Spec bars */}
         <div className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2">
           {SPEC_BARS.map(({ key, label }) => {
-            const val = shoe.specs[key as keyof typeof shoe.specs] as number
+            const val = (shoe.specs[key as keyof typeof shoe.specs] as number) ?? 0
             return (
               <div key={key} className="flex items-center gap-2">
                 <div className="flex-1 h-1 bg-elevated rounded-full overflow-hidden">
