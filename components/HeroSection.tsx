@@ -13,6 +13,7 @@ const CHECKER_SLUGS = [
 export default function HeroSection() {
   const shoes = getAllShoes()
   const totalCount = shoes.length
+  const slugToImageUrl = Object.fromEntries(shoes.map(s => [s.slug, `/images${s.imageUrl}`]))
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
@@ -21,7 +22,7 @@ export default function HeroSection() {
         {CHECKER_SLUGS.map((slug) => (
           <div key={slug} className="relative">
             <Image
-              src={`/images/shoes/${slug}.webp`}
+              src={slugToImageUrl[slug] ?? `/images/shoes/${slug}.webp`}
               alt={slug}
               fill
               sizes="25vw"

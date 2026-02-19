@@ -24,10 +24,11 @@ export default function SpecRadar({ specs }: Props) {
   }, [])
 
   const data = [
-    { subject: '쿠션', value: specs.cushioning, fullMark: 10 },
+    { subject: '쿠션성', value: specs.cushioning, fullMark: 10 },
     { subject: '반응성', value: specs.responsiveness, fullMark: 10 },
     { subject: '안정성', value: specs.stability, fullMark: 10 },
     { subject: '내구성', value: specs.durability, fullMark: 10 },
+    { subject: '경량성', value: specs.weightScore ?? 0, fullMark: 10 },
   ]
 
   return (

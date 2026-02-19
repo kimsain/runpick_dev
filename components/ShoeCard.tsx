@@ -8,11 +8,11 @@ interface Props {
 }
 
 const SPEC_BARS: { key: keyof typeof specColors; label: string }[] = [
-  { key: 'cushioning', label: '쿠션' },
-  { key: 'responsiveness', label: '반응' },
-  { key: 'stability', label: '안정' },
-  { key: 'durability', label: '내구' },
-  { key: 'weightScore', label: '무게' },
+  { key: 'cushioning', label: '쿠션성' },
+  { key: 'responsiveness', label: '반응성' },
+  { key: 'stability', label: '안정성' },
+  { key: 'durability', label: '내구성' },
+  { key: 'weightScore', label: '경량성' },
   { key: 'valueScore', label: '가성비' },
 ]
 
@@ -105,7 +105,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
                     style={{ width: `${(val / 10) * 100}%` }}
                   />
                 </div>
-                <span className="text-muted text-xs font-body w-6 shrink-0">
+                <span className="text-muted text-xs font-body w-9 shrink-0">
                   {label}
                 </span>
               </div>
