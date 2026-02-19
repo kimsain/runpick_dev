@@ -75,13 +75,14 @@
           "scale": "%"
         },
         "stability": {
-          "torsionalRigidity": null,
-          "heelCounterStiffness": null,
+          "torsionalRigidity": 5.0,
+          "heelCounterStiffness": 1.0,
           "scale": "/5"
         },
         "durability": {
           "outsoleDurability": "1.4 mm",
-          "scale": "mm"
+          "scale": "mm",
+          "outsoleThickness": "1.4 mm"
         }
       },
       "keyFindings": [

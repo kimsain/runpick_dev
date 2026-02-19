@@ -1,0 +1,416 @@
+{
+  "adizero-adios-9": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-adios-9",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 1.0
+  },
+  "adizero-adios-pro-4": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-adios-pro-4",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 1.0
+  },
+  "adizero-boston-13": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-boston-13",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 2.3
+  },
+  "adizero-evo-sl": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-evo-sl",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 1.6
+  },
+  "adizero-prime-x3-strung": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
+    "outsoleDurability": 1.9,
+    "outsoleThickness": 1.8
+  },
+  "adizero-pro-evo-2": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
+    "outsoleDurability": 16.3,
+    "outsoleThickness": 0.5
+  },
+  "adizero-takumi-sen-11": {
+    "brand": "adidas",
+    "url": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
+    "outsoleDurability": 1.1,
+    "outsoleThickness": 1.1
+  },
+  "gel-kayano-32": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-gel-kayano-32",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 4.5
+  },
+  "gel-nimbus-28": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-gel-nimbus-28",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 3.3
+  },
+  "magic-speed-5": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-magic-speed-5",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 1.9
+  },
+  "megablast": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-megablast",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.0
+  },
+  "metaspeed-edge-tokyo": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-metaspeed-edge-tokyo",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 1.4
+  },
+  "metaspeed-ray": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-metaspeed-ray",
+    "outsoleDurability": 1.2,
+    "outsoleThickness": 0.9
+  },
+  "metaspeed-sky-tokyo": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-metaspeed-sky-tokyo",
+    "outsoleDurability": 1.4,
+    "outsoleThickness": 1.4
+  },
+  "novablast-5": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-novablast-5",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.3
+  },
+  "sonicblast": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-sonicblast",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 2.0
+  },
+  "superblast-2": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-superblast-2",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 3.1
+  },
+  "yogiri-s4-plus": {
+    "brand": "asics",
+    "url": "https://runrepeat.com/asics-s-4-yogiri",
+    "outsoleDurability": 1.4,
+    "outsoleThickness": 1.5
+  },
+  "ghost-17": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-ghost-17",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 4.0
+  },
+  "ghost-max-3": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-ghost-max-3",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 3.3
+  },
+  "glycerin-22": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-glycerin-22",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 3.4
+  },
+  "glycerin-gts-22": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-glycerin-gts-22",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 3.4
+  },
+  "hyperion-3": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-hyperion-3",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 2.4
+  },
+  "hyperion-elite-5": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-hyperion-elite-5",
+    "outsoleDurability": 2.2,
+    "outsoleThickness": 2.0
+  },
+  "hyperion-gts-2": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-hyperion-gts-2",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 3.3
+  },
+  "hyperion-max-3": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-hyperion-max-3",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 2.8
+  },
+  "revel-8": {
+    "brand": "brooks",
+    "url": "https://runrepeat.com/brooks-revel-8",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 3.4
+  },
+  "arahi-8": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-arahi-8",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 3.3
+  },
+  "bondi-9": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-bondi-9",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.4
+  },
+  "clifton-10": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-clifton-10",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 3.6
+  },
+  "gaviota-5": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-gaviota-5",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.8
+  },
+  "mach-6": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-mach-6",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 2.5
+  },
+  "mach-x-3": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-mach-x-3",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 2.5
+  },
+  "rocket-x-3": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-rocket-x-3",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 2.4
+  },
+  "skyward-x": {
+    "brand": "hoka",
+    "url": "https://runrepeat.com/hoka-skyward-x",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 3.1
+  },
+  "neo-vista-2": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-neo-vista-2",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 3.5
+  },
+  "neo-zen": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-neo-zen",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 2.7
+  },
+  "wave-rebellion-flash-3": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-wave-rebellion-flash-3",
+    "outsoleDurability": 1.3,
+    "outsoleThickness": 2.1
+  },
+  "wave-rebellion-pro-3": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-wave-rebellion-pro-3",
+    "outsoleDurability": 1.4,
+    "outsoleThickness": 2.5
+  },
+  "wave-rider-29": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-wave-rider-29",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 3.0
+  },
+  "wave-sky-9": {
+    "brand": "mizuno",
+    "url": "https://runrepeat.com/mizuno-wave-sky-9",
+    "outsoleDurability": 1.1,
+    "outsoleThickness": 2.0
+  },
+  "fuelcell-propel-v5": {
+    "brand": "new-balance",
+    "url": "https://runrepeat.com/new-balance-fuelcell-propel-v5",
+    "outsoleDurability": 1.1,
+    "outsoleThickness": 3.2
+  },
+  "alphafly-3": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-alphafly-3",
+    "outsoleDurability": 3.2,
+    "outsoleThickness": 1.9
+  },
+  "pegasus-41": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-pegasus-41",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.0
+  },
+  "pegasus-plus": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-pegasus-plus",
+    "outsoleDurability": 1.2,
+    "outsoleThickness": 2.7
+  },
+  "streakfly-2": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-streakfly-2",
+    "outsoleDurability": 1.7,
+    "outsoleThickness": 2.4
+  },
+  "structure-26": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-structure-26",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 3.2
+  },
+  "vaporfly-4": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-vaporfly-4",
+    "outsoleDurability": 8.6,
+    "outsoleThickness": 2.3
+  },
+  "vomero-18": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-vomero-18",
+    "outsoleDurability": 1.1,
+    "outsoleThickness": 3.8
+  },
+  "vomero-plus": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-vomero-plus",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 2.9
+  },
+  "vomero-premium": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-vomero-premium",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 2.8
+  },
+  "zoom-fly-6": {
+    "brand": "nike",
+    "url": "https://runrepeat.com/nike-zoom-fly-6",
+    "outsoleDurability": 0.8,
+    "outsoleThickness": 3.2
+  },
+  "deviate-nitro-3": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-deviate-nitro-3",
+    "outsoleDurability": 1.5,
+    "outsoleThickness": 3.2
+  },
+  "deviate-nitro-elite-3": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+    "outsoleDurability": 1.6,
+    "outsoleThickness": 2.6
+  },
+  "fast-r-nitro-elite-3": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-fast-r-nitro-elite-3",
+    "outsoleDurability": 3.1,
+    "outsoleThickness": 1.5
+  },
+  "foreverrun-nitro-2": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-foreverrun-nitro-2",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 3.6
+  },
+  "magnify-nitro-3": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-magnify-nitro-3",
+    "outsoleDurability": 1.3,
+    "outsoleThickness": 3.8
+  },
+  "velocity-nitro-4": {
+    "brand": "puma",
+    "url": "https://runrepeat.com/puma-velocity-nitro-4",
+    "outsoleDurability": 1.1,
+    "outsoleThickness": 3.9
+  },
+  "axon-3": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-axon-3",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 3.9
+  },
+  "endorphin-elite-2": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-endorphin-elite-2",
+    "outsoleDurability": 0.5,
+    "outsoleThickness": 1.2
+  },
+  "endorphin-pro-4": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-endorphin-pro-4",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 2.1
+  },
+  "endorphin-speed-5": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-endorphin-speed-5",
+    "outsoleDurability": 1.0,
+    "outsoleThickness": 2.5
+  },
+  "endorphin-trainer": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-endorphin-trainer",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 3.1
+  },
+  "guide-18": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-guide-18",
+    "outsoleDurability": 0.6,
+    "outsoleThickness": 3.4
+  },
+  "hurricane-25": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-hurricane-25",
+    "outsoleDurability": 0.9,
+    "outsoleThickness": 3.3
+  },
+  "kinvara-16": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-kinvara-16",
+    "outsoleDurability": 2.0,
+    "outsoleThickness": 2.7
+  },
+  "ride-18": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-ride-18",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 3.4
+  },
+  "tempus-2": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-tempus-2",
+    "outsoleDurability": 0.4,
+    "outsoleThickness": 3.7
+  },
+  "triumph-23": {
+    "brand": "saucony",
+    "url": "https://runrepeat.com/saucony-triumph-23",
+    "outsoleDurability": 0.7,
+    "outsoleThickness": 3.3
+  }
+}

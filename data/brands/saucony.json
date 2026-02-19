@@ -25,7 +25,7 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 9,
-        "stability": 6,
+        "stability": 3,
         "durability": 6,
         "stackHeight": {
           "heel": 37,
@@ -129,7 +129,7 @@
         "drop": 10,
         "cushioning": 8,
         "responsiveness": 7,
-        "stability": 6,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 37,
@@ -173,7 +173,8 @@
       "subcategoryId": "stability",
       "price": 188000,
       "priceFormatted": "₩188,000",
-      "description": "Guide 18는 PWRRUN 폼에 HOLLOW TECH 구조를 더해 경도를 높이는 방식으로 안정성을 만들어내는 데일리야. 미드풋 내측을 밀어올리는 포스트형 안정화가 아니라, 아웃솔에 속이 빈 공간을 내서 폼 밀도 차이로 발이 쏠리는 걸 자연스럽게 잡아줘. Believe in the Run 리뷰어는 “클리프턴이 느껴야 할 방식 — 넓고 안정적이고 쿠셔닝 있고 로커도 있다”고 표현했어. 다만 Doctors of Running은 '경증 안정화 수준'이라고 평가해서, 뚜렷한 오버프로네이션 교정을 원하는 러너에게는 안정성이 부족하게 느껴질 수 있어.",      "shortDescription": "안정감 중심 데일리 안정화",
+      "description": "Guide 18는 PWRRUN 폼에 HOLLOW TECH 구조를 더해 경도를 높이는 방식으로 안정성을 만들어내는 데일리야. 미드풋 내측을 밀어올리는 포스트형 안정화가 아니라, 아웃솔에 속이 빈 공간을 내서 폼 밀도 차이로 발이 쏠리는 걸 자연스럽게 잡아줘. Believe in the Run 리뷰어는 “클리프턴이 느껴야 할 방식 — 넓고 안정적이고 쿠셔닝 있고 로커도 있다”고 표현했어. 다만 Doctors of Running은 '경증 안정화 수준'이라고 평가해서, 뚜렷한 오버프로네이션 교정을 원하는 러너에게는 안정성이 부족하게 느껴질 수 있어.",
+      "shortDescription": "안정감 중심 데일리 안정화",
       "imageUrl": "/shoes/guide-18.webp",
       "specs": {
         "weight": 272,
@@ -232,7 +233,7 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 8,
-        "stability": 6,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 38,
@@ -284,7 +285,7 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 33,
@@ -440,7 +441,7 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 8,
-        "stability": 6,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 36,
@@ -492,7 +493,7 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 9,
-        "stability": 6,
+        "stability": 4,
         "durability": 6,
         "stackHeight": {
           "heel": 39.5,
@@ -544,7 +545,7 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 4,
         "durability": 6,
         "stackHeight": {
           "heel": 39.5,

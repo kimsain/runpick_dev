@@ -25,7 +25,7 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 7,
+        "stability": 6,
         "durability": 8,
         "stackHeight": {
           "heel": 37,
@@ -77,7 +77,7 @@
         "drop": 10,
         "cushioning": 9,
         "responsiveness": 5,
-        "stability": 6,
+        "stability": 7,
         "durability": 7,
         "stackHeight": {
           "heel": 44,
@@ -128,7 +128,7 @@
         "drop": 10,
         "cushioning": 9,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 7,
         "durability": 7,
         "stackHeight": {
           "heel": 43,
@@ -177,7 +177,7 @@
         "drop": 10,
         "cushioning": 10,
         "responsiveness": 5,
-        "stability": 7,
+        "stability": 9,
         "durability": 8,
         "stackHeight": {
           "heel": 55,
@@ -228,7 +228,7 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 4,
-        "stability": 8,
+        "stability": 7,
         "durability": 8,
         "stackHeight": {
           "heel": 38,
@@ -382,7 +382,7 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 7,
-        "stability": 5,
+        "stability": 7,
         "durability": 7,
         "stackHeight": {
           "heel": 34,
@@ -433,7 +433,7 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 7,
-        "stability": 6,
+        "stability": 9,
         "durability": 8,
         "stackHeight": {
           "heel": 40,
@@ -485,7 +485,7 @@
         "drop": 4,
         "cushioning": 4,
         "responsiveness": 9,
-        "stability": 4,
+        "stability": 2,
         "durability": 3,
         "stackHeight": {
           "heel": 27,
@@ -586,7 +586,7 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 9,
-        "stability": 5,
+        "stability": 4,
         "durability": 4,
         "stackHeight": {
           "heel": 40,
