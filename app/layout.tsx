@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-elevated mt-24 py-12 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <span className="font-display text-lg text-muted tracking-widest">RUNPICK</span>
-            <p className="text-secondary text-xs font-body">
+            <p className="text-secondary text-sm font-body">
               러닝화 데이터 기반 탐색 플랫폼 · 실제 구매는 공식 사이트를 통해 진행하세요
             </p>
           </div>

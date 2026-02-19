@@ -52,11 +52,11 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
             shoe.confidence === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
-              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
-                <span className={`w-1.5 h-1.5 rounded-full inline-block ${dotClass}`} />
+              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-sm font-body border border-elevated ${colorClass}`}>
+                <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
                 {label}
               </div>
-              <div className="absolute top-full right-0 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-2.5 py-1.5 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
+              <div className="absolute top-full right-0 mt-1 w-56 bg-base/95 backdrop-blur-sm border border-elevated px-3 py-2 text-sm text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
                 {tooltipText}
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           <p className="text-primary text-sm leading-snug mb-2 font-body">
             {shoe.shortDescription}
           </p>
-          <span className="text-accent text-xs font-display tracking-widest uppercase">
+          <span className="text-accent text-sm font-display tracking-widest uppercase">
             자세히 →
           </span>
         </div>
@@ -83,7 +83,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
 
       {/* Info */}
       <div className="p-4">
-        <p className="text-secondary text-xs font-display tracking-widest uppercase mb-1">
+        <p className="text-secondary text-sm font-display tracking-widest uppercase mb-1">
           {shoe.brandId.toUpperCase()}
         </p>
         <p className="text-primary font-body font-bold text-base truncate">

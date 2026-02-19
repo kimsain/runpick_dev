@@ -138,7 +138,7 @@ export default function HomePage() {
                   >
                     {card.title}
                   </p>
-                  <p className="text-secondary text-xs font-body">{card.desc}</p>
+                  <p className="text-secondary text-sm font-body">{card.desc}</p>
                 </div>
               </Link>
             )
@@ -170,7 +170,7 @@ export default function HomePage() {
             </h2>
             <Link
               href="/shoes"
-              className="text-xs font-body text-secondary hover:text-accent transition-colors"
+              className="text-sm font-body text-secondary hover:text-accent transition-colors"
             >
               전체 보기 →
             </Link>

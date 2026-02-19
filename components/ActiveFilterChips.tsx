@@ -94,7 +94,7 @@ export default function ActiveFilterChips() {
         <button
           key={i}
           onClick={chip.onRemove}
-          className="flex items-center gap-2 text-xs font-body px-3 py-2 bg-elevated border border-accent/30 text-accent hover:bg-accent hover:text-base transition-colors min-h-[44px]"
+          className="flex items-center gap-2 text-sm font-body px-3 py-2 bg-elevated border border-accent/30 text-accent hover:bg-accent hover:text-base transition-colors min-h-[44px]"
         >
           {chip.label}
           <span className="text-base leading-none">×</span>
@@ -102,7 +102,7 @@ export default function ActiveFilterChips() {
       ))}
       <button
         onClick={() => router.push(pathname)}
-        className="text-xs font-body text-muted hover:text-secondary transition-colors min-h-[44px] px-2"
+        className="text-sm font-body text-muted hover:text-secondary transition-colors min-h-[44px] px-2"
       >
         전체 초기화
       </button>

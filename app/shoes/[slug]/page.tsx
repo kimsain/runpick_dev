@@ -83,7 +83,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
         <div className="min-w-0">
           {/* Header */}
           <div className="mb-8">
-            <p className="font-display text-xs text-secondary tracking-widest uppercase mb-1">
+            <p className="font-display text-sm text-secondary tracking-widest uppercase mb-1">
               {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
             </p>
             <h1 className="font-display text-xl text-primary leading-tight mb-3">
@@ -106,17 +106,17 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             <div className="grid grid-cols-3 gap-3 mt-6">
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">{shoe.specs.weight}</p>
-                <p className="text-secondary text-xs font-body mt-1">g / 무게</p>
+                <p className="text-secondary text-sm font-body mt-1">g / 무게</p>
               </div>
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">{shoe.specs.drop}</p>
-                <p className="text-secondary text-xs font-body mt-1">mm / 드롭</p>
+                <p className="text-secondary text-sm font-body mt-1">mm / 드롭</p>
               </div>
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">
                   {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
                 </p>
-                <p className="text-secondary text-xs font-body mt-1">mm / 스택</p>
+                <p className="text-secondary text-sm font-body mt-1">mm / 스택</p>
               </div>
             </div>
           </section>
@@ -140,7 +140,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 </h3>
                 <ul className="space-y-2">
                   {shoe.pros.map((pro, i) => (
-                    <li key={i} className="flex gap-2 text-xs font-body text-secondary">
+                    <li key={i} className="flex gap-2 text-sm font-body text-secondary">
                       <span className="text-spec-response mt-1 shrink-0">+</span>
                       {pro}
                     </li>
@@ -153,7 +153,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 </h3>
                 <ul className="space-y-2">
                   {shoe.cons.map((con, i) => (
-                    <li key={i} className="flex gap-2 text-xs font-body text-secondary">
+                    <li key={i} className="flex gap-2 text-sm font-body text-secondary">
                       <span className="text-spec-durability mt-1 shrink-0">−</span>
                       {con}
                     </li>
@@ -172,7 +172,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
               {shoe.bestFor.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-xs font-body px-3 py-2 bg-accent/10 text-accent border border-accent/20"
+                  className="text-sm font-body px-3 py-2 bg-accent/10 text-accent border border-accent/20"
                 >
                   {tag}
                 </span>
@@ -190,7 +190,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 {shoe.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-xs font-body px-3 py-2 bg-elevated text-secondary border border-elevated"
+                    className="text-sm font-body px-3 py-2 bg-elevated text-secondary border border-elevated"
                   >
                     {tech}
                   </span>

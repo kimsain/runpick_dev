@@ -153,7 +153,7 @@ export default function MethodologyPage() {
                 <h3 className="font-body text-primary font-bold text-base">
                   {source.name}
                 </h3>
-                <span className="text-xs font-body text-accent bg-accent/10 px-2 py-1">
+                <span className="text-sm font-body text-accent bg-accent/10 px-2 py-1">
                   {source.type}
                 </span>
               </div>
@@ -199,7 +199,7 @@ export default function MethodologyPage() {
                 >
                   {spec.name}
                 </span>
-                <span className="text-xs font-body text-muted">
+                <span className="text-sm font-body text-muted">
                   {spec.nameEn}
                 </span>
               </div>
@@ -228,12 +228,12 @@ export default function MethodologyPage() {
               className="bg-card border border-elevated p-6 flex items-start gap-4"
             >
               <span
-                className={`text-xs font-body px-2 py-1 shrink-0 ${level.badge}`}
+                className={`text-sm font-body px-2 py-1 shrink-0 ${level.badge}`}
               >
                 {level.label}
               </span>
               <div>
-                <span className="text-xs font-body text-muted mb-1 block">
+                <span className="text-sm font-body text-muted mb-1 block">
                   {level.labelEn}
                 </span>
                 <p className="text-secondary text-sm font-body">
@@ -284,7 +284,7 @@ export default function MethodologyPage() {
               </span>
             </li>
           </ul>
-          <p className="text-muted text-xs font-body pt-2">
+          <p className="text-muted text-sm font-body pt-2">
             가능하다면 매장에서 직접 신어보고 구매하시길 권장합니다.
           </p>
         </div>

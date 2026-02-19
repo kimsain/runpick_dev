@@ -76,7 +76,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
       <div className="space-y-6 pb-8">
         {/* Sort */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">정렬</h3>
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">정렬</h3>
           <div className="space-y-1">
             {SORTS.map((s) => (
               <button
@@ -96,13 +96,13 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Category */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">카테고리</h3>
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">카테고리</h3>
           <div className="flex flex-wrap gap-2">
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
                 onClick={() => updateParam('category', c.id === 'all' ? '' : c.id)}
-                className={`text-xs font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center ${
+                className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center ${
                   category === c.id
                     ? 'border-accent text-accent bg-accent/10'
                     : 'border-elevated text-secondary hover:border-secondary'
@@ -116,7 +116,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Brands */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">브랜드</h3>
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">브랜드</h3>
           <div className="space-y-1">
             {brands.map((brand) => (
               <label
@@ -156,7 +156,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Price */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
             최대 가격{' '}
             <span className="text-primary normal-case font-body font-bold">{formatPrice(maxPrice)}</span>
           </h3>
@@ -174,7 +174,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             }
             className="w-full accent-accent"
           />
-          <div className="flex justify-between text-muted text-xs font-body mt-1">
+          <div className="flex justify-between text-muted text-sm font-body mt-1">
             <span>{formatPrice(priceRange.min)}</span>
             <span>{formatPrice(priceRange.max)}</span>
           </div>
@@ -182,7 +182,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Weight */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
             최대 무게{' '}
             <span className="text-primary normal-case font-body font-bold">{maxWeight}g</span>
           </h3>
@@ -200,7 +200,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             }
             className="w-full accent-accent"
           />
-          <div className="flex justify-between text-muted text-xs font-body mt-1">
+          <div className="flex justify-between text-muted text-sm font-body mt-1">
             <span>{weightRange.min}g</span>
             <span>{weightRange.max}g</span>
           </div>
@@ -208,7 +208,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Drop */}
         <section>
-          <h3 className="text-secondary text-xs font-display tracking-widest uppercase mb-2">
+          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
             최대 드롭{' '}
             <span className="text-primary normal-case font-body font-bold">{maxDrop}mm</span>
           </h3>
@@ -226,7 +226,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             }
             className="w-full accent-accent"
           />
-          <div className="flex justify-between text-muted text-xs font-body mt-1">
+          <div className="flex justify-between text-muted text-sm font-body mt-1">
             <span>{dropRange.min}mm</span>
             <span>{dropRange.max}mm</span>
           </div>
