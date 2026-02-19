@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
+import { CONF_TEXT, CONF_DOT } from '@/lib/confidence'
 
 interface Props {
   shoe: Shoe
@@ -38,12 +39,8 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
-          const colorClass = shoe.confidence === 'very-high' ? 'text-blue-400' :
-            shoe.confidence === 'high' ? 'text-green-400' :
-            shoe.confidence === 'medium' ? 'text-yellow-400' : 'text-secondary'
-          const dotClass = shoe.confidence === 'very-high' ? 'bg-blue-400' :
-            shoe.confidence === 'high' ? 'bg-green-400' :
-            shoe.confidence === 'medium' ? 'bg-yellow-400' : 'bg-secondary'
+          const colorClass = CONF_TEXT[shoe.confidence] ?? 'text-secondary'
+          const dotClass = CONF_DOT[shoe.confidence] ?? 'bg-secondary'
           const label = shoe.confidence === 'very-high' ? 'VERIFIED' :
             shoe.confidence === 'high' ? 'RELIABLE' :
             shoe.confidence === 'medium' ? 'LIMITED' : 'PENDING'

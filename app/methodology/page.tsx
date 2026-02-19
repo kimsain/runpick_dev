@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CONF_COLORS } from '@/lib/confidence'
 
 const DATA_SOURCES = [
   {
@@ -93,28 +94,28 @@ const CONFIDENCE_LEVELS = [
   {
     label: 'VERIFIED',
     labelEn: 'Verified',
-    badge: 'bg-blue-500/20 text-blue-400',
+    badge: CONF_COLORS['very-high'],
     description:
       'RunRepeat와 RTINGS 두 실측 측정 데이터가 모두 확인된 경우. 계측 장비 기반 데이터 2종과 전문가 리뷰를 종합한 최고 신뢰도입니다.',
   },
   {
     label: 'RELIABLE',
     labelEn: 'High',
-    badge: 'bg-green-500/20 text-green-400',
+    badge: CONF_COLORS['high'],
     description:
       'RunRepeat 또는 RTINGS 실측 데이터 + 전문가 리뷰 1개 이상이 확인된 경우.',
   },
   {
     label: 'LIMITED',
     labelEn: 'Medium',
-    badge: 'bg-yellow-500/20 text-yellow-400',
+    badge: CONF_COLORS['medium'],
     description:
       '실측 데이터 없이 전문가 리뷰 2개 이상이 확인된 경우.',
   },
   {
     label: 'PENDING',
     labelEn: 'Low',
-    badge: 'bg-red-500/20 text-red-400',
+    badge: CONF_COLORS['low'],
     description:
       '전문가 리뷰 1개 이하 또는 제한적인 데이터만 존재하는 경우.',
   },

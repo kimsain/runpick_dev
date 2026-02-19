@@ -23,6 +23,10 @@ const config: Config = {
         "spec-durability": "#f87171",
         "spec-weight": "#a78bfa",
         "spec-value": "#fb923c",
+        "conf-very-high": "#38bdf8",
+        "conf-high":      "#4ade80",
+        "conf-medium":    "#facc15",
+        "conf-low":       "#f87171",
       },
       fontFamily: {
         display: ["Bebas Neue", "sans-serif"],
