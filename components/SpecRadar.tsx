@@ -8,43 +8,11 @@ import {
   PolarAngleAxis,
   PolarRadiusAxis,
   ResponsiveContainer,
-  useChartWidth,
-  useChartHeight,
-  useMargin,
 } from 'recharts'
 import type { Specs } from '@/lib/types'
 
 interface Props {
   specs: Specs
-}
-
-// Pentagon at value 5 (50%) and outer boundary at value 10 (100%)
-function CustomGrid() {
-  const width = useChartWidth()
-  const height = useChartHeight()
-  const margin = useMargin()
-
-  if (!width || !height || !margin) return null
-
-  const innerWidth = width - margin.left - margin.right
-  const innerHeight = height - margin.top - margin.bottom
-  const cx = margin.left + innerWidth / 2
-  const cy = margin.top + innerHeight / 2
-  const outerRadius = 0.8 * Math.min(innerWidth / 2, innerHeight / 2)
-
-  const makePoints = (r: number) =>
-    Array.from({ length: 5 }, (_, i) => {
-      const deg = 90 - i * 72 // clockwise from top
-      const rad = (deg * Math.PI) / 180
-      return `${cx + r * Math.cos(rad)},${cy - r * Math.sin(rad)}`
-    }).join(' ')
-
-  return (
-    <g>
-      <polygon points={makePoints(outerRadius)} fill="none" stroke="#333333" strokeWidth={1} />
-      <polygon points={makePoints(outerRadius * 0.5)} fill="none" stroke="#333333" strokeWidth={1} />
-    </g>
-  )
 }
 
 function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number }) {
@@ -87,15 +55,12 @@ export default function SpecRadar({ specs }: Props) {
   return (
     <ResponsiveContainer width="100%" height={280}>
       <RadarChart data={data} margin={{ top: 10, right: 30, bottom: 10, left: 30 }}>
-        {/* Spoke lines only — no concentric shapes from PolarGrid */}
-        <PolarGrid stroke="#333333" strokeWidth={1} polarRadius={[]} />
+        <PolarGrid stroke="#1c1c1c" strokeWidth={1} />
         <PolarRadiusAxis angle={90} domain={[0, 10]} tick={false} axisLine={false} />
         <PolarAngleAxis
           dataKey="subject"
           tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit' }}
         />
-        {/* Custom: outer pentagon (10) + midpoint pentagon (5) */}
-        <CustomGrid />
         <Radar
           name="specs"
           dataKey="value"
