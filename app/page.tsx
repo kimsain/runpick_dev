@@ -6,13 +6,6 @@ import { getAllShoes, getBrands } from '@/lib/data'
 
 const PURPOSE_CARDS = [
   {
-    title: '안정화',
-    desc: '오버프로네이션을 잡아주는 서포트 슈즈',
-    href: '/shoes?subcategory=stability',
-    color: '#38BDF8',
-    imageSlug: 'gel-kayano-32',
-  },
-  {
     title: '데일리',
     desc: '매일 신는 든든한 트레이너',
     href: '/shoes?category=daily',
@@ -27,7 +20,7 @@ const PURPOSE_CARDS = [
     imageSlug: 'superblast-2',
   },
   {
-    title: '레이스',
+    title: '레이싱',
     desc: '기록을 위한 카본 플레이트 레이서',
     href: '/shoes?category=racing',
     color: '#F87171',
@@ -56,7 +49,7 @@ export default function HomePage() {
         <h2 className="font-display text-lg text-primary mb-8 tracking-widest uppercase">
           목적별 탐색
         </h2>
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+        <div className="grid grid-cols-3 gap-4">
           {PURPOSE_CARDS.map((card) => {
             const shoe = allShoes.find((s) => s.slug === card.imageSlug)
             const imagePath = shoe ? `/images${shoe.imageUrl}` : ''
@@ -65,7 +58,7 @@ export default function HomePage() {
               <Link
                 key={card.title}
                 href={card.href}
-                className="group relative shrink-0 w-56 h-72 overflow-hidden bg-card border border-elevated hover:border-accent/40 transition-colors"
+                className="group relative h-72 overflow-hidden bg-card border border-elevated hover:border-accent/40 transition-colors"
               >
                 {imagePath && (
                   <Image
