@@ -16,7 +16,7 @@ const config: Config = {
         accent: "#c8ff00",
         primary: "#f2f2f2",
         secondary: "#8c8c8c",
-        muted: "#4a4a4a",
+        muted: "#848484",
         "spec-cushion": "#38bdf8",
         "spec-response": "#c8ff00",
         "spec-stability": "#fbbf24",
