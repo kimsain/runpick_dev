@@ -1,0 +1,200 @@
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
+import { getShoeBySlug, getAllSlugs, getSimilarShoes } from '@/lib/data'
+import RelatedShoes from '@/components/RelatedShoes'
+
+const SpecRadar = dynamic(() => import('@/components/SpecRadar'), { ssr: false })
+
+export async function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }))
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): Promise<Metadata> {
+  const shoe = getShoeBySlug(params.slug)
+  if (!shoe) notFound()
+  return {
+    title: `${shoe.name} — RunPick`,
+    description: shoe.shortDescription,
+    openGraph: {
+      title: `${shoe.name} — RunPick`,
+      description: shoe.shortDescription,
+      images: [`/images${shoe.imageUrl}`],
+    },
+  }
+}
+
+const CATEGORY_LABELS: Record<string, string> = {
+  daily: '데일리',
+  'super-trainer': '슈퍼트레이너',
+  racing: '레이싱',
+}
+
+export default function ShoeDetailPage({ params }: { params: { slug: string } }) {
+  const shoe = getShoeBySlug(params.slug)
+  if (!shoe) notFound()
+
+  const related = getSimilarShoes(shoe, 3)
+  const imagePath = `/images${shoe.imageUrl}`
+
+  return (
+    <main className="max-w-7xl mx-auto px-6 py-12">
+      {/* Desktop: 2-col sticky layout */}
+      <div className="md:grid md:grid-cols-2 md:gap-16">
+        {/* Left: sticky image */}
+        <div className="md:sticky md:top-24 md:h-[calc(100vh-8rem)] flex items-center justify-center mb-10 md:mb-0">
+          <div className="relative w-full max-w-sm aspect-square">
+            <Image
+              src={imagePath}
+              alt={shoe.name}
+              fill
+              sizes="(max-width: 768px) 90vw, 40vw"
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+
+        {/* Right: scrollable content */}
+        <div className="min-w-0">
+          {/* Header */}
+          <div className="mb-8">
+            <p className="font-display text-xs text-muted tracking-widest uppercase mb-1">
+              {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
+            </p>
+            <h1 className="font-display text-xl text-primary leading-tight mb-3">
+              {shoe.name}
+            </h1>
+            <p className="font-display text-lg text-accent mb-4">{shoe.priceFormatted}</p>
+            <p className="text-secondary text-sm font-body leading-relaxed">
+              {shoe.shortDescription}
+            </p>
+          </div>
+
+          {/* Spec radar + stat cards */}
+          <section className="mb-8">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+              스펙
+            </h2>
+            <SpecRadar specs={shoe.specs} />
+
+            {/* Numeric specs */}
+            <div className="grid grid-cols-3 gap-3 mt-6">
+              <div className="bg-card border border-elevated p-4 text-center">
+                <p className="font-display text-lg text-accent">{shoe.specs.weight}</p>
+                <p className="text-muted text-xs font-body mt-1">g / 무게</p>
+              </div>
+              <div className="bg-card border border-elevated p-4 text-center">
+                <p className="font-display text-lg text-accent">{shoe.specs.drop}</p>
+                <p className="text-muted text-xs font-body mt-1">mm / 드롭</p>
+              </div>
+              <div className="bg-card border border-elevated p-4 text-center">
+                <p className="font-display text-lg text-accent">
+                  {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
+                </p>
+                <p className="text-muted text-xs font-body mt-1">mm / 스택</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Description */}
+          <section className="mb-8">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+              리뷰
+            </h2>
+            <p className="text-secondary text-sm font-body leading-relaxed">
+              {shoe.description}
+            </p>
+          </section>
+
+          {/* Pros / Cons */}
+          <section className="mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 className="font-display text-sm text-spec-response tracking-widest uppercase mb-3">
+                  장점
+                </h3>
+                <ul className="space-y-2">
+                  {shoe.pros.map((pro, i) => (
+                    <li key={i} className="flex gap-2 text-xs font-body text-secondary">
+                      <span className="text-spec-response mt-0.5 shrink-0">+</span>
+                      {pro}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-display text-sm text-spec-durability tracking-widest uppercase mb-3">
+                  단점
+                </h3>
+                <ul className="space-y-2">
+                  {shoe.cons.map((con, i) => (
+                    <li key={i} className="flex gap-2 text-xs font-body text-secondary">
+                      <span className="text-spec-durability mt-0.5 shrink-0">−</span>
+                      {con}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Best For */}
+          <section className="mb-8">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+              이런 러너에게 추천
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {shoe.bestFor.map((tag, i) => (
+                <span
+                  key={i}
+                  className="text-xs font-body px-3 py-1.5 bg-accent/10 text-accent border border-accent/20"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </section>
+
+          {/* Technologies */}
+          {shoe.technologies.length > 0 && (
+            <section className="mb-8">
+              <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+                주요 기술
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {shoe.technologies.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="text-xs font-body px-3 py-1.5 bg-elevated text-secondary border border-elevated"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Official link */}
+          {shoe.officialUrl && (
+            <a
+              href={shoe.officialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-body text-muted hover:text-accent transition-colors border border-elevated px-4 py-2.5 hover:border-accent/30 min-h-[44px]"
+            >
+              공식 정보 보기 ↗
+            </a>
+          )}
+        </div>
+      </div>
+
+      <RelatedShoes shoes={related} />
+    </main>
+  )
+}

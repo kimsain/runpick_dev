@@ -1,0 +1,358 @@
+# CODE_GRAPH.yaml — Committed to git, treated like README
+metadata:
+  generated_at: "2026-02-19T00:00:00Z"
+  last_synced_at: "2026-02-19T00:00:00Z"
+  root_dir: "."
+  tech_stack: ["TypeScript", "Next.js 14", "React 18", "Tailwind CSS v3", "Recharts", "Framer Motion"]
+  architecture_pattern: "layered"
+  # Layers: data (lib/) → components/ → app/
+  # SSG: all 94 pages statically generated at build time
+
+modules:
+  lib-types:
+    description: "Central TypeScript type definitions for Shoe, Brand, Specs, FilterState and SortOption"
+    entry_point: "lib/types.ts"
+    key_files:
+      - path: "lib/types.ts"
+        role: "types"
+        exports:
+          - name: "Shoe"
+            signature: "interface Shoe"
+            description: "Full shoe record: id, brandId, categoryId (daily|super-trainer|racing), specs, pros/cons/bestFor, slug, officialUrl"
+          - name: "Brand"
+            signature: "interface Brand"
+            description: "Brand metadata: id, name, nameKo, logo, color, description"
+          - name: "Specs"
+            signature: "interface Specs"
+            description: "Numeric shoe specs: weight(g), drop(mm), cushioning/responsiveness/stability/durability (1–10), stackHeight"
+          - name: "FilterState"
+            signature: "interface FilterState"
+            description: "Shape of URL-encoded filter state; not used directly (components read searchParams)"
+          - name: "SortOption"
+            signature: "type SortOption = 'recommended' | 'price-asc' | 'price-desc' | 'weight-asc'"
+            description: "Valid sort keys used in URL ?sort= param"
+    dependencies:
+      internal: []
+      external: []
+    constraints:
+      - "categoryId is a union literal: 'daily' | 'super-trainer' | 'racing' — never a free string"
+      - "imageUrl in JSON is relative to /shoes/ (e.g. /shoes/pegasus-41.webp); components prepend /images to get public path"
+    data_flow: "Defined once, imported by lib/data and every component that accepts Shoe or Brand props"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  lib-data:
+    description: "Build-time data access layer — aggregates 9 brand JSON files into in-memory arrays with lazy caching"
+    entry_point: "lib/data.ts"
+    key_files:
+      - path: "lib/data.ts"
+        role: "core-logic"
+        exports:
+          - name: "getAllShoes"
+            signature: "getAllShoes(): Shoe[]"
+            description: "Returns all 86 shoes, lazily cached after first call"
+          - name: "getBrands"
+            signature: "getBrands(): Brand[]"
+            description: "Returns all 9 brands in import order (adidas → saucony)"
+          - name: "getShoeBySlug"
+            signature: "getShoeBySlug(slug: string): Shoe | undefined"
+            description: "Linear scan; callers must handle undefined with notFound()"
+          - name: "getSimilarShoes"
+            signature: "getSimilarShoes(shoe: Shoe, limit?: number): Shoe[]"
+            description: "Matches same categoryId + subcategoryId, excludes self, returns up to limit (default 3)"
+          - name: "getAllSlugs"
+            signature: "getAllSlugs(): string[]"
+            description: "Used exclusively by generateStaticParams in [slug]/page.tsx"
+          - name: "getPriceRange / getWeightRange / getDropRange"
+            signature: "(): { min: number; max: number }"
+            description: "Scans all shoes for slider bounds; passed as props to FilterPanel"
+    dependencies:
+      internal: ["lib-types"]
+      external: []
+    constraints:
+      - "All data is static JSON imported at build time — no runtime fetching"
+      - "Module-level _shoes/_brands vars act as in-memory cache (singletons across SSG pages)"
+      - "JSON files live in data/brands/*.json — adding a brand requires importing it here"
+      - "Brand import order determines default 'recommended' sort order in ShoesBrowser"
+    data_flow: "JSON files → import → allBrandData[] → flatMap → Shoe[] / Brand[]"
+    error_patterns:
+      - "Returns undefined (not throws) when slug not found; callers call notFound()"
+    test_location: "none"
+    notes: "data/brands/puma.json and saucony.json had unescaped ASCII double-quotes fixed to Unicode curly quotes (\u201c\u201d) during initial setup"
+
+  app-layout:
+    description: "Root Next.js App Router layout: global metadata, Google Fonts (Bebas Neue + Outfit), fixed nav, footer"
+    entry_point: "app/layout.tsx"
+    key_files:
+      - path: "app/layout.tsx"
+        role: "core-logic"
+        exports:
+          - name: "metadata"
+            signature: "export const metadata: Metadata"
+            description: "Site-wide OG/SEO metadata with metadataBase https://runpick.vercel.app"
+          - name: "RootLayout"
+            signature: "default function RootLayout"
+            description: "Wraps all pages; renders fixed header (RUNPICK logo + 탐색 link) and footer"
+      - path: "app/globals.css"
+        role: "config"
+        exports: []
+    dependencies:
+      internal: []
+      external: ["next/link"]
+    constraints:
+      - "Fonts loaded via @import url() in globals.css (Bebas Neue + Outfit from Google Fonts)"
+      - "Nav height is 64px (h-16); pages must use pt-16 or similar to avoid overlap"
+      - "metadataBase is hardcoded to https://runpick.vercel.app — update before deploying to a different domain"
+    data_flow: "Static — no data dependencies"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  app-home:
+    description: "Home page server component: Hero, horizontal purpose card rail, brand bar, 8-card featured grid"
+    entry_point: "app/page.tsx"
+    key_files:
+      - path: "app/page.tsx"
+        role: "core-logic"
+        exports:
+          - name: "HomePage"
+            signature: "default function HomePage()"
+            description: "Server component; PURPOSE_CARDS constant defines 4 hardcoded category links with imageSlug references"
+      - path: "components/HeroSection.tsx"
+        role: "core-logic"
+        exports:
+          - name: "HeroSection"
+            signature: "default function HeroSection()"
+            description: "100vh full-bleed hero; falls back to first shoe if 'vaporfly-4' slug not found"
+    dependencies:
+      internal: ["lib-data", "components-display"]
+      external: ["next/link", "next/image"]
+    constraints:
+      - "PURPOSE_CARDS.imageSlug values must match existing shoe slugs or the card renders without an image"
+      - "Featured grid = first 8 shoes from getAllShoes() — reflects brand import order in lib/data"
+    data_flow: "getAllShoes() + getBrands() → JSX render"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  app-shoes-browse:
+    description: "Shoes browse page: server wrapper with Suspense boundary around client ShoesBrowser"
+    entry_point: "app/shoes/page.tsx"
+    key_files:
+      - path: "app/shoes/page.tsx"
+        role: "core-logic"
+        exports:
+          - name: "ShoesPage"
+            signature: "default function ShoesPage()"
+            description: "Server component; passes all shoes + range metadata to ShoesBrowser; Suspense wraps ShoesBrowser for useSearchParams"
+    dependencies:
+      internal: ["lib-data", "components-browser"]
+      external: []
+    constraints:
+      - "Suspense boundary required because ShoesBrowser uses useSearchParams (Next.js 14 constraint)"
+    data_flow: "Server: getAllShoes() + ranges → props → ShoesBrowser (client)"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  app-shoes-detail:
+    description: "Shoe detail SSG page: sticky image + scrollable spec/review content + related shoes"
+    entry_point: "app/shoes/[slug]/page.tsx"
+    key_files:
+      - path: "app/shoes/[slug]/page.tsx"
+        role: "core-logic"
+        exports:
+          - name: "generateStaticParams"
+            signature: "async function generateStaticParams()"
+            description: "Returns all 86 slugs for SSG pre-rendering"
+          - name: "generateMetadata"
+            signature: "async function generateMetadata({ params })"
+            description: "Per-shoe OG title/description/image"
+          - name: "ShoeDetailPage"
+            signature: "default function ShoeDetailPage({ params })"
+            description: "Desktop: 2-col sticky layout. SpecRadar dynamically imported (ssr:false) to avoid Recharts SSR issues"
+    dependencies:
+      internal: ["lib-data", "components-charts", "components-display"]
+      external: ["next/dynamic", "next/image"]
+    constraints:
+      - "SpecRadar must be dynamic import with ssr:false — Recharts uses browser APIs incompatible with SSR"
+      - "Calls notFound() when slug resolves to undefined — handles any manual URL attempts beyond known slugs"
+    data_flow: "params.slug → getShoeBySlug() → render + getSimilarShoes() → RelatedShoes"
+    error_patterns:
+      - "notFound() called for unknown slugs — renders Next.js 404 page"
+    test_location: "none"
+    notes: ""
+
+  components-display:
+    description: "Pure server-renderable display components: ShoeCard grid tile, HeroSection, RelatedShoes grid"
+    entry_point: "components/ShoeCard.tsx"
+    key_files:
+      - path: "components/ShoeCard.tsx"
+        role: "core-logic"
+        exports:
+          - name: "ShoeCard"
+            signature: "default function ShoeCard({ shoe, priority? })"
+            description: "aspect-[3/4] card with hover slide-up overlay; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
+      - path: "components/HeroSection.tsx"
+        role: "core-logic"
+        exports:
+          - name: "HeroSection"
+            signature: "default function HeroSection()"
+            description: "Full-bleed 100vh hero with FIND YOUR RUN headline and CTA to /shoes"
+      - path: "components/RelatedShoes.tsx"
+        role: "core-logic"
+        exports:
+          - name: "RelatedShoes"
+            signature: "default function RelatedShoes({ shoes })"
+            description: "Renders up to 3 ShoeCard tiles for same category+subcategory"
+    dependencies:
+      internal: ["lib-types"]
+      external: ["next/image", "next/link"]
+    constraints:
+      - "imageUrl from JSON starts with /shoes/ — components prepend /images to resolve to public/images/shoes/"
+      - "ShoeCard specColors map must be kept in sync with Tailwind config spec-* color aliases"
+    data_flow: "Shoe prop → JSX (no client state)"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  components-browser:
+    description: "Client-side shoes browser: reads URL searchParams, filters/sorts shoes array, renders grid"
+    entry_point: "components/ShoesBrowser.tsx"
+    key_files:
+      - path: "components/ShoesBrowser.tsx"
+        role: "core-logic"
+        exports:
+          - name: "ShoesBrowser"
+            signature: "default function ShoesBrowser({ shoes, brands, priceRange, weightRange, dropRange })"
+            description: "use client; useSearchParams drives useMemo filter logic; renders FilterPanel (desktop) and FilterDrawer (mobile) side-by-side with shoe grid"
+    dependencies:
+      internal: ["lib-types", "components-display", "components-filters"]
+      external: ["next/navigation"]
+    constraints:
+      - "Must be wrapped in <Suspense> by parent (app/shoes/page.tsx) due to useSearchParams"
+      - "Filter logic is client-side only — all 86 shoes are passed as props and filtered in the browser"
+      - "URL param keys: brands (comma-separated), category, maxPrice, maxWeight, maxDrop, sort"
+    data_flow: "props (all shoes) + URL searchParams → useMemo filter → filtered[] → ShoeCard grid"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  components-filters:
+    description: "URL-driven filter UI: FilterPanel (desktop sidebar), FilterDrawer (mobile bottom sheet), ActiveFilterChips (pill removal)"
+    entry_point: "components/FilterPanel.tsx"
+    key_files:
+      - path: "components/FilterPanel.tsx"
+        role: "core-logic"
+        exports:
+          - name: "FilterPanel"
+            signature: "default function FilterPanel({ brands, priceRange, weightRange, dropRange })"
+            description: "use client; 240px sticky sidebar with sort, category tabs, brand checkboxes, price/weight/drop range sliders. Mutations via router.push with updated searchParams"
+      - path: "components/FilterDrawer.tsx"
+        role: "middleware"
+        exports:
+          - name: "FilterDrawer"
+            signature: "default function FilterDrawer({ brands, priceRange, weightRange, dropRange, totalCount })"
+            description: "use client; mobile bottom sheet wrapping FilterPanel; useState(open) controls translate-y"
+      - path: "components/ActiveFilterChips.tsx"
+        role: "core-logic"
+        exports:
+          - name: "ActiveFilterChips"
+            signature: "default function ActiveFilterChips()"
+            description: "use client; reads searchParams, renders a removable chip per active filter, 'reset all' clears to pathname"
+    dependencies:
+      internal: ["lib-types"]
+      external: ["next/navigation"]
+    constraints:
+      - "Slider 'reset' sentinel: when slider reaches max, param is deleted (not set to max) so URL stays clean"
+      - "Brand filter is comma-separated in URL: ?brands=nike,adidas"
+      - "All interactive controls must be min-h-[44px] for touch accessibility"
+      - "FilterPanel uses sticky positioning — only works when not inside FilterDrawer's overflow:auto container (known limitation)"
+    data_flow: "searchParams read → UI state; user interaction → router.push with new params → ShoesBrowser re-filters"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  components-charts:
+    description: "Recharts radar chart for 4-axis spec visualization (쿠션/반응성/안정성/내구성)"
+    entry_point: "components/SpecRadar.tsx"
+    key_files:
+      - path: "components/SpecRadar.tsx"
+        role: "core-logic"
+        exports:
+          - name: "SpecRadar"
+            signature: "default function SpecRadar({ specs: Specs })"
+            description: "use client; ResponsiveContainer + RadarChart; accent color (#c8ff00) fill; animationDuration 800ms"
+    dependencies:
+      internal: ["lib-types"]
+      external: ["recharts"]
+    constraints:
+      - "Must be dynamically imported with ssr:false — Recharts uses SVG/DOM APIs not available in Node SSR"
+      - "Only 4 of 7 spec fields are plotted (weight/drop/stackHeight are shown as numeric cards instead)"
+    data_flow: "Specs prop → static data array → RadarChart render"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+  app-seo:
+    description: "Auto-generated sitemap.xml and robots.txt via Next.js Metadata API"
+    entry_point: "app/sitemap.ts"
+    key_files:
+      - path: "app/sitemap.ts"
+        role: "config"
+        exports:
+          - name: "sitemap"
+            signature: "default function sitemap(): MetadataRoute.Sitemap"
+            description: "Returns / (priority 1.0), /shoes (0.9), and all 86 /shoes/[slug] pages (0.7)"
+      - path: "app/robots.ts"
+        role: "config"
+        exports:
+          - name: "robots"
+            signature: "default function robots(): MetadataRoute.Robots"
+            description: "Allows all, points to sitemap at https://runpick.vercel.app/sitemap.xml"
+    dependencies:
+      internal: ["lib-data"]
+      external: []
+    constraints:
+      - "Base URL hardcoded to https://runpick.vercel.app — update if deploying elsewhere"
+    data_flow: "getAllSlugs() → sitemap entries"
+    error_patterns: []
+    test_location: "none"
+    notes: ""
+
+cross_cutting:
+  styling:
+    description: "Tailwind CSS v3 with custom design tokens; Google Fonts loaded via CSS @import"
+    key_files: ["app/globals.css", "tailwind.config.ts"]
+    pattern: |
+      CSS vars on :root define semantic tokens (--bg-base, --accent, --spec-*).
+      Tailwind config extends colors with named aliases matching CSS vars.
+      Fonts: font-display = Bebas Neue (headlines/numbers), font-body = Outfit (UI/Korean).
+      Dark Athletic Editorial: base #080808, accent #C8FF00 (chartreuse).
+  image_paths:
+    description: "JSON imageUrl values use /shoes/ prefix; public directory uses /images/shoes/"
+    key_files: ["components/ShoeCard.tsx", "components/HeroSection.tsx"]
+    pattern: "All components prepend /images to shoe.imageUrl to resolve public path. next/image with unoptimized:true (next.config.mjs)."
+  url_state:
+    description: "Filter state lives entirely in URL searchParams — shareable, no client store"
+    key_files: ["components/FilterPanel.tsx", "components/ActiveFilterChips.tsx", "components/ShoesBrowser.tsx"]
+    pattern: |
+      Params: brands (CSV), category, maxPrice, maxWeight, maxDrop, sort.
+      Mutations: router.push with updated URLSearchParams.
+      Reading: useSearchParams() in every filter component + ShoesBrowser.
+      Reset: delete param (not set to default) so URL stays minimal.
+
+dependency_graph:
+  # module → depends on these modules
+  app-home: ["lib-data", "components-display"]
+  app-shoes-browse: ["lib-data", "components-browser"]
+  app-shoes-detail: ["lib-data", "components-charts", "components-display"]
+  app-seo: ["lib-data"]
+  app-layout: []
+  components-browser: ["lib-types", "components-display", "components-filters"]
+  components-display: ["lib-types"]
+  components-filters: ["lib-types"]
+  components-charts: ["lib-types"]
+  lib-data: ["lib-types"]
+  lib-types: []
