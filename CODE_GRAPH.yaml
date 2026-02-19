@@ -1,7 +1,7 @@
 # CODE_GRAPH.yaml — Committed to git, treated like README
 metadata:
   generated_at: "2026-02-19T00:00:00Z"
-  last_synced_at: "2026-02-19T09:00:00Z"
+  last_synced_at: "2026-02-19T09:30:00Z"
   root_dir: "."
   tech_stack: ["TypeScript", "Next.js 14", "React 18", "Tailwind CSS v3", "Recharts", "Framer Motion"]
   architecture_pattern: "layered"
@@ -18,7 +18,7 @@ modules:
         exports:
           - name: "Shoe"
             signature: "interface Shoe"
-            description: "Full shoe record: id, brandId, categoryId (daily|super-trainer|racing), specs, pros/cons/bestFor, slug, officialUrl, confidence (high|medium|low)"
+            description: "Full shoe record: id, brandId, categoryId (daily|super-trainer|racing), specs, pros/cons/bestFor, slug, officialUrl, confidence (very-high|high|medium|low)"
           - name: "Brand"
             signature: "interface Brand"
             description: "Brand metadata: id, name, nameKo, logo, color, description"
@@ -37,7 +37,7 @@ modules:
     constraints:
       - "categoryId is a union literal: 'daily' | 'super-trainer' | 'racing' — never a free string"
       - "imageUrl in JSON is relative to /shoes/ (e.g. /shoes/pegasus-41.webp); components prepend /images to get public path"
-      - "confidence is optional ('high'|'medium'|'low'); populated by scripts/add_confidence.py from checkpoint.json"
+      - "confidence is optional ('very-high'|'high'|'medium'|'low'); populated by scripts/add_confidence.py from checkpoint.json statuses array"
     data_flow: "Defined once, imported by lib/data and every component that accepts Shoe or Brand props"
     error_patterns: []
     test_location: "none"
@@ -122,7 +122,7 @@ modules:
         exports:
           - name: "HomePage"
             signature: "default function HomePage()"
-            description: "Server component; PURPOSE_CARDS defines 3 category links (daily=novablast-5, super-trainer, racing); featured = confidence=high shoes sorted by total spec score, top 8"
+            description: "Server component; PURPOSE_CARDS defines 3 category links (daily=novablast-5, super-trainer, racing); featured = confidence=very-high||high shoes sorted by total spec score, top 8"
       - path: "components/HeroSection.tsx"
         role: "core-logic"
         exports:
@@ -134,7 +134,7 @@ modules:
       external: ["next/link", "next/image"]
     constraints:
       - "PURPOSE_CARDS.imageSlug values must match existing shoe slugs or the card renders without an image"
-      - "Featured grid = top 8 shoes filtered by confidence==='high', sorted by cushioning+responsiveness+stability+durability desc"
+      - "Featured grid = top 8 shoes filtered by confidence==='very-high'||'high', sorted by cushioning+responsiveness+stability+durability desc"
       - "Dailly PURPOSE_CARD imageSlug is 'novablast-5'"
     data_flow: "getAllShoes() + getBrands() → JSX render"
     error_patterns: []
@@ -198,7 +198,7 @@ modules:
         exports:
           - name: "ShoeCard"
             signature: "default function ShoeCard({ shoe, priority? })"
-            description: "aspect-[3/4] card with hover slide-up overlay; confidence badge (top-right: 검증됨/참고용/평가중); price in text-primary; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
+            description: "aspect-[3/4] card with hover slide-up overlay; confidence badge (top-right: 최고 신뢰/검증됨/참고용/평가중); price in text-primary; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
       - path: "components/HeroSection.tsx"
         role: "core-logic"
         exports:
@@ -217,7 +217,7 @@ modules:
     constraints:
       - "imageUrl from JSON starts with /shoes/ — components prepend /images to resolve to public/images/shoes/"
       - "ShoeCard specColors map must be kept in sync with Tailwind config spec-* color aliases"
-      - "ShoeCard confidence badge: high=green (검증됨), medium=yellow (참고용), low/undefined=gray (평가중); badge omitted if confidence is undefined"
+      - "ShoeCard confidence badge: very-high=blue (최고 신뢰), high=green (검증됨), medium=yellow (참고용), low/undefined=gray (평가중)"
       - "CHECKER_SLUGS in HeroSection: hardcoded list of 12 slugs — must exist in public/images/shoes/*.webp"
     data_flow: "Shoe prop → JSX (no client state)"
     error_patterns: []
@@ -311,7 +311,7 @@ modules:
         exports:
           - name: "MethodologyPage"
             signature: "default function MethodologyPage()"
-            description: "Server component; 5 sections: data sources, spec scoring, confidence levels, limitations; Korean; linked from footer"
+            description: "Server component; 5 sections: data sources, spec scoring, confidence levels (4-level: very-high/high/medium/low), score blending (SA/ER% primary + qualitative ±1 correction), limitations; Korean; linked from footer"
     dependencies:
       internal: []
       external: ["next/link"]
@@ -324,23 +324,33 @@ modules:
     notes: "Companion technical doc at docs/METHODOLOGY.md"
 
   scripts:
-    description: "Python utility scripts for data maintenance"
+    description: "Python utility scripts for data maintenance: confidence injection and score normalization"
     entry_point: "scripts/add_confidence.py"
     key_files:
       - path: "scripts/add_confidence.py"
         role: "core-logic"
         exports: []
+      - path: "scripts/normalize_runrepeat_rtings.py"
+        role: "core-logic"
+        exports: []
+      - path: "scripts/normalize_rtings_only.py"
+        role: "core-logic"
+        exports: []
     dependencies:
       internal: []
-      external: ["python3 stdlib (json, pathlib)"]
+      external: ["python3 stdlib (json, glob, os)"]
     constraints:
-      - "Reads research/2026-02-18/checkpoint.json; key format is '{brandId}/{slug}'"
-      - "Writes confidence field to data/brands/*.json in-place"
-      - "Default confidence is 'low' when checkpoint entry is missing"
-    data_flow: "checkpoint.json → data/brands/*.json (in-place mutation)"
+      - "add_confidence.py: parses checkpoint.json statuses array; 4-level logic (very-high/high/medium/low); key format '{brandId}/{slug}'"
+      - "normalize_runrepeat_rtings.py: targets RunRepeat+RTINGS overlap shoes; cushioning=SA-weighted, responsiveness=ER%; stability/durability ±1 qualitative keyword correction; --dry-run/--apply flags"
+      - "normalize_rtings_only.py: targets RTINGS-only shoes; adds durability keyword correction (same as stability)"
+      - "All scripts write to data/brands/*.json in-place (only affected fields)"
+    data_flow: "checkpoint.json → data/brands/*.json confidence field; checkpoint.json SA/ER%/keyFindings → data/brands/*.json spec scores"
     error_patterns: []
     test_location: "none"
-    notes: "Run after adding new shoes to checkpoint.json to keep confidence fields in sync"
+    notes: |
+      Run add_confidence.py after adding new shoes to checkpoint.json.
+      Run normalize scripts after adding RunRepeat/RTINGS measurement data.
+      Qualitative keywords: stability(+1: stable/stiff/firm/supportive, -1: unstable/wobbly/sloppy), durability(+1: durable/long-lasting/holds up, -1: wears fast/breaks down).
 
   app-seo:
     description: "Auto-generated sitemap.xml and robots.txt via Next.js Metadata API"
