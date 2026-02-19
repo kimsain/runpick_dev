@@ -35,6 +35,25 @@ const CATEGORY_LABELS: Record<string, string> = {
   racing: '레이싱',
 }
 
+const BRAND_KOREA_URLS: Record<string, string> = {
+  adidas: 'https://www.adidas.co.kr/',
+  asics: 'https://www.asics.com/kr/ko-kr/',
+  brooks: 'https://www.brooksrunning.com/ko_kr/',
+  hoka: 'https://www.hoka.com/ko/ko/',
+  mizuno: 'https://mizuno.com/kr/ko/',
+  'new-balance': 'https://www.newbalance.co.kr/',
+  nike: 'https://www.nike.com/kr/',
+  puma: 'https://kr.puma.com/',
+  saucony: 'https://www.saucony.com/',
+}
+
+function getUrlType(url: string): 'runrepeat' | 'rtings' | 'doctors' | 'official' {
+  if (url.includes('runrepeat.com')) return 'runrepeat'
+  if (url.includes('rtings.com')) return 'rtings'
+  if (url.includes('doctorsofrunning.com')) return 'doctors'
+  return 'official'
+}
+
 export default function ShoeDetailPage({ params }: { params: { slug: string } }) {
   const shoe = getShoeBySlug(params.slug)
   if (!shoe) notFound()
@@ -64,7 +83,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
         <div className="min-w-0">
           {/* Header */}
           <div className="mb-8">
-            <p className="font-display text-xs text-muted tracking-widest uppercase mb-1">
+            <p className="font-display text-xs text-secondary tracking-widest uppercase mb-1">
               {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
             </p>
             <h1 className="font-display text-xl text-primary leading-tight mb-3">
@@ -87,17 +106,17 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             <div className="grid grid-cols-3 gap-3 mt-6">
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">{shoe.specs.weight}</p>
-                <p className="text-muted text-xs font-body mt-1">g / 무게</p>
+                <p className="text-secondary text-xs font-body mt-1">g / 무게</p>
               </div>
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">{shoe.specs.drop}</p>
-                <p className="text-muted text-xs font-body mt-1">mm / 드롭</p>
+                <p className="text-secondary text-xs font-body mt-1">mm / 드롭</p>
               </div>
               <div className="bg-card border border-elevated p-4 text-center">
                 <p className="font-display text-lg text-accent">
                   {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
                 </p>
-                <p className="text-muted text-xs font-body mt-1">mm / 스택</p>
+                <p className="text-secondary text-xs font-body mt-1">mm / 스택</p>
               </div>
             </div>
           </section>
@@ -180,17 +199,38 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             </section>
           )}
 
-          {/* Official link */}
-          {shoe.officialUrl && (
-            <a
-              href={shoe.officialUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-body text-muted hover:text-accent transition-colors border border-elevated px-4 py-2.5 hover:border-accent/30 min-h-[44px]"
-            >
-              공식 정보 보기 ↗
-            </a>
-          )}
+          {/* 링크 버튼 그룹 */}
+          <div className="flex flex-wrap gap-2">
+            {BRAND_KOREA_URLS[shoe.brandId] && (
+              <a
+                href={BRAND_KOREA_URLS[shoe.brandId]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
+              >
+                공식 사이트 ↗
+              </a>
+            )}
+            {shoe.officialUrl && (() => {
+              const type = getUrlType(shoe.officialUrl)
+              if (type === 'official') return null
+              const labels: Record<string, string> = {
+                runrepeat: 'RunRepeat 리뷰 ↗',
+                rtings: 'RTINGS 측정 ↗',
+                doctors: 'Doctors of Running ↗',
+              }
+              return (
+                <a
+                  href={shoe.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
+                >
+                  {labels[type]}
+                </a>
+              )
+            })()}
+          </div>
         </div>
       </div>
 

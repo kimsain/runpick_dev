@@ -6,6 +6,7 @@ import {
   Radar,
   PolarGrid,
   PolarAngleAxis,
+  PolarRadiusAxis,
   ResponsiveContainer,
 } from 'recharts'
 import type { Specs } from '@/lib/types'
@@ -33,6 +34,12 @@ export default function SpecRadar({ specs }: Props) {
     <ResponsiveContainer width="100%" height={280}>
       <RadarChart data={data} margin={{ top: 10, right: 30, bottom: 10, left: 30 }}>
         <PolarGrid stroke="#1c1c1c" strokeWidth={1} />
+        <PolarRadiusAxis
+          angle={90}
+          domain={[0, 10]}
+          tick={false}
+          axisLine={false}
+        />
         <PolarAngleAxis
           dataKey="subject"
           tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit' }}

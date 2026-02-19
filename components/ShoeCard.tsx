@@ -26,6 +26,11 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
     ? `/images${shoe.imageUrl}`
     : shoe.imageUrl
 
+  const url = shoe.officialUrl ?? ''
+  const isDataLimited = !url.includes('runrepeat.com') &&
+    !url.includes('rtings.com') &&
+    !url.includes('doctorsofrunning.com')
+
   return (
     <Link
       href={`/shoes/${shoe.slug}`}
@@ -33,6 +38,12 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
     >
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
+        {isDataLimited && (
+          <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body text-secondary border border-elevated">
+            <span className="w-1.5 h-1.5 rounded-full bg-secondary inline-block" />
+            평가중
+          </div>
+        )}
         <Image
           src={imagePath}
           alt={shoe.name}
@@ -60,7 +71,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
         <p className="text-primary font-body font-bold text-base truncate">
           {shoe.name}
         </p>
-        <p className="text-accent font-body font-bold text-base mt-0.5">
+        <p className="text-accent font-body font-bold text-lg mt-0.5">
           {shoe.priceFormatted}
         </p>
 

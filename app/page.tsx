@@ -6,39 +6,46 @@ import { getAllShoes, getBrands } from '@/lib/data'
 
 const PURPOSE_CARDS = [
   {
-    title: '회복주 데일리',
-    desc: '편안하고 믿음직한 일상 트레이너',
+    title: '입문',
+    desc: '처음 러닝, 부담 없이 시작하기',
     href: '/shoes?category=daily',
     color: '#38BDF8',
     imageSlug: 'pegasus-41',
   },
   {
-    title: '롱런 트레이닝',
-    desc: '장거리도 거뜬한 맥스 쿠셔닝',
+    title: '데일리',
+    desc: '매일 신는 든든한 트레이너',
     href: '/shoes?category=daily',
     color: '#C8FF00',
-    imageSlug: 'gel-nimbus-28',
+    imageSlug: 'clifton-10',
   },
   {
-    title: '레이스 퍼포먼스',
+    title: '슈퍼트레이너',
+    desc: '템포·인터벌을 위한 플레이티드 트레이너',
+    href: '/shoes?category=super-trainer',
+    color: '#FBBF24',
+    imageSlug: 'superblast-2',
+  },
+  {
+    title: '레이스',
     desc: '기록을 위한 카본 플레이트 레이서',
     href: '/shoes?category=racing',
-    color: '#FBBF24',
-    imageSlug: 'adizero-takumi-sen-11',
-  },
-  {
-    title: '러닝 입문자',
-    desc: '처음 러닝, 가볍게 시작하기',
-    href: '/shoes?category=daily',
     color: '#F87171',
-    imageSlug: 'supernova-rise-3',
+    imageSlug: 'alphafly-3',
   },
 ]
 
 export default function HomePage() {
   const allShoes = getAllShoes()
   const brands = getBrands()
-  const featured = allShoes.slice(0, 8)
+  const featured = allShoes
+    .slice()
+    .sort((a, b) => {
+      const scoreA = a.specs.cushioning + a.specs.responsiveness + a.specs.stability + a.specs.durability
+      const scoreB = b.specs.cushioning + b.specs.responsiveness + b.specs.stability + b.specs.durability
+      return scoreB - scoreA
+    })
+    .slice(0, 8)
 
   return (
     <main>
