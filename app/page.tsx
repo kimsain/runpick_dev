@@ -31,6 +31,18 @@ const PURPOSE_CARDS = [
 
 const CONFIDENCE_ORDER: Record<string, number> = { 'very-high': 3, high: 2, medium: 1, low: 0 }
 
+function getRawScore(shoe: Shoe, sortKey: keyof Specs): number {
+  if (sortKey === 'cushioning') {
+    const raw = shoe.specs.rawCushioning
+    return Number.isFinite(raw) ? raw! : shoe.specs.cushioning
+  }
+  if (sortKey === 'responsiveness') {
+    const raw = shoe.specs.rawResponsiveness
+    return Number.isFinite(raw) ? raw! : shoe.specs.responsiveness
+  }
+  return Number(shoe.specs[sortKey] ?? 0)
+}
+
 function pickTop(
   shoes: Shoe[],
   sortKey: keyof Specs,
@@ -39,8 +51,8 @@ function pickTop(
   return shoes
     .filter(filter)
     .sort((a, b) => {
-      const bVal = Number(b.specs[sortKey] ?? 0)
-      const aVal = Number(a.specs[sortKey] ?? 0)
+      const bVal = getRawScore(b, sortKey)
+      const aVal = getRawScore(a, sortKey)
       const diff = bVal - aVal
       if (diff !== 0) return diff
       const cDiff =
@@ -61,8 +73,9 @@ export default function HomePage() {
   const highConfidence = (s: Shoe) =>
     s.confidence === 'very-high' || s.confidence === 'high'
 
+  const currentYear = new Date().getFullYear()
   const newShoes = allShoes
-    .filter((s) => s.releaseYear >= 2025)
+    .filter((s) => s.releaseYear >= currentYear)
     .sort((a, b) => {
       if (b.releaseYear !== a.releaseYear) return b.releaseYear - a.releaseYear
       return (

@@ -87,7 +87,9 @@
           "forefoot": 29
         },
         "weightScore": 3,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 6.7,
+        "rawResponsiveness": 7.6
       },
       "pros": [
         "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려",
@@ -253,7 +255,9 @@
           "forefoot": 21
         },
         "weightScore": 8,
-        "valueScore": 5
+        "valueScore": 5,
+        "rawCushioning": 3.2,
+        "rawResponsiveness": 10
       },
       "pros": [
         "176g 초경량에 에너지 리턴 77%로 발이 거의 안 느껴지면서 빨라",
@@ -307,7 +311,9 @@
           "forefoot": 32
         },
         "weightScore": 6,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 5.9,
+        "rawResponsiveness": 9.8
       },
       "pros": [
         "에너지 리턴 74%로 슈퍼슈즈급 반발력인데 카본 없이 부드러운 라이드",
@@ -361,7 +367,9 @@
           "forefoot": 30
         },
         "weightScore": 4,
-        "valueScore": 10
+        "valueScore": 10,
+        "rawCushioning": 4.6,
+        "rawResponsiveness": 8.1
       },
       "pros": [
         "전족부 에너지 리턴 70%로 포어풋 착지 러너에게 슈퍼슈즈급 반발력",
@@ -417,7 +425,9 @@
           "forefoot": 26
         },
         "weightScore": 8,
-        "valueScore": 6
+        "valueScore": 6,
+        "rawCushioning": 4.4,
+        "rawResponsiveness": 10
       },
       "pros": [
         "전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는 반발력",
@@ -474,7 +484,9 @@
           "forefoot": 43
         },
         "weightScore": 3,
-        "valueScore": 3
+        "valueScore": 3,
+        "rawCushioning": 6.4,
+        "rawResponsiveness": 10
       },
       "pros": [
         "에너지 리턴 77% + 충격 흡수 160 SA로 쿠셔닝과 반발력 모두 압도적",
@@ -531,7 +543,9 @@
           "forefoot": 33
         },
         "weightScore": 7,
-        "valueScore": 3
+        "valueScore": 3,
+        "rawCushioning": 5.5,
+        "rawResponsiveness": 10
       },
       "pros": [
         "에너지 리턴 80.4%로 랩 테스트 역대 최고 — 밟을수록 돌아오는 반발력",
@@ -587,7 +601,9 @@
           "forefoot": 36
         },
         "weightScore": 10,
-        "valueScore": 0
+        "valueScore": 0,
+        "rawCushioning": 6.2,
+        "rawResponsiveness": 9.8
       },
       "pros": [
         "138g으로 알파플라이 3(198g)보다 60g 가벼워서 장거리에서 차이가 확실해",

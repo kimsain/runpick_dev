@@ -11,8 +11,10 @@ export interface Specs {
   stability: number
   durability: number
   stackHeight: StackHeight
-  weightScore?: number   // 0-10, 가벼울수록 높음
-  valueScore?: number    // 0-10, (쿠션성+반응성+안정성+내구성)÷가격 정규화
+  weightScore?: number        // 0-10, 가벼울수록 높음
+  valueScore?: number         // 0-10, (쿠션성+반응성+안정성+내구성)÷가격 정규화
+  rawCushioning?: number      // 0-10 소수점, RunRepeat SA 기반 (RTINGS fallback)
+  rawResponsiveness?: number  // 0-10 소수점, RunRepeat ER% 기반 (RTINGS fallback)
 }
 
 export interface Shoe {

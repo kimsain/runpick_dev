@@ -32,7 +32,9 @@
           "forefoot": 35.5
         },
         "weightScore": 3,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 5.7,
+        "rawResponsiveness": 3.3
       },
       "pros": [
         "전작보다 24g 가벼워졌는데 푹신한 쿠셔닝은 그대로라 장거리가 편해",
@@ -87,7 +89,9 @@
           "forefoot": 40
         },
         "weightScore": 4,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 8.1,
+        "rawResponsiveness": 6.9
       },
       "pros": [
         "GUIDESOLE 로커가 알아서 앞으로 밀어줘서 힘을 덜 쓰고 달릴 수 있어",
@@ -144,7 +148,9 @@
           "forefoot": 32
         },
         "weightScore": 2,
-        "valueScore": 8
+        "valueScore": 8,
+        "rawCushioning": 5.1,
+        "rawResponsiveness": 4.1
       },
       "pros": [
         "4D GUIDANCE SYSTEM이 과회내를 자연스럽게 교정해서 억지 느낌이 없어",
@@ -199,7 +205,9 @@
           "forefoot": 33.5
         },
         "weightScore": 4,
-        "valueScore": 10
+        "valueScore": 10,
+        "rawCushioning": 5.9,
+        "rawResponsiveness": 7.8
       },
       "pros": [
         "FF BLAST MAX 폼이 착지는 부드럽고 반발은 통통 튀어서 달리는 재미가 있어",
@@ -254,7 +262,9 @@
           "forefoot": 37
         },
         "weightScore": 5,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 5.5,
+        "rawResponsiveness": 7.9
       },
       "pros": [
         "넓은 베이스 덕분에 슈퍼 트레이너 중에서도 안정성이 높아",
@@ -310,7 +320,9 @@
           "forefoot": 38
         },
         "weightScore": 6,
-        "valueScore": 5
+        "valueScore": 5,
+        "rawCushioning": 6.9,
+        "rawResponsiveness": 9.6
       },
       "pros": [
         "FF TURBO² 폼의 반발력이 폭발적인데 220g으로 가벼워",
@@ -364,7 +376,9 @@
           "forefoot": 38
         },
         "weightScore": 4,
-        "valueScore": 6
+        "valueScore": 6,
+        "rawCushioning": 6.2,
+        "rawResponsiveness": 8.6
       },
       "pros": [
         "빠른 페이스에서 Pebax 플레이트의 전족부 추진력이 확 살아나",
@@ -420,7 +434,9 @@
           "forefoot": 30.5
         },
         "weightScore": 7,
-        "valueScore": 6
+        "valueScore": 6,
+        "rawCushioning": 5.6,
+        "rawResponsiveness": 7.5
       },
       "pros": [
         "193g 초경량에 풀 카본 플레이트가 들어가서 빠른 러닝에 딱 (에너지 리턴 64.6%)",
@@ -476,7 +492,9 @@
           "forefoot": 34.5
         },
         "weightScore": 10,
-        "valueScore": 1
+        "valueScore": 1,
+        "rawCushioning": 6.7,
+        "rawResponsiveness": 10
       },
       "pros": [
         "129g 역대 최경량에 전족부 에너지 리턴 81%로 폭발적인 추진력",
@@ -531,7 +549,9 @@
           "forefoot": 34
         },
         "weightScore": 5,
-        "valueScore": 4
+        "valueScore": 4,
+        "rawCushioning": 4.7,
+        "rawResponsiveness": 7.3
       },
       "pros": [
         "듀얼 폼 구조라 카본화인데도 안정적이어서 첫 레이싱화로 좋아",
@@ -586,7 +606,9 @@
           "forefoot": 34.5
         },
         "weightScore": 8,
-        "valueScore": 3
+        "valueScore": 3,
+        "rawCushioning": 5.8,
+        "rawResponsiveness": 10
       },
       "pros": [
         "FF LEAP 폼이 플러시하면서도 전족부에서 폭발적으로 밀어줘",
@@ -641,7 +663,9 @@
           "forefoot": 34.5
         },
         "weightScore": 8,
-        "valueScore": 3
+        "valueScore": 3,
+        "rawCushioning": 6.0,
+        "rawResponsiveness": 10
       },
       "pros": [
         "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해",

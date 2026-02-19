@@ -32,7 +32,9 @@
           "forefoot": 26
         },
         "weightScore": 5,
-        "valueScore": 8
+        "valueScore": 8,
+        "rawCushioning": 4.8,
+        "rawResponsiveness": 9.1
       },
       "pros": [
         "풀레이어 NitroFoam 단일 구조라 힐에서 포어풋까지 착지감이 균일하고 경쾌해",
@@ -87,7 +89,9 @@
           "forefoot": 38
         },
         "weightScore": 3,
-        "valueScore": 5
+        "valueScore": 5,
+        "rawCushioning": 8.9,
+        "rawResponsiveness": 6.8
       },
       "pros": [
         "힐·포어풋 쿠셔닝 8.9/10으로 균일하게 높아서 착지 위치와 상관없이 충격 흡수가 안정적이야",
@@ -142,7 +146,9 @@
           "forefoot": 30
         },
         "weightScore": 4,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 4.7,
+        "rawResponsiveness": 8.8
       },
       "pros": [
         "NITRO FOAM PLUS 폼이 힐 충격 흡수 136 SA로 뒤꿈치 착지 러너의 착지 충격을 확실하게 흡수해줘",
@@ -197,7 +203,9 @@
           "forefoot": 28
         },
         "weightScore": 3,
-        "valueScore": 7
+        "valueScore": 7,
+        "rawCushioning": 5.0,
+        "rawResponsiveness": 7.1
       },
       "pros": [
         "RunGuide 기술이 딱딱한 포스트 없이 이중 밀도 NitroFoam으로 발을 중심선으로 유도해 착지가 자연스러워",
@@ -252,7 +260,9 @@
           "forefoot": 29
         },
         "weightScore": 4,
-        "valueScore": 5
+        "valueScore": 5,
+        "rawCushioning": 4.6,
+        "rawResponsiveness": 7.1
       },
       "pros": [
         "카본 플레이트 + NITRO ELITE PEBA 폼 조합이라 템포런 페이스에서 스텝 전환이 빠르고 탄성이 살아있어",
@@ -362,7 +372,9 @@
           "forefoot": 32
         },
         "weightScore": 6,
-        "valueScore": 4
+        "valueScore": 4,
+        "rawCushioning": 5.9,
+        "rawResponsiveness": 10
       },
       "pros": [
         "ATPU 폼이 힐 ER 84.8%·포어풋 82.4%를 기록해 카본 플레이트와 시너지로 강한 추진력이 나와",
@@ -472,7 +484,9 @@
           "forefoot": 31
         },
         "weightScore": 8,
-        "valueScore": 2
+        "valueScore": 2,
+        "rawCushioning": 5.9,
+        "rawResponsiveness": 10
       },
       "pros": [
         "티어드롭 힐 NitroFoam Elite 구조가 카본 플레이트와 맞물려 힐·포어풋 ER 80~82%의 강한 추진력을 만들어내",
