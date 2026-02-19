@@ -162,11 +162,11 @@
     "durability": 6
   },
   "proposedScores": {
-    "cushioning": 6,
-    "responsiveness": 6,
+    "cushioning": 8,
     "stability": 6,
+    "responsiveness": 5,
     "durability": 6
   },
   "scoreDiffs": [],
-  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+  "specsDecision": "[normalize_qualitative_only.py] Claude Sonnet 4.6 직접 추출. 생산 적용 전 수동 검토 필요."
 }

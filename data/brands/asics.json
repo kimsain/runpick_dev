@@ -75,9 +75,9 @@
       "specs": {
         "weight": 261,
         "drop": 6,
-        "cushioning": 9,
-        "responsiveness": 4,
-        "stability": 8,
+        "cushioning": 8,
+        "responsiveness": 5,
+        "stability": 6,
         "durability": 7,
         "stackHeight": {
           "heel": 46,

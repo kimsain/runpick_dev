@@ -24,8 +24,8 @@
         "weight": 286.6,
         "drop": 7.3,
         "cushioning": 7,
-        "responsiveness": 8,
-        "stability": 6,
+        "responsiveness": 7,
+        "stability": 7,
         "durability": 6,
         "stackHeight": {
           "heel": 39.4,
@@ -75,10 +75,10 @@
       "specs": {
         "weight": 250.3,
         "drop": 7.8,
-        "cushioning": 8,
-        "responsiveness": 8,
+        "cushioning": 9,
+        "responsiveness": 6,
         "stability": 6,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 38.4,
           "forefoot": 30.6
@@ -128,7 +128,7 @@
         "weight": 320,
         "drop": 4,
         "cushioning": 9,
-        "responsiveness": 8,
+        "responsiveness": 5,
         "stability": 6,
         "durability": 6,
         "stackHeight": {
@@ -180,7 +180,7 @@
         "weight": 227,
         "drop": 6,
         "cushioning": 7,
-        "responsiveness": 8,
+        "responsiveness": 6,
         "stability": 6,
         "durability": 6,
         "stackHeight": {
@@ -284,8 +284,8 @@
         "weight": 201,
         "drop": 8,
         "cushioning": 8,
-        "responsiveness": 9,
-        "stability": 6,
+        "responsiveness": 8,
+        "stability": 7,
         "durability": 6,
         "stackHeight": {
           "heel": 40,

@@ -283,7 +283,7 @@
       "specs": {
         "weight": 250,
         "drop": 8,
-        "cushioning": 7,
+        "cushioning": 6,
         "responsiveness": 8,
         "stability": 6,
         "durability": 6,
@@ -387,7 +387,7 @@
       "specs": {
         "weight": 170,
         "drop": 8,
-        "cushioning": 8,
+        "cushioning": 6,
         "responsiveness": 9,
         "stability": 5,
         "durability": 4,
