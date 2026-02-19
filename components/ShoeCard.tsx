@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
-import { CONF_TEXT, CONF_DOT } from '@/lib/confidence'
 
 interface Props {
   shoe: Shoe
@@ -39,8 +38,12 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
-          const colorClass = CONF_TEXT[shoe.confidence] ?? 'text-secondary'
-          const dotClass = CONF_DOT[shoe.confidence] ?? 'bg-secondary'
+          const colorClass = shoe.confidence === 'very-high' ? 'text-blue-400' :
+            shoe.confidence === 'high' ? 'text-green-400' :
+            shoe.confidence === 'medium' ? 'text-yellow-400' : 'text-secondary'
+          const dotClass = shoe.confidence === 'very-high' ? 'bg-blue-400' :
+            shoe.confidence === 'high' ? 'bg-green-400' :
+            shoe.confidence === 'medium' ? 'bg-yellow-400' : 'bg-secondary'
           const label = shoe.confidence === 'very-high' ? 'VERIFIED' :
             shoe.confidence === 'high' ? 'RELIABLE' :
             shoe.confidence === 'medium' ? 'LIMITED' : 'PENDING'
@@ -50,10 +53,10 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
               <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
-                <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
+                <span className={`w-1.5 h-1.5 rounded-full inline-block ${dotClass}`} />
                 {label}
               </div>
-              <div className="absolute top-full right-0 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-3 py-2 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
+              <div className="absolute top-full right-0 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-2.5 py-1.5 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
                 {tooltipText}
               </div>
             </div>
