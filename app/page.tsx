@@ -10,7 +10,7 @@ const PURPOSE_CARDS = [
     desc: '매일 신는 든든한 트레이너',
     href: '/shoes?category=daily',
     color: '#C8FF00',
-    imageSlug: 'clifton-10',
+    imageSlug: 'novablast-5',
   },
   {
     title: '슈퍼트레이너',
@@ -32,7 +32,7 @@ export default function HomePage() {
   const allShoes = getAllShoes()
   const brands = getBrands()
   const featured = allShoes
-    .slice()
+    .filter(s => s.confidence === 'high')
     .sort((a, b) => {
       const scoreA = a.specs.cushioning + a.specs.responsiveness + a.specs.stability + a.specs.durability
       const scoreB = b.specs.cushioning + b.specs.responsiveness + b.specs.stability + b.specs.durability

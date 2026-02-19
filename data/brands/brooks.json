@@ -18,7 +18,7 @@
       "price": 161000,
       "priceFormatted": "₩161,000",
       "description": "Ghost 17는 DNA Loft V3 폼을 쓴 브룩스의 대표 데일리 트레이너야. 이번 세대에서 포어풋에 3mm, 힐에 1mm 폼을 추가해서 착지 충격 완화가 확실히 올라갔어. 느낌은 푹신하면서도 물렁하지 않고 안정적인데, 289g 무게와 10mm 높은 드롭 덕분에 뒤꿈치 착지로 천천히 달리는 러너에게 잘 맞아. 다만 DNA Loft V3는 최신 PEBA 계열 폼 대비 반발력이 보수적인 편이라 빠른 페이스를 자주 섞는 러너에게는 답답하게 느껴질 수 있어.",
-      "shortDescription": "데일리부터 롱런까지 쓰는 올라운더",
+      "shortDescription": "DNA Loft V3의 묵직한 안정감 올라운더",
       "imageUrl": "/shoes/ghost-17.png",
       "specs": {
         "weight": 286,
@@ -58,7 +58,8 @@
         "한정 컬러"
       ],
       "slug": "ghost-17",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-17/110442.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-17/110442.html",
+      "confidence": "high"
     },
     {
       "id": "hyperion-3",
@@ -70,7 +71,7 @@
       "price": 151000,
       "priceFormatted": "₩151,000",
       "description": "Hyperion 3는 플레이트나 별도 보강재 없이 233g을 달성한 브룩스의 경량 템포 트레이너야. DNA Flash 폼만으로 에너지 리턴 56~74% 수준을 뽑아내서 자연스러운 발 움직임을 유지하면서도 속도를 올릴 수 있어. 발이 지면에 착지할 때 과하게 튕기는 느낌 없이 흐름이 부드러워서 인터벌보다는 템포런과 편안한 스피드 훈련에 딱 맞아. 다만 스택이 36.5/25.2mm로 얕은 편이라 30km 넘는 장거리에서는 발바닥 피로가 쌓일 수 있어.",
-      "shortDescription": "가볍게 페이스 올리기 좋은 경량 데일리",
+      "shortDescription": "233g DNA Flash 플레이트 없는 경량 템포화",
       "imageUrl": "/shoes/hyperion-3.png",
       "specs": {
         "weight": 233,
@@ -110,7 +111,8 @@
         "한정 컬러"
       ],
       "slug": "hyperion-3",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-3/110465.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-3/110465.html",
+      "confidence": "high"
     },
     {
       "id": "ghost-max-3",
@@ -122,7 +124,7 @@
       "price": 221000,
       "priceFormatted": "₩221,000",
       "description": "Ghost Max 3는 호카 스타일의 로커 구조를 브룩스가 해석한 맥스 스택 데일리 트레이너야. 38.5/31.2mm 스택에 6mm 낮은 드롭, 그리고 약 303g의 무게를 감수하고서라도 장거리에서 발이 안 아픈 걸 최우선으로 설계한 신발이야. 넓고 안정적인 베이스가 뒤꿈치 착지 러너에게 편안하게 받쳐주고, 로커 구조 덕분에 토오프가 자연스럽게 연결돼. 반발력(ER 50~51%)이 이 정도 스택치고 높지 않아서 빠른 페이스에서는 발이 무겁게 느껴지고, 스피드보다 충격 흡수에 모든 걸 건 신발이야.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "로커 구조의 넓고 안정적인 맥스 스택 데일리",
       "imageUrl": "/shoes/ghost-max-3.png",
       "specs": {
         "weight": 318,
@@ -162,7 +164,8 @@
         "한정 컬러"
       ],
       "slug": "ghost-max-3",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-3/110464.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-3/110464.html",
+      "confidence": "high"
     },
     {
       "id": "glycerin-22",
@@ -174,7 +177,7 @@
       "price": 221000,
       "priceFormatted": "₩221,000",
       "description": "Glycerin 22는 브룩스 프리미엄 라인의 DNA Loft V3 데일리 트레이너야. 힐/포어풋 각각 질소를 주입한 폼 퍽(puck)으로 구성해서 착지 쿠셔닝이 일관적이고 포근해. 반발력은 54~58% 수준으로 튀는 느낌보다는 편안하게 감싸주는 쪽이라 이지런과 장거리 리커버리 러닝에 적합해. 다만 이 반발력 수준이 빠른 페이스에서는 아쉽고, 아웃솔 내구성이 0.5mm 수준으로 얇은 편이라 마모가 빠른 러너는 수명이 짧을 수 있어.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "질소 주입 폼 퍽의 포근한 프리미엄 데일리",
       "imageUrl": "/shoes/glycerin-22.png",
       "specs": {
         "weight": 289,
@@ -214,7 +217,8 @@
         "한정 컬러"
       ],
       "slug": "glycerin-22",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-22/110445.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-22/110445.html",
+      "confidence": "high"
     },
     {
       "id": "glycerin-23",
@@ -226,7 +230,7 @@
       "price": 224000,
       "priceFormatted": "₩224,000",
       "description": "Glycerin 23는 전작 22 대비 드롭을 10mm에서 8mm로 낮춰 보행 효율을 개선한 업데이트 데일리 트레이너야. 슈퍼크리티컬 폼을 탑재해 여전히 풍성하게 푹신한 라이드를 유지하면서도 스택은 38/30mm로 비슷한 수준을 유지했어. 301g으로 무겁고 드롭 변화로 착지감이 달라져서 Glycerin 22에서 넘어오는 러너는 초반에 다소 어색할 수 있어. 반면 빠른 페이스에서는 여전히 무거운 라이드가 발목을 잡아서 스피드 훈련에는 맞지 않아.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "슈퍼크리티컬 폼으로 갈아탄 글리세린 업데이트",
       "imageUrl": "/shoes/glycerin-23.webp",
       "specs": {
         "weight": 301,
@@ -266,7 +270,8 @@
         "한정 컬러"
       ],
       "slug": "glycerin-23",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-23/110476.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-23/110476.html",
+      "confidence": "medium"
     },
     {
       "id": "glycerin-max-2",
@@ -278,7 +283,7 @@
       "price": 226000,
       "priceFormatted": "₩226,000",
       "description": "Glycerin Max 2는 힐 47.9mm / 포어풋 41mm 스택으로 브룩스 역대 최대 쿠셔닝을 구현한 슈퍼 맥스 데일리 트레이너야. DNA TUNED 폼이 발 위치별 압력에 따라 고쿠셔닝 구간과 더 단단한 구간을 나눠서 지지해줘서 폭신한데도 발이 흔들리지 않아. 쿠셔닝 성능(힐/포어풋 8.5/9.0)은 탁월하지만 이걸 유지하기 위해 약 314g 무게를 감수해야 해서 속도와 보호감 중 후자를 확실히 선택한 신발이야. 전작(Glycerin Max 1) 대비 베이스가 좁아지고 개선 폭이 적어서 전작 사용자들에게 아쉬운 평가도 있어.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "DNA TUNED 48mm 브룩스 역대 최대 쿠셔닝",
       "imageUrl": "/shoes/glycerin-max-2.png",
       "specs": {
         "weight": 320,
@@ -318,7 +323,8 @@
         "한정 컬러"
       ],
       "slug": "glycerin-max-2",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html",
+      "confidence": "high"
     },
     {
       "id": "adrenaline-gts-25",
@@ -330,7 +336,7 @@
       "price": 188000,
       "priceFormatted": "₩188,000",
       "description": "Adrenaline GTS 25는 GuideRails 기술이 핵심인 브룩스의 모더레이트 스태빌리티 데일리 트레이너야. GuideRails는 발을 억지로 안쪽으로 밀어 교정하는 게 아니라 과도한 내외전이 일어날 때만 살짝 가이드해주는 방식이라 뻣뻣하게 느껴지지 않아. 이번 세대에서 드롭이 시리즈 역사상 처음으로 10mm로 낮아졌고 DNA Loft V3를 탑재해서 쿠셔닝도 업그레이드됐어. 다만 여전히 289g 이상의 무게와 전족부 쿠셔닝이 얕아서(포어풋 SA 5.2/10) 빠른 페이스에서는 둔탁하게 느껴질 수 있어.",
-      "shortDescription": "안정감 중심 데일리 안정화",
+      "shortDescription": "GuideRails 과교정 없는 자연스러운 안정화",
       "imageUrl": "/shoes/adrenaline-gts-25.png",
       "specs": {
         "weight": 301,
@@ -370,7 +376,8 @@
         "한정 컬러"
       ],
       "slug": "adrenaline-gts-25",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-25/110454.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-25/110454.html",
+      "confidence": "high"
     },
     {
       "id": "hyperion-max-3",
@@ -382,7 +389,7 @@
       "price": 209000,
       "priceFormatted": "₩209,000",
       "description": "Hyperion Max 3는 DNA Gold PEBA 폼 + 플레이트 조합에 45.6/35mm 맥스 스택을 얹은 브룩스의 슈퍼 트레이너야. 6mm 드롭과 높은 스택 덕분에 템포런은 물론 20~30km 장거리 훈련까지 한 켤레로 소화할 수 있어. DNA Gold가 처음으로 들어간 브룩스 슈즈인데, 이 PEBA 폼이 실제로 빠르고 반응성이 좋다는 느낌을 줘. 다만 283g 무게가 페이스를 올릴수록 더 크게 느껴져서 본격 레이스 페이스에서는 가중 버전의 경쟁 슈즈처럼 느껴진다는 평가도 있어.",
-      "shortDescription": "템포·인터벌용 라이트 플레이트",
+      "shortDescription": "DNA Gold PEBA 첫 탑재 브룩스 슈퍼 트레이너",
       "imageUrl": "/shoes/hyperion-max-3.png",
       "specs": {
         "weight": 281,
@@ -422,7 +429,8 @@
         "한정 컬러"
       ],
       "slug": "hyperion-max-3",
-      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-max-3/110467.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-max-3/110467.html",
+      "confidence": "high"
     },
     {
       "id": "hyperion-elite-5",
@@ -434,7 +442,7 @@
       "price": 388000,
       "priceFormatted": "₩388,000",
       "description": "Hyperion Elite 5는 196g(브룩스 역대 최경량)에 카본 플레이트와 DNA Gold PEBA 폼을 탑재한 브룩스 플래그십 레이싱화야. ER 77~85% 수준의 높은 에너지 리턴이 빠른 착지-추진 사이클을 만들어주고, 미드솔 측면의 orb형 공동(cutout) 구조가 폼 압축 공간을 확보해서 스텝마다 탄성이 살아있어. 37.6/26.4mm 스택이 적당한 쿠셔닝과 지면 감각을 동시에 제공해서 풀코스 후반 페이스 유지에 유리해. 다만 좁은 핏과 얇은 미드풋이라 발볼이 넓거나 긴 러너는 사이즈와 핏 테스트가 필수야.",
-      "shortDescription": "풀코스 페이스 유지형",
+      "shortDescription": "196g 브룩스 역대 최경량 카본 레이서",
       "imageUrl": "/shoes/hyperion-elite-5.png",
       "specs": {
         "weight": 196,
@@ -474,7 +482,8 @@
         "한정 컬러"
       ],
       "slug": "hyperion-elite-5",
-      "officialUrl": "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-5/100049.html"
+      "officialUrl": "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-5/100049.html",
+      "confidence": "high"
     }
   ]
 }

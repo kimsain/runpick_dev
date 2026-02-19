@@ -41,9 +41,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-elevated mt-24 py-12 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <span className="font-display text-lg text-muted tracking-widest">RUNPICK</span>
-            <p className="text-secondary text-xs font-body">
-              러닝화 데이터 기반 탐색 플랫폼 · 실제 구매는 공식 사이트를 통해 진행하세요
-            </p>
+            <div className="flex items-center gap-6">
+              <p className="text-secondary text-xs font-body">
+                러닝화 데이터 기반 탐색 플랫폼 · 실제 구매는 공식 사이트를 통해 진행하세요
+              </p>
+              <Link href="/methodology" className="text-xs font-body text-muted hover:text-accent transition-colors whitespace-nowrap">
+                점수 산정 방법
+              </Link>
+            </div>
           </div>
         </footer>
       </body>

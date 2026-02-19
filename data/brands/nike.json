@@ -18,7 +18,7 @@
       "price": 159000,
       "priceFormatted": "159,000원",
       "description": "페가수스 41은 매일 편하게 신을 수 있는 기본기 좋은 데일리 러닝화야. ReactX 폼이랑 앞뒤 Air Zoom 덕분에 착지할 때 부드럽고, 밀어줄 때는 은근 탄력 있어서 이지런부터 가벼운 템포까지 무난하게 커버해. 엄청 가볍게 치고 나가는 타입은 아니라 빠른 페이스에서는 좀 둔탁한데, 한 켤레로 오래 신을 데일리용으로는 꽤 믿음직해.",
-      "shortDescription": "매일 신기 편한 기본기 좋은 데일리화",
+      "shortDescription": "ReactX + Air Zoom의 검증된 입문 데일리",
       "imageUrl": "/shoes/pegasus-41.webp",
       "specs": {
         "weight": 281,
@@ -58,7 +58,8 @@
         "Sail/Phantom/Black"
       ],
       "slug": "pegasus-41",
-      "officialUrl": "https://runrepeat.com/nike-pegasus-41"
+      "officialUrl": "https://runrepeat.com/nike-pegasus-41",
+      "confidence": "high"
     },
     {
       "id": "vomero-18",
@@ -70,7 +71,7 @@
       "price": 179000,
       "priceFormatted": "179,000원",
       "description": "보메로 18은 '발을 구름 위에 올려놓는' 맥스 쿠셔닝 데일리화야. ZoomX 위에 ReactX가 받쳐주는 듀얼 폼 구조라 힐 착지가 정말 부드럽고, 44mm 스택 덕분에 장거리 이지런에서도 발바닥 피로가 적어. 다만 298g으로 좀 무겁고 전족부 반발력은 기대 이하라, 빠른 페이스에서는 답답할 수 있어.",
-      "shortDescription": "장거리 이지런에 편안한 맥스 쿠셔닝화",
+      "shortDescription": "ZoomX 듀얼 폼의 44mm 맥스 쿠셔닝",
       "imageUrl": "/shoes/vomero-18.webp",
       "specs": {
         "weight": 298,
@@ -109,7 +110,8 @@
         "Multi/White/Sail/Black"
       ],
       "slug": "vomero-18",
-      "officialUrl": "https://runrepeat.com/nike-vomero-18"
+      "officialUrl": "https://runrepeat.com/nike-vomero-18",
+      "confidence": "high"
     },
     {
       "id": "vomero-plus",
@@ -121,7 +123,7 @@
       "price": 229000,
       "priceFormatted": "229,000원",
       "description": "보메로 플러스는 보메로 18보다 한 단계 더 바운시한 '뛰는 맛'이 있는 맥스 쿠셔닝화야. 풀렝스 ZoomX라서 착지하면 찰떡처럼 받아주고, 밀어낼 때는 에너지 리턴 68%로 은근 탄력 있게 나가. 이지런은 물론이고 가볍게 페이스 올려도 잘 따라와. 다만 토박스가 좁은 편이라 발볼 넓으면 불편할 수 있어.",
-      "shortDescription": "이지런부터 템포까지 바운시한 맥스 쿠셔닝화",
+      "shortDescription": "풀렝스 ZoomX의 바운시한 만능 쿠셔닝",
       "imageUrl": "/shoes/vomero-plus.webp",
       "specs": {
         "weight": 281,
@@ -158,7 +160,8 @@
         "Hot Pink"
       ],
       "slug": "vomero-plus",
-      "officialUrl": "https://runrepeat.com/nike-vomero-plus"
+      "officialUrl": "https://runrepeat.com/nike-vomero-plus",
+      "confidence": "high"
     },
     {
       "id": "vomero-premium",
@@ -170,7 +173,7 @@
       "price": 289000,
       "priceFormatted": "289,000원",
       "description": "보메로 프리미엄은 나이키 러닝화 중 가장 극단적인 쿠셔닝을 경험할 수 있는 신발이야. 55mm 스택에 Air Zoom 유닛이 4개나 들어가서 착지할 때 '반중력' 느낌이 나고, 밀어낼 때 바운스가 꽤 독특해. 다만 329g으로 무거워서 빠르게 달리기엔 부담이고, 이지런·회복 러닝 전용으로 생각하는 게 좋아.",
-      "shortDescription": "극한의 쿠셔닝이 필요한 이지런·회복 러닝용",
+      "shortDescription": "Air Zoom 4개의 55mm 반중력 쿠셔닝",
       "imageUrl": "/shoes/vomero-premium.webp",
       "specs": {
         "weight": 329,
@@ -209,7 +212,8 @@
         "Blue Tint/Pink Spell/Deep Royal Blue"
       ],
       "slug": "vomero-premium",
-      "officialUrl": "https://runrepeat.com/nike-vomero-premium"
+      "officialUrl": "https://runrepeat.com/nike-vomero-premium",
+      "confidence": "high"
     },
     {
       "id": "structure-26",
@@ -221,7 +225,7 @@
       "price": 169000,
       "priceFormatted": "169,000원",
       "description": "스트럭처 26은 발이 안쪽으로 기우는 러너를 위한 부드러운 안정화 데일리야. ReactX로 바뀌면서 전작보다 쿠셔닝이 눈에 띄게 좋아졌고, 내측 사이드월이 과하지 않게 잡아줘서 교정 느낌 없이 자연스러워. 다만 에너지 리턴이 낮아서 빠른 페이스에는 안 맞고, 이지런 위주로 편하게 쓰는 게 좋아.",
-      "shortDescription": "오버프로네이션 러너의 편한 이지런 데일리",
+      "shortDescription": "ReactX 기반 자연스러운 내측 안정화",
       "imageUrl": "/shoes/structure-26.webp",
       "specs": {
         "weight": 298,
@@ -259,7 +263,8 @@
         "White/Pure Platinum/Barely Volt"
       ],
       "slug": "structure-26",
-      "officialUrl": "https://runrepeat.com/nike-structure-26"
+      "officialUrl": "https://runrepeat.com/nike-structure-26",
+      "confidence": "high"
     },
     {
       "id": "structure-plus",
@@ -271,7 +276,7 @@
       "price": 199000,
       "priceFormatted": "199,000원",
       "description": "스트럭처 플러스는 '안정화인데 쿠셔닝도 좋은' 걸 원하는 러너를 위한 신발이야. ZoomX + ReactX 듀얼 폼에 높은 사이드월이 붙어서 푹신하면서도 발이 안 흔들려. 42mm 스택인데도 안정감이 괜찮아서 장거리 이지런에 좋은데, 힐-토 트랜지션이 좀 뚝뚝 끊기는 게 아쉬운 점이야.",
-      "shortDescription": "안정성과 푹신함 둘 다 원하는 러너용",
+      "shortDescription": "ZoomX + 사이드월로 안정성과 쿠셔닝 동시에",
       "imageUrl": "/shoes/structure-plus.webp",
       "specs": {
         "weight": 295,
@@ -311,7 +316,8 @@
         "Green/White/Black"
       ],
       "slug": "structure-plus",
-      "officialUrl": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html"
+      "officialUrl": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
+      "confidence": "medium"
     },
     {
       "id": "rival-fly-4",
@@ -323,7 +329,7 @@
       "price": 129000,
       "priceFormatted": "129,000원",
       "description": "라이벌 플라이 4는 12만원대에 플레이트까지 들어간 가성비 스피드 슈즈야. 슈퍼슈즈 같은 바운스는 아닌데, 접지감이 좋고 토오프 때 플레이트가 경쾌하게 밀어줘서 5K-10K 레이스나 인터벌에 딱 맞아. 쿠셔닝이 적어서 장거리에는 안 맞지만, 학생이나 처음 레이싱화 사는 러너에게 합리적인 선택이야.",
-      "shortDescription": "합리적 가격의 5K-10K 스피드 트레이닝화",
+      "shortDescription": "12만원대 플레이트 탑재 가성비 스피드슈즈",
       "imageUrl": "/shoes/rival-fly-4.webp",
       "specs": {
         "weight": 245,
@@ -363,7 +369,8 @@
         "White/Biotech/Dark Raisin"
       ],
       "slug": "rival-fly-4",
-      "officialUrl": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html"
+      "officialUrl": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html",
+      "confidence": "low"
     },
     {
       "id": "pegasus-plus",
@@ -375,7 +382,7 @@
       "price": 219000,
       "priceFormatted": "219,000원",
       "description": "페가수스 플러스는 '데일리보다 빠르고 레이싱보다 편한' 중간 영역의 템포 트레이너야. 풀렝스 ZoomX라서 플레이트 없이도 전족부 에너지 리턴 71%로 밀어주는 힘이 좋고, 238g으로 가벼워서 업템포에서 경쾌하게 달려. 다만 전족부 스택이 24mm로 낮아서 미드풋 착지 러너에게는 보호력이 부족할 수 있어.",
-      "shortDescription": "템포·파트렉 훈련에 빛나는 가벼운 트레이너",
+      "shortDescription": "238g 풀렝스 ZoomX 템포 트레이너",
       "imageUrl": "/shoes/pegasus-plus.webp",
       "specs": {
         "weight": 238,
@@ -414,7 +421,8 @@
         "White/Photo Blue"
       ],
       "slug": "pegasus-plus",
-      "officialUrl": "https://runrepeat.com/nike-pegasus-plus"
+      "officialUrl": "https://runrepeat.com/nike-pegasus-plus",
+      "confidence": "high"
     },
     {
       "id": "zoom-fly-6",
@@ -426,7 +434,7 @@
       "price": 209000,
       "priceFormatted": "209,000원",
       "description": "줌 플라이 6은 훈련에서도 레이스 감각을 느끼고 싶을 때 딱 맞는 카본 플레이트 슈퍼 트레이너야. ZoomX + SR-02 폼에 카본 Flyplate가 들어가서 알파플라이 비슷한 추진감이 있고, 244g으로 가벼워져서 템포부터 장거리 훈련까지 폭넓게 커버해. 슈퍼슈즈 아끼면서 훈련하고 싶은 러너에게 가장 합리적인 선택이야.",
-      "shortDescription": "훈련에서 레이스 감각을 느끼는 카본 트레이너",
+      "shortDescription": "알파플라이 감각의 카본 Flyplate 훈련화",
       "imageUrl": "/shoes/zoom-fly-6.webp",
       "specs": {
         "weight": 244,
@@ -466,7 +474,8 @@
         "Eliud Kipchoge Edition"
       ],
       "slug": "zoom-fly-6",
-      "officialUrl": "https://runrepeat.com/nike-zoom-fly-6"
+      "officialUrl": "https://runrepeat.com/nike-zoom-fly-6",
+      "confidence": "high"
     },
     {
       "id": "streakfly-2",
@@ -478,7 +487,7 @@
       "price": 219000,
       "priceFormatted": "219,000원",
       "description": "스트릭플라이 2는 '로드 위의 트랙 스파이크'라 불리는 초경량 단거리 레이싱화야. 130g밖에 안 되는데 에너지 리턴이 78%나 돼서 밟을수록 앞으로 치고 나가는 느낌이 강해. 드롭 4mm에 스파이크 라스트 기반이라 전족부 착지 러너에게 최적화돼 있어. 쿠셔닝이 거의 없어서 5K 넘으면 종아리에 부담이 확 오니까 단거리 전용으로 써야 해.",
-      "shortDescription": "전족부 착지 러너의 5K 이하 레이스 전용",
+      "shortDescription": "130g 로드 위의 트랙 스파이크",
       "imageUrl": "/shoes/streakfly-2.webp",
       "specs": {
         "weight": 130,
@@ -516,7 +525,8 @@
         "Bright Crimson"
       ],
       "slug": "streakfly-2",
-      "officialUrl": "https://runrepeat.com/nike-streakfly-2"
+      "officialUrl": "https://runrepeat.com/nike-streakfly-2",
+      "confidence": "high"
     },
     {
       "id": "vaporfly-4",
@@ -528,7 +538,7 @@
       "price": 309000,
       "priceFormatted": "309,000원",
       "description": "베이퍼플라이 4는 슈퍼슈즈의 원조답게 '빠를수록 빛나는' 레이싱화야. 167g으로 역대 가장 가볍고, 카본 Flyplate 각도가 20도로 올라가면서 추진력이 더 공격적이 됐어. 에너지 리턴 78%에 전작보다 스택이 낮아져서 접지감도 좋아졌거든. 5K~하프에서 최고의 무기인데, 가벼운 러너라면 풀마라톤도 충분히 가능해.",
-      "shortDescription": "5K~하프에서 빛나는 초경량 레이싱 슈퍼슈즈",
+      "shortDescription": "167g 역대 최경량 카본 레이서의 원조",
       "imageUrl": "/shoes/vaporfly-4.webp",
       "specs": {
         "weight": 167,
@@ -567,7 +577,8 @@
         "Glacier Blue"
       ],
       "slug": "vaporfly-4",
-      "officialUrl": "https://runrepeat.com/nike-vaporfly-4"
+      "officialUrl": "https://runrepeat.com/nike-vaporfly-4",
+      "confidence": "high"
     },
     {
       "id": "alphafly-3",
@@ -579,7 +590,7 @@
       "price": 329000,
       "priceFormatted": "329,000원",
       "description": "알파플라이 3은 나이키 마라톤 슈퍼슈즈의 정점이야. ZoomX + Air Zoom 포드 + 카본 Flyplate 삼중 시스템이라 에너지 리턴 75%에 추진력이 압도적이고, 198g으로 역대 가장 가벼우면서 가장 편한 알파플라이거든. 전작보다 트랜지션이 부드러워져서 접근성도 좋아졌어. 다만 느린 페이스에서는 불편하고, 제대로 된 레이서만 뽑아 먹을 수 있는 신발이야.",
-      "shortDescription": "마라톤 자기 기록 경신을 위한 최강 슈퍼슈즈",
+      "shortDescription": "ZoomX + Air Zoom + 카본 삼중 추진 슈퍼슈즈",
       "imageUrl": "/shoes/alphafly-3.webp",
       "specs": {
         "weight": 198,
@@ -620,7 +631,8 @@
         "Light Army/Desert Moss"
       ],
       "slug": "alphafly-3",
-      "officialUrl": "https://runrepeat.com/nike-alphafly-3"
+      "officialUrl": "https://runrepeat.com/nike-alphafly-3",
+      "confidence": "high"
     }
   ]
 }

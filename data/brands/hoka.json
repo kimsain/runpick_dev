@@ -18,7 +18,7 @@
       "price": 161000,
       "priceFormatted": "₩161,000",
       "description": "Clifton 10은 호카가 처음으로 드롭을 기존 4-5mm에서 8mm로 대폭 높인 데일리 올라운더야. Active Foot Frame 지오메트리와 CMEVA 미드솔이 맞물려 힐 충격흡수(SA) 147이라는 데일리화 최고 수준의 보호력을 만들어내. 두꺼워진 힐 폼 덕분에 착지가 한층 안착되는 느낌이고, 솔 플레어링이 착지를 자연스럽게 잡아줘. 다만 드롭 변화를 싫어하는 전통 클리프턴 팬에게는 낯선 감각일 수 있고, 저드롭에 익숙한 러너는 적응 기간이 필요해.",
-      "shortDescription": "데일리부터 롱런까지 쓰는 올라운더",
+      "shortDescription": "CMEVA 록커의 SA 147 힐 프로텍션 데일리",
       "imageUrl": "/shoes/clifton-10.webp",
       "specs": {
         "weight": 275,
@@ -58,7 +58,8 @@
         "한정 컬러"
       ],
       "slug": "clifton-10",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/clifton-10/1162030.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/clifton-10/1162030.html",
+      "confidence": "high"
     },
     {
       "id": "bondi-9",
@@ -70,7 +71,7 @@
       "price": 223000,
       "priceFormatted": "₩223,000",
       "description": "Bondi 9는 오랜 CMEVA를 버리고 supercritical EVA 미드솔로 전면 교체한 호카 맥스 쿠셔닝의 새 기준이야. 힐 스택 43mm에 ER 60/60%로, 반발보다는 충격흡수에 철저히 집중한 포지션이고 SA 146/133으로 이 분류에서 가장 두꺼운 완충력을 보여줘. 힐에 새로 들어간 안정성 프레임 덕분에 대용량 폼임에도 착지가 출렁이지 않고 잡혀. 다만 297g 무게 탓에 빠른 페이스나 업힐에서는 발걸음이 묵직하게 느껴져.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "초임계 EVA 43mm 힐의 호카 맥스 쿠셔닝",
       "imageUrl": "/shoes/bondi-9.webp",
       "specs": {
         "weight": 297,
@@ -110,7 +111,8 @@
         "한정 컬러"
       ],
       "slug": "bondi-9",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/bondi-9/1162011.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/bondi-9/1162011.html",
+      "confidence": "high"
     },
     {
       "id": "arahi-8",
@@ -122,7 +124,7 @@
       "price": 190000,
       "priceFormatted": "₩190,000",
       "description": "Arahi 8는 J-Frame 안정화 기술로 호카 라인업을 대표하는 가이던스 트레이너야. J-Frame이 미드솔 내측에만 단단한 EVA를 두어 과교정 없이 자연스럽게 발을 가이드해주고, 264g으로 안정화치고 가벼운 편이야. 뒷부분 미드솔 경직 덕분에 힐 착지 이후 발이 안쪽으로 돌아가는 걸 부드럽게 잡아주는 느낌이야. 다만 반응성이 ER 54%로 낮아서 빠른 페이스보다는 이지런과 워킹에 맞는 포지션이야.",
-      "shortDescription": "안정감 중심 데일리 안정화",
+      "shortDescription": "J-Frame 264g 자연스러운 내측 가이드",
       "imageUrl": "/shoes/arahi-8.webp",
       "specs": {
         "weight": 264,
@@ -162,7 +164,8 @@
         "한정 컬러"
       ],
       "slug": "arahi-8",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/arahi-8/1168690.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/arahi-8/1168690.html",
+      "confidence": "high"
     },
     {
       "id": "mach-x-3",
@@ -174,7 +177,7 @@
       "price": 209000,
       "priceFormatted": "₩209,000",
       "description": "Mach X 3는 PEBA·EVA 사이에 Pebax 카본 플레이트를 샌드위치한 호카의 버서타일 슈퍼 트레이너야. PEBA 직접 접촉 + Pebax 플레이트 조합이 쿠셔닝(SA 151/125)과 추진감을 동시에 잡으면서, 264g으로 플레이트화 치고는 가벼운 편이야. 높은 스택(42.9mm 힐)에도 불구하고 카본 플레이트가 비틀림을 잡아줘서 안정감이 생각보다 좋아. 다만 최신 슈퍼 트레이너 경쟁작 대비 폼 반응성이 두드러지지 않아서, 퍼포먼스보다 범용성에 방점이 찍힌 신발이야.",
-      "shortDescription": "템포·인터벌용 라이트 플레이트",
+      "shortDescription": "PEBA + Pebax 카본의 44mm 버서타일 트레이너",
       "imageUrl": "/shoes/mach-x-3.webp",
       "specs": {
         "weight": 289,
@@ -214,19 +217,20 @@
         "한정 컬러"
       ],
       "slug": "mach-x-3",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/mach-x-3/1168720.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/mach-x-3/1168720.html",
+      "confidence": "high"
     },
     {
       "id": "cielo-x1-3-0",
       "brandId": "hoka",
       "name": "Cielo X1 3.0",
       "nameKo": "Cielo X1 3.0",
-      "categoryId": "super-trainer",
+      "categoryId": "racing",
       "subcategoryId": "carbon-plate",
       "price": 255000,
       "priceFormatted": "₩255,000",
       "description": "Cielo X1 3.0은 198g이라는 호카 역대 최경량 무게에 40.5mm 힐 스택을 올려놓은 엘리트 레이서야. 전작 대비 15g 경량화하면서 사이드 컷아웃을 없애 미드풋 안정성을 동시에 올렸고, ER 82/80%의 높은 반발이 발걸음마다 강하게 튕겨나와. 높은 로커 구조가 착지-추진 사이클을 알아서 굴려줘서 고속에서 주법 효율이 극대화되는 느낌이야. 단 좁은 토박스와 높은 스택으로 인한 좁고 불안한 기반이 처음 신는 러너에게 불안하게 느껴질 수 있어.",
-      "shortDescription": "고강도 훈련용 카본 트레이너",
+      "shortDescription": "198g 호카 최경량 하이록커 카본 레이서",
       "imageUrl": "/shoes/cielo-x1-3-0.png",
       "specs": {
         "weight": 198,
@@ -266,7 +270,8 @@
         "한정 컬러"
       ],
       "slug": "cielo-x1-3-0",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/cielo-x1-3.0/1171927.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/cielo-x1-3.0/1171927.html",
+      "confidence": "high"
     },
     {
       "id": "rocket-x-3",
@@ -278,7 +283,7 @@
       "price": 388000,
       "priceFormatted": "₩388,000",
       "description": "Rocket X 3는 PEBA 미드솔과 카본 플레이트를 조합해 레이스와 템포 훈련을 겸용할 수 있는 210g 슈퍼 슈즈야. 포어풋 직하에 더 두꺼운 PEBA 레이어를 올려서 착지 충격을 흡수하면서 플레이트가 에너지를 튕겨내는 구조로, 힐 SA 155가 레이스 후반 피로를 줄여줘. Doctors of Running이 '바운시하고 추진력 강한 레이싱화'로 평가할 만큼 ER 74-84%로 반발이 확실해. 다만 Cielo X1 3.0 대비 12g 무거운데, 그 무게 차이만큼의 추진감 이점이 체감되진 않아서 순수 레이스 목적이면 Cielo가 더 날카로워.",
-      "shortDescription": "풀코스 페이스 유지형",
+      "shortDescription": "PEBA 카본 210g 레이스-템포 겸용 슈퍼슈즈",
       "imageUrl": "/shoes/rocket-x-3.webp",
       "specs": {
         "weight": 210,
@@ -318,7 +323,8 @@
         "한정 컬러"
       ],
       "slug": "rocket-x-3",
-      "officialUrl": "https://www.hoka.com/en/us/road-running/rocket-x-3/1168724.html"
+      "officialUrl": "https://www.hoka.com/en/us/road-running/rocket-x-3/1168724.html",
+      "confidence": "high"
     }
   ]
 }

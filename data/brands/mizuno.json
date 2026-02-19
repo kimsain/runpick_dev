@@ -18,7 +18,7 @@
       "price": 159000,
       "priceFormatted": "₩159,000",
       "description": "Wave Rider 29는 미즈노 전통 데일리 라인의 29번째 버전으로, Wave 플레이트와 Enerzy Core 폼을 힐 중심으로 조합한 258g짜리 올라운더야. Enerzy Core가 힐 착지의 충격을 눌러주면서 Wave 플레이트가 튕겨내는 구조라, 착지-반발 전환이 자연스럽게 이어져. 37.5mm 힐 스택에 드롭이 8mm 정도라 안정적인 힐 착지 리듬을 원하는 러너에게 딱 맞는 세팅이야. 다만 에너지 리턴이 53~56% 수준으로 반발력이 강한 편은 아니라서 템포런 이상의 페이스에서는 아쉬움이 남아.",
-      "shortDescription": "데일리부터 롱런까지 쓰는 올라운더",
+      "shortDescription": "Wave + Enerzy Core 258g 전통 데일리",
       "imageUrl": "/shoes/wave-rider-29.webp",
       "specs": {
         "weight": 258,
@@ -58,7 +58,8 @@
         "한정 컬러"
       ],
       "slug": "wave-rider-29",
-      "officialUrl": "https://usa.mizuno.com/running-wave-rider-29-mens"
+      "officialUrl": "https://usa.mizuno.com/running-wave-rider-29-mens",
+      "confidence": "high"
     },
     {
       "id": "wave-sky-9",
@@ -70,7 +71,7 @@
       "price": 221000,
       "priceFormatted": "₩221,000",
       "description": "Wave Sky 9는 미즈노 라인업에서 스택이 가장 높은 맥스 쿠셔닝 데일리로, Enerzy NXT(질소 주입 EVA) 폼을 힐 44mm·포어풋 38mm로 쌓아 올렸어. 힐과 포어풋 쿠셔닝이 SA 142/145로 거의 동일하게 세팅돼 있어서 착지 지점이 바뀌어도 발바닥 전체에서 균등하게 포근한 느낌이 유지돼. 6mm 드롭에 스트레치 우븐 어퍼와 거셋 텅 구조라 발 위쪽 압박 없이 장시간 신어도 편안해. 다만 295g으로 맥스 쿠션 라인 치고 무거운 편이라 거리보다 페이스를 신경 쓰는 러너에게는 둔하게 느껴져.",
-      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "shortDescription": "Enerzy NXT 44mm 미즈노 맥스 스택",
       "imageUrl": "/shoes/wave-sky-9.webp",
       "specs": {
         "weight": 284,
@@ -110,7 +111,8 @@
         "한정 컬러"
       ],
       "slug": "wave-sky-9",
-      "officialUrl": "https://usa.mizuno.com/running-wave-sky-9-mens"
+      "officialUrl": "https://usa.mizuno.com/running-wave-sky-9-mens",
+      "confidence": "high"
     },
     {
       "id": "neo-vista-2",
@@ -122,7 +124,7 @@
       "price": 249000,
       "priceFormatted": "₩249,000",
       "description": "Neo Vista 2는 미즈노가 Wave 플레이트를 빼고 새로 설계한 슈퍼 트레이너로, 유리섬유 강화 나일론 플레이트와 'Smooth Speed Assist' 로커 지오메트리를 핵심으로 쓰는 267g짜리 신라인이야. 힐 쿠셔닝이 SA 170으로 아주 높아서 착지할 때 부드럽게 폼 안으로 가라앉으면서 로커가 자연스럽게 앞으로 굴려줘. 46mm 힐 스택인데도 264g대를 유지해서 장거리 템포런에서 묵직하지 않아. 다만 아웃솔 내구성이 0.6mm 수준으로 얇아서 주간 거리가 많은 러너는 마모가 빠르게 느껴질 수 있어.",
-      "shortDescription": "반발감 중심 무플레이트 트레이너",
+      "shortDescription": "SA 170 록커 기반 267g Neo 라인 트레이너",
       "imageUrl": "/shoes/neo-vista-2.webp",
       "specs": {
         "weight": 267,
@@ -162,7 +164,8 @@
         "한정 컬러"
       ],
       "slug": "neo-vista-2",
-      "officialUrl": "https://usa.mizuno.com/running-mizuno-neo-vista-2-mens"
+      "officialUrl": "https://usa.mizuno.com/running-mizuno-neo-vista-2-mens",
+      "confidence": "high"
     },
     {
       "id": "neo-zen",
@@ -214,7 +217,8 @@
         "한정 컬러"
       ],
       "slug": "neo-zen",
-      "officialUrl": "https://usa.mizuno.com/running-mens-mizuno-neo-zen-running-shoe/"
+      "officialUrl": "https://usa.mizuno.com/running-mens-mizuno-neo-zen-running-shoe/",
+      "confidence": "high"
     },
     {
       "id": "wave-rebellion-flash-3",
@@ -266,7 +270,8 @@
         "한정 컬러"
       ],
       "slug": "wave-rebellion-flash-3",
-      "officialUrl": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/"
+      "officialUrl": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
+      "confidence": "high"
     },
     {
       "id": "hyperwarp-pure",
@@ -318,7 +323,8 @@
         "한정 컬러"
       ],
       "slug": "hyperwarp-pure",
-      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pure-running-shoe/"
+      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pure-running-shoe/",
+      "confidence": "medium"
     },
     {
       "id": "hyperwarp-elite",
@@ -370,7 +376,8 @@
         "한정 컬러"
       ],
       "slug": "hyperwarp-elite",
-      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-elite-unisex"
+      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-elite-unisex",
+      "confidence": "medium"
     },
     {
       "id": "hyperwarp-pro",
@@ -422,7 +429,8 @@
         "한정 컬러"
       ],
       "slug": "hyperwarp-pro",
-      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pro-unisex"
+      "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pro-unisex",
+      "confidence": "medium"
     },
     {
       "id": "wave-rebellion-pro-3",
@@ -474,7 +482,8 @@
         "한정 컬러"
       ],
       "slug": "wave-rebellion-pro-3",
-      "officialUrl": "https://usa.mizuno.com/running-unisex-wave-rebellion-pro-3-running-shoe/"
+      "officialUrl": "https://usa.mizuno.com/running-unisex-wave-rebellion-pro-3-running-shoe/",
+      "confidence": "high"
     }
   ]
 }

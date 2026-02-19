@@ -34,6 +34,7 @@ export interface Shoe {
   colorways: string[]
   slug: string
   officialUrl: string
+  confidence?: 'high' | 'medium' | 'low'
 }
 
 export interface Brand {

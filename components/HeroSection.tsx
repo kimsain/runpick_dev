@@ -2,28 +2,59 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getAllShoes } from '@/lib/data'
 
+const CHECKER_SLUGS = [
+  'alphafly-3',
+  'bondi-9',
+  'adizero-adios-pro-4',
+  'novablast-5',
+  'gel-nimbus-28',
+  'fuelcell-sc-elite-v5',
+  'endorphin-elite-2',
+  'wave-rebellion-pro-3',
+  'ghost-17',
+  'vomero-premium',
+  'deviate-nitro-elite-3',
+  'metaspeed-sky-tokyo',
+]
+
 export default function HeroSection() {
   const shoes = getAllShoes()
-  const featuredShoe = shoes.find((s) => s.slug === 'vaporfly-4') ?? shoes[0]
-  const imagePath = `/images${featuredShoe.imageUrl}`
   const totalCount = shoes.length
 
   return (
     <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src={imagePath}
-          alt={featuredShoe.name}
-          fill
-          sizes="100vw"
-          className="object-contain object-center scale-110"
-          priority
-        />
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-base via-base/60 to-base/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-base/80 via-transparent to-transparent" />
+      {/* Checker Grid Background */}
+      <div className="absolute inset-0 grid grid-cols-3">
+        {[0, 1, 2].map((col) => (
+          <div
+            key={col}
+            className="flex flex-col"
+            style={{ transform: `translateY(${col % 2 === 0 ? '-5%' : '5%'})` }}
+          >
+            {[0, 1, 2, 3].map((row) => {
+              const idx = col * 4 + row
+              const slug = CHECKER_SLUGS[idx]
+              const imageSrc = `/images/shoes/${slug}.webp`
+              return (
+                <div key={row} className="relative flex-1 min-h-0">
+                  <Image
+                    src={imageSrc}
+                    alt={slug}
+                    fill
+                    sizes="33vw"
+                    className="object-contain p-2"
+                    style={{ opacity: 0.25 }}
+                  />
+                </div>
+              )
+            })}
+          </div>
+        ))}
       </div>
+
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-t from-base via-base/60 to-base/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-base/80 via-transparent to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-24">
