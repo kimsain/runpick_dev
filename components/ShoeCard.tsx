@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
-import { CONF_DOT } from '@/lib/confidence'
+import { CONF_TEXT, CONF_DOT } from '@/lib/confidence'
 
 interface Props {
   shoe: Shoe
@@ -39,14 +39,21 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
+          const colorClass = CONF_TEXT[shoe.confidence] ?? 'text-secondary'
           const dotClass = CONF_DOT[shoe.confidence] ?? 'bg-secondary'
+          const label = shoe.confidence === 'very-high' ? 'VERIFIED' :
+            shoe.confidence === 'high' ? 'RELIABLE' :
+            shoe.confidence === 'medium' ? 'LIMITED' : 'PENDING'
           const tooltipText = shoe.confidence === 'very-high' ? 'RunRepeat + RTINGS 실측 데이터 완비' :
             shoe.confidence === 'high' ? '실측 데이터 + 전문가 리뷰 확인' :
             shoe.confidence === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
           return (
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 group/badge">
-              <span className={`w-2 h-2 rounded-full block ${dotClass}`} />
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-3 py-2 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
+            <div className="absolute top-2 right-2 z-10 group/badge">
+              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
+                <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
+                {label}
+              </div>
+              <div className="absolute top-full right-0 mt-1 w-44 bg-base/95 backdrop-blur-sm border border-elevated px-3 py-2 text-xs text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
                 {tooltipText}
               </div>
             </div>
@@ -61,7 +68,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           priority={priority}
         />
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-base/80 flex flex-col items-center justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+        <div className="absolute inset-0 bg-base/80 flex flex-col items-start justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
           <p className="text-primary text-sm leading-snug mb-2 font-body">
             {shoe.shortDescription}
           </p>
@@ -72,7 +79,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       </div>
 
       {/* Info */}
-      <div className="p-4 text-center">
+      <div className="p-4">
         <p className="text-secondary text-xs font-display tracking-widest uppercase mb-1">
           {shoe.brandId.toUpperCase()}
         </p>
