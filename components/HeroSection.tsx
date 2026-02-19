@@ -21,12 +21,6 @@ const CHECKER_SLUGS = [
   'gel-kayano-32',
   'hyperion-3',
   'velocity-nitro-4',
-  'zoom-fly-6',
-  'mach-x-3',
-  'endorphin-speed-5',
-  'superblast-2',
-  'wave-rider-29',
-  'fresh-foam-x-1080v15',
 ]
 
 export default function HeroSection() {
@@ -36,7 +30,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
       {/* Grid Background */}
-      <div className="absolute inset-0 grid grid-cols-3 grid-rows-8 gap-1">
+      <div className="absolute inset-0 grid grid-cols-3 grid-rows-6 gap-1">
         {CHECKER_SLUGS.map((slug) => (
           <div key={slug} className="relative">
             <Image
