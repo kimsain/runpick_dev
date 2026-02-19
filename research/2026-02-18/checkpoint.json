@@ -1,0 +1,974 @@
+{
+  "run_date": "2026-02-18",
+  "completed": {
+    "adidas/adizero-adios-9": {
+      "completed_at": "2026-02-17T11:48:03.132Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/adizero-adios-pro-4": {
+      "completed_at": "2026-02-17T11:48:13.316Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/adizero-boston-13": {
+      "completed_at": "2026-02-17T11:48:23.601Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:partial",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/adizero-evo-sl": {
+      "completed_at": "2026-02-17T11:48:33.859Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "adidas/adizero-prime-x3-strung": {
+      "completed_at": "2026-02-17T11:48:42.916Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/adizero-pro-evo-2": {
+      "completed_at": "2026-02-17T11:48:51.683Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/adizero-sl-2": {
+      "completed_at": "2026-02-17T11:49:04.785Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "adidas/adizero-takumi-sen-11": {
+      "completed_at": "2026-02-17T11:49:15.724Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/supernova-prima-2": {
+      "completed_at": "2026-02-17T11:49:25.833Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/supernova-rise-3": {
+      "completed_at": "2026-02-17T11:49:37.845Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "adidas/supernova-solution-2": {
+      "completed_at": "2026-02-17T11:49:45.438Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/gel-kayano-32": {
+      "completed_at": "2026-02-17T11:49:56.688Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "asics/gel-nimbus-28": {
+      "completed_at": "2026-02-17T11:50:08.621Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:partial"
+      ]
+    },
+    "asics/glideride-max-2": {
+      "completed_at": "2026-02-17T11:50:18.506Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "asics/magic-speed-5": {
+      "completed_at": "2026-02-17T11:50:27.184Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/megablast": {
+      "completed_at": "2026-02-17T11:50:35.922Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/metaspeed-edge-tokyo": {
+      "completed_at": "2026-02-17T11:50:44.159Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/metaspeed-ray": {
+      "completed_at": "2026-02-17T11:50:52.843Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/metaspeed-sky-tokyo": {
+      "completed_at": "2026-02-17T11:51:01.110Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/novablast-5": {
+      "completed_at": "2026-02-17T11:51:14.277Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "asics/sonicblast": {
+      "completed_at": "2026-02-17T11:51:25.867Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/superblast-2": {
+      "completed_at": "2026-02-17T11:51:35.745Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "asics/yogiri-s4-plus": {
+      "completed_at": "2026-02-17T11:51:43.926Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "brooks/adrenaline-gts-25": {
+      "completed_at": "2026-02-17T11:51:54.241Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/ghost-17": {
+      "completed_at": "2026-02-17T11:52:05.940Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/ghost-max-3": {
+      "completed_at": "2026-02-17T11:52:17.151Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/glycerin-22": {
+      "completed_at": "2026-02-17T11:52:27.806Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/glycerin-23": {
+      "completed_at": "2026-02-17T11:52:34.308Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "brooks/glycerin-max-2": {
+      "completed_at": "2026-02-17T11:52:44.984Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/hyperion-3": {
+      "completed_at": "2026-02-17T11:52:54.833Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "brooks/hyperion-elite-5": {
+      "completed_at": "2026-02-17T11:53:05.222Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/hyperion-max-3": {
+      "completed_at": "2026-02-17T11:53:15.473Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "brooks/launch-12": {
+      "completed_at": "2026-02-17T11:53:22.990Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "brooks/revel-8": {
+      "completed_at": "2026-02-17T11:53:31.050Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "diadora/gara-carbon-2": {
+      "completed_at": "2026-02-17T11:53:43.099Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:wrong_model",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:partial"
+      ]
+    },
+    "hoka/arahi-8": {
+      "completed_at": "2026-02-17T11:53:51.939Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "hoka/bondi-9": {
+      "completed_at": "2026-02-17T11:54:02.617Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "hoka/cielo-x1-3-0": {
+      "completed_at": "2026-02-17T11:54:12.293Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "hoka/clifton-10": {
+      "completed_at": "2026-02-17T11:54:23.819Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "hoka/gaviota-6": {
+      "completed_at": "2026-02-17T11:54:29.479Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "hoka/mach-x-3": {
+      "completed_at": "2026-02-17T11:54:41.396Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "hoka/rocket-x-3": {
+      "completed_at": "2026-02-17T11:54:51.566Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "hoka/rocket-x-trail": {
+      "completed_at": "2026-02-17T11:54:59.450Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "mizuno/hyperwarp-elite": {
+      "completed_at": "2026-02-17T11:55:07.779Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "mizuno/hyperwarp-pro": {
+      "completed_at": "2026-02-17T11:55:15.936Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "mizuno/hyperwarp-pure": {
+      "completed_at": "2026-02-17T11:55:24.857Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "mizuno/neo-vista-2": {
+      "completed_at": "2026-02-17T11:55:34.700Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "mizuno/neo-zen": {
+      "completed_at": "2026-02-17T11:55:45.805Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "mizuno/wave-rebellion-flash-3": {
+      "completed_at": "2026-02-17T11:55:55.368Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "mizuno/wave-rebellion-pro-3": {
+      "completed_at": "2026-02-17T11:56:05.442Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "mizuno/wave-rider-29": {
+      "completed_at": "2026-02-17T11:56:15.191Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "mizuno/wave-sky-9": {
+      "completed_at": "2026-02-17T11:56:24.620Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "new-balance/fresh-foam-x-1080v15": {
+      "completed_at": "2026-02-17T11:56:34.990Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "new-balance/fresh-foam-x-880v15": {
+      "completed_at": "2026-02-17T11:56:45.857Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "new-balance/fresh-foam-x-more-v6": {
+      "completed_at": "2026-02-17T11:56:54.088Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "new-balance/fuelcell-propel-v5": {
+      "completed_at": "2026-02-17T11:57:04.343Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "new-balance/fuelcell-rebel-v5": {
+      "completed_at": "2026-02-17T11:57:14.860Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "new-balance/fuelcell-sc-elite-v5": {
+      "completed_at": "2026-02-17T11:57:25.114Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/alphafly-3": {
+      "completed_at": "2026-02-17T11:57:36.183Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/pegasus-41": {
+      "completed_at": "2026-02-17T11:57:46.505Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/pegasus-plus": {
+      "completed_at": "2026-02-17T11:57:56.997Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/rival-fly-4": {
+      "completed_at": "2026-02-17T11:58:02.709Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "nike/streakfly-2": {
+      "completed_at": "2026-02-17T11:58:13.340Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/structure-26": {
+      "completed_at": "2026-02-17T11:58:23.959Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/structure-plus": {
+      "completed_at": "2026-02-17T11:58:31.284Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:partial"
+      ]
+    },
+    "nike/vaporfly-4": {
+      "completed_at": "2026-02-17T11:58:41.353Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/vomero-18": {
+      "completed_at": "2026-02-17T11:58:51.931Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/vomero-plus": {
+      "completed_at": "2026-02-17T11:59:02.287Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:partial"
+      ]
+    },
+    "nike/vomero-premium": {
+      "completed_at": "2026-02-17T11:59:11.612Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "nike/zoom-fly-6": {
+      "completed_at": "2026-02-17T11:59:22.214Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/deviate-nitro-3": {
+      "completed_at": "2026-02-17T11:59:32.350Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:soft_404_body",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/deviate-nitro-4": {
+      "completed_at": "2026-02-17T11:59:38.391Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/deviate-nitro-elite-3": {
+      "completed_at": "2026-02-17T11:59:48.276Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/deviate-nitro-elite-4": {
+      "completed_at": "2026-02-17T11:59:54.271Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/fast-r-nitro-elite-3": {
+      "completed_at": "2026-02-17T12:00:03.202Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/foreverrun-nitro-2": {
+      "completed_at": "2026-02-17T12:00:12.591Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/magmax-nitro-2": {
+      "completed_at": "2026-02-17T12:00:21.481Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "puma/magnify-nitro-3": {
+      "completed_at": "2026-02-17T12:00:31.115Z",
+      "confidence": "medium",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "puma/propio-nitro": {
+      "completed_at": "2026-02-17T12:00:37.573Z",
+      "confidence": "low",
+      "statuses": [
+        "RunRepeat:not_found",
+        "RTINGS:not_found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "puma/velocity-nitro-4": {
+      "completed_at": "2026-02-17T12:00:46.569Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:not_found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/endorphin-elite-2": {
+      "completed_at": "2026-02-17T12:00:57.669Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/endorphin-speed-5": {
+      "completed_at": "2026-02-17T12:01:08.504Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/endorphin-trainer": {
+      "completed_at": "2026-02-17T12:01:19.499Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/guide-18": {
+      "completed_at": "2026-02-17T12:01:29.793Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/hurricane-25": {
+      "completed_at": "2026-02-17T12:01:40.700Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/kinvara-16": {
+      "completed_at": "2026-02-17T12:01:50.552Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:not_found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    },
+    "saucony/ride-18": {
+      "completed_at": "2026-02-17T12:02:00.495Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:partial",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:found"
+      ]
+    },
+    "saucony/triumph-23": {
+      "completed_at": "2026-02-17T12:02:11.876Z",
+      "confidence": "high",
+      "statuses": [
+        "RunRepeat:found",
+        "RTINGS:found",
+        "Doctors of Running:found",
+        "Road Trail Run:found",
+        "Believe in the Run:not_found"
+      ]
+    }
+  },
+  "updated_at": "2026-02-17T12:02:11.876Z"
+}

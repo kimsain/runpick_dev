@@ -1,0 +1,173 @@
+{
+  "shoeId": "fresh-foam-x-more-v6",
+  "modelName": "New Balance Fresh Foam X More v6",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.69,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-more-v6-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.97,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-more-v6",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.54,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-more-v6-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-more-v6",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 302.3,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 37.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.2,
+          "forefootShockAbsorption": 8.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.7,
+          "forefootEnergyReturn": 71.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.7%",
+        "Forefoot ER: 71.2%",
+        "Heel Cushioning: 8.2 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-more-v6-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "For example, the Brooks Glycerin Max is still heavy, but the dual-density foam adds some weight-defying bounce.",
+        "Shoes like the Asics Superblast and Megablast have all the cushioning and are lightweight compared to other big boys out there.",
+        "This is exactly the mentality that New Balance appears to be utilizing with the Fresh Foam X More v6."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 302.3,
+    "drop": 4.7,
+    "heelStack": 41.8,
+    "forefootStack": 37.1
+  },
+  "proposedSpecs": {
+    "weight": 302.3,
+    "drop": 4.7,
+    "heelStack": 41.8,
+    "forefootStack": 37.1
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

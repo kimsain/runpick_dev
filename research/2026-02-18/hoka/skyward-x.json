@@ -1,0 +1,173 @@
+{
+  "shoeId": "skyward-x",
+  "modelName": "HOKA Skyward X",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/hoka-skyward-x",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.84,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/skyward-x",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-skyward-x",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 315,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.2,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 46.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 37.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 136,
+          "forefootShockAbsorption": 139,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 66.2,
+          "forefootEnergyReturn": 68.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.8 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 136 / 139 SA",
+        "Energy return heel/forefoot: 66.2% / 68.5%",
+        "Lab specs weight/drop/stack: 315g, 9.2mm, 46.3mm/37.1mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/skyward-x",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 306.9,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 50.4,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 43.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.8,
+          "forefootShockAbsorption": 9.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 78.1,
+          "forefootEnergyReturn": 79.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 78.1%",
+        "Forefoot ER: 79.2%",
+        "Heel Cushioning: 8.8 /10",
+        "Forefoot Cushioning: 9.6 /10"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

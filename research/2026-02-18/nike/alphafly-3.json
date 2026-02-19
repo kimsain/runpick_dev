@@ -1,0 +1,353 @@
+{
+  "shoeId": "alphafly-3",
+  "modelName": "NIKE ALPHAFLY 3",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.19,
+      "url": "https://runrepeat.com/nike-alphafly-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.07,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/alphafly-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.39,
+      "url": "https://www.doctorsofrunning.com/2024/01/nike-alphafly-3-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.86,
+      "url": "https://www.roadtrailrun.com/2023/12/nike-alphfly-3-review-6-comparisons.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.54,
+      "url": "https://believeintherun.com/shoe-reviews/nike-alphafly-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-alphafly-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 201,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.5,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 38.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 144,
+          "forefootShockAbsorption": 113,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.9,
+          "forefootEnergyReturn": 73.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "3.2 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 144 / 113 SA",
+        "Energy return heel/forefoot: 74.9% / 73.9%",
+        "Lab specs weight/drop/stack: 201g, 8.5mm, 38.1mm/29.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/alphafly-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 200.7,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.4,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 33.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.6,
+          "forefootShockAbsorption": 8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82,
+          "forefootEnergyReturn": 82.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82%",
+        "Forefoot ER: 82.2%",
+        "Heel Cushioning: 7.6 /10",
+        "Forefoot Cushioning: 8 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/01/nike-alphafly-3-review-2024.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "1oz, 174g (women's size 8) Stack Height: 40mm/32mm Drop: 8mm Classification: Super Racing Shoe RUNNING SHOE SUMMARY Matt: The Nike Alphafly 3 is an elite-level, super-racing shoe for those who want a shoe with maximum performance over almost any distance.",
+        "Andrea: The Nike Alphafly 3 is the latest version of Nike's flagship marathon racing shoe.",
+        "PERFORMANCE Matt: The Nike Alphafly 3 is an aggressive distance super shoe designed specifically for racing and running fast."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2023/12/nike-alphfly-3-review-6-comparisons.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "I also didn't find the shoe to be too narrow, which is almost always the case for me when it comes to Nike shoes (I have multiple examples of this dating way back to the early Pegasus models, many of their trail shoes and certainly the VaporFly's version 1-3).",
+        "It's great that Nike have gone back to a softer formulation of Zoom X with the Alphafly 3, but I was a little disappointed that Nike opted to stick with a 8mm drop.",
+        "Finally, in terms of vibration dampening, the AF3 represents the best shoe on the market for this, even when compared to AF1 and supra-max cushion trainers like the ASICS Superblast, Adidas Prime X, or NB SC Trainer 1."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-alphafly-3-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Nike added more material to the midfoot to increase stability, while reducing some irritation points in the arch.",
+        "Moving onto the midsole and the ride of the shoe– the changes that Nike made are exactly the changes that should have been made to this shoe."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 198,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 198,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 198,
+      "runRepeat": 201,
+      "rtings": 200.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 8.5,
+      "rtings": 6.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 40,
+        "forefoot": 32
+      },
+      "runRepeat": {
+        "heel": 38.1,
+        "forefoot": 29.6
+      },
+      "rtings": {
+        "heel": 39.8,
+        "forefoot": 33.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 4
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 4
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

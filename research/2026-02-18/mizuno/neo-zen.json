@@ -1,0 +1,304 @@
+{
+  "shoeId": "neo-zen",
+  "modelName": "Mizuno Neo Zen",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/mizuno-neo-zen",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-zen",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.61,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-neo-zen-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 1.24,
+      "url": "https://www.roadtrailrun.com/2025/01/mizuno-neo-zen-multi-tester-review-most.html",
+      "reason": "http_404"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 1.03,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-zen-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/mizuno-neo-zen",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 234,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 34,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 158,
+          "forefootShockAbsorption": 129,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 71.7,
+          "forefootEnergyReturn": 67.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 158 / 129 SA",
+        "Energy return heel/forefoot: 71.7% / 67.7%",
+        "Lab specs weight/drop/stack: 234g, 7mm, 41mm/34mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-zen",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 226.3,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.9,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 36.2,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.3,
+          "forefootShockAbsorption": 8.4,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.4,
+          "forefootEnergyReturn": 76.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.4%",
+        "Forefoot ER: 76.5%",
+        "Heel Cushioning: 8.3 /10",
+        "Forefoot Cushioning: 8.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-neo-zen-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Moving away from the classically firmer ride Mizuno is known for, this is clearly the start of a new era for the company.",
+        "The Mizuno ENERZY NXT midsole felt bouncier on each subsequent run, and its light weight felt great when my legs were tired and on longer runs.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Mizuno Neo Zen is a neutral shoe."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-zen-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "A longtime legend within the running footwear industry, Mizuno was really one of the first to do plates in any capacity and maybe the first to do it really well, especially in a daily trainer.",
+        "Going the way of the one-trick pony, Mizuno ate on that wave plate for a whole two decades until the riptide exposed it as a shoe that was fine, but had fallen behind thanks to a lack of vision and innovation.",
+        "Mizuno Wave Rider 1-26 Their Japanese competition in Asics were also in the same spot, squeezing every last bit of juice from the Gel technology, oozing it out and serving it up long past its own expiration date."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 234,
+    "drop": 7,
+    "heelStack": 41,
+    "forefootStack": 34
+  },
+  "proposedSpecs": {
+    "weight": 234,
+    "drop": 7,
+    "heelStack": 41,
+    "forefootStack": 34
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 234,
+      "runRepeat": 234,
+      "rtings": 226.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 7,
+      "runRepeat": 7,
+      "rtings": 4.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 41,
+        "forefoot": 34
+      },
+      "runRepeat": {
+        "heel": 41,
+        "forefoot": 34
+      },
+      "rtings": {
+        "heel": 41.1,
+        "forefoot": 36.2
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

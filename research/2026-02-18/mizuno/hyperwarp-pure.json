@@ -1,0 +1,173 @@
+{
+  "shoeId": "hyperwarp-pure",
+  "modelName": "Mizuno HyperWarp Pure",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.71,
+      "url": "https://runrepeat.com/mizuno-hyperwarp-pure",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.91,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pure-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.61,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pure-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0.66,
+      "url": "https://www.roadtrailrun.com/2025/11/mizuno-hyperwrap-pure-multi-tester-review.html",
+      "reason": "http_404"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pure-shoe",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 139.1,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.2,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 33.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.3,
+          "forefootShockAbsorption": 7.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.5,
+          "forefootEnergyReturn": 84.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.5%",
+        "Forefoot ER: 84.3%",
+        "Heel Cushioning: 7.3 /10",
+        "Forefoot Cushioning: 7.8 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pure-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "5 mm Shoe Purpose : Super Shoe Pros : One of the lightest super shoes available, highly propulsive ride, good outsole grip on wet roads or tight turns Cons : Not for runners with medial stability needs RUNNING SHOE SUMMARY The Mizuno Hyperwarp Pure is super shoe that is immediately one of the lightest on the market.",
+        "5 Shoes that have fit David well: Nike Vomero 17, Saucony Ride 16, Puma Velocity Nitro 3 Shoes that have fit snug : HOKA Arahi 7 Shoes that have fit large: Salomon Aero Glide Andrea: The Mizuno Hyperwarp Pure fit short in my usual women's 9.",
+        "In a lot of ways the Mizuno Hyperwarp Pure feels like a \"traditional\" racing flat from the pre-super shoe days with modern day advancements."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 139.1,
+    "drop": 4,
+    "heelStack": 33.9,
+    "forefootStack": 29.7
+  },
+  "proposedSpecs": {
+    "weight": 139.1,
+    "drop": 4,
+    "heelStack": 33.9,
+    "forefootStack": 29.7
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,353 @@
+{
+  "shoeId": "novablast-5",
+  "modelName": "ASICS NOVABLAST 5",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/asics-novablast-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 6.06,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/novablast-5",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.28,
+      "url": "https://www.doctorsofrunning.com/2024/11/asics-novablast-5-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.63,
+      "url": "https://www.roadtrailrun.com/2024/11/asics-novablast-5-iniital-review-fun.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.98,
+      "url": "https://believeintherun.com/shoe-reviews/asics-novablast-5-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-novablast-5",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 254,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 7.4,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 40.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 33.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 141,
+          "forefootShockAbsorption": 134,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 63.6,
+          "forefootEnergyReturn": 66.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 141 / 134 SA",
+        "Energy return heel/forefoot: 63.6% / 66.5%",
+        "Lab specs weight/drop/stack: 254g, 7.4mm, 40.9mm/33.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/novablast-5",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 248.2,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.2,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 33.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.2,
+          "forefootShockAbsorption": 7.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74,
+          "forefootEnergyReturn": 77.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74%",
+        "Forefoot ER: 77.3%",
+        "Heel Cushioning: 8.2 /10",
+        "Forefoot Cushioning: 7.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/11/asics-novablast-5-review-2024.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "100 Mile Review Thoughts (Video) STABILITY (Learn more about stability in our full guide ) Matt: The ASICS Novablast 5 is a neutral shoe with several stable elements that makes it almost stable neutral.",
+        "If traction remains an issue in v5, I would highly recommend that ASICS figure this out to make this shoe a truly versatile daily trainer and/or performance trainer.",
+        "Matt: The ASICS Novablast 5 is a performance trainer for those who want a slightly wider-fitting, cushioned, comfortable riding shoe for easier and longer runs."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/11/asics-novablast-5-iniital-review-fun.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: ASICS Novablast 5 Multi Tester Review: Magic Fun Refined!",
+        "8 Comparisons Article by Sam Winebaum, Ben David, Renee Krusemark, and Peter Stuart ASICS Novablast 5 ($140) Introduction The Novablast is ASICS lightest and one of its most highly cushioned daily trainers.",
+        "ASICS says: \"A new technical mesh upper provides a unique balance of lightweight comfort and enhanced breathability\"."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/asics-novablast-5-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Advertising I kept trying to think what shoe this reminds me of, and I keep coming back to the Nike Pegasus Plus , which we were somewhat disappointed with, but only because it a) lacked forefoot cushion and b) just didn’t hold up to the standard of reverence we had for the original Pegasus Turbo .",
+        "With similar characteristics, the Adidas Adizero EVO SL fits better, has foam that rebounds faster, and is lighter at 8."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 255,
+    "drop": 8,
+    "heelStack": 41.5,
+    "forefootStack": 33.5
+  },
+  "proposedSpecs": {
+    "weight": 255,
+    "drop": 8,
+    "heelStack": 41.5,
+    "forefootStack": 33.5
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 255,
+      "runRepeat": 254,
+      "rtings": 248.2,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 7.4,
+      "rtings": 8.2,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 41.5,
+        "forefoot": 33.5
+      },
+      "runRepeat": {
+        "heel": 40.9,
+        "forefoot": 33.5
+      },
+      "rtings": {
+        "heel": 41.8,
+        "forefoot": 33.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

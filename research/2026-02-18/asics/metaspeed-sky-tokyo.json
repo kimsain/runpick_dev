@@ -1,0 +1,204 @@
+{
+  "shoeId": "metaspeed-sky-tokyo",
+  "modelName": "ASICS METASPEED SKY TOKYO",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.1,
+      "url": "https://runrepeat.com/asics-metaspeed-sky-tokyo",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.13,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/metaspeed-sky-tokyo",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-metaspeed-sky-tokyo",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 163,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 38.7,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 147,
+          "forefootShockAbsorption": 122,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 78.5,
+          "forefootEnergyReturn": 78.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.4 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 147 / 122 SA",
+        "Energy return heel/forefoot: 78.5% / 78.2%",
+        "Lab specs weight/drop/stack: 163g, 6mm, 38.7mm/32.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/metaspeed-sky-tokyo",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 157.3,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.5,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 34.8,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.3,
+          "forefootShockAbsorption": 8.4,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 86.7,
+          "forefootEnergyReturn": 87.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 86.7%",
+        "Forefoot ER: 87.9%",
+        "Heel Cushioning: 8.3 /10",
+        "Forefoot Cushioning: 8.4 /10"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 170,
+    "drop": 5,
+    "heelStack": 39.5,
+    "forefootStack": 34.5
+  },
+  "proposedSpecs": {
+    "weight": 170,
+    "drop": 5,
+    "heelStack": 39.5,
+    "forefootStack": 34.5
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 170,
+      "runRepeat": 163,
+      "rtings": 157.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 5,
+      "runRepeat": 6,
+      "rtings": 4.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 39.5,
+        "forefoot": 34.5
+      },
+      "runRepeat": {
+        "heel": 38.7,
+        "forefoot": 32.7
+      },
+      "rtings": {
+        "heel": 39.5,
+        "forefoot": 34.8
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 10,
+    "stability": 5,
+    "durability": 4
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 10,
+    "stability": 5,
+    "durability": 4
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

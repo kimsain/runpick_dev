@@ -1,0 +1,222 @@
+{
+  "shoeId": "fresh-foam-x-880v15",
+  "modelName": "New Balance Fresh Foam X 880 v15",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.81,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v15-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 4.62,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-880v15-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.91,
+      "url": "https://www.roadtrailrun.com/2025/01/new-balance-fresh-foam-x-880-v15-multi.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-880v15-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "STABILITY (Learn more about stability in our full guide ) Matt: The New Balance Fresh Foam X 880 v15 is a stable neutral shoe.",
+        "FURTHER READING Adidas Supernova Rise 2 | Review A PEBA-based daily driver.",
+        "Saucony Ride 18 | Review Classic trainer from Saucony."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/new-balance-fresh-foam-x-880-v15-multi.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "It's part of the Fresh Foam family and sits between the lightweight, faster models like the New Balance Rebel or FuelCell Propel, and the more cushioned, premium long-distance shoes like the New Balance 1080.",
+        "Did New Balance thread the needle and deliver both a more cushioned ride and some of the agile, any pace spunk of prior 880's.",
+        "Courtney: New Balance Fresh Foam v15 is a versatile daily trainer that offers you a cushioned, yet firm and responsive ride."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-880v15-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Early versions of the 880 featured a mix of EVA foams, which gave the trainer a firm, supportive feel, but as the series evolved, New Balance introduced Fresh Foam and then Fresh Foam X, which brings us to the setup we have in version 15.",
+        "THOMAS: New Balance's 880 has always been the practical choice — a budget-friendly alternative to the Fresh Foam 1080.",
+        "Advertising What we like about the New Balance Fresh Foam 880v15 MEAGHAN: I like to start with aesthetics, but as I write this I’m unsure if these thoughts belong in the good or bad."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 286.6,
+    "drop": 7.3,
+    "heelStack": 39.4,
+    "forefootStack": 32.1
+  },
+  "proposedSpecs": {
+    "weight": 286.6,
+    "drop": 7.3,
+    "heelStack": 39.4,
+    "forefootStack": 32.1
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

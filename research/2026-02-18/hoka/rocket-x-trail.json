@@ -1,0 +1,222 @@
+{
+  "shoeId": "rocket-x-trail",
+  "modelName": "HOKA Rocket X Trail",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.69,
+      "url": "https://runrepeat.com/hoka-rocket-x-trail-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.18,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/rocket-x-trail",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.doctorsofrunning.com/2025/10/hoka-rocket-x-trail-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 1.42,
+      "url": "https://www.roadtrailrun.com/2025/09/hoka-rocket-x-trail-multi-tester-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.97,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-rocket-x-trail-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/10/hoka-rocket-x-trail-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Hoka Rocket X Trail is a stable neutral shoe.",
+        "The Salomon Genesis and Hoka Stinson 7 are the only true listed stability shoes (The ASICS Trabuco series no longer feels like a stability shoe).",
+        "Hoka loves toe spring in their racing shoes, but holding the toes in extension creates unnecessary tension on the plantarfascia and the underside of the toes."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/09/hoka-rocket-x-trail-multi-tester-review.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Hoka Rocket X Trail Multi Tester Review: Hugely Fast, Fun and Light!",
+        "9 Comparisons Article by Jen Schmidt, Sam Winebaum, Jeff Valliere, Adam Glueck, and Dom Layfield Hoka Rocket X Trail ($250) Introduction Sam: The Rocket X Trail soars to new heights in traildom with one of the stack height trail runner we have ever tested and most likely the highest ever.",
+        "And no surprise, as Hoka originated the max cushion trail runner way back in 2009 with the OG Mafate which towered over the minimal shoes of the era and then some!"
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-rocket-x-trail-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "We've mostly seen this in foam and plate technology, where shoes like the original The North Face Flight Vectiv and Hoka Tecton X were the pioneers.",
+        "The overall ride makes me think of a blend between the Asics Metafuji Trail and the Hoka Tecton X 3.",
+        "It has a similar padded and stout heel construction to the Hoka Mafate X , which helped anchor the foot appropriately over top of the reactive ride—comfortable and functional."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

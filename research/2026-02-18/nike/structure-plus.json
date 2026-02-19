@@ -1,0 +1,218 @@
+{
+  "shoeId": "structure-plus",
+  "modelName": "NIKE STRUCTURE PLUS",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.72,
+      "url": "https://runrepeat.com/nike-structure-plus-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.33,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/structure-plus-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.65,
+      "url": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.roadtrailrun.com/2025/12/nike-structure-plus-review-gentle.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "partial",
+      "elapsedSec": 0.91,
+      "url": "https://believeintherun.com/shoe-reviews/nike-structure-plus-review/",
+      "reason": "no_key_findings"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Nike Structure Plus is a moderate to high-level stability shoe.",
+        "Matt: The Nike Structure Plus is a moderate to high stability, maximal daily training shoe for walkers and runners who land farther forward.",
+        "David: The Nike Structure Plus is a maximum stack height stability shoe for those that want a lot of guidance and stability in the same package."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/12/nike-structure-plus-review-gentle.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: NIke Structure Plus Multi Tester Review: Gentle Guidance and Support for any Runner!",
+        "Might Nike consider an 8mm drop here adding 2mm to the forefoot stack height.",
+        "It is the third in Nike new Plus and Premium shoes I have really enjoyed running along the uptempo lower stack Pegasus Plus, the long runs all Zoom X Vomero Plus, and the super high stack and plush Vomero Premium."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-structure-plus-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": []
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 295,
+    "drop": 10,
+    "heelStack": 42,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 295,
+    "drop": 10,
+    "heelStack": 42,
+    "forefootStack": 32
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 9,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 9,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

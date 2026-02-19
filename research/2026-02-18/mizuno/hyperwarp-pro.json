@@ -1,0 +1,173 @@
+{
+  "shoeId": "hyperwarp-pro",
+  "modelName": "Mizuno HyperWarp Pro",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.69,
+      "url": "https://runrepeat.com/mizuno-hyperwarp-pro",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.85,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pro",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.59,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pro-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pro",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 198.7,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.4,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.5,
+          "forefootShockAbsorption": 7.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 81.8,
+          "forefootEnergyReturn": 80.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 81.8%",
+        "Forefoot ER: 80.9%",
+        "Heel Cushioning: 8.5 /10",
+        "Forefoot Cushioning: 7.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pro-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Mizuno Hyperwarp Pro is a neutral shoe with excessive medial bias due to extensive lateral sole flare.",
+        "Andrea: The Mizuno Hyperwarp Pro is a neutral shoe that will work well for runners with lateral ankle instability like myself.",
+        "Mizuno's racing shoes continue to fit on the shorter side."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 198.7,
+    "drop": 5.5,
+    "heelStack": 39.4,
+    "forefootStack": 32.7
+  },
+  "proposedSpecs": {
+    "weight": 198.7,
+    "drop": 5.5,
+    "heelStack": 39.4,
+    "forefootStack": 32.7
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

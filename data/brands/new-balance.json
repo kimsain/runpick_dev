@@ -1,0 +1,324 @@
+{
+  "brand": {
+    "id": "new-balance",
+    "name": "NEW BALANCE",
+    "nameKo": "뉴발란스",
+    "logo": "/brands/new-balance-logo.svg",
+    "color": "#C8102E",
+    "description": "다양한 핏 옵션과 훈련-레이스 전 라인업을 갖춘 러닝 브랜드"
+  },
+  "shoes": [
+    {
+      "id": "fresh-foam-x-880v15",
+      "brandId": "new-balance",
+      "name": "Fresh Foam X 880 v15",
+      "nameKo": "Fresh Foam X 880 v15",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 164000,
+      "priceFormatted": "₩164,000",
+      "description": "880 v15는 NB 라인업에서 Rebel과 1080 사이 중간 포지션을 채우는 올라운더 데일리화야. Fresh Foam X 폼 2겹 구조로 39.4mm 힐 스택을 쌓으면서도 286.6g에 묶어뒀어. 쿠셔닝은 푹신하지 않고 탄탄하게 받쳐주는 타입이라 이지런부터 6분대 페이스까지 리듬이 잘 맞아. 다만 스택이 높아진 만큼 전작보다 무거워서 빠른 타임런에는 어울리지 않아.",
+      "shortDescription": "데일리부터 롱런까지 쓰는 올라운더",
+      "imageUrl": "/shoes/fresh-foam-x-880v15.webp",
+      "specs": {
+        "weight": 286.6,
+        "drop": 7.3,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 39.4,
+          "forefoot": 32.1
+        }
+      },
+      "pros": [
+        "Fresh Foam X 2겹 구조가 힐 39.4mm 스택을 받쳐줘서 장거리에서도 착지 충격이 잘 분산돼",
+        "탄탄한 중간 반발 덕분에 이지런부터 5~6분대 페이스까지 리듬을 바꿔도 어색하지 않아",
+        "Doctors of Running이 '안정적인 뉴트럴화'로 평가할 만큼 좌우 흔들림 없이 직진성이 좋아"
+      ],
+      "cons": [
+        "전작 대비 스택이 높아지면서 286.6g으로 무거워져서 인터벌·타임런에서는 발이 무겁게 느껴질 수 있어",
+        "쿠셔닝이 부드럽기보다 단단한 편이라 폭신한 승차감을 원하는 러너에게는 아쉽게 느껴질 수 있어"
+      ],
+      "bestFor": [
+        "이지런부터 6분대 페이스 롱런까지 한 켤레로 커버하고 싶은 중급 러너",
+        "1080은 너무 무겁고 Rebel은 쿠셔닝이 부족하다고 느끼는 러너",
+        "뉴트럴 구조에서 좌우 안정감이 좋은 올라운더를 찾는 러너"
+      ],
+      "technologies": [
+        "균형형 쿠셔닝 폼",
+        "데일리 트레이닝 설계",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fresh-foam-x-880v15",
+      "officialUrl": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html"
+    },
+    {
+      "id": "fresh-foam-x-1080v15",
+      "brandId": "new-balance",
+      "name": "Fresh Foam X 1080 v15",
+      "nameKo": "Fresh Foam X 1080 v15",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 231000,
+      "priceFormatted": "₩231,000",
+      "description": "1080 v15는 NB 데일리화 플래그십으로, v14까지 쓰던 Fresh Foam X를 버리고 새로운 슈퍼크리티컬 폼 'Infinion'으로 갈아탔어. 이 Infinion 폼이 250.3g이라는 가벼운 무게와 높은 쿠셔닝을 동시에 잡아줘서 Doctors of Running에서 '프리미엄 뉴트럴 트레이너 중 가장 가벼운 부류'로 꼽혀. 착지가 부드럽고 자연스럽게 앞으로 굴러가는 느낌이라 긴 거리에서 발 피로가 확 줄어. 다만 Infinion 폼은 초기 반발보다 피로 흡수에 최적화돼 있어서 빠른 페이스에서는 탄력이 부족하게 느껴질 수 있어.",
+      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "imageUrl": "/shoes/fresh-foam-x-1080v15.webp",
+      "specs": {
+        "weight": 250.3,
+        "drop": 7.8,
+        "cushioning": 8,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 38.4,
+          "forefoot": 30.6
+        }
+      },
+      "pros": [
+        "Infinion 슈퍼크리티컬 폼 덕분에 맥스 쿠셔닝 급이면서 250.3g으로 가벼워 장거리에서 발이 안 무거워",
+        "힐 38.4mm 스택이 착지 충격을 넉넉하게 흡수해줘서 하프·풀마라톤 후반에도 발 피로가 덜해",
+        "발볼 넉넉한 토박스 덕분에 발 너비가 넓거나 장거리에서 발이 붓는 러너에게 특히 편안해"
+      ],
+      "cons": [
+        "Infinion 폼이 반발보다 흡수 성향이 강해서 5분 이내 페이스를 원하는 러너에게는 탄력이 부족하게 느껴져",
+        "v14의 Fresh Foam X보다 폼 감촉이 달라져서 전작 팬이라면 초반 적응이 필요할 수 있어"
+      ],
+      "bestFor": [
+        "하프마라톤 이상 장거리를 이지런 페이스로 소화하며 발 보호를 원하는 러너",
+        "쿠셔닝이 풍부하면서도 무겁지 않은 프리미엄 데일리화를 찾는 러너",
+        "발볼이 넓거나 장거리에서 발이 부어 넉넉한 토박스가 필요한 러너"
+      ],
+      "technologies": [
+        "맥스 쿠셔닝 폼",
+        "충격 분산 구조",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fresh-foam-x-1080v15",
+      "officialUrl": "https://www.doctorsofrunning.com/2025/11/new-balance-1080-v15-review-2026.html"
+    },
+    {
+      "id": "fresh-foam-x-more-v6",
+      "brandId": "new-balance",
+      "name": "Fresh Foam X More v6",
+      "nameKo": "Fresh Foam X More v6",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 233000,
+      "priceFormatted": "₩233,000",
+      "description": "More v6는 맥스스택(힐 41.8mm/포어풋 37.1mm)과 4.7mm 극저드롭이라는 독특한 조합으로 Fresh Foam 라인 중 가장 특이한 포지션에 있어. 보통 맥스스택 신발은 드롭이 높은데, 이건 스택을 최대로 쌓으면서 드롭을 낮춰 전발 착지를 자연스럽게 유도해. RTINGS 계측에서 전족부 쿠셔닝 8.9/10이 나올 만큼 앞발 받침이 두텁고, 에너지 리턴도 전족부 71.2%라 단순 이지런화치고는 탄성이 살아있어. 다만 302g으로 무거운 편이라 언덕 구간이나 고강도 훈련에서는 부담이 돼.",
+      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "imageUrl": "/shoes/fresh-foam-x-more-v6.webp",
+      "specs": {
+        "weight": 320,
+        "drop": 4,
+        "cushioning": 9,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 44,
+          "forefoot": 40
+        }
+      },
+      "pros": [
+        "힐 41.8mm/전족부 37.1mm 맥스스택이 장거리 착지 충격을 일관되게 흡수해줘서 다리 피로가 늦게 와",
+        "전족부 쿠셔닝 8.9/10, 전족부 에너지 리턴 71.2%라 단순 이지런화보다 착지 후 탄성이 살아있어",
+        "4.7mm 저드롭이 전발 착지를 자연스럽게 유도해서 미드풋·포어풋 러너에게 편하게 맞아"
+      ],
+      "cons": [
+        "302g으로 무거운 편이라 업힐이나 고강도 인터벌에서 발이 무겁게 끌리는 느낌이 올 수 있어",
+        "4.7mm 저드롭에 익숙하지 않은 힐 착지 러너는 종아리와 아킬레스에 처음 부담을 느낄 수 있어 적응 기간이 필요해"
+      ],
+      "bestFor": [
+        "전발 착지 위주로 장거리 이지런을 즐기는 미드풋~포어풋 러너",
+        "맥스스택의 충격 흡수력을 원하면서도 저드롭의 자연스러운 추진감을 포기하지 않고 싶은 러너",
+        "관절 보호를 위해 최대한 두꺼운 쿠셔닝이 필요한 회복기 러너나 과체중 러너"
+      ],
+      "technologies": [
+        "맥스 쿠셔닝 폼",
+        "충격 분산 구조",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fresh-foam-x-more-v6",
+      "officialUrl": "https://www.newbalance.com/pd/fresh-foam-x-more-v6/MMORV6-50399.html"
+    },
+    {
+      "id": "fuelcell-rebel-v5",
+      "brandId": "new-balance",
+      "name": "FuelCell Rebel v5",
+      "nameKo": "FuelCell Rebel v5",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 249000,
+      "priceFormatted": "₩249,000",
+      "description": "Rebel v5는 NB 라인업에서 카본 플레이트 없이 FuelCell PEBA 블렌드 폼만으로 탄성을 끌어올린 데일리 트레이너야. v5에서 스택이 +5mm 올라가고 미드솔 중앙에 캐비티(공동)를 뚫어 발 앞쪽이 더 역동적으로 튕기는 구조가 됐어. RTINGS 계측에서 전족부 에너지 리턴 75.2%가 나올 만큼 반발이 강하면서 227g으로 가벼워서, 이 무게에서 이 탄성이 나오는 데일리 트레이너는 NB 라인업에서 Rebel이 유일해. 힐 카운터가 개선됐지만 측면 안정성이 높지 않아서 발목이 약한 러너는 주의가 필요해.",
+      "shortDescription": "반발감 중심 무플레이트 트레이너",
+      "imageUrl": "/shoes/fuelcell-rebel-v5.webp",
+      "specs": {
+        "weight": 227,
+        "drop": 6,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 35,
+          "forefoot": 29
+        }
+      },
+      "pros": [
+        "FuelCell PEBA 블렌드 폼이 전족부 에너지 리턴 75.2%를 내줘서 플레이트 없이도 착지 후 튕김이 분명해",
+        "227g으로 가벼운 데 스택이 36.2/29.2mm라 쿠셔닝과 반발을 동시에 챙겨 이지런부터 템포런까지 커버돼",
+        "미드솔 캐비티 구조가 착지 시 폼이 동적으로 반응하게 해줘서 Kinvara 같은 빠릿한 발걸음 감각이 있어"
+      ],
+      "cons": [
+        "측면 안정성이 높지 않아서 발목이 약하거나 과내전이 있는 러너는 긴 거리에서 흔들릴 수 있어",
+        "전족부 쿠셔닝이 7.0/10 수준이라 풀마라톤 후반처럼 충격 누적이 큰 상황에서는 1080보다 발이 더 피곤해"
+      ],
+      "bestFor": [
+        "이지런과 4~5분대 템포런을 한 켤레로 소화하는 올라운드 훈련 러너",
+        "카본 플레이트 없이 가볍고 탄성 있는 데일리 트레이너를 찾는 중급 러너",
+        "빠릿한 반발감을 원하지만 레이스화를 별도 구매하기 부담스러운 러너"
+      ],
+      "technologies": [
+        "고반발 슈퍼폼",
+        "록커 지오메트리",
+        "장거리 트레이닝 설계"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fuelcell-rebel-v5",
+      "officialUrl": "https://www.newbalance.com/pd/fuelcell-rebel-v5/MFCXV5-52220.html"
+    },
+    {
+      "id": "fuelcell-propel-v5",
+      "brandId": "new-balance",
+      "name": "FuelCell Propel v5",
+      "nameKo": "FuelCell Propel v5",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 213000,
+      "priceFormatted": "₩213,000",
+      "description": "Propel v5는 FuelCell 폼에 플레이트를 조합하면서 Rebel보다 가볍고 더 저렴한 자리에 위치한 엔트리 FuelCell 트레이너야. RunRepeat 실측 269g, 드롭 6.7mm로 Rebel(227g)보다 실제론 무겁지만 플레이트 덕분에 착지에서 토오프까지 전환이 더 직선적으로 느껴져. RTINGS 기준 전족부 에너지 리턴 75.3%라 반발력 수치 자체는 Rebel 수준이야. 다만 힐/전족부 쿠셔닝이 6.5/10으로 맥스쿠셔닝에 비해 부족해서 장거리 이지런보다는 중거리 페이스런에 맞아.",
+      "shortDescription": "템포·인터벌용 라이트 플레이트",
+      "imageUrl": "/shoes/fuelcell-propel-v5.webp",
+      "specs": {
+        "weight": 220,
+        "drop": 6,
+        "cushioning": 8,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 31
+        }
+      },
+      "pros": [
+        "FuelCell 폼 + 플레이트 조합이 전족부 에너지 리턴 75.3%를 내줘서 착지-토오프 전환이 군더더기 없어",
+        "Rebel보다 저렴하면서 플레이트 내장이라 FuelCell 라인 중 가성비로 빠른 페이스를 경험하기 좋아",
+        "힐 35.2mm 스택이 속도 전환에서 안정감을 줘서 인터벌 후반 폼이 흐트러져도 착지가 무너지지 않아"
+      ],
+      "cons": [
+        "힐/전족부 쿠셔닝이 6.5/10으로 얇은 편이라 풀마라톤 등 30km 이상 장거리에서 발바닥 피로가 빨리 와",
+        "실측 무게 269g으로 Rebel(227g)보다 무거워서 가볍게 달리는 느낌을 기대하면 실망할 수 있어"
+      ],
+      "bestFor": [
+        "5~10km 인터벌이나 페이스런 위주 훈련에 플레이트 감각을 경험하고 싶은 입문~중급 러너",
+        "SC Elite 같은 풀 레이서는 부담스럽고 데일리 겸용 플레이트화를 찾는 러너",
+        "FuelCell 라인 중 가장 합리적인 가격대에서 빠른 전환감을 원하는 러너"
+      ],
+      "technologies": [
+        "플레이트 미드솔",
+        "고반발 폼",
+        "템포 지오메트리"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fuelcell-propel-v5",
+      "officialUrl": "https://www.newbalance.com/pd/fuelcell-propel-v5/MFCPRV5-46570.html"
+    },
+    {
+      "id": "fuelcell-sc-elite-v5",
+      "brandId": "new-balance",
+      "name": "FuelCell SuperComp Elite v5",
+      "nameKo": "FuelCell SuperComp Elite v5",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 390000,
+      "priceFormatted": "₩390,000",
+      "description": "SC Elite v5는 v4의 4mm 드롭에서 8.9mm 드롭으로 세팅을 대폭 바꾸고 전족부 스택을 4mm 줄여 더 적극적인 카본 플레이트 반응을 끌어낸 NB 탑 레이서야. RTINGS 기준 힐/전족부 에너지 리턴이 84.8/84.6%로 상위권 카본화 수준이고, 200.5g의 가벼운 무게로 3~4분대 레이스 페이스에서 발이 자연스럽게 앞으로 감기는 느낌이야. Doctors of Running은 전족부에 가이던스 기능이 있다고 평가할 정도로 착지 안정성도 잡혀 있어. 다만 Road Trail Run 테스터들이 지적한 것처럼 A-TPU 기반 경쟁 레이서들에 비해 동일 스택 대비 무게가 무거운 편이라는 게 약점이야.",
+      "shortDescription": "풀코스 페이스 유지형",
+      "imageUrl": "/shoes/fuelcell-sc-elite-v5.webp",
+      "specs": {
+        "weight": 201,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 9,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 32
+        }
+      },
+      "pros": [
+        "FuelCell + 카본 플레이트 조합으로 힐/전족부 에너지 리턴 84.8/84.6%를 달성해서 카본화 중 상위권 반발력을 제공해",
+        "200.5g의 가벼운 무게와 8.9mm 드롭이 레이스 페이스에서 카본 플레이트가 자연스럽게 끝까지 밀어주는 느낌을 만들어",
+        "전족부 가이던스 구조 덕분에 풀마라톤 후반 피로해진 상태에서도 착지 안정성이 무너지지 않아"
+      ],
+      "cons": [
+        "동급 카본화인 Adizero Adios Pro나 Metaspeed Sky 대비 동일 스택에서 무게가 무거운 편이라 초반 스피드 감각이 예민한 러너에겐 차이가 느껴져",
+        "드롭이 v4의 4mm에서 8.9mm로 대폭 높아져서 전작에서 저드롭 포어풋 착지 느낌을 좋아했던 러너는 적응이 필요해"
+      ],
+      "bestFor": [
+        "서브3~서브3.5 목표로 풀마라톤 레이스에 카본화를 처음 투입하는 중급 러너",
+        "착지 안정성이 잡힌 카본 레이서를 원하는 힐~미드풋 착지 러너",
+        "NB 브랜드 선호도가 있고 훈련화(Rebel)와 레이스화를 분리해 운용하는 러너"
+      ],
+      "technologies": [
+        "카본 플레이트",
+        "고반발 미드솔",
+        "레이스 지향 지오메트리"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "fuelcell-sc-elite-v5",
+      "officialUrl": "https://www.newbalance.com/pd/fuelcell-supercomp-elite-v5/MRCELV5-50683.html"
+    }
+  ]
+}

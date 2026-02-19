@@ -1,0 +1,58 @@
+{
+  "run_date": "2026-02-18",
+  "brand": "mizuno",
+  "total_shoes": 9,
+  "source_health": {
+    "RunRepeat": {
+      "found": 6,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 3,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "RTINGS": {
+      "found": 9,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 0,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Doctors of Running": {
+      "found": 9,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 0,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Road Trail Run": {
+      "found": 0,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 9,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Believe in the Run": {
+      "found": 4,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 5,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    }
+  },
+  "completed_at": "2026-02-17T14:00:33.052Z"
+}

@@ -1,0 +1,352 @@
+{
+  "shoeId": "rocket-x-3",
+  "modelName": "HOKA Rocket X 3",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.13,
+      "url": "https://runrepeat.com/hoka-rocket-x-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.97,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/rocket-x-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.61,
+      "url": "https://www.doctorsofrunning.com/2025/07/hoka-rocket-x-3-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.51,
+      "url": "https://www.roadtrailrun.com/2025/07/hoka-rocket-x-3-multi-tester-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.92,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-rocket-x-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-rocket-x-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 220,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.6,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 155,
+          "forefootShockAbsorption": 112,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.9,
+          "forefootEnergyReturn": 78,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 155 / 112 SA",
+        "Energy return heel/forefoot: 73.9% / 78%",
+        "Lab specs weight/drop/stack: 220g, 10mm, 39.6mm/29.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/rocket-x-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 208.4,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 40.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 31.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.3,
+          "forefootShockAbsorption": 7.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 83.7,
+          "forefootEnergyReturn": 83.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 83.7%",
+        "Forefoot ER: 83.8%",
+        "Heel Cushioning: 8.3 /10",
+        "Forefoot Cushioning: 7.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/07/hoka-rocket-x-3-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "While the Rocket X 1 was a super low drop, carbon plated, EVA shoe, the Rocket X 2 was HOKA's first super shoe to feature A PEBA midsole, finally qualifying the series as a super shoe.",
+        "Andrea: The HOKA Rocket X 3 is a bouncy, propulsive racing shoe with a firmer midsole and energetic ride.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The HOKA Rocket X 3 is a stable neutral super racing shoe."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/hoka-rocket-x-3-multi-tester-review.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "What initially intimidated me about Hoka was the unstable high stack height and reduced proprioception underfoot that older models were said to have.",
+        "Hoka Cielo X 1 ( RTR Review ) Peter: The Cielo X1 feels wilder, bouncier and has more cushion in the forefoot.",
+        "Brooks Hyperion Elite 4 Pb ( RTR Review ) Courtney: The Hyperion Elite 4PB is lighter weight at 180 grams vs."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-rocket-x-3-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Hoka now uses a softer layer of PEBA directly underfoot, with more under the forefoot, while a slightly firmer layer sits below the carbon plate."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 220,
+    "drop": 10,
+    "heelStack": 39.6,
+    "forefootStack": 29.6
+  },
+  "proposedSpecs": {
+    "weight": 220,
+    "drop": 10,
+    "heelStack": 39.6,
+    "forefootStack": 29.6
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 220,
+      "runRepeat": 220,
+      "rtings": 208.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 10,
+      "rtings": 8.6,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 39.6,
+        "forefoot": 29.6
+      },
+      "runRepeat": {
+        "heel": 39.6,
+        "forefoot": 29.6
+      },
+      "rtings": {
+        "heel": 40.3,
+        "forefoot": 31.7
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,247 @@
+{
+  "shoeId": "foreverrun-nitro-2",
+  "modelName": "PUMA ForeverRun NITRO 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.13,
+      "url": "https://runrepeat.com/puma-foreverrun-nitro-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.26,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/foreverrun-nitro-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.97,
+      "url": "https://believeintherun.com/shoe-reviews/puma-foreverrun-nitro-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/puma-foreverrun-nitro-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 291,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 35.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 26.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 139,
+          "forefootShockAbsorption": 105,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 60.5,
+          "forefootEnergyReturn": 63.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 139 / 105 SA",
+        "Energy return heel/forefoot: 60.5% / 63.6%",
+        "Lab specs weight/drop/stack: 291g, 8.8mm, 35.3mm/26.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/foreverrun-nitro-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 291.7,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.9,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 37.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 27.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.7,
+          "forefootShockAbsorption": 6.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.6,
+          "forefootEnergyReturn": 72.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.6%",
+        "Forefoot ER: 72.6%",
+        "Heel Cushioning: 6.7 /10",
+        "Forefoot Cushioning: 6.8 /10"
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-foreverrun-nitro-2-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        ") Billed as the “stability shoe for everyday runners,” the Puma ForeverRun Nitro 2 is a partial update to the original, which was an under-the-radar stability hit.",
+        "The Puma ForeverRun Nitro 2 capitalizes on the new trend of using dual-density foams to guide the foot as opposed to large blocky structures to push your foot away from pronation.",
+        "Puma’s RunGuide technology starts with a heel clip and uses a firmer rim of NitroFoam to surround the softer core to keep your feet moving straight down the midline of your stride."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 291,
+    "drop": 8.8,
+    "heelStack": 35.3,
+    "forefootStack": 26.5
+  },
+  "proposedSpecs": {
+    "weight": 291,
+    "drop": 8.8,
+    "heelStack": 35.3,
+    "forefootStack": 26.5
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8.8,
+      "runRepeat": 8.8,
+      "rtings": 9.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 35.3,
+        "forefoot": 26.5
+      },
+      "runRepeat": {
+        "heel": 35.3,
+        "forefoot": 26.5
+      },
+      "rtings": {
+        "heel": 37.3,
+        "forefoot": 27.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 9,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 9,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

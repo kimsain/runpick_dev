@@ -1,0 +1,123 @@
+{
+  "shoeId": "endorphin-pro-5",
+  "modelName": "Saucony Endorphin Pro 5",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.65,
+      "url": "https://runrepeat.com/saucony-endorphin-pro-5-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.75,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-5",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-5",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 212.4,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 38.2,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 28.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.4,
+          "forefootShockAbsorption": 7.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.4,
+          "forefootEnergyReturn": 81.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.4%",
+        "Forefoot ER: 81.7%",
+        "Heel Cushioning: 7.4 /10",
+        "Forefoot Cushioning: 7.2 /10"
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

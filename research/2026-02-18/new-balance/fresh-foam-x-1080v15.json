@@ -1,0 +1,222 @@
+{
+  "shoeId": "fresh-foam-x-1080v15",
+  "modelName": "New Balance Fresh Foam X 1080 v15",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.72,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-1080-v15-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 4.33,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-1080v15-green-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.58,
+      "url": "https://www.doctorsofrunning.com/2025/11/new-balance-1080-v15-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.75,
+      "url": "https://www.roadtrailrun.com/2025/11/new-balance-1080-v15-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.95,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-1080-v15-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/11/new-balance-1080-v15-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Taking back its place as the lightest premium neutral trainer on the market, the New Balance 1080 v15 returns as a light, highly cushioned and resilient shoe for the miles ahead.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The New Balance 1080 v15 is a neutral shoe.",
+        "Matt: The New Balance 1080 v15 is for those with higher volume feet wanting a light, highly cushioned and easy rolling daily training shoe."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/11/new-balance-1080-v15-multi-tester.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: New Balance 1080 v15 Multi Tester Review: Super Fresh.",
+        "10 Comparisons Article by Dominique Winebaum, Peter Stuart, Courtney Kelly, and Sam Winebaum New Balance 1080 v15 ($170) Introduction Sam: The 1080 has been New Balance traditional, higher stack height, more plushy cushioned daily trainer.",
+        "In version 15 it finally loses its Fresh Foam and moniker and gets a new supercritical \"Infinion\" foam (compound not specified as of yet) midsole and far lighter weight It's about time, as while tweaked over the years, EVA based Fresh Foam in prior 1080 is clearly dated."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-1080-v15-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "THOMAS: We go way back with the New Balance FreshFoam 1080.",
+        "I get it; New Balance wants consumers to know that their new foam lasts longer, providing you with more cushioned miles.",
+        "Having reviewed v13 (which I liked overall but found unstable) and v14 (which I loved), I was personally shocked to see that New Balance was eschewing the Fresh Foam X in its premium daily trainer, substituting a new midsole foam called Infinion."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 250.3,
+    "drop": 7.8,
+    "heelStack": 38.4,
+    "forefootStack": 30.6
+  },
+  "proposedSpecs": {
+    "weight": 250.3,
+    "drop": 7.8,
+    "heelStack": 38.4,
+    "forefootStack": 30.6
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

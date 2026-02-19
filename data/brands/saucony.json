@@ -1,0 +1,636 @@
+{
+  "brand": {
+    "id": "saucony",
+    "name": "SAUCONY",
+    "nameKo": "써코니",
+    "logo": "/brands/saucony-logo.svg",
+    "color": "#003DA5",
+    "description": "균형 잡힌 데일리화와 엔도르핀 레이싱 라인으로 유명한 브랜드"
+  },
+  "shoes": [
+    {
+      "id": "ride-18",
+      "brandId": "saucony",
+      "name": "Ride 18",
+      "nameKo": "Ride 18",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 168000,
+      "priceFormatted": "₩168,000",
+      "description": "Ride 18는 써코니의 대표 데일리 워크호스야 — Molly Seidel도 훈련용으로 신었던 라인의 18번째 버전. 미드솔은 PEBA가 아닌 TPU 기반 PWRRUN 폼이라 275g에 충격 흡수(SA 141/116)는 탄탄한데, 슈퍼폼 특유의 통통 튀는 느낌보다는 묵직하고 안정적인 라이드야. 전통적인 아워글래스 형태 플랫폼이라 착지에서 토오프까지 전환이 깔끔하고, RTINGS 기준 에너지 리턴 80.7%로 이 가격대치고 반발력도 나쁘지 않아. 다만 PEBA 폼 데일리화에 익숙한 러너에게는 다소 둔탁하게 느껴질 수 있어.",
+      "shortDescription": "데일리부터 롱런까지 쓰는 올라운더",
+      "imageUrl": "/shoes/ride-18.webp",
+      "specs": {
+        "weight": 275,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 9,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 29
+        }
+      },
+      "pros": [
+        "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해",
+        "아워글래스 플랫폼이라 미드풋 착지에서 자연스럽게 토오프로 넘어가는 전환감이 깔끔해",
+        "275g에 에너지 리턴 80%대라 이 가격대 데일리화 중 가성비가 좋아"
+      ],
+      "cons": [
+        "PEBA 폼 트레이너에 익숙한 러너는 PWRRUN의 TPU 질감이 상대적으로 무겁고 덜 바운시하게 느껴질 수 있어",
+        "토박스가 좁은 아워글래스 형태라 발볼 넓은 러너에게는 장거리에서 압박이 올 수 있어"
+      ],
+      "bestFor": [
+        "이지런부터 10km 템포까지 한 켤레로 두루 쓸 믿음직한 데일리 트레이너를 찾는 러너",
+        "PEBA 폼 특유의 통통 튀는 느낌보다 묵직하고 안정적인 라이드를 선호하는 러너",
+        "내구성 좋은 워크호스형 데일리화를 합리적인 가격에 원하는 러너"
+      ],
+      "technologies": [
+        "균형형 쿠셔닝 폼",
+        "데일리 트레이닝 설계",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "ride-18",
+      "officialUrl": "https://www.saucony.com/en/ride-18/59943M.html"
+    },
+    {
+      "id": "kinvara-16",
+      "brandId": "saucony",
+      "name": "Kinvara 16",
+      "nameKo": "Kinvara 16",
+      "categoryId": "daily",
+      "subcategoryId": "lightweight",
+      "price": 147000,
+      "priceFormatted": "₩147,000",
+      "description": "Kinvara 16는 207g에 4mm 드롭이라는 조합으로 '발이 가볍게 움직이는 느낌'을 최우선에 둔 경량 데일리야. PWRRUN 폼에 28mm 힐 스택으로 쿠셔닝이 적당히 받쳐주면서도 발 아래 직접 닿는 감각이 살아 있어. 낮은 드롭 덕에 착지부터 지면 반응까지 빠르게 연결돼서 리듬 훈련이나 가벼운 템포런에서 발놀림이 경쾌해. 다만 SA 109/100으로 쿠셔닝 수치 자체는 이 라인에서 가장 낮아서, 장거리 러닝에서 쿠셔닝이 부족하다고 느끼는 러너가 있어.",
+      "shortDescription": "가볍게 페이스 올리기 좋은 경량 데일리",
+      "imageUrl": "/shoes/kinvara-16.webp",
+      "specs": {
+        "weight": 207,
+        "drop": 4,
+        "cushioning": 6,
+        "responsiveness": 5,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 28,
+          "forefoot": 23.5
+        }
+      },
+      "pros": [
+        "207g의 가벼운 무게라 발이 안 무겁고 리듬 훈련에서 페이스 올리기가 부담 없어",
+        "4mm 저드롭 설계라 미드풋 착지가 자연스럽게 유도돼서 달리기 폼 개선을 원하는 러너에게 좋아",
+        "PWRRUN 폼이 28mm 스택에서도 쿠셔닝을 적당히 제공해서 5~10km 훈련에서 불편함 없어"
+      ],
+      "cons": [
+        "SA 109/100으로 이 라인에서 쿠셔닝이 가장 얇아서 20km 이상 장거리 러너는 발바닥 피로를 느낄 수 있어",
+        "4mm 드롭은 8mm 이상에 익숙한 러너에게 종아리·아킬레스건 부담을 줄 수 있어 적응 기간이 필요해"
+      ],
+      "bestFor": [
+        "5~15km 데일리 훈련에서 발이 가볍고 빠른 리듬감을 원하는 러너",
+        "미드풋 착지를 연습하거나 저드롭 훈련화를 찾고 있는 중급 러너",
+        "슈퍼슈즈 훈련 파트너로 가벼운 보조화가 필요한 러너"
+      ],
+      "technologies": [
+        "경량 미드솔",
+        "반발형 폼",
+        "유연한 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "kinvara-16",
+      "officialUrl": "https://www.saucony.com/en/kinvara-16/60309M.html"
+    },
+    {
+      "id": "triumph-23",
+      "brandId": "saucony",
+      "name": "Triumph 23",
+      "nameKo": "Triumph 23",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 224000,
+      "priceFormatted": "₩224,000",
+      "description": "Triumph 23는 써코니 라인업에서 최고급 쿠셔닝을 담당하는 프리미엄 데일리야. PWRRUN HG 폼이 SA 149/136으로 라인업 내 가장 높은 충격 흡수를 자랑하면서도, '소프트하고 바운시하다'는 리뷰어들의 평가처럼 둔탁하지 않고 약간 탱글거리는 감각이 있어. 10mm 드롭에 힐 스택 42mm로 뒤꿈치 착지 러너가 장거리에서 다리를 아낄 수 있게 설계됐어. 다만 전족부 착지 러너에게는 10mm 드롭이 과해서 앞발이 일찍 바닥에 닿는 느낌이 들 수 있어.",
+      "shortDescription": "장거리 이지런용 맥스 쿠셔닝",
+      "imageUrl": "/shoes/triumph-23.webp",
+      "specs": {
+        "weight": 263,
+        "drop": 10,
+        "cushioning": 8,
+        "responsiveness": 7,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 27
+        }
+      },
+      "pros": [
+        "PWRRUN HG 폼이 SA 149/136으로 Ride 18보다 훨씬 높은 충격 흡수를 제공해서 하프·풀 장거리 훈련에서 발이 쉬어",
+        "42mm 힐 스택이 부드러우면서도 탱글한 감각이라 이지런에서도 지루하지 않아",
+        "272g에 에너지 리턴 77.7%라 맥스쿠셔닝인데 무겁거나 둔탁하지 않아"
+      ],
+      "cons": [
+        "전족부 착지 위주 러너에게는 10mm 드롭이 앞발을 과하게 떨어뜨려서 접지감이 어색하게 느껴질 수 있어",
+        "맥스 쿠셔닝 특성상 페이스를 5분/km 이하로 올리면 반응성이 부족해서 속도 훈련에는 안 맞아"
+      ],
+      "bestFor": [
+        "하프 이상 장거리 훈련에서 뒤꿈치 착지로 다리를 보호하고 싶은 러너",
+        "이지런을 매일 신을 만큼 편하면서도 약간 바운시한 쿠셔닝 데일리를 원하는 러너",
+        "완주 위주 풀마라톤 레이서가 레이스 전 주간 데일리로 발을 아낄 때"
+      ],
+      "technologies": [
+        "맥스 쿠셔닝 폼",
+        "충격 분산 구조",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "triumph-23",
+      "officialUrl": "https://www.saucony.com/en/triumph-23/60311M.html"
+    },
+    {
+      "id": "guide-18",
+      "brandId": "saucony",
+      "name": "Guide 18",
+      "nameKo": "Guide 18",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 188000,
+      "priceFormatted": "₩188,000",
+      "description": "Guide 18는 PWRRUN 폼에 HOLLOW TECH 구조를 더해 경도를 높이는 방식으로 안정성을 만들어내는 데일리야. 미드풋 내측을 밀어올리는 포스트형 안정화가 아니라, 아웃솔에 속이 빈 공간을 내서 폼 밀도 차이로 발이 쏠리는 걸 자연스럽게 잡아줘. Believe in the Run 리뷰어는 "클리프턴이 느껴야 할 방식 — 넓고 안정적이고 쿠셔닝 있고 로커도 있다"고 표현했어. 다만 Doctors of Running은 '경증 안정화 수준'이라고 평가해서, 뚜렷한 오버프로네이션 교정을 원하는 러너에게는 안정성이 부족하게 느껴질 수 있어.",
+      "shortDescription": "안정감 중심 데일리 안정화",
+      "imageUrl": "/shoes/guide-18.webp",
+      "specs": {
+        "weight": 272,
+        "drop": 6,
+        "cushioning": 7,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 35,
+          "forefoot": 29
+        }
+      },
+      "pros": [
+        "HOLLOW TECH 구조가 별도 포스트 없이 자연스럽게 내측 안정성을 잡아줘서 안정화치고 딱딱하거나 어색한 느낌이 없어",
+        "부드러운 로커 구조 덕에 착지에서 토오프까지 흐르듯 전환돼서 이지런에서 발이 편해",
+        "278g에 6mm 드롭이라 이지런부터 장거리까지 무리 없이 소화할 수 있어"
+      ],
+      "cons": [
+        "강한 오버프로네이션 교정이 필요한 러너에게는 경증 수준의 안정성이라 Brooks Beast나 NB 860 같은 강한 안정화보다 지지력이 부족해",
+        "에너지 리턴 61-62%로 써코니 데일리 라인에서 반발력이 가장 낮아서 빠른 훈련 페이스에서는 추진력이 아쉬워"
+      ],
+      "bestFor": [
+        "미약한 발목 흔들림이 있어서 부드러운 가이던스가 필요한 러너",
+        "이지런·장거리 훈련에서 안정감과 편안함 둘 다 원하는 러너",
+        "처음으로 안정화를 시도하는데 딱딱한 포스트 느낌 없이 자연스럽게 맞춰지는 지지력을 찾는 러너"
+      ],
+      "technologies": [
+        "안정화 가이던스 구조",
+        "쿠셔닝 폼",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "guide-18",
+      "officialUrl": "https://www.saucony.com/en/guide-18/59947M.html"
+    },
+    {
+      "id": "hurricane-25",
+      "brandId": "saucony",
+      "name": "Hurricane 25",
+      "nameKo": "Hurricane 25",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 195000,
+      "priceFormatted": "₩195,000",
+      "description": "Hurricane 25는 안정화 슈즈 중 유일하게 슈퍼폼 미드솔을 품은 신발이야. PWRRUN PB가 발 아래에 깔리고, PWRRUN 크래들이 내측에서 감싸는 이중 밀도 구조에 Center Path 기술로 착지 흐름을 중앙으로 유도해. SA 151/140으로 안정화 라인에서 가장 높은 충격 흡수를 보여주면서도 에너지 리턴 74%를 유지하는 게 포인트야. Doctors of Running은 '경증-중간 안정화'로 분류하면서 '프리미엄 안정화 중 가장 가볍다'고 했어. Guide보다 무거운 이유는 이 이중 폼 구조와 더 두꺼운 지지 크래들 때문이야.",
+      "shortDescription": "안정감 중심 데일리 안정화",
+      "imageUrl": "/shoes/hurricane-25.webp",
+      "specs": {
+        "weight": 283,
+        "drop": 6,
+        "cushioning": 9,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 32
+        }
+      },
+      "pros": [
+        "PWRRUN PB + PWRRUN 크래들 이중 밀도 구조라 안정화인데 발 아래 쿠셔닝이 부드럽고 SA 151/140으로 충격 흡수도 최상급이야",
+        "Center Path 기술로 착지가 내측으로 쏠릴 때 자연스럽게 중앙으로 유도해줘서 무릎·발목 과부하가 줄어",
+        "프리미엄 안정화 중 가장 가벼운 축에 속해서 286g인데 발에 무겁게 느껴지지 않아"
+      ],
+      "cons": [
+        "Guide 18보다 8g 더 무겁고 구조가 두꺼워서 빠른 페이스 훈련을 자주 하는 러너에게는 발이 묵직하게 느껴질 수 있어",
+        "경증-중간 안정화 수준이라 심한 오버프로네이션 교정이 필요한 러너에게는 지지력이 충분하지 않을 수 있어"
+      ],
+      "bestFor": [
+        "오버프로네이션 경향이 있어서 안정화가 필요한데 쿠셔닝도 포기하기 싫은 러너",
+        "하프·풀마라톤 장거리 훈련에서 발목 흔들림과 충격을 동시에 잡아줄 신발이 필요한 러너",
+        "슈퍼폼이 들어간 안정화를 찾고 있는 러너"
+      ],
+      "technologies": [
+        "안정화 가이던스 구조",
+        "쿠셔닝 폼",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "hurricane-25",
+      "officialUrl": "https://www.saucony.com/en/hurricane-25/60323M.html"
+    },
+    {
+      "id": "tempus-2",
+      "brandId": "saucony",
+      "name": "Tempus 2",
+      "nameKo": "Tempus 2",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 191000,
+      "priceFormatted": "₩191,000",
+      "description": "Tempus 2는 XT-600 웨지라는 독특한 경사 구조로 안정성을 만들어내는 안정화야 — 내측에 딱딱한 포스트를 넣는 방식이 아니라, 외측에서 내측으로 기울어진 쐐기형 폼 블록이 발이 안쪽으로 쏠리는 걸 물리적으로 막아줘. 264g에 에너지 리턴 69.9~72.2%로 써코니 안정화 3종 중 가장 가벼운 편이라 어느 정도 페이스도 소화해. 8mm 드롭과 33/25mm 스택 조합이라 너무 높지 않은 쿠셔닝에서 지면 감각을 원하는 러너에게 잘 맞아. 다만 아웃솔 내구성이 0.4mm로 이 라인에서 가장 얇아서 마모에 취약한 편이야.",
+      "shortDescription": "안정감 중심 데일리 안정화",
+      "imageUrl": "/shoes/tempus-2.webp",
+      "specs": {
+        "weight": 269,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 33,
+          "forefoot": 25
+        }
+      },
+      "pros": [
+        "XT-600 웨지 구조가 별도 포스트 없이 발이 내측으로 쏠리는 걸 잡아줘서 안정화치고 자연스러운 착지감이야",
+        "264g으로 써코니 안정화 3종 중 가장 가볍고 에너지 리턴 72%라 어느 정도 빠른 훈련에도 쓸 수 있어",
+        "33/25mm 스택이라 지면 감각을 어느 정도 유지하면서 안정성을 챙길 수 있어"
+      ],
+      "cons": [
+        "아웃솔 내구성이 0.4mm로 써코니 라인 중 가장 얇아서 주 4회 이상 고강도로 훈련하는 러너는 마모가 빠를 수 있어",
+        "웨지 기반 안정화라 내측 발아치가 심하게 무너지는 러너에게는 교정력이 부족하게 느껴질 수 있어"
+      ],
+      "bestFor": [
+        "가벼운 안정화가 필요하면서 데일리와 템포런 둘 다 소화할 한 켤레를 찾는 러너",
+        "딱딱한 포스트형 안정화 대신 부드럽고 자연스러운 경사 구조의 지지력을 원하는 러너",
+        "경증 오버프로네이션이 있어서 가이던스가 필요하지만 발이 무거운 안정화는 싫은 러너"
+      ],
+      "technologies": [
+        "안정화 가이던스 구조",
+        "쿠셔닝 폼",
+        "내구성 아웃솔"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "tempus-2",
+      "officialUrl": "https://www.saucony.com/UK/en_GB/tempus-2/59570M.html"
+    },
+    {
+      "id": "endorphin-trainer",
+      "brandId": "saucony",
+      "name": "Endorphin Trainer",
+      "nameKo": "Endorphin Trainer",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 251000,
+      "priceFormatted": "₩251,000",
+      "description": "Endorphin Trainer는 PWRRUN PB 대신 IncrediRun(TPEE 기반) 폼을 상단에, PWRRUN을 하단에 배치한 이중 레이어 무플레이트 슈퍼 트레이너야. Doctors of Running은 'NB SC Elite 3의 더 무거운 데일리 트레이너 버전 같다'고 표현했어 — 플레이트 없이도 꽤 바운시한 감각이야. 힐 에너지 리턴 74%, 전족부 79.2%로 데일리화보다 확실히 반응성이 좋으면서도 SA 138/112로 쿠셔닝도 넉넉해. 다만 285g으로 슈퍼 트레이너치고 무겁고, 하단 PWRRUN 레이어가 다소 둔탁하다는 평이 있어.",
+      "shortDescription": "반발감 중심 무플레이트 트레이너",
+      "imageUrl": "/shoes/endorphin-trainer.webp",
+      "specs": {
+        "weight": 286,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 31.5
+        }
+      },
+      "pros": [
+        "IncrediRun 상단 레이어가 플레이트 없이도 전족부 에너지 리턴 79%대의 바운시한 감각을 만들어줘",
+        "힐 SA 138로 쿠셔닝이 충분해서 이지런부터 미디엄 롱런까지 발을 보호해줘",
+        "무플레이트라 장착 페이스 폭이 넓어서 이지런 4:30~템포 3:50 구간을 모두 소화할 수 있어"
+      ],
+      "cons": [
+        "285g으로 같은 카테고리 Speed 5(238g)보다 47g 무거워서 인터벌·트랙 세션에서는 발이 묵직하게 느껴질 수 있어",
+        "하단 PWRRUN 레이어가 상대적으로 단단해서 전족부 착지 러너는 발바닥이 딱딱하게 느껴진다는 평이 있어"
+      ],
+      "bestFor": [
+        "플레이트 없이 바운시한 훈련화를 찾는 러너, 특히 이지런부터 하프마라톤 페이스 훈련까지 한 켤레로 쓰고 싶을 때",
+        "슈퍼슈즈의 레이스데이를 위해 비슷한 감각을 학습할 훈련화가 필요한 러너",
+        "이지런에서도 어느 정도 쿠셔닝 보호가 필요한 고중량 러너"
+      ],
+      "technologies": [
+        "고반발 슈퍼폼",
+        "록커 지오메트리",
+        "장거리 트레이닝 설계"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-trainer",
+      "officialUrl": "https://www.saucony.com/en/endorphin-trainer/59961M.html"
+    },
+    {
+      "id": "endorphin-azura",
+      "brandId": "saucony",
+      "name": "Endorphin Azura",
+      "nameKo": "Endorphin Azura",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 209000,
+      "priceFormatted": "₩209,000",
+      "description": "Endorphin Azura는 PWRRUN PB 폼에 나일론 플레이트를 얹어서 Trainer(무플레이트)와 Speed 5(나일론 플레이트) 사이에 위치한 신발이야. RTINGS 기준 에너지 리턴 80.9~82.8%로 Speed 5와 비슷한 수준의 반발력을 242g에 제공해. 40/32mm 스택 덕에 쿠셔닝도 Trainer에 가깝고, 나일론 플레이트가 전족부 추진력을 더해줘. Trainer보다 43g 가볍고 반발력이 더 강하며, Speed 5와 비슷한 반발력에 쿠셔닝은 더 두꺼워.",
+      "shortDescription": "템포·인터벌용 라이트 플레이트",
+      "imageUrl": "/shoes/endorphin-azura.png",
+      "specs": {
+        "weight": 240,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 32
+        }
+      },
+      "pros": [
+        "PWRRUN PB + 나일론 플레이트 조합으로 에너지 리턴 82.8%를 240g에 구현해서 Speed 5급 반발력을 더 두꺼운 쿠셔닝과 함께 즐길 수 있어",
+        "40/32mm 스택이라 템포런에서도 발이 충분히 보호받아서 Trainer처럼 이지런 겸용도 가능해",
+        "Trainer(285g)보다 43g 가볍고 Speed 5와 비슷한 반발력이라 Trainer-Speed 5 사이에서 최적 균형점이야"
+      ],
+      "cons": [
+        "Speed 5보다 스택이 높고 플랫폼이 커서 발이 좁은 러너에게는 갑피가 헐렁하게 느껴질 수 있어",
+        "새 모델이라 장기 내구성 데이터가 아직 없고 리뷰 소스가 RTINGS 단일이라 러너별 핏 차이 정보가 부족해"
+      ],
+      "bestFor": [
+        "이지런부터 하프마라톤 페이스까지 한 켤레로 커버하면서 나일론 플레이트의 추진력도 원하는 러너",
+        "Trainer는 무겁고 Speed 5는 쿠셔닝이 부족하다고 느끼는 러너",
+        "쿠셔닝과 반발력 둘 다 포기하기 싫은 올라운드 훈련화를 찾는 러너"
+      ],
+      "technologies": [
+        "플레이트 미드솔",
+        "고반발 폼",
+        "템포 지오메트리"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-azura",
+      "officialUrl": "https://www.saucony.com/en/endorphin-azura/60807M.html"
+    },
+    {
+      "id": "endorphin-speed-5",
+      "brandId": "saucony",
+      "name": "Endorphin Speed 5",
+      "nameKo": "Endorphin Speed 5",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 209000,
+      "priceFormatted": "₩209,000",
+      "description": "Endorphin Speed 5는 PWRRUN PB(PEBA 기반 비드 폼) + 나일론 플레이트 조합으로 써코니 트레이너 라인 중 최고 반발력을 자랑하는 경량 슈퍼 트레이너야. RTINGS 기준 에너지 리턴 82.1~82.6%는 Azura·Trainer와 비교해 라인 최고 수준이고, 238g으로 훈련화인데 경쟁사 일부 레이싱화보다도 가벼워. Doctors of Running은 '이지런부터 인터벌까지 커버하는 만능 나일론 플레이트 트레이너·레이서'로 평가했어. 다만 36/28mm 스택이라 장거리 이지런에서 쿠셔닝이 다소 부족하게 느껴질 수 있어.",
+      "shortDescription": "템포·인터벌용 라이트 플레이트",
+      "imageUrl": "/shoes/endorphin-speed-5.webp",
+      "specs": {
+        "weight": 238,
+        "drop": 8,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 28
+        }
+      },
+      "pros": [
+        "PWRRUN PB PEBA 폼 + 나일론 플레이트라 에너지 리턴 82%대로 써코니 트레이너 라인 최고 반발력을 자랑해",
+        "238g으로 가벼워서 템포런부터 하프마라톤 레이스까지 신을 수 있어 — 훈련화와 레이스화 겸용 가능",
+        "나일론 플레이트라 카본 슈퍼슈즈보다 착지 충격이 분산돼서 고빈도 훈련에도 발이 덜 피로해"
+      ],
+      "cons": [
+        "36/28mm 스택이 Azura보다 낮아서 30km 이상 장거리 이지런을 자주 하는 러너에게는 발바닥 피로가 빨리 올 수 있어",
+        "반발력 위주 설계라 뒤꿈치 착지 러너에게는 나일론 플레이트 효과를 충분히 느끼기 어려워"
+      ],
+      "bestFor": [
+        "주 2~3회 템포런·인터벌 훈련에서 레이스 감각을 유지하고 싶은 서브4~서브3.5 러너",
+        "레이싱화와 훈련화를 하나로 합치고 싶은 하프마라톤 러너",
+        "카본 플레이트 레이싱화 훈련 파트너로 나일론 플레이트 슈즈를 찾는 러너"
+      ],
+      "technologies": [
+        "플레이트 미드솔",
+        "고반발 폼",
+        "템포 지오메트리"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-speed-5",
+      "officialUrl": "https://www.saucony.com/en/endorphin-speed-5/60307M.html"
+    },
+    {
+      "id": "endorphin-elite-2",
+      "brandId": "saucony",
+      "name": "Endorphin Elite 2",
+      "nameKo": "Endorphin Elite 2",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 390000,
+      "priceFormatted": "₩390,000",
+      "description": "Endorphin Elite 2는 써코니의 레이싱 플래그십 — IncrediRun(TPEE) 폼에 카본 플레이트를 얹어서 현재 시장에서 가장 소프트하고 바운시한 장거리 레이싱화를 목표로 만들었어. RTINGS 기준 에너지 리턴 85.8~86.4%는 써코니 라인업 최고 수치이고, 197g에 39.9mm 힐 스택이라 풀마라톤 후반에서도 발이 충분히 보호받아. Believe in the Run은 '내가 Hoka Cielo X1에서 좋아했던 모든 것이 거의 2온스나 가벼운 무게로 여기 있다'고 했어. 다만 안정성이 낮아서 좌우 흔들림 교정 능력이 부족하고 전족부가 좁아 발볼 넓은 러너에게는 불편할 수 있어.",
+      "shortDescription": "풀코스 페이스 유지형",
+      "imageUrl": "/shoes/endorphin-elite-2.webp",
+      "specs": {
+        "weight": 199,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 9,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 31.5
+        }
+      },
+      "pros": [
+        "IncrediRun TPEE 폼 + 카본 플레이트로 에너지 리턴 85.8~86.4%를 구현해서 197g에 최고 수준의 바운스가 있어",
+        "39.9mm 힐 스택이 풀마라톤 후반 35km 이후에도 착지 충격을 잘 잡아줘서 발이 여전히 살아 있어",
+        "써코니 레이싱 라인업 최경량(197g)이라 후반 페이스 유지할 때 발이 가벼워서 유리해"
+      ],
+      "cons": [
+        "중립 성향에 좌우 안정성이 약해서 오버프로네이션 러너나 피로해서 발이 흔들리는 레이스 후반부에 불안정하게 느껴질 수 있어",
+        "전족부가 좁아서 발볼이 넓은 러너는 레이스 중 발가락이 눌려 불편할 수 있어"
+      ],
+      "bestFor": [
+        "안정적인 달리기 폼을 가진 서브3.5~서브3 러너가 풀마라톤 레이스에서 기록 단축을 목표로 할 때",
+        "소프트하면서도 강한 반발력을 원하는 러너 — 단단한 카본화가 불편했던 러너에게 적합",
+        "훈련은 Speed 5나 Trainer로 하고 레이스데이만 최고의 슈즈를 신고 싶은 러너"
+      ],
+      "technologies": [
+        "카본 플레이트",
+        "고반발 미드솔",
+        "레이스 지향 지오메트리"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-elite-2",
+      "officialUrl": "https://www.saucony.com/en/endorphin-elite-2/59824U.html"
+    },
+    {
+      "id": "endorphin-pro-4",
+      "brandId": "saucony",
+      "name": "Endorphin Pro 4",
+      "nameKo": "Endorphin Pro 4",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 361000,
+      "priceFormatted": "₩361,000",
+      "description": "Endorphin Pro 4는 PWRRUN PB + 카본 플레이트 조합의 레이싱화로, Elite 2보다 13g 더 무겁고 에너지 리턴도 약 13% 낮아. Elite 2가 IncrediRun 신폼을 채택한 반면 Pro 4는 PWRRUN PB(PEBA 비드 폼)를 유지하는데, 이 차이가 중량 및 반발력 차이의 주된 원인이야. 220g에 에너지 리턴 71.7~83.2%는 RTINGS와 RunRepeat 측정값 격차가 커서 실제 체감은 중간 어딘가일 거야. 구조적으로는 Elite 2보다 안정적이고 적당히 반응성 있는 풀마라톤 레이서야.",
+      "shortDescription": "풀코스 페이스 유지형",
+      "imageUrl": "/shoes/endorphin-pro-4.webp",
+      "specs": {
+        "weight": 212,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 31.5
+        }
+      },
+      "pros": [
+        "PWRRUN PB 카본 레이싱화 중 합리적인 가격대(Pro 5보다 저렴)에 카본 플레이트의 추진력을 경험할 수 있어",
+        "Elite 2보다 구조가 조금 더 안정적이라 달리기 폼이 완벽하지 않은 러너에게 레이스 후반 흔들림이 덜해",
+        "220g으로 충분히 가볍고 PWRRUN PB 반발력이 레이스 페이스 유지에 도움이 돼"
+      ],
+      "cons": [
+        "Elite 2(IncrediRun)에 비해 PWRRUN PB 폼이라 바운스 감각이 약 13% 낮아서 최고 반발력을 원하는 러너에게는 아쉬울 수 있어",
+        "Pro 5가 220g→212g으로 가벼워지고 반발력도 개선됐어서, 현재 시점에서 두 모델 다 구매 가능하다면 Pro 5가 대부분의 러너에게 유리해"
+      ],
+      "bestFor": [
+        "서브4 목표의 풀마라톤 러너로 처음 카본 레이싱화를 시도하는 경우",
+        "Elite 2의 불안정한 느낌이 걱정되는 러너가 카본 레이싱 경험을 쌓을 때",
+        "Pro 5보다 저렴한 가격으로 써코니 카본 레이싱화를 원하는 러너"
+      ],
+      "technologies": [
+        "카본 플레이트",
+        "고반발 미드솔",
+        "레이스 지향 지오메트리"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-pro-4",
+      "officialUrl": "https://www.saucony.com/en/endorphin-pro-4/58850M.html"
+    },
+    {
+      "id": "endorphin-pro-5",
+      "brandId": "saucony",
+      "name": "Endorphin Pro 5",
+      "nameKo": "Endorphin Pro 5",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 361000,
+      "priceFormatted": "₩361,000",
+      "description": "Endorphin Pro 5는 Pro 4 대비 약 8g 감량(220g→212g)하고 에너지 리턴을 71%대에서 82%대로 끌어올린 업그레이드 버전이야. PWRRUN PB + 카본 플레이트 구조는 동일하지만 폼 배합과 지오메트리를 개선해서 Elite 2(IncrediRun)에 가까운 반발력을 내면서도 Pro 4의 접근 가능한 가격대를 유지해. 212g에 RTINGS 기준 에너지 리턴 82.4%는 같은 가격 카테고리에서 경쟁력 있는 수치야. Pro 4와 Pro 5를 모두 선택할 수 있는 상황이라면 Pro 5가 거의 모든 면에서 낫다고 봐.",
+      "shortDescription": "풀코스 페이스 유지형",
+      "imageUrl": "/shoes/endorphin-pro-5.webp",
+      "specs": {
+        "weight": 206,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 31.5
+        }
+      },
+      "pros": [
+        "Pro 4 대비 에너지 리턴을 82%대로 끌어올려서 같은 카본 플레이트 구조에서 훨씬 강한 반발력을 느낄 수 있어",
+        "212g으로 8g 감량돼서 Pro 4보다 가볍고 레이스 후반에 발이 덜 무거워",
+        "PWRRUN PB + 카본 조합이 Elite 2(IncrediRun)보다 폼이 단단해서 페이스 컨트롤이 더 직관적이야"
+      ],
+      "cons": [
+        "Elite 2(IncrediRun)보다 폼이 덜 소프트해서 장거리 레이스 후반 쿠셔닝 감소가 Elite 2보다 일찍 느껴질 수 있어",
+        "리뷰 소스가 RTINGS 단일이라 장기 내구성·핏 정보가 부족해서 첫 레이스 전 충분한 테스트 기간이 필요해"
+      ],
+      "bestFor": [
+        "서브3.5~서브3 목표 풀마라톤 러너로 카본 레이싱화의 쿠셔닝 보호와 반발력 둘 다 원하는 경우",
+        "Pro 4를 써봤고 더 가볍고 바운시한 버전으로 업그레이드하고 싶은 러너",
+        "Elite 2의 가격이 부담스럽지만 Elite 2에 가까운 퍼포먼스를 원하는 러너"
+      ],
+      "technologies": [
+        "카본 플레이트",
+        "고반발 미드솔",
+        "레이스 지향 지오메트리"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러",
+        "브라이트 컬러",
+        "한정 컬러"
+      ],
+      "slug": "endorphin-pro-5",
+      "officialUrl": "https://www.saucony.com/en/endorphin-pro-5/60803M.html"
+    }
+  ]
+}

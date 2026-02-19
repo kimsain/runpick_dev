@@ -1,0 +1,297 @@
+{
+  "shoeId": "adizero-takumi-sen-11",
+  "modelName": "ADIDAS ADIZERO TAKUMI SEN 11",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.02,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-takumi-sen-11-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.23,
+      "url": "https://www.doctorsofrunning.com/2025/08/adidas-adizero-takumi-sen-11-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 1.48,
+      "url": "https://www.roadtrailrun.com/2025/08/adidas-adizero-takumi-sen-11-review-5.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 184,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.9,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 30.6,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 23.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 129,
+          "forefootShockAbsorption": 95,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74,
+          "forefootEnergyReturn": 79.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.1 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 129 / 95 SA",
+        "Energy return heel/forefoot: 74% / 79.5%",
+        "Lab specs weight/drop/stack: 184g, 6.9mm, 30.6mm/23.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-takumi-sen-11-running-shoe",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 181.6,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 32.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 25.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6,
+          "forefootShockAbsorption": 5.7,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.2,
+          "forefootEnergyReturn": 83.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.2%",
+        "Forefoot ER: 83.9%",
+        "Heel Cushioning: 6 /10",
+        "Forefoot Cushioning: 5.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/adidas-adizero-takumi-sen-11-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "An excellent, faster shoe for shorter to moderate distance races and workouts, the Adidas Takumi Sen 11 finally brings the series in the super realm without going overboard on stack height.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Adidas Takumi Sen 11 is a neutral racing shoe.",
+        "Matt: The Adidas Adizero Takumi Sen 11 is for those who want a moderate stack height, lighter super shoe for mile to 10k and maybe half-marathon racing."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/08/adidas-adizero-takumi-sen-11-review-5.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "The stability of the Puma was also easier to manage around the bends of the track.",
+        "Nike Vaporfly 4 ( RTR Review ) With Nike surprisingly slimming down the Vaporfly 4's stack height, it enters the conversation as a much more direct competitor to the Takumi Sen for shorter distance races.",
+        "Save at TOP4RUNNING HERE Use Code RTRTOP4 f or 5% off All Products, Even Sales Popular Posts Hoka Speedgoat 7 Multi Tester Review: 5 Comparisons Dynafish Xiaonian Review: 3 Comparisons adidas Adizero EVO SL ATR Review: Compared to EVO SL."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 184,
+    "drop": 7,
+    "heelStack": 33,
+    "forefootStack": 26
+  },
+  "proposedSpecs": {
+    "weight": 184,
+    "drop": 7,
+    "heelStack": 33,
+    "forefootStack": 26
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 184,
+      "runRepeat": 184,
+      "rtings": 181.6,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 33,
+        "forefoot": 26
+      },
+      "runRepeat": {
+        "heel": 30.6,
+        "forefoot": 23.7
+      },
+      "rtings": {
+        "heel": 32.1,
+        "forefoot": 25.3
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

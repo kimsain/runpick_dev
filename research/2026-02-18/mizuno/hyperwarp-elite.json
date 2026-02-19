@@ -1,0 +1,173 @@
+{
+  "shoeId": "hyperwarp-elite",
+  "modelName": "Mizuno HyperWarp Elite",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.73,
+      "url": "https://runrepeat.com/mizuno-hyperwarp-elite",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.92,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-elite",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.65,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-elite-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-elite",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 167,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 37.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 33.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.6,
+          "forefootShockAbsorption": 8.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 81.9,
+          "forefootEnergyReturn": 82,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 81.9%",
+        "Forefoot ER: 82%",
+        "Heel Cushioning: 7.6 /10",
+        "Forefoot Cushioning: 8.2 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-elite-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "8 ounce weight for 38 mm of stack height make the Mizuno Hyperwarp Elite a versatile racing option that is immediately competitive with the rest of the market.",
+        "The fit is consistent with most Mizuno racing shoes.",
+        "5 Shoes that have fit David well: Nike Vomero 17, Saucony Ride 16, Puma Velocity Nitro 3 Shoes that have fit snug : HOKA Arahi 7 Shoes that have fit large: Salomon Aero Glide Andrea: The Mizuno Hyperwarp Elite fit short in my usual women's 9."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 167,
+    "drop": 3.5,
+    "heelStack": 37.8,
+    "forefootStack": 33.1
+  },
+  "proposedSpecs": {
+    "weight": 167,
+    "drop": 3.5,
+    "heelStack": 37.8,
+    "forefootStack": 33.1
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

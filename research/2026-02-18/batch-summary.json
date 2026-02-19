@@ -1,0 +1,75 @@
+{
+  "run_date": "2026-02-18",
+  "brands": [
+    "adidas",
+    "asics",
+    "brooks",
+    "diadora",
+    "hoka",
+    "mizuno",
+    "new-balance",
+    "nike",
+    "puma",
+    "saucony"
+  ],
+  "total_shoes": 97,
+  "source_health": {
+    "RunRepeat": {
+      "found": 67,
+      "soft_404_body": 0,
+      "partial": 2,
+      "not_found": 27,
+      "wrong_model": 1,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "RTINGS": {
+      "found": 82,
+      "soft_404_body": 0,
+      "partial": 0,
+      "not_found": 15,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Doctors of Running": {
+      "found": 67,
+      "soft_404_body": 0,
+      "partial": 1,
+      "not_found": 29,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Road Trail Run": {
+      "found": 47,
+      "soft_404_body": 1,
+      "partial": 0,
+      "not_found": 49,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    },
+    "Believe in the Run": {
+      "found": 49,
+      "soft_404_body": 0,
+      "partial": 4,
+      "not_found": 44,
+      "wrong_model": 0,
+      "paywall": 0,
+      "timeout": 0,
+      "blocked": 0
+    }
+  },
+  "confidence_distribution": {
+    "high": 60,
+    "medium": 26,
+    "low": 11
+  },
+  "low_rate": 0.11,
+  "completed_at": "2026-02-17T14:00:33.054Z"
+}

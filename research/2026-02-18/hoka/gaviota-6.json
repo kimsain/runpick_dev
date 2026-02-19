@@ -1,0 +1,122 @@
+{
+  "shoeId": "gaviota-6",
+  "modelName": "HOKA Gaviota 6",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 3.69,
+      "url": "https://runrepeat.com/hoka-gaviota-6-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.28,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/gaviota-6",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.66,
+      "url": "https://www.doctorsofrunning.com/2026/01/hoka-gaviota-6-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/01/hoka-gaviota-6-review-2026.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "An excellent, long awaited update, the Hoka Gaviota 6 will appease both runners with high stability needs and those needing an all-day, highly stable walking/standing shoe.",
+        "The Hoka Gaviota 6 is meant as a daily and long run trainer.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Hoka Gaviota 6 is a higher level stability shoe."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

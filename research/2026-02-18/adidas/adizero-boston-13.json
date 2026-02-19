@@ -1,0 +1,300 @@
+{
+  "shoeId": "adizero-boston-13",
+  "modelName": "ADIDAS ADIZERO BOSTON 13",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.06,
+      "url": "https://runrepeat.com/adidas-adizero-boston-13",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.04,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-boston-13",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "partial",
+      "elapsedSec": 1.22,
+      "url": "https://www.doctorsofrunning.com/2026/02/adidas-adizero-boston-13-quick.html",
+      "reason": "no_key_findings"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.94,
+      "url": "https://www.roadtrailrun.com/2025/04/adidas-adizero-boston-13-review-7.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-adizero-boston-13",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 254,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 34.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 28.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 127,
+          "forefootShockAbsorption": 108,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 63.4,
+          "forefootEnergyReturn": 69.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.5 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 127 / 108 SA",
+        "Energy return heel/forefoot: 63.4% / 69.7%",
+        "Lab specs weight/drop/stack: 254g, 6mm, 34.3mm/28.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-boston-13",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 252.2,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 35.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 5.9,
+          "forefootShockAbsorption": 6.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 75.1,
+          "forefootEnergyReturn": 80.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 75.1%",
+        "Forefoot ER: 80.8%",
+        "Heel Cushioning: 5.9 /10",
+        "Forefoot Cushioning: 6.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/02/adidas-adizero-boston-13-quick.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": []
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/04/adidas-adizero-boston-13-review-7.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "For a somewhat more comfort type upper (and daily cruiser ride) in adidas look also to the Supernova Prima ( RTR Review ) The upper gets more structure and improved hold.",
+        "The complex construction is somewhat mechanical in feel, reminding vaguely of the Nike Tempo Next% it to with a firm stable heel leading to dynamic toe off but with a more muted, lower and more stable riden.",
+        "Puma Deviate Nitro 3 ( RTR Review ) Cross town rival Puma's Deviate is slightly higher in stack height and weight but essentially identical by the numbers."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 255,
+    "drop": 6,
+    "heelStack": 36,
+    "forefootStack": 30
+  },
+  "proposedSpecs": {
+    "weight": 255,
+    "drop": 6,
+    "heelStack": 36,
+    "forefootStack": 30
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 255,
+      "runRepeat": 254,
+      "rtings": 252.2,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 6,
+      "rtings": 6.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 36,
+        "forefoot": 30
+      },
+      "runRepeat": {
+        "heel": 34.3,
+        "forefoot": 28.3
+      },
+      "rtings": {
+        "heel": 35.9,
+        "forefoot": 29.1
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 7,
+    "stability": 8,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 7,
+    "stability": 8,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

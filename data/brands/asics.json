@@ -1,0 +1,640 @@
+{
+  "brand": {
+    "id": "asics",
+    "name": "ASICS",
+    "nameKo": "아식스",
+    "logo": "/brands/asics-logo.svg",
+    "color": "#003DA5",
+    "description": "Anima Sana In Corpore Sano - 건강한 신체에 건강한 정신이 깃든다"
+  },
+  "shoes": [
+    {
+      "id": "gel-nimbus-28",
+      "brandId": "asics",
+      "name": "GEL-NIMBUS 28",
+      "nameKo": "젤-님버스 28",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 199000,
+      "priceFormatted": "199,000원",
+      "description": "젤-님버스 28은 '편안함'을 최우선으로 만든 맥스 쿠셔닝 데일리화야. FF BLAST+ 폼에 PureGEL이 받쳐줘서 착지가 정말 부드럽고, 전작보다 24g 가벼워졌는데 포근한 느낌은 그대로야. 반발력은 기대하지 말고, 이지런이나 회복 러닝에서 발을 편하게 감싸주는 게 이 신발의 본분이야. 일상 착용이나 워킹에도 최고 수준이야.",
+      "shortDescription": "편안함 최우선의 포근한 맥스 쿠셔닝 데일리",
+      "imageUrl": "/shoes/gel-nimbus-28.webp",
+      "specs": {
+        "weight": 283,
+        "drop": 8,
+        "cushioning": 9,
+        "responsiveness": 3,
+        "stability": 8,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 43.5,
+          "forefoot": 35.5
+        }
+      },
+      "pros": [
+        "전작보다 24g 가벼워졌는데 푹신한 쿠셔닝은 그대로라 장거리가 편해",
+        "PureGEL + FF BLAST+ 조합이라 착지할 때 부드럽고 안정적",
+        "러닝 안 해도 일상·워킹에 신을 만큼 올데이 컴포트가 좋아"
+      ],
+      "cons": [
+        "반발력이 거의 없어서 빠른 페이스에서는 둔탁하고 답답해",
+        "텅 패딩이 얇아져서 레이스를 세게 조이면 발등이 눌릴 수 있어"
+      ],
+      "bestFor": [
+        "이지런·회복 러닝에 푹신한 쿠셔닝을 원하는 러너",
+        "러닝과 일상을 겸용할 편한 신발을 찾는 러너",
+        "장거리에서 발 피로도를 최소화하고 싶은 러너"
+      ],
+      "technologies": [
+        "FF BLAST+",
+        "PureGEL",
+        "Hybrid ASICSGRIP"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "Black/Pure Silver",
+        "Island Blue",
+        "Sunrise Red"
+      ],
+      "slug": "gel-nimbus-28",
+      "officialUrl": "https://runrepeat.com/asics-gel-nimbus-28"
+    },
+    {
+      "id": "glideride-max-2",
+      "brandId": "asics",
+      "name": "GLIDERIDE MAX 2",
+      "nameKo": "글라이드라이드 맥스 2",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 219000,
+      "priceFormatted": "219,000원",
+      "description": "글라이드라이드 맥스 2는 '알아서 앞으로 굴러가는' 느낌의 맥스 쿠셔닝 데일리야. GUIDESOLE 로커 구조가 자연스럽게 앞으로 밀어줘서 힘을 덜 쓰고도 페이스 유지가 돼. 46mm 스택인데 261g으로 가벼워서 장거리에서 다리 피로가 확 줄어. 다만 전족부 착지 러너에게는 쿠셔닝이 부족하게 느껴질 수 있어.",
+      "shortDescription": "장거리에서 다리 피로를 줄이는 로커형 데일리",
+      "imageUrl": "/shoes/glideride-max-2.webp",
+      "specs": {
+        "weight": 261,
+        "drop": 6,
+        "cushioning": 9,
+        "responsiveness": 4,
+        "stability": 8,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 46,
+          "forefoot": 40
+        }
+      },
+      "pros": [
+        "GUIDESOLE 로커가 알아서 앞으로 밀어줘서 힘을 덜 쓰고 달릴 수 있어",
+        "46mm 스택인데 261g으로 가벼워서 장거리에서 다리 피로가 적어",
+        "베이스가 넓어서 맥스 쿠셔닝인데도 안정적이라 흔들림이 적어"
+      ],
+      "cons": [
+        "토박스가 좁아서 발볼 넓은 러너에게 불편할 수 있어",
+        "전족부 착지 러너에게는 로커 구조의 이점이 별로 없어"
+      ],
+      "bestFor": [
+        "뒤꿈치 착지로 장거리를 효율적으로 달리고 싶은 러너",
+        "마라톤 훈련에서 다리를 아끼며 거리를 쌓고 싶은 러너",
+        "종아리·아킬레스 부담을 줄이고 싶은 러너"
+      ],
+      "technologies": [
+        "FF BLAST MAX",
+        "FF BLAST PLUS",
+        "GUIDESOLE",
+        "Hybrid ASICSGRIP",
+        "AHARPLUS"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Black/Hazard Green",
+        "Piedmont Grey",
+        "Deep Ocean"
+      ],
+      "slug": "glideride-max-2",
+      "officialUrl": "https://www.rtings.com/running-shoes/reviews/asics/glideride-max-2-shoe"
+    },
+    {
+      "id": "gel-kayano-32",
+      "brandId": "asics",
+      "name": "GEL-KAYANO 32",
+      "nameKo": "젤-카야노 32",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 199000,
+      "priceFormatted": "199,000원",
+      "description": "젤-카야노 32는 32년 동안 검증된 아식스의 대표 안정화야. 4D GUIDANCE SYSTEM이 과회내를 억지스럽지 않게 잡아줘서 교정 느낌이 자연스럽고, FF BLAST+ 폼이 푹신하되 물렁거리지 않아. 역대 카야노 중 힐 트랜지션이 가장 좋아졌는데, 300g으로 무거운 편이라 빠른 페이스에는 안 맞아. APMA 인증까지 받은, 안정화의 정석이야.",
+      "shortDescription": "32년간 검증된 자연스러운 안정화의 정석",
+      "imageUrl": "/shoes/gel-kayano-32.webp",
+      "specs": {
+        "weight": 300,
+        "drop": 8,
+        "cushioning": 7,
+        "responsiveness": 3,
+        "stability": 10,
+        "durability": 9,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 32
+        }
+      },
+      "pros": [
+        "4D GUIDANCE SYSTEM이 과회내를 자연스럽게 교정해서 억지 느낌이 없어",
+        "역대 카야노 중 힐 트랜지션이 가장 좋아서 착지-토오프가 매끄러워",
+        "표준·와이드·내로우 3가지 발볼 옵션이라 발 형태에 맞춰 선택 가능"
+      ],
+      "cons": [
+        "300g으로 무거워서 빠른 페이스에서는 부담이 돼",
+        "반발력이 거의 없어서 역동적인 라이드를 원하는 러너에게 아쉬움"
+      ],
+      "bestFor": [
+        "과회내가 있어서 안정성 교정이 필요한 러너",
+        "장거리에서 무릎·발목 보호를 최우선으로 생각하는 러너",
+        "체중이 있어서 내구성 좋은 안정화 데일리가 필요한 러너"
+      ],
+      "technologies": [
+        "FF BLAST+",
+        "4D Guidance System",
+        "Hybrid ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Black/White",
+        "Concrete/Lime Zest",
+        "Illusion Blue"
+      ],
+      "slug": "gel-kayano-32",
+      "officialUrl": "https://runrepeat.com/asics-gel-kayano-32"
+    },
+    {
+      "id": "novablast-5",
+      "brandId": "asics",
+      "name": "NOVABLAST 5",
+      "nameKo": "노바블라스트 5",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 169000,
+      "priceFormatted": "169,000원",
+      "description": "노바블라스트 5는 한 켤레로 다 해먹는 올라운더 데일리야. FF BLAST MAX 폼이 착지할 때는 부드럽고 밀어낼 때는 통통 튀는 느낌이라, 이지런에서는 편하고 템포런에서는 은근 활기차게 나가. 255g에 16만원대라서 가성비도 좋은데, 부드러운 폼 특성상 측면 안정성은 좀 아쉬운 편이야.",
+      "shortDescription": "이지런부터 템포런까지 재밌게 뛰는 올라운더",
+      "imageUrl": "/shoes/novablast-5.webp",
+      "specs": {
+        "weight": 255,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 41.5,
+          "forefoot": 33.5
+        }
+      },
+      "pros": [
+        "FF BLAST MAX 폼이 착지는 부드럽고 반발은 통통 튀어서 달리는 재미가 있어",
+        "255g 경량에 이지런부터 템포런까지 페이스 소화 범위가 넓어",
+        "16만원대에 내구성도 640~800km 수준이라 가성비가 좋아"
+      ],
+      "cons": [
+        "부드러운 폼이라 측면 안정성이 부족해서 급커브에서 흔들려",
+        "젖은 노면에서 접지력이 떨어져"
+      ],
+      "bestFor": [
+        "한 켤레로 이지런·템포런·장거리를 다 소화하고 싶은 러너",
+        "재밌고 탄력 있는 라이드를 원하는 러너",
+        "가성비 좋은 데일리 트레이너를 찾는 러너"
+      ],
+      "technologies": [
+        "FF BLAST MAX",
+        "AHAR Lo",
+        "AHARPLUS"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "White/Aquamarine",
+        "Black/Lime Zest",
+        "Sunrise Red"
+      ],
+      "slug": "novablast-5",
+      "officialUrl": "https://runrepeat.com/asics-novablast-5"
+    },
+    {
+      "id": "superblast-2",
+      "brandId": "asics",
+      "name": "SUPERBLAST 2",
+      "nameKo": "슈퍼블라스트 2",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 249000,
+      "priceFormatted": "249,000원",
+      "description": "슈퍼블라스트 2는 안정감을 중시하는 러너를 위한 슈퍼 트레이너야. FF TURBO+와 FF BLAST+ 듀얼 폼이 넓은 베이스 위에 올라가 있어서 맥스 스택인데도 흔들림이 적고, 장거리에서 꾸준히 편안하게 달릴 수 있어. 빠른 페이스에서의 날카로움보다는 안정적으로 거리를 쌓는 훈련에 딱 맞는 신발이야.",
+      "shortDescription": "안정감 있게 거리를 쌓는 슈퍼 트레이너",
+      "imageUrl": "/shoes/superblast-2.webp",
+      "specs": {
+        "weight": 250,
+        "drop": 8,
+        "cushioning": 9,
+        "responsiveness": 7,
+        "stability": 8,
+        "durability": 9,
+        "stackHeight": {
+          "heel": 45,
+          "forefoot": 37
+        }
+      },
+      "pros": [
+        "넓은 베이스 덕분에 슈퍼 트레이너 중에서도 안정성이 높아",
+        "내구성이 뛰어나서 훈련량 많은 러너도 오래 신을 수 있어",
+        "장거리에서도 쿠셔닝이 꺼지지 않고 꾸준히 편안해"
+      ],
+      "cons": [
+        "빠른 페이스에서 반응이 둔탁하고 날카로움이 없어",
+        "249,000원에 구하기도 어려워서 가성비는 낮아"
+      ],
+      "bestFor": [
+        "안정적인 슈퍼 트레이너로 장거리 훈련을 쌓고 싶은 러너",
+        "체격이 크거나 파워풀한 착지를 하는 러너",
+        "데일리와 롱런을 겸용할 슈퍼 트레이너를 찾는 러너"
+      ],
+      "technologies": [
+        "FF TURBO+",
+        "FF BLAST+",
+        "ASICSGRIP",
+        "AHAR Lo"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "White/Sunrise Red",
+        "Black/Safety Yellow",
+        "Illusion Blue"
+      ],
+      "slug": "superblast-2",
+      "officialUrl": "https://runrepeat.com/asics-superblast-2"
+    },
+    {
+      "id": "megablast",
+      "brandId": "asics",
+      "name": "MEGABLAST",
+      "nameKo": "메가블라스트",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 299000,
+      "priceFormatted": "299,000원",
+      "description": "메가블라스트는 아식스 블라스트 시리즈의 최상위 모델이야. FF TURBO² 폼이 220g밖에 안 되면서도 쿠셔닝과 반발을 다 잡아서, 이지런에서는 편하고 템포런에서는 치고 나가고 레이스에도 뛸 수 있어. 플레이트 없이 순수 폼 성능만으로 이 정도라 진짜 만능인데, 가격이 30만원 가까이라 그건 각오해야 돼.",
+      "shortDescription": "220g에 이지런부터 레이스까지 커버하는 만능기",
+      "imageUrl": "/shoes/megablast.webp",
+      "specs": {
+        "weight": 220,
+        "drop": 8,
+        "cushioning": 9,
+        "responsiveness": 9,
+        "stability": 7,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 46,
+          "forefoot": 38
+        }
+      },
+      "pros": [
+        "FF TURBO² 폼의 반발력이 폭발적인데 220g으로 가벼워",
+        "이지런·템포런·레이스까지 로테이션 킬러 수준의 다재다능함",
+        "플레이트 없이 순수 폼 성능만으로 슈퍼 트레이너 최상급"
+      ],
+      "cons": [
+        "토박스가 좁아서 발볼 넓은 러너에게 불편해",
+        "299,000원 프리미엄 가격이라 부담이 커"
+      ],
+      "bestFor": [
+        "한 켤레로 모든 훈련과 레이스를 커버하고 싶은 러너",
+        "롱런과 템포런을 겸용할 고급 슈퍼 트레이너를 원하는 러너",
+        "플레이트 없는 자연스러운 라이드를 선호하는 러너"
+      ],
+      "technologies": [
+        "FF TURBO²",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Black/White",
+        "Safety Yellow/Black",
+        "French Blue"
+      ],
+      "slug": "megablast",
+      "officialUrl": "https://runrepeat.com/asics-megablast"
+    },
+    {
+      "id": "sonicblast",
+      "brandId": "asics",
+      "name": "SONICBLAST",
+      "nameKo": "소닉블라스트",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 229000,
+      "priceFormatted": "229,000원",
+      "description": "소닉블라스트는 Pebax Astroplate를 넣은 플레이티드 슈퍼 트레이너야. FF TURBO²와 FF BLAST MAX 사이에 플레이트가 끼어 있어서 빠른 페이스에서 전족부 추진력이 확 살아나는데, 느린 페이스에서는 오히려 딱딱하게 느껴져. 인터벌이나 템포런 같은 스피드 훈련에서 진가를 발휘하는 신발이지, 이지런용은 아니야.",
+      "shortDescription": "인터벌·템포런에 날카로운 플레이트 슈퍼 트레이너",
+      "imageUrl": "/shoes/sonicblast.webp",
+      "specs": {
+        "weight": 255,
+        "drop": 8,
+        "cushioning": 9,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 46,
+          "forefoot": 38
+        }
+      },
+      "pros": [
+        "빠른 페이스에서 Pebax 플레이트의 전족부 추진력이 확 살아나",
+        "FF TURBO² 폼 덕분에 반응이 즉각적이고 가벼워",
+        "통기성 좋은 어퍼라 빠르게 달릴 때 발이 시원해"
+      ],
+      "cons": [
+        "느린 페이스에서는 딱딱하고 편안함이 없어",
+        "토박스가 좁아서 장거리 시 발가락이 답답해"
+      ],
+      "bestFor": [
+        "인터벌·템포런 등 스피드 훈련을 자주 하는 러너",
+        "서브4 목표로 훈련과 레이스를 겸용할 신발을 찾는 러너",
+        "플레이트 슈퍼 트레이너의 추진력을 원하는 러너"
+      ],
+      "technologies": [
+        "FF TURBO²",
+        "FF BLAST MAX",
+        "Astroplate",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "White/Sunrise Red",
+        "Black/Lime Zest",
+        "Illusion Blue"
+      ],
+      "slug": "sonicblast",
+      "officialUrl": "https://runrepeat.com/asics-sonicblast"
+    },
+    {
+      "id": "magic-speed-5",
+      "brandId": "asics",
+      "name": "MAGIC SPEED 5",
+      "nameKo": "매직 스피드 5",
+      "categoryId": "super-trainer",
+      "subcategoryId": "carbon-plate",
+      "price": 199000,
+      "priceFormatted": "199,000원",
+      "description": "매직 스피드 5는 카본 플레이트 달린 슈퍼 트레이너를 합리적인 가격에 경험할 수 있는 신발이야. FF LEAP 폼이 즉각적인 반발력을 주고, 193g밖에 안 돼서 인터벌이나 템포런 할 때 발이 가볍게 돌아가. 다만 쿠셔닝은 보호적인 편이 아니라서, 이지런보다는 빠른 훈련이나 레이스 시뮬레이션에 맞는 신발이야.",
+      "shortDescription": "가성비 좋은 193g 카본 스피드 트레이너",
+      "imageUrl": "/shoes/magic-speed-5.webp",
+      "specs": {
+        "weight": 193,
+        "drop": 7,
+        "cushioning": 7,
+        "responsiveness": 7,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 37.5,
+          "forefoot": 30.5
+        }
+      },
+      "pros": [
+        "193g 초경량에 풀 카본 플레이트가 들어가서 빠른 러닝에 딱 (에너지 리턴 64.6%)",
+        "20만원 이하로 카본 플레이트 경험할 수 있는 가성비",
+        "낮은 스택이 주는 지면 감각이 좋아서 코너링이나 방향 전환이 민첩해"
+      ],
+      "cons": [
+        "편한 쿠셔닝보다 스피드에 올인한 라이드라 이지런에는 딱딱함",
+        "토박스 내구성이 약해서 어퍼가 빨리 닳을 수 있음"
+      ],
+      "bestFor": [
+        "인터벌·템포런 등 스피드 훈련을 자주 하는 러너",
+        "첫 카본화를 합리적 가격에 경험하고 싶은 러너",
+        "레이스 시뮬레이션용으로 슈퍼슈즈 대체 훈련화를 찾는 러너"
+      ],
+      "technologies": [
+        "FF LEAP",
+        "FF BLAST PLUS",
+        "Full Carbon Plate",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "Black/White",
+        "Safety Yellow/Black",
+        "Sunrise Red"
+      ],
+      "slug": "magic-speed-5",
+      "officialUrl": "https://runrepeat.com/asics-magic-speed-5"
+    },
+    {
+      "id": "metaspeed-ray",
+      "brandId": "asics",
+      "name": "METASPEED RAY",
+      "nameKo": "메타스피드 레이",
+      "categoryId": "racing",
+      "subcategoryId": "half",
+      "price": 439000,
+      "priceFormatted": "439,000원",
+      "description": "메타스피드 레이는 129g이라는 경이적인 무게의 초경량 레이싱 머신이야. FF LEAP 폼이 트램펄린처럼 깊게 눌렸다가 튕겨 나오는데, 3/4 카본 플레이트가 전족부·중족부 착지에서 추진력을 극대화해. km당 4분 이하에서 진가를 발휘하는 엘리트 전용이라, 힐 착지나 느린 페이스에서는 극도로 불안정해.",
+      "shortDescription": "129g 극한 초경량의 엘리트 레이싱 머신",
+      "imageUrl": "/shoes/metaspeed-ray.webp",
+      "specs": {
+        "weight": 129,
+        "drop": 5,
+        "cushioning": 8,
+        "responsiveness": 10,
+        "stability": 2,
+        "durability": 3,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 34.5
+        }
+      },
+      "pros": [
+        "129g 역대 최경량에 전족부 에너지 리턴 81%로 폭발적인 추진력",
+        "FF LEAP 폼의 트램펄린 같은 반발이 무중력 느낌을 줘",
+        "MATRYX 어퍼가 가벼우면서 통기성까지 좋아"
+      ],
+      "cons": [
+        "힐 착지 시 극도로 불안정하고 느린 페이스에서 흔들려",
+        "수명 50~100마일 수준이라 레이스 전용으로만 써야 돼"
+      ],
+      "bestFor": [
+        "전족부·중족부 착지의 엘리트 러너",
+        "10K·하프마라톤 자기 기록 도전",
+        "km당 4분 이하 레이스 페이스를 유지할 수 있는 러너"
+      ],
+      "technologies": [
+        "FF LEAP",
+        "Carbon Plate",
+        "MATRYX",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "White/Sunrise Red",
+        "Black/Safety Yellow"
+      ],
+      "slug": "metaspeed-ray",
+      "officialUrl": "https://runrepeat.com/asics-metaspeed-ray"
+    },
+    {
+      "id": "yogiri-s4-plus",
+      "brandId": "asics",
+      "name": "S4+ YOGIRI",
+      "nameKo": "S4+ 요기리",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 259000,
+      "priceFormatted": "259,000원",
+      "description": "S4+ 요기리는 서브4 풀마라톤을 목표로 하는 러너를 위한 안정적인 카본 레이싱화야. FF TURBO+ 상층이 반발을, FlyteFoam 하층이 안정성을 잡아주는 듀얼 구조라 첫 카본화인데도 불안하지 않아. 아웃솔 그립이 0.93점으로 역대급이라 비 오는 날에도 안심인데, 상위 모델만큼 날카롭진 않아.",
+      "shortDescription": "서브4 러너를 위한 안정감 있는 첫 카본 레이싱화",
+      "imageUrl": "/shoes/yogiri-s4-plus.webp",
+      "specs": {
+        "weight": 229,
+        "drop": 6,
+        "cushioning": 6,
+        "responsiveness": 7,
+        "stability": 8,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 34
+        }
+      },
+      "pros": [
+        "듀얼 폼 구조라 카본화인데도 안정적이어서 첫 레이싱화로 좋아",
+        "아웃솔 그립 0.93점으로 역대급이라 젖은 노면도 안심",
+        "259,000원에 풀 카본 플레이트 레이싱화를 경험할 수 있어"
+      ],
+      "cons": [
+        "하층 FlyteFoam이 딱딱해서 상위 모델 대비 반발력이 부족해",
+        "빠른 러너에게는 무겁고 둔한 라이드야"
+      ],
+      "bestFor": [
+        "첫 카본 레이싱화를 안전하게 경험하고 싶은 러너",
+        "서브4 풀마라톤을 목표로 하는 러너",
+        "비 오는 날에도 레이스에 나서는 러너"
+      ],
+      "technologies": [
+        "FF TURBO+",
+        "FlyteFoam",
+        "Full Carbon Plate",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Sunrise Red/White",
+        "Black/Gold"
+      ],
+      "slug": "yogiri-s4-plus",
+      "officialUrl": "https://runrepeat.com/asics-s-4-yogiri"
+    },
+    {
+      "id": "metaspeed-sky-tokyo",
+      "brandId": "asics",
+      "name": "METASPEED SKY TOKYO",
+      "nameKo": "메타스피드 스카이 도쿄",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 329000,
+      "priceFormatted": "329,000원",
+      "description": "메타스피드 스카이 도쿄는 보폭을 늘려 속도를 올리는 스트라이드형 러너를 위한 슈퍼슈야. 카본 플레이트 위에 FF LEAP, 아래에 FF TURBO+를 배치해서 뒤꿈치는 플러시하게 받아주고 전족부에서는 스냅 있게 밀어줘. 170g에 5K부터 풀마라톤까지 대응하는데, 힐 쿠셔닝이 부드러운 만큼 느린 페이스에서는 효율이 떨어져.",
+      "shortDescription": "보폭형 러너를 위한 170g 플러시 슈퍼슈",
+      "imageUrl": "/shoes/metaspeed-sky-tokyo.webp",
+      "specs": {
+        "weight": 170,
+        "drop": 5,
+        "cushioning": 8,
+        "responsiveness": 10,
+        "stability": 5,
+        "durability": 4,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 34.5
+        }
+      },
+      "pros": [
+        "FF LEAP 폼이 플러시하면서도 전족부에서 폭발적으로 밀어줘",
+        "170g 초경량에 5K부터 풀마라톤까지 폭넓게 대응 가능",
+        "AsicsGrip 아웃솔이 다양한 노면에서 안정적으로 잡아줘"
+      ],
+      "cons": [
+        "뒤꿈치 폼이 부드러워서 힐 착지 시 안정성이 부족해",
+        "느린 페이스에서는 과도한 쿠셔닝이 오히려 비효율적이야"
+      ],
+      "bestFor": [
+        "보폭을 늘려 가속하는 스트라이드형 러너",
+        "풀마라톤 자기 기록 도전을 노리는 러너",
+        "플러시한 착지감의 카본 레이싱화를 원하는 러너"
+      ],
+      "technologies": [
+        "FF TURBO+",
+        "FF LEAP",
+        "Full Carbon Plate",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Sunrise Red/Black",
+        "Safety Yellow/Black"
+      ],
+      "slug": "metaspeed-sky-tokyo",
+      "officialUrl": "https://runrepeat.com/asics-metaspeed-sky-tokyo"
+    },
+    {
+      "id": "metaspeed-edge-tokyo",
+      "brandId": "asics",
+      "name": "METASPEED EDGE TOKYO",
+      "nameKo": "메타스피드 엣지 도쿄",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 329000,
+      "priceFormatted": "329,000원",
+      "description": "메타스피드 엣지 도쿄는 발 회전수를 높여 속도를 내는 케이던스형 러너를 위한 슈퍼슈야. Sky 도쿄와 반대로 카본 플레이트 위에 FF TURBO+, 아래에 FF LEAP를 배치하고, 스쿠프드 플레이트가 뒤꿈치에서 전족부로 빠르게 떨어지는 전환을 유도해. 160g으로 오르막에서 특히 효율적인데, 스트라이드형 러너에게는 보폭을 강제로 줄여서 안 맞아.",
+      "shortDescription": "케이던스형 러너를 위한 빠른 전환 슈퍼슈",
+      "imageUrl": "/shoes/metaspeed-edge-tokyo.webp",
+      "specs": {
+        "weight": 160,
+        "drop": 5,
+        "cushioning": 8,
+        "responsiveness": 9,
+        "stability": 5,
+        "durability": 4,
+        "stackHeight": {
+          "heel": 39.5,
+          "forefoot": 34.5
+        }
+      },
+      "pros": [
+        "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해",
+        "뒤꿈치 FF TURBO+라 Sky보다 힐 착지가 안정적이야",
+        "160g 초경량에 오르막에서 특히 효율적인 추진력"
+      ],
+      "cons": [
+        "스트라이드형 러너에게는 짧은 보폭을 강제해서 맞지 않아",
+        "젖은 환경에서 어퍼가 수분을 흡수해 무거워져"
+      ],
+      "bestFor": [
+        "빠른 발 회전으로 가속하는 케이던스형 러너",
+        "5K부터 풀마라톤까지 다양한 거리의 레이스",
+        "오르막이 많은 코스의 대회를 준비하는 러너"
+      ],
+      "technologies": [
+        "FF LEAP",
+        "FF TURBO+",
+        "Full Carbon Plate",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Sunrise Red/Black",
+        "White/Blue"
+      ],
+      "slug": "metaspeed-edge-tokyo",
+      "officialUrl": "https://runrepeat.com/asics-metaspeed-edge-tokyo"
+    }
+  ]
+}

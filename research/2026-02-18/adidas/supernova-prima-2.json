@@ -1,0 +1,173 @@
+{
+  "shoeId": "supernova-prima-2",
+  "modelName": "ADIDAS SUPERNOVA PRIMA 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 4.89,
+      "url": "https://runrepeat.com/adidas-supernova-prima-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.02,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.16,
+      "url": "https://www.doctorsofrunning.com/2024/08/adidas-supernova-prima-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 278.7,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 7.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 36.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 28.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.5,
+          "forefootShockAbsorption": 6.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.7,
+          "forefootEnergyReturn": 77.1,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74.7%",
+        "Forefoot ER: 77.1%",
+        "Heel Cushioning: 6.5 /10",
+        "Forefoot Cushioning: 6.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/08/adidas-supernova-prima-review-2024.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "With subtle tweaks compared to the Rise, it does that well and rounds on the first solid line of Adidas daily training shoes in years.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Adidas Supernova Prima is a stable neutral shoe .",
+        "Matt: The Adidas Supernova Prima is a premium cushioned shoe for those who want a cushioned but not mushy shoe for easy and longer miles."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 279,
+    "drop": 8,
+    "heelStack": 37,
+    "forefootStack": 29
+  },
+  "proposedSpecs": {
+    "weight": 279,
+    "drop": 8,
+    "heelStack": 37,
+    "forefootStack": 29
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 5,
+    "stability": 8,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 5,
+    "stability": 8,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

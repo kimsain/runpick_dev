@@ -1,0 +1,350 @@
+{
+  "shoeId": "vomero-plus",
+  "modelName": "NIKE VOMERO PLUS",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.06,
+      "url": "https://runrepeat.com/nike-vomero-plus",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-plus",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.doctorsofrunning.com/2025/08/nike-vomero-plus-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.99,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-vomero-plus-initial-review-big-fun.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "partial",
+      "elapsedSec": 0.67,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-plus-review/",
+      "reason": "no_key_findings"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-vomero-plus",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 289,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 42.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 147,
+          "forefootShockAbsorption": 131,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 67.1,
+          "forefootEnergyReturn": 68.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.8 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 147 / 131 SA",
+        "Energy return heel/forefoot: 67.1% / 68.8%",
+        "Lab specs weight/drop/stack: 289g, 9.6mm, 42.3mm/32.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-plus",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 280.7,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.4,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 43.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 34.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.4,
+          "forefootShockAbsorption": 8.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 79.4,
+          "forefootEnergyReturn": 79.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 79.4%",
+        "Forefoot ER: 79.5%",
+        "Heel Cushioning: 8.4 /10",
+        "Forefoot Cushioning: 8.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/nike-vomero-plus-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "These models are separate depending on what Nike thinks runners want in the form of cushioning, responsiveness and support.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Nike Vomero Plus is a neutral training shoe.",
+        "Thoughts as a DPT: The Place For High Drop Maximal Trainers By Matthew Klein The Nike Vomero Plus is unique for many reasons."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-vomero-plus-initial-review-big-fun.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Nike Vomero Plus Multi Tester Review: Big, Fun!",
+        "Does Nike finally have a big cushion, fun to run unplated trainer?",
+        "Pros: At long last a modern, fun, practical big cushion daily trainer from Nike, and super max no less!"
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-plus-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": []
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 43,
+    "forefootStack": 33
+  },
+  "proposedSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 43,
+    "forefootStack": 33
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 281,
+      "runRepeat": 289,
+      "rtings": 280.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 9.6,
+      "rtings": 9.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 43,
+        "forefoot": 33
+      },
+      "runRepeat": {
+        "heel": 42.3,
+        "forefoot": 32.7
+      },
+      "rtings": {
+        "heel": 43.8,
+        "forefoot": 34.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

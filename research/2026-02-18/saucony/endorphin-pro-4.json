@@ -1,0 +1,173 @@
+{
+  "shoeId": "endorphin-pro-4",
+  "modelName": "Saucony Endorphin Pro 4",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.16,
+      "url": "https://runrepeat.com/saucony-endorphin-pro-4",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.78,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-4",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-endorphin-pro-4",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 220,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.5,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 38.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 28.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 139,
+          "forefootShockAbsorption": 103,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 71.7,
+          "forefootEnergyReturn": 71.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.6 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 139 / 103 SA",
+        "Energy return heel/forefoot: 71.7% / 71.5%",
+        "Lab specs weight/drop/stack: 220g, 9.5mm, 38.1mm/28.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-4",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 214.9,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 30.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.4,
+          "forefootShockAbsorption": 7.1,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 83.2,
+          "forefootEnergyReturn": 82.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 83.2%",
+        "Forefoot ER: 82.6%",
+        "Heel Cushioning: 7.4 /10",
+        "Forefoot Cushioning: 7.1 /10"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

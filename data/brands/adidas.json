@@ -1,0 +1,587 @@
+{
+  "brand": {
+    "id": "adidas",
+    "name": "ADIDAS",
+    "nameKo": "아디다스",
+    "logo": "/brands/adidas-logo.svg",
+    "color": "#1428A0",
+    "description": "Impossible Is Nothing — 불가능, 그것은 아무것도 아니다"
+  },
+  "shoes": [
+    {
+      "id": "supernova-rise-3",
+      "brandId": "adidas",
+      "name": "SUPERNOVA RISE 3",
+      "nameKo": "슈퍼노바 라이즈 3",
+      "categoryId": "daily",
+      "subcategoryId": "entry",
+      "price": 159000,
+      "priceFormatted": "159,000원",
+      "description": "슈퍼노바 라이즈 3은 PEBA 폼인 Dreamstrike+가 들어간 가성비 데일리화야. 전작보다 20% 부드러워지면서도 261g으로 가벼워서 이지런부터 장거리까지 편하게 커버해. 세미 로커 구조라 착지-토오프 전환이 자연스럽고, 아웃솔 접지력도 좋아서 젖은 노면에서도 안심이야. 다만 미드풋~토박스가 좁아서 발볼 넓은 러너는 불편할 수 있어.",
+      "shortDescription": "입문자부터 쓸 수 있는 편한 PEBA 데일리화",
+      "imageUrl": "/shoes/supernova-rise-3.webp",
+      "specs": {
+        "weight": 261,
+        "drop": 8,
+        "cushioning": 8,
+        "responsiveness": 5,
+        "stability": 7,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 28
+        }
+      },
+      "pros": [
+        "Dreamstrike+ PEBA 폼이라 15만원대치고 쿠셔닝이 꽤 푹신해",
+        "Lighttraxion 아웃솔 접지력이 뛰어나서 젖은 노면·눈길에서도 안 미끄러져",
+        "261g으로 가벼운 편이라 장거리 이지런에서 부담 없어"
+      ],
+      "cons": [
+        "미드풋~토박스가 좁아서 발볼 넓은 러너에게는 답답할 수 있음",
+        "PEBA 폼인데 반발력은 기대만큼 강하지 않아서 템포에는 부족"
+      ],
+      "bestFor": [
+        "편한 쿠셔닝의 데일리화가 필요한 입문자~중급 러너",
+        "뒤꿈치 착지 위주로 안정적인 라이드를 원하는 러너",
+        "합리적 가격에 PEBA 폼 데일리화를 찾는 러너"
+      ],
+      "technologies": [
+        "Dreamstrike+",
+        "Lighttraxion",
+        "Primeweave"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Core Black/Zero Metallic/Crystal White",
+        "Aurora Onix/Silver Metallic",
+        "Cloud White/Lucid Blue"
+      ],
+      "slug": "supernova-rise-3",
+      "officialUrl": "https://www.doctorsofrunning.com/2024/12/adidas-supernova-rise-2-review-2024.html"
+    },
+    {
+      "id": "supernova-prima-2",
+      "brandId": "adidas",
+      "name": "SUPERNOVA PRIMA 2",
+      "nameKo": "슈퍼노바 프리마 2",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 199000,
+      "priceFormatted": "199,000원",
+      "description": "슈퍼노바 프리마 2는 Dreamstrike+ 폼에 Support Rods가 들어가서 푹신하면서도 발이 안 흔들리는 맥스 쿠셔닝 데일리야. 반발력보다는 보호력에 초점이 맞춰져 있어서 이지런·장거리에서 편안하고, 50마일 넘게 신어도 마모가 거의 없을 정도로 내구성이 좋아. 다만 반발력이 부족해서 빠른 페이스에는 안 맞아.",
+      "shortDescription": "이지런·장거리에 편한 맥스 쿠셔닝 데일리",
+      "imageUrl": "/shoes/supernova-prima-2.webp",
+      "specs": {
+        "weight": 279,
+        "drop": 8,
+        "cushioning": 7,
+        "responsiveness": 5,
+        "stability": 8,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 29
+        }
+      },
+      "pros": [
+        "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려",
+        "내구성이 뛰어나서 50마일 넘게 신어도 아웃솔 마모가 거의 없어",
+        "힐 패딩이 좋아져서 장시간 신어도 뒤꿈치가 쓸리지 않아"
+      ],
+      "cons": [
+        "Support Rods 때문에 전족부가 좀 딱딱하게 느껴질 수 있어",
+        "반발력이 부족해서 빠른 페이스에서는 답답하게 느껴짐"
+      ],
+      "bestFor": [
+        "이지런·장거리 위주로 마일리지를 꾸준히 쌓는 러너",
+        "물렁하지 않은 안정적인 맥스 쿠셔닝을 원하는 러너",
+        "내구성 좋은 데일리 트레이너가 필요한 러너"
+      ],
+      "technologies": [
+        "Dreamstrike+",
+        "Support Rods",
+        "Lighttraxion",
+        "Primeweave"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Core Black/White/Teal",
+        "Grey/Iron Metallic/Lucid Orange",
+        "Blue Fusion"
+      ],
+      "slug": "supernova-prima-2",
+      "officialUrl": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe"
+    },
+    {
+      "id": "supernova-solution-2",
+      "brandId": "adidas",
+      "name": "SUPERNOVA SOLUTION 2.0",
+      "nameKo": "슈퍼노바 솔루션 2.0",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 179000,
+      "priceFormatted": "179,000원",
+      "description": "슈퍼노바 솔루션 2.0은 안정화인데 딱딱하지 않은 게 장점인 마일드 안정화야. Dreamstrike+ 폼에 듀얼 밀도 서포트 로드가 들어가서 과하지 않게 잡아주고, 에너지 리턴 68%로 안정화치고 바운시한 편이거든. 261g으로 가벼워서 데일리부터 가볍게 페이스 올리는 것까지 커버해. 강한 교정이 필요한 러너에게는 부족할 수 있어.",
+      "shortDescription": "딱딱하지 않은 바운시한 마일드 안정화",
+      "imageUrl": "/shoes/supernova-solution-2.webp",
+      "specs": {
+        "weight": 261,
+        "drop": 10,
+        "cushioning": 7,
+        "responsiveness": 6,
+        "stability": 8,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 26
+        }
+      },
+      "pros": [
+        "에너지 리턴 68%로 안정화치고 바운시해서 뛰는 맛이 있어",
+        "듀얼 밀도 서포트 로드가 은근하게 잡아줘서 교정 느낌이 안 나",
+        "261g으로 안정화 중에서 가벼운 편이라 약간의 업템포도 가능"
+      ],
+      "cons": [
+        "안정성이 마일드해서 강한 오버프로네이션 러너에게는 교정력 부족",
+        "텅이 두껍고 거싯이 없어서 좌우로 밀리며 핏이 불안정할 수 있어"
+      ],
+      "bestFor": [
+        "가벼운 오버프로네이션에 바운시한 안정화를 원하는 러너",
+        "딱딱한 안정화가 싫고 자연스러운 가이던스를 선호하는 러너",
+        "데일리부터 약간의 업템포까지 하나로 커버하고 싶은 러너"
+      ],
+      "technologies": [
+        "Dreamstrike+",
+        "Dual-density Support Rods",
+        "Adiwear"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Halo Silver/Zero Metallic/Grey",
+        "Cloud White/Blue",
+        "Core Black/Cloud White"
+      ],
+      "slug": "supernova-solution-2",
+      "officialUrl": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html"
+    },
+    {
+      "id": "adizero-sl-2",
+      "brandId": "adidas",
+      "name": "ADIZERO SL 2",
+      "nameKo": "아디제로 SL 2",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 149000,
+      "priceFormatted": "149,000원",
+      "description": "아디제로 SL 2는 14만원대에 Lightstrike Pro가 들어간 가성비 최강 올라운더야. 듀얼 폼 구조라 에너지 리턴 56%로 괜찮은 반발력이 있고, 236g으로 가벼워서 이지런부터 템포까지 부담 없이 써. 통기성이 5/5점으로 최상위라 여름에도 쾌적하고. 다만 미드풋이 좁고 안정성 지원이 없어서 발볼 넓거나 프로네이션이 있으면 안 맞아.",
+      "shortDescription": "가성비 최강의 가벼운 올라운드 데일리화",
+      "imageUrl": "/shoes/adizero-sl-2.webp",
+      "specs": {
+        "weight": 236,
+        "drop": 10,
+        "cushioning": 6,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 26
+        }
+      },
+      "pros": [
+        "14만원대에 Lightstrike Pro 듀얼 폼이라 가격 대비 반발력이 뛰어남",
+        "통기성 5/5점(RunRepeat 랩)으로 여름에도 발이 쾌적해",
+        "236g으로 가벼워서 이지런부터 템포까지 부담 없이 쓸 수 있어"
+      ],
+      "cons": [
+        "미드풋이 좁아서 발볼 넓은 러너에게는 불편함",
+        "안정성 지원이 전혀 없어서 오버프로네이션 러너에게 부적합"
+      ],
+      "bestFor": [
+        "합리적 가격에 괜찮은 반발력의 데일리화를 찾는 러너",
+        "가벼운 신발로 이지런~템포까지 폭넓게 쓰고 싶은 러너",
+        "발볼이 좁고 뉴트럴한 주법의 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "Lightstrike 2.0",
+        "Adiwear"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "Core Black",
+        "Cloud White",
+        "Blue"
+      ],
+      "slug": "adizero-sl-2",
+      "officialUrl": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html"
+    },
+    {
+      "id": "adizero-adios-9",
+      "brandId": "adidas",
+      "name": "ADIZERO ADIOS 9",
+      "nameKo": "아디제로 아디오스 9",
+      "categoryId": "daily",
+      "subcategoryId": "lightweight",
+      "price": 169000,
+      "priceFormatted": "169,000원",
+      "description": "아디오스 9는 아디오스 프로 4와 같은 Lightstrike Pro 폼을 플레이트 없이 쓰는 초경량 스피드 슈즈야. 176g밖에 안 되는데 에너지 리턴이 77%나 돼서 플레이트 없이도 충분히 빨라. 스택이 낮아서 지면 감각이 좋고 발놀림이 자연스러운 게 장점이야. 다만 쿠셔닝이 거의 없어서 10K 넘으면 발바닥에 부담이 오니까 단거리 전용으로 쓰는 게 좋아.",
+      "shortDescription": "플레이트 없이 빠른 단거리 스피드 슈즈",
+      "imageUrl": "/shoes/adizero-adios-9.webp",
+      "specs": {
+        "weight": 176,
+        "drop": 7,
+        "cushioning": 4,
+        "responsiveness": 8,
+        "stability": 3,
+        "durability": 3,
+        "stackHeight": {
+          "heel": 28,
+          "forefoot": 21
+        }
+      },
+      "pros": [
+        "176g 초경량에 에너지 리턴 77%로 발이 거의 안 느껴지면서 빨라",
+        "아디오스 프로 4 절반 가격에 같은 폼을 쓸 수 있어 가성비 좋아",
+        "낮은 스택이라 지면 감각이 좋고 발놀림이 자연스러워"
+      ],
+      "cons": [
+        "전족부 충격 흡수 68 SA로 쿠셔닝이 극히 적어서 장거리에 부적합",
+        "안정성 지원이 없어서 효율적인 주법이 아니면 발이 불안정해"
+      ],
+      "bestFor": [
+        "인터벌·템포 훈련에 가볍고 반응 좋은 신발을 원하는 러너",
+        "5K~10K 레이스에 내추럴한 지면 감각을 선호하는 러너",
+        "미드풋·전족부 착지의 효율적인 주법을 가진 경량 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "Lighttraxion",
+        "Continental"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Cloud White/Core Black/Lucid Red",
+        "Core Black/Zero Metallic"
+      ],
+      "slug": "adizero-adios-9",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-adios-9"
+    },
+    {
+      "id": "adizero-evo-sl",
+      "brandId": "adidas",
+      "name": "ADIZERO EVO SL",
+      "nameKo": "아디제로 에보 SL",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 209000,
+      "priceFormatted": "209,000원",
+      "description": "에보 SL은 100% Lightstrike Pro를 플레이트 없이 쓰는 다재다능한 슈퍼 트레이너야. 에너지 리턴 74%로 슈퍼슈즈급 반발력이 있는데, 카본 로드가 없어서 부드럽고 바운시하게 달려. 224g으로 가벼워서 이지런부터 템포·장거리까지 어떤 페이스에서든 잘 맞아. 다만 아웃솔이 얇아서 500km쯤 되면 뒤꿈치 쪽 고무가 벗겨질 수 있어.",
+      "shortDescription": "이지런부터 템포까지 다 되는 슈퍼폼 트레이너",
+      "imageUrl": "/shoes/adizero-evo-sl.webp",
+      "specs": {
+        "weight": 224,
+        "drop": 7,
+        "cushioning": 8,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 38.5,
+          "forefoot": 32
+        }
+      },
+      "pros": [
+        "에너지 리턴 74%로 슈퍼슈즈급 반발력인데 카본 없이 부드러운 라이드",
+        "224g으로 가벼워서 이지런·템포·장거리·레이스까지 올라운드로 활용 가능",
+        "바운시하면서 어그레시브하지 않아서 어떤 페이스에서든 편안해"
+      ],
+      "cons": [
+        "아웃솔 고무가 1.6mm로 얇아서 500km쯤 되면 뒤꿈치 쪽 벗겨짐",
+        "미드솔 폼이 노출돼서 날카로운 돌이나 유리에 쉽게 손상됨"
+      ],
+      "bestFor": [
+        "슈퍼슈즈가 부담스럽고 부드러운 슈퍼폼 라이드를 원하는 러너",
+        "한 켤레로 이지런부터 레이스까지 다 커버하고 싶은 러너",
+        "카본 플레이트 없이도 빠르게 달리고 싶은 중급 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "Continental"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "Core Black/Iron Metallic",
+        "Cloud White/Core Black",
+        "Silver Metallic"
+      ],
+      "slug": "adizero-evo-sl",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-evo-sl"
+    },
+    {
+      "id": "adizero-boston-13",
+      "brandId": "adidas",
+      "name": "ADIZERO BOSTON 13",
+      "nameKo": "아디제로 보스턴 13",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 179000,
+      "priceFormatted": "179,000원",
+      "description": "보스턴 13은 빠른 페이스에서 진가를 발휘하는 가성비 슈퍼 트레이너야. Lightstrike Pro 듀얼 폼에 EnergyRods가 들어가서 10K 페이스 이상에서 스냅감 있게 밀어주고, 전족부 에너지 리턴 70%로 포어풋 착지 러너에게 특히 좋아. 255g으로 가벼워지고 핏도 개선됐는데, 17만원대라 가성비가 뛰어나. 다만 이지런에서는 좀 딱딱하게 느껴져.",
+      "shortDescription": "빠른 페이스에서 빛나는 가성비 슈퍼 트레이너",
+      "imageUrl": "/shoes/adizero-boston-13.webp",
+      "specs": {
+        "weight": 255,
+        "drop": 6,
+        "cushioning": 6,
+        "responsiveness": 7,
+        "stability": 8,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 30
+        }
+      },
+      "pros": [
+        "전족부 에너지 리턴 70%로 포어풋 착지 러너에게 슈퍼슈즈급 반발력",
+        "EnergyRods가 빠른 페이스에서 스냅감 있게 밀어줘서 추진력이 좋아",
+        "17만원대에 255g 경량 — 슈퍼 트레이너 카테고리 최고 가성비"
+      ],
+      "cons": [
+        "이지런에서는 딱딱하고 어그레시브한 느낌이라 회복 러닝에는 안 맞아",
+        "토박스가 좁아서 장거리에서 발가락 압박이 올 수 있어"
+      ],
+      "bestFor": [
+        "템포·인터벌 등 빠른 훈련을 자주 하는 중급~상급 러너",
+        "한 켤레로 훈련과 10K~하프 레이스까지 커버하고 싶은 러너",
+        "미드풋·전족부 착지로 빠른 페이스에서 추진력을 원하는 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "Lightstrike 2.0",
+        "EnergyRods",
+        "Continental"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Cloud White/Pure Teal",
+        "Cloud White/Core Black",
+        "Core Black/Silver Metallic"
+      ],
+      "slug": "adizero-boston-13",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-boston-13"
+    },
+    {
+      "id": "adizero-takumi-sen-11",
+      "brandId": "adidas",
+      "name": "ADIZERO TAKUMI SEN 11",
+      "nameKo": "아디제로 타쿠미 센 11",
+      "categoryId": "racing",
+      "subcategoryId": "half",
+      "price": 219000,
+      "priceFormatted": "219,000원",
+      "description": "타쿠미 센 11은 슈퍼슈즈만큼 빠르면서 접지감은 더 좋은 중간 스택 레이서야. 전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는데, 스택이 낮아서 발이 땅에 잘 닿는 느낌이 있거든. 184g으로 가볍고 핏도 밀착돼서 5K~10K 레이스에 딱 맞아. LIGHTLOCK 어퍼가 전혀 안 늘어나니까 발가락 여유가 필요하면 주의해야 해.",
+      "shortDescription": "5K~10K에서 빠르면서 접지감 좋은 레이서",
+      "imageUrl": "/shoes/adizero-takumi-sen-11.webp",
+      "specs": {
+        "weight": 184,
+        "drop": 7,
+        "cushioning": 6,
+        "responsiveness": 9,
+        "stability": 5,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 33,
+          "forefoot": 26
+        }
+      },
+      "pros": [
+        "전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는 반발력",
+        "184g 초경량에 EnergyRods 2.0이 스냅감 있게 추진해 줘",
+        "전작보다 폼이 부드러워져서 보호력과 반응성이 동시에 좋아졌어"
+      ],
+      "cons": [
+        "LIGHTLOCK 어퍼가 안 늘어나서 발가락 자유도가 거의 없어",
+        "힐탭이 쓸리는 경우가 있어서 높은 양말 착용이 필요할 수 있어"
+      ],
+      "bestFor": [
+        "5K~10K 레이스에 가볍고 반응 좋은 레이서를 원하는 러너",
+        "슈퍼슈즈의 높은 스택보다 지면 감각을 선호하는 스피드 러너",
+        "인터벌·반복 훈련에 빠른 턴오버가 필요한 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "EnergyRods 2.0",
+        "Lighttraxion",
+        "Continental",
+        "Lightlock"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Flash Aqua/Zero Metallic/Mint Ton",
+        "Ftwr White/Core Black/Lucid Red",
+        "Cloud White"
+      ],
+      "slug": "adizero-takumi-sen-11",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-takumi-sen-11"
+    },
+    {
+      "id": "adizero-prime-x3-strung",
+      "brandId": "adidas",
+      "name": "ADIZERO PRIME X3 STRUNG",
+      "nameKo": "아디제로 프라임 X3 스트렁",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 349000,
+      "priceFormatted": "349,000원",
+      "description": "프라임 X3 스트렁은 50mm 스택에 카본 플레이트 + EnergyRods 2.0이 들어간 실험적 맥시멀 트레이너야. 에너지 리턴 77%에 충격 흡수 160 SA로 장거리 훈련에서 쿠셔닝과 추진력이 압도적인데, 대회 규격(40mm) 초과라 공식 레이스에는 신을 수 없어. 전작보다 플랫폼이 넓어져서 안정감이 좋아졌고, 체중이 있는 러너일수록 추진력을 더 잘 뽑아먹을 수 있어.",
+      "shortDescription": "훈련용 맥시멀 쿠셔닝의 실험적 슈퍼 트레이너",
+      "imageUrl": "/shoes/adizero-prime-x3-strung.webp",
+      "specs": {
+        "weight": 291,
+        "drop": 7,
+        "cushioning": 9,
+        "responsiveness": 8,
+        "stability": 6,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 50,
+          "forefoot": 43
+        }
+      },
+      "pros": [
+        "에너지 리턴 77% + 충격 흡수 160 SA로 쿠셔닝과 반발력 모두 압도적",
+        "전작보다 플랫폼이 넓어져서 50mm 스택인데도 안정감이 괜찮아",
+        "체중이 실릴수록 추진력이 극대화돼서 80kg+ 러너에게 특히 좋아"
+      ],
+      "cons": [
+        "WA 규격 초과(50mm)라서 공식 대회에서는 착용 불가",
+        "291g에 34만원대라 훈련 전용으로만 쓰기엔 부담스러운 가격"
+      ],
+      "bestFor": [
+        "마라톤 훈련에서 최대한의 쿠셔닝과 추진력이 필요한 러너",
+        "장거리 롱런·템포에 슈퍼슈즈급 트레이너를 원하는 러너",
+        "체중이 많이 나가서 일반 러닝화로는 쿠셔닝이 부족한 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro",
+        "EnergyRods 2.0",
+        "Carbon Plate",
+        "STRUNG",
+        "Lighttraxion"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Cloud White/Core Black/Lucid Red",
+        "Flash Aqua/Silver Metallic/Lucid Lemon",
+        "Lucid Lemon/Core Black"
+      ],
+      "slug": "adizero-prime-x3-strung",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-prime-x-3-strung"
+    },
+    {
+      "id": "adizero-adios-pro-4",
+      "brandId": "adidas",
+      "name": "ADIZERO ADIOS PRO 4",
+      "nameKo": "아디제로 아디오스 프로 4",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 299000,
+      "priceFormatted": "299,000원",
+      "description": "아디오스 프로 4는 '밟으면 밟을수록 돌아오는' 타입의 마라톤 슈퍼슈즈야. A-TPU 기반 Lightstrike Pro가 에너지 리턴 80%를 넘기면서, 5개 EnergyRods가 발뼈 구조를 따라 자연스럽게 앞으로 밀어줘. 부드러우면서도 추진력이 확실해서 하프부터 풀마라톤까지 레이스 전 구간에서 꾸준히 힘을 줘. 다만 토박스가 좁아서 반사이즈 업은 거의 필수이고, 훈련용으로 매일 신기엔 내구성이 아까워.",
+      "shortDescription": "에너지 리턴 최강의 마라톤 레이서",
+      "imageUrl": "/shoes/adizero-adios-pro-4.webp",
+      "specs": {
+        "weight": 200,
+        "drop": 6,
+        "cushioning": 8,
+        "responsiveness": 9,
+        "stability": 5,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 39,
+          "forefoot": 33
+        }
+      },
+      "pros": [
+        "에너지 리턴 80.4%로 랩 테스트 역대 최고 — 밟을수록 돌아오는 반발력",
+        "EnergyRods 2.0이 발뼈 구조를 모방해서 추진 전환이 자연스러움",
+        "전작보다 부드러워졌는데 탄력은 더 좋아져서 장거리 레이스에서 지속력이 올라감"
+      ],
+      "cons": [
+        "토박스가 많이 좁아져서 풀마라톤 후반에 발가락 압박·멍이 생길 수 있음",
+        "A-TPU 전환으로 전작 대비 내구성이 떨어져서 훈련 겸용은 비추"
+      ],
+      "bestFor": [
+        "하프~풀마라톤에서 자기 기록을 노리는 중급~상급 레이서",
+        "높은 에너지 리턴을 활용할 수 있는 중족부~전족부 착지 러너",
+        "레이스 데이 전용으로 최대 퍼포먼스를 원하는 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro (A-TPU)",
+        "EnergyRods 2.0",
+        "Lighttraxion",
+        "Continental"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "Core Black",
+        "Cloud White/Lucid Red",
+        "Flash Aqua/Lucid Lemon"
+      ],
+      "slug": "adizero-adios-pro-4",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-4"
+    },
+    {
+      "id": "adizero-pro-evo-2",
+      "brandId": "adidas",
+      "name": "ADIZERO ADIOS PRO EVO 2",
+      "nameKo": "아디제로 프로 에보 2",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 599000,
+      "priceFormatted": "599,000원",
+      "description": "프로 에보 2는 138g짜리 극초경량 엘리트 마라톤 레이서야. 3mm 초저드롭에 60% 로커가 공격적으로 앞으로 밀어줘서, 서브 3:30/km 페이스에서 진가를 발휘해. 전족부 스택이 3mm 높아지면서 에너지 효율이 5% 좋아졌는데, 느린 페이스에서는 오히려 불편해서 순수 레이스 데이 전용이야. 59만원이라 대부분의 러너에게는 비현실적인 가격이긴 해.",
+      "shortDescription": "서브엘리트 이상을 위한 극초경량 레이스 전용",
+      "imageUrl": "/shoes/adizero-pro-evo-2.webp",
+      "specs": {
+        "weight": 138,
+        "drop": 3,
+        "cushioning": 9,
+        "responsiveness": 8,
+        "stability": 5,
+        "durability": 2,
+        "stackHeight": {
+          "heel": 39,
+          "forefoot": 36
+        }
+      },
+      "pros": [
+        "138g으로 알파플라이 3(198g)보다 60g 가벼워서 장거리에서 차이가 확실해",
+        "전족부 스택 3mm 높아지면서 쿠셔닝이 강화되고 에너지 효율 5% 향상",
+        "평평한 측면 프로파일이 레일 역할을 해서 직선 주행 안정성이 좋아"
+      ],
+      "cons": [
+        "59만원이라 99.9%의 러너에게는 비현실적인 가격대",
+        "젖은 노면 그립이 부족하고 내구성이 낮아서 레이스 전용으로만 사용 가능"
+      ],
+      "bestFor": [
+        "서브엘리트~엘리트 러너의 마라톤 레이스 데이 전용",
+        "서브 3:30/km 페이스를 유지하는 전족부 착지 레이서",
+        "기록 경신을 위해 극한의 경량과 반발력이 필요한 경험 많은 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro Evo",
+        "EnergyRods 2.0",
+        "Celermesh 2.0"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "Silver Metallic/Lucid Red/Grey Two"
+      ],
+      "slug": "adizero-pro-evo-2",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2"
+    }
+  ]
+}

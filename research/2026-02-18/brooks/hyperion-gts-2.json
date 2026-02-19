@@ -1,0 +1,122 @@
+{
+  "shoeId": "hyperion-gts-2",
+  "modelName": "Brooks Hyperion GTS 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.31,
+      "url": "https://runrepeat.com/brooks-hyperion-gts-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.13,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-gts-2-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/brooks-hyperion-gts-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 220,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 33,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 22.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 123,
+          "forefootShockAbsorption": 97,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 51.8,
+          "forefootEnergyReturn": 59.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.8 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 123 / 97 SA",
+        "Energy return heel/forefoot: 51.8% / 59.7%",
+        "Lab specs weight/drop/stack: 220g, 10.7mm, 33mm/22.3mm"
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,303 @@
+{
+  "shoeId": "gel-kayano-32",
+  "modelName": "ASICS GEL-KAYANO 32",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/asics-gel-kayano-32",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 5,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-kayano-32",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.19,
+      "url": "https://www.doctorsofrunning.com/2025/05/asics-gel-kayano-32-review-2025-8mm-drop.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.85,
+      "url": "https://believeintherun.com/shoe-reviews/asics-gel-kayano-32-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-gel-kayano-32",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 295,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.3,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 30.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 133,
+          "forefootShockAbsorption": 116,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 47.8,
+          "forefootEnergyReturn": 49.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "4 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 133 / 116 SA",
+        "Energy return heel/forefoot: 47.8% / 49.3%",
+        "Lab specs weight/drop/stack: 295g, 9.3mm, 39.9mm/30.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-kayano-32",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 300.2,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.7,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.3,
+          "forefootShockAbsorption": 7.4,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 65.5,
+          "forefootEnergyReturn": 67,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 65.5%",
+        "Forefoot ER: 67%",
+        "Heel Cushioning: 7.3 /10",
+        "Forefoot Cushioning: 7.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/asics-gel-kayano-32-review-2025-8mm-drop.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "ASICS Gel-Kayano 32 Review (2025): 8mm Drop!",
+        "Purpose-wise, the Asics Gel-Kayano 32 is a daily training shoe meant for easy miles and long runs.",
+        "Runners wanting a lighter stability shoe with more pace versatility should check out the ASICS GT-2000 13 ."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/asics-gel-kayano-32-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "*drops mic* Also like me (most days) at age 32, the ASICS Gel-Kayano is still very stable.",
+        "Advertising Final thoughts on the Asics Gel-Kayano 32 LINDSAY: The Asics Gel-Kayano is a staple rotation shoe for those who need more stability and less overpronation."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 300,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 300,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 300,
+      "runRepeat": 295,
+      "rtings": 300.2,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 9.3,
+      "rtings": 9.1,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 40,
+        "forefoot": 32
+      },
+      "runRepeat": {
+        "heel": 39.9,
+        "forefoot": 30.6
+      },
+      "rtings": {
+        "heel": 41.7,
+        "forefoot": 32.6
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 3,
+    "stability": 10,
+    "durability": 9
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 3,
+    "stability": 10,
+    "durability": 9
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

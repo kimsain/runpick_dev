@@ -1,0 +1,304 @@
+{
+  "shoeId": "triumph-23",
+  "modelName": "Saucony Triumph 23",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.09,
+      "url": "https://runrepeat.com/saucony-triumph-23",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.64,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/triumph-23",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.58,
+      "url": "https://www.doctorsofrunning.com/2025/06/saucony-triumph-23-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.95,
+      "url": "https://www.roadtrailrun.com/2025/05/saucony-triumph-23-review-soft-and-fun.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 1.07,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-triumph-23-review/",
+      "reason": "http_404"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-triumph-23",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 272,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 42.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 149,
+          "forefootShockAbsorption": 136,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 67.6,
+          "forefootEnergyReturn": 71.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.7 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 149 / 136 SA",
+        "Energy return heel/forefoot: 67.6% / 71.2%",
+        "Lab specs weight/drop/stack: 272g, 10mm, 42.3mm/32.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/triumph-23",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 264.8,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.4,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.8,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.1,
+          "forefootShockAbsorption": 7.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.7,
+          "forefootEnergyReturn": 80.1,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.7%",
+        "Forefoot ER: 80.1%",
+        "Heel Cushioning: 8.1 /10",
+        "Forefoot Cushioning: 7.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/saucony-triumph-23-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "While continuing to be the premium cushioned model in the Saucony line-up, it has continually switched between a lighter weight, faster feeling shoe and heavier, highly cushioned shoe.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Saucony Triumph 23 is a neutral shoe with some guidance elements.",
+        "Matt: The Saucony Triumph 23 is for those who want a soft and responsive premium cushioned shoe."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/05/saucony-triumph-23-review-soft-and-fun.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "5) Stack Height: 37mm heel / 27mm forefoot, 10mm drop >unchanged Platform Width: 95mm heel / 75mm midfoot / 120mm forefoot Triumph 23 Video Review First Impressions, Fit and Upper The Triumph 23 in my light gray, charcoal and tan highlights is for sure is not one of those super playful Saucony colorways.",
+        "Saucony keeps the stack height at a reasonable 37/27 with a 10mm drop.",
+        "That said, the T23 gives Saucony a \"fun\" to run, practical general purpose trainer if you prefer soft and bouncy plush type rides and now also importantly at a competitive weight."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 272,
+    "drop": 10,
+    "heelStack": 42.3,
+    "forefootStack": 32.3
+  },
+  "proposedSpecs": {
+    "weight": 272,
+    "drop": 10,
+    "heelStack": 42.3,
+    "forefootStack": 32.3
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 272,
+      "runRepeat": 272,
+      "rtings": 264.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 10,
+      "rtings": 9.6,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 42.3,
+        "forefoot": 32.3
+      },
+      "runRepeat": {
+        "heel": 42.3,
+        "forefoot": 32.3
+      },
+      "rtings": {
+        "heel": 39.4,
+        "forefoot": 29.8
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

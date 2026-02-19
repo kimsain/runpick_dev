@@ -1,0 +1,353 @@
+{
+  "shoeId": "vaporfly-4",
+  "modelName": "NIKE VAPORFLY 4",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.08,
+      "url": "https://runrepeat.com/nike-vaporfly-4",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.96,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vaporfly-4",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.61,
+      "url": "https://www.doctorsofrunning.com/2025/04/nike-vaporfly-4-review-2025-midfoot-and.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.83,
+      "url": "https://www.roadtrailrun.com/2025/04/nike-vaporfly-4-multi-tester-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.57,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vaporfly-4-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-vaporfly-4",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 166,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 34.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 25.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 137,
+          "forefootShockAbsorption": 94,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 78.1,
+          "forefootEnergyReturn": 74.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "8.6 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 137 / 94 SA",
+        "Energy return heel/forefoot: 78.1% / 74.5%",
+        "Lab specs weight/drop/stack: 166g, 8.6mm, 34.1mm/25.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vaporfly-4",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 160.5,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 35.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 26.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.4,
+          "forefootShockAbsorption": 6.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.4,
+          "forefootEnergyReturn": 82.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.4%",
+        "Forefoot ER: 82.6%",
+        "Heel Cushioning: 6.4 /10",
+        "Forefoot Cushioning: 6.2 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/04/nike-vaporfly-4-review-2025-midfoot-and.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Thankfully, Nike was willing to send me a women's 10, which fit appropriately in length for a racing shoe.",
+        "v=P_MxeSarBmU&ab_channel=DoctorsofRunning Andrea: The Nike Vaporfly 4 is very light weight, snappy super shoe that has a markedly different ride as compared to previous versions of the shoe.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Nike Vaporfly 4 is a neutral racing shoe."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/04/nike-vaporfly-4-multi-tester-review.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Nike Vaporfly 4 Multi Tester Review: A Definite Fast Departure!",
+        "Nike has used a TPU engineered mesh for a super breathable ride.",
+        "Shoes like the Nike Alphafly 3 have a lot more cushioning with a slightly heavier weight that make it an ideal shoe for distances like the marathon where the Vaporfly really shines at a 10k-5k pace or faster."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vaporfly-4-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "It’s kind of absurd how much weight was cut from an already light shoe, but Nike somehow managed to do it without sacrificing performance or comfort.",
+        "It’s obvious that Nike knew this was a potential problem, judging from the size of the heel pads inside the shoe, which look like a guerrilla marketing ad for Lagoon pillows, sponsor of The Drop podcast hosted by yours truly."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 167,
+    "drop": 6,
+    "heelStack": 35,
+    "forefootStack": 29
+  },
+  "proposedSpecs": {
+    "weight": 167,
+    "drop": 6,
+    "heelStack": 35,
+    "forefootStack": 29
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 167,
+      "runRepeat": 166,
+      "rtings": 160.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 8.6,
+      "rtings": 8.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 35,
+        "forefoot": 29
+      },
+      "runRepeat": {
+        "heel": 34.1,
+        "forefoot": 25.5
+      },
+      "rtings": {
+        "heel": 35.1,
+        "forefoot": 26.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 3
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 3
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

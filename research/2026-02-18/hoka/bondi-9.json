@@ -1,0 +1,354 @@
+{
+  "shoeId": "bondi-9",
+  "modelName": "HOKA Bondi 9",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.13,
+      "url": "https://runrepeat.com/hoka-bondi-9",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.08,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.65,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-bondi-9-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-bondi-9-og-of-max-cushion-roars.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-bondi-9-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-bondi-9",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 303,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32.2,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 146,
+          "forefootShockAbsorption": 133,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 60.2,
+          "forefootEnergyReturn": 60.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 146 / 133 SA",
+        "Energy return heel/forefoot: 60.2% / 60.3%",
+        "Lab specs weight/drop/stack: 303g, 9.1mm, 41.3mm/32.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 297.8,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.5,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 34.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.8,
+          "forefootShockAbsorption": 8.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.3,
+          "forefootEnergyReturn": 75.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74.3%",
+        "Forefoot ER: 75.4%",
+        "Heel Cushioning: 8.8 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-bondi-9-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "RUNNING SHOE SUMMARY The HOKA Bondi 9 is a premium neutral daily training shoe.",
+        "The HOKA Bondi 9 updates the midsole to a supercritical EVA to make for a more responsive and lighter package.",
+        "HOKA also reworked the heel to add in a frame for some added stability on this workhorse trainer."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-bondi-9-og-of-max-cushion-roars.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Hoka Bondi 9: The OG of Max Cushion Roars Back!",
+        "The Bondi 9 totally revives the model into a truly fine max cushion daily to recovery run trainer with a weight below several of its direct competitors such as the Brooks Glycerin Max and Ghost Max 2, and Hoka's plated Skyward X.",
+        "Cons: None really but how about a lighter weight yet via a more streamlined non knit upper Fans of older versions may find it a touch less stable Most comparable shoes ASICS Nimbus 27 ( RTR Review ) Brooks Glycerin Max ( RTR Review ) Brooks Ghost Max 2 ( RTR Review ) Stats Approx."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-bondi-9-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "The Bondi has always been known as the thickest of the thicc bois in Hoka’s lineup, and that certainly hasn’t changed through the years, but the materials and ride have seen some updates.",
+        "I understand the appeal and adulation the shoe has received, but up until now, the Bondi X, which had a plate to add some stiffness to the rocker, was my favorite version of Hoka’s max-cushioned trainer.",
+        "At long last, it's ditched the CMEVA (compression-molded) midsole, which is the same solid block of foam that every Hoka since forever has ridden on."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 303,
+    "drop": 9.1,
+    "heelStack": 41.3,
+    "forefootStack": 32.2
+  },
+  "proposedSpecs": {
+    "weight": 303,
+    "drop": 9.1,
+    "heelStack": 41.3,
+    "forefootStack": 32.2
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 303,
+      "runRepeat": 303,
+      "rtings": 297.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 9.1,
+      "runRepeat": 9.1,
+      "rtings": 7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 41.3,
+        "forefoot": 32.2
+      },
+      "runRepeat": {
+        "heel": 41.3,
+        "forefoot": 32.2
+      },
+      "rtings": {
+        "heel": 41.5,
+        "forefoot": 34.5
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,122 @@
+{
+  "shoeId": "glycerin-gts-22",
+  "modelName": "Brooks Glycerin GTS 22",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.56,
+      "url": "https://runrepeat.com/brooks-glycerin-gts-22",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.72,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/glycerin-gts-22-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/brooks-glycerin-gts-22",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 305,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 37.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 27.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 122,
+          "forefootShockAbsorption": 109,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 53.1,
+          "forefootEnergyReturn": 57.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.5 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 122 / 109 SA",
+        "Energy return heel/forefoot: 53.1% / 57.8%",
+        "Lab specs weight/drop/stack: 305g, 10.1mm, 37.8mm/27.7mm"
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "proposedSpecs": {
+    "weight": null,
+    "drop": null,
+    "heelStack": null,
+    "forefootStack": null
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

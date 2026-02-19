@@ -1,0 +1,122 @@
+{
+  "shoeId": "supernova-solution-2",
+  "modelName": "ADIDAS SUPERNOVA SOLUTION 2.0",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 5.04,
+      "url": "https://runrepeat.com/adidas-supernova-solution-2-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 1.26,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-solution-2-running-shoe",
+      "reason": "http_404"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 1.26,
+      "url": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "The company that once had the best lightweight stability shoe (the Tempo series) and several mild stability racing shoes (most available in Asia) had everything disappear except for heavy, clunky Adidas Solar ST.",
+        "The company that had seemed to forget its lineage of great lightweight stability shoes has brought something to the table that rivals the Saucony Tempus 2, the only other PEBA-based stability shoe on the market.",
+        "4 oz for a men's size 9, making it almost tied for the lightest superfoam stability shoe with the Saucony Tempus 2."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": 261,
+    "drop": 10,
+    "heelStack": 36,
+    "forefootStack": 26
+  },
+  "proposedSpecs": {
+    "weight": 261,
+    "drop": 10,
+    "heelStack": 36,
+    "forefootStack": 26
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 6,
+    "stability": 8,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 6,
+    "stability": 8,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

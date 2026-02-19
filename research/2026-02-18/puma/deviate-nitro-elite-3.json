@@ -1,0 +1,338 @@
+{
+  "shoeId": "deviate-nitro-elite-3",
+  "modelName": "PUMA Deviate NITRO Elite 3",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.14,
+      "url": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.03,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.59,
+      "url": "https://www.doctorsofrunning.com/2024/10/puma-deviate-nitro-elite-3-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.51,
+      "url": "https://www.roadtrailrun.com/2024/08/puma-deviate-nitro-elite-3-review-up-in.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.58,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 204,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.6,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.2,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 28.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 147,
+          "forefootShockAbsorption": 124,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.1,
+          "forefootEnergyReturn": 76.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.6 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 147 / 124 SA",
+        "Energy return heel/forefoot: 77.1% / 76.3%",
+        "Lab specs weight/drop/stack: 204g, 10.6mm, 39.2mm/28.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-elite-3",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 199.9,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 39.2,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.1,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8,
+          "forefootShockAbsorption": 8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.8,
+          "forefootEnergyReturn": 82.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.8%",
+        "Forefoot ER: 82.4%",
+        "Heel Cushioning: 8 /10",
+        "Forefoot Cushioning: 8 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/10/puma-deviate-nitro-elite-3-review-2024.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "The weight is extremely low with this shoe coming in under 7 oz, sitting in similar weights to the Nike Vaporfly and ASICS Metaspeed Paris series.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Puma Deviate Nitro Elite 3 is a neutral racing shoe but there are some surprisingly stable elements to this shoe.",
+        "Matt: The Puma Deviate Nitro Elite 3 is a stiff aggressive super racing shoe for 5k to half marathon racing for most and up to the marathon for elite/faster runners."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/08/puma-deviate-nitro-elite-3-review-up-in.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Puma Deviate Nitro Elite 3 Multi Tester Review:10 Comparisons-Up in Cushion and Energy, Way Down in Weight!",
+        "Midsole & Platform Jeremy: PUMA has changed the NItro Elite foam and we now have a new aliphatic TPU midsole foam, promising more energy return than the previous version, as well as leading to big weight savings despite adding 4mm of foam height.",
+        "Off the top of my head, the Nike Vaporfly 3, Unpause Halley Light, and 361deg Future Fast all sit at this stack height (by my personal measurements)."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-3-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Puma says it has an energy return of 93%, compared to 83% in past versions of the Nitro foam.",
+        "And while the foam is not Peba based like we’ve seen across most other brands, Puma suggests the aliphatic TPU is even better.",
+        "Weight alone doesn’t make a great shoe, so let’s get into the other attributes of the Puma Deviate Nitro Elite 3."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 204,
+    "drop": 10.6,
+    "heelStack": 39.2,
+    "forefootStack": 28.6
+  },
+  "proposedSpecs": {
+    "weight": 204,
+    "drop": 10.6,
+    "heelStack": 39.2,
+    "forefootStack": 28.6
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 204,
+      "runRepeat": 204,
+      "rtings": 199.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10.6,
+      "runRepeat": 10.6,
+      "rtings": 10.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 5
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 5
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

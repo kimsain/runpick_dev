@@ -1,0 +1,204 @@
+{
+  "shoeId": "magic-speed-5",
+  "modelName": "ASICS MAGIC SPEED 5",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.15,
+      "url": "https://runrepeat.com/asics-magic-speed-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.49,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/magic-speed-5",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-magic-speed-5",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 201,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 35.3,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 26.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 149,
+          "forefootShockAbsorption": 112,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 64.6,
+          "forefootEnergyReturn": 62.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.8 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 149 / 112 SA",
+        "Energy return heel/forefoot: 64.6% / 62.6%",
+        "Lab specs weight/drop/stack: 201g, 8.7mm, 35.3mm/26.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/magic-speed-5",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 199.5,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 6.9,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 35.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8,
+          "forefootShockAbsorption": 7.4,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.2,
+          "forefootEnergyReturn": 78.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 76.2%",
+        "Forefoot ER: 78.3%",
+        "Heel Cushioning: 8 /10",
+        "Forefoot Cushioning: 7.4 /10"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 193,
+    "drop": 7,
+    "heelStack": 37.5,
+    "forefootStack": 30.5
+  },
+  "proposedSpecs": {
+    "weight": 193,
+    "drop": 7,
+    "heelStack": 37.5,
+    "forefootStack": 30.5
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 193,
+      "runRepeat": 201,
+      "rtings": 199.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 7,
+      "runRepeat": 8.7,
+      "rtings": 6.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 37.5,
+        "forefoot": 30.5
+      },
+      "runRepeat": {
+        "heel": 35.3,
+        "forefoot": 26.6
+      },
+      "rtings": {
+        "heel": 35.9,
+        "forefoot": 29
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

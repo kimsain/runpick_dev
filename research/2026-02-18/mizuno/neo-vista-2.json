@@ -1,0 +1,297 @@
+{
+  "shoeId": "neo-vista-2",
+  "modelName": "Mizuno Neo Vista 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.1,
+      "url": "https://runrepeat.com/mizuno-neo-vista-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-vista-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.61,
+      "url": "https://www.doctorsofrunning.com/2025/06/mizuno-neo-vista-2-review-2025-45mm.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0.76,
+      "url": "https://www.roadtrailrun.com/2025/07/mizuno-neo-vista-2-multi-tester-review.html",
+      "reason": "http_404"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.53,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-vista-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/mizuno-neo-vista-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 264,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.5,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 46,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 37.5,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 170,
+          "forefootShockAbsorption": 137,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 60.3,
+          "forefootEnergyReturn": 59.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.6 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 170 / 137 SA",
+        "Energy return heel/forefoot: 60.3% / 59.8%",
+        "Lab specs weight/drop/stack: 264g, 8.5mm, 46mm/37.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-vista-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 263.4,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.8,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 50.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 40.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 9.2,
+          "forefootShockAbsorption": 9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.4,
+          "forefootEnergyReturn": 72.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 73.4%",
+        "Forefoot ER: 72.6%",
+        "Heel Cushioning: 9.2 /10",
+        "Forefoot Cushioning: 9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/mizuno-neo-vista-2-review-2025-45mm.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "The original Neo Vista was a Mizuno's first super trainer, featuring max stack of a unique EVA blended midsole that I (Matt) originally thought was PEBA combined with a full length wave plate.",
+        "Mizuno Neo Vista 2 Price: $200 at Running Warehouse Weight : 9.",
+        "RUNNING SHOE SUMMARY The Mizuno Neo Vista 2 is a super trainer for those who want an incredible soft and bouncy ride over longer miles."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-vista-2-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Mizuno had been using wave plates in its shoes for a while, and the innovation felt stale.",
+        "Sandwiched between the two is a glass-fiber reinforced nylon plate, paired with a rockered design Mizuno calls “Smooth Speed Assist.",
+        "” What we don't like about the Mizuno Neo Vista 2 MEAGHAN: I’m dropping this in the “bad” section, even though I personally didn’t have any issues, but it’s worth noting."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 264,
+    "drop": 8.5,
+    "heelStack": 46,
+    "forefootStack": 37.5
+  },
+  "proposedSpecs": {
+    "weight": 264,
+    "drop": 8.5,
+    "heelStack": 46,
+    "forefootStack": 37.5
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8.5,
+      "runRepeat": 8.5,
+      "rtings": 9.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 46,
+        "forefoot": 37.5
+      },
+      "runRepeat": {
+        "heel": 46,
+        "forefoot": 37.5
+      },
+      "rtings": {
+        "heel": 50.1,
+        "forefoot": 40.3
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

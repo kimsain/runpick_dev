@@ -1,0 +1,354 @@
+{
+  "shoeId": "clifton-10",
+  "modelName": "HOKA Clifton 10",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.18,
+      "url": "https://runrepeat.com/hoka-clifton-10",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.85,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/clifton-10",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-clifton-10-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.97,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-clifton-10-multi-tester-review-big.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.89,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-clifton-10-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-clifton-10",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 275,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 12.4,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 44.4,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 32,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 147,
+          "forefootShockAbsorption": 122,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 52.3,
+          "forefootEnergyReturn": 57.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 147 / 122 SA",
+        "Energy return heel/forefoot: 52.3% / 57.2%",
+        "Lab specs weight/drop/stack: 275g, 12.4mm, 44.4mm/32mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/clifton-10",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 273.3,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.9,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 41.6,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 31.7,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.4,
+          "forefootShockAbsorption": 7.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 71.1,
+          "forefootEnergyReturn": 71.1,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 71.1%",
+        "Forefoot ER: 71.1%",
+        "Heel Cushioning: 8.4 /10",
+        "Forefoot Cushioning: 7.8 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-clifton-10-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "The top-selling Hoka Clifton receives three extra millimeters of foam to make it an 8mm drop platform, shaking up the stack height to match its peers in other brands and slightly separate itself within the Hoka line-up from new models like the Skyflow.",
+        "Hoka Clifton 10 Price: $150 at Running Warehouse Weight : 9.",
+        "For stability, the shoe continues to use popular Hoka design including sidewalls and some gentle sole flaring throughout the length of the shoe."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-clifton-10-multi-tester-review-big.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Road Trail Run: Hoka Clifton 10 Multi Tester Review- Big Changes!",
+        "Sam: The Clifton 10 sees big changes as it shifts from Hoka's traditional 4-5mm drop to their first shoe with an 8mm drop.",
+        "Now called out by Hoka as having some inherent stability due to its rear Active Foot Frame geometry and relatively dense compression molded EVA midsole along with its 8mm drop, by specs it leaves behind some of its heritage as a light daily trainer."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-clifton-10-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "See, if you know Hoka, then you know it's rocked with 5 mm drops just about every year since forever, so jumping by 3 mm is pretty significant.",
+        "The goal behind the increase was to allow for a tiny bit more cushioning in the heel and to ensure that over time and under the impact, the weighted drop still feels more true to Hoka.",
+        "There’s something to be said for leaving well enough alone — especially in a crowd-pleaser like the Clifton, so when I saw that Hoka had shifted the drop in the Clifton 10 to 8 mm and adopted a completely new last, I was worried that the low-drop fan club would be shaking in its boots (er, trainers?"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 275,
+    "drop": 12.4,
+    "heelStack": 44.4,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 275,
+    "drop": 12.4,
+    "heelStack": 44.4,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 275,
+      "runRepeat": 275,
+      "rtings": 273.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 12.4,
+      "runRepeat": 12.4,
+      "rtings": 9.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 44.4,
+        "forefoot": 32
+      },
+      "runRepeat": {
+        "heel": 44.4,
+        "forefoot": 32
+      },
+      "rtings": {
+        "heel": 41.6,
+        "forefoot": 31.7
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

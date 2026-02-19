@@ -1,0 +1,354 @@
+{
+  "shoeId": "structure-26",
+  "modelName": "NIKE STRUCTURE 26",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.1,
+      "url": "https://runrepeat.com/nike-structure-26",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.1,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/structure-26-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.64,
+      "url": "https://www.doctorsofrunning.com/2025/07/nike-structure-26-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.86,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-structure-26-multi-tester-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.89,
+      "url": "https://believeintherun.com/nike-structure-26-first-look/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-structure-26",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 296,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 10.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 36.1,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 26,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 132,
+          "forefootShockAbsorption": 99,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 57.2,
+          "forefootEnergyReturn": 59.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.6 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 132 / 99 SA",
+        "Energy return heel/forefoot: 57.2% / 59.4%",
+        "Lab specs weight/drop/stack: 296g, 10.1mm, 36.1mm/26mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/structure-26-running-shoe",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 293.9,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.5,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 37.9,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 29.4,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.9,
+          "forefootShockAbsorption": 5.5,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.3,
+          "forefootEnergyReturn": 70.1,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.3%",
+        "Forefoot ER: 70.1%",
+        "Heel Cushioning: 6.9 /10",
+        "Forefoot Cushioning: 5.5 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/07/nike-structure-26-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "2025 is the first time in years Nike appears to be refocusing on the stability.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The Nike Structure 26 is a moderate stability daily training shoe.",
+        "The Nike Structure 26 has a good lateral heel bevel, but the rearfoot transition feels a bit stiff due to extra stability mechanisms on the lateral side to keep the foot centered."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-structure-26-multi-tester-review.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "And for the most part, Nike succeeds - this is a meaningful update that dials back the plastic-y feel of the 25 and delivers a much smoother ride.",
+        "Although I did not run in previous versions of the Nike Structure, I have run in a variety of stability shoes including the Puma Forever Run, Guide 17, GT 2000, with many of my running years were spent in the ASICS Kayano.",
+        "Nike has removed the Air Zoom unit upfront found in previous versions for a more consistent feeling ride from heel to toe."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/nike-structure-26-first-look/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "Stability comes from the Midfoot Support System Advertising What’s New in the Nike Structure 26 We’ll be honest – we haven’t reviewed this shoe since the Structure 22 back in 2018, and that was courtesy of Wide Foot Jarrett .",
+        "Starting with the midsole, the Structure 26 utilizes ReactX foam, the soft and bouncy foam found throughout the Nike running line, in models like the Pegasus 41 and the Vomero 18 .",
+        "In this version, the forefoot air bag has been removed to improve the heel to toe transition, and the entire thing is 13% more responsive according to Nike, a nebulous metric that sounds good but nobody really knows what it means."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 298,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "proposedSpecs": {
+    "weight": 298,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 298,
+      "runRepeat": 296,
+      "rtings": 293.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 10.1,
+      "rtings": 8.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 38,
+        "forefoot": 28
+      },
+      "runRepeat": {
+        "heel": 36.1,
+        "forefoot": 26
+      },
+      "rtings": {
+        "heel": 37.9,
+        "forefoot": 29.4
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 4,
+    "stability": 8,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 4,
+    "stability": 8,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

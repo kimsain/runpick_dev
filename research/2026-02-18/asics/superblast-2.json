@@ -1,0 +1,254 @@
+{
+  "shoeId": "superblast-2",
+  "modelName": "ASICS SUPERBLAST 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.21,
+      "url": "https://runrepeat.com/asics-superblast-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 4.89,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/superblast-2-paris",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.74,
+      "url": "https://www.doctorsofrunning.com/2024/06/asics-superblast-2-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-superblast-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 252,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 8.2,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 42.8,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 34.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 130,
+          "forefootShockAbsorption": 138,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 65.4,
+          "forefootEnergyReturn": 65.5,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.5 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 130 / 138 SA",
+        "Energy return heel/forefoot: 65.4% / 65.5%",
+        "Lab specs weight/drop/stack: 252g, 8.2mm, 42.8mm/34.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/superblast-2-paris",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 247.5,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 9.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 44.7,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 35.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.4,
+          "forefootShockAbsorption": 8.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.2,
+          "forefootEnergyReturn": 77.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.2%",
+        "Forefoot ER: 77.9%",
+        "Heel Cushioning: 8.4 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/06/asics-superblast-2-review-2024.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "ASICS Superblast 2 Price: $200 at Running Warehouse Weight : 8.",
+        "5) Stack Height : 45 mm / 37 mm Drop : 8 mm Shoe Purpose : Super Trainer Pros : Lightest Super Trainer, Bouncy Ride, Excellent Durability Cons : Slightly Heavier than Original Version RUNNING SHOE SUMMARY The ASICS Superblast 2 is a super trainer for who want a versatile maximal trainer/racer.",
+        "STABILITY (Learn more about stability in our full guide ) Matt: The ASICS Superblast 2 is a stable neutral shoe."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 250,
+    "drop": 8,
+    "heelStack": 45,
+    "forefootStack": 37
+  },
+  "proposedSpecs": {
+    "weight": 250,
+    "drop": 8,
+    "heelStack": 45,
+    "forefootStack": 37
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 250,
+      "runRepeat": 252,
+      "rtings": 247.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 8.2,
+      "rtings": 9.1,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 45,
+        "forefoot": 37
+      },
+      "runRepeat": {
+        "heel": 42.8,
+        "forefoot": 34.6
+      },
+      "rtings": {
+        "heel": 44.7,
+        "forefoot": 35.6
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 7,
+    "stability": 8,
+    "durability": 9
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 7,
+    "stability": 8,
+    "durability": 9
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

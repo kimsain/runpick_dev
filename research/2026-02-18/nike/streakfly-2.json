@@ -1,0 +1,347 @@
+{
+  "shoeId": "streakfly-2",
+  "modelName": "NIKE STREAKFLY 2",
+  "researchDate": "2026-02-18",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 4.17,
+      "url": "https://runrepeat.com/nike-streakfly-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 3.96,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/streakfly-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 0.62,
+      "url": "https://www.doctorsofrunning.com/2025/06/nike-streakfly-2-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 0.87,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-streakfly-2-multi-tester-review-7.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 0.97,
+      "url": "https://believeintherun.com/shoe-reviews/nike-streakfly-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-streakfly-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 128,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 3.7,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 27,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 23.3,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 106,
+          "forefootShockAbsorption": 82,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.3,
+          "forefootEnergyReturn": 77.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.7 mm",
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 106 / 82 SA",
+        "Energy return heel/forefoot: 76.3% / 77.9%",
+        "Lab specs weight/drop/stack: 128g, 3.7mm, 27mm/23.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/streakfly-2",
+      "type": "quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": 121.5,
+          "unit": "g"
+        },
+        "drop": {
+          "value": 4.1,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": 26.7,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": 22.6,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 4.3,
+          "forefootShockAbsorption": 5.3,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.9,
+          "forefootEnergyReturn": 84,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "/10"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.9%",
+        "Forefoot ER: 84%",
+        "Heel Cushioning: 4.3 /10",
+        "Forefoot Cushioning: 5.3 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/nike-streakfly-2-review-2025.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "5 oz) racing shoe for fast miles on the road, dirt, and track, the Nike Streakfly 2 is the true super-light, super-racing shoe many people have been looking for.",
+        "Some Nike racing shoes have fit true to size (Vaporfly NEXT% and v3 and Alphafly 1) but I have had to go up 1/2 size in others (Vaporfly 2 and 4).",
+        "I am glad Nike sent a 1/2 size up because it fit like a racing shoe should, snug but with enough length in the toe box that I did not have any toe nail irritation."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-streakfly-2-multi-tester-review-7.html",
+      "type": "qualitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "qualitative"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "qualitative"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "qualitative"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "qualitative"
+        }
+      },
+      "keyFindings": [
+        "Save at TOP4RUNNING HERE Use Code RTRTOP4 f or 5% off All Products, Even Sales Popular Posts Hoka Speedgoat 7 Multi Tester Review: 5 Comparisons Dynafish Xiaonian Review: 3 Comparisons adidas Adizero EVO SL ATR Review: Compared to EVO SL.",
+        "Tarptent ProTrail Li Tent Review Mizuno Wave Sky 9 Multi Tester Review: 6 Comparisons Vinco Performance Terra Sunglasses Review Bolle Victus Pro Black Matte Clear Lava Photochrom.",
+        "SCOTT RC PRO TR 4 Hydration Vest Review Altra x SOAR Mont Blanc Carbon Trail Shoe Review Nike Structure 26 Multi Tester Review: 4 Comparisons Inov8 Airlite Pro Shorts Review Bag Balm Vermont Original Formula Skin Moisturizer."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-streakfly-2-review/",
+      "type": "semi-quantitative",
+      "physicalSpecs": {
+        "weight": {
+          "value": null,
+          "unit": "g"
+        },
+        "drop": {
+          "value": null,
+          "unit": "mm"
+        },
+        "heelStack": {
+          "value": null,
+          "unit": "mm"
+        },
+        "forefootStack": {
+          "value": null,
+          "unit": "mm"
+        }
+      },
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": null,
+          "forefootShockAbsorption": null,
+          "scale": "semi-quant"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": null,
+          "forefootEnergyReturn": null,
+          "scale": "semi-quant"
+        },
+        "stability": {
+          "torsionalRigidity": null,
+          "heelCounterStiffness": null,
+          "scale": "semi-quant"
+        },
+        "durability": {
+          "outsoleDurability": null,
+          "scale": "semi-quant"
+        }
+      },
+      "keyFindings": [
+        "It was fairly simple shoe with a lower stack of ZoomX, Nike’s premium race day foam.",
+        "Now with a carbon fiber Flyplate The Streakfly was an already light shoe, but Nike really took it to the next level with this version, chopping off a whole 40 grams (nearly a quarter of its weight), bringing it down to 144 grams (5 ounces) for a US M10.",
+        "Incredibly, it lost that weight with the addition of a carbon fiber Flyplate, the same one found in the Nike Vaporfly 3."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 130,
+    "drop": 4,
+    "heelStack": 27,
+    "forefootStack": 23
+  },
+  "proposedSpecs": {
+    "weight": 130,
+    "drop": 4,
+    "heelStack": 27,
+    "forefootStack": 23
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 130,
+      "runRepeat": 128,
+      "rtings": 121.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "stackHeight",
+      "current": {
+        "heel": 27,
+        "forefoot": 23
+      },
+      "runRepeat": {
+        "heel": 27,
+        "forefoot": 23.3
+      },
+      "rtings": {
+        "heel": 26.7,
+        "forefoot": 22.6
+      },
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 4,
+    "responsiveness": 9,
+    "stability": 4,
+    "durability": 3
+  },
+  "proposedScores": {
+    "cushioning": 4,
+    "responsiveness": 9,
+    "stability": 4,
+    "durability": 3
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}
