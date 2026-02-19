@@ -40,7 +40,7 @@ const DATA_SOURCES = [
 
 const SPEC_ITEMS = [
   {
-    name: '쿠션',
+    name: '쿠션성',
     nameEn: 'Cushioning',
     color: 'var(--spec-cushion)',
     description:
@@ -48,7 +48,7 @@ const SPEC_ITEMS = [
     basis: '힐/포어풋 SA 기반 0–10점',
   },
   {
-    name: '반응',
+    name: '반응성',
     nameEn: 'Responsiveness',
     color: 'var(--spec-response)',
     description:
@@ -56,7 +56,7 @@ const SPEC_ITEMS = [
     basis: '에너지 리턴 ER% 기반 0–10점',
   },
   {
-    name: '안정',
+    name: '안정성',
     nameEn: 'Stability',
     color: 'var(--spec-stability)',
     description:
@@ -64,7 +64,7 @@ const SPEC_ITEMS = [
     basis: '전문가 리뷰 종합 0–10점',
   },
   {
-    name: '내구',
+    name: '내구성',
     nameEn: 'Durability',
     color: 'var(--spec-durability)',
     description:
@@ -72,11 +72,11 @@ const SPEC_ITEMS = [
     basis: '아웃솔 내구성 평가 0–10점',
   },
   {
-    name: '무게',
-    nameEn: 'Weight',
+    name: '경량성',
+    nameEn: 'Lightness',
     color: 'var(--spec-weight)',
     description:
-      '측정 무게(g) 기준. 가벼울수록 높은 점수. RunRepeat/RTINGS 실측 데이터 역정규화.',
+      '실측 무게(g) 기준 역정규화. 가벼울수록 높은 점수.',
     basis: '전 모델 실측 무게 역정규화 0–10점',
   },
   {
@@ -84,7 +84,7 @@ const SPEC_ITEMS = [
     nameEn: 'Value',
     color: 'var(--spec-value)',
     description:
-      '가격 대비 성능. (쿠션+반응+안정+내구) ÷ 가격 비율을 전 모델 대비 정규화.',
+      '가격 대비 성능. (쿠션성+반응성+안정성+내구성) ÷ 가격 비율을 전 모델 대비 정규화.',
     basis: '성능 합산 ÷ 가격 비율 정규화 0–10점',
   },
 ]
@@ -180,9 +180,10 @@ export default function MethodologyPage() {
           6개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
-          각 스펙은 0–10점으로 정규화됩니다. 쿠션·반응은 실측 데이터(SA, ER%)를
-          최우선으로 적용하고, 안정·내구는 실측 기준값에 전문가 리뷰 키워드 분석
-          결과를 ±1 보정하여 반영합니다.
+          각 스펙은 0–10점으로 정규화됩니다. 쿠션성·반응성은 실측 데이터(SA, ER%)를
+          최우선으로 적용하고, 안정성·내구성은 실측 기준값에 전문가 리뷰 키워드 분석
+          결과를 ±1 보정하여 반영합니다. 경량성은 전 모델 실측 무게를 역정규화하고,
+          가성비는 (쿠션성+반응성+안정성+내구성)÷가격 비율을 정규화합니다.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {SPEC_ITEMS.map((spec) => (
