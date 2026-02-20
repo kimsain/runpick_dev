@@ -208,7 +208,7 @@ def main():
 
         research["proposedScores"] = proposed
         research["specsDecision"] = (
-            f"[normalize_qualitative_only.py] Claude {CLAUDE_MODEL} 기반 정성 텍스트 추출. "
+            f"[normalize_from_reviews.py] Claude {CLAUDE_MODEL} 기반 정성 텍스트 추출. "
             f"이전 proposed: {old_proposed}. 생산 적용 전 수동 검토 필요."
         )
 
