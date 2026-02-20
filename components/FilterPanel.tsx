@@ -9,6 +9,7 @@ interface Props {
   priceRange: { min: number; max: number }
   weightRange: { min: number; max: number }
   dropRange: { min: number; max: number }
+  mobile?: boolean
 }
 
 const CATEGORIES = [
@@ -56,7 +57,7 @@ function formatPrice(v: number) {
   return `${Math.round(v / 10000)}만`
 }
 
-export default function FilterPanel({ brands, priceRange, weightRange, dropRange }: Props) {
+export default function FilterPanel({ brands, priceRange, weightRange, dropRange, mobile }: Props) {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -112,7 +113,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const [activeKey, activeDir] = parseSort(currentSort)
 
   return (
-    <aside className="w-60 shrink-0 sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto pr-2 scrollbar-hide">
+    <aside className={mobile ? 'w-full' : 'w-60 shrink-0 sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto pr-2 scrollbar-hide'}>
       <div className="space-y-6 pb-8">
         {/* Sort */}
         <section>
@@ -190,7 +191,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             <span className="text-xs">{brandsOpen ? '▲' : '▼'}</span>
           </button>
           {brandsOpen && (
-            <div className="space-y-1">
+            <div className={mobile ? 'grid grid-cols-2 gap-2' : 'space-y-1'}>
               {brands.map((brand) => (
                 <label
                   key={brand.id}

@@ -64,6 +64,7 @@ export default function FilterDrawer({
               priceRange={priceRange}
               weightRange={weightRange}
               dropRange={dropRange}
+              mobile
             />
           </div>
         </div>
