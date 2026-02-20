@@ -20,7 +20,7 @@ const HERO_SHOES = [
   { src: '/images/shoes/alphafly-3.webp', alt: 'Nike Alphafly 3' },
   { src: '/images/shoes/adizero-adios-pro-4.webp', alt: 'Adidas Adizero Adios Pro 4' },
   { src: '/images/shoes/fast-r-nitro-elite-3.webp', alt: 'Puma FAST-R Nitro Elite 3' },
-  { src: '/images/shoes/metaspeed-sky-tokyo.webp', alt: 'Asics Metaspeed Sky Tokyo' },
+  { src: '/images/shoes/metaspeed-ray.webp', alt: 'Asics Metaspeed Ray' },
   { src: '/images/shoes/endorphin-elite-2.webp', alt: 'Saucony Endorphin Elite 2' },
   { src: '/images/shoes/hyperwarp-pure.webp', alt: 'Mizuno HyperWarp Pure' },
   { src: '/images/shoes/cielo-x1-3-0.png', alt: 'Hoka Cielo X1 3.0' },
