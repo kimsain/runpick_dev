@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
+import { CONF_TEXT, CONF_DOT } from '@/lib/confidence'
 
 interface Props {
   shoe: Shoe
@@ -38,18 +39,15 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       {/* Image */}
       <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
-          const colorClass = shoe.confidence === 'very-high' ? 'text-blue-400' :
-            shoe.confidence === 'high' ? 'text-green-400' :
-            shoe.confidence === 'medium' ? 'text-yellow-400' : 'text-secondary'
-          const dotClass = shoe.confidence === 'very-high' ? 'bg-blue-400' :
-            shoe.confidence === 'high' ? 'bg-green-400' :
-            shoe.confidence === 'medium' ? 'bg-yellow-400' : 'bg-secondary'
-          const label = shoe.confidence === 'very-high' ? 'VERIFIED' :
-            shoe.confidence === 'high' ? 'RELIABLE' :
-            shoe.confidence === 'medium' ? 'LIMITED' : 'PENDING'
-          const tooltipText = shoe.confidence === 'very-high' ? 'RunRepeat + RTINGS 실측 데이터 완비' :
-            shoe.confidence === 'high' ? '실측 데이터 + 전문가 리뷰 확인' :
-            shoe.confidence === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
+          const conf = shoe.confidence ?? 'low'
+          const colorClass = CONF_TEXT[conf] ?? 'text-secondary'
+          const dotClass = CONF_DOT[conf] ?? 'bg-secondary'
+          const label = conf === 'very-high' ? 'VERIFIED' :
+            conf === 'high' ? 'RELIABLE' :
+            conf === 'medium' ? 'LIMITED' : 'PENDING'
+          const tooltipText = conf === 'very-high' ? 'RunRepeat + RTINGS 실측 데이터 완비' :
+            conf === 'high' ? '실측 데이터 + 전문가 리뷰 확인' :
+            conf === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
               <div className={`flex items-center gap-1 bg-dark/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
