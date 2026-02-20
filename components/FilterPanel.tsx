@@ -43,25 +43,6 @@ function parseSort(s: string): [string, 'asc' | 'desc'] {
   return [key, dir]
 }
 
-const SUBCATEGORY_MAP: Record<string, { id: string; label: string }[]> = {
-  daily: [
-    { id: 'entry', label: '입문' },
-    { id: 'max-cushion', label: '맥스쿠션' },
-    { id: 'all-rounder', label: '올라운드' },
-    { id: 'stability', label: '안정화' },
-    { id: 'lightweight', label: '경량' },
-  ],
-  'super-trainer': [
-    { id: 'no-plate', label: '플레이트리스' },
-    { id: 'light-plate', label: '라이트 플레이트' },
-    { id: 'carbon-plate', label: '카본 플레이트' },
-  ],
-  racing: [
-    { id: 'half', label: '하프' },
-    { id: 'full', label: '풀' },
-  ],
-}
-
 const SPEC_FILTERS = [
   { param: 'minCush', label: '쿠션성', color: 'spec-cushion' },
   { param: 'minResp', label: '반응성', color: 'spec-response' },
@@ -122,9 +103,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
   const selectedBrands = searchParams.get('brands')?.split(',').filter(Boolean) ?? []
   const category = searchParams.get('category') ?? 'all'
-  const subcategory = searchParams.get('subcategory') ?? ''
   const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
-  const maxWeight = Number(searchParams.get('maxWeight') ?? weightRange.max)
+  const sliderWeightMin = Math.floor(weightRange.min / 10) * 10
+  const sliderWeightMax = Math.ceil(weightRange.max / 10) * 10
+  const maxWeight = Number(searchParams.get('maxWeight') ?? sliderWeightMax)
   const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
   const currentSort = searchParams.get('sort') ?? 'name-asc'
   const [activeKey, activeDir] = parseSort(currentSort)
@@ -192,23 +174,6 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               </button>
             ))}
           </div>
-          {category !== 'all' && SUBCATEGORY_MAP[category] && (
-            <div className="grid grid-cols-2 gap-1.5 mt-2">
-              {SUBCATEGORY_MAP[category].map((sc) => (
-                <button
-                  key={sc.id}
-                  onClick={() => updateParam('subcategory', subcategory === sc.id ? '' : sc.id)}
-                  className={`text-xs font-body px-2 py-1.5 border transition-colors min-h-[36px] flex items-center justify-center text-center ${
-                    subcategory === sc.id
-                      ? 'border-accent text-accent bg-accent/10'
-                      : 'border-elevated text-secondary hover:border-secondary'
-                  }`}
-                >
-                  {sc.label}
-                </button>
-              ))}
-            </div>
-          )}
         </section>
 
         {/* Brands */}
@@ -310,12 +275,12 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 </div>
                 <input
                   type="range"
-                  min={weightRange.min}
-                  max={weightRange.max}
-                  step={1}
+                  min={sliderWeightMin}
+                  max={sliderWeightMax}
+                  step={10}
                   value={maxWeight}
                   onChange={(e) =>
-                    updateParam('maxWeight', Number(e.target.value) === weightRange.max ? '' : e.target.value)
+                    updateParam('maxWeight', Number(e.target.value) >= sliderWeightMax ? '' : e.target.value)
                   }
                   className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
                 />

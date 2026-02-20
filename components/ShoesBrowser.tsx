@@ -51,11 +51,6 @@ export default function ShoesBrowser({
       result = result.filter((s) => s.categoryId === category)
     }
 
-    const subcategory = searchParams.get('subcategory')
-    if (subcategory && category) {
-      result = result.filter((s) => s.subcategoryId === subcategory)
-    }
-
     const maxPrice = searchParams.get('maxPrice')
     if (maxPrice) {
       result = result.filter((s) => s.price <= Number(maxPrice))
@@ -104,8 +99,8 @@ export default function ShoesBrowser({
       const isAsc = sort.endsWith('-asc')
       const baseKey = sort.replace(/-(?:asc|desc)$/, '')
 
-      if (sort === 'name-asc') return a.nameKo.localeCompare(b.nameKo, 'ko')
-      if (sort === 'name-desc') return b.nameKo.localeCompare(a.nameKo, 'ko')
+      if (sort === 'name-asc') return a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
+      if (sort === 'name-desc') return b.name.localeCompare(a.name, 'en', { numeric: true, sensitivity: 'base' })
 
       let diff = 0
       if (SPEC_SORT_KEYS.includes(baseKey)) {

@@ -9,19 +9,6 @@ const CATEGORY_LABELS: Record<string, string> = {
   racing: '레이싱',
 }
 
-const SUBCATEGORY_LABELS: Record<string, string> = {
-  entry: '입문',
-  'max-cushion': '맥스쿠션',
-  'all-rounder': '올라운드',
-  stability: '안정화',
-  lightweight: '경량',
-  'no-plate': '플레이트리스',
-  'light-plate': '라이트 플레이트',
-  'carbon-plate': '카본 플레이트',
-  half: '하프',
-  full: '풀',
-}
-
 const SORT_LABELS: Record<string, string> = {
   'name-asc': '이름↑', 'name-desc': '이름↓',
   'value-desc': '가성비↓', 'value-asc': '가성비↑',
@@ -78,14 +65,6 @@ export default function ActiveFilterChips() {
     chips.push({
       label: CATEGORY_LABELS[category] ?? category,
       onRemove: () => removeParam('category'),
-    })
-  }
-
-  const subcategory = searchParams.get('subcategory')
-  if (subcategory) {
-    chips.push({
-      label: SUBCATEGORY_LABELS[subcategory] ?? subcategory,
-      onRemove: () => removeParam('subcategory'),
     })
   }
 
