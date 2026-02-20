@@ -94,11 +94,11 @@ const SPEC_ITEMS: SpecItem[] = [
       '아웃솔 고무 마모도, 미드솔 변형, 장거리 착용 후 상태 등 내구성 관련 데이터를 종합합니다.',
     basis: '아웃솔 내구성 평가 0–10점',
     modalContent: {
-      dataSource: 'RTINGS 아웃솔 마모 측정값 → 전문가 리뷰 보정',
+      dataSource: 'RunRepeat 아웃솔 두께·마모 측정값 → 전문가 리뷰 키워드 보정',
       formula:
-        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\nscore = clamp(round(log(ratio+1) / log(8.2) × 9 + 1), 1, 10)',
+        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\nscore = clamp(round(log(ratio+1) / log(8.2) × 9 + 1), 1, 10)\n\n# 마모 데이터만 있을 때\ncapped = min(outsoleDurability, 10.0)\nscore = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
       rationale:
-        '로그 스케일로 수확체감 반영. ratio ≥ 6.43이면 10점 만점. 마모 데이터만 있을 때는 간소화 공식 적용.',
+        '로그 스케일로 수확체감 반영. ratio ≥ 6.43이면 10점 만점. 두께 데이터 없을 때는 마모량 반비례 선형 공식으로 fallback.',
     },
   },
   {
@@ -222,7 +222,7 @@ export default function MethodologyPage() {
           각 스펙은 0–10점으로 정규화됩니다. 쿠션성·반응성은 실측 데이터(SA, ER%)를
           최우선으로 적용하고, 안정성·내구성은 실측 기준값에 전문가 리뷰 키워드 분석
           결과를 ±1 보정하여 반영합니다. 경량성은 전 모델 실측 무게를 역정규화하고,
-          가성비는 (쿠션성+반응성+안정성+내구성)÷가격 비율을 정규화합니다.
+          가성비는 (쿠션성+반응성+안정성+내구성)÷가격 비율을 min/max 앵커 기준으로 정규화합니다.
         </p>
         <SpecCardsSection items={SPEC_ITEMS} />
       </section>
