@@ -7,7 +7,6 @@ export default function HeroSection() {
 
   return (
     <AnimatedHeroContent
-      imageUrl="/images/shoes/alphafly-3.webp"
       totalCount={totalCount}
     />
   )

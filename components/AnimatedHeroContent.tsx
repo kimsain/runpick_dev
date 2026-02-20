@@ -11,11 +11,22 @@ import {
 } from 'framer-motion'
 
 interface Props {
-  imageUrl: string
   totalCount: number
 }
 
 const EASE_OUT_QUART = [0.25, 0.46, 0.45, 0.94] as const
+
+const HERO_SHOES = [
+  { src: '/images/shoes/alphafly-3.webp', alt: 'Nike Alphafly 3' },
+  { src: '/images/shoes/adizero-adios-pro-4.webp', alt: 'Adidas Adizero Adios Pro 4' },
+  { src: '/images/shoes/fast-r-nitro-elite-3.webp', alt: 'Puma FAST-R Nitro Elite 3' },
+  { src: '/images/shoes/metaspeed-sky-tokyo.webp', alt: 'Asics Metaspeed Sky Tokyo' },
+  { src: '/images/shoes/endorphin-elite-2.webp', alt: 'Saucony Endorphin Elite 2' },
+  { src: '/images/shoes/hyperwarp-pure.webp', alt: 'Mizuno HyperWarp Pure' },
+  { src: '/images/shoes/cielo-x1-3-0.png', alt: 'Hoka Cielo X1 3.0' },
+  { src: '/images/shoes/hyperion-elite-5.png', alt: 'Brooks Hyperion Elite 5' },
+  { src: '/images/shoes/fuelcell-sc-elite-v5.webp', alt: 'New Balance FuelCell SC Elite v5' },
+] as const
 
 const STATS = (totalCount: number) => [
   { value: '9', label: '개 브랜드' },
@@ -23,9 +34,18 @@ const STATS = (totalCount: number) => [
   { value: '실측', label: '데이터 기반' },
 ]
 
-export default function AnimatedHeroContent({ imageUrl, totalCount }: Props) {
+export default function AnimatedHeroContent({ totalCount }: Props) {
   const prefersReduced = useReducedMotion()
   const [isDesktop, setIsDesktop] = useState(false)
+  const [activeIndex, setActiveIndex] = useState(0)
+
+  useEffect(() => {
+    if (prefersReduced) return
+    const id = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % HERO_SHOES.length)
+    }, 4000)
+    return () => clearInterval(id)
+  }, [prefersReduced])
 
   useEffect(() => {
     const mq = window.matchMedia('(min-width: 768px)')
@@ -167,17 +187,27 @@ export default function AnimatedHeroContent({ imageUrl, totalCount }: Props) {
                 }}
               />
 
-              {/* Shoe image */}
-              <div className="relative max-h-[45vh] md:max-h-none">
-                <Image
-                  src={imageUrl}
-                  alt="Nike Alphafly 3"
-                  width={700}
-                  height={500}
-                  priority
-                  className="w-full h-auto object-contain drop-shadow-2xl"
-                  style={{ maxHeight: 'inherit' }}
-                />
+              {/* Shoe carousel */}
+              <div className="relative aspect-[7/5] max-h-[45vh] md:max-h-none">
+                {HERO_SHOES.map((shoe, index) => (
+                  <motion.div
+                    key={shoe.src}
+                    className="absolute inset-0"
+                    animate={{ opacity: index === activeIndex ? 1 : 0 }}
+                    transition={{ duration: 0.6, ease: EASE_OUT_QUART }}
+                    aria-hidden={index !== activeIndex}
+                  >
+                    <Image
+                      src={shoe.src}
+                      alt={shoe.alt}
+                      width={700}
+                      height={500}
+                      priority={index === 0}
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="w-full h-full object-contain drop-shadow-2xl"
+                    />
+                  </motion.div>
+                ))}
               </div>
               </motion.div>
             </motion.div>
