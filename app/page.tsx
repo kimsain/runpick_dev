@@ -1,33 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import HeroSection from '@/components/HeroSection'
 import ShoeCard from '@/components/ShoeCard'
 import { getAllShoes, getBrands } from '@/lib/data'
 import type { Shoe, Specs } from '@/lib/types'
-
-const PURPOSE_CARDS = [
-  {
-    title: '데일리',
-    desc: '매일 달려도 발을 든든하게 받쳐주는 트레이너',
-    href: '/shoes?category=daily',
-    color: '#C8FF00',
-    imageSlug: 'novablast-5',
-  },
-  {
-    title: '슈퍼트레이너',
-    desc: '템포·인터벌 훈련 한계를 끌어올리는 플레이티드 트레이너',
-    href: '/shoes?category=super-trainer',
-    color: '#FBBF24',
-    imageSlug: 'superblast-2',
-  },
-  {
-    title: '레이싱',
-    desc: '카본 플레이트로 목표 기록을 단축하는 레이서',
-    href: '/shoes?category=racing',
-    color: '#F87171',
-    imageSlug: 'alphafly-3',
-  },
-]
 
 const CONFIDENCE_ORDER: Record<string, number> = { 'very-high': 3, high: 2, medium: 1, low: 0 }
 
@@ -86,52 +61,6 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
-
-      {/* Purpose Cards */}
-      <section className="py-16 px-6 max-w-7xl mx-auto">
-        <h2 className="font-display text-lg text-primary mb-8 tracking-widest uppercase">
-          목적별 탐색
-        </h2>
-        <div className="grid grid-cols-3 gap-4">
-          {PURPOSE_CARDS.map((card) => {
-            const shoe = allShoes.find((s) => s.slug === card.imageSlug)
-            const imagePath = shoe ? `/images${shoe.imageUrl}` : ''
-
-            return (
-              <Link
-                key={card.title}
-                href={card.href}
-                className="group relative h-72 overflow-hidden bg-card border border-elevated hover:border-accent/40 transition-colors"
-              >
-                {imagePath && (
-                  <Image
-                    src={imagePath}
-                    alt={card.title}
-                    fill
-                    sizes="224px"
-                    className="object-contain p-4 opacity-40 group-hover:opacity-60 transition-opacity"
-                  />
-                )}
-                <div
-                  className="absolute inset-0 opacity-20"
-                  style={{
-                    background: `linear-gradient(to bottom, transparent, ${card.color})`,
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p
-                    className="font-display text-md leading-tight mb-1"
-                    style={{ color: card.color }}
-                  >
-                    {card.title}
-                  </p>
-                  <p className="text-secondary text-sm font-body">{card.desc}</p>
-                </div>
-              </Link>
-            )
-          })}
-        </div>
-      </section>
 
       {/* Brand Bar */}
       <section className="border-y border-elevated py-8 px-6">
