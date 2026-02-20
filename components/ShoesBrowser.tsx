@@ -127,7 +127,7 @@ export default function ShoesBrowser({
     <div>
       {/* Mobile header */}
       <div className="flex md:hidden items-center justify-between mb-6">
-        <p className="text-secondary text-sm font-body">
+        <p className="text-secondary text-sm font-body" aria-live="polite" aria-atomic="true">
           <span className="text-primary font-bold">{filtered.length}</span>개 결과
         </p>
         <FilterDrawer
@@ -159,7 +159,7 @@ export default function ShoesBrowser({
         {/* Grid */}
         <div className="flex-1 min-w-0">
           {/* Results count on desktop */}
-          <p className="hidden md:block text-secondary text-sm font-body mb-6">
+          <p className="hidden md:block text-secondary text-sm font-body mb-6" aria-live="polite" aria-atomic="true">
             <span className="text-primary font-bold">{filtered.length}</span>개 결과
           </p>
 

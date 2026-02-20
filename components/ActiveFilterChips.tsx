@@ -126,7 +126,7 @@ export default function ActiveFilterChips() {
       ))}
       <button
         onClick={() => router.push(pathname)}
-        className="text-sm font-body text-muted hover:text-secondary transition-colors min-h-[44px] px-2"
+        className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] px-3 py-2 border border-elevated hover:border-secondary"
       >
         전체 초기화
       </button>
