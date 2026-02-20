@@ -91,7 +91,7 @@ export default function HomePage() {
 
   const sections = [
     { title: '신규 러닝화', subtitle: null, shoes: newShoes },
-    { title: '최고의 가성비', subtitle: null, shoes: valueBest },
+    { title: '최고의 가성비', subtitle: '4개 스펙 합산 ÷ 출시가 기준', shoes: valueBest },
     { title: '최고의 에너지리턴', subtitle: '에너지리턴(ER%) 실측 측정값 기준', shoes: responsivenessBest },
     { title: '최고의 쿠션성', subtitle: '충격흡수(SA) 실측 측정값 기준', shoes: cushioningBest },
   ]
