@@ -96,15 +96,18 @@ export default function ShoesBrowser({
       result = result.filter((s) => (s.specs.valueScore ?? 0) >= Number(minVS))
     }
 
-    const sort = searchParams.get('sort') ?? 'value-desc'
+    const sort = searchParams.get('sort') ?? 'name-desc'
 
     const SPEC_SORT_KEYS = ['value', 'cushioning', 'responsiveness', 'stability', 'durability']
 
     result.sort((a, b) => {
-      let diff = 0
       const isAsc = sort.endsWith('-asc')
       const baseKey = sort.replace(/-(?:asc|desc)$/, '')
 
+      if (sort === 'name-asc') return a.nameKo.localeCompare(b.nameKo, 'ko')
+      if (sort === 'name-desc') return b.nameKo.localeCompare(a.nameKo, 'ko')
+
+      let diff = 0
       if (SPEC_SORT_KEYS.includes(baseKey)) {
         const descKey = `${baseKey}-desc`
         diff = isAsc

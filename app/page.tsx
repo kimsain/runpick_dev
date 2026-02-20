@@ -73,25 +73,12 @@ export default function HomePage() {
   const highConfidence = (s: Shoe) =>
     s.confidence === 'very-high' || s.confidence === 'high'
 
-  const currentYear = new Date().getFullYear()
-  const newShoes = allShoes
-    .filter((s) => s.releaseYear >= currentYear)
-    .sort((a, b) => {
-      if (b.releaseYear !== a.releaseYear) return b.releaseYear - a.releaseYear
-      return (
-        (CONFIDENCE_ORDER[b.confidence ?? 'low'] ?? 0) -
-        (CONFIDENCE_ORDER[a.confidence ?? 'low'] ?? 0)
-      )
-    })
-    .slice(0, 4)
-
   const valueBest = pickTop(allShoes, 'valueScore', highConfidence)
   const responsivenessBest = pickTop(allShoes, 'responsiveness', highConfidence)
   const cushioningBest = pickTop(allShoes, 'cushioning', highConfidence)
 
   const sections = [
-    { title: '신규 러닝화', subtitle: null, shoes: newShoes },
-    { title: '최고의 가성비', subtitle: '4개 스펙 합산 ÷ 출시가 기준', shoes: valueBest },
+    { title: '최고의 가성비', subtitle: '쿠션성·반응성·안정성·내구성 합산 ÷ 출시가 기준', shoes: valueBest },
     { title: '최고의 에너지리턴', subtitle: '에너지리턴(ER%) 실측 측정값 기준', shoes: responsivenessBest },
     { title: '최고의 쿠션성', subtitle: '충격흡수(SA) 실측 측정값 기준', shoes: cushioningBest },
   ]

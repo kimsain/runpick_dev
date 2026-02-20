@@ -19,6 +19,7 @@ const CATEGORIES = [
 ]
 
 const SORTS_META = [
+  { key: 'name',           label: '이름',   defaultDir: 'desc' as const },
   { key: 'value',          label: '가성비',  defaultDir: 'desc' as const },
   { key: 'cushioning',     label: '쿠션성',  defaultDir: 'desc' as const },
   { key: 'responsiveness', label: '반응성',  defaultDir: 'desc' as const },
@@ -29,13 +30,14 @@ const SORTS_META = [
 ]
 
 const VALID_SORTS = new Set([
+  'name-asc','name-desc',
   'value-desc','value-asc','cushioning-desc','cushioning-asc',
   'responsiveness-desc','responsiveness-asc','stability-desc','stability-asc',
   'durability-desc','durability-asc','weight-asc','weight-desc','price-asc','price-desc',
 ])
 
 function parseSort(s: string): [string, 'asc' | 'desc'] {
-  if (!VALID_SORTS.has(s)) return ['value', 'desc']
+  if (!VALID_SORTS.has(s)) return ['name', 'desc']
   const dir = s.endsWith('-asc') ? 'asc' : 'desc'
   const key = dir === 'asc' ? s.slice(0, -4) : s.slice(0, -5)
   return [key, dir]
@@ -124,7 +126,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
   const maxWeight = Number(searchParams.get('maxWeight') ?? weightRange.max)
   const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
-  const currentSort = searchParams.get('sort') ?? 'value-desc'
+  const currentSort = searchParams.get('sort') ?? 'name-desc'
   const [activeKey, activeDir] = parseSort(currentSort)
 
   return (
@@ -133,7 +135,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         {/* Sort */}
         <section>
           <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">정렬</h3>
-          <div className="flex flex-wrap gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {SORTS_META.map((s) => {
               const isActive = activeKey === s.key
               const dir = isActive ? activeDir : s.defaultDir
@@ -149,13 +151,14 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                       updateParam('sort', `${s.key}-${nextDir}`)
                     }
                   }}
-                  className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center gap-1 ${
+                  className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center justify-between ${
                     isActive
                       ? 'border-accent text-accent bg-accent/10'
                       : 'border-elevated text-secondary hover:border-secondary'
                   }`}
                 >
-                  {s.label}{isActive && <span>{arrow}</span>}
+                  <span>{s.label}</span>
+                  <span className={`text-xs transition-opacity ${isActive ? 'opacity-100' : 'opacity-25'}`}>{arrow}</span>
                 </button>
               )
             })}
@@ -165,7 +168,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         {/* Category */}
         <section>
           <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">카테고리</h3>
-          <div className="flex flex-wrap gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
@@ -179,7 +182,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   params.delete('subcategory')
                   router.push(`${pathname}?${params.toString()}`)
                 }}
-                className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center ${
+                className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center justify-center text-center ${
                   category === c.id
                     ? 'border-accent text-accent bg-accent/10'
                     : 'border-elevated text-secondary hover:border-secondary'
@@ -190,12 +193,12 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             ))}
           </div>
           {category !== 'all' && SUBCATEGORY_MAP[category] && (
-            <div className="flex flex-wrap gap-1.5 mt-2">
+            <div className="grid grid-cols-2 gap-1.5 mt-2">
               {SUBCATEGORY_MAP[category].map((sc) => (
                 <button
                   key={sc.id}
                   onClick={() => updateParam('subcategory', subcategory === sc.id ? '' : sc.id)}
-                  className={`text-xs font-body px-2 py-1.5 border rounded transition-colors min-h-[36px] flex items-center ${
+                  className={`text-xs font-body px-2 py-1.5 border transition-colors min-h-[36px] flex items-center justify-center text-center ${
                     subcategory === sc.id
                       ? 'border-accent text-accent bg-accent/10'
                       : 'border-elevated text-secondary hover:border-secondary'
@@ -369,7 +372,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                     <div className="flex justify-between items-center text-sm font-body mb-1">
                       <span className={`text-${f.color}`}>{f.label}</span>
                       <div className="flex items-center gap-1">
-                        <span className="text-primary font-bold">{val === 1 ? '없음' : val}</span>
+                        <span className="text-primary font-bold">{val}</span>
                         {val > 1 && (
                           <button
                             onClick={() => updateParam(f.param, '')}
