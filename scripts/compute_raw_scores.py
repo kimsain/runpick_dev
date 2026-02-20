@@ -16,16 +16,18 @@ import argparse
 import json
 from pathlib import Path
 
+from formulas import (
+    clamp,
+    raw_cushioning_from_runrepeat,
+    raw_cushioning_from_rtings,
+    raw_responsiveness_from_runrepeat,
+    raw_responsiveness_from_rtings,
+    CUSH_RANGE_RAW,
+    CUSH_RANGE,
+)
+
 RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
-
-
-def clamp(v, lo, hi):
-    return max(lo, min(hi, v))
-
-
-def round1(v):
-    return round(v, 2)
 
 
 def compute_raw(sources):
@@ -44,15 +46,15 @@ def compute_raw(sources):
         h_sa = c.get("heelShockAbsorption")
         f_sa = c.get("forefootShockAbsorption")
         if h_sa is not None and f_sa is not None:
-            raw_cushion = round1(clamp((h_sa * 0.4 + f_sa * 0.6 - 50) / 150 * 10, 0, 10))
-            cushion_int = clamp(round((h_sa * 0.4 + f_sa * 0.6 - 50) / 104 * 10), 0, 10)
+            raw_cushion = raw_cushioning_from_runrepeat(h_sa, f_sa)
+            cushion_int = clamp(round(raw_cushion * CUSH_RANGE_RAW / CUSH_RANGE), 0, 10)
     if raw_cushion is None and rt:
         c = rt.get("attributeScores", {}).get("cushioning", {})
         h_c = c.get("heelShockAbsorption")
         f_c = c.get("forefootShockAbsorption")
         if h_c is not None and f_c is not None:
-            raw_cushion = round1(clamp(0.675 * (h_c + f_c) / 2, 0, 10))
-            cushion_int = clamp(round(raw_cushion * 150 / 104), 0, 10)
+            raw_cushion = raw_cushioning_from_rtings(h_c, f_c)
+            cushion_int = clamp(round(raw_cushion * CUSH_RANGE_RAW / CUSH_RANGE), 0, 10)
 
     # rawResponsiveness: RunRepeat ER% 우선
     if rr:
@@ -60,13 +62,13 @@ def compute_raw(sources):
         h_er = r.get("heelEnergyReturn")
         f_er = r.get("forefootEnergyReturn")
         if h_er is not None and f_er is not None:
-            raw_resp = round1(clamp(((h_er + f_er) / 2 - 30) / 55 * 10, 0, 10))
+            raw_resp = raw_responsiveness_from_runrepeat(h_er, f_er)
     if raw_resp is None and rt:
         r = rt.get("attributeScores", {}).get("responsiveness", {})
         h_er = r.get("heelEnergyReturn")
         f_er = r.get("forefootEnergyReturn")
         if h_er is not None and f_er is not None:
-            raw_resp = round1(clamp((h_er + f_er) / 2 / 10, 0, 10))
+            raw_resp = raw_responsiveness_from_rtings(h_er, f_er)
 
     return raw_cushion, raw_resp, cushion_int
 

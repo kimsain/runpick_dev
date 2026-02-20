@@ -5,7 +5,7 @@ calibrate_rtings.py
 RunRepeat + RTINGS 모두 보유한 신발에서
 RTINGS 공식 적용 결과 vs 현재 생산 스코어 비교 분석.
 
-목적: RTINGS 공식의 bias/상관계수를 파악해 normalize_rtings_only.py 공식 조정에 활용.
+목적: RTINGS 공식의 bias/상관계수를 파악해 normalize_from_rtings.py 공식 조정에 활용.
 사용법: python3 scripts/calibrate_rtings.py
 """
 
@@ -13,12 +13,10 @@ import json
 import statistics
 from pathlib import Path
 
+from formulas import clamp, cushioning_from_rtings, responsiveness_from_rtings
+
 RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
-
-
-def clamp(val, lo, hi):
-    return max(lo, min(hi, val))
 
 
 def get_attempt_status(attempt_log, source_name):
@@ -53,10 +51,9 @@ def load_production():
 
 def compute_rtings_scores(rtings_src, subcategoryId):
     """
-    RTINGS 공식 적용:
-    - cushioning = round((heelShockAbsorption + forefootShockAbsorption) / 2)
-    - responsiveness = clamp(round(avg_energy_return / 10), 1, 10)
-                       max-cushion 카테고리는 -1 페널티
+    RTINGS 공식 적용 (캘리브레이션용 — 페널티 적용 전 raw bias 측정).
+    - cushioning = round((heel + forefoot) / 2)
+    - responsiveness = clamp(round(avg_er / 10), 1, 10), max-cushion만 -1
     Returns (cushioning, responsiveness) — None if data missing
     """
     cush = rtings_src["attributeScores"]["cushioning"]
@@ -66,7 +63,7 @@ def compute_rtings_scores(rtings_src, subcategoryId):
     fore_cush = cush.get("forefootShockAbsorption")
     cushioning = None
     if heel_cush is not None and fore_cush is not None:
-        cushioning = round((heel_cush + fore_cush) / 2)
+        cushioning = cushioning_from_rtings(heel_cush, fore_cush)
 
     heel_er = resp.get("heelEnergyReturn")
     fore_er = resp.get("forefootEnergyReturn")
