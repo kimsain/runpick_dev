@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className="bg-base text-primary font-body antialiased">
+      <body className="bg-dark text-primary font-body antialiased">
         {/* Nav */}
-        <header className="fixed top-0 left-0 right-0 z-30 bg-base/90 backdrop-blur-sm border-b border-elevated">
+        <header className="fixed top-0 left-0 right-0 z-30 bg-dark/90 backdrop-blur-sm border-b border-elevated">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link href="/" className="font-display text-xl text-primary tracking-widest">
               RUNPICK

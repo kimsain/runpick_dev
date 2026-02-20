@@ -36,7 +36,7 @@ export default function FilterDrawer({
       {/* Backdrop */}
       {open && (
         <div
-          className="fixed inset-0 bg-base/80 z-40"
+          className="fixed inset-0 bg-dark/80 z-40"
           onClick={() => setOpen(false)}
         />
       )}
@@ -71,7 +71,7 @@ export default function FilterDrawer({
         <div className="px-4 pb-6">
           <button
             onClick={() => setOpen(false)}
-            className="w-full bg-accent text-base font-display text-lg py-3 hover:bg-accent/90 transition-colors min-h-[44px]"
+            className="w-full bg-accent text-dark font-display text-lg py-3 hover:bg-accent/90 transition-colors min-h-[44px]"
           >
             {totalCount}개 결과 보기
           </button>

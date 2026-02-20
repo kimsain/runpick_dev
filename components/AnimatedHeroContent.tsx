@@ -154,7 +154,7 @@ export default function AnimatedHeroContent({ totalCount }: Props) {
             >
               <Link
                 href="/shoes"
-                className="inline-flex items-center gap-3 bg-accent text-base font-display text-xl px-6 py-4 min-h-[44px] transition-shadow hover:shadow-[0_0_24px_rgba(200,255,0,0.4)]"
+                className="inline-flex items-center gap-3 bg-accent text-dark font-display text-xl px-6 py-4 min-h-[44px] transition-shadow hover:shadow-[0_0_24px_rgba(200,255,0,0.4)]"
               >
                 신발 탐색 →
               </Link>

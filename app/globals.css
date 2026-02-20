@@ -61,6 +61,14 @@ body {
   display: none;
 }
 
+@media (max-width: 479px) {
+  html { font-size: 0.85rem; }
+}
+
+.tracking-caption {
+  letter-spacing: 0.02em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
