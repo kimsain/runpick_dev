@@ -93,28 +93,24 @@ const SPEC_ITEMS = [
 const CONFIDENCE_LEVELS = [
   {
     label: 'VERIFIED',
-    labelEn: 'Verified',
     badge: CONF_COLORS['very-high'],
     description:
       'RunRepeat와 RTINGS 두 실측 측정 데이터가 모두 확인된 경우. 계측 장비 기반 데이터 2종과 전문가 리뷰를 종합한 최고 신뢰도입니다.',
   },
   {
     label: 'RELIABLE',
-    labelEn: 'High',
     badge: CONF_COLORS['high'],
     description:
       'RunRepeat 또는 RTINGS 실측 데이터 + 전문가 리뷰 1개 이상이 확인된 경우.',
   },
   {
     label: 'LIMITED',
-    labelEn: 'Medium',
     badge: CONF_COLORS['medium'],
     description:
       '실측 데이터 없이 전문가 리뷰 2개 이상이 확인된 경우.',
   },
   {
     label: 'PENDING',
-    labelEn: 'Low',
     badge: CONF_COLORS['low'],
     description:
       '전문가 리뷰 1개 이하 또는 제한적인 데이터만 존재하는 경우.',
@@ -224,22 +220,17 @@ export default function MethodologyPage() {
         <div className="space-y-4">
           {CONFIDENCE_LEVELS.map((level) => (
             <div
-              key={level.labelEn}
+              key={level.label}
               className="bg-card border border-elevated p-6 flex items-start gap-4"
             >
               <span
-                className={`text-sm font-body px-2 py-1 shrink-0 ${level.badge}`}
+                className={`text-xs font-body px-1.5 py-0.5 shrink-0 ${level.badge}`}
               >
                 {level.label}
               </span>
-              <div>
-                <span className="text-sm font-body text-muted mb-1 block">
-                  {level.labelEn}
-                </span>
-                <p className="text-secondary text-sm font-body">
-                  {level.description}
-                </p>
-              </div>
+              <p className="text-secondary text-sm font-body">
+                {level.description}
+              </p>
             </div>
           ))}
         </div>

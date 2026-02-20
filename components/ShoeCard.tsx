@@ -52,8 +52,8 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
             shoe.confidence === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
-              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-2 py-1 text-sm font-body border border-elevated ${colorClass}`}>
-                <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
+              <div className={`flex items-center gap-1 bg-base/80 backdrop-blur-sm px-1.5 py-0.5 text-xs font-body border border-elevated ${colorClass}`}>
+                <span className={`w-1.5 h-1.5 rounded-full inline-block ${dotClass}`} />
                 {label}
               </div>
               <div className="absolute top-full right-0 mt-1 w-56 bg-base/95 backdrop-blur-sm border border-elevated px-3 py-2 text-sm text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
