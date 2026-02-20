@@ -188,7 +188,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 <span className="text-accent normal-case font-body ml-1">({selectedBrands.length})</span>
               )}
             </span>
-            <span className="text-xs">{brandsOpen ? '▲' : '▼'}</span>
+            <svg className={`w-4 h-4 transition-transform ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
           {brandsOpen && (
             <div className={mobile ? 'grid grid-cols-2 gap-2' : 'space-y-1'}>
@@ -242,7 +244,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 </span>
               )}
             </span>
-            <span className="text-xs">{rangeOpen ? '▲' : '▼'}</span>
+            <svg className={`w-4 h-4 transition-transform ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
           {rangeOpen && (
             <div className="space-y-4">
@@ -327,7 +331,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 <span className="text-accent normal-case font-body ml-1">({activeSpecCount}개 활성)</span>
               )}
             </span>
-            <span className="text-xs">{specOpen ? '▲' : '▼'}</span>
+            <svg className={`w-4 h-4 transition-transform ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+            </svg>
           </button>
           {specOpen && (
             <div className="space-y-4">

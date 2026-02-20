@@ -66,7 +66,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
       {/* Desktop: 2-col sticky layout */}
       <div className="md:grid md:grid-cols-2 md:gap-16">
         {/* Left: sticky image */}
-        <div className="md:sticky md:top-24 md:h-[calc(100vh-8rem)] flex items-center justify-center mb-10 md:mb-0">
+        <div className="md:sticky md:top-24 md:h-[calc(100vh-8rem)] flex items-center justify-center mb-8 md:mb-0">
           <div className="relative w-full max-w-sm aspect-square">
             <Image
               src={imagePath}
