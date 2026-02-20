@@ -5,8 +5,8 @@ normalize_runrepeat_rtings.py  — Case B 정규화
 RunRepeat + RTINGS 둘 다 있는 신발의 스코어를 RunRepeat 계측치 기반으로 정규화.
 
 정규화 공식:
-  cushioning    = clamp(round((raw-50)/(200-50)*10), 1, 10)
-                  where raw = heelSA * 0.6 + forefootSA * 0.4
+  cushioning    = clamp(round((raw-50)/104*10), 1, 10)
+                  where raw = heelSA * 0.4 + forefootSA * 0.6
   responsiveness = clamp(round((avg_ER - 30) / (82 - 30) * 10), 1, 10)
   stability     = existing + delta (keywords: +1 positive, -1 negative)
   durability    = existing + delta (keywords: +1 positive, -1 negative)
@@ -97,8 +97,8 @@ def compute_scores(rr_src, existing_specs, findings_text):
     fore_sa = rr_cush.get("forefootShockAbsorption")
     cushioning = None
     if heel_sa is not None and fore_sa is not None:
-        raw = heel_sa * 0.6 + fore_sa * 0.4
-        cushioning = clamp(round((raw - 50) / (200 - 50) * 10), 1, 10)
+        raw = heel_sa * 0.4 + fore_sa * 0.6
+        cushioning = clamp(round((raw - 50) / 104 * 10), 1, 10)
 
     # responsiveness from RunRepeat ER%
     heel_er = rr_resp.get("heelEnergyReturn")

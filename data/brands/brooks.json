@@ -23,7 +23,7 @@
       "specs": {
         "weight": 286,
         "drop": 10,
-        "cushioning": 5,
+        "cushioning": 6,
         "responsiveness": 5,
         "stability": 10,
         "durability": 6,
@@ -33,7 +33,7 @@
         },
         "weightScore": 3,
         "valueScore": 9,
-        "rawCushioning": 4.93,
+        "rawCushioning": 4.4,
         "rawResponsiveness": 4.57
       },
       "pros": [
@@ -80,7 +80,7 @@
       "specs": {
         "weight": 244,
         "drop": 8,
-        "cushioning": 4,
+        "cushioning": 6,
         "responsiveness": 5,
         "stability": 10,
         "durability": 6,
@@ -90,7 +90,7 @@
         },
         "weightScore": 5,
         "valueScore": 7,
-        "rawCushioning": 4.48,
+        "rawCushioning": 4.05,
         "rawResponsiveness": 5.08
       },
       "pros": [
@@ -137,7 +137,7 @@
       "specs": {
         "weight": 303,
         "drop": 6,
-        "cushioning": 5,
+        "cushioning": 7,
         "responsiveness": 4,
         "stability": 10,
         "durability": 6,
@@ -147,7 +147,7 @@
         },
         "weightScore": 2,
         "valueScore": 7,
-        "rawCushioning": 5.12,
+        "rawCushioning": 4.88,
         "rawResponsiveness": 3.8
       },
       "pros": [
@@ -194,9 +194,9 @@
       "specs": {
         "weight": 289,
         "drop": 10,
-        "cushioning": 5,
+        "cushioning": 7,
         "responsiveness": 5,
-        "stability": 9,
+        "stability": 10,
         "durability": 6,
         "stackHeight": {
           "heel": 38.5,
@@ -204,7 +204,7 @@
         },
         "weightScore": 3,
         "valueScore": 6,
-        "rawCushioning": 4.89,
+        "rawCushioning": 4.57,
         "rawResponsiveness": 4.84
       },
       "pros": [
@@ -316,7 +316,7 @@
         },
         "weightScore": 1,
         "valueScore": 5,
-        "rawCushioning": 6.3,
+        "rawCushioning": 5.91,
         "rawResponsiveness": 6.87
       },
       "pros": [
@@ -373,7 +373,7 @@
         },
         "weightScore": 2,
         "valueScore": 8,
-        "rawCushioning": 4.46,
+        "rawCushioning": 4.19,
         "rawResponsiveness": 6.82
       },
       "pros": [
@@ -420,7 +420,7 @@
       "specs": {
         "weight": 281,
         "drop": 6,
-        "cushioning": 6,
+        "cushioning": 9,
         "responsiveness": 7,
         "stability": 10,
         "durability": 6,
@@ -430,7 +430,7 @@
         },
         "weightScore": 3,
         "valueScore": 7,
-        "rawCushioning": 6.25,
+        "rawCushioning": 6.01,
         "rawResponsiveness": 6.37
       },
       "pros": [
@@ -477,9 +477,9 @@
       "specs": {
         "weight": 196,
         "drop": 8,
-        "cushioning": 6,
+        "cushioning": 7,
         "responsiveness": 9,
-        "stability": 8,
+        "stability": 9,
         "durability": 6,
         "stackHeight": {
           "heel": 37.6,
@@ -487,7 +487,7 @@
         },
         "weightScore": 7,
         "valueScore": 4,
-        "rawCushioning": 5.56,
+        "rawCushioning": 4.97,
         "rawResponsiveness": 8.6
       },
       "pros": [
