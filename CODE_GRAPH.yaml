@@ -1,7 +1,7 @@
 # CODE_GRAPH.yaml — Committed to git, treated like README
 metadata:
   generated_at: "2026-02-19T00:00:00Z"
-  last_synced_at: "2026-02-20T00:00:00Z"
+  last_synced_at: "2026-02-20T12:00:00Z"
   root_dir: "."
   tech_stack: ["TypeScript", "Next.js 14", "React 18", "Tailwind CSS v3", "Recharts", "Framer Motion"]
   architecture_pattern: "layered"
@@ -198,7 +198,7 @@ modules:
         exports:
           - name: "ShoeCard"
             signature: "default function ShoeCard({ shoe, priority? })"
-            description: "aspect-[3/4] card with hover slide-up overlay; confidence badge (top-right: 최고 신뢰/검증됨/참고용/평가중); price in text-primary; spec bars for cushion/response/stability/durability; links to /shoes/[slug]"
+            description: "aspect-[4/3] mobile / aspect-[3/4] desktop card with hover slide-up overlay; confidence badge (top-right: 최고 신뢰/검증됨/참고용/평가중); price in text-primary; spec bars for cushion/response/stability/durability; name uses line-clamp-2; links to /shoes/[slug]"
       - path: "components/HeroSection.tsx"
         role: "core-logic"
         exports:
@@ -254,8 +254,8 @@ modules:
         role: "core-logic"
         exports:
           - name: "FilterPanel"
-            signature: "default function FilterPanel({ brands, priceRange, weightRange, dropRange })"
-            description: "use client; 240px sticky sidebar with sort, category tabs (전체/데일리/슈퍼트레이너/레이싱), brand checkboxes, price/weight/drop range sliders, spec min sliders. Mutations via router.push with updated searchParams"
+            signature: "default function FilterPanel({ brands, priceRange, weightRange, dropRange, mobile? })"
+            description: "use client; 240px sticky sidebar (desktop) or full-width layout (mobile); sort, category tabs (전체/데일리/슈퍼트레이너/레이싱), brand checkboxes (2-col grid on mobile), price/weight/drop range sliders, spec min sliders. Mutations via router.push with updated searchParams"
       - path: "components/FilterDrawer.tsx"
         role: "middleware"
         exports:
