@@ -59,8 +59,10 @@ export default function FilterDrawer({
       {/* Drawer */}
       <div
         role="dialog"
-        aria-modal="true"
+        aria-modal={open ? true : undefined}
+        aria-hidden={!open}
         aria-label="필터"
+        inert={!open ? true : undefined}
         className={`fixed bottom-0 left-0 right-0 z-50 bg-surface border-t border-elevated max-h-[85vh] overflow-y-auto transition-transform duration-300 ${
           open ? 'translate-y-0' : 'translate-y-full'
         }`}

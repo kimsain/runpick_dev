@@ -39,7 +39,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       {/* Image */}
       <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
-          const conf = shoe.confidence ?? 'low'
+          const conf = shoe.confidence
           const colorClass = CONF_TEXT[conf] ?? 'text-secondary'
           const dotClass = CONF_DOT[conf] ?? 'bg-secondary'
           const label = conf === 'very-high' ? 'VERIFIED' :
@@ -53,7 +53,6 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
               <div
                 className={`flex items-center gap-1 bg-dark/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}
                 title={tooltipText}
-                role="status"
               >
                 <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
                 {label}
