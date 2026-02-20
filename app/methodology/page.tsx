@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { CONF_COLORS } from '@/lib/confidence'
+import SpecCardsSection, { type SpecItem } from '@/components/SpecCardsSection'
 
 const DATA_SOURCES = [
   {
@@ -39,7 +40,7 @@ const DATA_SOURCES = [
   },
 ]
 
-const SPEC_ITEMS = [
+const SPEC_ITEMS: SpecItem[] = [
   {
     name: '쿠션성',
     nameEn: 'Cushioning',
@@ -47,6 +48,13 @@ const SPEC_ITEMS = [
     description:
       '힐과 포어풋의 충격흡수(Shock Attenuation, SA) 측정값을 기반으로 산출합니다. SA 값이 높을수록 충격을 효과적으로 흡수합니다.',
     basis: '힐/포어풋 SA 기반 0–10점',
+    modalContent: {
+      dataSource: 'RunRepeat Heel/Forefoot SA → RTINGS → 정성 리뷰 순으로 적용',
+      formula:
+        'raw = heelSA × 0.4 + forefootSA × 0.6\nscore = clamp(round((raw − 50) / 104 × 10), 1, 10)',
+      rationale:
+        'forefoot SA에 60% 가중 적용 (현대 midfoot 착지 주류). 범위 50~154는 전수조사 기준 실측값.',
+    },
   },
   {
     name: '반응성',
@@ -55,6 +63,13 @@ const SPEC_ITEMS = [
     description:
       '에너지 리턴(Energy Return, ER%) 측정값을 기반으로 산출합니다. ER%가 높을수록 착지 시 에너지를 더 많이 돌려받습니다.',
     basis: '에너지 리턴 ER% 기반 0–10점',
+    modalContent: {
+      dataSource: 'RunRepeat Energy Return % → RTINGS 순으로 적용',
+      formula:
+        'avg_er = (heelER + forefootER) / 2\nscore = clamp(round((avg_er − 30) / 52 × 10), 1, 10)',
+      rationale:
+        '범위 30~82%, 선형 스케일 (ER%는 물리 에너지 보존율). RTINGS-only 데이터 사용 시 카테고리별 −1~−2 페널티 적용.',
+    },
   },
   {
     name: '안정성',
@@ -63,6 +78,13 @@ const SPEC_ITEMS = [
     description:
       '전문가 리뷰에서 평가한 착지 안정성, 흔들림 제어, 가이드 레일 효과 등을 종합합니다.',
     basis: '전문가 리뷰 종합 0–10점',
+    modalContent: {
+      dataSource: 'RunRepeat torsionalRigidity + heelCounterStiffness → 전문가 리뷰 키워드 보정',
+      formula:
+        'score = clamp(round(torsionalRigidity + heelCounterStiffness), 1, 10)\n# 키워드 보정: stable/supportive → +1  /  unstable/wobbly → -1',
+      rationale:
+        '두 항목 /5 스케일 합산 → 0~10 범위 (별도 정규화 불필요). 전문가 리뷰 키워드로 ±1 미세 보정.',
+    },
   },
   {
     name: '내구성',
@@ -71,14 +93,27 @@ const SPEC_ITEMS = [
     description:
       '아웃솔 고무 마모도, 미드솔 변형, 장거리 착용 후 상태 등 내구성 관련 데이터를 종합합니다.',
     basis: '아웃솔 내구성 평가 0–10점',
+    modalContent: {
+      dataSource: 'RTINGS 아웃솔 마모 측정값 → 전문가 리뷰 보정',
+      formula:
+        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\nscore = clamp(round(log(ratio+1) / log(8.2) × 9 + 1), 1, 10)',
+      rationale:
+        '로그 스케일로 수확체감 반영. ratio ≥ 6.43이면 10점 만점. 마모 데이터만 있을 때는 간소화 공식 적용.',
+    },
   },
   {
     name: '경량성',
     nameEn: 'Lightness',
     color: 'var(--spec-weight)',
-    description:
-      '실측 무게(g) 기준 역정규화. 가벼울수록 높은 점수.',
+    description: '실측 무게(g) 기준 역정규화. 가벼울수록 높은 점수.',
     basis: '전 모델 실측 무게 역정규화 0–10점',
+    modalContent: {
+      dataSource: '실측 무게(g) — 항상 직접 계산',
+      formula:
+        'score = clamp(round((351 − weight) / 222 × 10), 1, 10)\nLIGHT = 129g (metaspeed-ray)  /  HEAVY = 351g (vomero-premium)',
+      rationale:
+        '고정 상수 사용 (신발 추가 시 기존 점수 불변), 선형 반비례. 기준값은 현재 데이터베이스 최경량·최중량 기준.',
+    },
   },
   {
     name: '가성비',
@@ -87,6 +122,13 @@ const SPEC_ITEMS = [
     description:
       '가격 대비 성능. (쿠션성+반응성+안정성+내구성) ÷ 가격 비율을 전 모델 대비 정규화.',
     basis: '성능 합산 ÷ 가격 비율 정규화 0–10점',
+    modalContent: {
+      dataSource: '4개 스펙 합산 ÷ 출시가(KRW) — 항상 직접 계산',
+      formula:
+        'score = clamp(round((쿠션 + 반응 + 안정 + 내구) / price × 48000), 1, 10)',
+      rationale:
+        'scale=48000은 역산 최적값. 경량성은 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
+    },
   },
 ]
 
@@ -182,30 +224,7 @@ export default function MethodologyPage() {
           결과를 ±1 보정하여 반영합니다. 경량성은 전 모델 실측 무게를 역정규화하고,
           가성비는 (쿠션성+반응성+안정성+내구성)÷가격 비율을 정규화합니다.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {SPEC_ITEMS.map((spec) => (
-            <div
-              key={spec.nameEn}
-              className="bg-card border border-elevated p-6"
-            >
-              <div className="flex items-baseline gap-2 mb-3">
-                <span
-                  className="font-display text-xl"
-                  style={{ color: spec.color }}
-                >
-                  {spec.name}
-                </span>
-                <span className="text-sm font-body text-muted">
-                  {spec.nameEn}
-                </span>
-              </div>
-              <p className="text-secondary text-sm font-body mb-3">
-                {spec.description}
-              </p>
-              <p className="text-xs font-body text-muted">{spec.basis}</p>
-            </div>
-          ))}
-        </div>
+        <SpecCardsSection items={SPEC_ITEMS} />
       </section>
 
       {/* 신뢰도 등급 */}
