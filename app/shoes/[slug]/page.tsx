@@ -103,17 +103,17 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             <SpecRadar specs={shoe.specs} />
 
             {/* Numeric specs */}
-            <div className="grid grid-cols-3 gap-3 mt-6">
-              <div className="bg-card border border-elevated p-4 text-center">
-                <p className="font-display text-lg text-accent">{shoe.specs.weight}</p>
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-6">
+              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
+                <p className="font-display text-base sm:text-lg text-accent">{shoe.specs.weight}</p>
                 <p className="text-secondary text-sm font-body mt-1">g / 무게</p>
               </div>
-              <div className="bg-card border border-elevated p-4 text-center">
-                <p className="font-display text-lg text-accent">{shoe.specs.drop}</p>
+              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
+                <p className="font-display text-base sm:text-lg text-accent">{shoe.specs.drop}</p>
                 <p className="text-secondary text-sm font-body mt-1">mm / 드롭</p>
               </div>
-              <div className="bg-card border border-elevated p-4 text-center">
-                <p className="font-display text-lg text-accent">
+              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
+                <p className="font-display text-base sm:text-lg text-accent whitespace-nowrap">
                   {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
                 </p>
                 <p className="text-secondary text-sm font-body mt-1">mm / 스택</p>
