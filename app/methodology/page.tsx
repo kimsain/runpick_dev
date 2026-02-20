@@ -243,7 +243,7 @@ export default function MethodologyPage() {
               className="bg-card border border-elevated p-6 flex items-start gap-4"
             >
               <span
-                className={`text-xs font-body px-1.5 py-0.5 shrink-0 ${level.badge}`}
+                className={`text-xs font-body px-2 py-1 shrink-0 ${level.badge}`}
               >
                 {level.label}
               </span>

@@ -133,7 +133,7 @@ export default function AnimatedHeroContent({ totalCount }: Props) {
             {STATS(totalCount).map((stat) => (
               <div
                 key={stat.label}
-                className="border border-elevated px-3 py-1.5 text-sm font-body"
+                className="border border-elevated px-3 py-2 text-sm font-body"
               >
                 <span className="text-accent font-display">{stat.value}</span>
                 <span className="text-secondary ml-1">{stat.label}</span>
