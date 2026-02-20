@@ -188,7 +188,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 <span className="text-accent normal-case font-body ml-1">({selectedBrands.length})</span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className={`w-4 h-4 transition-transform ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -244,7 +244,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 </span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className={`w-4 h-4 transition-transform ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -331,7 +331,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 <span className="text-accent normal-case font-body ml-1">({activeSpecCount}개 활성)</span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className={`w-4 h-4 transition-transform ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
