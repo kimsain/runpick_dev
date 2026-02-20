@@ -155,9 +155,9 @@ export default function AnimatedHeroContent({ imageUrl, totalCount }: Props) {
               initial={{ opacity: 0, x: prefersReduced ? 0 : 40, scale: prefersReduced ? 1 : 0.95 }}
               animate={{ opacity: 1, x: 0, scale: 1 }}
               transition={transition(0.15)}
-              {...floatingAnimation}
               className="relative"
             >
+              <motion.div {...floatingAnimation}>
               {/* Chartreuse glow */}
               <div
                 className="absolute inset-0 rounded-full blur-3xl pointer-events-none"
@@ -179,6 +179,7 @@ export default function AnimatedHeroContent({ imageUrl, totalCount }: Props) {
                   style={{ maxHeight: 'inherit' }}
                 />
               </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
