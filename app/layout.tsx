@@ -26,13 +26,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="flex items-center gap-6">
               <Link
                 href="/methodology"
-                className="text-sm font-body text-secondary hover:text-primary transition-colors"
+                className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] flex items-center"
               >
                 점수 산정 방법
               </Link>
               <Link
                 href="/shoes"
-                className="text-sm font-body text-secondary hover:text-primary transition-colors"
+                className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] flex items-center"
               >
                 탐색
               </Link>

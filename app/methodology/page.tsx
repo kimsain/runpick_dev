@@ -304,7 +304,7 @@ export default function MethodologyPage() {
       <div className="border-t border-elevated pt-8">
         <Link
           href="/"
-          className="text-sm font-body text-secondary hover:text-accent transition-colors"
+          className="text-sm font-body text-secondary hover:text-accent transition-colors min-h-[44px] inline-flex items-center"
         >
           ← 홈으로 돌아가기
         </Link>

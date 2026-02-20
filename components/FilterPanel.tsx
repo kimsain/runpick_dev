@@ -181,7 +181,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setBrandsOpen(!brandsOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
           >
             <span>
               브랜드{selectedBrands.length > 0 && (
@@ -233,7 +233,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setRangeOpen(!rangeOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
           >
             <span>
               범위 필터{[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length > 0 && (
@@ -320,7 +320,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setSpecOpen(!specOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
           >
             <span>
               스펙 필터{activeSpecCount > 0 && (
@@ -342,7 +342,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                         {val > 1 && (
                           <button
                             onClick={() => updateParam(f.param, '')}
-                            className="text-muted hover:text-primary text-xs leading-none"
+                            className="text-muted hover:text-primary text-sm p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
                           >
                             ×
                           </button>

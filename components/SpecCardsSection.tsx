@@ -105,7 +105,7 @@ export default function SpecCardsSection({ items }: Props) {
                 ref={closeButtonRef}
                 onClick={() => setSelected(null)}
                 aria-label="모달 닫기"
-                className="text-muted hover:text-primary transition-colors ml-4 text-xl leading-none"
+                className="text-muted hover:text-primary transition-colors ml-4 text-xl leading-none min-h-[44px] min-w-[44px] flex items-center justify-center"
               >
                 ×
               </button>

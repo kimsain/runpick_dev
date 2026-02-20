@@ -69,7 +69,7 @@ export default function HomePage() {
             <Link
               key={brand.id}
               href={`/shoes?brands=${brand.id}`}
-              className="font-display text-md text-muted hover:text-accent transition-colors tracking-widest"
+              className="font-display text-md text-muted hover:text-accent transition-colors tracking-widest px-2 py-2 min-h-[44px] flex items-center"
             >
               {brand.name}
             </Link>
@@ -91,7 +91,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/shoes"
-              className="text-sm font-body text-secondary hover:text-accent transition-colors"
+              className="text-sm font-body text-secondary hover:text-accent transition-colors min-h-[44px] flex items-center px-2"
             >
               전체 보기 →
             </Link>
