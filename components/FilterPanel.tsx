@@ -261,7 +261,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) =>
                     updateParam('maxPrice', Number(e.target.value) === priceRange.max ? '' : e.target.value)
                   }
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
+                  className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
                   <span>{formatPrice(priceRange.min)}</span>
@@ -283,7 +283,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) =>
                     updateParam('maxWeight', Number(e.target.value) >= sliderWeightMax ? '' : e.target.value)
                   }
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
+                  className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
                   <span>{weightRange.min}</span>
@@ -305,7 +305,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) =>
                     updateParam('maxDrop', Number(e.target.value) === dropRange.max ? '' : e.target.value)
                   }
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
+                  className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
                   <span>{dropRange.min}</span>
@@ -356,11 +356,13 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                       max={10}
                       step={1}
                       value={val}
+                      aria-label={f.label}
+                      aria-valuetext={`최소 ${val}점`}
                       onChange={(e) =>
                         updateParam(f.param, Number(e.target.value) > 1 ? e.target.value : '')
                       }
-                      className="w-full h-2 rounded-full appearance-none cursor-pointer"
-                      style={{ accentColor: `var(--${f.color})` }}
+                      className="w-full slider-spec"
+                      style={{ '--slider-color': `var(--${f.color})` } as React.CSSProperties}
                     />
                   </div>
                 )
