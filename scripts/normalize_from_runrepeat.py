@@ -1,55 +1,34 @@
 #!/usr/bin/env python3
 """
-normalize_rtings_only.py  — Case A 정규화
+normalize_from_runrepeat.py  — Case B 정규화
 
-RunRepeat 없음 + RTINGS 있음인 생산 신발의 스코어를 RTINGS 계측치 기반으로 정규화.
-
-정규화 공식:
-  cushioning    = round((heelShockAbsorption + forefootShockAbsorption) / 2)
-  responsiveness = clamp(round(avg_energy_return_pct / 10), 1, 10)
-                   subcategoryId == "max-cushion" 이면 -1 페널티
-  stability     = 카테고리 휴리스틱:
-                   "stability" subcat → 8, 그 외 → 6
-                   keyFindings에 stable/stiff/firm/supportive 언급 시 +1
-  durability    = 현재값 + 키워드 delta (durable/long-lasting → +1, wears fast/breaks down → -1)
+RunRepeat + RTINGS 둘 다 있는 신발의 스코어를 RunRepeat 계측치 기반으로 정규화.
 
 사용법:
-  python3 scripts/normalize_rtings_only.py           # dry-run (preview만)
-  python3 scripts/normalize_rtings_only.py --apply   # data/brands/*.json 실제 업데이트
+  python3 scripts/normalize_from_runrepeat.py --dry-run   # preview
+  python3 scripts/normalize_from_runrepeat.py --apply      # 실제 업데이트
 """
 
 import argparse
 import json
-import re
 from pathlib import Path
+
+from formulas import (
+    clamp,
+    keyword_delta,
+    cushioning_from_runrepeat,
+    responsiveness_from_runrepeat,
+    stability_from_runrepeat,
+    durability_from_runrepeat,
+    durability_from_abrasion_only,
+    STABILITY_POS_RE,
+    STABILITY_NEG_RE,
+    DURABILITY_POS_RE,
+    DURABILITY_NEG_RE,
+)
 
 RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
-
-STABILITY_RE = re.compile(r"\b(stable|stiff|firm|supportive|stability)\b", re.IGNORECASE)
-DURABILITY_POS_RE = re.compile(r"\b(durable|long-lasting|holds up|outsole)\b", re.IGNORECASE)
-DURABILITY_NEG_RE = re.compile(r"\b(wears fast|breaks down|poor durability|worn out)\b", re.IGNORECASE)
-
-# 캘리브레이션 결과 기반 카테고리별 반응성 페널티
-# (calibrate_rtings.py 실행 결과에서 도출)
-# stability 평균 bias: +1.86, max-cushion 평균 bias: +1.1 (with -1 적용 후)
-# daily 카테고리 평균 bias: +1~+2, racing 카테고리는 bias ≈ 0
-RESP_PENALTY_BY_SUBCAT: dict = {
-    "stability":   -2,  # avg bias +1.86 → -2로 보정
-    "max-cushion": -2,  # avg bias +1.1 (with -1) → 총 -2로 증가
-    "all-rounder": -1,  # avg bias +1.8
-    "entry":       -1,  # avg bias +2
-    "lightweight": -1,  # avg bias +1
-    "no-plate":    -1,  # avg bias +0.7~1
-    "light-plate": -1,  # avg bias +0.4~1
-    # "full":        0  # racing plate, avg bias ≈ 0
-    # "half":        0  # half plate, already underestimates
-    # "carbon-plate": 0
-}
-
-
-def clamp(val, lo, hi):
-    return max(lo, min(hi, val))
 
 
 def get_attempt_status(attempt_log, source_name):
@@ -83,64 +62,65 @@ def load_production():
 
 
 def get_qualitative_findings(sources):
-    """RTINGS 제외 소스들의 keyFindings 텍스트 합산 (stability 키워드 탐지용)."""
+    """RunRepeat/RTINGS 제외 소스들의 keyFindings 텍스트 합산."""
     findings = []
     for src in sources:
-        if src["source"] != "RTINGS":
+        if src["source"] not in ("RunRepeat", "RTINGS"):
             findings.extend(src.get("keyFindings", []))
     return " ".join(findings)
 
 
-def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
+def compute_scores(rr_src, existing_specs, findings_text):
     """
-    RTINGS 계측치 + 카테고리 휴리스틱으로 4개 스코어 계산.
-    Returns (cushioning, responsiveness, stability, durability) — None if data missing.
+    RunRepeat 계측치 기반으로 cushioning, responsiveness 계산.
+    stability, durability는 기존값 + 키워드 delta.
     """
-    cush = rtings_src["attributeScores"]["cushioning"]
-    resp = rtings_src["attributeScores"]["responsiveness"]
+    rr_cush = rr_src["attributeScores"]["cushioning"]
+    rr_resp = rr_src["attributeScores"]["responsiveness"]
 
-    # cushioning
-    heel_cush = cush.get("heelShockAbsorption")
-    fore_cush = cush.get("forefootShockAbsorption")
+    # cushioning from RunRepeat SA values
+    heel_sa = rr_cush.get("heelShockAbsorption")
+    fore_sa = rr_cush.get("forefootShockAbsorption")
     cushioning = None
-    if heel_cush is not None and fore_cush is not None:
-        cushioning = round((heel_cush + fore_cush) / 2)
+    if heel_sa is not None and fore_sa is not None:
+        cushioning = cushioning_from_runrepeat(heel_sa, fore_sa)
 
-    # responsiveness — 카테고리별 페널티 적용 (calibrate_rtings.py 기반)
-    heel_er = resp.get("heelEnergyReturn")
-    fore_er = resp.get("forefootEnergyReturn")
+    # responsiveness from RunRepeat ER%
+    heel_er = rr_resp.get("heelEnergyReturn")
+    fore_er = rr_resp.get("forefootEnergyReturn")
     responsiveness = None
     if heel_er is not None and fore_er is not None:
-        avg_er = (heel_er + fore_er) / 2
-        responsiveness = clamp(round(avg_er / 10), 1, 10)
-        penalty = RESP_PENALTY_BY_SUBCAT.get(subcategoryId, 0)
-        if penalty != 0:
-            responsiveness = clamp(responsiveness + penalty, 1, 10)
+        responsiveness = responsiveness_from_runrepeat(heel_er, fore_er)
 
-    # stability — RTINGS 미측정, 카테고리 휴리스틱
-    if subcategoryId == "stability":
-        stability = 8
+    # stability: torsionalRigidity + heelCounterStiffness (RunRepeat /5 scale)
+    rr_stab = rr_src["attributeScores"]["stability"]
+    tr = rr_stab.get("torsionalRigidity")
+    hcs = rr_stab.get("heelCounterStiffness")
+    if tr is not None and hcs is not None:
+        stability = stability_from_runrepeat(tr, hcs)
     else:
-        stability = 6
-    if STABILITY_RE.search(findings_text):
-        stability = clamp(stability + 1, 1, 10)
+        old_stab = existing_specs.get("stability", 6)
+        stability = clamp(old_stab + keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE), 1, 10)
 
-    # durability — 기존값 + 키워드 delta
-    old_dur = existing_specs.get("durability", 5)
-    has_dur_pos = bool(DURABILITY_POS_RE.search(findings_text))
-    has_dur_neg = bool(DURABILITY_NEG_RE.search(findings_text))
-    if has_dur_pos and not has_dur_neg:
-        durability = clamp(old_dur + 1, 1, 10)
-    elif has_dur_neg and not has_dur_pos:
-        durability = clamp(old_dur - 1, 1, 10)
+    # durability: log ratio of outsoleThickness / outsoleDurability (abrasion mm)
+    rr_dur = rr_src["attributeScores"]["durability"]
+    outsole_dur = rr_dur.get("outsoleDurability")
+    outsole_thick = rr_dur.get("outsoleThickness")
+    if outsole_dur is not None and outsole_thick is not None:
+        abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
+        thick_mm = float(str(outsole_thick).replace(" mm", "").strip())
+        durability = durability_from_runrepeat(thick_mm, abr_mm)
+    elif outsole_dur is not None:
+        abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
+        durability = durability_from_abrasion_only(abr_mm)
     else:
-        durability = old_dur
+        old_dur = existing_specs.get("durability", 5)
+        durability = clamp(old_dur + keyword_delta(findings_text, DURABILITY_POS_RE, DURABILITY_NEG_RE), 1, 10)
 
     return cushioning, responsiveness, stability, durability
 
 
 def fmt_change(old, new, width=12):
-    """변경 없으면 그냥 값, 변경 있으면 old→new 표시."""
     if new is None:
         return f"{'N/A':>{width}}"
     if old == new:
@@ -150,17 +130,14 @@ def fmt_change(old, new, width=12):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Case A RTINGS 정규화")
-    parser.add_argument(
-        "--apply",
-        action="store_true",
-        help="실제로 data/brands/*.json 업데이트 (없으면 dry-run)",
-    )
+    parser = argparse.ArgumentParser(description="Case B RunRepeat+RTINGS 정규화")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--dry-run", action="store_true", help="Preview only")
+    group.add_argument("--apply", action="store_true", help="Apply to brand JSON files")
     args = parser.parse_args()
 
     production = load_production()
 
-    # {brand_id: [{shoeId, cushioning, responsiveness, stability}]}
     updates_by_brand: dict = {}
     preview_rows = []
 
@@ -175,26 +152,27 @@ def main():
 
             shoe_id = research["shoeId"]
             if shoe_id not in production:
-                continue  # 생산에 없는 신발 스킵
+                continue
 
             attempt_log = research.get("attemptLog", [])
             rr_status = get_attempt_status(attempt_log, "RunRepeat")
             rt_status = get_attempt_status(attempt_log, "RTINGS")
 
-            # Case A: RunRepeat 없음 + RTINGS 있음
-            if rr_status == "found" or rt_status != "found":
+            # Case B: RunRepeat found AND RTINGS found
+            if rr_status != "found" or rt_status != "found":
                 continue
 
-            rtings_src = get_source(research.get("sources", []), "RTINGS")
-            if rtings_src is None:
+            rr_src = get_source(research.get("sources", []), "RunRepeat")
+            if rr_src is None:
                 continue
 
             prod = production[shoe_id]
-            subcatId = prod["subcategoryId"]
             old_specs = prod["specs"]
             findings_text = get_qualitative_findings(research.get("sources", []))
 
-            new_cush, new_resp, new_stab, new_dur = compute_scores(rtings_src, subcatId, findings_text, old_specs)
+            new_cush, new_resp, new_stab, new_dur = compute_scores(
+                rr_src, old_specs, findings_text
+            )
 
             brand_id = prod["brand"]
             if brand_id not in updates_by_brand:
@@ -210,7 +188,6 @@ def main():
             preview_rows.append({
                 "shoeId": shoe_id,
                 "brand": brand_id,
-                "subcatId": subcatId,
                 "old_cush": old_specs.get("cushioning"),
                 "new_cush": new_cush,
                 "old_resp": old_specs.get("responsiveness"),
@@ -221,21 +198,20 @@ def main():
                 "new_dur": new_dur,
             })
 
-    # 미리보기 출력
-    mode_label = "적용 모드" if args.apply else "Dry-run (--apply 없으면 변경 없음)"
-    print(f"\n=== Case A RTINGS 정규화 ({len(preview_rows)}개 신발) [{mode_label}] ===\n")
+    mode_label = "적용 모드" if args.apply else "Dry-run"
+    print(f"\n=== Case B RunRepeat+RTINGS 정규화 ({len(preview_rows)}개 신발) [{mode_label}] ===\n")
     if not preview_rows:
-        print("Case A 신발 없음 (RunRepeat 없음 + RTINGS 있음 + 생산 포함).")
+        print("Case B 신발 없음.")
         return
 
     print(
-        f"{'shoeId':<42} {'brand':<12} {'subcat':<14}"
+        f"{'shoeId':<42} {'brand':<12}"
         f" {'cushioning':>12} {'responsive':>12} {'stability':>12} {'durability':>12}"
     )
-    print("-" * 122)
+    print("-" * 110)
     for r in preview_rows:
         print(
-            f"{r['shoeId']:<42} {r['brand']:<12} {r['subcatId']:<14}"
+            f"{r['shoeId']:<42} {r['brand']:<12}"
             f" {fmt_change(r['old_cush'], r['new_cush'])}"
             f" {fmt_change(r['old_resp'], r['new_resp'])}"
             f" {fmt_change(r['old_stab'], r['new_stab'])}"
@@ -255,12 +231,12 @@ def main():
         print("\n▶ --apply 플래그 추가 시 data/brands/*.json에 실제 적용됩니다.")
         return
 
-    # 실제 업데이트
+    # Apply updates
     print("\n[적용 중...]")
     updated_files = 0
     updated_shoes = 0
 
-    for fname in sorted((BRANDS_DIR).iterdir()):
+    for fname in sorted(BRANDS_DIR.iterdir()):
         if fname.suffix != ".json":
             continue
         with open(fname) as f:

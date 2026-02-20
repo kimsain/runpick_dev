@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-normalize_qualitative_only.py  — Case B 정규화
+normalize_from_reviews.py  — Case C 정규화
 
 RunRepeat 없음 + RTINGS 없음인 생산 신발의 스코어를
 Claude API로 keyFindings 텍스트에서 추출.
@@ -9,8 +9,8 @@ Claude API로 keyFindings 텍스트에서 추출.
 data/brands/*.json 업데이트는 사람이 검토 후 수동으로 진행.
 
 사용법:
-  python3 scripts/normalize_qualitative_only.py           # dry-run (API 호출 없음)
-  python3 scripts/normalize_qualitative_only.py --apply   # Claude API 호출 + research JSON 업데이트
+  python3 scripts/normalize_from_reviews.py           # dry-run (API 호출 없음)
+  python3 scripts/normalize_from_reviews.py --apply   # Claude API 호출 + research JSON 업데이트
 """
 
 import argparse
