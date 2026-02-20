@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import FilterPanel from './FilterPanel'
 import type { Brand } from '@/lib/types'
 
@@ -20,6 +20,21 @@ export default function FilterDrawer({
   totalCount,
 }: Props) {
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (!open) return
+    document.body.style.overflow = 'hidden'
+    return () => { document.body.style.overflow = '' }
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false)
+    }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
+  }, [open])
 
   return (
     <>
@@ -43,6 +58,9 @@ export default function FilterDrawer({
 
       {/* Drawer */}
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-label="필터"
         className={`fixed bottom-0 left-0 right-0 z-50 bg-surface border-t border-elevated max-h-[85vh] overflow-y-auto transition-transform duration-300 ${
           open ? 'translate-y-0' : 'translate-y-full'
         }`}
@@ -69,7 +87,7 @@ export default function FilterDrawer({
             />
           </div>
         </div>
-        <div className="px-4 pb-6">
+        <div className="px-4 pb-6" style={{ paddingBottom: `calc(1.5rem + env(safe-area-inset-bottom, 0px))` }}>
           <button
             onClick={() => setOpen(false)}
             className="w-full bg-accent text-dark font-display text-lg py-3 hover:bg-accent/90 transition-colors min-h-[44px]"
