@@ -112,10 +112,10 @@
       ]
     },
     "adidas/supernova-solution-2": {
-      "completed_at": "2026-02-17T11:49:45.438Z",
-      "confidence": "low",
+      "completed_at": "2026-02-20T00:00:00.000Z",
+      "confidence": "high",
       "statuses": [
-        "RunRepeat:not_found",
+        "RunRepeat:found",
         "RTINGS:not_found",
         "Doctors of Running:found",
         "Road Trail Run:not_found",

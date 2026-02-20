@@ -136,16 +136,18 @@
       "specs": {
         "weight": 261,
         "drop": 10,
-        "cushioning": 7,
+        "cushioning": 6,
         "responsiveness": 7,
         "stability": 8,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 36,
           "forefoot": 26
         },
         "weightScore": 4,
-        "valueScore": 9
+        "valueScore": 8,
+        "rawCushioning": 3.85,
+        "rawResponsiveness": 6.88
       },
       "pros": [
         "에너지 리턴 68%로 안정화치고 바운시해서 뛰는 맛이 있어",
@@ -174,7 +176,7 @@
       ],
       "slug": "supernova-solution-2",
       "officialUrl": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html",
-      "confidence": "low"
+      "confidence": "high"
     },
     {
       "id": "adizero-sl-2",
