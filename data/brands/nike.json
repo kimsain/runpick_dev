@@ -32,7 +32,7 @@
           "forefoot": 27
         },
         "weightScore": 3,
-        "valueScore": 9,
+        "valueScore": 8,
         "rawCushioning": 3.68,
         "rawResponsiveness": 5.17
       },
@@ -198,7 +198,7 @@
           "heel": 55,
           "forefoot": 45
         },
-        "weightScore": 0,
+        "weightScore": 1,
         "valueScore": 5,
         "rawCushioning": 7.16,
         "rawResponsiveness": 6.15
@@ -255,7 +255,7 @@
           "forefoot": 28
         },
         "weightScore": 2,
-        "valueScore": 9,
+        "valueScore": 8,
         "rawCushioning": 4.15,
         "rawResponsiveness": 5.15
       },
@@ -310,7 +310,7 @@
           "forefoot": 32
         },
         "weightScore": 3,
-        "valueScore": 8
+        "valueScore": 7
       },
       "pros": [
         "안정화 중에서 쿠셔닝이 가장 좋은 축에 속해 — 발바닥 피로가 적어",
@@ -365,7 +365,7 @@
           "forefoot": 22
         },
         "weightScore": 5,
-        "valueScore": 10
+        "valueScore": 8
       },
       "pros": [
         "12만원대에 플레이트 탑재라서 가성비가 뛰어남",
@@ -476,7 +476,7 @@
           "forefoot": 32
         },
         "weightScore": 5,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 4.95,
         "rawResponsiveness": 6.18
       },
@@ -533,7 +533,7 @@
           "forefoot": 23
         },
         "weightScore": 9,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 2.77,
         "rawResponsiveness": 8.56
       },
@@ -588,7 +588,7 @@
           "forefoot": 29
         },
         "weightScore": 8,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 4.08,
         "rawResponsiveness": 8.42
       },
@@ -644,7 +644,7 @@
           "forefoot": 32
         },
         "weightScore": 7,
-        "valueScore": 2,
+        "valueScore": 4,
         "rawCushioning": 5.03,
         "rawResponsiveness": 8.07
       },

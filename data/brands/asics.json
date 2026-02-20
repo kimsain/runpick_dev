@@ -89,7 +89,7 @@
           "forefoot": 40
         },
         "weightScore": 4,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 5.47,
         "rawResponsiveness": 6.92
       },
@@ -148,7 +148,7 @@
           "forefoot": 32
         },
         "weightScore": 2,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 4.85,
         "rawResponsiveness": 3.37
       },
@@ -205,7 +205,7 @@
           "forefoot": 33.5
         },
         "weightScore": 4,
-        "valueScore": 10,
+        "valueScore": 9,
         "rawCushioning": 5.79,
         "rawResponsiveness": 6.37
       },
@@ -492,7 +492,7 @@
           "forefoot": 34.5
         },
         "weightScore": 10,
-        "valueScore": 1,
+        "valueScore": 3,
         "rawCushioning": 6.0,
         "rawResponsiveness": 9.0
       },
@@ -606,7 +606,7 @@
           "forefoot": 34.5
         },
         "weightScore": 8,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 5.47,
         "rawResponsiveness": 8.79
       },
@@ -663,7 +663,7 @@
           "forefoot": 34.5
         },
         "weightScore": 8,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 5.84,
         "rawResponsiveness": 8.65
       },

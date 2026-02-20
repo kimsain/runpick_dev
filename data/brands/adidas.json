@@ -32,7 +32,7 @@
           "forefoot": 28
         },
         "weightScore": 4,
-        "valueScore": 10
+        "valueScore": 8
       },
       "pros": [
         "Dreamstrike+ PEBA 폼이라 15만원대치고 쿠셔닝이 꽤 푹신해",
@@ -145,7 +145,7 @@
           "forefoot": 26
         },
         "weightScore": 4,
-        "valueScore": 9
+        "valueScore": 8
       },
       "pros": [
         "에너지 리턴 68%로 안정화치고 바운시해서 뛰는 맛이 있어",
@@ -200,7 +200,7 @@
           "forefoot": 26
         },
         "weightScore": 5,
-        "valueScore": 9
+        "valueScore": 8
       },
       "pros": [
         "14만원대에 Lightstrike Pro 듀얼 폼이라 가격 대비 반발력이 뛰어남",
@@ -367,7 +367,7 @@
           "forefoot": 30
         },
         "weightScore": 4,
-        "valueScore": 10,
+        "valueScore": 8,
         "rawCushioning": 4.37,
         "rawResponsiveness": 6.65
       },
@@ -484,7 +484,7 @@
           "forefoot": 43
         },
         "weightScore": 3,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 5.93,
         "rawResponsiveness": 8.22
       },
@@ -543,7 +543,7 @@
           "forefoot": 33
         },
         "weightScore": 7,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 5.13,
         "rawResponsiveness": 9.15
       },
@@ -601,7 +601,7 @@
           "forefoot": 36
         },
         "weightScore": 10,
-        "valueScore": 0,
+        "valueScore": 2,
         "rawCushioning": 6.03,
         "rawResponsiveness": 7.99
       },
