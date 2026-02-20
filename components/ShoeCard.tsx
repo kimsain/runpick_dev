@@ -50,12 +50,13 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
             conf === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
-              <div className={`flex items-center gap-1 bg-dark/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}>
+              <div
+                className={`flex items-center gap-1 bg-dark/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}
+                title={tooltipText}
+                role="status"
+              >
                 <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
                 {label}
-              </div>
-              <div className="absolute top-full right-0 mt-1 w-56 bg-dark/95 backdrop-blur-sm border border-elevated px-3 py-2 text-sm text-secondary font-body leading-snug opacity-0 group-hover/badge:opacity-100 transition-opacity duration-150 pointer-events-none z-20">
-                {tooltipText}
               </div>
             </div>
           )
@@ -68,8 +69,8 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
           priority={priority}
         />
-        {/* Hover overlay */}
-        <div className="absolute inset-0 bg-dark/80 flex flex-col items-start justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+        {/* Hover overlay — desktop only */}
+        <div className="absolute inset-0 bg-dark/80 flex-col items-start justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hidden md:flex">
           <p className="text-primary text-sm leading-snug mb-2 font-body">
             {shoe.shortDescription}
           </p>
@@ -77,6 +78,13 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
             자세히 →
           </span>
         </div>
+      </div>
+
+      {/* Mobile: always-visible short description */}
+      <div className="md:hidden px-4 pt-0">
+        <p className="text-secondary text-xs font-body line-clamp-2 mt-2">
+          {shoe.shortDescription}
+        </p>
       </div>
 
       {/* Info */}
