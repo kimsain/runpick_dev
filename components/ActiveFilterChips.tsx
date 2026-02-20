@@ -23,7 +23,8 @@ const SUBCATEGORY_LABELS: Record<string, string> = {
 }
 
 const SORT_LABELS: Record<string, string> = {
-  'value-asc': '가성비↑',
+  'name-asc': '이름↑', 'name-desc': '이름↓',
+  'value-desc': '가성비↓', 'value-asc': '가성비↑',
   'cushioning-desc': '쿠션성↓', 'cushioning-asc': '쿠션성↑',
   'responsiveness-desc': '반응성↓', 'responsiveness-asc': '반응성↑',
   'stability-desc': '안정성↓', 'stability-asc': '안정성↑',
@@ -91,7 +92,7 @@ export default function ActiveFilterChips() {
   const maxPrice = searchParams.get('maxPrice')
   if (maxPrice) {
     chips.push({
-      label: `최대 ₩${(Number(maxPrice) / 10000).toFixed(0)}만`,
+      label: `최대 ${Math.round(Number(maxPrice) / 10000)}만`,
       onRemove: () => removeParam('maxPrice'),
     })
   }
@@ -123,7 +124,7 @@ export default function ActiveFilterChips() {
   }
 
   const sort = searchParams.get('sort')
-  if (sort && sort !== 'value-desc') {
+  if (sort && sort !== 'name-asc') {
     chips.push({
       label: SORT_LABELS[sort] ?? sort,
       onRemove: () => removeParam('sort'),

@@ -96,7 +96,7 @@ export default function ShoesBrowser({
       result = result.filter((s) => (s.specs.valueScore ?? 0) >= Number(minVS))
     }
 
-    const sort = searchParams.get('sort') ?? 'name-desc'
+    const sort = searchParams.get('sort') ?? 'name-asc'
 
     const SPEC_SORT_KEYS = ['value', 'cushioning', 'responsiveness', 'stability', 'durability']
 

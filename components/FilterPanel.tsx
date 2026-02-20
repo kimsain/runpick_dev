@@ -19,7 +19,7 @@ const CATEGORIES = [
 ]
 
 const SORTS_META = [
-  { key: 'name',           label: '이름',   defaultDir: 'desc' as const },
+  { key: 'name',           label: '이름',   defaultDir: 'asc'  as const },
   { key: 'value',          label: '가성비',  defaultDir: 'desc' as const },
   { key: 'cushioning',     label: '쿠션성',  defaultDir: 'desc' as const },
   { key: 'responsiveness', label: '반응성',  defaultDir: 'desc' as const },
@@ -37,7 +37,7 @@ const VALID_SORTS = new Set([
 ])
 
 function parseSort(s: string): [string, 'asc' | 'desc'] {
-  if (!VALID_SORTS.has(s)) return ['name', 'desc']
+  if (!VALID_SORTS.has(s)) return ['name', 'asc']
   const dir = s.endsWith('-asc') ? 'asc' : 'desc'
   const key = dir === 'asc' ? s.slice(0, -4) : s.slice(0, -5)
   return [key, dir]
@@ -72,7 +72,7 @@ const SPEC_FILTERS = [
 ]
 
 function formatPrice(v: number) {
-  return `₩${(v / 10000).toFixed(0)}만`
+  return `${Math.round(v / 10000)}만`
 }
 
 export default function FilterPanel({ brands, priceRange, weightRange, dropRange }: Props) {
@@ -126,7 +126,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
   const maxWeight = Number(searchParams.get('maxWeight') ?? weightRange.max)
   const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
-  const currentSort = searchParams.get('sort') ?? 'name-desc'
+  const currentSort = searchParams.get('sort') ?? 'name-asc'
   const [activeKey, activeDir] = parseSort(currentSort)
 
   return (
@@ -283,7 +283,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               {/* 최대 가격 */}
               <div>
                 <div className="flex justify-between text-sm font-body mb-1">
-                  <span className="text-secondary">최대 가격</span>
+                  <span className="text-secondary">최대 가격(원)</span>
                   <span className="text-primary font-bold">{formatPrice(maxPrice)}</span>
                 </div>
                 <input
@@ -305,14 +305,14 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               {/* 최대 무게 */}
               <div>
                 <div className="flex justify-between text-sm font-body mb-1">
-                  <span className="text-secondary">최대 무게</span>
-                  <span className="text-primary font-bold">{maxWeight}g</span>
+                  <span className="text-secondary">최대 무게(g)</span>
+                  <span className="text-primary font-bold">{maxWeight}</span>
                 </div>
                 <input
                   type="range"
                   min={weightRange.min}
                   max={weightRange.max}
-                  step={5}
+                  step={1}
                   value={maxWeight}
                   onChange={(e) =>
                     updateParam('maxWeight', Number(e.target.value) === weightRange.max ? '' : e.target.value)
@@ -320,15 +320,15 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{weightRange.min}g</span>
-                  <span>{weightRange.max}g</span>
+                  <span>{weightRange.min}</span>
+                  <span>{weightRange.max}</span>
                 </div>
               </div>
               {/* 최대 드롭 */}
               <div>
                 <div className="flex justify-between text-sm font-body mb-1">
-                  <span className="text-secondary">최대 드롭</span>
-                  <span className="text-primary font-bold">{maxDrop}mm</span>
+                  <span className="text-secondary">드롭(mm)</span>
+                  <span className="text-primary font-bold">{maxDrop}</span>
                 </div>
                 <input
                   type="range"
@@ -342,8 +342,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{dropRange.min}mm</span>
-                  <span>{dropRange.max}mm</span>
+                  <span>{dropRange.min}</span>
+                  <span>{dropRange.max}</span>
                 </div>
               </div>
             </div>
