@@ -9,10 +9,39 @@ const CATEGORY_LABELS: Record<string, string> = {
   racing: '레이싱',
 }
 
+const SUBCATEGORY_LABELS: Record<string, string> = {
+  entry: '입문',
+  'max-cushion': '맥스쿠션',
+  'all-rounder': '올라운드',
+  stability: '안정화',
+  lightweight: '경량',
+  'no-plate': '플레이트리스',
+  'light-plate': '라이트 플레이트',
+  'carbon-plate': '카본 플레이트',
+  half: '하프',
+  full: '풀',
+}
+
 const SORT_LABELS: Record<string, string> = {
   'price-asc': '가격↑',
   'price-desc': '가격↓',
   'weight-asc': '무게↑',
+  'value-desc': '가성비↓',
+  'cushioning-desc': '쿠션↓',
+  'responsiveness-desc': '반응↓',
+  'stability-desc': '안정↓',
+  'durability-desc': '내구↓',
+  'lightness-desc': '경량↓',
+  'newest': '최신순',
+}
+
+const SPEC_CHIP_LABELS: Record<string, string> = {
+  minCush: '쿠션',
+  minResp: '반응',
+  minStab: '안정',
+  minDur: '내구',
+  minWS: '경량',
+  minVS: '가성비',
 }
 
 export default function ActiveFilterChips() {
@@ -54,6 +83,14 @@ export default function ActiveFilterChips() {
     })
   }
 
+  const subcategory = searchParams.get('subcategory')
+  if (subcategory) {
+    chips.push({
+      label: SUBCATEGORY_LABELS[subcategory] ?? subcategory,
+      onRemove: () => removeParam('subcategory'),
+    })
+  }
+
   const maxPrice = searchParams.get('maxPrice')
   if (maxPrice) {
     chips.push({
@@ -76,6 +113,16 @@ export default function ActiveFilterChips() {
       label: `최대 ${maxDrop}mm 드롭`,
       onRemove: () => removeParam('maxDrop'),
     })
+  }
+
+  for (const [param, label] of Object.entries(SPEC_CHIP_LABELS)) {
+    const val = searchParams.get(param)
+    if (val) {
+      chips.push({
+        label: `${label} ${val}+`,
+        onRemove: () => removeParam(param),
+      })
+    }
   }
 
   const sort = searchParams.get('sort')

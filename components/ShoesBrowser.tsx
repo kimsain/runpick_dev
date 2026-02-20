@@ -8,6 +8,20 @@ import FilterDrawer from './FilterDrawer'
 import FilterPanel from './FilterPanel'
 import type { Shoe, Brand } from '@/lib/types'
 
+function getSpecValue(shoe: Shoe, sort: string): number {
+  switch (sort) {
+    case 'cushioning-desc':
+      return shoe.specs.rawCushioning ?? shoe.specs.cushioning
+    case 'responsiveness-desc':
+      return shoe.specs.rawResponsiveness ?? shoe.specs.responsiveness
+    case 'stability-desc': return shoe.specs.stability
+    case 'durability-desc': return shoe.specs.durability
+    case 'lightness-desc': return shoe.specs.weightScore ?? 0
+    case 'value-desc': return shoe.specs.valueScore ?? 0
+    default: return 0
+  }
+}
+
 interface Props {
   shoes: Shoe[]
   brands: Brand[]
@@ -39,7 +53,7 @@ export default function ShoesBrowser({
     }
 
     const subcategory = searchParams.get('subcategory')
-    if (subcategory) {
+    if (subcategory && category) {
       result = result.filter((s) => s.subcategoryId === subcategory)
     }
 
@@ -58,10 +72,53 @@ export default function ShoesBrowser({
       result = result.filter((s) => s.specs.drop <= Number(maxDrop))
     }
 
+    const minCush = searchParams.get('minCush')
+    if (minCush) {
+      result = result.filter((s) => s.specs.cushioning >= Number(minCush))
+    }
+    const minResp = searchParams.get('minResp')
+    if (minResp) {
+      result = result.filter((s) => s.specs.responsiveness >= Number(minResp))
+    }
+    const minStab = searchParams.get('minStab')
+    if (minStab) {
+      result = result.filter((s) => s.specs.stability >= Number(minStab))
+    }
+    const minDur = searchParams.get('minDur')
+    if (minDur) {
+      result = result.filter((s) => s.specs.durability >= Number(minDur))
+    }
+    const minWS = searchParams.get('minWS')
+    if (minWS) {
+      result = result.filter((s) => (s.specs.weightScore ?? 0) >= Number(minWS))
+    }
+    const minVS = searchParams.get('minVS')
+    if (minVS) {
+      result = result.filter((s) => (s.specs.valueScore ?? 0) >= Number(minVS))
+    }
+
     const sort = searchParams.get('sort') ?? 'recommended'
-    if (sort === 'price-asc') result.sort((a, b) => a.price - b.price)
-    else if (sort === 'price-desc') result.sort((a, b) => b.price - a.price)
-    else if (sort === 'weight-asc') result.sort((a, b) => a.specs.weight - b.specs.weight)
+
+    if (sort !== 'recommended') {
+      result.sort((a, b) => {
+        let diff = 0
+        switch (sort) {
+          case 'price-asc': diff = a.price - b.price; break
+          case 'price-desc': diff = b.price - a.price; break
+          case 'weight-asc': diff = a.specs.weight - b.specs.weight; break
+          case 'newest': diff = b.releaseYear - a.releaseYear; break
+          case 'value-desc':
+          case 'cushioning-desc':
+          case 'responsiveness-desc':
+          case 'stability-desc':
+          case 'durability-desc':
+          case 'lightness-desc':
+            diff = getSpecValue(b, sort) - getSpecValue(a, sort); break
+        }
+        if (diff !== 0) return diff
+        return a.slug.localeCompare(b.slug)
+      })
+    }
 
     return result
   }, [shoes, searchParams])

@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 import type { Brand } from '@/lib/types'
 
 interface Props {
@@ -20,9 +20,47 @@ const CATEGORIES = [
 
 const SORTS = [
   { id: 'recommended', label: '추천순' },
+  { id: '_sep1', label: '' },
   { id: 'price-asc', label: '가격 낮은순' },
   { id: 'price-desc', label: '가격 높은순' },
+  { id: '_sep2', label: '' },
+  { id: 'value-desc', label: '가성비 높은순' },
+  { id: 'cushioning-desc', label: '쿠션성 높은순' },
+  { id: 'responsiveness-desc', label: '반응성 높은순' },
+  { id: 'stability-desc', label: '안정성 높은순' },
+  { id: 'durability-desc', label: '내구성 높은순' },
+  { id: 'lightness-desc', label: '경량성 높은순' },
+  { id: '_sep3', label: '' },
   { id: 'weight-asc', label: '무게 가벼운순' },
+  { id: 'newest', label: '최신순' },
+]
+
+const SUBCATEGORY_MAP: Record<string, { id: string; label: string }[]> = {
+  daily: [
+    { id: 'entry', label: '입문' },
+    { id: 'max-cushion', label: '맥스쿠션' },
+    { id: 'all-rounder', label: '올라운드' },
+    { id: 'stability', label: '안정화' },
+    { id: 'lightweight', label: '경량' },
+  ],
+  'super-trainer': [
+    { id: 'no-plate', label: '플레이트리스' },
+    { id: 'light-plate', label: '라이트 플레이트' },
+    { id: 'carbon-plate', label: '카본 플레이트' },
+  ],
+  racing: [
+    { id: 'half', label: '하프' },
+    { id: 'full', label: '풀' },
+  ],
+}
+
+const SPEC_FILTERS = [
+  { param: 'minCush', label: '쿠션', color: 'spec-cushion' },
+  { param: 'minResp', label: '반응', color: 'spec-response' },
+  { param: 'minStab', label: '안정', color: 'spec-stability' },
+  { param: 'minDur', label: '내구', color: 'spec-durability' },
+  { param: 'minWS', label: '경량', color: 'spec-weight' },
+  { param: 'minVS', label: '가성비', color: 'spec-value' },
 ]
 
 function formatPrice(v: number) {
@@ -64,8 +102,15 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
     [router, pathname, searchParams]
   )
 
+  const [specOpen, setSpecOpen] = useState(false)
+
+  const activeSpecCount = SPEC_FILTERS.filter(
+    (f) => Number(searchParams.get(f.param) ?? 1) > 1
+  ).length
+
   const selectedBrands = searchParams.get('brands')?.split(',').filter(Boolean) ?? []
   const category = searchParams.get('category') ?? 'all'
+  const subcategory = searchParams.get('subcategory') ?? ''
   const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
   const maxWeight = Number(searchParams.get('maxWeight') ?? weightRange.max)
   const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
@@ -78,19 +123,23 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">정렬</h3>
           <div className="space-y-1">
-            {SORTS.map((s) => (
-              <button
-                key={s.id}
-                onClick={() => updateParam('sort', s.id === 'recommended' ? '' : s.id)}
-                className={`w-full text-left text-sm font-body px-2 py-2 rounded transition-colors min-h-[44px] flex items-center ${
-                  sort === s.id
-                    ? 'text-accent bg-accent/10'
-                    : 'text-secondary hover:text-primary'
-                }`}
-              >
-                {s.label}
-              </button>
-            ))}
+            {SORTS.map((s) =>
+              s.id.startsWith('_sep') ? (
+                <hr key={s.id} className="border-elevated my-1" />
+              ) : (
+                <button
+                  key={s.id}
+                  onClick={() => updateParam('sort', s.id === 'recommended' ? '' : s.id)}
+                  className={`w-full text-left text-sm font-body px-2 py-2 rounded transition-colors min-h-[44px] flex items-center ${
+                    sort === s.id
+                      ? 'text-accent bg-accent/10'
+                      : 'text-secondary hover:text-primary'
+                  }`}
+                >
+                  {s.label}
+                </button>
+              )
+            )}
           </div>
         </section>
 
@@ -101,7 +150,16 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
-                onClick={() => updateParam('category', c.id === 'all' ? '' : c.id)}
+                onClick={() => {
+                  const params = new URLSearchParams(searchParams.toString())
+                  if (c.id === 'all') {
+                    params.delete('category')
+                  } else {
+                    params.set('category', c.id)
+                  }
+                  params.delete('subcategory')
+                  router.push(`${pathname}?${params.toString()}`)
+                }}
                 className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center ${
                   category === c.id
                     ? 'border-accent text-accent bg-accent/10'
@@ -112,6 +170,23 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               </button>
             ))}
           </div>
+          {category !== 'all' && SUBCATEGORY_MAP[category] && (
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              {SUBCATEGORY_MAP[category].map((sc) => (
+                <button
+                  key={sc.id}
+                  onClick={() => updateParam('subcategory', subcategory === sc.id ? '' : sc.id)}
+                  className={`text-xs font-body px-2 py-1.5 border rounded transition-colors min-h-[36px] flex items-center ${
+                    subcategory === sc.id
+                      ? 'border-accent text-accent bg-accent/10'
+                      : 'border-elevated text-secondary hover:border-secondary'
+                  }`}
+                >
+                  {sc.label}
+                </button>
+              ))}
+            </div>
+          )}
         </section>
 
         {/* Brands */}
@@ -230,6 +305,48 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             <span>{dropRange.min}mm</span>
             <span>{dropRange.max}mm</span>
           </div>
+        </section>
+
+        {/* Spec Filters */}
+        <section>
+          <button
+            onClick={() => setSpecOpen(!specOpen)}
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+          >
+            <span>
+              스펙 필터{activeSpecCount > 0 && (
+                <span className="text-accent normal-case font-body ml-1">({activeSpecCount}개 활성)</span>
+              )}
+            </span>
+            <span className="text-xs">{specOpen ? '▲' : '▼'}</span>
+          </button>
+          {specOpen && (
+            <div className="space-y-4">
+              {SPEC_FILTERS.map((f) => {
+                const val = Number(searchParams.get(f.param) ?? 1)
+                return (
+                  <div key={f.param}>
+                    <div className="flex justify-between text-sm font-body mb-1">
+                      <span className={`text-${f.color}`}>{f.label}</span>
+                      <span className="text-primary font-bold">{val}</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={1}
+                      max={10}
+                      step={1}
+                      value={val}
+                      onChange={(e) =>
+                        updateParam(f.param, Number(e.target.value) > 1 ? e.target.value : '')
+                      }
+                      className="w-full"
+                      style={{ accentColor: `var(--${f.color})` }}
+                    />
+                  </div>
+                )
+              })}
+            </div>
+          )}
         </section>
       </div>
     </aside>
