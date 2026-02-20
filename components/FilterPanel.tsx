@@ -342,6 +342,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                         {val > 1 && (
                           <button
                             onClick={() => updateParam(f.param, '')}
+                            aria-label={`${f.label} 필터 초기화`}
                             className="text-muted hover:text-primary text-sm p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
                           >
                             ×

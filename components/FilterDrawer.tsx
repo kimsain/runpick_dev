@@ -51,6 +51,7 @@ export default function FilterDrawer({
           <span className="font-display text-md text-primary">필터</span>
           <button
             onClick={() => setOpen(false)}
+            aria-label="필터 닫기"
             className="text-secondary hover:text-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
           >
             ✕

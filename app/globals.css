@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-base: #080808;
+  --bg-dark: #080808;
   --bg-surface: #111111;
   --bg-elevated: #1c1c1c;
   --bg-card: #161616;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-base);
+  background-color: var(--bg-dark);
   color: var(--text-primary);
   font-family: 'Outfit', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -59,14 +59,6 @@ body {
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
-}
-
-@media (max-width: 479px) {
-  html { font-size: 0.85rem; }
-}
-
-.tracking-caption {
-  letter-spacing: 0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {
