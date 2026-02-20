@@ -324,33 +324,46 @@ modules:
     notes: "Companion technical doc at docs/METHODOLOGY.md"
 
   scripts:
-    description: "Python utility scripts for data maintenance: confidence injection and score normalization"
-    entry_point: "scripts/add_confidence.py"
+    description: "Python utility scripts for data maintenance: confidence injection, score normalization, and derived score calculation"
+    entry_point: "scripts/formulas.py"
     key_files:
+      - path: "scripts/formulas.py"
+        role: "core-logic"
+        exports: []
+      - path: "scripts/recalculate.py"
+        role: "core-logic"
+        exports: []
       - path: "scripts/add_confidence.py"
         role: "core-logic"
         exports: []
-      - path: "scripts/normalize_runrepeat_rtings.py"
+      - path: "scripts/normalize_from_runrepeat.py"
         role: "core-logic"
         exports: []
-      - path: "scripts/normalize_rtings_only.py"
+      - path: "scripts/normalize_from_rtings.py"
+        role: "core-logic"
+        exports: []
+      - path: "scripts/normalize_from_reviews.py"
         role: "core-logic"
         exports: []
     dependencies:
       internal: []
-      external: ["python3 stdlib (json, glob, os)"]
+      external: ["python3 stdlib (json, glob, os, math, re)"]
     constraints:
+      - "formulas.py: single source of truth for all scoring constants, regex patterns, and pure formula functions; no I/O"
+      - "recalculate.py: unified weightScore + valueScore calculation; imports from formulas.py; --apply/--only weight/--only value"
       - "add_confidence.py: parses checkpoint.json statuses array; 4-level logic (very-high/high/medium/low); key format '{brandId}/{slug}'"
-      - "normalize_runrepeat_rtings.py: targets RunRepeat+RTINGS overlap shoes; cushioning=SA-weighted, responsiveness=ER%; stability/durability ±1 qualitative keyword correction; --dry-run/--apply flags"
-      - "normalize_rtings_only.py: targets RTINGS-only shoes; adds durability keyword correction (same as stability)"
+      - "normalize_from_runrepeat.py: Case B (RunRepeat+RTINGS); imports formulas for cushioning/responsiveness/stability/durability"
+      - "normalize_from_rtings.py: Case A (RTINGS only); imports formulas for cushioning/responsiveness"
+      - "normalize_from_reviews.py: Case C (qualitative only); Claude API inference"
       - "All scripts write to data/brands/*.json in-place (only affected fields)"
-    data_flow: "checkpoint.json → data/brands/*.json confidence field; checkpoint.json SA/ER%/keyFindings → data/brands/*.json spec scores"
+    data_flow: "formulas.py constants/functions → normalize_from_*.py → data/brands/*.json; recalculate.py → data/brands/*.json weightScore/valueScore"
     error_patterns: []
     test_location: "none"
     notes: |
       Run add_confidence.py after adding new shoes to checkpoint.json.
       Run normalize scripts after adding RunRepeat/RTINGS measurement data.
-      Qualitative keywords: stability(+1: stable/stiff/firm/supportive, -1: unstable/wobbly/sloppy), durability(+1: durable/long-lasting/holds up, -1: wears fast/breaks down).
+      Run recalculate.py --apply after any spec changes to update weightScore/valueScore.
+      All scoring formulas defined in formulas.py — edit there to change scoring logic.
 
   app-seo:
     description: "Auto-generated sitemap.xml and robots.txt via Next.js Metadata API"
