@@ -18,22 +18,28 @@ const CATEGORIES = [
   { id: 'racing', label: '레이싱' },
 ]
 
-const SORTS = [
-  { id: 'recommended', label: '추천순' },
-  { id: '_sep1', label: '' },
-  { id: 'price-asc', label: '가격 낮은순' },
-  { id: 'price-desc', label: '가격 높은순' },
-  { id: '_sep2', label: '' },
-  { id: 'value-desc', label: '가성비 높은순' },
-  { id: 'cushioning-desc', label: '쿠션성 높은순' },
-  { id: 'responsiveness-desc', label: '반응성 높은순' },
-  { id: 'stability-desc', label: '안정성 높은순' },
-  { id: 'durability-desc', label: '내구성 높은순' },
-  { id: 'lightness-desc', label: '경량성 높은순' },
-  { id: '_sep3', label: '' },
-  { id: 'weight-asc', label: '무게 가벼운순' },
-  { id: 'newest', label: '최신순' },
+const SORTS_META = [
+  { key: 'value',          label: '가성비',  defaultDir: 'desc' as const },
+  { key: 'cushioning',     label: '쿠션성',  defaultDir: 'desc' as const },
+  { key: 'responsiveness', label: '반응성',  defaultDir: 'desc' as const },
+  { key: 'stability',      label: '안정성',  defaultDir: 'desc' as const },
+  { key: 'durability',     label: '내구성',  defaultDir: 'desc' as const },
+  { key: 'weight',         label: '무게',    defaultDir: 'asc'  as const },
+  { key: 'price',          label: '가격',    defaultDir: 'asc'  as const },
 ]
+
+const VALID_SORTS = new Set([
+  'value-desc','value-asc','cushioning-desc','cushioning-asc',
+  'responsiveness-desc','responsiveness-asc','stability-desc','stability-asc',
+  'durability-desc','durability-asc','weight-asc','weight-desc','price-asc','price-desc',
+])
+
+function parseSort(s: string): [string, 'asc' | 'desc'] {
+  if (!VALID_SORTS.has(s)) return ['value', 'desc']
+  const dir = s.endsWith('-asc') ? 'asc' : 'desc'
+  const key = dir === 'asc' ? s.slice(0, -4) : s.slice(0, -5)
+  return [key, dir]
+}
 
 const SUBCATEGORY_MAP: Record<string, { id: string; label: string }[]> = {
   daily: [
@@ -55,12 +61,12 @@ const SUBCATEGORY_MAP: Record<string, { id: string; label: string }[]> = {
 }
 
 const SPEC_FILTERS = [
-  { param: 'minCush', label: '쿠션', color: 'spec-cushion' },
-  { param: 'minResp', label: '반응', color: 'spec-response' },
-  { param: 'minStab', label: '안정', color: 'spec-stability' },
-  { param: 'minDur', label: '내구', color: 'spec-durability' },
-  { param: 'minWS', label: '경량', color: 'spec-weight' },
-  { param: 'minVS', label: '가성비', color: 'spec-value' },
+  { param: 'minCush', label: '쿠션성', color: 'spec-cushion' },
+  { param: 'minResp', label: '반응성', color: 'spec-response' },
+  { param: 'minStab', label: '안정성', color: 'spec-stability' },
+  { param: 'minDur', label: '내구성', color: 'spec-durability' },
+  { param: 'minWS',  label: '경량성', color: 'spec-weight' },
+  { param: 'minVS',  label: '가성비', color: 'spec-value' },
 ]
 
 function formatPrice(v: number) {
@@ -103,6 +109,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   )
 
   const [specOpen, setSpecOpen] = useState(false)
+  const [brandsOpen, setBrandsOpen] = useState(!!(searchParams.get('brands')))
+  const [rangeOpen, setRangeOpen] = useState(
+    !!(searchParams.get('maxPrice') || searchParams.get('maxWeight') || searchParams.get('maxDrop'))
+  )
 
   const activeSpecCount = SPEC_FILTERS.filter(
     (f) => Number(searchParams.get(f.param) ?? 1) > 1
@@ -114,7 +124,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
   const maxWeight = Number(searchParams.get('maxWeight') ?? weightRange.max)
   const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
-  const sort = searchParams.get('sort') ?? 'recommended'
+  const currentSort = searchParams.get('sort') ?? 'value-desc'
+  const [activeKey, activeDir] = parseSort(currentSort)
 
   return (
     <aside className="w-60 shrink-0 sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto pr-2 scrollbar-hide">
@@ -122,24 +133,32 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         {/* Sort */}
         <section>
           <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">정렬</h3>
-          <div className="space-y-1">
-            {SORTS.map((s) =>
-              s.id.startsWith('_sep') ? (
-                <hr key={s.id} className="border-elevated my-1" />
-              ) : (
+          <div className="flex flex-wrap gap-2">
+            {SORTS_META.map((s) => {
+              const isActive = activeKey === s.key
+              const dir = isActive ? activeDir : s.defaultDir
+              const arrow = dir === 'desc' ? '↓' : '↑'
+              return (
                 <button
-                  key={s.id}
-                  onClick={() => updateParam('sort', s.id === 'recommended' ? '' : s.id)}
-                  className={`w-full text-left text-sm font-body px-2 py-2 rounded transition-colors min-h-[44px] flex items-center ${
-                    sort === s.id
-                      ? 'text-accent bg-accent/10'
-                      : 'text-secondary hover:text-primary'
+                  key={s.key}
+                  onClick={() => {
+                    if (activeKey !== s.key) {
+                      updateParam('sort', `${s.key}-${s.defaultDir}`)
+                    } else {
+                      const nextDir = activeDir === 'desc' ? 'asc' : 'desc'
+                      updateParam('sort', `${s.key}-${nextDir}`)
+                    }
+                  }}
+                  className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center gap-1 ${
+                    isActive
+                      ? 'border-accent text-accent bg-accent/10'
+                      : 'border-elevated text-secondary hover:border-secondary'
                   }`}
                 >
-                  {s.label}
+                  {s.label}{isActive && <span>{arrow}</span>}
                 </button>
               )
-            )}
+            })}
           </div>
         </section>
 
@@ -191,120 +210,141 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Brands */}
         <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">브랜드</h3>
-          <div className="space-y-1">
-            {brands.map((brand) => (
-              <label
-                key={brand.id}
-                className="flex items-center gap-2 cursor-pointer group min-h-[44px]"
-              >
+          <button
+            onClick={() => setBrandsOpen(!brandsOpen)}
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+          >
+            <span>
+              브랜드{selectedBrands.length > 0 && (
+                <span className="text-accent normal-case font-body ml-1">({selectedBrands.length})</span>
+              )}
+            </span>
+            <span className="text-xs">{brandsOpen ? '▲' : '▼'}</span>
+          </button>
+          {brandsOpen && (
+            <div className="space-y-1">
+              {brands.map((brand) => (
+                <label
+                  key={brand.id}
+                  className="flex items-center gap-2 cursor-pointer group min-h-[44px]"
+                >
+                  <input
+                    type="checkbox"
+                    checked={selectedBrands.includes(brand.id)}
+                    onChange={() => toggleBrand(brand.id)}
+                    className="sr-only"
+                  />
+                  <span
+                    className={`w-4 h-4 border flex items-center justify-center shrink-0 transition-colors ${
+                      selectedBrands.includes(brand.id)
+                        ? 'border-accent bg-accent'
+                        : 'border-elevated group-hover:border-secondary'
+                    }`}
+                  >
+                    {selectedBrands.includes(brand.id) && (
+                      <svg className="w-3 h-3 text-base" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                      </svg>
+                    )}
+                  </span>
+                  <span
+                    className={`text-sm font-body transition-colors ${
+                      selectedBrands.includes(brand.id) ? 'text-primary' : 'text-secondary group-hover:text-primary'
+                    }`}
+                  >
+                    {brand.name}
+                  </span>
+                </label>
+              ))}
+            </div>
+          )}
+        </section>
+
+        {/* Range Filters */}
+        <section>
+          <button
+            onClick={() => setRangeOpen(!rangeOpen)}
+            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2"
+          >
+            <span>
+              범위 필터{[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length > 0 && (
+                <span className="text-accent normal-case font-body ml-1">
+                  ({[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length}개 활성)
+                </span>
+              )}
+            </span>
+            <span className="text-xs">{rangeOpen ? '▲' : '▼'}</span>
+          </button>
+          {rangeOpen && (
+            <div className="space-y-4">
+              {/* 최대 가격 */}
+              <div>
+                <div className="flex justify-between text-sm font-body mb-1">
+                  <span className="text-secondary">최대 가격</span>
+                  <span className="text-primary font-bold">{formatPrice(maxPrice)}</span>
+                </div>
                 <input
-                  type="checkbox"
-                  checked={selectedBrands.includes(brand.id)}
-                  onChange={() => toggleBrand(brand.id)}
-                  className="sr-only"
+                  type="range"
+                  min={priceRange.min}
+                  max={priceRange.max}
+                  step={10000}
+                  value={maxPrice}
+                  onChange={(e) =>
+                    updateParam('maxPrice', Number(e.target.value) === priceRange.max ? '' : e.target.value)
+                  }
+                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
                 />
-                <span
-                  className={`w-4 h-4 border flex items-center justify-center shrink-0 transition-colors ${
-                    selectedBrands.includes(brand.id)
-                      ? 'border-accent bg-accent'
-                      : 'border-elevated group-hover:border-secondary'
-                  }`}
-                >
-                  {selectedBrands.includes(brand.id) && (
-                    <svg className="w-3 h-3 text-base" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
-                    </svg>
-                  )}
-                </span>
-                <span
-                  className={`text-sm font-body transition-colors ${
-                    selectedBrands.includes(brand.id) ? 'text-primary' : 'text-secondary group-hover:text-primary'
-                  }`}
-                >
-                  {brand.name}
-                </span>
-              </label>
-            ))}
-          </div>
-        </section>
-
-        {/* Price */}
-        <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
-            최대 가격{' '}
-            <span className="text-primary normal-case font-body font-bold">{formatPrice(maxPrice)}</span>
-          </h3>
-          <input
-            type="range"
-            min={priceRange.min}
-            max={priceRange.max}
-            step={10000}
-            value={maxPrice}
-            onChange={(e) =>
-              updateParam(
-                'maxPrice',
-                Number(e.target.value) === priceRange.max ? '' : e.target.value
-              )
-            }
-            className="w-full accent-accent"
-          />
-          <div className="flex justify-between text-muted text-sm font-body mt-1">
-            <span>{formatPrice(priceRange.min)}</span>
-            <span>{formatPrice(priceRange.max)}</span>
-          </div>
-        </section>
-
-        {/* Weight */}
-        <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
-            최대 무게{' '}
-            <span className="text-primary normal-case font-body font-bold">{maxWeight}g</span>
-          </h3>
-          <input
-            type="range"
-            min={weightRange.min}
-            max={weightRange.max}
-            step={5}
-            value={maxWeight}
-            onChange={(e) =>
-              updateParam(
-                'maxWeight',
-                Number(e.target.value) === weightRange.max ? '' : e.target.value
-              )
-            }
-            className="w-full accent-accent"
-          />
-          <div className="flex justify-between text-muted text-sm font-body mt-1">
-            <span>{weightRange.min}g</span>
-            <span>{weightRange.max}g</span>
-          </div>
-        </section>
-
-        {/* Drop */}
-        <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">
-            최대 드롭{' '}
-            <span className="text-primary normal-case font-body font-bold">{maxDrop}mm</span>
-          </h3>
-          <input
-            type="range"
-            min={dropRange.min}
-            max={dropRange.max}
-            step={1}
-            value={maxDrop}
-            onChange={(e) =>
-              updateParam(
-                'maxDrop',
-                Number(e.target.value) === dropRange.max ? '' : e.target.value
-              )
-            }
-            className="w-full accent-accent"
-          />
-          <div className="flex justify-between text-muted text-sm font-body mt-1">
-            <span>{dropRange.min}mm</span>
-            <span>{dropRange.max}mm</span>
-          </div>
+                <div className="flex justify-between text-muted text-xs font-body mt-1">
+                  <span>{formatPrice(priceRange.min)}</span>
+                  <span>{formatPrice(priceRange.max)}</span>
+                </div>
+              </div>
+              {/* 최대 무게 */}
+              <div>
+                <div className="flex justify-between text-sm font-body mb-1">
+                  <span className="text-secondary">최대 무게</span>
+                  <span className="text-primary font-bold">{maxWeight}g</span>
+                </div>
+                <input
+                  type="range"
+                  min={weightRange.min}
+                  max={weightRange.max}
+                  step={5}
+                  value={maxWeight}
+                  onChange={(e) =>
+                    updateParam('maxWeight', Number(e.target.value) === weightRange.max ? '' : e.target.value)
+                  }
+                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
+                />
+                <div className="flex justify-between text-muted text-xs font-body mt-1">
+                  <span>{weightRange.min}g</span>
+                  <span>{weightRange.max}g</span>
+                </div>
+              </div>
+              {/* 최대 드롭 */}
+              <div>
+                <div className="flex justify-between text-sm font-body mb-1">
+                  <span className="text-secondary">최대 드롭</span>
+                  <span className="text-primary font-bold">{maxDrop}mm</span>
+                </div>
+                <input
+                  type="range"
+                  min={dropRange.min}
+                  max={dropRange.max}
+                  step={1}
+                  value={maxDrop}
+                  onChange={(e) =>
+                    updateParam('maxDrop', Number(e.target.value) === dropRange.max ? '' : e.target.value)
+                  }
+                  className="w-full h-2 rounded-full appearance-none cursor-pointer accent-accent"
+                />
+                <div className="flex justify-between text-muted text-xs font-body mt-1">
+                  <span>{dropRange.min}mm</span>
+                  <span>{dropRange.max}mm</span>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
 
         {/* Spec Filters */}
@@ -326,9 +366,19 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 const val = Number(searchParams.get(f.param) ?? 1)
                 return (
                   <div key={f.param}>
-                    <div className="flex justify-between text-sm font-body mb-1">
+                    <div className="flex justify-between items-center text-sm font-body mb-1">
                       <span className={`text-${f.color}`}>{f.label}</span>
-                      <span className="text-primary font-bold">{val}</span>
+                      <div className="flex items-center gap-1">
+                        <span className="text-primary font-bold">{val === 1 ? '없음' : val}</span>
+                        {val > 1 && (
+                          <button
+                            onClick={() => updateParam(f.param, '')}
+                            className="text-muted hover:text-primary text-xs leading-none"
+                          >
+                            ×
+                          </button>
+                        )}
+                      </div>
                     </div>
                     <input
                       type="range"
@@ -339,7 +389,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                       onChange={(e) =>
                         updateParam(f.param, Number(e.target.value) > 1 ? e.target.value : '')
                       }
-                      className="w-full"
+                      className="w-full h-2 rounded-full appearance-none cursor-pointer"
                       style={{ accentColor: `var(--${f.color})` }}
                     />
                   </div>

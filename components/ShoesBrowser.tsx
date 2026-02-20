@@ -16,7 +16,6 @@ function getSpecValue(shoe: Shoe, sort: string): number {
       return shoe.specs.rawResponsiveness ?? shoe.specs.responsiveness
     case 'stability-desc': return shoe.specs.stability
     case 'durability-desc': return shoe.specs.durability
-    case 'lightness-desc': return shoe.specs.weightScore ?? 0
     case 'value-desc': return shoe.specs.valueScore ?? 0
     default: return 0
   }
@@ -97,28 +96,31 @@ export default function ShoesBrowser({
       result = result.filter((s) => (s.specs.valueScore ?? 0) >= Number(minVS))
     }
 
-    const sort = searchParams.get('sort') ?? 'recommended'
+    const sort = searchParams.get('sort') ?? 'value-desc'
 
-    if (sort !== 'recommended') {
-      result.sort((a, b) => {
-        let diff = 0
+    const SPEC_SORT_KEYS = ['value', 'cushioning', 'responsiveness', 'stability', 'durability']
+
+    result.sort((a, b) => {
+      let diff = 0
+      const isAsc = sort.endsWith('-asc')
+      const baseKey = sort.replace(/-(?:asc|desc)$/, '')
+
+      if (SPEC_SORT_KEYS.includes(baseKey)) {
+        const descKey = `${baseKey}-desc`
+        diff = isAsc
+          ? getSpecValue(a, descKey) - getSpecValue(b, descKey)
+          : getSpecValue(b, descKey) - getSpecValue(a, descKey)
+      } else {
         switch (sort) {
-          case 'price-asc': diff = a.price - b.price; break
-          case 'price-desc': diff = b.price - a.price; break
-          case 'weight-asc': diff = a.specs.weight - b.specs.weight; break
-          case 'newest': diff = b.releaseYear - a.releaseYear; break
-          case 'value-desc':
-          case 'cushioning-desc':
-          case 'responsiveness-desc':
-          case 'stability-desc':
-          case 'durability-desc':
-          case 'lightness-desc':
-            diff = getSpecValue(b, sort) - getSpecValue(a, sort); break
+          case 'price-asc':   diff = a.price - b.price; break
+          case 'price-desc':  diff = b.price - a.price; break
+          case 'weight-asc':  diff = a.specs.weight - b.specs.weight; break
+          case 'weight-desc': diff = b.specs.weight - a.specs.weight; break
         }
-        if (diff !== 0) return diff
-        return a.slug.localeCompare(b.slug)
-      })
-    }
+      }
+      if (diff !== 0) return diff
+      return a.slug.localeCompare(b.slug)
+    })
 
     return result
   }, [shoes, searchParams])

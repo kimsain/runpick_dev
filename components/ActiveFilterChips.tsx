@@ -23,24 +23,21 @@ const SUBCATEGORY_LABELS: Record<string, string> = {
 }
 
 const SORT_LABELS: Record<string, string> = {
-  'price-asc': '가격↑',
-  'price-desc': '가격↓',
-  'weight-asc': '무게↑',
-  'value-desc': '가성비↓',
-  'cushioning-desc': '쿠션↓',
-  'responsiveness-desc': '반응↓',
-  'stability-desc': '안정↓',
-  'durability-desc': '내구↓',
-  'lightness-desc': '경량↓',
-  'newest': '최신순',
+  'value-asc': '가성비↑',
+  'cushioning-desc': '쿠션성↓', 'cushioning-asc': '쿠션성↑',
+  'responsiveness-desc': '반응성↓', 'responsiveness-asc': '반응성↑',
+  'stability-desc': '안정성↓', 'stability-asc': '안정성↑',
+  'durability-desc': '내구성↓', 'durability-asc': '내구성↑',
+  'weight-asc': '무게↑', 'weight-desc': '무게↓',
+  'price-asc': '가격↑', 'price-desc': '가격↓',
 }
 
 const SPEC_CHIP_LABELS: Record<string, string> = {
-  minCush: '쿠션',
-  minResp: '반응',
-  minStab: '안정',
-  minDur: '내구',
-  minWS: '경량',
+  minCush: '쿠션성',
+  minResp: '반응성',
+  minStab: '안정성',
+  minDur: '내구성',
+  minWS: '경량성',
   minVS: '가성비',
 }
 
@@ -126,7 +123,7 @@ export default function ActiveFilterChips() {
   }
 
   const sort = searchParams.get('sort')
-  if (sort) {
+  if (sort && sort !== 'value-desc') {
     chips.push({
       label: SORT_LABELS[sort] ?? sort,
       onRemove: () => removeParam('sort'),
