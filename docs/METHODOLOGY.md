@@ -217,12 +217,18 @@ weightScore = clamp(round((HEAVY_G - weight) / (HEAVY_G - LIGHT_G) × 10), 1, 10
 케이스 분기와 무관하게 항상 4개 스펙 합산 / 가격으로 직접 계산합니다.
 
 ```
-valueScore = clamp(round((cushioning + responsiveness + stability + durability) / price × 48000), 1, 10)
+ratio = (cushioning + responsiveness + stability + durability) / price
+VALUE_RATIO_MIN = 24 / 599_000  # 앵커 최솟값: adizero-pro-evo-2 (sum=24, price=599,000)
+VALUE_RATIO_MAX = 30 / 169_000  # 앵커 최댓값: novablast-5 (sum=30, price=169,000)
+valueScore = clamp(round((ratio − VALUE_RATIO_MIN) / (VALUE_RATIO_MAX − VALUE_RATIO_MIN) × 9 + 1), 1, 10)
 ```
 
 **설계 근거:**
 - **4개 스펙 합산 / 가격**: 단위 가격당 성능 비율. 스펙이 높고 가격이 낮을수록 가성비 높음.
-- **scale 48000**: 현 데이터셋 역산 최적값 (MAE 0.581). 앵커 예시: 스펙합 28, 가격 192K원 → valueScore ≈ 7.
+- **min/max 고정 앵커 정규화**: `weightScore`와 동일한 설계. 현 데이터셋 극단값을 고정 기준으로 사용하여 신발 추가 시 기존 점수 불변.
+  - 앵커 최솟값(1점): adizero-pro-evo-2 — sum=24, price=599,000원
+  - 앵커 최댓값(10점): novablast-5 — sum=30, price=169,000원
+  - 앵커 업데이트 조건: 새 신발이 기존 앵커보다 더 극단적인 ratio를 가질 때만 변경
 - **가격 기준**: 출시 MSRP (KRW). 할인가 미반영.
 - **weightScore 미포함**: 경량성은 별도 스펙으로 표시되며, 가성비 판단 기준은 핵심 퍼포먼스 4개로 한정.
 - **clamp(1, 10)**: 다른 스펙과 동일하게 최솟값 1점 보장.

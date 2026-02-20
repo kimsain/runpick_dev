@@ -32,7 +32,7 @@
           "forefoot": 25.8
         },
         "weightScore": 3,
-        "valueScore": 8,
+        "valueScore": 9,
         "rawCushioning": 4.4,
         "rawResponsiveness": 4.57
       },
@@ -146,7 +146,7 @@
           "forefoot": 31.2
         },
         "weightScore": 2,
-        "valueScore": 7,
+        "valueScore": 8,
         "rawCushioning": 4.88,
         "rawResponsiveness": 3.8
       },
@@ -429,7 +429,7 @@
           "forefoot": 35
         },
         "weightScore": 3,
-        "valueScore": 7,
+        "valueScore": 8,
         "rawCushioning": 6.01,
         "rawResponsiveness": 6.37
       },

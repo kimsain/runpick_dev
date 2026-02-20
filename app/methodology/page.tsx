@@ -125,9 +125,9 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: '4개 스펙 합산 ÷ 출시가(KRW) — 항상 직접 계산',
       formula:
-        'score = clamp(round((쿠션 + 반응 + 안정 + 내구) / price × 48000), 1, 10)',
+        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 24/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 30/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
       rationale:
-        'scale=48000은 역산 최적값. 경량성은 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
+        'weightScore와 동일한 min/max 고정 앵커 정규화. 앵커 최솟값(1점)=adizero-pro-evo-2, 최댓값(10점)=novablast-5. 신발 추가 시 기존 점수 불변. 경량성 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
     },
   },
 ]

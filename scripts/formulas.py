@@ -13,7 +13,10 @@ import re
 LIGHT_G = 129          # 최경량 기준 (g) — metaspeed-ray
 HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 
-VALUE_SCALE = 48000    # 가성비 스케일 (MAE 0.581)
+# 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
+# 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
+VALUE_RATIO_MIN = 24 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=24, price=599,000)
+VALUE_RATIO_MAX = 30 / 169_000  # 최고 가성비: novablast-5 (sum=30, price=169,000)
 
 CUSH_OFFSET = 50       # SA 하한
 CUSH_RANGE = 104       # SA 범위 (154-50) — 정수 정규화용
@@ -83,8 +86,19 @@ def weight_score(weight_g):
 
 
 def value_score(cush, resp, stab, dur, price):
-    """가성비 점수 (1-10, 가성비 높을수록 높음)."""
-    return clamp(round((cush + resp + stab + dur) / price * VALUE_SCALE), 1, 10)
+    """가성비 점수 (1-10, 가성비 높을수록 높음).
+
+    min/max 고정 앵커 선형 정규화:
+      VALUE_RATIO_MIN = adizero-pro-evo-2 → 1점
+      VALUE_RATIO_MAX = novablast-5 → 10점
+    """
+    if price <= 0:
+        return 1
+    ratio = (cush + resp + stab + dur) / price
+    return clamp(
+        round((ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1),
+        1, 10
+    )
 
 
 # ─── Case B: RunRepeat 기반 정수 점수 ────────────────────────────────
