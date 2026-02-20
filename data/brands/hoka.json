@@ -25,8 +25,8 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 5,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 8,
         "stackHeight": {
           "heel": 42,
           "forefoot": 34
@@ -82,8 +82,8 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 6,
-        "stability": 10,
-        "durability": 6,
+        "stability": 7,
+        "durability": 8,
         "stackHeight": {
           "heel": 43,
           "forefoot": 38
@@ -139,8 +139,8 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 5,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 10,
         "stackHeight": {
           "heel": 41,
           "forefoot": 33
@@ -196,8 +196,8 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 7,
-        "stability": 9,
-        "durability": 6,
+        "stability": 7,
+        "durability": 7,
         "stackHeight": {
           "heel": 44,
           "forefoot": 39
@@ -253,7 +253,7 @@
         "drop": 7,
         "cushioning": 9,
         "responsiveness": 8,
-        "stability": 7,
+        "stability": 6,
         "durability": 6,
         "stackHeight": {
           "heel": 38,
@@ -310,14 +310,14 @@
         "drop": 7,
         "cushioning": 8,
         "responsiveness": 9,
-        "stability": 5,
-        "durability": 6,
+        "stability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 40,
           "forefoot": 33
         },
         "weightScore": 6,
-        "valueScore": 4,
+        "valueScore": 5,
         "rawCushioning": 5.28,
         "rawResponsiveness": 8.35
       },

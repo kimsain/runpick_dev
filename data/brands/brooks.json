@@ -25,8 +25,8 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 9,
         "stackHeight": {
           "heel": 36.2,
           "forefoot": 25.8
@@ -82,8 +82,8 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 7,
         "stackHeight": {
           "heel": 36.5,
           "forefoot": 25.2
@@ -139,8 +139,8 @@
         "drop": 6,
         "cushioning": 7,
         "responsiveness": 4,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 8,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 31.2
@@ -196,14 +196,14 @@
         "drop": 10,
         "cushioning": 7,
         "responsiveness": 5,
-        "stability": 10,
-        "durability": 6,
+        "stability": 7,
+        "durability": 10,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 28.2
         },
         "weightScore": 3,
-        "valueScore": 6,
+        "valueScore": 7,
         "rawCushioning": 4.57,
         "rawResponsiveness": 4.84
       },
@@ -365,7 +365,7 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 9,
+        "stability": 8,
         "durability": 7,
         "stackHeight": {
           "heel": 40.9,
@@ -422,8 +422,8 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 7,
-        "stability": 10,
-        "durability": 6,
+        "stability": 8,
+        "durability": 7,
         "stackHeight": {
           "heel": 45.6,
           "forefoot": 35
@@ -479,14 +479,14 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 9,
-        "stability": 9,
-        "durability": 6,
+        "stability": 7,
+        "durability": 4,
         "stackHeight": {
           "heel": 37.6,
           "forefoot": 26.4
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 4,
         "rawCushioning": 4.97,
         "rawResponsiveness": 8.6
       },

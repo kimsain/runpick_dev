@@ -133,7 +133,7 @@
       "specs": {
         "weight": 306,
         "drop": 4,
-        "cushioning": 8,
+        "cushioning": 9,
         "responsiveness": 5,
         "stability": 6,
         "durability": 6,
@@ -250,7 +250,7 @@
         "cushioning": 7,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 37,
           "forefoot": 31
@@ -304,9 +304,9 @@
       "specs": {
         "weight": 213,
         "drop": 8,
-        "cushioning": 7,
+        "cushioning": 8,
         "responsiveness": 8,
-        "stability": 7,
+        "stability": 6,
         "durability": 6,
         "stackHeight": {
           "heel": 40,
