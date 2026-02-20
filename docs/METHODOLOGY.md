@@ -112,6 +112,42 @@ scripts/
   add_confidence.py      # confidence 주입 스크립트
 ```
 
+## raw 정밀 점수 / Raw Precision Scores
+
+홈페이지 추천 섹션("최고의 쿠션성", "최고의 에너지리턴")은 정수 스펙(0–10) 대신
+**소수점 2자리** 정밀 점수(`rawCushioning`, `rawResponsiveness`)로 정렬합니다.
+이는 정수 동점으로 인해 가성비(valueScore)가 순위를 결정하는 부작용을 방지하기 위함입니다.
+
+### 공식 / Formulas
+
+**rawCushioning**
+
+- RunRepeat SA 우선 (heelSA × 0.6 + forefootSA × 0.4 — 50) / 150 × 10, clamped 0–10
+- RunRepeat 없을 경우 RTINGS fallback: `0.72 × (heelScore + forefootScore) / 2`, clamped 0–10
+
+**rawResponsiveness**
+
+- RunRepeat ER% 우선: `(avg_ER − 30) / 55 × 10`, clamped 0–10  (정규화 상한 85%)
+- RTINGS fallback: `(heelScore + forefootScore) / 2 / 10`, clamped 0–10
+
+### RTINGS 쿠션 편향 분석 / RTINGS Cushioning Bias
+
+RTINGS-only 신발(RunRepeat 데이터 없음)의 `rawCushioning`이 RunRepeat 기반 신발보다
+평균 **+2.2** 높게 산출되는 편향이 관측되었습니다 (n=78, 2026-02 기준).
+
+- 원인: RTINGS /10 점수(착용감 중심)가 RunRepeat SA 물리 측정값보다 상위권에 집중되는 경향
+- 보정: 선형 계수 **0.72** 적용 (LOOCV RMSE 0.495 → **0.374**, 약 23% 개선)
+
+### ER% 정규화 상한 변경 근거 / ER% Normalization Upper Bound
+
+| 용도 | 기존 상한 | 변경 후 | 근거 |
+|------|----------|---------|------|
+| rawResponsiveness (추천 정렬) | 75% | **85%** | 실측 최고 81.5% 기준, 10점 = 상위 2–4개 수준 |
+| 표시 정수 responsiveness (스펙 바) | 75% | **82%** | 상위 4–5% 신발만 10점 |
+
+기존 상한 75% 기준에서는 레이싱화 15개 전부 `rawResp = 10.0`이 되어
+타이브레이커인 valueScore(가성비)가 순위를 결정, 고가 레이싱화가 불이익을 받았습니다.
+
 ## 한계 / Limitations
 
 - **발 형태 차이**: 동일 점수라도 발 형태, 체중, 주법에 따라 체감이 다를 수 있음

@@ -90,10 +90,10 @@ export default function HomePage() {
   const cushioningBest = pickTop(allShoes, 'cushioning', highConfidence)
 
   const sections = [
-    { title: '신규 러닝화', shoes: newShoes },
-    { title: '최고의 가성비', shoes: valueBest },
-    { title: '최고의 에너지리턴', shoes: responsivenessBest },
-    { title: '최고의 쿠션성', shoes: cushioningBest },
+    { title: '신규 러닝화', subtitle: null, shoes: newShoes },
+    { title: '최고의 가성비', subtitle: null, shoes: valueBest },
+    { title: '최고의 에너지리턴', subtitle: '에너지리턴(ER%) 실측 측정값 기준', shoes: responsivenessBest },
+    { title: '최고의 쿠션성', subtitle: '충격흡수(SA) 실측 측정값 기준', shoes: cushioningBest },
   ]
 
   return (
@@ -164,10 +164,15 @@ export default function HomePage() {
       {/* Curation Sections */}
       {sections.map((section, sectionIdx) => (
         <section key={section.title} className="py-16 px-6 max-w-7xl mx-auto">
-          <div className="flex items-baseline justify-between mb-8">
-            <h2 className="font-display text-lg text-primary tracking-widest uppercase">
-              {section.title}
-            </h2>
+          <div className="flex items-start justify-between mb-8">
+            <div>
+              <h2 className="font-display text-lg text-primary tracking-widest uppercase">
+                {section.title}
+              </h2>
+              {section.subtitle && (
+                <p className="text-muted text-xs font-body mt-1">{section.subtitle}</p>
+              )}
+            </div>
             <Link
               href="/shoes"
               className="text-sm font-body text-secondary hover:text-accent transition-colors"

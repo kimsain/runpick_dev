@@ -34,7 +34,7 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 5.4,
-        "rawResponsiveness": 7.9
+        "rawResponsiveness": 7.87
       },
       "pros": [
         "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해",
@@ -81,7 +81,7 @@
         "weight": 207,
         "drop": 4,
         "cushioning": 4,
-        "responsiveness": 5,
+        "responsiveness": 4,
         "stability": 6,
         "durability": 6,
         "stackHeight": {
@@ -90,8 +90,8 @@
         },
         "weightScore": 6,
         "valueScore": 7,
-        "rawCushioning": 3.7,
-        "rawResponsiveness": 4.9
+        "rawCushioning": 3.69,
+        "rawResponsiveness": 3.99
       },
       "pros": [
         "207g의 가벼운 무게라 발이 안 무겁고 리듬 훈련에서 페이스 올리기가 부담 없어",
@@ -138,8 +138,8 @@
         "weight": 263,
         "drop": 10,
         "cushioning": 6,
-        "responsiveness": 9,
-        "stability": 9,
+        "responsiveness": 8,
+        "stability": 10,
         "durability": 6,
         "stackHeight": {
           "heel": 37,
@@ -147,8 +147,8 @@
         },
         "weightScore": 4,
         "valueScore": 8,
-        "rawCushioning": 6.3,
-        "rawResponsiveness": 8.8
+        "rawCushioning": 6.25,
+        "rawResponsiveness": 7.16
       },
       "pros": [
         "PWRRUN HG 폼이 SA 149/136으로 Ride 18보다 훨씬 높은 충격 흡수를 제공해서 하프·풀 장거리 훈련에서 발이 쉬어",
@@ -195,8 +195,8 @@
         "weight": 272,
         "drop": 6,
         "cushioning": 5,
-        "responsiveness": 7,
-        "stability": 7,
+        "responsiveness": 6,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 35,
@@ -205,7 +205,7 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 4.8,
-        "rawResponsiveness": 7.0
+        "rawResponsiveness": 5.75
       },
       "pros": [
         "HOLLOW TECH 구조가 별도 포스트 없이 자연스럽게 내측 안정성을 잡아줘서 안정화치고 딱딱하거나 어색한 느낌이 없어",
@@ -252,8 +252,8 @@
         "weight": 283,
         "drop": 6,
         "cushioning": 6,
-        "responsiveness": 9,
-        "stability": 9,
+        "responsiveness": 8,
+        "stability": 10,
         "durability": 6,
         "stackHeight": {
           "heel": 38,
@@ -261,8 +261,8 @@
         },
         "weightScore": 3,
         "valueScore": 8,
-        "rawCushioning": 6.4,
-        "rawResponsiveness": 9.2
+        "rawCushioning": 6.44,
+        "rawResponsiveness": 7.49
       },
       "pros": [
         "PWRRUN PB + PWRRUN 크래들 이중 밀도 구조라 안정화인데 발 아래 쿠셔닝이 부드럽고 SA 151/140으로 충격 흡수도 최상급이야",
@@ -309,7 +309,7 @@
         "weight": 269,
         "drop": 8,
         "cushioning": 4,
-        "responsiveness": 9,
+        "responsiveness": 8,
         "stability": 9,
         "durability": 6,
         "stackHeight": {
@@ -318,8 +318,8 @@
         },
         "weightScore": 4,
         "valueScore": 8,
-        "rawCushioning": 4.5,
-        "rawResponsiveness": 9.1
+        "rawCushioning": 4.47,
+        "rawResponsiveness": 7.46
       },
       "pros": [
         "XT-600 웨지 구조가 별도 포스트 없이 발이 내측으로 쏠리는 걸 잡아줘서 안정화치고 자연스러운 착지감이야",
@@ -366,8 +366,8 @@
         "weight": 286,
         "drop": 8,
         "cushioning": 5,
-        "responsiveness": 9,
-        "stability": 7,
+        "responsiveness": 8,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 39.5,
@@ -375,8 +375,8 @@
         },
         "weightScore": 3,
         "valueScore": 6,
-        "rawCushioning": 5.2,
-        "rawResponsiveness": 9.5
+        "rawCushioning": 5.17,
+        "rawResponsiveness": 7.74
       },
       "pros": [
         "IncrediRun 상단 레이어가 플레이트 없이도 전족부 에너지 리턴 79%대의 바운시한 감각을 만들어줘",
@@ -432,8 +432,8 @@
         },
         "weightScore": 5,
         "valueScore": 8,
-        "rawCushioning": 8.4,
-        "rawResponsiveness": 8.2
+        "rawCushioning": 6.08,
+        "rawResponsiveness": 8.18
       },
       "pros": [
         "PWRRUN PB + 나일론 플레이트 조합으로 에너지 리턴 82.8%를 240g에 구현해서 Speed 5급 반발력을 더 두꺼운 쿠셔닝과 함께 즐길 수 있어",
@@ -480,8 +480,8 @@
         "weight": 238,
         "drop": 8,
         "cushioning": 5,
-        "responsiveness": 10,
-        "stability": 9,
+        "responsiveness": 9,
+        "stability": 10,
         "durability": 6,
         "stackHeight": {
           "heel": 36,
@@ -489,8 +489,8 @@
         },
         "weightScore": 5,
         "valueScore": 8,
-        "rawCushioning": 4.8,
-        "rawResponsiveness": 10
+        "rawCushioning": 4.83,
+        "rawResponsiveness": 8.31
       },
       "pros": [
         "PWRRUN PB PEBA 폼 + 나일론 플레이트라 에너지 리턴 82%대로 써코니 트레이너 라인 최고 반발력을 자랑해",
@@ -546,8 +546,8 @@
         },
         "weightScore": 7,
         "valueScore": 3,
-        "rawCushioning": 6.2,
-        "rawResponsiveness": 10
+        "rawCushioning": 6.23,
+        "rawResponsiveness": 9.34
       },
       "pros": [
         "IncrediRun TPEE 폼 + 카본 플레이트로 에너지 리턴 85.8~86.4%를 구현해서 197g에 최고 수준의 바운스가 있어",
@@ -594,7 +594,7 @@
         "weight": 212,
         "drop": 8,
         "cushioning": 5,
-        "responsiveness": 9,
+        "responsiveness": 8,
         "stability": 4,
         "durability": 6,
         "stackHeight": {
@@ -603,8 +603,8 @@
         },
         "weightScore": 6,
         "valueScore": 4,
-        "rawCushioning": 5.0,
-        "rawResponsiveness": 9.2
+        "rawCushioning": 4.97,
+        "rawResponsiveness": 7.56
       },
       "pros": [
         "PWRRUN PB 카본 레이싱화 중 합리적인 가격대(Pro 5보다 저렴)에 카본 플레이트의 추진력을 경험할 수 있어",
@@ -660,8 +660,8 @@
         },
         "weightScore": 7,
         "valueScore": 4,
-        "rawCushioning": 7.3,
-        "rawResponsiveness": 8.2
+        "rawCushioning": 5.26,
+        "rawResponsiveness": 8.21
       },
       "pros": [
         "Pro 4 대비 에너지 리턴을 82%대로 끌어올려서 같은 카본 플레이트 구조에서 훨씬 강한 반발력을 느낄 수 있어",

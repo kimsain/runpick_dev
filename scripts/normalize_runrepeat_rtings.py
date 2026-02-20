@@ -7,7 +7,7 @@ RunRepeat + RTINGS 둘 다 있는 신발의 스코어를 RunRepeat 계측치 기
 정규화 공식:
   cushioning    = clamp(round((raw-50)/(200-50)*10), 1, 10)
                   where raw = heelSA * 0.6 + forefootSA * 0.4
-  responsiveness = clamp(round((avg_ER - 30) / (75 - 30) * 10), 1, 10)
+  responsiveness = clamp(round((avg_ER - 30) / (82 - 30) * 10), 1, 10)
   stability     = existing + delta (keywords: +1 positive, -1 negative)
   durability    = existing + delta (keywords: +1 positive, -1 negative)
 
@@ -106,7 +106,7 @@ def compute_scores(rr_src, existing_specs, findings_text):
     responsiveness = None
     if heel_er is not None and fore_er is not None:
         avg_er = (heel_er + fore_er) / 2
-        responsiveness = clamp(round((avg_er - 30) / (75 - 30) * 10), 1, 10)
+        responsiveness = clamp(round((avg_er - 30) / (82 - 30) * 10), 1, 10)
 
     # stability: existing + keyword delta
     old_stab = existing_specs.get("stability", 6)

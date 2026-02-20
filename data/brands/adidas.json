@@ -88,8 +88,8 @@
         },
         "weightScore": 3,
         "valueScore": 7,
-        "rawCushioning": 6.7,
-        "rawResponsiveness": 7.6
+        "rawCushioning": 4.82,
+        "rawResponsiveness": 7.59
       },
       "pros": [
         "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려",
@@ -247,7 +247,7 @@
         "weight": 176,
         "drop": 7,
         "cushioning": 3,
-        "responsiveness": 10,
+        "responsiveness": 9,
         "stability": 2,
         "durability": 3,
         "stackHeight": {
@@ -256,8 +256,8 @@
         },
         "weightScore": 8,
         "valueScore": 5,
-        "rawCushioning": 3.2,
-        "rawResponsiveness": 10
+        "rawCushioning": 3.24,
+        "rawResponsiveness": 8.5
       },
       "pros": [
         "176g 초경량에 에너지 리턴 77%로 발이 거의 안 느껴지면서 빨라",
@@ -303,8 +303,8 @@
         "weight": 224,
         "drop": 7,
         "cushioning": 6,
-        "responsiveness": 10,
-        "stability": 8,
+        "responsiveness": 8,
+        "stability": 9,
         "durability": 5,
         "stackHeight": {
           "heel": 38.5,
@@ -312,8 +312,8 @@
         },
         "weightScore": 6,
         "valueScore": 7,
-        "rawCushioning": 5.9,
-        "rawResponsiveness": 9.8
+        "rawCushioning": 5.91,
+        "rawResponsiveness": 7.98
       },
       "pros": [
         "에너지 리턴 74%로 슈퍼슈즈급 반발력인데 카본 없이 부드러운 라이드",
@@ -359,7 +359,7 @@
         "weight": 255,
         "drop": 6,
         "cushioning": 5,
-        "responsiveness": 8,
+        "responsiveness": 7,
         "stability": 10,
         "durability": 8,
         "stackHeight": {
@@ -368,8 +368,8 @@
         },
         "weightScore": 4,
         "valueScore": 10,
-        "rawCushioning": 4.6,
-        "rawResponsiveness": 8.1
+        "rawCushioning": 4.63,
+        "rawResponsiveness": 6.65
       },
       "pros": [
         "전족부 에너지 리턴 70%로 포어풋 착지 러너에게 슈퍼슈즈급 반발력",
@@ -417,8 +417,8 @@
         "weight": 184,
         "drop": 7,
         "cushioning": 4,
-        "responsiveness": 10,
-        "stability": 5,
+        "responsiveness": 9,
+        "stability": 6,
         "durability": 6,
         "stackHeight": {
           "heel": 33,
@@ -426,8 +426,8 @@
         },
         "weightScore": 8,
         "valueScore": 6,
-        "rawCushioning": 4.4,
-        "rawResponsiveness": 10
+        "rawCushioning": 4.36,
+        "rawResponsiveness": 8.5
       },
       "pros": [
         "전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는 반발력",
@@ -476,8 +476,8 @@
         "weight": 291,
         "drop": 7,
         "cushioning": 6,
-        "responsiveness": 10,
-        "stability": 6,
+        "responsiveness": 9,
+        "stability": 7,
         "durability": 5,
         "stackHeight": {
           "heel": 50,
@@ -486,7 +486,7 @@
         "weightScore": 3,
         "valueScore": 3,
         "rawCushioning": 6.4,
-        "rawResponsiveness": 10
+        "rawResponsiveness": 8.22
       },
       "pros": [
         "에너지 리턴 77% + 충격 흡수 160 SA로 쿠셔닝과 반발력 모두 압도적",
@@ -544,8 +544,8 @@
         },
         "weightScore": 7,
         "valueScore": 3,
-        "rawCushioning": 5.5,
-        "rawResponsiveness": 10
+        "rawCushioning": 5.47,
+        "rawResponsiveness": 9.15
       },
       "pros": [
         "에너지 리턴 80.4%로 랩 테스트 역대 최고 — 밟을수록 돌아오는 반발력",
@@ -593,17 +593,17 @@
         "weight": 138,
         "drop": 3,
         "cushioning": 6,
-        "responsiveness": 10,
-        "stability": 6,
-        "durability": 3,
+        "responsiveness": 8,
+        "stability": 7,
+        "durability": 4,
         "stackHeight": {
           "heel": 39,
           "forefoot": 36
         },
         "weightScore": 10,
         "valueScore": 0,
-        "rawCushioning": 6.2,
-        "rawResponsiveness": 9.8
+        "rawCushioning": 6.24,
+        "rawResponsiveness": 7.99
       },
       "pros": [
         "138g으로 알파플라이 3(198g)보다 60g 가벼워서 장거리에서 차이가 확실해",

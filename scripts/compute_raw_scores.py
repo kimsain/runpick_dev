@@ -25,7 +25,7 @@ def clamp(v, lo, hi):
 
 
 def round1(v):
-    return round(v, 1)
+    return round(v, 2)
 
 
 def compute_raw(sources):
@@ -49,7 +49,7 @@ def compute_raw(sources):
         h_c = c.get("heelShockAbsorption")
         f_c = c.get("forefootShockAbsorption")
         if h_c is not None and f_c is not None:
-            raw_cushion = round1(clamp((h_c + f_c) / 2, 0, 10))
+            raw_cushion = round1(clamp(0.72 * (h_c + f_c) / 2, 0, 10))
 
     # rawResponsiveness: RunRepeat ER% 우선
     if rr:
@@ -57,7 +57,7 @@ def compute_raw(sources):
         h_er = r.get("heelEnergyReturn")
         f_er = r.get("forefootEnergyReturn")
         if h_er is not None and f_er is not None:
-            raw_resp = round1(clamp(((h_er + f_er) / 2 - 30) / 45 * 10, 0, 10))
+            raw_resp = round1(clamp(((h_er + f_er) / 2 - 30) / 55 * 10, 0, 10))
     if raw_resp is None and rt:
         r = rt.get("attributeScores", {}).get("responsiveness", {})
         h_er = r.get("heelEnergyReturn")
