@@ -36,7 +36,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
       className="group block bg-card border border-elevated hover:border-accent/30 transition-colors duration-300 overflow-hidden"
     >
       {/* Image */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-elevated">
+      <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-elevated">
         {shoe.confidence && (() => {
           const colorClass = shoe.confidence === 'very-high' ? 'text-blue-400' :
             shoe.confidence === 'high' ? 'text-green-400' :
@@ -66,7 +66,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           src={imagePath}
           alt={shoe.name}
           fill
-          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
           className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
           priority={priority}
         />
@@ -86,7 +86,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
         <p className="text-secondary text-sm font-display tracking-widest uppercase mb-1">
           {shoe.brandId.toUpperCase()}
         </p>
-        <p className="text-primary font-body font-bold text-base truncate">
+        <p className="text-primary font-body font-bold text-base line-clamp-2">
           {shoe.name}
         </p>
         <p className="text-primary font-body font-bold text-lg mt-1">

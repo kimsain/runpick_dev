@@ -13,7 +13,7 @@ export default function RelatedShoes({ shoes }: Props) {
       <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
         유사한 러닝화
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {shoes.map((shoe) => (
           <ShoeCard key={shoe.slug} shoe={shoe} />
         ))}

@@ -9,7 +9,7 @@ export const metadata = {
 
 function GridSkeleton() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
       {Array.from({ length: 6 }).map((_, i) => (
         <div key={i} className="aspect-[3/4] bg-card animate-pulse" />
       ))}
