@@ -23,7 +23,7 @@
       "specs": {
         "weight": 245,
         "drop": 10,
-        "cushioning": 6,
+        "cushioning": 5,
         "responsiveness": 8,
         "stability": 5,
         "durability": 7,
@@ -81,7 +81,7 @@
         "weight": 290,
         "drop": 8,
         "cushioning": 9,
-        "responsiveness": 5,
+        "responsiveness": 4,
         "stability": 6,
         "durability": 7,
         "stackHeight": {
@@ -89,7 +89,7 @@
           "forefoot": 38
         },
         "weightScore": 3,
-        "valueScore": 6,
+        "valueScore": 5,
         "rawCushioning": 6.01,
         "rawResponsiveness": 6.79
       },
@@ -137,8 +137,8 @@
       "specs": {
         "weight": 260,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 8,
+        "cushioning": 5,
+        "responsiveness": 7,
         "stability": 6,
         "durability": 7,
         "stackHeight": {
@@ -194,16 +194,16 @@
       "specs": {
         "weight": 283,
         "drop": 10,
-        "cushioning": 7,
-        "responsiveness": 6,
-        "stability": 10,
+        "cushioning": 5,
+        "responsiveness": 5,
+        "stability": 4,
         "durability": 8,
         "stackHeight": {
           "heel": 38,
           "forefoot": 28
         },
         "weightScore": 3,
-        "valueScore": 9,
+        "valueScore": 6,
         "rawCushioning": 4.57,
         "rawResponsiveness": 5.83
       },
@@ -245,14 +245,14 @@
       "subcategoryId": "light-plate",
       "price": 219000,
       "priceFormatted": "₩219,000",
-      "description": "Deviate NITRO 3는 NITRO ELITE PEBA 폼과 카본 플레이트를 조합한 268g의 슈퍼 트레이너예요. 드롭 10mm로 힐 착지 러너도 플레이트 추진력을 자연스럽게 활용할 수 있고, Believe in the Run이 \u201c플레이티드 데일리 트레이너의 기준선\u201d으로 꼽은 신뢰도 높은 포지션이에요. 레이싱화보다 무겁지만 템포 훈련을 플레이트 추진력으로 반복하고 싶은 러너에게 충분한 이유가 있어요.",
+      "description": "Deviate NITRO 3는 NITRO ELITE PEBA 폼과 카본 플레이트를 조합한 268g의 슈퍼 트레이너예요. 드롭 10mm로 힐 착지 러너도 플레이트 추진력을 자연스럽게 활용할 수 있고, Believe in the Run이 “플레이티드 데일리 트레이너의 기준선”으로 꼽은 신뢰도 높은 포지션이에요. 레이싱화보다 무겁지만 템포 훈련을 플레이트 추진력으로 반복하고 싶은 러너에게 충분한 이유가 있어요.",
       "shortDescription": "NITRO ELITE PEBA + 카본 플레이트, 10mm 드롭 템포 트레이너",
       "imageUrl": "/shoes/deviate-nitro-3.webp",
       "specs": {
         "weight": 268,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 6,
+        "cushioning": 5,
+        "responsiveness": 5,
         "stability": 6,
         "durability": 6,
         "stackHeight": {
@@ -260,7 +260,7 @@
           "forefoot": 29
         },
         "weightScore": 4,
-        "valueScore": 6,
+        "valueScore": 5,
         "rawCushioning": 4.19,
         "rawResponsiveness": 5.83
       },
@@ -357,7 +357,7 @@
       "subcategoryId": "full",
       "price": 289000,
       "priceFormatted": "₩289,000",
-      "description": "Deviate NITRO Elite 3는 PEBA 대신 ATPU 폼으로 전환한 레이싱화예요. RTINGS 실측 힐 ER 84.8%·포어풋 82.4%로 최상위권 반발력이고, 약 200g 전후 경량 포지션에서 Doctors of Running은 \u201c5km~하프마라톤에 공격적인 레이서\u201d로 평가했어요. PEBA 레이서보다 쿠셔닝이 단단해 풀마라톤 후반 발 보호는 아쉬울 수 있어요.",
+      "description": "Deviate NITRO Elite 3는 PEBA 대신 ATPU 폼으로 전환한 레이싱화예요. RTINGS 실측 힐 ER 84.8%·포어풋 82.4%로 최상위권 반발력이고, 약 200g 전후 경량 포지션에서 Doctors of Running은 “5km~하프마라톤에 공격적인 레이서”로 평가했어요. PEBA 레이서보다 쿠셔닝이 단단해 풀마라톤 후반 발 보호는 아쉬울 수 있어요.",
       "shortDescription": "ATPU 폼 ER 85% 카본 플레이트, 5km~하프 공격적 레이서",
       "imageUrl": "/shoes/deviate-nitro-elite-3.webp",
       "specs": {
@@ -414,7 +414,7 @@
       "subcategoryId": "full",
       "price": 289000,
       "priceFormatted": "₩289,000",
-      "description": "Deviate NITRO Elite 4는 Elite 3의 ATPU 폼 노선을 이어받아 Ultraweave 어퍼로 경량화를 더 밀어붙인 레이싱화예요. Believe in the Run은 \u201cPEBA 없이 이걸 해냈다\u201d고 평가할 만큼 최상위 반발 성능을 유지했어요. 미니멀 어퍼 구조라 발등 압박에 민감한 러너는 직접 신어보고 결정하는 게 좋아요.",
+      "description": "Deviate NITRO Elite 4는 Elite 3의 ATPU 폼 노선을 이어받아 Ultraweave 어퍼로 경량화를 더 밀어붙인 레이싱화예요. Believe in the Run은 “PEBA 없이 이걸 해냈다”고 평가할 만큼 최상위 반발 성능을 유지했어요. 미니멀 어퍼 구조라 발등 압박에 민감한 러너는 직접 신어보고 결정하는 게 좋아요.",
       "shortDescription": "Ultraweave + ATPU 카본 플레이트, Elite 3보다 극경량 레이서",
       "imageUrl": "/shoes/deviate-nitro-elite-4.png",
       "specs": {
@@ -477,7 +477,7 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 10,
-        "stability": 4,
+        "stability": 6,
         "durability": 3,
         "stackHeight": {
           "heel": 39,

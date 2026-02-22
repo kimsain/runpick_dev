@@ -58,16 +58,18 @@ cushioning = clamp(round((raw - 50) / 104 × 10), 1, 10)
 #### 반응 (Responsiveness)
 
 ```
-avg_er = (heelEnergyReturn + forefootEnergyReturn) / 2
-responsiveness = clamp(round((avg_er - 30) / 52 × 10), 1, 10)
+avg_er = heelEnergyReturn × 0.4 + forefootEnergyReturn × 0.6
+responsiveness = clamp(round((avg_er - 40) / 42 × 10), 1, 10)
 ```
 
-**설계 근거:**
-- **하한 30%**: RunRepeat 전수 데이터 기준 최저 ER%. 맥스쿠션·안정화의 최솟값.
-- **상한 82%**: 실측 최고 ER%를 기록한 레이싱화 상위 4~5% 기준. 82% 이상은 사실상 없음.
+**설계 근거 (2026-02-23 멀티에이전트 토론 합의):**
+- **하한 40%**: 실측 최솟값 44.2%(gel-nimbus-28 기반), 5포인트 버퍼 포함한 고정 앵커. 기존 30%는 실데이터 범위 밖 14.2포인트 데드존을 형성해 bot1-2=0% 문제 유발.
+- **상한 82%**: 실측 최고치(fast-r-nitro-elite-3 forefoot 82.6%) 기반. 분모 42 = 82 − 40.
+- **forefoot 60% 가중**: 달리기에서 toe-off phase의 전족부 반응성이 체감 탄성을 더 잘 대표. 쿠션성(40/60)과 동일 가중치로 측정 일관성 확보.
 - **선형**: ER%는 물리적 에너지 보존율로 지각과 선형 관계.
-- **분모 52**: 상한(82) − 하한(30) = 52.
-- **rawResponsiveness 상한은 85%로 분리**: 정수 점수 상한 82%에선 레이싱화 여럿이 동점 10점. 추천 정렬용 소수점 점수에선 85%로 높여 상위 2~4개만 10점 부근, 나머지 레이싱화 간 변별 유지. (→ [raw 정밀 점수](#raw-정밀-점수--raw-precision-scores) 참조)
+- **rawResponsiveness 상한은 85%로 분리**: 정수 점수 상한 82%에선 레이싱화 여럿이 동점 10점. 추천 정렬용 소수점 점수에선 85%(분모 45)로 높여 상위 2~4개만 10점 부근, 나머지 레이싱화 간 변별 유지.
+- **측정 한계**: ER%는 플레이트 강성, 로커 형상, 스택 높이 비선형성을 반영하지 못함. 대안 지표 부재로 유지하되 한계 인지 필요.
+- → 토론 레코드: `docs/RESPONSIVENESS_DEBATE_2026-02-23.md`
 
 #### 안정 (Stability)
 
@@ -141,23 +143,25 @@ avg_er = (heelEnergyReturn + forefootEnergyReturn) / 2
 responsiveness = clamp(round(avg_er / 10) + penalty_by_subcat, 1, 10)
 ```
 
-카테고리별 페널티:
+카테고리별 페널티 (2026-02-23 재보정):
 
 | 카테고리 | 페널티 | 근거 |
 |----------|--------|------|
-| stability | -2 | 평균 편향 +1.86 |
-| max-cushion | -2 | 평균 편향 +1.1 (−1 후에도 여전히 높음) |
-| all-rounder | -1 | 평균 편향 +1.8 |
-| entry | -1 | 평균 편향 +2 |
-| lightweight | -1 | 평균 편향 +1 |
-| no-plate | -1 | 평균 편향 +0.7~1 |
-| light-plate | -1 | 평균 편향 +0.4~1 |
+| stability | -3 | avg bias +2.29 (n=7) |
+| max-cushion | -3 | avg bias +1.56 (n=9) |
+| all-rounder | -2 | avg bias +2.2 (n=5) |
+| entry | -2 | avg bias +2.0 (n=1) |
+| lightweight | -1 | 방향성 혼재 (underpredicts도 존재) |
+| no-plate | -1 | avg bias +0.8 (n=5) |
+| light-plate | -2 | avg bias +1.5 (n=8) |
 | full / half / carbon-plate (racing) | 0 | 편향 ≈ 0 |
 
-**설계 근거:**
+**설계 근거 (2026-02-23 재보정):**
 - RTINGS ER% 점수는 0~10 스케일 → 10 나누면 바로 정규화.
-- **카테고리 페널티**: RTINGS 점수가 RunRepeat 캘리브레이션 대비 카테고리별로 체계적 상향 편향. 페널티 값은 `calibrate_rtings.py` 실행 결과에서 도출. 페널티 상수는 `formulas.py`의 `RESP_PENALTY_BY_SUBCAT`에 정의.
+- **카테고리 페널티**: RTINGS가 두꺼운 폼의 재료 탄성(정적 드롭 테스트)을 측정하는 반면 RunRepeat는 동적 달리기 조건 ER%를 측정. 이 방법론 차이로 max-cushion/stability에서 체계적 상향 편향 발생.
+- 페널티 상수는 `formulas.py`의 `RESP_PENALTY_BY_SUBCAT`에 정의.
 - racing 계열: 편향 ≈ 0 → 보정 없음.
+- **구조적 한계**: gel-nimbus-28, gel-kayano-32 같은 극단적 max-cushion/stability는 방법론 불일치로 MaxAE ≤1.5 달성 불가. 이를 인지하되 현 데이터 소스 체계에서 수용.
 
 #### 안정 (Stability)
 
@@ -316,7 +320,7 @@ scripts/
 
 **rawResponsiveness**
 
-- RunRepeat ER% 우선: `(avg_ER − 30) / 55 × 10`, clamped 0–10  (정규화 상한 85%)
+- RunRepeat ER% 우선: `(heelER × 0.4 + forefootER × 0.6 − 40) / 45 × 10`, clamped 0–10  (정규화 상한 85%, 40/60 가중)
 - RTINGS fallback: `(heelScore + forefootScore) / 2 / 10`, clamped 0–10
 
 ### RTINGS 쿠션 편향 분석 / RTINGS Cushioning Bias
@@ -327,15 +331,23 @@ RTINGS-only 신발(RunRepeat 데이터 없음)의 `rawCushioning`이 RunRepeat �
 - 원인: RTINGS /10 점수(착용감 중심)가 RunRepeat SA 물리 측정값보다 상위권에 집중되는 경향
 - 보정: 선형 계수 **0.72** 적용 (LOOCV RMSE 0.495 → **0.374**, 약 23% 개선)
 
-### ER% 정규화 상한 변경 근거 / ER% Normalization Upper Bound
+### ER% 정규화 앵커 변경 근거 / ER% Normalization Anchors (2026-02-23 업데이트)
 
-| 용도 | 기존 상한 | 변경 후 | 근거 |
-|------|----------|---------|------|
-| rawResponsiveness (추천 정렬) | 75% | **85%** | 실측 최고 81.5% 기준, 10점 = 상위 2–4개 수준 |
-| 표시 정수 responsiveness (스펙 바) | 75% | **82%** | 상위 4–5% 신발만 10점 |
+| 파라미터 | 이전 값 | 현행 값 | 근거 |
+|---------|---------|---------|------|
+| `RESP_LO` (하한) | 30% | **40%** | 실측 최솟값 44.2% 기반, 5포인트 버퍼 |
+| 정수 상한 (`RESP_RANGE_INT`) | 52 (=82−30) | **42** (=82−40) | 상한 82% 유지, 하한 상향으로 range 축소 |
+| raw 상한 (`RESP_RANGE_RAW`) | 55 (=85−30) | **45** (=85−40) | 상한 85% 유지, 하한 상향으로 range 축소 |
+| heel/forefoot 가중치 | 50/50 | **40/60** | 전족부 반응성 체감 우세 + 쿠션성과 통일 |
 
 기존 상한 75% 기준에서는 레이싱화 15개 전부 `rawResp = 10.0`이 되어
 타이브레이커인 valueScore(가성비)가 순위를 결정, 고가 레이싱화가 불이익을 받았습니다.
+
+## 점수 재설계 프로세스 / Score Redesign Process
+
+공식 변경이 필요한 경우 `docs/SCORE_DEBATE_PLAYBOOK.md` 절차에 따른다 (멀티 에이전트 토론 → 합의 기준 7개 검증 → 버저닝 → 적용).
+
+---
 
 ## 한계 / Limitations
 

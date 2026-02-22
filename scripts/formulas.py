@@ -18,27 +18,38 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 VALUE_RATIO_MIN = 24 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=24, price=599,000)
 VALUE_RATIO_MAX = 30 / 169_000  # 최고 가성비: novablast-5 (sum=30, price=169,000)
 
-CUSH_OFFSET = 50       # SA 하한
-CUSH_RANGE = 104       # SA 범위 (154-50) — 정수 정규화용
-CUSH_RANGE_RAW = 150   # raw 정밀용 넓은 범위
+# 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
+# 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
+CUSH_MIN_SA = 88       # RunRepeat SA 하한 — adizero-adios-9 (88.4) 기준
+CUSH_MAX_SA = 150      # RunRepeat SA 상한 — max-cushion 실용 상한 (p95=149.8 근거)
 
-RESP_LO = 30           # ER% 하한
-RESP_RANGE_INT = 52    # 정수용 (82-30)
-RESP_RANGE_RAW = 55    # raw 정밀용 (85-30)
+RTINGS_CUSH_MIN = 4.5  # RTINGS 쿠션 하한 (고정, ratchet)
+RTINGS_CUSH_MAX = 9.6  # RTINGS 쿠션 상한 (고정, ratchet)
+
+# 반응성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
+# 2026-02-23 멀티에이전트 토론 합의 (RESPONSIVENESS_DEBATE_2026-02-23.md)
+# RESP_LO=40: 실측 최솟값 45.1%(gel-nimbus-28) 기반, 5포인트 버퍼 포함
+# RESP_HI=82: 실측 최댓값 81.5%(fast-r-nitro-elite-3) 기반, 정수 상한
+# SCORE_VERSION = "2026-02-23-responsiveness-v2"
+RESP_LO = 40           # ER% 하한 (고정 앵커, ratchet) — gel-nimbus-28=45.1% 기준
+RESP_RANGE_INT = 42    # 정수용 (82-40)
+RESP_RANGE_RAW = 45    # raw 정밀용 (85-40)
 
 DUR_LOG_BASE = 8.2     # 내구성 로그 밑
 
-RTINGS_CUSH_FACTOR = 0.675  # RTINGS 쿠션 편향 보정 계수
 
-# RTINGS 반응성 카테고리 페널티 (calibrate_rtings.py 결과 기반)
+# RTINGS 반응성 카테고리 페널티 (2026-02-23 재보정 — RESPONSIVENESS_DEBATE_2026-02-23.md)
+# RESP_LO=40 기준 RunRepeat vs RTINGS 61개 신발 비교 후 subcategory별 avg bias 재계산
+# 참고: max-cushion/stability 극단치(gel-nimbus-28, gel-kayano-32)는 측정방법론 차이로
+#       MaxAE ≤1.5 달성 불가 — RTINGS가 두꺼운 폼의 재료 탄성을 과대평가하는 구조적 한계
 RESP_PENALTY_BY_SUBCAT: dict = {
-    "stability":   -2,   # avg bias +1.86
-    "max-cushion": -2,   # avg bias +1.1 (with -1) → 총 -2
-    "all-rounder": -1,   # avg bias +1.8
-    "entry":       -1,   # avg bias +2
-    "lightweight": -1,   # avg bias +1
-    "no-plate":    -1,   # avg bias +0.7~1
-    "light-plate": -1,   # avg bias +0.4~1
+    "stability":   -3,   # avg bias +2.29 (n=7) → -3으로 avg ~1.3으로 감소
+    "max-cushion": -3,   # avg bias +1.56 (n=9) → -3으로 avg ~0.56으로 감소
+    "all-rounder": -2,   # avg bias +2.2 (n=5) → -2로 avg ~1.2으로 감소
+    "entry":       -2,   # avg bias +2.0 (n=1) → -2로 avg ~1.0으로 감소
+    "lightweight": -1,   # avg bias +2.0 but adizero-adios-9 underpredicts (-1) → 유지
+    "no-plate":    -1,   # avg bias +0.8 (n=5) → 유지
+    "light-plate": -2,   # avg bias +1.5 (n=8) → -2로 avg ~0.5으로 감소
 }
 
 # ─── 정규식 ─────────────────────────────────────────────────────────
@@ -105,14 +116,20 @@ def value_score(cush, resp, stab, dur, price):
 
 
 def cushioning_from_runrepeat(heel_sa, forefoot_sa):
-    """RunRepeat SA → 쿠션 정수 점수 (1-10)."""
+    """RunRepeat SA → 쿠션 정수 점수 (1-10).
+
+    40/60 heel/forefoot, 고정 앵커 min-max 정규화.
+    """
     raw = heel_sa * 0.4 + forefoot_sa * 0.6
-    return clamp(round((raw - CUSH_OFFSET) / CUSH_RANGE * 10), 1, 10)
+    return clamp(round(1 + 9 * (raw - CUSH_MIN_SA) / (CUSH_MAX_SA - CUSH_MIN_SA)), 1, 10)
 
 
 def responsiveness_from_runrepeat(heel_er, forefoot_er):
-    """RunRepeat ER% → 반응성 정수 점수 (1-10)."""
-    avg_er = (heel_er + forefoot_er) / 2
+    """RunRepeat ER% → 반응성 정수 점수 (1-10).
+
+    40/60 heel/forefoot (쿠션성과 통일), 고정 앵커 min-max 정규화.
+    """
+    avg_er = heel_er * 0.4 + forefoot_er * 0.6
     return clamp(round((avg_er - RESP_LO) / RESP_RANGE_INT * 10), 1, 10)
 
 
@@ -137,8 +154,12 @@ def durability_from_abrasion_only(abrasion_mm):
 
 
 def cushioning_from_rtings(heel, forefoot):
-    """RTINGS 쿠션 점수 → 정수 점수 (단순 평균)."""
-    return round((heel + forefoot) / 2)
+    """RTINGS 쿠션 점수 → 정수 점수 (1-10).
+
+    40/60 heel/forefoot (RunRepeat와 통일), 고정 앵커 min-max 정규화.
+    """
+    avg = heel * 0.4 + forefoot * 0.6
+    return clamp(round(1 + 9 * (avg - RTINGS_CUSH_MIN) / (RTINGS_CUSH_MAX - RTINGS_CUSH_MIN)), 1, 10)
 
 
 def responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id):
@@ -155,18 +176,21 @@ def responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id):
 
 
 def raw_cushioning_from_runrepeat(heel_sa, forefoot_sa):
-    """RunRepeat SA → rawCushioning (0-10, 소수점 2자리)."""
-    return round(clamp((heel_sa * 0.4 + forefoot_sa * 0.6 - CUSH_OFFSET) / CUSH_RANGE_RAW * 10, 0, 10), 2)
+    """RunRepeat SA → rawCushioning (1-10, 소수점 2자리)."""
+    raw = heel_sa * 0.4 + forefoot_sa * 0.6
+    return round(clamp(1 + 9 * (raw - CUSH_MIN_SA) / (CUSH_MAX_SA - CUSH_MIN_SA), 1, 10), 2)
 
 
 def raw_cushioning_from_rtings(heel, forefoot):
-    """RTINGS → rawCushioning (0-10, 소수점 2자리, 편향 보정)."""
-    return round(clamp(RTINGS_CUSH_FACTOR * (heel + forefoot) / 2, 0, 10), 2)
+    """RTINGS → rawCushioning (1-10, 소수점 2자리). 정수 함수와 동일 정규화."""
+    avg = heel * 0.4 + forefoot * 0.6
+    return round(clamp(1 + 9 * (avg - RTINGS_CUSH_MIN) / (RTINGS_CUSH_MAX - RTINGS_CUSH_MIN), 1, 10), 2)
 
 
 def raw_responsiveness_from_runrepeat(heel_er, forefoot_er):
-    """RunRepeat ER% → rawResponsiveness (0-10, 소수점 2자리)."""
-    return round(clamp(((heel_er + forefoot_er) / 2 - RESP_LO) / RESP_RANGE_RAW * 10, 0, 10), 2)
+    """RunRepeat ER% → rawResponsiveness (0-10, 소수점 2자리). 40/60 heel/forefoot."""
+    avg_er = heel_er * 0.4 + forefoot_er * 0.6
+    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_RAW * 10, 0, 10), 2)
 
 
 def raw_responsiveness_from_rtings(heel_er, forefoot_er):
