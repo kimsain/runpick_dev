@@ -13,11 +13,11 @@ export interface Specs {
   stackHeight: StackHeight
   weightScore?: number        // 0-10, 가벼울수록 높음
   valueScore?: number         // 0-10, (쿠션성+반응성+안정성+내구성)÷가격 정규화
-  rawCushioning?: number      // 0-10 소수점, RunRepeat SA 기반 (RTINGS fallback)
-  rawResponsiveness?: number  // 0-10 소수점, RunRepeat ER% 기반 (RTINGS fallback)
-  rawStability?: number       // 1-10 소수점, RunRepeat 기반 정밀 정렬용 (Case B 61개)
-  rawDurability?: number      // 1-10 소수점, RunRepeat 기반 정밀 정렬용 (Case B 61개)
-  rawValueScore?: number      // 1-10 소수점, 혼합 raw 입력 가성비 정밀 정렬용
+  rawCushioning?: number      // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat SA 기반 (RTINGS fallback)
+  rawResponsiveness?: number  // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat ER% 기반 (RTINGS fallback)
+  rawStability?: number       // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat 기반 (Case B)
+  rawDurability?: number      // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat 기반 (Case B)
+  rawValueScore?: number      // ≥1 소수점, 정렬 전용 (상한 없음), 혼합 raw 입력 가성비
 }
 
 export interface Shoe {

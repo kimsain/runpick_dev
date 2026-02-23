@@ -233,27 +233,27 @@ def responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id):
 def raw_cushioning_from_runrepeat(heel_sa, forefoot_sa):
     """RunRepeat SA → rawCushioning (1-10, 소수점 2자리)."""
     raw = heel_sa * 0.4 + forefoot_sa * 0.6
-    return round(clamp(1 + 9 * (raw - CUSH_MIN_SA) / (CUSH_MAX_SA - CUSH_MIN_SA), 1, 10), 2)
+    return round(max(1.0, 1 + 9 * (raw - CUSH_MIN_SA) / (CUSH_MAX_SA - CUSH_MIN_SA)), 2)
 
 
 def raw_cushioning_from_rtings(heel, forefoot):
     """RTINGS → rawCushioning (1-10, 소수점 2자리). 정수 함수와 동일 정규화."""
     avg = heel * 0.4 + forefoot * 0.6
-    return round(clamp(1 + 9 * (avg - RTINGS_CUSH_MIN) / (RTINGS_CUSH_MAX - RTINGS_CUSH_MIN), 1, 10), 2)
+    return round(max(1.0, 1 + 9 * (avg - RTINGS_CUSH_MIN) / (RTINGS_CUSH_MAX - RTINGS_CUSH_MIN)), 2)
 
 
 def raw_responsiveness_from_runrepeat(heel_er, forefoot_er):
     """RunRepeat ER% → rawResponsiveness. 카드 공식(RESP_RANGE_INT) - round."""
     avg_er = heel_er * 0.4 + forefoot_er * 0.6
-    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_INT * 10, 1, 10), 2)
+    return round(max(1.0, (avg_er - RESP_LO) / RESP_RANGE_INT * 10), 2)
 
 
 def raw_responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id=""):
     """RTINGS ER% → rawResponsiveness. 카드 공식(responsiveness_from_rtings) - round."""
     avg_er = (heel_er + forefoot_er) / 2
-    resp = clamp(avg_er / 10, 1, 10)
+    resp = avg_er / 10   # 상한 제거 (페널티는 전부 음수라 충돌 없음)
     penalty = RESP_PENALTY_BY_SUBCAT.get(subcategory_id, 0)
-    return round(clamp(resp + penalty, 1, 10), 2)
+    return round(max(1.0, resp + penalty), 2)
 
 
 # ─── Raw 정밀 점수 (stability / durability / value) ──────────────────
@@ -285,13 +285,13 @@ def raw_stability_from_runrepeat(
         base -= sway
     if subcategory == "stability":
         base += 1
-    return round(clamp(base, 1, 10), 2)
+    return round(max(1.0, base), 2)
 
 
 def raw_durability_from_runrepeat(thickness_mm, abrasion_mm):
     """durability_from_runrepeat과 동일 로직, round 없이 float 반환."""
     ratio = thickness_mm / abrasion_mm
-    return round(clamp(math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1, 1, 10), 2)
+    return round(max(1.0, math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1), 2)
 
 
 def raw_durability_from_abrasion_only(abrasion_mm):

@@ -33,9 +33,9 @@
         },
         "weightScore": 4,
         "valueScore": 8,
-        "rawCushioning": 6.52,
+        "rawCushioning": 5.91,
         "rawResponsiveness": 5.87,
-        "rawValueScore": 8.42
+        "rawValueScore": 8.17
       },
       "pros": [
         "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해요",
@@ -334,8 +334,8 @@
         "rawCushioning": 4.77,
         "rawResponsiveness": 7.44,
         "rawStability": 9.8,
-        "rawDurability": 10,
-        "rawValueScore": 8.91
+        "rawDurability": 10.95,
+        "rawValueScore": 9.22
       },
       "pros": [
         "XT-600 웨지 구조가 별도 포스트 없이 발이 내측으로 쏠리는 걸 잡아줘서 안정화치고 자연스러운 착지감이에요",
@@ -570,10 +570,10 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 8.05,
-        "rawResponsiveness": 10,
+        "rawResponsiveness": 10.44,
         "rawStability": 3.4,
         "rawDurability": 6.23,
-        "rawValueScore": 3.72
+        "rawValueScore": 3.81
       },
       "pros": [
         "IncrediRun TPEE 폼 + 카본 플레이트로 에너지 리턴 85.8~86.4%를 구현해서 197g에 최고 수준의 바운스가 있어요",
