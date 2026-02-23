@@ -21,6 +21,8 @@ from formulas import (
     stability_from_runrepeat,
     durability_from_runrepeat,
     durability_from_abrasion_only,
+    raw_cushioning_from_runrepeat,
+    raw_responsiveness_from_runrepeat,
     raw_stability_from_runrepeat,
     raw_durability_from_runrepeat,
     raw_durability_from_abrasion_only,
@@ -85,15 +87,19 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
     heel_sa = rr_cush.get("heelShockAbsorption")
     fore_sa = rr_cush.get("forefootShockAbsorption")
     cushioning = None
+    raw_cush = None
     if heel_sa is not None and fore_sa is not None:
         cushioning = cushioning_from_runrepeat(heel_sa, fore_sa)
+        raw_cush = raw_cushioning_from_runrepeat(heel_sa, fore_sa)
 
     # responsiveness from RunRepeat ER%
     heel_er = rr_resp.get("heelEnergyReturn")
     fore_er = rr_resp.get("forefootEnergyReturn")
     responsiveness = None
+    raw_resp = None
     if heel_er is not None and fore_er is not None:
         responsiveness = responsiveness_from_runrepeat(heel_er, fore_er)
+        raw_resp = raw_responsiveness_from_runrepeat(heel_er, fore_er)
 
     # stability: torsionalRigidity + heelCounterStiffness + Sway 패널티
     rr_stab = rr_src["attributeScores"]["stability"]
@@ -141,7 +147,7 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
         durability = clamp(old_dur + keyword_delta(findings_text, DURABILITY_POS_RE, DURABILITY_NEG_RE), 1, 10)
         raw_dur = None
 
-    return cushioning, responsiveness, stability, durability, raw_stab, raw_dur
+    return cushioning, responsiveness, stability, durability, raw_cush, raw_resp, raw_stab, raw_dur
 
 
 def fmt_change(old, new, width=12):
@@ -194,7 +200,7 @@ def main():
             old_specs = prod["specs"]
             findings_text = get_qualitative_findings(research.get("sources", []))
 
-            new_cush, new_resp, new_stab, new_dur, new_raw_stab, new_raw_dur = compute_scores(
+            new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp, new_raw_stab, new_raw_dur = compute_scores(
                 rr_src, old_specs, findings_text, subcategoryId=prod["subcategoryId"]
             )
 
@@ -207,6 +213,8 @@ def main():
                 "responsiveness": new_resp,
                 "stability": new_stab,
                 "durability": new_dur,
+                "rawCushioning": new_raw_cush,
+                "rawResponsiveness": new_raw_resp,
                 "rawStability": new_raw_stab,
                 "rawDurability": new_raw_dur,
             })
@@ -283,7 +291,8 @@ def main():
             specs = shoe["specs"]
             shoe_changed = False
 
-            for field in ["cushioning", "responsiveness", "stability", "durability", "rawStability", "rawDurability"]:
+            for field in ["cushioning", "responsiveness", "stability", "durability",
+                          "rawCushioning", "rawResponsiveness", "rawStability", "rawDurability"]:
                 new_val = u[field]
                 if new_val is None:
                     continue
