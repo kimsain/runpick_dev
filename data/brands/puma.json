@@ -33,11 +33,11 @@
         },
         "weightScore": 5,
         "valueScore": 7,
-        "rawCushioning": 4.29,
-        "rawResponsiveness": 7.43,
+        "rawCushioning": 4.83,
+        "rawResponsiveness": 5.67,
         "rawStability": 3.7,
         "rawDurability": 7.48,
-        "rawValueScore": 6.75
+        "rawValueScore": 6.31
       },
       "pros": [
         "풀레이어 NitroFoam 단일 구조라 힐에서 포어풋까지 착지감이 균일하고 경쾌해요",
@@ -93,9 +93,9 @@
         },
         "weightScore": 3,
         "valueScore": 5,
-        "rawCushioning": 6.01,
-        "rawResponsiveness": 6.79,
-        "rawValueScore": 5.44
+        "rawCushioning": 8.76,
+        "rawResponsiveness": 4.91,
+        "rawValueScore": 5.68
       },
       "pros": [
         "힐·포어풋 쿠셔닝 8.9/10으로 균일하게 높아서 착지 위치와 상관없이 충격 흡수가 안정적이에요",
@@ -151,11 +151,11 @@
         },
         "weightScore": 4,
         "valueScore": 6,
-        "rawCushioning": 4.25,
-        "rawResponsiveness": 7.16,
+        "rawCushioning": 4.75,
+        "rawResponsiveness": 5.39,
         "rawStability": 4.9,
         "rawDurability": 6.85,
-        "rawValueScore": 6.0
+        "rawValueScore": 5.58
       },
       "pros": [
         "NITRO FOAM PLUS 폼이 힐 충격 흡수 136 SA로 뒤꿈치 착지 러너의 착지 충격을 확실하게 흡수해줘요",
@@ -211,11 +211,11 @@
         },
         "weightScore": 3,
         "valueScore": 5,
-        "rawCushioning": 4.57,
-        "rawResponsiveness": 5.83,
+        "rawCushioning": 5.44,
+        "rawResponsiveness": 3.64,
         "rawStability": 3.18,
         "rawDurability": 7.53,
-        "rawValueScore": 5.32
+        "rawValueScore": 4.89
       },
       "pros": [
         "RunGuide 기술이 딱딱한 포스트 없이 이중 밀도 NitroFoam으로 발을 중심선으로 유도해 착지가 자연스러워요",
@@ -271,11 +271,11 @@
         },
         "weightScore": 4,
         "valueScore": 5,
-        "rawCushioning": 4.19,
-        "rawResponsiveness": 5.83,
+        "rawCushioning": 4.6,
+        "rawResponsiveness": 3.63,
         "rawStability": 4.75,
         "rawDurability": 5.89,
-        "rawValueScore": 4.55
+        "rawValueScore": 4.02
       },
       "pros": [
         "카본 플레이트 + NITRO ELITE PEBA 폼 조합이라 템포런 페이스에서 스텝 전환이 빠르고 탄성이 살아있어요",
@@ -387,11 +387,11 @@
         },
         "weightScore": 6,
         "valueScore": 4,
-        "rawCushioning": 5.55,
-        "rawResponsiveness": 8.49,
+        "rawCushioning": 7.56,
+        "rawResponsiveness": 6.8,
         "rawStability": 4.6,
         "rawDurability": 5.13,
-        "rawValueScore": 3.76
+        "rawValueScore": 3.83
       },
       "pros": [
         "ATPU 폼이 힐 ER 84.8%·포어풋 82.4%를 기록해 카본 플레이트와 시너지로 강한 추진력이 나와요",
@@ -503,11 +503,11 @@
         },
         "weightScore": 8,
         "valueScore": 3,
-        "rawCushioning": 5.57,
-        "rawResponsiveness": 9.36,
+        "rawCushioning": 7.62,
+        "rawResponsiveness": 7.94,
         "rawStability": 4.6,
         "rawDurability": 2.69,
-        "rawValueScore": 2.22
+        "rawValueScore": 2.32
       },
       "pros": [
         "티어드롭 힐 NitroFoam Elite 구조가 카본 플레이트와 맞물려 힐·포어풋 ER 80~82%의 강한 추진력을 만들어내요",

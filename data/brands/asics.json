@@ -33,11 +33,11 @@
         },
         "weightScore": 3,
         "valueScore": 6,
-        "rawCushioning": 5.64,
-        "rawResponsiveness": 2.74,
+        "rawCushioning": 7.76,
+        "rawResponsiveness": 0,
         "rawStability": 7.92,
         "rawDurability": 7.24,
-        "rawValueScore": 6.12
+        "rawValueScore": 6.25
       },
       "pros": [
         "전작보다 24g 가벼워졌는데 푹신한 쿠셔닝은 그대로라 장거리가 편해요",
@@ -93,8 +93,8 @@
         },
         "weightScore": 4,
         "valueScore": 6,
-        "rawCushioning": 5.47,
-        "rawResponsiveness": 6.92,
+        "rawCushioning": 7.21,
+        "rawResponsiveness": 5.19,
         "rawValueScore": 6.73
       },
       "pros": [
@@ -153,11 +153,11 @@
         },
         "weightScore": 2,
         "valueScore": 7,
-        "rawCushioning": 4.85,
-        "rawResponsiveness": 3.37,
+        "rawCushioning": 6.05,
+        "rawResponsiveness": 0.6,
         "rawStability": 10,
         "rawDurability": 9.58,
-        "rawValueScore": 7.52
+        "rawValueScore": 7.01
       },
       "pros": [
         "4D GUIDANCE SYSTEM이 과회내를 자연스럽게 교정해서 억지 느낌이 없어요",
@@ -213,11 +213,11 @@
         },
         "weightScore": 4,
         "valueScore": 9,
-        "rawCushioning": 5.79,
-        "rawResponsiveness": 6.37,
+        "rawCushioning": 8.08,
+        "rawResponsiveness": 4.3,
         "rawStability": 5.65,
         "rawDurability": 7.59,
-        "rawValueScore": 8.22
+        "rawValueScore": 8.3
       },
       "pros": [
         "FF BLAST MAX 폼이 착지는 부드럽고 반발은 통통 튀어서 달리는 재미가 있어요",
@@ -273,8 +273,8 @@
         },
         "weightScore": 5,
         "valueScore": 6,
-        "rawCushioning": 5.65,
-        "rawResponsiveness": 6.45,
+        "rawCushioning": 7.79,
+        "rawResponsiveness": 4.32,
         "rawStability": 6.94,
         "rawDurability": 9.44,
         "rawValueScore": 5.87
@@ -334,11 +334,11 @@
         },
         "weightScore": 6,
         "valueScore": 5,
-        "rawCushioning": 6.69,
-        "rawResponsiveness": 7.89,
+        "rawCushioning": 10,
+        "rawResponsiveness": 6.11,
         "rawStability": 5.52,
         "rawDurability": 7.27,
-        "rawValueScore": 4.37
+        "rawValueScore": 4.71
       },
       "pros": [
         "FF TURBO² 폼의 반발력이 폭발적인데 220g으로 가벼워요",
@@ -393,11 +393,11 @@
         },
         "weightScore": 4,
         "valueScore": 6,
-        "rawCushioning": 5.96,
-        "rawResponsiveness": 7.07,
+        "rawCushioning": 8.46,
+        "rawResponsiveness": 5.09,
         "rawStability": 4.78,
         "rawDurability": 5.7,
-        "rawValueScore": 5.1
+        "rawValueScore": 5.25
       },
       "pros": [
         "빠른 페이스에서 Pebax 플레이트의 전족부 추진력이 확 살아나요",
@@ -454,11 +454,11 @@
         },
         "weightScore": 7,
         "valueScore": 6,
-        "rawCushioning": 5.12,
-        "rawResponsiveness": 6.11,
+        "rawCushioning": 6.63,
+        "rawResponsiveness": 3.87,
         "rawStability": 5.65,
         "rawDurability": 6.2,
-        "rawValueScore": 5.61
+        "rawValueScore": 5.38
       },
       "pros": [
         "193g 초경량에 풀 카본 플레이트가 들어가서 빠른 러닝에 딱 맞아요 (에너지 리턴 64.6%)",
@@ -515,11 +515,11 @@
         },
         "weightScore": 10,
         "valueScore": 2,
-        "rawCushioning": 6.0,
-        "rawResponsiveness": 9.0,
+        "rawCushioning": 8.55,
+        "rawResponsiveness": 7.51,
         "rawStability": 1.6,
         "rawDurability": 3.39,
-        "rawValueScore": 1.36
+        "rawValueScore": 1.52
       },
       "pros": [
         "129g 역대 최경량이면서 전족부 에너지 리턴 81%로 추진력이 폭발적이에요",
@@ -575,11 +575,11 @@
         },
         "weightScore": 5,
         "valueScore": 3,
-        "rawCushioning": 4.45,
-        "rawResponsiveness": 5.97,
+        "rawCushioning": 5.18,
+        "rawResponsiveness": 3.85,
         "rawStability": 5.95,
         "rawDurability": 4.11,
-        "rawValueScore": 3.55
+        "rawValueScore": 3.2
       },
       "pros": [
         "듀얼 폼 구조라 카본화인데도 안정적이어서 첫 레이싱화로 좋아요",
@@ -635,11 +635,11 @@
         },
         "weightScore": 8,
         "valueScore": 4,
-        "rawCushioning": 5.47,
-        "rawResponsiveness": 8.79,
+        "rawCushioning": 7.39,
+        "rawResponsiveness": 7.18,
         "rawStability": 4.6,
         "rawDurability": 3.96,
-        "rawValueScore": 2.92
+        "rawValueScore": 2.98
       },
       "pros": [
         "FF LEAP 폼이 플러시하면서도 전족부에서 폭발적으로 밀어줘요",
@@ -695,11 +695,11 @@
         },
         "weightScore": 8,
         "valueScore": 4,
-        "rawCushioning": 5.84,
-        "rawResponsiveness": 8.65,
+        "rawCushioning": 8.2,
+        "rawResponsiveness": 6.98,
         "rawStability": 4.6,
         "rawDurability": 5.01,
-        "rawValueScore": 3.17
+        "rawValueScore": 3.31
       },
       "pros": [
         "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해요",

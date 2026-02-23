@@ -249,8 +249,9 @@ def raw_responsiveness_from_runrepeat(heel_er, forefoot_er):
 
 
 def raw_responsiveness_from_rtings(heel_er, forefoot_er):
-    """RTINGS ER% → rawResponsiveness (0-10, 소수점 2자리)."""
-    return round(clamp((heel_er + forefoot_er) / 2 / 10, 0, 10), 2)
+    """RTINGS ER% → rawResponsiveness (0-10, 소수점 2자리). RunRepeat 공식과 동일 스케일."""
+    avg_er = heel_er * 0.4 + forefoot_er * 0.6
+    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_RAW * 10, 0, 10), 2)
 
 
 # ─── Raw 정밀 점수 (stability / durability / value) ──────────────────
