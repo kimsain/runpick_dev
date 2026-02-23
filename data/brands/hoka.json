@@ -31,13 +31,14 @@
           "heel": 42,
           "forefoot": 34
         },
-        "weightScore": 3,
-        "valueScore": 6,
+        "weightScore": 4,
+        "valueScore": 7,
         "rawCushioning": 7.39,
         "rawResponsiveness": 2.72,
         "rawStability": 6.44,
         "rawDurability": 7.53,
-        "rawValueScore": 6.3
+        "rawValueScore": 6.88,
+        "rawLightness": 4.08
       },
       "pros": [
         "힐 SA 147로 이 가격대 데일리화 중 충격흡수가 가장 두터운 편이라 장거리에서 발 피로가 확실히 줄어요",
@@ -91,13 +92,14 @@
           "heel": 43,
           "forefoot": 38
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 8.29,
         "rawResponsiveness": 4.19,
         "rawStability": 4.89,
         "rawDurability": 7.69,
-        "rawValueScore": 5.54
+        "rawValueScore": 6.07,
+        "rawLightness": 3.19
       },
       "pros": [
         "supercritical EVA 미드솔로 전작 대비 폼 소재가 개선되고 반응성도 올라갔는데 43mm 힐 완충력은 그대로예요",
@@ -151,13 +153,14 @@
           "heel": 41,
           "forefoot": 33
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 8,
         "rawCushioning": 6.08,
         "rawResponsiveness": 3.62,
         "rawStability": 7.89,
         "rawDurability": 9.67,
-        "rawValueScore": 7.35
+        "rawValueScore": 8.0,
+        "rawLightness": 4.53
       },
       "pros": [
         "J-Frame이 미드솔 내측에만 단단한 EVA를 배치해서 과도한 교정 없이 자연스럽게 발을 가이드해줘요",
@@ -211,13 +214,14 @@
           "heel": 44,
           "forefoot": 39
         },
-        "weightScore": 4,
-        "valueScore": 5,
+        "weightScore": 5,
+        "valueScore": 6,
         "rawCushioning": 7.88,
         "rawResponsiveness": 5.63,
         "rawStability": 4.78,
         "rawDurability": 7.06,
-        "rawValueScore": 5.04
+        "rawValueScore": 5.54,
+        "rawLightness": 4.53
       },
       "pros": [
         "PEBA + Pebax 플레이트 조합이 착지 시 푹신함과 토오프 시 추진감을 같이 살려줘서 훈련 피로가 덜해요",
@@ -275,7 +279,8 @@
         "valueScore": 4,
         "rawCushioning": 9.12,
         "rawResponsiveness": 8.11,
-        "rawValueScore": 4.02
+        "rawValueScore": 4.45,
+        "rawLightness": 7.2
       },
       "pros": [
         "198g으로 호카 라인업 최경량인데 40.5mm 힐 스택 쿠셔닝을 그대로 유지해서 레이스 후반 발 보호가 탄탄해요",
@@ -329,13 +334,14 @@
           "heel": 40,
           "forefoot": 33
         },
-        "weightScore": 6,
+        "weightScore": 7,
         "valueScore": 5,
         "rawCushioning": 6.98,
         "rawResponsiveness": 8.93,
         "rawStability": 4.61,
         "rawDurability": 6.56,
-        "rawValueScore": 4.31
+        "rawValueScore": 4.76,
+        "rawLightness": 6.72
       },
       "pros": [
         "포어풋 직하에 두꺼운 PEBA 레이어를 올려서 착지 충격(SA 155)을 흡수하면서 카본 플레이트가 에너지를 확실히 튕겨줘요",

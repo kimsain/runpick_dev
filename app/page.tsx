@@ -12,6 +12,7 @@ function getRawScore(shoe: Shoe, sortKey: keyof Specs): number {
   if (sortKey === 'stability') return shoe.specs.rawStability ?? shoe.specs.stability
   if (sortKey === 'durability') return shoe.specs.rawDurability ?? shoe.specs.durability
   if (sortKey === 'valueScore') return shoe.specs.rawValueScore ?? shoe.specs.valueScore ?? 0
+  if (sortKey === 'weightScore') return shoe.specs.rawLightness ?? shoe.specs.weightScore ?? 0
   return Number(shoe.specs[sortKey] ?? 0)
 }
 

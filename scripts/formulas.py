@@ -15,8 +15,8 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
-VALUE_RATIO_MIN = 24 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=24, price=599,000)
-VALUE_RATIO_MAX = 30 / 169_000  # 최고 가성비: novablast-5 (sum=30, price=169,000)
+VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
+VALUE_RATIO_MAX = 28 / 169_000  # 최고 가성비: novablast-5 (sum=28, price=169,000)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -105,8 +105,13 @@ def keyword_delta(text, pos_re, neg_re):
 
 
 def weight_score(weight_g):
-    """경량성 점수 (1-10, 가벼울수록 높음)."""
-    return clamp(round((HEAVY_G - weight_g) / (HEAVY_G - LIGHT_G) * 10), 1, 10)
+    """경량성 점수 (1-10, 가벼울수록 높음). 런리핏 기준 평균 264g → 5점."""
+    return clamp(round(1 + 9 * (HEAVY_G - weight_g) / (HEAVY_G - LIGHT_G)), 1, 10)
+
+
+def raw_lightness(weight_g):
+    """경량성 raw 점수 (≥1, 상한 없음). 정렬 전용."""
+    return round(max(1.0, 1 + 9 * (HEAVY_G - weight_g) / (HEAVY_G - LIGHT_G)), 2)
 
 
 def value_score(cush, resp, stab, dur, price):
@@ -301,8 +306,8 @@ def raw_durability_from_abrasion_only(abrasion_mm):
 
 
 def raw_value_score(raw_cush, raw_resp, raw_stab, raw_dur, price):
-    """가성비 raw 점수 (1-10 소수점). 입력은 혼합 raw(float) 값."""
+    """가성비 raw 점수 (≥1 소수점, 상한 없음). 입력은 혼합 raw(float) 값. 정렬 전용."""
     if price <= 0:
         return 1.0
     ratio = (raw_cush + raw_resp + raw_stab + raw_dur) / price
-    return round(clamp((ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1, 1, 10), 2)
+    return round(max(1.0, (ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1), 2)

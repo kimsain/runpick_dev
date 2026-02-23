@@ -18,6 +18,7 @@ export interface Specs {
   rawStability?: number       // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat 기반 (Case B)
   rawDurability?: number      // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat 기반 (Case B)
   rawValueScore?: number      // ≥1 소수점, 정렬 전용 (상한 없음), 혼합 raw 입력 가성비
+  rawLightness?: number       // ≥1 소수점, 정렬 전용 (상한 없음), 무게 기반
 }
 
 export interface Shoe {

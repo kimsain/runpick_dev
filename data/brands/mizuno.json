@@ -31,13 +31,14 @@
           "heel": 38,
           "forefoot": 28
         },
-        "weightScore": 4,
+        "weightScore": 5,
         "valueScore": 8,
         "rawCushioning": 6.57,
         "rawResponsiveness": 2.59,
         "rawStability": 7.07,
         "rawDurability": 6.93,
-        "rawValueScore": 7.35
+        "rawValueScore": 8.0,
+        "rawLightness": 4.77
       },
       "pros": [
         "Enerzy Core가 힐 부분에 집중 배치돼 충격 흡수(SA 142)가 Wave 플레이트 반발력과 자연스럽게 연결돼요",
@@ -91,13 +92,14 @@
           "heel": 44,
           "forefoot": 38
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 7,
         "rawCushioning": 9.1,
         "rawResponsiveness": 1,
         "rawStability": 8.64,
         "rawDurability": 5.43,
-        "rawValueScore": 6.75
+        "rawValueScore": 7.36,
+        "rawLightness": 3.72
       },
       "pros": [
         "Enerzy NXT 폼이 힐·포어풋 모두 SA 142~145로 균등해서 착지 패턴이 흔들려도 쿠셔닝 느낌이 일정해요",
@@ -157,7 +159,8 @@
         "rawResponsiveness": 4.12,
         "rawStability": 1,
         "rawDurability": 9.22,
-        "rawValueScore": 6.01
+        "rawValueScore": 6.57,
+        "rawLightness": 4.41
       },
       "pros": [
         "Smooth Speed Assist 로커가 힐 착지 이후 자연스럽게 전족부로 굴려줘서 템포런에서 다리 힘을 아낄 수 있어요",
@@ -211,13 +214,14 @@
           "heel": 40,
           "forefoot": 34
         },
-        "weightScore": 5,
+        "weightScore": 6,
         "valueScore": 8,
         "rawCushioning": 8.64,
         "rawResponsiveness": 6.85,
         "rawStability": 1.48,
         "rawDurability": 6.93,
-        "rawValueScore": 7.64
+        "rawValueScore": 8.31,
+        "rawLightness": 5.5
       },
       "pros": [
         "Enerzy NXT가 달릴수록 바운시해지는 특성이라 후반부 피곤한 구간에서도 발이 오히려 가벼워지는 느낌이에요",
@@ -277,7 +281,8 @@
         "rawResponsiveness": 6.06,
         "rawStability": 4.84,
         "rawDurability": 5.11,
-        "rawValueScore": 6.51
+        "rawValueScore": 7.11,
+        "rawLightness": 5.34
       },
       "pros": [
         "Wave 폼 특화 플레이트가 전족부 추진에 집중해서 포어풋 착지 러너의 킬로미터당 리듬이 안정적으로 유지돼요",
@@ -332,10 +337,11 @@
           "forefoot": 30.5
         },
         "weightScore": 10,
-        "valueScore": 4,
+        "valueScore": 5,
         "rawCushioning": 6.47,
         "rawResponsiveness": 8.44,
-        "rawValueScore": 4.29
+        "rawValueScore": 4.74,
+        "rawLightness": 9.59
       },
       "pros": [
         "힐·포어풋 에너지 리턴 84%대로 HyperWarp 라인 최고 반발력이라 착지 즉시 추진력으로 전환되는 속도가 달라요",
@@ -389,11 +395,12 @@
           "heel": 38,
           "forefoot": 34.5
         },
-        "weightScore": 8,
+        "weightScore": 9,
         "valueScore": 5,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.2,
-        "rawValueScore": 4.79
+        "rawValueScore": 5.27,
+        "rawLightness": 8.58
       },
       "pros": [
         "힐·포어풋 에너지 리턴이 81~82%로 거의 동일해서 착지 패턴이 레이스 후반에 흔들려도 추진력이 일정하게 유지돼요",
@@ -448,10 +455,11 @@
           "forefoot": 33.5
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 6,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.13,
-        "rawValueScore": 5.54
+        "rawValueScore": 6.07,
+        "rawLightness": 7.12
       },
       "pros": [
         "외측 솔 플레어 설계로 발목 외측 불안정이 있는 러너에게도 카본 레이서 중 드물게 안정감을 줘요",
@@ -506,12 +514,13 @@
           "forefoot": 36
         },
         "weightScore": 6,
-        "valueScore": 4,
+        "valueScore": 5,
         "rawCushioning": 9.88,
         "rawResponsiveness": 6.46,
         "rawStability": 3.18,
         "rawDurability": 5.38,
-        "rawValueScore": 4.67
+        "rawValueScore": 5.15,
+        "rawLightness": 6.39
       },
       "pros": [
         "힐 SA 184로 레이싱화 중 이례적으로 높은 충격 흡수력이라 착지가 부드럽게 가라앉으면서 카본 플레이트가 자연스럽게 튕겨내줘요",

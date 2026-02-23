@@ -15,7 +15,7 @@ import argparse
 import json
 from pathlib import Path
 
-from formulas import clamp, weight_score, value_score, raw_value_score
+from formulas import clamp, weight_score, raw_lightness, value_score, raw_value_score
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -47,11 +47,15 @@ def main():
                 if w is not None:
                     old_ws = specs.get("weightScore")
                     new_ws = weight_score(float(w))
+                    new_raw = raw_lightness(float(w))
                     row["weight"] = w
                     row["old_ws"] = old_ws
                     row["new_ws"] = new_ws
                     if args.apply and old_ws != new_ws:
                         specs["weightScore"] = new_ws
+                        file_changed = True
+                    if args.apply and specs.get("rawLightness") != new_raw:
+                        specs["rawLightness"] = new_raw
                         file_changed = True
 
             # valueScore

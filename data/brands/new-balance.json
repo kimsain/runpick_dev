@@ -31,9 +31,10 @@
           "heel": 39.4,
           "forefoot": 32.1
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 8,
-        "rawValueScore": 7.73
+        "rawValueScore": 8.41,
+        "rawLightness": 3.61
       },
       "pros": [
         "Fresh Foam X 2겹 구조가 힐 39.4mm 스택을 받쳐줘서 장거리에서도 착지 충격이 잘 분산돼요",
@@ -87,9 +88,10 @@
           "heel": 38.4,
           "forefoot": 30.6
         },
-        "weightScore": 4,
-        "valueScore": 7,
-        "rawValueScore": 7.15
+        "weightScore": 5,
+        "valueScore": 8,
+        "rawValueScore": 7.79,
+        "rawLightness": 4.65
       },
       "pros": [
         "Infinion 슈퍼크리티컬 폼 덕분에 맥스 쿠셔닝 급이면서 261g으로 가벼워서 장거리에서 발이 안 무거워요",
@@ -143,11 +145,12 @@
           "heel": 44,
           "forefoot": 40
         },
-        "weightScore": 2,
+        "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 8.27,
         "rawResponsiveness": 4.04,
-        "rawValueScore": 5.99
+        "rawValueScore": 6.55,
+        "rawLightness": 2.82
       },
       "pros": [
         "힐 41.8mm/전족부 37.1mm 맥스스택이 장거리 착지 충격을 일관되게 흡수해줘서 다리 피로가 늦게 와요",
@@ -202,10 +205,11 @@
           "forefoot": 29
         },
         "weightScore": 6,
-        "valueScore": 7,
+        "valueScore": 8,
         "rawCushioning": 5.76,
         "rawResponsiveness": 6.37,
-        "rawValueScore": 7.08
+        "rawValueScore": 7.72,
+        "rawLightness": 6.03
       },
       "pros": [
         "FuelCell PEBA 블렌드 폼이 전족부 에너지 리턴 75.2%를 내줘서 플레이트 없이도 착지 후 튕김이 분명해요",
@@ -259,13 +263,14 @@
           "heel": 37,
           "forefoot": 31
         },
-        "weightScore": 3,
+        "weightScore": 4,
         "valueScore": 7,
         "rawCushioning": 6.2,
         "rawResponsiveness": 4.35,
         "rawStability": 4.49,
         "rawDurability": 6.83,
-        "rawValueScore": 6.85
+        "rawValueScore": 7.47,
+        "rawLightness": 4.08
       },
       "pros": [
         "FuelCell 폼 + 플레이트 조합이 전족부 에너지 리턴 75.3%를 내줘서 착지-토오프 전환이 군더더기 없어요",
@@ -319,11 +324,12 @@
           "heel": 40,
           "forefoot": 32
         },
-        "weightScore": 6,
-        "valueScore": 3,
+        "weightScore": 7,
+        "valueScore": 4,
         "rawCushioning": 6.51,
         "rawResponsiveness": 8.47,
-        "rawValueScore": 3.44
+        "rawValueScore": 3.83,
+        "rawLightness": 6.59
       },
       "pros": [
         "FuelCell + 카본 플레이트 조합으로 힐/전족부 에너지 리턴 84.8/84.6%를 달성해서 카본화 중 상위권 반발력을 제공해요",

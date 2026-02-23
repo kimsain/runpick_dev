@@ -31,13 +31,14 @@
           "heel": 37,
           "forefoot": 27
         },
-        "weightScore": 3,
-        "valueScore": 6,
+        "weightScore": 4,
+        "valueScore": 7,
         "rawCushioning": 3.5,
         "rawResponsiveness": 3.84,
         "rawStability": 5.05,
         "rawDurability": 7.27,
-        "rawValueScore": 6.47
+        "rawValueScore": 7.07,
+        "rawLightness": 3.84
       },
       "pros": [
         "ReactX + 앞뒤 Air Zoom이 착지 충격을 잘 잡아줘서 이지런이 편해요 (힐 충격 흡수 125 SA)",
@@ -91,13 +92,14 @@
           "heel": 44,
           "forefoot": 34
         },
-        "weightScore": 1,
+        "weightScore": 2,
         "valueScore": 7,
         "rawCushioning": 6.86,
         "rawResponsiveness": 3.56,
         "rawStability": 5.1,
         "rawDurability": 7.39,
-        "rawValueScore": 6.76
+        "rawValueScore": 7.37,
+        "rawLightness": 2.05
       },
       "pros": [
         "힐 충격 흡수 147 SA — 착지할 때 무릎·관절에 부담이 거의 안 느껴져요",
@@ -150,13 +152,14 @@
           "heel": 43,
           "forefoot": 33
         },
-        "weightScore": 3,
-        "valueScore": 7,
+        "weightScore": 4,
+        "valueScore": 8,
         "rawCushioning": 8.17,
         "rawResponsiveness": 6.51,
         "rawStability": 5.52,
         "rawDurability": 7.55,
-        "rawValueScore": 7.07
+        "rawValueScore": 7.7,
+        "rawLightness": 3.84
       },
       "pros": [
         "에너지 리턴 68%로 맥스 쿠셔닝치고 반발력이 좋아서 뛰는 맛이 있어요",
@@ -213,7 +216,8 @@
         "rawResponsiveness": 5.28,
         "rawStability": 4.51,
         "rawDurability": 7.88,
-        "rawValueScore": 4.89
+        "rawValueScore": 5.38,
+        "rawLightness": 1.0
       },
       "pros": [
         "힐 충격 흡수 173 SA — 착지 충격을 거의 못 느낄 정도로 부드러워요",
@@ -266,13 +270,14 @@
           "heel": 38,
           "forefoot": 28
         },
-        "weightScore": 2,
-        "valueScore": 8,
+        "weightScore": 3,
+        "valueScore": 9,
         "rawCushioning": 4.51,
         "rawResponsiveness": 3.68,
         "rawStability": 7.04,
         "rawDurability": 8.9,
-        "rawValueScore": 7.73
+        "rawValueScore": 8.4,
+        "rawLightness": 3.15
       },
       "pros": [
         "ReactX 폼이라 안정화치고 착지감이 꽤 부드러워요 (힐 충격 흡수 132 SA)",
@@ -325,8 +330,9 @@
           "forefoot": 32
         },
         "weightScore": 3,
-        "valueScore": 8,
-        "rawValueScore": 8.25
+        "valueScore": 9,
+        "rawValueScore": 8.96,
+        "rawLightness": 3.27
       },
       "pros": [
         "안정화 중에서 쿠셔닝이 가장 좋은 축에 속해요 — 발바닥 피로가 적어요",
@@ -382,7 +388,8 @@
         },
         "weightScore": 5,
         "valueScore": 10,
-        "rawValueScore": 9.54
+        "rawValueScore": 10.34,
+        "rawLightness": 5.3
       },
       "pros": [
         "12만원대에 플레이트 탑재라서 가성비가 뛰어나요",
@@ -436,13 +443,14 @@
           "heel": 34,
           "forefoot": 24
         },
-        "weightScore": 5,
+        "weightScore": 6,
         "valueScore": 5,
         "rawCushioning": 2.36,
         "rawResponsiveness": 6.54,
         "rawStability": 6.25,
         "rawDurability": 6.04,
-        "rawValueScore": 4.71
+        "rawValueScore": 5.19,
+        "rawLightness": 5.58
       },
       "pros": [
         "전족부 에너지 리턴 71%로 플레이트 없이도 밀어주는 힘이 좋아요",
@@ -501,7 +509,8 @@
         "rawResponsiveness": 5.47,
         "rawStability": 8.36,
         "rawDurability": 7.88,
-        "rawValueScore": 7.14
+        "rawValueScore": 7.77,
+        "rawLightness": 5.34
       },
       "pros": [
         "카본 Flyplate 덕에 알파플라이 비슷한 추진감을 훈련에서 느낄 수 있어요",
@@ -556,12 +565,13 @@
           "forefoot": 23
         },
         "weightScore": 9,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 1.52,
         "rawResponsiveness": 9.19,
         "rawStability": 1,
         "rawDurability": 4.77,
-        "rawValueScore": 3.3
+        "rawValueScore": 3.69,
+        "rawLightness": 9.39
       },
       "pros": [
         "144g이라 발에 아무것도 안 신은 것 같은 경량감이에요",
@@ -619,7 +629,8 @@
         "rawResponsiveness": 8.81,
         "rawStability": 4.75,
         "rawDurability": 2.01,
-        "rawValueScore": 2.6
+        "rawValueScore": 2.94,
+        "rawLightness": 7.77
       },
       "pros": [
         "184g으로 역대 가장 가벼워서 발이 거의 안 느껴질 정도예요",
@@ -673,12 +684,13 @@
           "forefoot": 32
         },
         "weightScore": 7,
-        "valueScore": 2,
+        "valueScore": 3,
         "rawCushioning": 6.43,
         "rawResponsiveness": 8.32,
         "rawStability": 3.4,
         "rawDurability": 2.99,
-        "rawValueScore": 2.46
+        "rawValueScore": 2.79,
+        "rawLightness": 7.2
       },
       "pros": [
         "ZoomX + Air Zoom + 카본 Flyplate 삼중 시스템이라 추진력이 압도적이에요",
