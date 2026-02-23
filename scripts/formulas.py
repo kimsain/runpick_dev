@@ -37,6 +37,15 @@ RESP_RANGE_RAW = 45    # raw 정밀용 (85-40)
 
 DUR_LOG_BASE = 8.2     # 내구성 로그 밑
 
+# 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
+# ratchet rule: 새 신발이 범위 벗어날 때만 변경
+# SCORE_VERSION = "2026-02-23-stability-v2"
+STAB_SA_LO = 130        # heel SA 임계값 — 이상 시 소프트니스 패널티 시작
+STAB_SA_FO_LO = 125     # forefoot SA 임계값
+STAB_STACK_LO = 40      # heel stack(mm) 임계값
+STAB_STACK_FO_LO = 30   # forefoot stack(mm) 임계값
+STAB_ER_PIVOT = 60      # ER% 오프셋 피벗 — 이상이면 sway 패널티 상쇄
+
 
 # RTINGS 반응성 카테고리 페널티 (2026-02-23 재보정 — RESPONSIVENESS_DEBATE_2026-02-23.md)
 # RESP_LO=40 기준 RunRepeat vs RTINGS 61개 신발 비교 후 subcategory별 avg bias 재계산
@@ -133,9 +142,44 @@ def responsiveness_from_runrepeat(heel_er, forefoot_er):
     return clamp(round((avg_er - RESP_LO) / RESP_RANGE_INT * 10), 1, 10)
 
 
-def stability_from_runrepeat(torsional_rigidity, heel_counter_stiffness):
-    """RunRepeat 안정성 → 정수 점수 (1-10)."""
-    return clamp(round(torsional_rigidity + heel_counter_stiffness), 1, 10)
+def stability_from_runrepeat(
+    torsional_rigidity, heel_counter_stiffness,
+    heel_sa=None, fore_sa=None,
+    heel_er=None, fore_er=None,
+    stack_heel=None, stack_fore=None,
+):
+    """RunRepeat 안정성 → 정수 점수 (1-10).
+
+    구조 점수(torsionalRigidity + heelCounterStiffness)에서
+    Sway 패널티(미드솔 부드러움 × 스택 높이)를 차감.
+    SA/stack 데이터 없으면 기존 구조 점수만 반환 (graceful fallback).
+    """
+    base = torsional_rigidity + heel_counter_stiffness  # 구조 점수 2-10
+
+    # Sway 패널티 (SA + stack 데이터 있을 때만)
+    if heel_sa is not None and stack_heel is not None:
+        # 소프트니스 팩터 (SA > 임계값부터 발생)
+        soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
+        soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
+        soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
+
+        # 스택 팩터 (stack > 임계값부터 발생)
+        stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
+        stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
+        stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
+
+        # 스웨이 = 소프트 + 스택 + 상호작용
+        sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
+
+        # ER% 오프셋 (반응성 폼은 패널티 감소)
+        if heel_er is not None:
+            avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
+            er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
+            sway = max(0, sway - er_offset)
+
+        base -= sway
+
+    return clamp(round(base), 1, 10)
 
 
 def durability_from_runrepeat(thickness_mm, abrasion_mm):

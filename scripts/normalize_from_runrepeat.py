@@ -92,12 +92,21 @@ def compute_scores(rr_src, existing_specs, findings_text):
     if heel_er is not None and fore_er is not None:
         responsiveness = responsiveness_from_runrepeat(heel_er, fore_er)
 
-    # stability: torsionalRigidity + heelCounterStiffness (RunRepeat /5 scale)
+    # stability: torsionalRigidity + heelCounterStiffness + Sway 패널티
     rr_stab = rr_src["attributeScores"]["stability"]
     tr = rr_stab.get("torsionalRigidity")
     hcs = rr_stab.get("heelCounterStiffness")
     if tr is not None and hcs is not None:
-        stability = stability_from_runrepeat(tr, hcs)
+        # SA/ER 데이터 (이미 위에서 추출)
+        # stack 데이터는 production JSON에서 추출
+        stack_heel = existing_specs.get("stackHeight", {}).get("heel")
+        stack_fore = existing_specs.get("stackHeight", {}).get("forefoot")
+        stability = stability_from_runrepeat(
+            tr, hcs,
+            heel_sa=heel_sa, fore_sa=fore_sa,
+            heel_er=heel_er, fore_er=fore_er,
+            stack_heel=stack_heel, stack_fore=stack_fore,
+        )
     else:
         old_stab = existing_specs.get("stability", 6)
         stability = clamp(old_stab + keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE), 1, 10)
