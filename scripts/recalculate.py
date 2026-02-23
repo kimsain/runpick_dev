@@ -15,7 +15,7 @@ import argparse
 import json
 from pathlib import Path
 
-from formulas import clamp, weight_score, value_score
+from formulas import clamp, weight_score, value_score, raw_value_score
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -63,11 +63,19 @@ def main():
                 if price and all(v is not None for v in [cush, resp, stab, dur]):
                     old_vs = specs.get("valueScore")
                     new_vs = value_score(cush, resp, stab, dur, price)
+                    raw_c = specs.get("rawCushioning") or cush
+                    raw_r = specs.get("rawResponsiveness") or resp
+                    raw_s = specs.get("rawStability") or stab
+                    raw_d = specs.get("rawDurability") or dur
+                    new_raw_vs = raw_value_score(raw_c, raw_r, raw_s, raw_d, price)
                     row["price"] = price
                     row["old_vs"] = old_vs
                     row["new_vs"] = new_vs
                     if args.apply and old_vs != new_vs:
                         specs["valueScore"] = new_vs
+                        file_changed = True
+                    if args.apply and specs.get("rawValueScore") != new_raw_vs:
+                        specs["rawValueScore"] = new_raw_vs
                         file_changed = True
 
             if len(row) > 1:  # has at least one score

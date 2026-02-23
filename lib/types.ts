@@ -15,6 +15,9 @@ export interface Specs {
   valueScore?: number         // 0-10, (쿠션성+반응성+안정성+내구성)÷가격 정규화
   rawCushioning?: number      // 0-10 소수점, RunRepeat SA 기반 (RTINGS fallback)
   rawResponsiveness?: number  // 0-10 소수점, RunRepeat ER% 기반 (RTINGS fallback)
+  rawStability?: number       // 1-10 소수점, RunRepeat 기반 정밀 정렬용 (Case B 61개)
+  rawDurability?: number      // 1-10 소수점, RunRepeat 기반 정밀 정렬용 (Case B 61개)
+  rawValueScore?: number      // 1-10 소수점, 혼합 raw 입력 가성비 정밀 정렬용
 }
 
 export interface Shoe {

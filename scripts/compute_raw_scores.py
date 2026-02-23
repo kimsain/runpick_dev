@@ -22,8 +22,6 @@ from formulas import (
     raw_cushioning_from_rtings,
     raw_responsiveness_from_runrepeat,
     raw_responsiveness_from_rtings,
-    CUSH_RANGE_RAW,
-    CUSH_RANGE,
 )
 
 RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
@@ -32,13 +30,12 @@ BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
 def compute_raw(sources):
     """
-    Returns (rawCushioning, rawResponsiveness, cushion_int) — either raw may be None if data missing.
-    cushion_int is None when RunRepeat SA data is unavailable.
+    Returns (rawCushioning, rawResponsiveness) — either may be None if data missing.
     """
     rr = next((s for s in sources if s["source"] == "RunRepeat"), None)
     rt = next((s for s in sources if s["source"] == "RTINGS"), None)
 
-    raw_cushion = raw_resp = cushion_int = None
+    raw_cushion = raw_resp = None
 
     # rawCushioning: RunRepeat SA 우선
     if rr:
@@ -47,14 +44,12 @@ def compute_raw(sources):
         f_sa = c.get("forefootShockAbsorption")
         if h_sa is not None and f_sa is not None:
             raw_cushion = raw_cushioning_from_runrepeat(h_sa, f_sa)
-            cushion_int = clamp(round(raw_cushion * CUSH_RANGE_RAW / CUSH_RANGE), 0, 10)
     if raw_cushion is None and rt:
         c = rt.get("attributeScores", {}).get("cushioning", {})
         h_c = c.get("heelShockAbsorption")
         f_c = c.get("forefootShockAbsorption")
         if h_c is not None and f_c is not None:
             raw_cushion = raw_cushioning_from_rtings(h_c, f_c)
-            cushion_int = clamp(round(raw_cushion * CUSH_RANGE_RAW / CUSH_RANGE), 0, 10)
 
     # rawResponsiveness: RunRepeat ER% 우선
     if rr:
@@ -70,7 +65,7 @@ def compute_raw(sources):
         if h_er is not None and f_er is not None:
             raw_resp = raw_responsiveness_from_rtings(h_er, f_er)
 
-    return raw_cushion, raw_resp, cushion_int
+    return raw_cushion, raw_resp
 
 
 def load_production():
@@ -115,7 +110,7 @@ def main():
             if shoe_id not in production:
                 continue
 
-            raw_c, raw_r, cush_int = compute_raw(research.get("sources", []))
+            raw_c, raw_r = compute_raw(research.get("sources", []))
             if raw_c is None and raw_r is None:
                 continue
 
@@ -125,7 +120,6 @@ def main():
             updates[brand_file][shoe_id] = {
                 "rawCushioning": raw_c,
                 "rawResponsiveness": raw_r,
-                "cushioning": cush_int,
             }
             preview_rows.append({
                 "shoeId": shoe_id,
@@ -162,7 +156,7 @@ def main():
                 continue
             u = shoe_updates[sid]
             specs = shoe.setdefault("specs", {})
-            for field in ("rawCushioning", "rawResponsiveness", "cushioning"):
+            for field in ("rawCushioning", "rawResponsiveness"):
                 val = u[field]
                 if val is not None:
                     old = specs.get(field)

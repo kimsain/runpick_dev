@@ -251,3 +251,55 @@ def raw_responsiveness_from_runrepeat(heel_er, forefoot_er):
 def raw_responsiveness_from_rtings(heel_er, forefoot_er):
     """RTINGS ER% → rawResponsiveness (0-10, 소수점 2자리)."""
     return round(clamp((heel_er + forefoot_er) / 2 / 10, 0, 10), 2)
+
+
+# ─── Raw 정밀 점수 (stability / durability / value) ──────────────────
+
+
+def raw_stability_from_runrepeat(
+    tr, hcs,
+    heel_sa=None, fore_sa=None,
+    heel_er=None, fore_er=None,
+    stack_heel=None, stack_fore=None,
+    subcategory=None,
+):
+    """stability_from_runrepeat과 동일 로직, round 없이 float 반환 (소수점 2자리)."""
+    tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
+    hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
+    base = 0.4 * tr_norm + 0.6 * hcs_norm
+    if heel_sa is not None and stack_heel is not None:
+        soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
+        soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
+        soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
+        stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
+        stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
+        stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
+        sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
+        if heel_er is not None:
+            avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
+            er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
+            sway = max(0, sway - er_offset)
+        base -= sway
+    if subcategory == "stability":
+        base += 1
+    return round(clamp(base, 1, 10), 2)
+
+
+def raw_durability_from_runrepeat(thickness_mm, abrasion_mm):
+    """durability_from_runrepeat과 동일 로직, round 없이 float 반환."""
+    ratio = thickness_mm / abrasion_mm
+    return round(clamp(math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1, 1, 10), 2)
+
+
+def raw_durability_from_abrasion_only(abrasion_mm):
+    """durability_from_abrasion_only과 동일 로직, round 없이 float 반환."""
+    capped = min(abrasion_mm, 10.0)
+    return round(clamp((10.0 - capped) / 10.0 * 9 + 1, 1, 10), 2)
+
+
+def raw_value_score(raw_cush, raw_resp, raw_stab, raw_dur, price):
+    """가성비 raw 점수 (1-10 소수점). 입력은 혼합 raw(float) 값."""
+    if price <= 0:
+        return 1.0
+    ratio = (raw_cush + raw_resp + raw_stab + raw_dur) / price
+    return round(clamp((ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1, 1, 10), 2)

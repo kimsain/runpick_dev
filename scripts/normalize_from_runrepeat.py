@@ -21,6 +21,9 @@ from formulas import (
     stability_from_runrepeat,
     durability_from_runrepeat,
     durability_from_abrasion_only,
+    raw_stability_from_runrepeat,
+    raw_durability_from_runrepeat,
+    raw_durability_from_abrasion_only,
     STABILITY_POS_RE,
     STABILITY_NEG_RE,
     DURABILITY_POS_RE,
@@ -108,9 +111,17 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
             stack_heel=stack_heel, stack_fore=stack_fore,
             subcategory=subcategoryId,
         )
+        raw_stab = raw_stability_from_runrepeat(
+            tr, hcs,
+            heel_sa=heel_sa, fore_sa=fore_sa,
+            heel_er=heel_er, fore_er=fore_er,
+            stack_heel=stack_heel, stack_fore=stack_fore,
+            subcategory=subcategoryId,
+        )
     else:
         old_stab = existing_specs.get("stability", 6)
         stability = clamp(old_stab + keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE), 1, 10)
+        raw_stab = None
 
     # durability: log ratio of outsoleThickness / outsoleDurability (abrasion mm)
     rr_dur = rr_src["attributeScores"]["durability"]
@@ -120,14 +131,17 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
         abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
         thick_mm = float(str(outsole_thick).replace(" mm", "").strip())
         durability = durability_from_runrepeat(thick_mm, abr_mm)
+        raw_dur = raw_durability_from_runrepeat(thick_mm, abr_mm)
     elif outsole_dur is not None:
         abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
         durability = durability_from_abrasion_only(abr_mm)
+        raw_dur = raw_durability_from_abrasion_only(abr_mm)
     else:
         old_dur = existing_specs.get("durability", 5)
         durability = clamp(old_dur + keyword_delta(findings_text, DURABILITY_POS_RE, DURABILITY_NEG_RE), 1, 10)
+        raw_dur = None
 
-    return cushioning, responsiveness, stability, durability
+    return cushioning, responsiveness, stability, durability, raw_stab, raw_dur
 
 
 def fmt_change(old, new, width=12):
@@ -180,7 +194,7 @@ def main():
             old_specs = prod["specs"]
             findings_text = get_qualitative_findings(research.get("sources", []))
 
-            new_cush, new_resp, new_stab, new_dur = compute_scores(
+            new_cush, new_resp, new_stab, new_dur, new_raw_stab, new_raw_dur = compute_scores(
                 rr_src, old_specs, findings_text, subcategoryId=prod["subcategoryId"]
             )
 
@@ -193,6 +207,8 @@ def main():
                 "responsiveness": new_resp,
                 "stability": new_stab,
                 "durability": new_dur,
+                "rawStability": new_raw_stab,
+                "rawDurability": new_raw_dur,
             })
 
             preview_rows.append({
@@ -267,7 +283,7 @@ def main():
             specs = shoe["specs"]
             shoe_changed = False
 
-            for field in ["cushioning", "responsiveness", "stability", "durability"]:
+            for field in ["cushioning", "responsiveness", "stability", "durability", "rawStability", "rawDurability"]:
                 new_val = u[field]
                 if new_val is None:
                     continue

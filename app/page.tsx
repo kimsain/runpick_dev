@@ -7,14 +7,11 @@ import type { Shoe, Specs } from '@/lib/types'
 const CONFIDENCE_ORDER: Record<string, number> = { 'very-high': 3, high: 2, medium: 1, low: 0 }
 
 function getRawScore(shoe: Shoe, sortKey: keyof Specs): number {
-  if (sortKey === 'cushioning') {
-    const raw = shoe.specs.rawCushioning
-    return Number.isFinite(raw) ? raw! : shoe.specs.cushioning
-  }
-  if (sortKey === 'responsiveness') {
-    const raw = shoe.specs.rawResponsiveness
-    return Number.isFinite(raw) ? raw! : shoe.specs.responsiveness
-  }
+  if (sortKey === 'cushioning') return shoe.specs.rawCushioning ?? shoe.specs.cushioning
+  if (sortKey === 'responsiveness') return shoe.specs.rawResponsiveness ?? shoe.specs.responsiveness
+  if (sortKey === 'stability') return shoe.specs.rawStability ?? shoe.specs.stability
+  if (sortKey === 'durability') return shoe.specs.rawDurability ?? shoe.specs.durability
+  if (sortKey === 'valueScore') return shoe.specs.rawValueScore ?? shoe.specs.valueScore ?? 0
   return Number(shoe.specs[sortKey] ?? 0)
 }
 

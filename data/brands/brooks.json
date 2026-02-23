@@ -34,7 +34,10 @@
         "weightScore": 3,
         "valueScore": 8,
         "rawCushioning": 4.4,
-        "rawResponsiveness": 4.57
+        "rawResponsiveness": 4.57,
+        "rawStability": 7.28,
+        "rawDurability": 8.66,
+        "rawValueScore": 8.03
       },
       "pros": [
         "포어풋에 DNA Loft V3 폼을 3mm 더 쌓아서 전족부 착지 충격이 전작보다 훨씬 부드러워졌어요",
@@ -91,7 +94,10 @@
         "weightScore": 5,
         "valueScore": 6,
         "rawCushioning": 4.05,
-        "rawResponsiveness": 5.08
+        "rawResponsiveness": 5.08,
+        "rawStability": 7.45,
+        "rawDurability": 6.56,
+        "rawValueScore": 6.39
       },
       "pros": [
         "플레이트 없이 244g이라 발이 자유롭게 움직이면서도 가벼워서 템포 훈련에서 발이 빠르게 돌아와요",
@@ -148,7 +154,10 @@
         "weightScore": 2,
         "valueScore": 6,
         "rawCushioning": 4.88,
-        "rawResponsiveness": 3.8
+        "rawResponsiveness": 3.8,
+        "rawStability": 7.29,
+        "rawDurability": 7.99,
+        "rawValueScore": 7.14
       },
       "pros": [
         "38.5/31.2mm 맥스 스택이 장거리 후반 착지 충격을 꾸준히 흡수해줘서 발바닥이 안 아파요",
@@ -205,7 +214,10 @@
         "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 4.57,
-        "rawResponsiveness": 4.84
+        "rawResponsiveness": 4.84,
+        "rawStability": 6.01,
+        "rawDurability": 9.79,
+        "rawValueScore": 6.27
       },
       "pros": [
         "힐/포어풋 질소 주입 폼 퍽 구조라 착지 때마다 일관되게 부드럽게 받아줘서 장시간 달려도 발이 안 피로해요",
@@ -260,7 +272,8 @@
           "forefoot": 30
         },
         "weightScore": 2,
-        "valueScore": 6
+        "valueScore": 6,
+        "rawValueScore": 6.21
       },
       "pros": [
         "슈퍼크리티컬 폼이 38/30mm 스택 전체에 걸쳐 풍성하게 감싸줘서 장시간 달려도 발바닥이 포근해요",
@@ -317,7 +330,8 @@
         "weightScore": 1,
         "valueScore": 5,
         "rawCushioning": 5.91,
-        "rawResponsiveness": 6.87
+        "rawResponsiveness": 6.87,
+        "rawValueScore": 5.16
       },
       "pros": [
         "힐 47.9mm / 포어풋 41mm 브룩스 최대 스택이 장거리 후반에도 착지 충격을 꾸준히 흡수해줘서 발이 놀랍도록 안 아파요",
@@ -374,7 +388,8 @@
         "weightScore": 2,
         "valueScore": 6,
         "rawCushioning": 4.19,
-        "rawResponsiveness": 6.82
+        "rawResponsiveness": 6.82,
+        "rawValueScore": 7.39
       },
       "pros": [
         "GuideRails가 발이 과하게 안으로 꺾일 때만 자연스럽게 잡아줘서 안정화인데도 발이 갇힌 느낌이 안 나요",
@@ -431,7 +446,10 @@
         "weightScore": 3,
         "valueScore": 7,
         "rawCushioning": 6.01,
-        "rawResponsiveness": 6.37
+        "rawResponsiveness": 6.37,
+        "rawStability": 6.04,
+        "rawDurability": 7.05,
+        "rawValueScore": 5.99
       },
       "pros": [
         "DNA Gold PEBA 폼이 브룩스 훈련화 중 처음으로 들어가서 착지할 때 확실히 빠르고 탄성 있는 느낌이 나요",
@@ -488,7 +506,10 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 4.97,
-        "rawResponsiveness": 8.6
+        "rawResponsiveness": 8.6,
+        "rawStability": 5.95,
+        "rawDurability": 3.77,
+        "rawValueScore": 3.48
       },
       "pros": [
         "DNA Gold PEBA 폼 ER 77~85%가 카본 플레이트와 맞물려 착지마다 강하게 밀어줘서 후반 페이스 유지가 훨씬 쉬워져요",

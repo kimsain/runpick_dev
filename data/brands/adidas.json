@@ -32,7 +32,8 @@
           "forefoot": 28
         },
         "weightScore": 4,
-        "valueScore": 9
+        "valueScore": 9,
+        "rawValueScore": 8.67
       },
       "pros": [
         "Dreamstrike+ PEBA 폼이라 15만원대치고 쿠셔닝이 꽤 푹신해요",
@@ -89,7 +90,8 @@
         "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 4.52,
-        "rawResponsiveness": 7.59
+        "rawResponsiveness": 7.59,
+        "rawValueScore": 6.97
       },
       "pros": [
         "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려요",
@@ -147,7 +149,8 @@
         "weightScore": 4,
         "valueScore": 8,
         "rawCushioning": 3.85,
-        "rawResponsiveness": 6.88
+        "rawResponsiveness": 6.88,
+        "rawValueScore": 7.42
       },
       "pros": [
         "에너지 리턴 68%로 안정화치고 바운시해서 뛰는 맛이 있어요",
@@ -202,7 +205,8 @@
           "forefoot": 26
         },
         "weightScore": 5,
-        "valueScore": 9
+        "valueScore": 9,
+        "rawValueScore": 8.92
       },
       "pros": [
         "14만원대에 Lightstrike Pro 듀얼 폼이라 가격 대비 반발력이 좋아요",
@@ -259,7 +263,10 @@
         "weightScore": 8,
         "valueScore": 5,
         "rawCushioning": 2.56,
-        "rawResponsiveness": 8.5
+        "rawResponsiveness": 8.5,
+        "rawStability": 1,
+        "rawDurability": 5.2,
+        "rawValueScore": 5.06
       },
       "pros": [
         "176g 초경량에 에너지 리턴 77%로 발이 거의 안 느껴지면서 빨라요",
@@ -315,7 +322,10 @@
         "weightScore": 6,
         "valueScore": 7,
         "rawCushioning": 5.63,
-        "rawResponsiveness": 7.98
+        "rawResponsiveness": 7.98,
+        "rawStability": 6.1,
+        "rawDurability": 6.56,
+        "rawValueScore": 6.61
       },
       "pros": [
         "에너지 리턴 74%로 슈퍼슈즈급 반발력인데 카본 없이 부드러운 라이드예요",
@@ -371,7 +381,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 4.37,
-        "rawResponsiveness": 6.65
+        "rawResponsiveness": 6.65,
+        "rawStability": 8.65,
+        "rawDurability": 8.37,
+        "rawValueScore": 8.63
       },
       "pros": [
         "전족부 에너지 리턴 70%로 포어풋 착지 러너에게 확실한 반발력이에요",
@@ -429,7 +442,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 3.91,
-        "rawResponsiveness": 8.5
+        "rawResponsiveness": 8.5,
+        "rawStability": 3.4,
+        "rawDurability": 3.96,
+        "rawValueScore": 4.29
       },
       "pros": [
         "전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는 반발력이에요",
@@ -488,7 +504,10 @@
         "weightScore": 3,
         "valueScore": 3,
         "rawCushioning": 5.93,
-        "rawResponsiveness": 8.22
+        "rawResponsiveness": 8.22,
+        "rawStability": 2.67,
+        "rawDurability": 3.85,
+        "rawValueScore": 2.25
       },
       "pros": [
         "에너지 리턴 77% + 충격 흡수 160 SA로 쿠셔닝과 반발력 모두 압도적이에요",
@@ -547,7 +566,10 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 5.13,
-        "rawResponsiveness": 9.15
+        "rawResponsiveness": 9.15,
+        "rawStability": 3.4,
+        "rawDurability": 4.47,
+        "rawValueScore": 3.23
       },
       "pros": [
         "에너지 리턴 80.4%로 랩 테스트 역대 최고 — 밟을수록 돌아오는 반발력이에요",
@@ -605,7 +627,10 @@
         "weightScore": 10,
         "valueScore": 1,
         "rawCushioning": 6.03,
-        "rawResponsiveness": 7.99
+        "rawResponsiveness": 7.99,
+        "rawStability": 4.23,
+        "rawDurability": 1.13,
+        "rawValueScore": 1
       },
       "pros": [
         "138g으로 알파플라이 3(198g)보다 60g 가벼워서 장거리에서 차이가 확실해요",

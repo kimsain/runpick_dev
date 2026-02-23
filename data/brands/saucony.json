@@ -34,7 +34,8 @@
         "weightScore": 4,
         "valueScore": 8,
         "rawCushioning": 5.07,
-        "rawResponsiveness": 7.87
+        "rawResponsiveness": 7.87,
+        "rawValueScore": 8.65
       },
       "pros": [
         "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해요",
@@ -91,7 +92,10 @@
         "weightScore": 6,
         "valueScore": 5,
         "rawCushioning": 3.57,
-        "rawResponsiveness": 3.99
+        "rawResponsiveness": 3.99,
+        "rawStability": 4.9,
+        "rawDurability": 4.65,
+        "rawValueScore": 5.42
       },
       "pros": [
         "207g의 가벼운 무게라 발이 안 무겁고 리듬 훈련에서 페이스 올리기가 부담 없어요",
@@ -148,7 +152,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 6.08,
-        "rawResponsiveness": 7.16
+        "rawResponsiveness": 7.16,
+        "rawStability": 7.34,
+        "rawDurability": 8.46,
+        "rawValueScore": 7.93
       },
       "pros": [
         "PWRRUN HG 폼이 SA 149/136으로 Ride 18보다 훨씬 높은 충격 흡수를 제공해서 하프·풀 장거리 훈련에서 발이 쉬어요",
@@ -205,7 +212,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 4.73,
-        "rawResponsiveness": 5.75
+        "rawResponsiveness": 5.75,
+        "rawStability": 5.75,
+        "rawDurability": 9.11,
+        "rawValueScore": 8.81
       },
       "pros": [
         "HOLLOW TECH 구조가 별도 포스트 없이 자연스럽게 내측 안정성을 잡아줘서 안정화치고 딱딱하거나 어색한 느낌이 없어요",
@@ -262,7 +272,10 @@
         "weightScore": 3,
         "valueScore": 9,
         "rawCushioning": 6.29,
-        "rawResponsiveness": 7.49
+        "rawResponsiveness": 7.49,
+        "rawStability": 8.06,
+        "rawDurability": 7.59,
+        "rawValueScore": 8.06
       },
       "pros": [
         "PWRRUN PB + PWRRUN 크래들 이중 밀도 구조라 안정화인데 발 아래 쿠셔닝이 부드럽고 SA 151/140으로 충격 흡수도 최상급이에요",
@@ -319,7 +332,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 4.27,
-        "rawResponsiveness": 7.46
+        "rawResponsiveness": 7.46,
+        "rawStability": 9.8,
+        "rawDurability": 10,
+        "rawValueScore": 8.75
       },
       "pros": [
         "XT-600 웨지 구조가 별도 포스트 없이 발이 내측으로 쏠리는 걸 잡아줘서 안정화치고 자연스러운 착지감이에요",
@@ -376,7 +392,10 @@
         "weightScore": 3,
         "valueScore": 7,
         "rawCushioning": 4.83,
-        "rawResponsiveness": 7.74
+        "rawResponsiveness": 7.74,
+        "rawStability": 5.95,
+        "rawDurability": 8.24,
+        "rawValueScore": 6.38
       },
       "pros": [
         "IncrediRun 상단 레이어가 플레이트 없이도 전족부 에너지 리턴 79%대의 바운시한 감각을 만들어줘요",
@@ -433,7 +452,8 @@
         "weightScore": 5,
         "valueScore": 7,
         "rawCushioning": 5.7,
-        "rawResponsiveness": 8.18
+        "rawResponsiveness": 8.18,
+        "rawValueScore": 7.34
       },
       "pros": [
         "PWRRUN PB + 나일론 플레이트 조합으로 에너지 리턴 82.8%를 240g에 구현해서 Speed 5급 반발력을 더 두꺼운 쿠셔닝과 함께 즐길 수 있어요",
@@ -490,7 +510,10 @@
         "weightScore": 5,
         "valueScore": 7,
         "rawCushioning": 4.51,
-        "rawResponsiveness": 8.31
+        "rawResponsiveness": 8.31,
+        "rawStability": 7.45,
+        "rawDurability": 6.36,
+        "rawValueScore": 6.72
       },
       "pros": [
         "PWRRUN PB PEBA 폼 + 나일론 플레이트라 에너지 리턴 82%대로 써코니 트레이너 라인 최고 반발력을 자랑해요",
@@ -547,7 +570,10 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 5.77,
-        "rawResponsiveness": 9.34
+        "rawResponsiveness": 9.34,
+        "rawStability": 3.4,
+        "rawDurability": 6.23,
+        "rawValueScore": 3.16
       },
       "pros": [
         "IncrediRun TPEE 폼 + 카본 플레이트로 에너지 리턴 85.8~86.4%를 구현해서 197g에 최고 수준의 바운스가 있어요",
@@ -604,7 +630,10 @@
         "weightScore": 6,
         "valueScore": 4,
         "rawCushioning": 4.49,
-        "rawResponsiveness": 7.56
+        "rawResponsiveness": 7.56,
+        "rawStability": 3.4,
+        "rawDurability": 7.43,
+        "rawValueScore": 3.95
       },
       "pros": [
         "PWRRUN PB 카본 레이싱화 중 합리적인 가격대(Pro 5보다 저렴)에 카본 플레이트의 추진력을 경험할 수 있어요",
@@ -661,7 +690,8 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 4.93,
-        "rawResponsiveness": 8.21
+        "rawResponsiveness": 8.21,
+        "rawValueScore": 3.88
       },
       "pros": [
         "Pro 4 대비 에너지 리턴을 82%대로 끌어올려서 같은 카본 플레이트 구조에서 훨씬 강한 반발력을 느낄 수 있어요",

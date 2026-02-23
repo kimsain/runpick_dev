@@ -10,13 +10,11 @@ import type { Shoe, Brand } from '@/lib/types'
 
 function getSpecValue(shoe: Shoe, sort: string): number {
   switch (sort) {
-    case 'cushioning-desc':
-      return shoe.specs.rawCushioning ?? shoe.specs.cushioning
-    case 'responsiveness-desc':
-      return shoe.specs.rawResponsiveness ?? shoe.specs.responsiveness
-    case 'stability-desc': return shoe.specs.stability
-    case 'durability-desc': return shoe.specs.durability
-    case 'value-desc': return shoe.specs.valueScore ?? 0
+    case 'cushioning-desc':     return shoe.specs.rawCushioning ?? shoe.specs.cushioning
+    case 'responsiveness-desc': return shoe.specs.rawResponsiveness ?? shoe.specs.responsiveness
+    case 'stability-desc':      return shoe.specs.rawStability ?? shoe.specs.stability
+    case 'durability-desc':     return shoe.specs.rawDurability ?? shoe.specs.durability
+    case 'value-desc':          return shoe.specs.rawValueScore ?? shoe.specs.valueScore ?? 0
     default: return 0
   }
 }

@@ -34,7 +34,10 @@
         "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 5.64,
-        "rawResponsiveness": 2.74
+        "rawResponsiveness": 2.74,
+        "rawStability": 7.92,
+        "rawDurability": 7.24,
+        "rawValueScore": 6.12
       },
       "pros": [
         "전작보다 24g 가벼워졌는데 푹신한 쿠셔닝은 그대로라 장거리가 편해요",
@@ -91,7 +94,8 @@
         "weightScore": 4,
         "valueScore": 6,
         "rawCushioning": 5.47,
-        "rawResponsiveness": 6.92
+        "rawResponsiveness": 6.92,
+        "rawValueScore": 6.73
       },
       "pros": [
         "GUIDESOLE 로커가 알아서 앞으로 밀어줘서 힘을 덜 쓰고 달릴 수 있어요",
@@ -150,7 +154,10 @@
         "weightScore": 2,
         "valueScore": 7,
         "rawCushioning": 4.85,
-        "rawResponsiveness": 3.37
+        "rawResponsiveness": 3.37,
+        "rawStability": 10,
+        "rawDurability": 9.58,
+        "rawValueScore": 7.52
       },
       "pros": [
         "4D GUIDANCE SYSTEM이 과회내를 자연스럽게 교정해서 억지 느낌이 없어요",
@@ -207,7 +214,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 5.79,
-        "rawResponsiveness": 6.37
+        "rawResponsiveness": 6.37,
+        "rawStability": 5.65,
+        "rawDurability": 7.59,
+        "rawValueScore": 8.22
       },
       "pros": [
         "FF BLAST MAX 폼이 착지는 부드럽고 반발은 통통 튀어서 달리는 재미가 있어요",
@@ -264,7 +274,10 @@
         "weightScore": 5,
         "valueScore": 6,
         "rawCushioning": 5.65,
-        "rawResponsiveness": 6.45
+        "rawResponsiveness": 6.45,
+        "rawStability": 6.94,
+        "rawDurability": 9.44,
+        "rawValueScore": 5.87
       },
       "pros": [
         "넓은 베이스 덕분에 슈퍼 트레이너 중에서도 안정성이 높아요",
@@ -322,7 +335,10 @@
         "weightScore": 6,
         "valueScore": 5,
         "rawCushioning": 6.69,
-        "rawResponsiveness": 7.89
+        "rawResponsiveness": 7.89,
+        "rawStability": 5.52,
+        "rawDurability": 7.27,
+        "rawValueScore": 4.37
       },
       "pros": [
         "FF TURBO² 폼의 반발력이 폭발적인데 220g으로 가벼워요",
@@ -378,7 +394,10 @@
         "weightScore": 4,
         "valueScore": 6,
         "rawCushioning": 5.96,
-        "rawResponsiveness": 7.07
+        "rawResponsiveness": 7.07,
+        "rawStability": 4.78,
+        "rawDurability": 5.7,
+        "rawValueScore": 5.1
       },
       "pros": [
         "빠른 페이스에서 Pebax 플레이트의 전족부 추진력이 확 살아나요",
@@ -436,7 +455,10 @@
         "weightScore": 7,
         "valueScore": 6,
         "rawCushioning": 5.12,
-        "rawResponsiveness": 6.11
+        "rawResponsiveness": 6.11,
+        "rawStability": 5.65,
+        "rawDurability": 6.2,
+        "rawValueScore": 5.61
       },
       "pros": [
         "193g 초경량에 풀 카본 플레이트가 들어가서 빠른 러닝에 딱 맞아요 (에너지 리턴 64.6%)",
@@ -494,7 +516,10 @@
         "weightScore": 10,
         "valueScore": 2,
         "rawCushioning": 6.0,
-        "rawResponsiveness": 9.0
+        "rawResponsiveness": 9.0,
+        "rawStability": 1.6,
+        "rawDurability": 3.39,
+        "rawValueScore": 1.36
       },
       "pros": [
         "129g 역대 최경량이면서 전족부 에너지 리턴 81%로 추진력이 폭발적이에요",
@@ -551,7 +576,10 @@
         "weightScore": 5,
         "valueScore": 3,
         "rawCushioning": 4.45,
-        "rawResponsiveness": 5.97
+        "rawResponsiveness": 5.97,
+        "rawStability": 5.95,
+        "rawDurability": 4.11,
+        "rawValueScore": 3.55
       },
       "pros": [
         "듀얼 폼 구조라 카본화인데도 안정적이어서 첫 레이싱화로 좋아요",
@@ -608,7 +636,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 5.47,
-        "rawResponsiveness": 8.79
+        "rawResponsiveness": 8.79,
+        "rawStability": 4.6,
+        "rawDurability": 3.96,
+        "rawValueScore": 2.92
       },
       "pros": [
         "FF LEAP 폼이 플러시하면서도 전족부에서 폭발적으로 밀어줘요",
@@ -665,7 +696,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 5.84,
-        "rawResponsiveness": 8.65
+        "rawResponsiveness": 8.65,
+        "rawStability": 4.6,
+        "rawDurability": 5.01,
+        "rawValueScore": 3.17
       },
       "pros": [
         "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해요",
