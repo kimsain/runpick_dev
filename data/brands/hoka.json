@@ -25,14 +25,14 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 3,
-        "stability": 7,
+        "stability": 6,
         "durability": 8,
         "stackHeight": {
           "heel": 42,
           "forefoot": 34
         },
         "weightScore": 3,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 5.47,
         "rawResponsiveness": 4.5
       },
@@ -82,7 +82,7 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 4,
-        "stability": 6,
+        "stability": 5,
         "durability": 8,
         "stackHeight": {
           "heel": 43,
@@ -196,7 +196,7 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 5,
         "durability": 7,
         "stackHeight": {
           "heel": 44,
@@ -310,7 +310,7 @@
         "drop": 7,
         "cushioning": 7,
         "responsiveness": 9,
-        "stability": 6,
+        "stability": 5,
         "durability": 7,
         "stackHeight": {
           "heel": 40,

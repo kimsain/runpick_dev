@@ -39,7 +39,11 @@ DUR_LOG_BASE = 8.2     # 내구성 로그 밑
 
 # 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
 # ratchet rule: 새 신발이 범위 벗어날 때만 변경
-# SCORE_VERSION = "2026-02-23-stability-v2"
+# SCORE_VERSION = "2026-02-23-stability-v3"
+STAB_TR_MIN = 2    # torsionalRigidity 실측 최솟값 (ratchet rule)
+STAB_TR_MAX = 5    # torsionalRigidity 실측 최댓값
+STAB_HCS_MIN = 1   # heelCounterStiffness 실측 최솟값
+STAB_HCS_MAX = 5   # heelCounterStiffness 실측 최댓값
 STAB_SA_LO = 130        # heel SA 임계값 — 이상 시 소프트니스 패널티 시작
 STAB_SA_FO_LO = 125     # forefoot SA 임계값
 STAB_STACK_LO = 40      # heel stack(mm) 임계값
@@ -147,37 +151,44 @@ def stability_from_runrepeat(
     heel_sa=None, fore_sa=None,
     heel_er=None, fore_er=None,
     stack_heel=None, stack_fore=None,
+    subcategory=None,
 ):
     """RunRepeat 안정성 → 정수 점수 (1-10).
 
-    구조 점수(torsionalRigidity + heelCounterStiffness)에서
-    Sway 패널티(미드솔 부드러움 × 스택 높이)를 차감.
-    SA/stack 데이터 없으면 기존 구조 점수만 반환 (graceful fallback).
+    각 구조 변수를 개별 min-max 정규화(1~10) 후 40/60 가중합.
+    Sway 패널티(미드솔 부드러움 × 스택 높이) 차감.
+    subcategoryId="stability" 신발에 +1 보너스.
+    SA/stack 데이터 없으면 정규화된 base만 반환 (graceful fallback).
     """
-    base = torsional_rigidity + heel_counter_stiffness  # 구조 점수 2-10
+    # 개별 min-max 정규화 → 1~10
+    tr_norm  = 1 + 9 * (torsional_rigidity      - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
+    hcs_norm = 1 + 9 * (heel_counter_stiffness  - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
+
+    # 40/60 가중합 (HCS 중심)
+    base = 0.4 * tr_norm + 0.6 * hcs_norm  # 범위 1~10
 
     # Sway 패널티 (SA + stack 데이터 있을 때만)
     if heel_sa is not None and stack_heel is not None:
-        # 소프트니스 팩터 (SA > 임계값부터 발생)
         soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
         soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
         soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
 
-        # 스택 팩터 (stack > 임계값부터 발생)
         stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
         stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
         stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
 
-        # 스웨이 = 소프트 + 스택 + 상호작용
         sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
 
-        # ER% 오프셋 (반응성 폼은 패널티 감소)
         if heel_er is not None:
             avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
             er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
             sway = max(0, sway - er_offset)
 
         base -= sway
+
+    # stability 카테고리 보너스 (medial post / guide rail 등 미포착 설계 특성)
+    if subcategory == "stability":
+        base += 1
 
     return clamp(round(base), 1, 10)
 

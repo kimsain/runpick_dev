@@ -70,7 +70,7 @@ def get_qualitative_findings(sources):
     return " ".join(findings)
 
 
-def compute_scores(rr_src, existing_specs, findings_text):
+def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
     """
     RunRepeat 계측치 기반으로 cushioning, responsiveness 계산.
     stability, durability는 기존값 + 키워드 delta.
@@ -106,6 +106,7 @@ def compute_scores(rr_src, existing_specs, findings_text):
             heel_sa=heel_sa, fore_sa=fore_sa,
             heel_er=heel_er, fore_er=fore_er,
             stack_heel=stack_heel, stack_fore=stack_fore,
+            subcategory=subcategoryId,
         )
     else:
         old_stab = existing_specs.get("stability", 6)
@@ -180,7 +181,7 @@ def main():
             findings_text = get_qualitative_findings(research.get("sources", []))
 
             new_cush, new_resp, new_stab, new_dur = compute_scores(
-                rr_src, old_specs, findings_text
+                rr_src, old_specs, findings_text, subcategoryId=prod["subcategoryId"]
             )
 
             brand_id = prod["brand"]

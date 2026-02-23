@@ -25,14 +25,14 @@
         "drop": 10,
         "cushioning": 3,
         "responsiveness": 4,
-        "stability": 6,
+        "stability": 5,
         "durability": 7,
         "stackHeight": {
           "heel": 37,
           "forefoot": 27
         },
         "weightScore": 3,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 3.68,
         "rawResponsiveness": 5.17
       },
@@ -82,7 +82,7 @@
         "drop": 10,
         "cushioning": 7,
         "responsiveness": 4,
-        "stability": 6,
+        "stability": 5,
         "durability": 7,
         "stackHeight": {
           "heel": 44,
@@ -413,7 +413,7 @@
         "drop": 10,
         "cushioning": 2,
         "responsiveness": 7,
-        "stability": 7,
+        "stability": 6,
         "durability": 6,
         "stackHeight": {
           "heel": 34,
@@ -469,7 +469,7 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 9,
+        "stability": 8,
         "durability": 8,
         "stackHeight": {
           "heel": 40,
@@ -526,14 +526,14 @@
         "drop": 4,
         "cushioning": 2,
         "responsiveness": 9,
-        "stability": 3,
+        "stability": 1,
         "durability": 5,
         "stackHeight": {
           "heel": 27,
           "forefoot": 23
         },
         "weightScore": 9,
-        "valueScore": 4,
+        "valueScore": 3,
         "rawCushioning": 2.77,
         "rawResponsiveness": 8.56
       },
@@ -581,7 +581,7 @@
         "drop": 6,
         "cushioning": 4,
         "responsiveness": 9,
-        "stability": 6,
+        "stability": 5,
         "durability": 2,
         "stackHeight": {
           "heel": 35,
@@ -637,14 +637,14 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 8,
-        "stability": 5,
+        "stability": 3,
         "durability": 3,
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
         },
         "weightScore": 7,
-        "valueScore": 3,
+        "valueScore": 2,
         "rawCushioning": 5.03,
         "rawResponsiveness": 8.07
       },
