@@ -24,7 +24,7 @@
         "weight": 281,
         "drop": 10,
         "cushioning": 3,
-        "responsiveness": 5,
+        "responsiveness": 4,
         "stability": 6,
         "durability": 7,
         "stackHeight": {
@@ -191,7 +191,7 @@
         "weight": 351,
         "drop": 10,
         "cushioning": 10,
-        "responsiveness": 6,
+        "responsiveness": 5,
         "stability": 9,
         "durability": 8,
         "stackHeight": {
@@ -468,7 +468,7 @@
         "weight": 244,
         "drop": 8,
         "cushioning": 6,
-        "responsiveness": 6,
+        "responsiveness": 5,
         "stability": 9,
         "durability": 8,
         "stackHeight": {

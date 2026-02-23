@@ -248,7 +248,7 @@
         "weight": 275,
         "drop": 6,
         "cushioning": 6,
-        "responsiveness": 5,
+        "responsiveness": 4,
         "stability": 6,
         "durability": 7,
         "stackHeight": {
@@ -256,7 +256,7 @@
           "forefoot": 31
         },
         "weightScore": 3,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 4.92,
         "rawResponsiveness": 5.52
       },

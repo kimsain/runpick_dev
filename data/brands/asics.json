@@ -140,7 +140,7 @@
         "weight": 300,
         "drop": 8,
         "cushioning": 6,
-        "responsiveness": 2,
+        "responsiveness": 1,
         "stability": 10,
         "durability": 10,
         "stackHeight": {
@@ -148,7 +148,7 @@
           "forefoot": 32
         },
         "weightScore": 2,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 4.85,
         "rawResponsiveness": 3.37
       },
@@ -426,7 +426,7 @@
         "weight": 193,
         "drop": 7,
         "cushioning": 7,
-        "responsiveness": 6,
+        "responsiveness": 5,
         "stability": 7,
         "durability": 6,
         "stackHeight": {
@@ -434,7 +434,7 @@
           "forefoot": 30.5
         },
         "weightScore": 7,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 5.12,
         "rawResponsiveness": 6.11
       },
@@ -484,7 +484,7 @@
         "weight": 129,
         "drop": 5,
         "cushioning": 9,
-        "responsiveness": 9,
+        "responsiveness": 10,
         "stability": 4,
         "durability": 3,
         "stackHeight": {
@@ -541,7 +541,7 @@
         "weight": 229,
         "drop": 6,
         "cushioning": 5,
-        "responsiveness": 6,
+        "responsiveness": 5,
         "stability": 7,
         "durability": 4,
         "stackHeight": {
@@ -598,7 +598,7 @@
         "weight": 170,
         "drop": 5,
         "cushioning": 7,
-        "responsiveness": 9,
+        "responsiveness": 10,
         "stability": 6,
         "durability": 4,
         "stackHeight": {

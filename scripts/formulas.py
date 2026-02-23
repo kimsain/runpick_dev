@@ -27,12 +27,12 @@ RTINGS_CUSH_MIN = 4.5  # RTINGS 쿠션 하한 (고정, ratchet)
 RTINGS_CUSH_MAX = 9.6  # RTINGS 쿠션 상한 (고정, ratchet)
 
 # 반응성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
-# 2026-02-23 멀티에이전트 토론 합의 (RESPONSIVENESS_DEBATE_2026-02-23.md)
-# RESP_LO=40: 실측 최솟값 45.1%(gel-nimbus-28) 기반, 5포인트 버퍼 포함
-# RESP_HI=82: 실측 최댓값 81.5%(fast-r-nitro-elite-3) 기반, 정수 상한
-# SCORE_VERSION = "2026-02-23-responsiveness-v2"
-RESP_LO = 40           # ER% 하한 (고정 앵커, ratchet) — gel-nimbus-28=45.1% 기준
-RESP_RANGE_INT = 42    # 정수용 (82-40)
+# 2026-02-23 멀티에이전트 토론 합의 v3 (RESPONSIVENESS_DEBATE_2026-02-23.md)
+# RESP_LO=46: 1점 경계 ~51.1% — ghost-max-3(50.8%)·gel-nimbus-28(45.2%) 최하위군
+# RESP_HI=80: 정수 상한 기준 (46+34=80) — avg ER% ≥78.3% → 10점
+# SCORE_VERSION = "2026-02-23-responsiveness-v3"
+RESP_LO = 46           # ER% 하한 (고정 앵커, ratchet) — 51.1% 이하 = 1점
+RESP_RANGE_INT = 34    # 정수용 (80-46) — avg ER% ≥78.3% → 10점
 RESP_RANGE_RAW = 45    # raw 정밀용 (85-40)
 
 DUR_LOG_BASE = 8.2     # 내구성 로그 밑
