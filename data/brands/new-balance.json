@@ -146,8 +146,8 @@
         "weightScore": 2,
         "valueScore": 6,
         "rawCushioning": 8.27,
-        "rawResponsiveness": 5.47,
-        "rawValueScore": 6.44
+        "rawResponsiveness": 4.04,
+        "rawValueScore": 5.99
       },
       "pros": [
         "힐 41.8mm/전족부 37.1mm 맥스스택이 장거리 착지 충격을 일관되게 흡수해줘서 다리 피로가 늦게 와요",
@@ -204,8 +204,8 @@
         "weightScore": 6,
         "valueScore": 7,
         "rawCushioning": 5.76,
-        "rawResponsiveness": 6.21,
-        "rawValueScore": 7.03
+        "rawResponsiveness": 6.37,
+        "rawValueScore": 7.08
       },
       "pros": [
         "FuelCell PEBA 블렌드 폼이 전족부 에너지 리턴 75.2%를 내줘서 플레이트 없이도 착지 후 튕김이 분명해요",
@@ -262,10 +262,10 @@
         "weightScore": 3,
         "valueScore": 7,
         "rawCushioning": 6.2,
-        "rawResponsiveness": 3.28,
+        "rawResponsiveness": 4.35,
         "rawStability": 4.49,
         "rawDurability": 6.83,
-        "rawValueScore": 6.44
+        "rawValueScore": 6.85
       },
       "pros": [
         "FuelCell 폼 + 플레이트 조합이 전족부 에너지 리턴 75.3%를 내줘서 착지-토오프 전환이 군더더기 없어요",
@@ -322,8 +322,8 @@
         "weightScore": 6,
         "valueScore": 3,
         "rawCushioning": 6.51,
-        "rawResponsiveness": 8.6,
-        "rawValueScore": 3.46
+        "rawResponsiveness": 8.47,
+        "rawValueScore": 3.44
       },
       "pros": [
         "FuelCell + 카본 플레이트 조합으로 힐/전족부 에너지 리턴 84.8/84.6%를 달성해서 카본화 중 상위권 반발력을 제공해요",

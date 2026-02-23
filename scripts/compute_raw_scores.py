@@ -28,7 +28,7 @@ RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
 
-def compute_raw(sources):
+def compute_raw(sources, subcategory_id=""):
     """
     Returns (rawCushioning, rawResponsiveness) — either may be None if data missing.
     """
@@ -63,13 +63,13 @@ def compute_raw(sources):
         h_er = r.get("heelEnergyReturn")
         f_er = r.get("forefootEnergyReturn")
         if h_er is not None and f_er is not None:
-            raw_resp = raw_responsiveness_from_rtings(h_er, f_er)
+            raw_resp = raw_responsiveness_from_rtings(h_er, f_er, subcategory_id)
 
     return raw_cushion, raw_resp
 
 
 def load_production():
-    """Returns {shoe_id: {"brand_file": Path, "brand_id": str}}"""
+    """Returns {shoe_id: {"brand_file": Path, "brand_id": str, "subcategoryId": str}}"""
     prod_map = {}
     for fpath in sorted(BRANDS_DIR.glob("*.json")):
         with open(fpath) as f:
@@ -78,6 +78,7 @@ def load_production():
             prod_map[shoe["id"]] = {
                 "brand_file": fpath,
                 "brand_id": data["brand"]["id"],
+                "subcategoryId": shoe.get("subcategoryId", ""),
             }
     return prod_map
 
@@ -110,7 +111,8 @@ def main():
             if shoe_id not in production:
                 continue
 
-            raw_c, raw_r = compute_raw(research.get("sources", []))
+            subcategory_id = production[shoe_id]["subcategoryId"]
+            raw_c, raw_r = compute_raw(research.get("sources", []), subcategory_id)
             if raw_c is None and raw_r is None:
                 continue
 

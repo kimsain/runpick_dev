@@ -34,7 +34,7 @@
         "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 7.76,
-        "rawResponsiveness": 0,
+        "rawResponsiveness": 1,
         "rawStability": 7.92,
         "rawDurability": 7.24,
         "rawValueScore": 6.25
@@ -94,8 +94,8 @@
         "weightScore": 4,
         "valueScore": 6,
         "rawCushioning": 7.21,
-        "rawResponsiveness": 5.19,
-        "rawValueScore": 6.73
+        "rawResponsiveness": 3.92,
+        "rawValueScore": 6.32
       },
       "pros": [
         "GUIDESOLE 로커가 알아서 앞으로 밀어줘서 힘을 덜 쓰고 달릴 수 있어요",
@@ -154,10 +154,10 @@
         "weightScore": 2,
         "valueScore": 7,
         "rawCushioning": 6.05,
-        "rawResponsiveness": 0.6,
+        "rawResponsiveness": 1,
         "rawStability": 10,
         "rawDurability": 9.58,
-        "rawValueScore": 7.01
+        "rawValueScore": 7.14
       },
       "pros": [
         "4D GUIDANCE SYSTEM이 과회내를 자연스럽게 교정해서 억지 느낌이 없어요",
@@ -214,10 +214,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 8.08,
-        "rawResponsiveness": 4.3,
+        "rawResponsiveness": 5.69,
         "rawStability": 5.65,
         "rawDurability": 7.59,
-        "rawValueScore": 8.3
+        "rawValueScore": 8.84
       },
       "pros": [
         "FF BLAST MAX 폼이 착지는 부드럽고 반발은 통통 튀어서 달리는 재미가 있어요",
@@ -274,10 +274,10 @@
         "weightScore": 5,
         "valueScore": 6,
         "rawCushioning": 7.79,
-        "rawResponsiveness": 4.32,
+        "rawResponsiveness": 5.72,
         "rawStability": 6.94,
         "rawDurability": 9.44,
-        "rawValueScore": 5.87
+        "rawValueScore": 6.24
       },
       "pros": [
         "넓은 베이스 덕분에 슈퍼 트레이너 중에서도 안정성이 높아요",
@@ -335,10 +335,10 @@
         "weightScore": 6,
         "valueScore": 5,
         "rawCushioning": 10,
-        "rawResponsiveness": 6.11,
+        "rawResponsiveness": 8.08,
         "rawStability": 5.52,
         "rawDurability": 7.27,
-        "rawValueScore": 4.71
+        "rawValueScore": 5.14
       },
       "pros": [
         "FF TURBO² 폼의 반발력이 폭발적인데 220g으로 가벼워요",
@@ -394,10 +394,10 @@
         "weightScore": 4,
         "valueScore": 6,
         "rawCushioning": 8.46,
-        "rawResponsiveness": 5.09,
+        "rawResponsiveness": 6.74,
         "rawStability": 4.78,
         "rawDurability": 5.7,
-        "rawValueScore": 5.25
+        "rawValueScore": 5.72
       },
       "pros": [
         "빠른 페이스에서 Pebax 플레이트의 전족부 추진력이 확 살아나요",
@@ -455,10 +455,10 @@
         "weightScore": 7,
         "valueScore": 6,
         "rawCushioning": 6.63,
-        "rawResponsiveness": 3.87,
+        "rawResponsiveness": 5.12,
         "rawStability": 5.65,
         "rawDurability": 6.2,
-        "rawValueScore": 5.38
+        "rawValueScore": 5.77
       },
       "pros": [
         "193g 초경량에 풀 카본 플레이트가 들어가서 빠른 러닝에 딱 맞아요 (에너지 리턴 64.6%)",
@@ -516,10 +516,10 @@
         "weightScore": 10,
         "valueScore": 2,
         "rawCushioning": 8.55,
-        "rawResponsiveness": 7.51,
+        "rawResponsiveness": 9.94,
         "rawStability": 1.6,
         "rawDurability": 3.39,
-        "rawValueScore": 1.52
+        "rawValueScore": 1.88
       },
       "pros": [
         "129g 역대 최경량이면서 전족부 에너지 리턴 81%로 추진력이 폭발적이에요",
@@ -576,10 +576,10 @@
         "weightScore": 5,
         "valueScore": 3,
         "rawCushioning": 5.18,
-        "rawResponsiveness": 3.85,
+        "rawResponsiveness": 5.09,
         "rawStability": 5.95,
         "rawDurability": 4.11,
-        "rawValueScore": 3.2
+        "rawValueScore": 3.52
       },
       "pros": [
         "듀얼 폼 구조라 카본화인데도 안정적이어서 첫 레이싱화로 좋아요",
@@ -636,10 +636,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 7.39,
-        "rawResponsiveness": 7.18,
+        "rawResponsiveness": 9.51,
         "rawStability": 4.6,
         "rawDurability": 3.96,
-        "rawValueScore": 2.98
+        "rawValueScore": 3.44
       },
       "pros": [
         "FF LEAP 폼이 플러시하면서도 전족부에서 폭발적으로 밀어줘요",
@@ -696,10 +696,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 8.2,
-        "rawResponsiveness": 6.98,
+        "rawResponsiveness": 9.24,
         "rawStability": 4.6,
         "rawDurability": 5.01,
-        "rawValueScore": 3.31
+        "rawValueScore": 3.76
       },
       "pros": [
         "스쿠프드 플레이트가 자연스럽게 빠른 발 회전을 유도해요",

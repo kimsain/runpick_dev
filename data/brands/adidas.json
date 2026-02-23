@@ -90,8 +90,8 @@
         "weightScore": 3,
         "valueScore": 6,
         "rawCushioning": 4.95,
-        "rawResponsiveness": 6.7,
-        "rawValueScore": 6.82
+        "rawResponsiveness": 4.59,
+        "rawValueScore": 6.12
       },
       "pros": [
         "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려요",
@@ -263,10 +263,10 @@
         "weightScore": 8,
         "valueScore": 5,
         "rawCushioning": 1.06,
-        "rawResponsiveness": 6.86,
+        "rawResponsiveness": 9.08,
         "rawStability": 1,
         "rawDurability": 5.2,
-        "rawValueScore": 3.85
+        "rawValueScore": 4.71
       },
       "pros": [
         "176g 초경량에 에너지 리턴 77%로 발이 거의 안 느껴지면서 빨라요",
@@ -322,10 +322,10 @@
         "weightScore": 6,
         "valueScore": 7,
         "rawCushioning": 7.74,
-        "rawResponsiveness": 6.18,
+        "rawResponsiveness": 8.18,
         "rawStability": 6.1,
         "rawDurability": 6.56,
-        "rawValueScore": 6.7
+        "rawValueScore": 7.33
       },
       "pros": [
         "에너지 리턴 74%로 슈퍼슈즈급 반발력인데 카본 없이 부드러운 라이드예요",
@@ -381,10 +381,10 @@
         "weightScore": 4,
         "valueScore": 9,
         "rawCushioning": 5.01,
-        "rawResponsiveness": 4.71,
+        "rawResponsiveness": 6.23,
         "rawStability": 8.65,
         "rawDurability": 8.37,
-        "rawValueScore": 8.16
+        "rawValueScore": 8.71
       },
       "pros": [
         "전족부 에너지 리턴 70%로 포어풋 착지 러너에게 확실한 반발력이에요",
@@ -442,10 +442,10 @@
         "weightScore": 8,
         "valueScore": 4,
         "rawCushioning": 3.99,
-        "rawResponsiveness": 6.96,
+        "rawResponsiveness": 9.21,
         "rawStability": 3.4,
         "rawDurability": 3.96,
-        "rawValueScore": 3.85
+        "rawValueScore": 4.52
       },
       "pros": [
         "전족부 에너지 리턴 80%로 밟으면 확실히 앞으로 치고 나가는 반발력이에요",
@@ -504,10 +504,10 @@
         "weightScore": 3,
         "valueScore": 3,
         "rawCushioning": 8.4,
-        "rawResponsiveness": 6.56,
+        "rawResponsiveness": 8.68,
         "rawStability": 2.67,
         "rawDurability": 3.85,
-        "rawValueScore": 2.41
+        "rawValueScore": 2.8
       },
       "pros": [
         "에너지 리턴 77% + 충격 흡수 160 SA로 쿠셔닝과 반발력 모두 압도적이에요",
@@ -566,10 +566,10 @@
         "weightScore": 7,
         "valueScore": 4,
         "rawCushioning": 6.66,
-        "rawResponsiveness": 7.63,
+        "rawResponsiveness": 10,
         "rawStability": 3.4,
         "rawDurability": 4.47,
-        "rawValueScore": 3.23
+        "rawValueScore": 3.75
       },
       "pros": [
         "에너지 리턴 80.4%로 랩 테스트 역대 최고 — 밟을수록 돌아오는 반발력이에요",
@@ -627,7 +627,7 @@
         "weightScore": 10,
         "valueScore": 1,
         "rawCushioning": 8.61,
-        "rawResponsiveness": 6.23,
+        "rawResponsiveness": 8.25,
         "rawStability": 4.23,
         "rawDurability": 1.13,
         "rawValueScore": 1

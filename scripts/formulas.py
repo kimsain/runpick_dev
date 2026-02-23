@@ -243,15 +243,17 @@ def raw_cushioning_from_rtings(heel, forefoot):
 
 
 def raw_responsiveness_from_runrepeat(heel_er, forefoot_er):
-    """RunRepeat ER% → rawResponsiveness (0-10, 소수점 2자리). 40/60 heel/forefoot."""
+    """RunRepeat ER% → rawResponsiveness. 카드 공식(RESP_RANGE_INT) - round."""
     avg_er = heel_er * 0.4 + forefoot_er * 0.6
-    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_RAW * 10, 0, 10), 2)
+    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_INT * 10, 1, 10), 2)
 
 
-def raw_responsiveness_from_rtings(heel_er, forefoot_er):
-    """RTINGS ER% → rawResponsiveness (0-10, 소수점 2자리). RunRepeat 공식과 동일 스케일."""
-    avg_er = heel_er * 0.4 + forefoot_er * 0.6
-    return round(clamp((avg_er - RESP_LO) / RESP_RANGE_RAW * 10, 0, 10), 2)
+def raw_responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id=""):
+    """RTINGS ER% → rawResponsiveness. 카드 공식(responsiveness_from_rtings) - round."""
+    avg_er = (heel_er + forefoot_er) / 2
+    resp = clamp(avg_er / 10, 1, 10)
+    penalty = RESP_PENALTY_BY_SUBCAT.get(subcategory_id, 0)
+    return round(clamp(resp + penalty, 1, 10), 2)
 
 
 # ─── Raw 정밀 점수 (stability / durability / value) ──────────────────

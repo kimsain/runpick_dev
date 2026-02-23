@@ -17,6 +17,8 @@ from formulas import (
     clamp,
     cushioning_from_rtings,
     responsiveness_from_rtings,
+    raw_cushioning_from_rtings,
+    raw_responsiveness_from_rtings,
     STABILITY_POS_RE,
     DURABILITY_POS_RE,
     DURABILITY_NEG_RE,
@@ -68,7 +70,7 @@ def get_qualitative_findings(sources):
 def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
     """
     RTINGS 계측치 + 카테고리 휴리스틱으로 4개 스코어 계산.
-    Returns (cushioning, responsiveness, stability, durability) — None if data missing.
+    Returns (cushioning, responsiveness, stability, durability, rawCushioning, rawResponsiveness)
     """
     cush = rtings_src["attributeScores"]["cushioning"]
     resp = rtings_src["attributeScores"]["responsiveness"]
@@ -76,16 +78,18 @@ def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
     # cushioning
     heel_cush = cush.get("heelShockAbsorption")
     fore_cush = cush.get("forefootShockAbsorption")
-    cushioning = None
+    cushioning = raw_cush = None
     if heel_cush is not None and fore_cush is not None:
         cushioning = cushioning_from_rtings(heel_cush, fore_cush)
+        raw_cush = raw_cushioning_from_rtings(heel_cush, fore_cush)
 
     # responsiveness — 카테고리별 페널티 적용 (calibrate_rtings.py 기반)
     heel_er = resp.get("heelEnergyReturn")
     fore_er = resp.get("forefootEnergyReturn")
-    responsiveness = None
+    responsiveness = raw_resp = None
     if heel_er is not None and fore_er is not None:
         responsiveness = responsiveness_from_rtings(heel_er, fore_er, subcategoryId)
+        raw_resp = raw_responsiveness_from_rtings(heel_er, fore_er, subcategoryId)
 
     # stability — RTINGS 미측정, 카테고리 휴리스틱
     if subcategoryId == "stability":
@@ -106,7 +110,7 @@ def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
     else:
         durability = old_dur
 
-    return cushioning, responsiveness, stability, durability
+    return cushioning, responsiveness, stability, durability, raw_cush, raw_resp
 
 
 def fmt_change(old, new, width=12):
@@ -164,7 +168,9 @@ def main():
             old_specs = prod["specs"]
             findings_text = get_qualitative_findings(research.get("sources", []))
 
-            new_cush, new_resp, new_stab, new_dur = compute_scores(rtings_src, subcatId, findings_text, old_specs)
+            new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp = compute_scores(
+                rtings_src, subcatId, findings_text, old_specs
+            )
 
             brand_id = prod["brand"]
             if brand_id not in updates_by_brand:
@@ -175,6 +181,8 @@ def main():
                 "responsiveness": new_resp,
                 "stability": new_stab,
                 "durability": new_dur,
+                "rawCushioning": new_raw_cush,
+                "rawResponsiveness": new_raw_resp,
             })
 
             preview_rows.append({
@@ -251,7 +259,7 @@ def main():
             specs = shoe["specs"]
             shoe_changed = False
 
-            for field in ["cushioning", "responsiveness", "stability", "durability"]:
+            for field in ["cushioning", "responsiveness", "stability", "durability", "rawCushioning", "rawResponsiveness"]:
                 new_val = u[field]
                 if new_val is None:
                     continue
