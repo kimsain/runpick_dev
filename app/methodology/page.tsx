@@ -51,9 +51,9 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: 'RunRepeat Heel/Forefoot SA → RTINGS → 정성 리뷰 순으로 적용',
       formula:
-        'raw = heelSA × 0.4 + forefootSA × 0.6\nscore = clamp(round((raw − 50) / 104 × 10), 1, 10)',
+        'raw = heelSA × 0.4 + forefootSA × 0.6\nscore = clamp(round(1 + (raw − 88) / 62 × 9), 1, 10)',
       rationale:
-        'forefoot SA에 60% 가중 적용 (현대 midfoot 착지 주류). 범위 50~154는 전수조사 기준 실측값.',
+        'forefoot SA에 60% 가중 적용 (현대 midfoot 착지 주류). 범위 88~150: 하한=adizero-adios-9 기준, 상한=max-cushion 실용 상한 (p95). 2026-02-23 재보정.',
     },
   },
   {
@@ -66,9 +66,9 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: 'RunRepeat Energy Return % → RTINGS 순으로 적용',
       formula:
-        'avg_er = (heelER + forefootER) / 2\nscore = clamp(round((avg_er − 30) / 52 × 10), 1, 10)',
+        'avg_er = heelER × 0.4 + forefootER × 0.6\nscore = clamp(round((avg_er − 46) / 34 × 10), 1, 10)',
       rationale:
-        '범위 30~82%, 선형 스케일 (ER%는 물리 에너지 보존율). RTINGS-only 데이터 사용 시 카테고리별 −1~−2 페널티 적용.',
+        '범위 46~80%. forefoot 60% 가중 (쿠션성과 동일). RTINGS-only 데이터 사용 시 카테고리별 −1~−3 페널티 적용. 2026-02-23 재보정.',
     },
   },
   {
@@ -125,7 +125,7 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: '4개 스펙 합산 ÷ 출시가(KRW) — 항상 직접 계산',
       formula:
-        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 24/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 30/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
+        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 22/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 28/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
       rationale:
         'weightScore와 동일한 min/max 고정 앵커 정규화. 앵커 최솟값(1점)=adizero-pro-evo-2, 최댓값(10점)=novablast-5. 신발 추가 시 기존 점수 불변. 경량성 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
     },

@@ -46,35 +46,50 @@ RunRepeat 물리 측정값을 1차 신호로 사용. RTINGS는 신뢰도 판정�
 
 ```
 raw = heelSA × 0.4 + forefootSA × 0.6
-cushioning = clamp(round((raw - 50) / 104 × 10), 1, 10)
+CUSH_MIN_SA = 88   # adizero-adios-9 기준 (ratchet rule)
+CUSH_MAX_SA = 150  # max-cushion 실용 상한 (p95=149.8 근거)
+cushioning = clamp(round(1 + 9 × (raw - CUSH_MIN_SA) / (CUSH_MAX_SA - CUSH_MIN_SA)), 1, 10)
 ```
 
-**설계 근거:**
+**설계 근거 (2026-02-23 재보정):**
 - **가중치 heel 40% / forefoot 60%**: 현대 러닝 기술에서 forefoot/midfoot 착지가 주류. forefoot SA가 실제 달리기 체감 쿠션에 더 직결됨.
-- **범위 50~154**: RunRepeat 데이터 전수 조사 결과 현실적인 SA 범위. 하한 50 = 최경량 레이싱화(거의 쿠션 없음), 상한 154 = 최고 쿠션 맥스쿠션화.
+- **범위 88~150**: 하한 88 = adizero-adios-9 기준 (실측 최솟값), 상한 150 = max-cushion 실용 상한 (p95=149.8).
 - **선형 정규화**: SA 값은 균등 분포에 가까워 log 압축 불필요.
-- **분모 104**: 상한(154) − 하한(50) = 104.
+- **분모 62**: 상한(150) − 하한(88) = 62.
 
 #### 반응 (Responsiveness)
 
 ```
 avg_er = heelEnergyReturn × 0.4 + forefootEnergyReturn × 0.6
-responsiveness = clamp(round((avg_er - 40) / 42 × 10), 1, 10)
+RESP_LO = 46    # ER% 하한 (ratchet) — 이하 = 1점
+RESP_HI = 80    # ER% 상한 (RESP_LO + 34)
+responsiveness = clamp(round((avg_er - RESP_LO) / (RESP_HI - RESP_LO) × 10), 1, 10)
 ```
 
-**설계 근거 (2026-02-23 멀티에이전트 토론 합의):**
-- **하한 40%**: 실측 최솟값 44.2%(gel-nimbus-28 기반), 5포인트 버퍼 포함한 고정 앵커. 기존 30%는 실데이터 범위 밖 14.2포인트 데드존을 형성해 bot1-2=0% 문제 유발.
-- **상한 82%**: 실측 최고치(fast-r-nitro-elite-3 forefoot 82.6%) 기반. 분모 42 = 82 − 40.
+**설계 근거 (2026-02-23 멀티에이전트 토론 합의 v3):**
+- **하한 46%**: ghost-max-3(50.8%)·gel-nimbus-28(45.2%) 최하위군, 1점 경계 ~51.1%. 기존 40%는 실데이터 범위 밖 데드존 유발.
+- **상한 80% (46+34)**: avg ER% ≥78.3% → 10점. 분모 34 = 80 − 46.
 - **forefoot 60% 가중**: 달리기에서 toe-off phase의 전족부 반응성이 체감 탄성을 더 잘 대표. 쿠션성(40/60)과 동일 가중치로 측정 일관성 확보.
 - **선형**: ER%는 물리적 에너지 보존율로 지각과 선형 관계.
-- **rawResponsiveness 상한은 85%로 분리**: 정수 점수 상한 82%에선 레이싱화 여럿이 동점 10점. 추천 정렬용 소수점 점수에선 85%(분모 45)로 높여 상위 2~4개만 10점 부근, 나머지 레이싱화 간 변별 유지.
+- **rawResponsiveness는 하한 40, 상한 85(분모 45)로 분리하여 레이싱화 간 정렬 변별 유지.**
 - **측정 한계**: ER%는 플레이트 강성, 로커 형상, 스택 높이 비선형성을 반영하지 못함. 대안 지표 부재로 유지하되 한계 인지 필요.
 - → 토론 레코드: `docs/RESPONSIVENESS_DEBATE_2026-02-23.md`
 
 #### 안정 (Stability)
 
 ```
-stability = clamp(round(torsionalRigidity + heelCounterStiffness), 1, 10)
+# 개별 min-max 정규화 (STAB_TR: 2~5, STAB_HCS: 1~5)
+tr_norm  = 1 + 9 × (torsionalRigidity - 2) / 3
+hcs_norm = 1 + 9 × (heelCounterStiffness - 1) / 4
+base = 0.4 × tr_norm + 0.6 × hcs_norm
+
+# Sway 패널티 (힐 SA ≥ 130 또는 힐 스택 ≥ 40mm 시 차감, ER% ≥ 60% 이면 상쇄)
+base -= sway(heelSA, forefootSA, stackHeel, stackFore, avgER)
+
+# stability 카테고리 +1 보너스
+if subcategoryId == "stability": base += 1
+
+stability = clamp(round(base), 1, 10)
 ```
 
 Fallback (RunRepeat 미수집):
@@ -82,10 +97,11 @@ Fallback (RunRepeat 미수집):
 stability = clamp(기존값 + keyword_delta, 1, 10)
 ```
 
-**설계 근거:**
-- **두 항목 합산**: torsionalRigidity(비틀림 강성)는 발의 내외 회전 안정을, heelCounterStiffness(힐카운터 강성)는 뒤꿈치 고정력을 독립적으로 측정. 두 요소가 안정성에 동등하게 기여하므로 가중치 없이 합산.
-- **RunRepeat /5 스케일**: 각 항목이 0~5 범위 → 합산 0~10이 되어 별도 정규화 불필요.
+**설계 근거 (2026-02-23 재보정):**
+- **개별 min-max 정규화 후 HCS 60% 가중합**: 힐카운터 고정력이 회전 안정성보다 착지 안정에 더 직결. STAB_TR 앵커 2~5, STAB_HCS 앵커 1~5.
+- **Sway 패널티**: 두꺼운 소프트 폼은 정적 강성이 높아도 달리기 시 측방 흔들림 발생 — SA × 스택 높이 조합으로 정량화. 높은 ER%는 탄성 복원력으로 사이드 스웨이를 상쇄하여 패널티 경감.
 - **Fallback**: 기존 스펙 + 키워드 delta. 정성 리뷰에서 stable/supportive → +1, unstable/wobbly 등 → -1.
+- → 토론 레코드: `docs/CUSHIONING_DEBATE_2026-02-23.md` (안정성 Sway 합의 포함)
 
 #### 내구 (Durability)
 
@@ -128,13 +144,15 @@ RunRepeat 데이터 없음. RTINGS 0~10 스케일 점수를 기반으로 정규�
 #### 쿠션 (Cushioning)
 
 ```
-cushioning = round((heelShockAbsorption + forefootShockAbsorption) / 2)
+avg = heelSA × 0.4 + forefootSA × 0.6
+RTINGS_CUSH_MIN = 4.5  # 고정 앵커
+RTINGS_CUSH_MAX = 9.6  # 고정 앵커
+cushioning = clamp(round(1 + 9 × (avg - RTINGS_CUSH_MIN) / (RTINGS_CUSH_MAX - RTINGS_CUSH_MIN)), 1, 10)
 ```
 
-**설계 근거:**
-- RTINGS는 이미 0~10 스케일로 보고하므로 추가 정규화 불필요.
-- 단순 평균: heel과 forefoot을 동등 취급 (RTINGS는 RunRepeat과 달리 물리 단위 아닌 점수).
-- **rawCushioning에는 0.675 계수 추가**: RTINGS-only 신발이 RunRepeat 기반 신발보다 평균 +2.2pt 높게 나오는 편향 관측 (n=78, 2026-02). LOOCV RMSE 0.495 → 0.374(23% 개선). 정수 스펙은 반올림으로 어느 정도 상쇄되지만 정렬용 소수점 점수에선 필수 보정. (→ [RTINGS 쿠션 편향 분석](#rtings-쿠션-편향-분석--rtings-cushioning-bias) 참조)
+**설계 근거 (2026-02-23 재보정):**
+- RunRepeat Case B와 동일하게 40/60 가중, 앵커 기반 min-max 정규화 (4.5~9.6). RTINGS 편향 보정은 앵커가 흡수.
+- 기존 단순 평균 + 0.675 계수 방식 폐기 (min-max 앵커가 편향을 직접 흡수하므로 별도 계수 불필요).
 
 #### 반응 (Responsiveness)
 
@@ -222,16 +240,16 @@ weightScore = clamp(round((HEAVY_G - weight) / (HEAVY_G - LIGHT_G) × 10), 1, 10
 
 ```
 ratio = (cushioning + responsiveness + stability + durability) / price
-VALUE_RATIO_MIN = 24 / 599_000  # 앵커 최솟값: adizero-pro-evo-2 (sum=24, price=599,000)
-VALUE_RATIO_MAX = 30 / 169_000  # 앵커 최댓값: novablast-5 (sum=30, price=169,000)
+VALUE_RATIO_MIN = 22 / 599_000  # 앵커 최솟값: adizero-pro-evo-2 (sum=22, price=599,000)
+VALUE_RATIO_MAX = 28 / 169_000  # 앵커 최댓값: novablast-5 (sum=28, price=169,000)
 valueScore = clamp(round((ratio − VALUE_RATIO_MIN) / (VALUE_RATIO_MAX − VALUE_RATIO_MIN) × 9 + 1), 1, 10)
 ```
 
 **설계 근거:**
 - **4개 스펙 합산 / 가격**: 단위 가격당 성능 비율. 스펙이 높고 가격이 낮을수록 가성비 높음.
 - **min/max 고정 앵커 정규화**: `weightScore`와 동일한 설계. 현 데이터셋 극단값을 고정 기준으로 사용하여 신발 추가 시 기존 점수 불변.
-  - 앵커 최솟값(1점): adizero-pro-evo-2 — sum=24, price=599,000원
-  - 앵커 최댓값(10점): novablast-5 — sum=30, price=169,000원
+  - 앵커 최솟값(1점): adizero-pro-evo-2 — sum=22, price=599,000원
+  - 앵커 최댓값(10점): novablast-5 — sum=28, price=169,000원
   - 앵커 업데이트 조건: 새 신발이 기존 앵커보다 더 극단적인 ratio를 가질 때만 변경
 - **가격 기준**: 출시 MSRP (KRW). 할인가 미반영.
 - **weightScore 미포함**: 경량성은 별도 스펙으로 표시되며, 가성비 판단 기준은 핵심 퍼포먼스 4개로 한정.
@@ -315,8 +333,8 @@ scripts/
 
 **rawCushioning**
 
-- RunRepeat SA 우선: `(heelSA × 0.4 + forefootSA × 0.6 − 50) / 104 × 10`, clamped 0–10
-- RunRepeat 없을 경우 RTINGS fallback: `0.675 × (heelScore + forefootScore) / 2`, clamped 0–10
+- RunRepeat SA 우선: `(heelSA × 0.4 + forefootSA × 0.6 − 88) / 62 × 9 + 1`, clamped 0–10
+- RunRepeat 없을 경우 RTINGS fallback: `(heelSA × 0.4 + forefootSA × 0.6 − 4.5) / 5.1 × 9 + 1`, clamped 0–10
 
 **rawResponsiveness**
 
