@@ -217,7 +217,17 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 공식 사이트 ↗
               </a>
             )}
-            {reviewLinks.length > 0 && (
+            {reviewLinks.length === 1 && (
+              <a
+                href={reviewLinks[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
+              >
+                {reviewLinks[0].label} ↗
+              </a>
+            )}
+            {reviewLinks.length > 1 && (
               <details className="relative">
                 <summary className="list-none inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px] cursor-pointer select-none">
                   리뷰 {reviewLinks.length}개 ▾

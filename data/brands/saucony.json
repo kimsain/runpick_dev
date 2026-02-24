@@ -399,7 +399,7 @@
       ],
       "slug": "tempus-2",
       "officialUrl": "https://www.saucony.com/UK/en_GB/tempus-2/59570M.html",
-      "confidence": "low",
+      "confidence": "very-high",
       "sources": {
         "runrepeat": "https://runrepeat.com/saucony-tempus-2",
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/tempus-2",
@@ -532,7 +532,7 @@
       ],
       "slug": "endorphin-azura",
       "officialUrl": "https://www.saucony.com/en/endorphin-azura/60807M.html",
-      "confidence": "low",
+      "confidence": "high",
       "sources": {
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-azura-running-shoe",
         "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-azura-review-2026.html",
@@ -735,7 +735,7 @@
       ],
       "slug": "endorphin-pro-4",
       "officialUrl": "https://www.saucony.com/en/endorphin-pro-4/58850M.html",
-      "confidence": "low",
+      "confidence": "very-high",
       "sources": {
         "runrepeat": "https://runrepeat.com/saucony-endorphin-pro-4",
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-4",
@@ -801,7 +801,7 @@
       ],
       "slug": "endorphin-pro-5",
       "officialUrl": "https://www.saucony.com/en/endorphin-pro-5/60803M.html",
-      "confidence": "low",
+      "confidence": "high",
       "sources": {
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-5-pink",
         "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-pro-5-review-2026.html",
