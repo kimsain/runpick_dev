@@ -62,7 +62,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
   const related = getSimilarShoes(shoe, 3)
   const reviewLinks = shoe.sources
     ? (Object.entries(shoe.sources) as [string, string | undefined][])
-        .filter((entry): entry is [string, string] => typeof entry[1] === 'string')
+        .filter((entry): entry is [string, string] => typeof entry[1] === 'string' && entry[1] !== '')
         .map(([key, url]) => ({ key, url, label: SOURCE_LABELS[key] ?? key }))
     : []
   const imagePath = `/images${shoe.imageUrl}`
@@ -228,11 +228,11 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
               </a>
             )}
             {reviewLinks.length > 1 && (
-              <details className="relative group">
+              <details className="relative">
                 <summary className="list-none inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px] cursor-pointer select-none">
                   리뷰 {reviewLinks.length}개 ▾
                 </summary>
-                <div className="absolute left-0 top-full mt-1 z-10 bg-card border border-elevated min-w-[180px]">
+                <div className="absolute right-0 top-full mt-1 z-10 bg-card border border-elevated min-w-[180px]">
                   {reviewLinks.map(({ key, url, label }) => (
                     <a
                       key={key}
