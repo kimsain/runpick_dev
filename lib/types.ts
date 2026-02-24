@@ -22,11 +22,11 @@ export interface Specs {
 }
 
 export interface ReviewSources {
-  runrepeat?: string
-  rtings?: string
-  dor?: string
-  rtr?: string
-  bitr?: string
+  runrepeat?: string           // RunRepeat
+  rtings?: string              // RTINGS
+  dor?: string                 // Doctors of Running
+  rtr?: string                 // Road Trail Run
+  bitr?: string                // Believe in the Run
 }
 
 export interface Shoe {
