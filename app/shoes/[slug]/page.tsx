@@ -47,11 +47,12 @@ const BRAND_KOREA_URLS: Record<string, string> = {
   saucony: 'https://www.saucony.com/',
 }
 
-function getUrlType(url: string): 'runrepeat' | 'rtings' | 'doctors' | 'official' {
-  if (url.includes('runrepeat.com')) return 'runrepeat'
-  if (url.includes('rtings.com')) return 'rtings'
-  if (url.includes('doctorsofrunning.com')) return 'doctors'
-  return 'official'
+const SOURCE_LABELS: Record<string, string> = {
+  runrepeat: 'RunRepeat',
+  rtings: 'RTINGS',
+  dor: 'Doctors of Running',
+  rtr: 'Road Trail Run',
+  bitr: 'Believe in the Run',
 }
 
 export default function ShoeDetailPage({ params }: { params: { slug: string } }) {
@@ -59,6 +60,11 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
   if (!shoe) notFound()
 
   const related = getSimilarShoes(shoe, 3)
+  const reviewLinks = shoe.sources
+    ? (Object.entries(shoe.sources) as [string, string | undefined][])
+        .filter((entry): entry is [string, string] => typeof entry[1] === 'string')
+        .map(([key, url]) => ({ key, url, label: SOURCE_LABELS[key] ?? key }))
+    : []
   const imagePath = `/images${shoe.imageUrl}`
 
   return (
@@ -200,7 +206,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           )}
 
           {/* 링크 버튼 그룹 */}
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 items-start">
             {BRAND_KOREA_URLS[shoe.brandId] && (
               <a
                 href={BRAND_KOREA_URLS[shoe.brandId]}
@@ -211,25 +217,36 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 공식 사이트 ↗
               </a>
             )}
-            {shoe.officialUrl && (() => {
-              const type = getUrlType(shoe.officialUrl)
-              if (type === 'official') return null
-              const labels: Record<string, string> = {
-                runrepeat: 'RunRepeat 리뷰 ↗',
-                rtings: 'RTINGS 측정 ↗',
-                doctors: 'Doctors of Running ↗',
-              }
-              return (
-                <a
-                  href={shoe.officialUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
-                >
-                  {labels[type]}
-                </a>
-              )
-            })()}
+            {reviewLinks.length === 1 && (
+              <a
+                href={reviewLinks[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
+              >
+                {reviewLinks[0].label} ↗
+              </a>
+            )}
+            {reviewLinks.length > 1 && (
+              <details className="relative group">
+                <summary className="list-none inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px] cursor-pointer select-none">
+                  리뷰 {reviewLinks.length}개 ▾
+                </summary>
+                <div className="absolute left-0 top-full mt-1 z-10 bg-card border border-elevated min-w-[180px]">
+                  {reviewLinks.map(({ key, url, label }) => (
+                    <a
+                      key={key}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-between px-4 py-3 text-sm font-body text-secondary hover:text-accent hover:bg-elevated transition-colors"
+                    >
+                      {label} <span className="ml-2 opacity-60">↗</span>
+                    </a>
+                  ))}
+                </div>
+              </details>
+            )}
           </div>
         </div>
       </div>
