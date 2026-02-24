@@ -65,7 +65,14 @@
       ],
       "slug": "ride-18",
       "officialUrl": "https://www.saucony.com/en/ride-18/59943M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-ride-18",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/ride-18",
+        "dor": "https://www.doctorsofrunning.com/2024/12/saucony-ride-18-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2024/12/saucony-ride-18-multi-tester-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-ride-18-review/"
+      }
     },
     {
       "id": "kinvara-16",
@@ -126,7 +133,11 @@
       ],
       "slug": "kinvara-16",
       "officialUrl": "https://www.saucony.com/en/kinvara-16/60309M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-kinvara-16",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/kinvara-16"
+      }
     },
     {
       "id": "triumph-23",
@@ -187,7 +198,13 @@
       ],
       "slug": "triumph-23",
       "officialUrl": "https://www.saucony.com/en/triumph-23/60311M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-triumph-23",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/triumph-23-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/06/saucony-triumph-23-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/05/saucony-triumph-23-review-soft-and-fun.html"
+      }
     },
     {
       "id": "guide-18",
@@ -248,7 +265,13 @@
       ],
       "slug": "guide-18",
       "officialUrl": "https://www.saucony.com/en/guide-18/59947M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-guide-18",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/guide-18-shoe",
+        "dor": "https://www.doctorsofrunning.com/2024/12/saucony-guide-18-review-2025.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-guide-18-review/"
+      }
     },
     {
       "id": "hurricane-25",
@@ -309,7 +332,13 @@
       ],
       "slug": "hurricane-25",
       "officialUrl": "https://www.saucony.com/en/hurricane-25/60323M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-hurricane-25",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/hurricane-25-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/06/saucony-hurricane-25-review-2025.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-hurricane-25-review/"
+      }
     },
     {
       "id": "tempus-2",
@@ -370,7 +399,13 @@
       ],
       "slug": "tempus-2",
       "officialUrl": "https://www.saucony.com/UK/en_GB/tempus-2/59570M.html",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-tempus-2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/tempus-2",
+        "dor": "https://www.doctorsofrunning.com/2024/10/saucony-tempus-2-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/11/saucony-tempus-2-review.html"
+      }
     },
     {
       "id": "endorphin-trainer",
@@ -431,7 +466,14 @@
       ],
       "slug": "endorphin-trainer",
       "officialUrl": "https://www.saucony.com/en/endorphin-trainer/59961M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-trainer",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-trainer-carbon-fiber",
+        "dor": "https://www.doctorsofrunning.com/2024/12/saucony-endorphin-trainer-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2024/12/saucony-endorphin-trainer-review-with8.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-trainer-review/"
+      }
     },
     {
       "id": "endorphin-azura",
@@ -490,7 +532,13 @@
       ],
       "slug": "endorphin-azura",
       "officialUrl": "https://www.saucony.com/en/endorphin-azura/60807M.html",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-azura-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-azura-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2025/11/saucony-azura-multi-tester-review-light.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-azura-review/"
+      }
     },
     {
       "id": "endorphin-speed-5",
@@ -551,7 +599,14 @@
       ],
       "slug": "endorphin-speed-5",
       "officialUrl": "https://www.saucony.com/en/endorphin-speed-5/60307M.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-speed-5",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-speed-5",
+        "dor": "https://www.doctorsofrunning.com/2025/05/saucony-endorphin-speed-5-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/05/saucony-endorphin-speed-5-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-5-review/"
+      }
     },
     {
       "id": "endorphin-elite-2",
@@ -612,7 +667,14 @@
       ],
       "slug": "endorphin-elite-2",
       "officialUrl": "https://www.saucony.com/en/endorphin-elite-2/59824U.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-elite-2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-elite-2",
+        "dor": "https://www.doctorsofrunning.com/2024/12/saucony-endorphin-elite-2-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2024/12/saucony-endorphin-elite-2-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-elite-2-review/"
+      }
     },
     {
       "id": "endorphin-pro-4",
@@ -673,7 +735,14 @@
       ],
       "slug": "endorphin-pro-4",
       "officialUrl": "https://www.saucony.com/en/endorphin-pro-4/58850M.html",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-pro-4",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-4",
+        "dor": "https://www.doctorsofrunning.com/2024/04/saucony-endorphin-pro-4-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/02/saucony-endorphin-pro-4-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-pro-4-review/"
+      }
     },
     {
       "id": "endorphin-pro-5",
@@ -732,7 +801,13 @@
       ],
       "slug": "endorphin-pro-5",
       "officialUrl": "https://www.saucony.com/en/endorphin-pro-5/60803M.html",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-5-pink",
+        "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-pro-5-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/01/saucony-endorphin-pro-5-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-pro-5-review/"
+      }
     }
   ]
 }

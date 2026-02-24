@@ -67,7 +67,14 @@
       ],
       "slug": "ghost-17",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-17/110442.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-ghost-17",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/ghost-17",
+        "dor": "https://www.doctorsofrunning.com/2025/06/brooks-ghost-17-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/06/brooks-ghost-17-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-ghost-17-review/"
+      }
     },
     {
       "id": "hyperion-3",
@@ -128,7 +135,13 @@
       ],
       "slug": "hyperion-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-3/110465.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-hyperion-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-3",
+        "dor": "https://www.doctorsofrunning.com/2025/10/brooks-hyperion-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/08/brooks-hyperion-3-mulit-tester-review-6.html"
+      }
     },
     {
       "id": "ghost-max-3",
@@ -189,7 +202,14 @@
       ],
       "slug": "ghost-max-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-max-3/110464.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-ghost-max-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/ghost-max-3",
+        "dor": "https://www.doctorsofrunning.com/2025/05/brooks-ghost-max-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/11/brooks-ghost-max-3-multi-tester-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-ghost-max-3-review/"
+      }
     },
     {
       "id": "glycerin-22",
@@ -250,7 +270,13 @@
       ],
       "slug": "glycerin-22",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-22/110445.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-glycerin-22",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/glycerin-22",
+        "dor": "https://www.doctorsofrunning.com/2025/05/brooks-glycerin-22-review-2025.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-glycerin-22-review/"
+      }
     },
     {
       "id": "glycerin-23",
@@ -307,7 +333,11 @@
       ],
       "slug": "glycerin-23",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-23/110476.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/02/brooks-glycerin-23-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/01/brooks-glycerin-23-review-5-comparisons.html"
+      }
     },
     {
       "id": "glycerin-max-2",
@@ -366,7 +396,13 @@
       ],
       "slug": "glycerin-max-2",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/glycerin-max-2-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/12/brooks-glycerin-max-2-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/11/brooks-glycerin-max-2-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-glycerin-max-2-review/"
+      }
     },
     {
       "id": "adrenaline-gts-25",
@@ -425,7 +461,13 @@
       ],
       "slug": "adrenaline-gts-25",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-25/110454.html",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/adrenaline-gts-25",
+        "dor": "https://www.doctorsofrunning.com/2025/09/brooks-adrenaline-gts-25-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/08/brooks-adrenaline-gts-25-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-adrenaline-gts-25-review/"
+      }
     },
     {
       "id": "hyperion-max-3",
@@ -486,7 +528,14 @@
       ],
       "slug": "hyperion-max-3",
       "officialUrl": "https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/hyperion-max-3/110467.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-hyperion-max-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-max-3-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/05/brooks-hyperion-max-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/06/brooks-hyperion-max-3-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-hyperion-max-3-review/"
+      }
     },
     {
       "id": "hyperion-elite-5",
@@ -547,7 +596,14 @@
       ],
       "slug": "hyperion-elite-5",
       "officialUrl": "https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-5/100049.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/brooks-hyperion-elite-5",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-elite-5",
+        "dor": "https://www.doctorsofrunning.com/2025/08/brooks-hyperion-elite-5-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/brooks-hyperion-elite-5-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/brooks-hyperion-elite-5-review/"
+      }
     }
   ]
 }

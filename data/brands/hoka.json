@@ -67,7 +67,14 @@
       ],
       "slug": "clifton-10",
       "officialUrl": "https://www.hoka.com/en/us/road-running/clifton-10/1162030.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-clifton-10",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/clifton-10",
+        "dor": "https://www.doctorsofrunning.com/2025/01/hoka-clifton-10-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/01/hoka-clifton-10-multi-tester-review-big.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/hoka-clifton-10-review/"
+      }
     },
     {
       "id": "bondi-9",
@@ -128,7 +135,14 @@
       ],
       "slug": "bondi-9",
       "officialUrl": "https://www.hoka.com/en/us/road-running/bondi-9/1162011.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-bondi-9",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+        "dor": "https://www.doctorsofrunning.com/2025/01/hoka-bondi-9-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/01/hoka-bondi-9-og-of-max-cushion-roars.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/hoka-bondi-9-review/"
+      }
     },
     {
       "id": "arahi-8",
@@ -189,7 +203,11 @@
       ],
       "slug": "arahi-8",
       "officialUrl": "https://www.hoka.com/en/us/road-running/arahi-8/1168690.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-arahi-8",
+        "dor": "https://www.doctorsofrunning.com/2025/08/hoka-arahi-8-review-2025.html"
+      }
     },
     {
       "id": "mach-x-3",
@@ -250,7 +268,14 @@
       ],
       "slug": "mach-x-3",
       "officialUrl": "https://www.hoka.com/en/us/road-running/mach-x-3/1168720.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-mach-x-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/mach-x-3",
+        "dor": "https://www.doctorsofrunning.com/2025/09/hoka-mach-x-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/09/hoka-mach-x-3-multi-tester-review-3.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/hoka-mach-x-3-review/"
+      }
     },
     {
       "id": "cielo-x1-3-0",
@@ -309,7 +334,12 @@
       ],
       "slug": "cielo-x1-3-0",
       "officialUrl": "https://www.hoka.com/en/us/road-running/cielo-x1-3.0/1171927.html",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/cielo-x1-3-0-carbon-fiber",
+        "dor": "https://www.doctorsofrunning.com/2026/01/hoka-cielo-x1-30-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/01/hoka-cielo-x-1-30-review-all-good.html"
+      }
     },
     {
       "id": "rocket-x-3",
@@ -370,7 +400,14 @@
       ],
       "slug": "rocket-x-3",
       "officialUrl": "https://www.hoka.com/en/us/road-running/rocket-x-3/1168724.html",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-rocket-x-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/rocket-x-3",
+        "dor": "https://www.doctorsofrunning.com/2025/07/hoka-rocket-x-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/hoka-rocket-x-3-multi-tester-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/hoka-rocket-x-3-review/"
+      }
     }
   ]
 }

@@ -63,7 +63,10 @@
       ],
       "slug": "supernova-rise-3",
       "officialUrl": "https://www.doctorsofrunning.com/2024/12/adidas-supernova-rise-2-review-2024.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "rtr": "https://www.roadtrailrun.com/2025/12/adidas-supernova-rise-3-review.html"
+      }
     },
     {
       "id": "supernova-prima-2",
@@ -125,7 +128,7 @@
       "officialUrl": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe",
       "confidence": "high",
       "sources": {
-        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe"
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2"
       }
     },
     {
@@ -187,6 +190,7 @@
       "officialUrl": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html",
       "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-supernova-solution-2",
         "dor": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html"
       }
     },
@@ -247,7 +251,11 @@
       "officialUrl": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html",
       "confidence": "medium",
       "sources": {
-        "dor": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-sl2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-sl2",
+        "dor": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/06/adidas-adizero-sl2-video-review-light.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/adidas-adizero-sl-2-review/"
       }
     },
     {
@@ -310,7 +318,9 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-9",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-9"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-9",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-adios-9",
+        "rtr": "https://www.roadtrailrun.com/2025/04/adidas-adizero-adios-9-review-6.html"
       }
     },
     {
@@ -373,7 +383,11 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-evo-sl",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-evo-sl"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-evo-sl",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-evo-sl",
+        "dor": "https://www.doctorsofrunning.com/2025/01/adidas-adizero-evo-sl-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/12/review-adidas-adizero-evo-sl-lot-of.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/adidas-adizero-evo-sl-review/"
       }
     },
     {
@@ -438,7 +452,11 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-boston-13",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-boston-13"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-boston-13",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-boston-13",
+        "dor": "https://www.doctorsofrunning.com/2026/02/adidas-adizero-boston-13-quick.html",
+        "rtr": "https://www.roadtrailrun.com/2025/04/adidas-adizero-boston-13-review-7.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/adidas-adizero-boston-13-review/"
       }
     },
     {
@@ -504,7 +522,10 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-takumi-sen-11"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-takumi-sen-11",
+        "dor": "https://www.doctorsofrunning.com/2025/08/adidas-adizero-takumi-sen-11-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/08/adidas-adizero-takumi-sen-11-review-5.html"
       }
     },
     {
@@ -570,7 +591,11 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-prime-x-3-strung"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-prime-x3-strung",
+        "dor": "https://www.doctorsofrunning.com/2025/07/adidas-adizero-prime-x3-strung-review.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/adidas-adizero-prime-x3-initial-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/adidas-prime-x3-strung-review/"
       }
     },
     {
@@ -635,7 +660,11 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-4",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-4"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-4",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-adios-pro-4",
+        "dor": "https://www.doctorsofrunning.com/2024/10/adidas-adizero-adios-pro-4-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/10/adidas-adizero-adios-pro-4-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/adidas-adizero-adios-pro-4-review/"
       }
     },
     {
@@ -697,7 +726,10 @@
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
       "confidence": "very-high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2"
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-adios-pro-evo-2",
+        "dor": "https://www.doctorsofrunning.com/2025/05/adidas-adizero-adios-pro-evo-2-review.html",
+        "rtr": "https://www.roadtrailrun.com/2025/04/adidas-adizero-adios-pro-evo-2-details.html"
       }
     }
   ]

@@ -67,7 +67,14 @@
       ],
       "slug": "velocity-nitro-4",
       "officialUrl": "https://us.puma.com/us/en/pd/velocity-nitro-4-mens-road-running-shoes/311140",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-velocity-nitro-4",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/velocity-nitro-4-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/11/puma-velocity-nitro-4-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/puma-velocity-nitro-4-review-5.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-velocity-nitro-4-review/"
+      }
     },
     {
       "id": "magmax-nitro-2",
@@ -126,7 +133,12 @@
       ],
       "slug": "magmax-nitro-2",
       "officialUrl": "https://us.puma.com/us/en/pd/magmax-nitro-mens-road-running-shoes/310088",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/magmax-nitro-2-shoe",
+        "rtr": "https://www.roadtrailrun.com/2025/11/puma-magmax-nitro-2-review-4-comparisons.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-magmax-nitro-2-review/"
+      }
     },
     {
       "id": "magnify-nitro-3",
@@ -187,7 +199,13 @@
       ],
       "slug": "magnify-nitro-3",
       "officialUrl": "https://us.puma.com/us/en/pd/magnify-nitro-3-mens-road-running-shoes/311046",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-magnify-nitro-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/magnify-nitro-3",
+        "dor": "https://www.doctorsofrunning.com/2025/09/puma-magnify-nitro-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/puma-magnify-nitro-3-review-2.html"
+      }
     },
     {
       "id": "foreverrun-nitro-2",
@@ -248,7 +266,14 @@
       ],
       "slug": "foreverrun-nitro-2",
       "officialUrl": "https://us.puma.com/us/en/pd/foreverrun-nitro-2-mens-road-running-shoes/310109",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-foreverrun-nitro-2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/foreverrun-nitro-2-running-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/02/puma-foreverrun-nitro-2-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/02/puma-forever-run-nitro-2-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-foreverrun-nitro-2-review/"
+      }
     },
     {
       "id": "deviate-nitro-3",
@@ -309,7 +334,14 @@
       ],
       "slug": "deviate-nitro-3",
       "officialUrl": "https://us.puma.com/us/en/pd/deviate-nitro-3-mens-road-running-shoes/309707",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-deviate-nitro-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-3-fade",
+        "dor": "https://www.doctorsofrunning.com/2024/06/puma-deviate-nitro-3-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/06/puma-deviate-nitro-3-review-4.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-3-review/"
+      }
     },
     {
       "id": "deviate-nitro-4",
@@ -366,7 +398,12 @@
       ],
       "slug": "deviate-nitro-4",
       "officialUrl": "https://mediahub.puma.com/articles/puma-unveils-new-levels-of-fast-with-deviate-nitro-4-deviate-nitro-elite-4",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/01/puma-deviate-nitro-4-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/01/puma-running-deviate-4-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-4-review/"
+      }
     },
     {
       "id": "deviate-nitro-elite-3",
@@ -427,7 +464,14 @@
       ],
       "slug": "deviate-nitro-elite-3",
       "officialUrl": "https://us.puma.com/us/en/pd/deviate-nitro-elite-3-mens-road-running-shoes/309809",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-elite-3",
+        "dor": "https://www.doctorsofrunning.com/2024/10/puma-deviate-nitro-elite-3-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/08/puma-deviate-nitro-elite-3-review-up-in.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-3-review/"
+      }
     },
     {
       "id": "deviate-nitro-elite-4",
@@ -484,7 +528,11 @@
       ],
       "slug": "deviate-nitro-elite-4",
       "officialUrl": "https://mediahub.puma.com/articles/puma-unveils-new-levels-of-fast-with-deviate-nitro-4-deviate-nitro-elite-4",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "rtr": "https://www.roadtrailrun.com/2026/01/puma-deviate-elite-4-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/"
+      }
     },
     {
       "id": "fast-r-nitro-elite-3",
@@ -545,7 +593,14 @@
       ],
       "slug": "fast-r-nitro-elite-3",
       "officialUrl": "https://us.puma.com/us/en/pd/fast-r-nitro-elite-3-mens-road-running-shoes/312060",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/puma-fast-r-nitro-elite-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/puma/fast-r-nitro-elite-3",
+        "dor": "https://www.doctorsofrunning.com/2025/06/puma-fast-r-nitro-elite-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/04/puma-fast-r-nitro-elite-3-review-bold.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/puma-fast-r-nitro-elite-3-review/"
+      }
     }
   ]
 }

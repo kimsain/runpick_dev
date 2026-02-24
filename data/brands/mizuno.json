@@ -67,7 +67,14 @@
       ],
       "slug": "wave-rider-29",
       "officialUrl": "https://usa.mizuno.com/running-wave-rider-29-mens",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-wave-rider-29",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rider-29",
+        "dor": "https://www.doctorsofrunning.com/2025/08/mizuno-wave-rider-29-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/06/mizuno-wave-rider-29-review-true-to-its.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/mizuno-wave-rider-29-review/"
+      }
     },
     {
       "id": "wave-sky-9",
@@ -128,7 +135,14 @@
       ],
       "slug": "wave-sky-9",
       "officialUrl": "https://usa.mizuno.com/running-wave-sky-9-mens",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-wave-sky-9",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-sky-9",
+        "dor": "https://www.doctorsofrunning.com/2025/12/mizuno-wave-sky-9-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/mizuno-wave-sky-9-review-6-comparisons.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/mizuno-wave-sky-9-review/"
+      }
     },
     {
       "id": "neo-vista-2",
@@ -189,7 +203,14 @@
       ],
       "slug": "neo-vista-2",
       "officialUrl": "https://usa.mizuno.com/running-mizuno-neo-vista-2-mens",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-neo-vista-2",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-vista-2",
+        "dor": "https://www.doctorsofrunning.com/2025/06/mizuno-neo-vista-2-review-2025-45mm.html",
+        "rtr": "https://www.roadtrailrun.com/2025/06/mizuno-neo-vista-2-multi-tester-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/mizuno-neo-vista-2-review/"
+      }
     },
     {
       "id": "neo-zen",
@@ -250,7 +271,14 @@
       ],
       "slug": "neo-zen",
       "officialUrl": "https://usa.mizuno.com/running-mens-mizuno-neo-zen-running-shoe/",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-neo-zen",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-zen",
+        "dor": "https://www.doctorsofrunning.com/2025/01/mizuno-neo-zen-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/01/mizuno-neo-zen-multi-tester-review-art.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/mizuno-neo-zen-review/"
+      }
     },
     {
       "id": "wave-rebellion-flash-3",
@@ -311,7 +339,14 @@
       ],
       "slug": "wave-rebellion-flash-3",
       "officialUrl": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-wave-rebellion-flash-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rebellion-flash-3-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/09/mizuno-wave-rebellion-flash-3-review.html",
+        "rtr": "https://www.roadtrailrun.com/2025/09/mizuno-wave-rebellion-flash-3-review-3.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/mizuno-wave-rebellion-flash-3-review/"
+      }
     },
     {
       "id": "hyperwarp-pure",
@@ -370,7 +405,12 @@
       ],
       "slug": "hyperwarp-pure",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pure-running-shoe/",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pure-shoe",
+        "dor": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pure-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2025/12/mizuno-hyperwrap-pure-multi-tester.html"
+      }
     },
     {
       "id": "hyperwarp-elite",
@@ -429,7 +469,12 @@
       ],
       "slug": "hyperwarp-elite",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-elite-unisex",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-elite",
+        "dor": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-elite-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2025/12/mizuno-hyperwarp-elite-review-5.html"
+      }
     },
     {
       "id": "hyperwarp-pro",
@@ -488,7 +533,11 @@
       ],
       "slug": "hyperwarp-pro",
       "officialUrl": "https://usa.mizuno.com/running-hyperwarp-pro-unisex",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pro",
+        "dor": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pro-review-2026.html"
+      }
     },
     {
       "id": "wave-rebellion-pro-3",
@@ -549,7 +598,13 @@
       ],
       "slug": "wave-rebellion-pro-3",
       "officialUrl": "https://usa.mizuno.com/running-unisex-wave-rebellion-pro-3-running-shoe/",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-wave-rebellion-pro-3",
+        "rtings": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rebellion-pro-3",
+        "dor": "https://www.doctorsofrunning.com/2025/01/mizuno-wave-rebellion-pro-3-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/01/mizuno-wave-rebellion-pro-3-review-8.html"
+      }
     }
   ]
 }
