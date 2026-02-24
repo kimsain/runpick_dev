@@ -63,7 +63,10 @@
       ],
       "slug": "supernova-rise-3",
       "officialUrl": "https://www.doctorsofrunning.com/2024/12/adidas-supernova-rise-2-review-2024.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2024/12/adidas-supernova-rise-2-review-2024.html"
+      }
     },
     {
       "id": "supernova-prima-2",
@@ -123,7 +126,10 @@
       ],
       "slug": "supernova-prima-2",
       "officialUrl": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe"
+      }
     },
     {
       "id": "supernova-solution-2",
@@ -182,7 +188,10 @@
       ],
       "slug": "supernova-solution-2",
       "officialUrl": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2025/03/adidas-supernova-solution-2-2025.html"
+      }
     },
     {
       "id": "adizero-sl-2",
@@ -239,7 +248,10 @@
       ],
       "slug": "adizero-sl-2",
       "officialUrl": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2024/07/adidas-adizero-sl-2-review-2024.html"
+      }
     },
     {
       "id": "adizero-adios-9",
@@ -299,7 +311,10 @@
       ],
       "slug": "adizero-adios-9",
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-9",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-9"
+      }
     },
     {
       "id": "adizero-evo-sl",
@@ -359,7 +374,10 @@
       ],
       "slug": "adizero-evo-sl",
       "officialUrl": "https://runrepeat.com/adidas-adizero-evo-sl",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-evo-sl"
+      }
     },
     {
       "id": "adizero-boston-13",
@@ -421,7 +439,10 @@
       ],
       "slug": "adizero-boston-13",
       "officialUrl": "https://runrepeat.com/adidas-adizero-boston-13",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-boston-13"
+      }
     },
     {
       "id": "adizero-takumi-sen-11",
@@ -484,7 +505,10 @@
       ],
       "slug": "adizero-takumi-sen-11",
       "officialUrl": "https://runrepeat.com/adidas-adizero-takumi-sen-11",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-takumi-sen-11"
+      }
     },
     {
       "id": "adizero-prime-x3-strung",
@@ -547,7 +571,10 @@
       ],
       "slug": "adizero-prime-x3-strung",
       "officialUrl": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-prime-x-3-strung"
+      }
     },
     {
       "id": "adizero-adios-pro-4",
@@ -609,7 +636,10 @@
       ],
       "slug": "adizero-adios-pro-4",
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-4",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-4"
+      }
     },
     {
       "id": "adizero-pro-evo-2",
@@ -668,7 +698,10 @@
       ],
       "slug": "adizero-pro-evo-2",
       "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2"
+      }
     }
   ]
 }

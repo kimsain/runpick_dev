@@ -67,7 +67,10 @@
       ],
       "slug": "gel-nimbus-28",
       "officialUrl": "https://runrepeat.com/asics-gel-nimbus-28",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-gel-nimbus-28"
+      }
     },
     {
       "id": "glideride-max-2",
@@ -128,7 +131,10 @@
       ],
       "slug": "glideride-max-2",
       "officialUrl": "https://www.rtings.com/running-shoes/reviews/asics/glideride-max-2-shoe",
-      "confidence": "high"
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/asics/glideride-max-2-shoe"
+      }
     },
     {
       "id": "gel-kayano-32",
@@ -189,7 +195,10 @@
       ],
       "slug": "gel-kayano-32",
       "officialUrl": "https://runrepeat.com/asics-gel-kayano-32",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-gel-kayano-32"
+      }
     },
     {
       "id": "novablast-5",
@@ -250,7 +259,10 @@
       ],
       "slug": "novablast-5",
       "officialUrl": "https://runrepeat.com/asics-novablast-5",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-novablast-5"
+      }
     },
     {
       "id": "superblast-2",
@@ -312,7 +324,10 @@
       ],
       "slug": "superblast-2",
       "officialUrl": "https://runrepeat.com/asics-superblast-2",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-superblast-2"
+      }
     },
     {
       "id": "megablast",
@@ -372,7 +387,10 @@
       ],
       "slug": "megablast",
       "officialUrl": "https://runrepeat.com/asics-megablast",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-megablast"
+      }
     },
     {
       "id": "sonicblast",
@@ -434,7 +452,10 @@
       ],
       "slug": "sonicblast",
       "officialUrl": "https://runrepeat.com/asics-sonicblast",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-sonicblast"
+      }
     },
     {
       "id": "magic-speed-5",
@@ -496,7 +517,10 @@
       ],
       "slug": "magic-speed-5",
       "officialUrl": "https://runrepeat.com/asics-magic-speed-5",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-magic-speed-5"
+      }
     },
     {
       "id": "metaspeed-ray",
@@ -557,7 +581,10 @@
       ],
       "slug": "metaspeed-ray",
       "officialUrl": "https://runrepeat.com/asics-metaspeed-ray",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-metaspeed-ray"
+      }
     },
     {
       "id": "yogiri-s4-plus",
@@ -618,7 +645,10 @@
       ],
       "slug": "yogiri-s4-plus",
       "officialUrl": "https://runrepeat.com/asics-s-4-yogiri",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-s-4-yogiri"
+      }
     },
     {
       "id": "metaspeed-sky-tokyo",
@@ -679,7 +709,10 @@
       ],
       "slug": "metaspeed-sky-tokyo",
       "officialUrl": "https://runrepeat.com/asics-metaspeed-sky-tokyo",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-metaspeed-sky-tokyo"
+      }
     },
     {
       "id": "metaspeed-edge-tokyo",
@@ -740,7 +773,10 @@
       ],
       "slug": "metaspeed-edge-tokyo",
       "officialUrl": "https://runrepeat.com/asics-metaspeed-edge-tokyo",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/asics-metaspeed-edge-tokyo"
+      }
     }
   ]
 }

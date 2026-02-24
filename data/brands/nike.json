@@ -67,7 +67,10 @@
       ],
       "slug": "pegasus-41",
       "officialUrl": "https://runrepeat.com/nike-pegasus-41",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-pegasus-41"
+      }
     },
     {
       "id": "vomero-18",
@@ -127,7 +130,10 @@
       ],
       "slug": "vomero-18",
       "officialUrl": "https://runrepeat.com/nike-vomero-18",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-vomero-18"
+      }
     },
     {
       "id": "vomero-plus",
@@ -185,7 +191,10 @@
       ],
       "slug": "vomero-plus",
       "officialUrl": "https://runrepeat.com/nike-vomero-plus",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-vomero-plus"
+      }
     },
     {
       "id": "vomero-premium",
@@ -245,7 +254,10 @@
       ],
       "slug": "vomero-premium",
       "officialUrl": "https://runrepeat.com/nike-vomero-premium",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-vomero-premium"
+      }
     },
     {
       "id": "structure-26",
@@ -304,7 +316,10 @@
       ],
       "slug": "structure-26",
       "officialUrl": "https://runrepeat.com/nike-structure-26",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-structure-26"
+      }
     },
     {
       "id": "structure-plus",
@@ -361,7 +376,10 @@
       ],
       "slug": "structure-plus",
       "officialUrl": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html"
+      }
     },
     {
       "id": "rival-fly-4",
@@ -418,7 +436,10 @@
       ],
       "slug": "rival-fly-4",
       "officialUrl": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html",
-      "confidence": "low"
+      "confidence": "low",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html"
+      }
     },
     {
       "id": "pegasus-plus",
@@ -478,7 +499,10 @@
       ],
       "slug": "pegasus-plus",
       "officialUrl": "https://runrepeat.com/nike-pegasus-plus",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-pegasus-plus"
+      }
     },
     {
       "id": "zoom-fly-6",
@@ -539,7 +563,10 @@
       ],
       "slug": "zoom-fly-6",
       "officialUrl": "https://runrepeat.com/nike-zoom-fly-6",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-zoom-fly-6"
+      }
     },
     {
       "id": "streakfly-2",
@@ -598,7 +625,10 @@
       ],
       "slug": "streakfly-2",
       "officialUrl": "https://runrepeat.com/nike-streakfly-2",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-streakfly-2"
+      }
     },
     {
       "id": "vaporfly-4",
@@ -658,7 +688,10 @@
       ],
       "slug": "vaporfly-4",
       "officialUrl": "https://runrepeat.com/nike-vaporfly-4",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-vaporfly-4"
+      }
     },
     {
       "id": "alphafly-3",
@@ -720,7 +753,10 @@
       ],
       "slug": "alphafly-3",
       "officialUrl": "https://runrepeat.com/nike-alphafly-3",
-      "confidence": "very-high"
+      "confidence": "very-high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-alphafly-3"
+      }
     }
   ]
 }

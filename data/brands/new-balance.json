@@ -63,7 +63,10 @@
       ],
       "slug": "fresh-foam-x-880v15",
       "officialUrl": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html"
+      }
     },
     {
       "id": "fresh-foam-x-1080v15",
@@ -120,7 +123,10 @@
       ],
       "slug": "fresh-foam-x-1080v15",
       "officialUrl": "https://www.doctorsofrunning.com/2025/11/new-balance-1080-v15-review-2026.html",
-      "confidence": "medium"
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2025/11/new-balance-1080-v15-review-2026.html"
+      }
     },
     {
       "id": "fresh-foam-x-more-v6",
