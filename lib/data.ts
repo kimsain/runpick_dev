@@ -46,15 +46,47 @@ export function getShoesByCategory(cat: string): Shoe[] {
   return getAllShoes().filter((s) => s.categoryId === cat)
 }
 
+// ── Similarity scoring ──────────────────────────────────────────────────────
+// Converts a shoe's specs to a normalized vector (all dims ~0-10 scale).
+// Uses raw* scores when available for greater precision.
+function specVec(shoe: Shoe): number[] {
+  const { specs } = shoe
+  return [
+    specs.rawCushioning     ?? specs.cushioning,        // ~1-10+
+    specs.rawResponsiveness ?? specs.responsiveness,    // ~1-10+
+    specs.rawStability      ?? specs.stability,         // ~1-10+
+    specs.rawDurability     ?? specs.durability,        // ~1-10+
+    specs.weightScore       ?? 5,                       // 0-10
+    (specs.drop / 12) * 10,                             // 0-12mm → 0-10
+    Math.max(0, Math.min(10, (specs.stackHeight.heel - 20) / 25 * 10)), // 20-45mm → 0-10
+  ]
+}
+
+// Weights: [cushioning, responsiveness, stability, durability, weightScore, drop, stackHeel]
+const SPEC_WEIGHTS = [2.0, 2.0, 1.5, 1.0, 1.5, 2.0, 1.0]
+
+function specsDistance(a: Shoe, b: Shoe): number {
+  const va = specVec(a)
+  const vb = specVec(b)
+  let sumSq = 0
+  for (let i = 0; i < va.length; i++) {
+    const diff = va[i] - vb[i]
+    sumSq += SPEC_WEIGHTS[i] * diff * diff
+  }
+  // Prefer same category, then same subcategory
+  const catPenalty = a.categoryId !== b.categoryId ? 3.0
+    : a.subcategoryId !== b.subcategoryId ? 1.0
+    : 0
+  return Math.sqrt(sumSq) + catPenalty
+}
+
 export function getSimilarShoes(shoe: Shoe, limit = 3): Shoe[] {
   return getAllShoes()
-    .filter(
-      (s) =>
-        s.slug !== shoe.slug &&
-        s.categoryId === shoe.categoryId &&
-        s.subcategoryId === shoe.subcategoryId
-    )
+    .filter((s) => s.slug !== shoe.slug)
+    .map((s) => ({ candidate: s, dist: specsDistance(shoe, s) }))
+    .sort((a, b) => a.dist - b.dist)
     .slice(0, limit)
+    .map((entry) => entry.candidate)
 }
 
 export function getAllSlugs(): string[] {
