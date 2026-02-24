@@ -21,6 +21,14 @@ export interface Specs {
   rawLightness?: number       // ≥1 소수점, 정렬 전용 (상한 없음), 무게 기반
 }
 
+export interface ReviewSources {
+  runrepeat?: string
+  rtings?: string
+  dor?: string
+  rtr?: string
+  bitr?: string
+}
+
 export interface Shoe {
   id: string
   brandId: string
@@ -42,6 +50,7 @@ export interface Shoe {
   colorways: string[]
   slug: string
   officialUrl: string
+  sources?: ReviewSources
   confidence?: 'very-high' | 'high' | 'medium' | 'low'
 }
 
