@@ -217,36 +217,17 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 공식 사이트 ↗
               </a>
             )}
-            {reviewLinks.length === 1 && (
+            {reviewLinks.map(({ key, url, label }) => (
               <a
-                href={reviewLinks[0].url}
+                key={key}
+                href={url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
               >
-                {reviewLinks[0].label} ↗
+                {label} ↗
               </a>
-            )}
-            {reviewLinks.length > 1 && (
-              <details className="relative">
-                <summary className="list-none inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px] cursor-pointer select-none">
-                  리뷰 {reviewLinks.length}개 ▾
-                </summary>
-                <div className="absolute right-0 top-full mt-1 z-10 bg-card border border-elevated min-w-[180px]">
-                  {reviewLinks.map(({ key, url, label }) => (
-                    <a
-                      key={key}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between px-4 py-3 text-sm font-body text-secondary hover:text-accent hover:bg-elevated transition-colors"
-                    >
-                      {label} <span className="ml-2 opacity-60">↗</span>
-                    </a>
-                  ))}
-                </div>
-              </details>
-            )}
+            ))}
           </div>
         </div>
       </div>
