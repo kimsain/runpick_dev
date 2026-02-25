@@ -23,9 +23,9 @@
       "specs": {
         "weight": 286.6,
         "drop": 7.3,
-        "cushioning": 7,
-        "responsiveness": 7,
-        "stability": 7,
+        "cushioning": 6,
+        "responsiveness": 4,
+        "stability": 8,
         "durability": 6,
         "stackHeight": {
           "heel": 39.4,
@@ -33,8 +33,12 @@
         },
         "weightScore": 4,
         "valueScore": 8,
-        "rawValueScore": 8.41,
-        "rawLightness": 3.61
+        "rawValueScore": 7.5,
+        "rawLightness": 3.61,
+        "rawCushioning": 5.56,
+        "rawResponsiveness": 3.71,
+        "rawStability": 8.22,
+        "rawDurability": 5.58
       },
       "pros": [
         "Fresh Foam X 2겹 구조가 힐 39.4mm 스택을 받쳐줘서 장거리에서도 착지 충격이 잘 분산돼요",
@@ -87,7 +91,7 @@
       "specs": {
         "weight": 261,
         "drop": 7.8,
-        "cushioning": 9,
+        "cushioning": 8,
         "responsiveness": 6,
         "stability": 6,
         "durability": 7,
@@ -97,8 +101,12 @@
         },
         "weightScore": 5,
         "valueScore": 8,
-        "rawValueScore": 7.79,
-        "rawLightness": 4.65
+        "rawValueScore": 8.03,
+        "rawLightness": 4.65,
+        "rawCushioning": 7.67,
+        "rawResponsiveness": 6.42,
+        "rawStability": 5.94,
+        "rawDurability": 6.95
       },
       "pros": [
         "Infinion 슈퍼크리티컬 폼 덕분에 맥스 쿠셔닝 급이면서 261g으로 가벼워서 장거리에서 발이 안 무거워요",
@@ -160,11 +168,13 @@
           "forefoot": 40
         },
         "weightScore": 3,
-        "valueScore": 6,
+        "valueScore": 7,
         "rawCushioning": 8.27,
         "rawResponsiveness": 4.04,
-        "rawValueScore": 6.55,
-        "rawLightness": 2.82
+        "rawValueScore": 6.61,
+        "rawLightness": 2.82,
+        "rawStability": 4.58,
+        "rawDurability": 6.17
       },
       "pros": [
         "힐 41.8mm/전족부 37.1mm 맥스스택이 장거리 착지 충격을 일관되게 흡수해줘서 다리 피로가 늦게 와요",
@@ -218,7 +228,7 @@
         "cushioning": 6,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
@@ -227,8 +237,10 @@
         "valueScore": 8,
         "rawCushioning": 5.76,
         "rawResponsiveness": 6.37,
-        "rawValueScore": 7.72,
-        "rawLightness": 6.03
+        "rawValueScore": 7.04,
+        "rawLightness": 6.03,
+        "rawStability": 3.94,
+        "rawDurability": 5.87
       },
       "pros": [
         "FuelCell PEBA 블렌드 폼이 전족부 에너지 리턴 75.2%를 내줘서 플레이트 없이도 착지 후 튕김이 분명해요",
@@ -283,19 +295,19 @@
         "drop": 6,
         "cushioning": 6,
         "responsiveness": 4,
-        "stability": 4,
-        "durability": 7,
+        "stability": 5,
+        "durability": 5,
         "stackHeight": {
           "heel": 37,
           "forefoot": 31
         },
         "weightScore": 4,
         "valueScore": 7,
-        "rawCushioning": 6.2,
-        "rawResponsiveness": 4.35,
-        "rawStability": 4.49,
-        "rawDurability": 6.83,
-        "rawValueScore": 7.47,
+        "rawCushioning": 6.23,
+        "rawResponsiveness": 4.36,
+        "rawStability": 4.76,
+        "rawDurability": 5.08,
+        "rawValueScore": 7.41,
         "rawLightness": 4.08
       },
       "pros": [
@@ -358,8 +370,10 @@
         "valueScore": 4,
         "rawCushioning": 6.51,
         "rawResponsiveness": 8.47,
-        "rawValueScore": 3.83,
-        "rawLightness": 6.59
+        "rawValueScore": 3.69,
+        "rawLightness": 6.59,
+        "rawStability": 4.45,
+        "rawDurability": 5.73
       },
       "pros": [
         "FuelCell + 카본 플레이트 조합으로 힐/전족부 에너지 리턴 84.8/84.6%를 달성해서 카본화 중 상위권 반발력을 제공해요",

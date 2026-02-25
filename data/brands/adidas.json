@@ -24,17 +24,21 @@
         "weight": 261,
         "drop": 8,
         "cushioning": 6,
-        "responsiveness": 6,
-        "stability": 7,
-        "durability": 6,
+        "responsiveness": 4,
+        "stability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 36,
           "forefoot": 28
         },
         "weightScore": 5,
         "valueScore": 9,
-        "rawValueScore": 9.41,
-        "rawLightness": 4.65
+        "rawValueScore": 9.04,
+        "rawLightness": 4.65,
+        "rawCushioning": 5.56,
+        "rawResponsiveness": 3.83,
+        "rawStability": 6.29,
+        "rawDurability": 6.95
       },
       "pros": [
         "Dreamstrike+ PEBA 폼이라 15만원대치고 쿠셔닝이 꽤 푹신해요",
@@ -95,8 +99,10 @@
         "valueScore": 7,
         "rawCushioning": 4.95,
         "rawResponsiveness": 4.59,
-        "rawValueScore": 6.69,
-        "rawLightness": 3.92
+        "rawValueScore": 6.96,
+        "rawLightness": 3.92,
+        "rawStability": 6.06,
+        "rawDurability": 7.29
       },
       "pros": [
         "Dreamstrike+ 폼 + Support Rods라 푹신하면서도 발이 안 물렁거려요",
@@ -149,17 +155,19 @@
         "cushioning": 6,
         "responsiveness": 7,
         "stability": 8,
-        "durability": 6,
+        "durability": 8,
         "stackHeight": {
           "heel": 36,
           "forefoot": 26
         },
         "weightScore": 5,
-        "valueScore": 9,
+        "valueScore": 10,
         "rawCushioning": 3.85,
         "rawResponsiveness": 6.88,
-        "rawValueScore": 8.08,
-        "rawLightness": 4.65
+        "rawValueScore": 9.64,
+        "rawLightness": 4.65,
+        "rawStability": 7.89,
+        "rawDurability": 8.26
       },
       "pros": [
         "에너지 리턴 68%로 안정화치고 바운시해서 뛰는 맛이 있어요",
@@ -209,18 +217,22 @@
       "specs": {
         "weight": 236,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 7,
-        "stability": 5,
+        "cushioning": 5,
+        "responsiveness": 4,
+        "stability": 4,
         "durability": 6,
         "stackHeight": {
           "heel": 36,
           "forefoot": 26
         },
         "weightScore": 6,
-        "valueScore": 10,
-        "rawValueScore": 9.68,
-        "rawLightness": 5.66
+        "valueScore": 8,
+        "rawValueScore": 8.36,
+        "rawLightness": 5.66,
+        "rawCushioning": 5.42,
+        "rawResponsiveness": 4.43,
+        "rawStability": 3.71,
+        "rawDurability": 6.31
       },
       "pros": [
         "14만원대에 Lightstrike Pro 듀얼 폼이라 가격 대비 반발력이 좋아요",
@@ -283,11 +295,11 @@
         },
         "weightScore": 8,
         "valueScore": 5,
-        "rawCushioning": 1.06,
+        "rawCushioning": 1.08,
         "rawResponsiveness": 9.08,
-        "rawStability": 1,
-        "rawDurability": 5.2,
-        "rawValueScore": 5.18,
+        "rawStability": 1.37,
+        "rawDurability": 4.74,
+        "rawValueScore": 5.53,
         "rawLightness": 8.09
       },
       "pros": [
@@ -341,18 +353,18 @@
         "cushioning": 8,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 32
         },
         "weightScore": 6,
         "valueScore": 8,
-        "rawCushioning": 7.74,
-        "rawResponsiveness": 8.18,
-        "rawStability": 6.1,
-        "rawDurability": 6.56,
-        "rawValueScore": 7.98,
+        "rawCushioning": 7.72,
+        "rawResponsiveness": 8.19,
+        "rawStability": 6.15,
+        "rawDurability": 5.98,
+        "rawValueScore": 8.42,
         "rawLightness": 6.15
       },
       "pros": [
@@ -407,19 +419,19 @@
         "drop": 6,
         "cushioning": 5,
         "responsiveness": 6,
-        "stability": 9,
-        "durability": 8,
+        "stability": 8,
+        "durability": 7,
         "stackHeight": {
           "heel": 36,
           "forefoot": 30
         },
         "weightScore": 5,
         "valueScore": 9,
-        "rawCushioning": 5.01,
-        "rawResponsiveness": 6.23,
-        "rawStability": 8.65,
-        "rawDurability": 8.37,
-        "rawValueScore": 9.46,
+        "rawCushioning": 4.96,
+        "rawResponsiveness": 6.24,
+        "rawStability": 8.43,
+        "rawDurability": 7.28,
+        "rawValueScore": 9.65,
         "rawLightness": 4.89
       },
       "pros": [
@@ -476,19 +488,19 @@
         "drop": 7,
         "cushioning": 4,
         "responsiveness": 9,
-        "stability": 3,
-        "durability": 4,
+        "stability": 4,
+        "durability": 5,
         "stackHeight": {
           "heel": 33,
           "forefoot": 26
         },
         "weightScore": 8,
-        "valueScore": 5,
-        "rawCushioning": 3.99,
+        "valueScore": 6,
+        "rawCushioning": 3.97,
         "rawResponsiveness": 9.21,
-        "rawStability": 3.4,
-        "rawDurability": 3.96,
-        "rawValueScore": 4.99,
+        "rawStability": 3.53,
+        "rawDurability": 5.16,
+        "rawValueScore": 5.81,
         "rawLightness": 7.77
       },
       "pros": [
@@ -545,19 +557,19 @@
         "drop": 7,
         "cushioning": 8,
         "responsiveness": 9,
-        "stability": 3,
-        "durability": 4,
+        "stability": 4,
+        "durability": 5,
         "stackHeight": {
           "heel": 50,
           "forefoot": 43
         },
         "weightScore": 3,
-        "valueScore": 3,
-        "rawCushioning": 8.4,
+        "valueScore": 4,
+        "rawCushioning": 8.39,
         "rawResponsiveness": 8.68,
-        "rawStability": 2.67,
-        "rawDurability": 3.85,
-        "rawValueScore": 3.16,
+        "rawStability": 4.23,
+        "rawDurability": 5.47,
+        "rawValueScore": 4.04,
         "rawLightness": 3.43
       },
       "pros": [
@@ -615,19 +627,19 @@
         "drop": 6,
         "cushioning": 7,
         "responsiveness": 10,
-        "stability": 3,
+        "stability": 4,
         "durability": 4,
         "stackHeight": {
           "heel": 39,
           "forefoot": 33
         },
         "weightScore": 7,
-        "valueScore": 4,
-        "rawCushioning": 6.66,
+        "valueScore": 5,
+        "rawCushioning": 6.62,
         "rawResponsiveness": 10.1,
-        "rawStability": 3.4,
-        "rawDurability": 4.47,
-        "rawValueScore": 4.19,
+        "rawStability": 3.88,
+        "rawDurability": 4.33,
+        "rawValueScore": 4.55,
         "rawLightness": 7.12
       },
       "pros": [
@@ -684,19 +696,19 @@
         "drop": 3,
         "cushioning": 9,
         "responsiveness": 8,
-        "stability": 4,
-        "durability": 1,
+        "stability": 5,
+        "durability": 2,
         "stackHeight": {
           "heel": 39,
           "forefoot": 36
         },
         "weightScore": 10,
         "valueScore": 1,
-        "rawCushioning": 8.61,
+        "rawCushioning": 8.58,
         "rawResponsiveness": 8.25,
-        "rawStability": 4.23,
-        "rawDurability": 1.13,
-        "rawValueScore": 1.03,
+        "rawStability": 4.56,
+        "rawDurability": 1.99,
+        "rawValueScore": 1.18,
         "rawLightness": 9.64
       },
       "pros": [

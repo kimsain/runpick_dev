@@ -26,18 +26,18 @@
         "cushioning": 5,
         "responsiveness": 3,
         "stability": 7,
-        "durability": 9,
+        "durability": 8,
         "stackHeight": {
           "heel": 36.2,
           "forefoot": 25.8
         },
         "weightScore": 4,
-        "valueScore": 8,
-        "rawCushioning": 5.06,
+        "valueScore": 9,
+        "rawCushioning": 5.03,
         "rawResponsiveness": 2.77,
-        "rawStability": 7.28,
-        "rawDurability": 8.66,
-        "rawValueScore": 8.25,
+        "rawStability": 7.34,
+        "rawDurability": 7.94,
+        "rawValueScore": 8.6,
         "rawLightness": 3.64
       },
       "pros": [
@@ -94,18 +94,18 @@
         "cushioning": 4,
         "responsiveness": 4,
         "stability": 7,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 36.5,
           "forefoot": 25.2
         },
         "weightScore": 5,
         "valueScore": 7,
-        "rawCushioning": 4.31,
+        "rawCushioning": 4.34,
         "rawResponsiveness": 3.63,
-        "rawStability": 7.45,
-        "rawDurability": 6.56,
-        "rawValueScore": 6.54,
+        "rawStability": 7.25,
+        "rawDurability": 6.47,
+        "rawValueScore": 6.94,
         "rawLightness": 5.34
       },
       "pros": [
@@ -160,19 +160,19 @@
         "drop": 6,
         "cushioning": 6,
         "responsiveness": 1,
-        "stability": 7,
-        "durability": 8,
+        "stability": 8,
+        "durability": 7,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 31.2
         },
         "weightScore": 3,
-        "valueScore": 7,
-        "rawCushioning": 6.11,
+        "valueScore": 8,
+        "rawCushioning": 6.07,
         "rawResponsiveness": 1.42,
-        "rawStability": 7.29,
-        "rawDurability": 7.99,
-        "rawValueScore": 7.33,
+        "rawStability": 7.52,
+        "rawDurability": 7.47,
+        "rawValueScore": 7.77,
         "rawLightness": 2.95
       },
       "pros": [
@@ -229,18 +229,18 @@
         "cushioning": 5,
         "responsiveness": 3,
         "stability": 6,
-        "durability": 10,
+        "durability": 9,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 28.2
         },
         "weightScore": 4,
-        "valueScore": 6,
-        "rawCushioning": 5.44,
+        "valueScore": 7,
+        "rawCushioning": 5.48,
         "rawResponsiveness": 3.22,
-        "rawStability": 6.01,
-        "rawDurability": 9.79,
-        "rawValueScore": 6.6,
+        "rawStability": 6.17,
+        "rawDurability": 8.73,
+        "rawValueScore": 6.8,
         "rawLightness": 3.51
       },
       "pros": [
@@ -294,17 +294,21 @@
         "weight": 301,
         "drop": 8,
         "cushioning": 8,
-        "responsiveness": 5,
+        "responsiveness": 4,
         "stability": 6,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 38,
           "forefoot": 30
         },
         "weightScore": 3,
         "valueScore": 7,
-        "rawValueScore": 6.79,
-        "rawLightness": 3.03
+        "rawValueScore": 7.53,
+        "rawLightness": 3.03,
+        "rawCushioning": 7.97,
+        "rawResponsiveness": 4.12,
+        "rawStability": 6.11,
+        "rawDurability": 7.4
       },
       "pros": [
         "슈퍼크리티컬 폼이 38/30mm 스택 전체에 걸쳐 풍성하게 감싸줘서 장시간 달려도 발바닥이 포근해요",
@@ -357,7 +361,7 @@
         "cushioning": 9,
         "responsiveness": 4,
         "stability": 7,
-        "durability": 6,
+        "durability": 7,
         "stackHeight": {
           "heel": 45,
           "forefoot": 39
@@ -366,8 +370,10 @@
         "valueScore": 6,
         "rawCushioning": 8.59,
         "rawResponsiveness": 3.87,
-        "rawValueScore": 5.57,
-        "rawLightness": 2.26
+        "rawValueScore": 6.15,
+        "rawLightness": 2.26,
+        "rawStability": 6.11,
+        "rawDurability": 7.4
       },
       "pros": [
         "힐 47.9mm / 포어풋 41mm 브룩스 최대 스택이 장거리 후반에도 착지 충격을 꾸준히 흡수해줘서 발이 놀랍도록 안 아파요",
@@ -422,17 +428,19 @@
         "cushioning": 4,
         "responsiveness": 4,
         "stability": 8,
-        "durability": 7,
+        "durability": 8,
         "stackHeight": {
           "heel": 40.9,
           "forefoot": 27.3
         },
         "weightScore": 3,
-        "valueScore": 7,
+        "valueScore": 8,
         "rawCushioning": 3.65,
         "rawResponsiveness": 3.82,
-        "rawValueScore": 6.73,
-        "rawLightness": 3.03
+        "rawValueScore": 7.51,
+        "rawLightness": 3.03,
+        "rawStability": 7.51,
+        "rawDurability": 8.12
       },
       "pros": [
         "GuideRails가 발이 과하게 안으로 꺾일 때만 자연스럽게 잡아줘서 안정화인데도 발이 갇힌 느낌이 안 나요",
@@ -486,19 +494,19 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 7,
         "durability": 7,
         "stackHeight": {
           "heel": 45.6,
           "forefoot": 35
         },
         "weightScore": 4,
-        "valueScore": 7,
-        "rawCushioning": 8.58,
+        "valueScore": 8,
+        "rawCushioning": 8.6,
         "rawResponsiveness": 5.67,
-        "rawStability": 6.04,
-        "rawDurability": 7.05,
-        "rawValueScore": 7.15,
+        "rawStability": 6.53,
+        "rawDurability": 7.03,
+        "rawValueScore": 7.88,
         "rawLightness": 3.84
       },
       "pros": [
@@ -555,18 +563,18 @@
         "cushioning": 6,
         "responsiveness": 9,
         "stability": 6,
-        "durability": 4,
+        "durability": 5,
         "stackHeight": {
           "heel": 37.6,
           "forefoot": 26.4
         },
         "weightScore": 7,
-        "valueScore": 4,
-        "rawCushioning": 6.31,
+        "valueScore": 5,
+        "rawCushioning": 6.3,
         "rawResponsiveness": 9.23,
-        "rawStability": 5.95,
-        "rawDurability": 3.77,
-        "rawValueScore": 4.33,
+        "rawStability": 5.84,
+        "rawDurability": 4.51,
+        "rawValueScore": 4.79,
         "rawLightness": 7.28
       },
       "pros": [

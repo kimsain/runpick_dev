@@ -26,17 +26,19 @@
         "cushioning": 6,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 6,
+        "durability": 8,
         "stackHeight": {
           "heel": 37,
           "forefoot": 29
         },
         "weightScore": 5,
-        "valueScore": 9,
+        "valueScore": 10,
         "rawCushioning": 5.91,
         "rawResponsiveness": 5.87,
-        "rawValueScore": 8.87,
-        "rawLightness": 4.73
+        "rawValueScore": 8.96,
+        "rawLightness": 4.73,
+        "rawStability": 3.03,
+        "rawDurability": 7.64
       },
       "pros": [
         "PWRRUN TPU 폼 SA 141/116으로 장거리 착지 충격을 꾸준하게 잡아줘서 30km 넘어서도 발이 편해요",
@@ -92,18 +94,18 @@
         "cushioning": 3,
         "responsiveness": 2,
         "stability": 5,
-        "durability": 5,
+        "durability": 4,
         "stackHeight": {
           "heel": 28,
           "forefoot": 23.5
         },
         "weightScore": 7,
         "valueScore": 5,
-        "rawCushioning": 3.26,
+        "rawCushioning": 3.25,
         "rawResponsiveness": 1.85,
-        "rawStability": 4.9,
-        "rawDurability": 4.65,
-        "rawValueScore": 4.87,
+        "rawStability": 5.0,
+        "rawDurability": 4.27,
+        "rawValueScore": 5.09,
         "rawLightness": 6.84
       },
       "pros": [
@@ -156,19 +158,19 @@
         "drop": 10,
         "cushioning": 9,
         "responsiveness": 7,
-        "stability": 7,
+        "stability": 8,
         "durability": 8,
         "stackHeight": {
           "heel": 37,
           "forefoot": 27
         },
         "weightScore": 5,
-        "valueScore": 9,
-        "rawCushioning": 8.72,
+        "valueScore": 10,
+        "rawCushioning": 8.78,
         "rawResponsiveness": 6.99,
-        "rawStability": 7.34,
-        "rawDurability": 8.46,
-        "rawValueScore": 9.49,
+        "rawStability": 7.66,
+        "rawDurability": 7.9,
+        "rawValueScore": 10.19,
         "rawLightness": 4.57
       },
       "pros": [
@@ -223,19 +225,19 @@
         "drop": 6,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 6,
-        "durability": 9,
+        "stability": 7,
+        "durability": 8,
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
         },
         "weightScore": 4,
         "valueScore": 10,
-        "rawCushioning": 5.79,
+        "rawCushioning": 5.84,
         "rawResponsiveness": 4.62,
-        "rawStability": 5.75,
-        "rawDurability": 9.11,
-        "rawValueScore": 9.53,
+        "rawStability": 6.5,
+        "rawDurability": 8.26,
+        "rawValueScore": 10.28,
         "rawLightness": 4.2
       },
       "pros": [
@@ -290,19 +292,19 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 8,
-        "stability": 8,
-        "durability": 8,
+        "stability": 9,
+        "durability": 7,
         "stackHeight": {
           "heel": 38,
           "forefoot": 32
         },
         "weightScore": 4,
         "valueScore": 10,
-        "rawCushioning": 9.19,
+        "rawCushioning": 9.21,
         "rawResponsiveness": 7.58,
-        "rawStability": 8.06,
-        "rawDurability": 7.59,
-        "rawValueScore": 9.81,
+        "rawStability": 8.6,
+        "rawDurability": 6.96,
+        "rawValueScore": 10.58,
         "rawLightness": 3.76
       },
       "pros": [
@@ -358,7 +360,7 @@
         "cushioning": 5,
         "responsiveness": 7,
         "stability": 10,
-        "durability": 10,
+        "durability": 8,
         "stackHeight": {
           "heel": 33,
           "forefoot": 25
@@ -367,9 +369,9 @@
         "valueScore": 10,
         "rawCushioning": 4.77,
         "rawResponsiveness": 7.44,
-        "rawStability": 9.8,
-        "rawDurability": 10.95,
-        "rawValueScore": 10.0,
+        "rawStability": 9.61,
+        "rawDurability": 8.39,
+        "rawValueScore": 9.76,
         "rawLightness": 4.32
       },
       "pros": [
@@ -425,18 +427,18 @@
         "cushioning": 6,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 8,
+        "durability": 7,
         "stackHeight": {
           "heel": 39.5,
           "forefoot": 31.5
         },
         "weightScore": 4,
-        "valueScore": 7,
-        "rawCushioning": 5.99,
+        "valueScore": 8,
+        "rawCushioning": 6.01,
         "rawResponsiveness": 8.03,
-        "rawStability": 5.95,
-        "rawDurability": 8.24,
-        "rawValueScore": 7.43,
+        "rawStability": 6.47,
+        "rawDurability": 7.42,
+        "rawValueScore": 7.92,
         "rawLightness": 3.64
       },
       "pros": [
@@ -499,11 +501,13 @@
           "forefoot": 32
         },
         "weightScore": 6,
-        "valueScore": 8,
+        "valueScore": 9,
         "rawCushioning": 8.02,
         "rawResponsiveness": 6.18,
-        "rawValueScore": 8.11,
-        "rawLightness": 5.5
+        "rawValueScore": 8.1,
+        "rawLightness": 5.5,
+        "rawStability": 4.73,
+        "rawDurability": 5.63
       },
       "pros": [
         "PWRRUN PB + 나일론 플레이트 조합으로 에너지 리턴 82.8%를 240g에 구현해서 Speed 5급 반발력을 더 두꺼운 쿠셔닝과 함께 즐길 수 있어요",
@@ -564,12 +568,12 @@
           "forefoot": 28
         },
         "weightScore": 6,
-        "valueScore": 7,
-        "rawCushioning": 5.3,
+        "valueScore": 8,
+        "rawCushioning": 5.25,
         "rawResponsiveness": 8.88,
-        "rawStability": 7.45,
-        "rawDurability": 6.36,
-        "rawValueScore": 7.78,
+        "rawStability": 7.46,
+        "rawDurability": 6.17,
+        "rawValueScore": 8.32,
         "rawLightness": 5.58
       },
       "pros": [
@@ -625,19 +629,19 @@
         "drop": 8,
         "cushioning": 8,
         "responsiveness": 10,
-        "stability": 3,
-        "durability": 6,
+        "stability": 4,
+        "durability": 7,
         "stackHeight": {
           "heel": 39.5,
           "forefoot": 31.5
         },
         "weightScore": 7,
-        "valueScore": 4,
-        "rawCushioning": 8.05,
-        "rawResponsiveness": 10.44,
-        "rawStability": 3.4,
-        "rawDurability": 6.23,
-        "rawValueScore": 4.23,
+        "valueScore": 5,
+        "rawCushioning": 8.09,
+        "rawResponsiveness": 10.43,
+        "rawStability": 3.95,
+        "rawDurability": 7.23,
+        "rawValueScore": 4.87,
         "rawLightness": 7.16
       },
       "pros": [
@@ -693,19 +697,19 @@
         "drop": 8,
         "cushioning": 5,
         "responsiveness": 8,
-        "stability": 3,
-        "durability": 7,
+        "stability": 4,
+        "durability": 8,
         "stackHeight": {
           "heel": 39.5,
           "forefoot": 31.5
         },
         "weightScore": 7,
-        "valueScore": 4,
-        "rawCushioning": 5.27,
+        "valueScore": 5,
+        "rawCushioning": 5.26,
         "rawResponsiveness": 7.52,
-        "rawStability": 3.4,
-        "rawDurability": 7.43,
-        "rawValueScore": 4.56,
+        "rawStability": 4.02,
+        "rawDurability": 7.64,
+        "rawValueScore": 5.12,
         "rawLightness": 6.64
       },
       "pros": [
@@ -771,8 +775,10 @@
         "valueScore": 5,
         "rawCushioning": 5.91,
         "rawResponsiveness": 8.21,
-        "rawValueScore": 4.53,
-        "rawLightness": 6.88
+        "rawValueScore": 4.44,
+        "rawLightness": 6.88,
+        "rawStability": 4.73,
+        "rawDurability": 5.63
       },
       "pros": [
         "Pro 4 대비 에너지 리턴을 82%대로 끌어올려서 같은 카본 플레이트 구조에서 훨씬 강한 반발력을 느낄 수 있어요",

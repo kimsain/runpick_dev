@@ -25,19 +25,19 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 3,
-        "stability": 6,
+        "stability": 7,
         "durability": 8,
         "stackHeight": {
           "heel": 42,
           "forefoot": 34
         },
         "weightScore": 4,
-        "valueScore": 7,
-        "rawCushioning": 7.39,
-        "rawResponsiveness": 2.72,
-        "rawStability": 6.44,
-        "rawDurability": 7.53,
-        "rawValueScore": 6.88,
+        "valueScore": 8,
+        "rawCushioning": 7.35,
+        "rawResponsiveness": 2.71,
+        "rawStability": 6.91,
+        "rawDurability": 7.82,
+        "rawValueScore": 7.69,
         "rawLightness": 4.08
       },
       "pros": [
@@ -93,19 +93,19 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 4,
-        "stability": 5,
+        "stability": 6,
         "durability": 8,
         "stackHeight": {
           "heel": 43,
           "forefoot": 38
         },
         "weightScore": 3,
-        "valueScore": 6,
+        "valueScore": 7,
         "rawCushioning": 8.29,
-        "rawResponsiveness": 4.19,
-        "rawStability": 4.89,
-        "rawDurability": 7.69,
-        "rawValueScore": 6.07,
+        "rawResponsiveness": 4.2,
+        "rawStability": 6.05,
+        "rawDurability": 7.81,
+        "rawValueScore": 6.97,
         "rawLightness": 3.19
       },
       "pros": [
@@ -168,12 +168,12 @@
           "forefoot": 33
         },
         "weightScore": 5,
-        "valueScore": 8,
+        "valueScore": 9,
         "rawCushioning": 6.08,
         "rawResponsiveness": 3.62,
         "rawStability": 7.89,
         "rawDurability": 9.67,
-        "rawValueScore": 8.0,
+        "rawValueScore": 8.63,
         "rawLightness": 4.53
       },
       "pros": [
@@ -227,18 +227,18 @@
         "cushioning": 8,
         "responsiveness": 6,
         "stability": 5,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 44,
           "forefoot": 39
         },
         "weightScore": 5,
         "valueScore": 6,
-        "rawCushioning": 7.88,
+        "rawCushioning": 7.86,
         "rawResponsiveness": 5.63,
-        "rawStability": 4.78,
-        "rawDurability": 7.06,
-        "rawValueScore": 5.54,
+        "rawStability": 5.48,
+        "rawDurability": 6.37,
+        "rawValueScore": 5.95,
         "rawLightness": 4.53
       },
       "pros": [
@@ -295,7 +295,7 @@
         "cushioning": 9,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 38,
           "forefoot": 31
@@ -304,8 +304,10 @@
         "valueScore": 4,
         "rawCushioning": 9.12,
         "rawResponsiveness": 8.11,
-        "rawValueScore": 4.45,
-        "rawLightness": 7.2
+        "rawValueScore": 4.31,
+        "rawLightness": 7.2,
+        "rawStability": 4.61,
+        "rawDurability": 5.33
       },
       "pros": [
         "198g으로 호카 라인업 최경량인데 40.5mm 힐 스택 쿠셔닝을 그대로 유지해서 레이스 후반 발 보호가 탄탄해요",
@@ -358,19 +360,19 @@
         "drop": 7,
         "cushioning": 7,
         "responsiveness": 9,
-        "stability": 5,
-        "durability": 7,
+        "stability": 4,
+        "durability": 6,
         "stackHeight": {
           "heel": 40,
           "forefoot": 33
         },
         "weightScore": 7,
         "valueScore": 5,
-        "rawCushioning": 6.98,
+        "rawCushioning": 6.93,
         "rawResponsiveness": 8.93,
-        "rawStability": 4.61,
-        "rawDurability": 6.56,
-        "rawValueScore": 4.76,
+        "rawStability": 4.49,
+        "rawDurability": 6.47,
+        "rawValueScore": 5.03,
         "rawLightness": 6.72
       },
       "pros": [

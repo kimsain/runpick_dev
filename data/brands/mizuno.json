@@ -32,12 +32,12 @@
           "forefoot": 28
         },
         "weightScore": 5,
-        "valueScore": 8,
-        "rawCushioning": 6.57,
+        "valueScore": 9,
+        "rawCushioning": 6.56,
         "rawResponsiveness": 2.59,
-        "rawStability": 7.07,
-        "rawDurability": 6.93,
-        "rawValueScore": 8.0,
+        "rawStability": 7.05,
+        "rawDurability": 6.95,
+        "rawValueScore": 8.63,
         "rawLightness": 4.77
       },
       "pros": [
@@ -94,18 +94,18 @@
         "cushioning": 9,
         "responsiveness": 1,
         "stability": 9,
-        "durability": 5,
+        "durability": 6,
         "stackHeight": {
           "heel": 44,
           "forefoot": 38
         },
         "weightScore": 4,
-        "valueScore": 7,
-        "rawCushioning": 9.1,
+        "valueScore": 8,
+        "rawCushioning": 9.14,
         "rawResponsiveness": 1,
-        "rawStability": 8.64,
-        "rawDurability": 5.43,
-        "rawValueScore": 7.36,
+        "rawStability": 9.09,
+        "rawDurability": 6.28,
+        "rawValueScore": 8.48,
         "rawLightness": 3.72
       },
       "pros": [
@@ -161,19 +161,19 @@
         "drop": 8,
         "cushioning": 10,
         "responsiveness": 4,
-        "stability": 1,
+        "stability": 3,
         "durability": 9,
         "stackHeight": {
           "heel": 45,
           "forefoot": 37
         },
         "weightScore": 4,
-        "valueScore": 6,
-        "rawCushioning": 10.03,
+        "valueScore": 8,
+        "rawCushioning": 9.98,
         "rawResponsiveness": 4.12,
-        "rawStability": 1,
-        "rawDurability": 9.22,
-        "rawValueScore": 6.57,
+        "rawStability": 2.79,
+        "rawDurability": 9.1,
+        "rawValueScore": 7.67,
         "rawLightness": 4.41
       },
       "pros": [
@@ -229,19 +229,19 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 7,
-        "stability": 1,
-        "durability": 7,
+        "stability": 3,
+        "durability": 8,
         "stackHeight": {
           "heel": 40,
           "forefoot": 34
         },
         "weightScore": 6,
-        "valueScore": 8,
-        "rawCushioning": 8.64,
+        "valueScore": 10,
+        "rawCushioning": 8.62,
         "rawResponsiveness": 6.85,
-        "rawStability": 1.48,
-        "rawDurability": 6.93,
-        "rawValueScore": 8.31,
+        "rawStability": 2.51,
+        "rawDurability": 7.51,
+        "rawValueScore": 9.69,
         "rawLightness": 5.5
       },
       "pros": [
@@ -297,19 +297,19 @@
         "drop": 3,
         "cushioning": 9,
         "responsiveness": 6,
-        "stability": 5,
+        "stability": 6,
         "durability": 5,
         "stackHeight": {
           "heel": 37.5,
           "forefoot": 34.5
         },
         "weightScore": 5,
-        "valueScore": 7,
-        "rawCushioning": 8.72,
+        "valueScore": 8,
+        "rawCushioning": 8.74,
         "rawResponsiveness": 6.06,
-        "rawStability": 4.84,
-        "rawDurability": 5.11,
-        "rawValueScore": 7.11,
+        "rawStability": 5.57,
+        "rawDurability": 5.29,
+        "rawValueScore": 8.02,
         "rawLightness": 5.34
       },
       "pros": [
@@ -366,7 +366,7 @@
         "cushioning": 6,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 34,
           "forefoot": 30.5
@@ -375,8 +375,10 @@
         "valueScore": 5,
         "rawCushioning": 6.47,
         "rawResponsiveness": 8.44,
-        "rawValueScore": 4.74,
-        "rawLightness": 9.59
+        "rawValueScore": 4.43,
+        "rawLightness": 9.59,
+        "rawStability": 4.73,
+        "rawDurability": 5.63
       },
       "pros": [
         "힐·포어풋 에너지 리턴 84%대로 HyperWarp 라인 최고 반발력이라 착지 즉시 추진력으로 전환되는 속도가 달라요",
@@ -436,11 +438,13 @@
           "forefoot": 34.5
         },
         "weightScore": 9,
-        "valueScore": 5,
+        "valueScore": 6,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.2,
-        "rawValueScore": 5.27,
-        "rawLightness": 8.58
+        "rawValueScore": 5.21,
+        "rawLightness": 8.58,
+        "rawStability": 4.73,
+        "rawDurability": 5.63
       },
       "pros": [
         "힐·포어풋 에너지 리턴이 81~82%로 거의 동일해서 착지 패턴이 레이스 후반에 흔들려도 추진력이 일정하게 유지돼요",
@@ -503,8 +507,10 @@
         "valueScore": 6,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.13,
-        "rawValueScore": 6.07,
-        "rawLightness": 7.12
+        "rawValueScore": 6.03,
+        "rawLightness": 7.12,
+        "rawStability": 4.73,
+        "rawDurability": 5.63
       },
       "pros": [
         "외측 솔 플레어 설계로 발목 외측 불안정이 있는 러너에게도 카본 레이서 중 드물게 안정감을 줘요",
@@ -556,19 +562,19 @@
         "drop": 4,
         "cushioning": 10,
         "responsiveness": 6,
-        "stability": 3,
+        "stability": 4,
         "durability": 5,
         "stackHeight": {
           "heel": 40,
           "forefoot": 36
         },
         "weightScore": 6,
-        "valueScore": 5,
-        "rawCushioning": 9.88,
+        "valueScore": 6,
+        "rawCushioning": 9.89,
         "rawResponsiveness": 6.46,
-        "rawStability": 3.18,
-        "rawDurability": 5.38,
-        "rawValueScore": 5.15,
+        "rawStability": 4.24,
+        "rawDurability": 5.42,
+        "rawValueScore": 5.85,
         "rawLightness": 6.39
       },
       "pros": [
