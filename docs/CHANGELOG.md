@@ -4,6 +4,15 @@
 
 ---
 
+## 2026-02-26 — 신발 문구 스타일 통일 (86개 전체 재작성)
+
+- shortDescription/pros/cons: 해요체 → 명사구 간결체 (종결어미 제거)
+- 전 필드: 점수 직접 언급(X/10, X점) → 간접 표현("쿠션이 풍부해서" 등)
+- description: 해요체 유지, 합쇼체 혼용 방지 추가
+- write_copy.py: DRAFT+FEEDBACK+REVISION 프롬프트 동기화, validate_copy() shortDescription 12~26자로 조정
+
+---
+
 ## 2026-02-26 — scripts/ 정리 (3개 삭제, 2개 아카이브)
 
 - `check_text_quality.py` 삭제 — write_copy.py validate_copy()로 역할 대체

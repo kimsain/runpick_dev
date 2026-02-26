@@ -156,7 +156,6 @@ def build_shoe_context(shoe: dict) -> str:
 
 DRAFT_PROMPT_TEMPLATE = """\
 아래 러닝화 데이터를 보고 한국어 문구를 작성해줘.
-문체: "러닝 친구가 말해주는 톤" — ~해요/~어요/~거든/~인데 (친근하고 구체적)
 
 {shoe_context}
 
@@ -167,12 +166,43 @@ pros: {old_pros}
 cons: {old_cons}
 bestFor: {old_best}
 
-[ 작성 규칙 ]
-shortDescription: 12~28자, 한 문장. "누가/어떤 러닝에 좋은지"만. 기술명 나열 금지.
-description: 2~3문장. 결론 → 주행 상황 → 주의점 순서. 대화체.
-pros: 2~4개 배열. 체감 이점 중심, 스펙 수치(g, mm, %) 1개 이상 포함. 마침표 없음.
-cons: 1~3개 배열. "발볼 좁음", "여름 통기성 부족" 같은 물리적 사실만. 변명형("무겁지만 쿠션 좋다") 금지. 마침표 없음.
-bestFor: 2~4개 배열. 러너 타입/거리/페이스 기준으로 구체적.
+문체: 필드별로 다름 — 아래 규칙을 정확히 따를 것.
+
+[ 필드별 규칙 ]
+shortDescription: 12~26자. 명사구로 끝낼 것 — 종결어미(-요, -다, -거든, -인데) 금지. "누가/어떤 러닝에 좋은지"만 압축. 기술명 나열 금지.
+  좋은 예: "이지런 데일리 올라운더", "236g 경량 가성비 올라운더", "힐착지 장거리 맥스쿠션"
+  나쁜 예: "이지런용으로 좋아요", "장거리에 편해요"
+
+description: 2~3문장, 해요체(~해요/~어요/~거든)만. 처음부터 끝까지 해요체 통일 — 합쇼체(~습니다) 혼용 절대 금지. 결론→주행상황→주의점 순서. 평가 점수/등급/별점/퍼센타일 직접 언급 금지 — 대신 아래 간접 표현 사용:
+  쿠셔닝: 높으면 "쿠션이 풍부해서/뛰어나서", 낮으면 "쿠션이 얇아서/부족해서"
+  반응성: 높으면 "반응성이 좋아서/탄성이 강해서", 낮으면 "반응성이 낮아서/반발감이 약해서"
+  안정성: 높으면 "안정감이 탄탄해서", 낮으면 "안정성이 낮아서"
+  내구성: 높으면 "내구성이 좋아서", 낮으면 "마모가 빠른 편이라"
+  가성비: 높으면 "가성비가 뛰어나서/합리적인 가격에", 낮으면 "가격 부담이 있는 편이라"
+
+pros: 2~4개 배열. 명사구로 끝낼 것 — 종결어미(-요, -다) 금지. 체감 이점 중심. 스펙 수치(g, mm, %) 데이터에 있는 경우 1개 이상 포함. 평가 점수/등급/별점 직접 언급 금지. 마침표 없음.
+  좋은 예: "261g 경량으로 데일리 피로 최소", "힐 42mm 스택의 탁월한 충격 흡수", "낮은 드롭으로 자연스러운 착지"
+  나쁜 예: "쿠셔닝 8/10이라 장거리에서 편해요", "가성비 점수 9/10", "반응성 7점으로 탄성 좋음"
+
+cons: 1~3개 배열. 명사구로 끝낼 것 — 종결어미(-요, -다) 금지. 착화감/핏/무게/소재 등 기능적 물리적 단점만 — 가격/디자인 주관적 요소 제외. 평가 점수/등급/별점 직접 언급 금지. 변명형("무겁지만 쿠션 좋다") 금지. 마침표 없음.
+  좋은 예: "발볼 좁음", "낮은 반응성으로 템포런 부적합", "고중량으로 경쾌한 가속감 부족"
+  나쁜 예: "쿠셔닝 4/10이라 충격 흡수 약함", "안정성 3점으로 흔들림"
+
+bestFor: 2~4개 배열. ~러너 형식 유지. 기존 형식 그대로.
+
+[ 공통 금지 — 전 필드 ]
+절대 금지: X/10, X점, X점대, 4.5/5, X/5, 상/중/하 등급, 별 X개, 퍼센타일 — 어떤 형태의 내부 평가 점수/등급 표현도 금지.
+허용: 힐 42mm, 261g, 에너지 리턴 68%, ₩159,000 (실측 스펙 수치는 허용)
+
+[ 출력 전 self-check ]
+1. shortDescription이 종결어미(-요/-다)로 끝나지 않는가?
+2. pros/cons 각 항목이 종결어미(-요/-다)로 끝나지 않는가?
+3. description이 해요체로 통일되어 있는가?
+4. 전체 필드에 X/10, X점, 등급 표현이 없는가?
+5. shortDescription이 12~26자인가?
+위 5개 모두 통과해야 출력.
+
+주의: 입력 데이터의 "cushioning: 7/10 (높음)" 같은 컨텍스트는 내부 참고용 — 출력에 절대 재사용 금지.
 주의: 근거 없는 수치 절대 금지 — 위 데이터에 없는 수치는 쓰지 마.
 
 반드시 아래 JSON 형식으로만 출력해 (마크다운 없이):
@@ -198,11 +228,15 @@ cons: {draft_cons}
 bestFor: {draft_best}
 
 [ 검토 기준 ]
-1. shortDescription이 12~28자인가?
-2. pros에 스펙 수치(g/mm/%)가 1개 이상 있는가?
-3. 점수와 문구가 일치하는가? (cushioning={cush}, resp={resp})
-4. 대화체 톤인가? (~해요/~어요)
-5. cons가 물리적 사실인가? (변명형 금지)
+1. shortDescription이 12~26자인가?
+2. shortDescription이 명사구로 끝나는가? (-요/-다/-거든으로 끝나면 실패)
+3. pros 각 항목이 명사구로 끝나는가? (-요/-다로 끝나면 실패)
+4. cons 각 항목이 명사구로 끝나는가? (-요/-다로 끝나면 실패)
+5. description이 해요체인가? (합쇼체 ~습니다 혼용 시 실패)
+6. pros/cons/description에 X/10, X점, 등급 등 평가 점수 표현이 없는가?
+7. 점수 방향과 문구 방향이 일치하는가? (cushioning={cush}: 높으면 "풍부/뛰어남", 낮으면 "얇음/부족")
+8. pros에 스펙 수치(g/mm/%) 데이터 있는 경우 1개 이상 포함되는가?
+9. cons가 기능적 물리적 사실인가? (가격/디자인 주관 항목은 실패)
 
 반드시 아래 JSON 형식으로만 출력해:
 {{
@@ -228,6 +262,7 @@ REVISION_PROMPT_TEMPLATE = """\
 {issues}
 
 이슈를 반드시 반영해서 개선해줘.
+스타일 리마인더: shortDescription/pros/cons는 명사구로 종결 (종결어미 -요/-다 금지). description은 해요체 통일 (합쇼체 금지). X/10·X점·등급 표현 전 필드 절대 금지.
 반드시 아래 JSON 형식으로만 출력해 (마크다운 없이):
 {{
   "shortDescription": "...",
@@ -324,12 +359,37 @@ def rewrite_shoe_copy(shoe: dict) -> dict | None:
 # Validation & apply
 # ────────────────────────────────────────────────
 
+import re as _re
+_SCORE_PATTERN = _re.compile(r'\d+/10|\d+점대?|/5\b')
+_SENT_ENDING = _re.compile(r'(요|다|거든|인데요|어요|해요|습니다|비다)\s*$')
+
+
 def validate_copy(result: dict) -> list[str]:
     """검증 오류 목록 반환. 빈 리스트면 통과."""
     errors = []
     sd = result.get("shortDescription", "")
-    if not (12 <= len(sd) <= 28):
-        errors.append(f"shortDescription {len(sd)}자 (12-28 필요)")
+    if not (12 <= len(sd) <= 26):
+        errors.append(f"shortDescription {len(sd)}자 (12-26 필요)")
+    if _SENT_ENDING.search(sd):
+        errors.append(f"shortDescription 종결어미 감지 (명사구 필요): {sd}")
+
+    for item in result.get("pros", []):
+        if _SENT_ENDING.search(item.rstrip()):
+            errors.append(f"pros 종결어미 감지: {item[:40]}")
+            break
+    for item in result.get("cons", []):
+        if _SENT_ENDING.search(item.rstrip()):
+            errors.append(f"cons 종결어미 감지: {item[:40]}")
+            break
+
+    for field in ("description", "shortDescription"):
+        if _SCORE_PATTERN.search(result.get(field, "")):
+            errors.append(f"{field}에 점수 표현 감지")
+    for item in result.get("pros", []) + result.get("cons", []):
+        if _SCORE_PATTERN.search(item):
+            errors.append(f"pros/cons에 점수 표현 감지: {item[:40]}")
+            break
+
     if not (2 <= len(result.get("pros", [])) <= 4):
         errors.append(f"pros {len(result.get('pros',[]))}개 (2-4 필요)")
     if not (1 <= len(result.get("cons", [])) <= 3):
