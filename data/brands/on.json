@@ -144,7 +144,7 @@
       "subcategoryId": "stability",
       "price": 199000,
       "priceFormatted": "₩199,000",
-      "description": "안정감이 탄탄하고 내구성이 좋아서 합리적인 가격에 오래 신을 데일리 안정화로 잘 맞아요. 힐 38mm와 전족부 30mm 스택, 8mm 드롭 조합이라 이지런이나 회복주에서 착지부터 밀어내기까지 흐름이 안정적이에요. 다만 311g 무게와 반응성이 낮아서 템포런이나 빠른 가속 주행에서는 경쾌함이 덜해요.",
+      "description": "안정감이 탄탄하고 내구성이 좋아서 합리적인 가격에 오래 신을 데일리 안정화로 잘 맞아요. 힐 38mm와 전족부 30mm 스택, 8mm 드롭 조합이라 이지런이나 회복주에서 착지부터 밀어내기까지 흐름이 안정적이에요. 다만 311g 무게와 반응성이 높지 않아 템포런이나 빠른 가속 주행에서는 경쾌함이 덜해요.",
       "shortDescription": "안정감 중시 데일리 조깅용",
       "imageUrl": "/shoes/cloudrunner-3.webp",
       "specs": {
@@ -175,7 +175,7 @@
       ],
       "cons": [
         "311g 무게로 빠른 케이던스 전개 부담",
-        "반발감이 약해서 템포런 추진력 부족"
+        "반발감이 강하지 않아 템포런 추진력 부족"
       ],
       "bestFor": [
         "안정성 중시 데일리러너",
@@ -309,7 +309,8 @@
       ],
       "technologies": [
         "CloudTec®",
-        "Helion™"
+        "Helion™",
+        "Speedboard®"
       ],
       "releaseYear": 2022,
       "colorways": [
@@ -373,7 +374,8 @@
       ],
       "technologies": [
         "CloudTec®",
-        "Helion™"
+        "Helion™",
+        "Speedboard®"
       ],
       "releaseYear": 2024,
       "colorways": [
@@ -398,7 +400,7 @@
       "subcategoryId": "max-cushion",
       "price": 229000,
       "priceFormatted": "₩229,000",
-      "description": "클라우드몬스터 3는 장거리 이지런과 데일리 조깅에 무난하게 쓰기 좋은 모델이에요. 힐 38mm와 전족부 31mm 스택, 6mm 드롭 조합이라 페이스를 급하게 올리지 않는 주행에서 편하게 굴리기 좋아요. 반응성이 낮아서 템포런에서는 반발감이 약하고 295g 무게로 빠른 가속 구간은 답답할 수 있어요.",
+      "description": "클라우드몬스터 3는 장거리 이지런과 데일리 조깅에 무난하게 쓰기 좋은 모델이에요. 힐 35mm와 전족부 29mm 스택, 6mm 드롭 조합이라 페이스를 급하게 올리지 않는 주행에서 편하게 굴리기 좋아요. 반응성이 낮아서 템포런에서는 반발감이 약하고 295g 무게로 빠른 가속 구간은 답답할 수 있어요.",
       "shortDescription": "장거리 이지런 데일리 쿠션형",
       "imageUrl": "/shoes/cloudmonster-3.webp",
       "specs": {
@@ -422,7 +424,7 @@
         "rawValueScore": 5.36
       },
       "pros": [
-        "힐 38mm·전족부 31mm 스택 기반의 충격 완화",
+        "힐 35mm·전족부 29mm 스택 기반의 충격 완화",
         "6mm 드롭 설계로 안정적인 체중 이동",
         "내구성이 좋아 누적 주행거리 대응"
       ],
@@ -517,6 +519,69 @@
       }
     },
     {
+      "id": "cloudmonster-3-hyper",
+      "brandId": "on",
+      "name": "Cloudmonster 3 Hyper",
+      "nameKo": "클라우드몬스터 3 하이퍼",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 259000,
+      "priceFormatted": "₩259,000",
+      "description": "장거리와 데일리 러닝을 안정적으로 소화하기 좋은 슈퍼 트레이너예요. 쿠션이 풍부해서 충격을 부드럽게 줄여주고 반응성이 좋아서 이지런부터 롱런까지 리듬을 이어가기 편해요. 다만 274g 무게감이 있어서 스피드 인터벌이나 급가속 구간에서는 경쾌함이 덜해요.",
+      "shortDescription": "장거리 이지런 쿠션 트레이너",
+      "imageUrl": "/shoes/cloudmonster-3-hyper.webp",
+      "specs": {
+        "weight": 274,
+        "drop": 6,
+        "cushioning": 7,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 34
+        },
+        "weightScore": 4,
+        "valueScore": 6,
+        "rawCushioning": 6.55,
+        "rawResponsiveness": 5.99,
+        "rawStability": 5.73,
+        "rawDurability": 7.86,
+        "rawLightness": 4.12,
+        "rawValueScore": 5.89
+      },
+      "pros": [
+        "힐 40mm·전족부 34mm 스택의 풍부한 충격 흡수",
+        "6mm 드롭 기반의 안정적인 착지 전환",
+        "내구성이 좋은 미드솔 구조의 긴 사용 수명"
+      ],
+      "cons": [
+        "274g 무게에서 오는 둔한 가속감",
+        "빠른 템포 구간에서 제한적인 반발 스냅감"
+      ],
+      "bestFor": [
+        "장거리 이지런 중심 러너",
+        "쿠션 우선 데일리 트레이닝 러너",
+        "안정적인 착지 전환을 선호하는 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion HF™",
+        "Helion™"
+      ],
+      "releaseYear": 2026,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster-3-hyper",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-m-3mg1006/mens/",
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html"
+      }
+    },
+    {
       "id": "cloudmonster-3-hyper-ls",
       "brandId": "on",
       "name": "LightSpray Cloudmonster 3 Hyper",
@@ -577,7 +642,7 @@
       "confidence": "medium",
       "sources": {
         "dor": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
-        "rtr": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html"
+        "rtr": "https://www.roadtrailrun.com/2026/02/lightspray-cloudmonster-3-hyper-review.html"
       }
     },
     {

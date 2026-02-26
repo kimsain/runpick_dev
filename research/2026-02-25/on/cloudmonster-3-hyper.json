@@ -1,0 +1,44 @@
+{
+  "shoeId": "cloudmonster-3-hyper",
+  "modelName": "CLOUDMONSTER 3 HYPER",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {"source": "RunRepeat", "status": "not_found", "elapsedSec": 0, "url": null, "reason": "shoe_not_released_yet"},
+    {"source": "RTINGS", "status": "not_found", "elapsedSec": 0, "url": null, "reason": "not_reviewed"}
+  ],
+  "sources": [
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Dual-density midsole (firm CloudTec base + Helion HF top) delivers stable neutral cushioning with snappy toe-off at uptempo paces",
+        "Wide platform base and firm bottom layer create a supportive cradle — one of the more stable neutral shoes tested",
+        "Helion HF feels firmer than expected; foam provides reliable responsiveness without feeling ultra-plush",
+        "Excellent durability: minimal outsole abrasion after 40 miles, good traction on dry and wet surfaces",
+        "Best for easy long runs and midweek recovery; not designed for workouts or uptempo efforts"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "PEBA Helion HF top layer over Helion base with CloudTec hollowed areas yields cushioned yet stabilized ride",
+        "Aggressive forefoot rocker creates efficient pacing and smooth transitions during longer efforts",
+        "Durable patched rubber outsole grips well including icy conditions",
+        "Recommended for easy long runs and midweek recovery — not suited for workouts or uptempo",
+        "Weight 247–274g depending on size; heel 39.5mm / forefoot 33.5mm / drop 6mm"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 274,
+    "drop": 6,
+    "heelStack": 40,
+    "forefootStack": 34
+  }
+}
