@@ -4,6 +4,17 @@
 
 ---
 
+## 2026-02-26 — scripts/ 정리 (3개 삭제, 2개 아카이브)
+
+- `check_text_quality.py` 삭제 — write_copy.py validate_copy()로 역할 대체
+- `fix_confidence.py` 삭제 — 13개 신발 핫픽스 이미 JSON 반영 완료
+  ⚠ 주의: add_confidence.py 재실행 시 해당 13개 신발 confidence 값 변경될 수 있음
+- `compute_raw_scores.py` 삭제 — normalize_from_runrepeat.py:93,102 및 normalize_from_rtings.py:84,92에 내장
+- `calibrate_rtings.py` → `scripts/archive/` 이동 — 향후 RTINGS 공식 재보정 시 참고용
+- `analyze_imputation.py` → `scripts/archive/` 이동 — 향후 imputation 재설계 시 참고용
+
+---
+
 ## 2026-02-26 — 86개 신발 한국어 문구 자동 재작성 (scripts/write_copy.py)
 
 - Codex → Gemini 피드백 → Codex 최종 3단계 루프로 전체 86개 신발 문구 재작성

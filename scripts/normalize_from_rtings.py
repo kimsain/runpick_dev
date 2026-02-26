@@ -83,7 +83,7 @@ def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
         cushioning = cushioning_from_rtings(heel_cush, fore_cush)
         raw_cush = raw_cushioning_from_rtings(heel_cush, fore_cush)
 
-    # responsiveness — 카테고리별 페널티 적용 (calibrate_rtings.py 기반)
+    # responsiveness — 카테고리별 페널티 적용
     heel_er = resp.get("heelEnergyReturn")
     fore_er = resp.get("forefootEnergyReturn")
     responsiveness = raw_resp = None
