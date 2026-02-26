@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudboom-max",
+  "modelName": "CLOUDBOOM MAX",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudboom-max",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudboom-max",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 126.1,
+          "forefootShockAbsorption": 111.42,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 61.4,
+          "forefootEnergyReturn": 69.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 5,
+          "midsoleWidthForefoot_mm": null,
+          "midsoleWidthHeel_mm": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.68 mm",
+          "outsoleThickness": "2.7 mm",
+          "toeboxDurability": null,
+          "heelPaddingDurability": null,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 296,
+          "drop_mm": 8.0,
+          "heelStack_mm": 39.2,
+          "forefootStack_mm": 30.0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 126.1 / 111.42 SA",
+        "Energy return heel/forefoot: 61.4% / 69.7%",
+        "Lab specs weight/drop/stack: 296g, 8.0mm, 39.2mm/30.0mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 296,
+    "drop": 8,
+    "heelStack": 39,
+    "forefootStack": 30
+  }
+}

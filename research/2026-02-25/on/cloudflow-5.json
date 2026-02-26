@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudflow-5",
+  "modelName": "CLOUDFLOW 5",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudflow-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudflow-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 122.86521685711,
+          "forefootShockAbsorption": 122.24938875306,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 46.9,
+          "forefootEnergyReturn": 46.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": null,
+          "midsoleWidthHeel_mm": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.31 mm",
+          "outsoleThickness": "2.7 mm",
+          "toeboxDurability": null,
+          "heelPaddingDurability": null,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 278,
+          "drop_mm": 6.0,
+          "heelStack_mm": 32.8,
+          "forefootStack_mm": 28.7,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 122.86521685711 / 122.24938875306 SA",
+        "Energy return heel/forefoot: 46.9% / 46.8%",
+        "Lab specs weight/drop/stack: 278g, 6.0mm, 32.8mm/28.7mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 278,
+    "drop": 6,
+    "heelStack": 33,
+    "forefootStack": 29
+  }
+}

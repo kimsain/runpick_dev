@@ -1,0 +1,808 @@
+{
+  "brand": {
+    "id": "on",
+    "name": "On",
+    "nameKo": "온",
+    "logo": "/brands/on-logo.svg",
+    "color": "#000000",
+    "description": "스위스 엔지니어링 기반의 CloudTec® 쿠셔닝 러닝화 브랜드"
+  },
+  "shoes": [
+    {
+      "id": "cloudsurfer-2",
+      "brandId": "on",
+      "name": "Cloudsurfer 2",
+      "nameKo": "클라우드서퍼 2",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 199000,
+      "priceFormatted": "₩199,000",
+      "description": "클라우드서퍼 2는 데일리 조깅과 이지런에 맞춘 올라운드 러닝화예요. CloudTec Phase™와 Helion™ 조합으로 착지 충격을 과하지 않게 흡수해 장거리에서도 부담을 크게 키우지 않아요. 반응성이 크지 않아 템포런이나 인터벌처럼 페이스를 끌어올리는 훈련에서는 추진감이 아쉽게 느껴져요. 내구성이 좋아 주간 마일리지를 꾸준히 쌓는 용도로 쓰기 좋아요.",
+      "shortDescription": "데일리 조깅 중심의 무난한 입문형 올라운더",
+      "imageUrl": "/shoes/cloudsurfer-2.webp",
+      "specs": {
+        "weight": 261,
+        "drop": 8,
+        "cushioning": 5,
+        "responsiveness": 2,
+        "stability": 5,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 27
+        },
+        "weightScore": 5,
+        "valueScore": 6,
+        "rawCushioning": 4.91,
+        "rawResponsiveness": 2.2,
+        "rawStability": 4.92,
+        "rawDurability": 7.82,
+        "rawLightness": 4.65,
+        "rawValueScore": 5.8
+      },
+      "pros": [
+        "데일리 러닝에 맞는 무난한 충격 흡수 성향",
+        "CloudTec Phase™ 기반의 안정적인 착지 전환",
+        "내구성 중심의 마일리지 운용 적합성"
+      ],
+      "cons": [
+        "템포런·인터벌 구간에서의 낮은 추진감",
+        "페이스 업 상황에서의 제한적인 반응성"
+      ],
+      "bestFor": [
+        "데일리 조깅 중심 러너",
+        "첫 러닝화로 무난한 성향을 찾는 입문 러너",
+        "빠른 기록보다 내구성을 우선하는 마일리지 러너"
+      ],
+      "technologies": [
+        "CloudTec Phase™",
+        "Helion™"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudsurfer-2",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-2"
+      }
+    },
+    {
+      "id": "cloudsurfer-next",
+      "brandId": "on",
+      "name": "Cloudsurfer Next",
+      "nameKo": "클라우드서퍼 넥스트",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 189000,
+      "priceFormatted": "₩189,000",
+      "description": "안정감이 탄탄하고 내구성이 좋아서 매일 신기 좋은 데일리 올라운더예요. 6mm 드롭과 힐 34mm/전족부 29mm 스택 구성이 이지런과 꾸준한 조깅에서 무난한 흐름을 만들어요. 쿠션이 부족해서 장거리 후반에는 피로가 빨리 올라오고, 반응성이 낮아서 템포런에서는 가속감이 둔하게 느껴져요.",
+      "shortDescription": "이지런 데일리 안정주행 러닝화",
+      "imageUrl": "/shoes/cloudsurfer-next.webp",
+      "specs": {
+        "weight": 273,
+        "drop": 6,
+        "cushioning": 4,
+        "responsiveness": 3,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 34,
+          "forefoot": 29
+        },
+        "weightScore": 4,
+        "valueScore": 6,
+        "rawCushioning": 3.67,
+        "rawResponsiveness": 3.06,
+        "rawStability": 6.1,
+        "rawDurability": 6.18,
+        "rawLightness": 4.16,
+        "rawValueScore": 5.86
+      },
+      "pros": [
+        "6mm 드롭 기반의 자연스러운 착지 전환",
+        "힐 34mm/전족부 29mm 스택의 균형 잡힌 지면 대응",
+        "안정감과 내구성 중심의 데일리 훈련 적합성"
+      ],
+      "cons": [
+        "273g 무게로 경쾌한 스피드 전개 제한",
+        "쿠션이 부족한 장거리 후반 충격 완화력",
+        "반응성이 낮은 템포런 가속감"
+      ],
+      "bestFor": [
+        "이지런 위주로 달리는 러너",
+        "안정적인 착지를 선호하는 러너",
+        "스피드 훈련 비중이 낮은 러너"
+      ],
+      "technologies": [
+        "CloudTec Phase™",
+        "Helion™"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudsurfer-next",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-next-3me3002",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-next"
+      }
+    },
+    {
+      "id": "cloudrunner-3",
+      "brandId": "on",
+      "name": "Cloudrunner 3",
+      "nameKo": "클라우드러너 3",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 199000,
+      "priceFormatted": "₩199,000",
+      "description": "안정감이 탄탄하고 내구성이 좋아서 합리적인 가격에 오래 신을 데일리 안정화로 잘 맞아요. 힐 38mm와 전족부 30mm 스택, 8mm 드롭 조합이라 이지런이나 회복주에서 착지부터 밀어내기까지 흐름이 안정적이에요. 다만 311g 무게와 반응성이 낮아서 템포런이나 빠른 가속 주행에서는 경쾌함이 덜해요.",
+      "shortDescription": "안정감 중시 데일리 조깅용",
+      "imageUrl": "/shoes/cloudrunner-3.webp",
+      "specs": {
+        "weight": 311,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 5,
+        "stability": 8,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 30
+        },
+        "weightScore": 3,
+        "valueScore": 9,
+        "rawCushioning": 5.65,
+        "rawResponsiveness": 4.62,
+        "rawStability": 7.89,
+        "rawDurability": 8.26,
+        "rawLightness": 2.62,
+        "rawValueScore": 8.31
+      },
+      "pros": [
+        "힐 38mm, 전족부 30mm 스택 기반의 안정적 충격 흡수",
+        "8mm 드롭으로 힐착지 러닝에 편한 체중 이동",
+        "내구성이 좋아 높은 주간 주행량 대응",
+        "₩199,000 가격의 뛰어난 가성비"
+      ],
+      "cons": [
+        "311g 무게로 빠른 케이던스 전개 부담",
+        "반발감이 약해서 템포런 추진력 부족"
+      ],
+      "bestFor": [
+        "안정성 중시 데일리러너",
+        "이지런 위주 훈련러너",
+        "회복주 중심 장거리러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudrunner-3",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudrunner-3-m-3mg1007/mens/linen-ivory-shoes-3MG10074751",
+      "confidence": "low",
+      "sources": {}
+    },
+    {
+      "id": "cloudflow-5",
+      "brandId": "on",
+      "name": "Cloudflow 5",
+      "nameKo": "클라우드플로우 5",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 219000,
+      "priceFormatted": "₩219,000",
+      "description": "이지런과 데일리 주행에 무난하게 쓰기 좋은 올라운더예요. 힐 33mm/전족부 29mm 스택과 6mm 드롭 조합이라 일정 페이스 조깅이나 회복주에서 안정적으로 굴리기 좋아요. 반응성이 낮아서 템포런처럼 페이스를 끌어올리는 구간에서는 답답하고, 가격 부담이 있는 편이라 용도를 분명히 할 때 만족도가 높아요.",
+      "shortDescription": "이지런 중심 데일리 안정형",
+      "imageUrl": "/shoes/cloudflow-5.webp",
+      "specs": {
+        "weight": 278,
+        "drop": 6,
+        "cushioning": 6,
+        "responsiveness": 1,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 33,
+          "forefoot": 29
+        },
+        "weightScore": 4,
+        "valueScore": 5,
+        "rawCushioning": 6.01,
+        "rawResponsiveness": 1.0,
+        "rawStability": 6.1,
+        "rawDurability": 5.79,
+        "rawLightness": 3.96,
+        "rawValueScore": 4.78
+      },
+      "pros": [
+        "힐 33mm·전족부 29mm 스택 기반의 무난한 충격 흡수",
+        "6mm 드롭에서 이어지는 자연스러운 착지 전환",
+        "데일리 조깅에서 피로 누적을 줄이는 안정적 롤링감"
+      ],
+      "cons": [
+        "반응성이 낮아 템포런에서 둔한 가속감",
+        "278g 무게로 경쾌한 발놀림 제한"
+      ],
+      "bestFor": [
+        "이지런 위주 러너",
+        "회복주 비중 높은 러너",
+        "안정적인 데일리화를 찾는 러너"
+      ],
+      "technologies": [
+        "CloudTec Phase™",
+        "Helion™"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudflow-5",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudflow-5-m-3mf1011/mens/juniper-ice-shoes-3MF10114851",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudflow-5"
+      }
+    },
+    {
+      "id": "cloudmonster",
+      "brandId": "on",
+      "name": "Cloudmonster",
+      "nameKo": "클라우드몬스터",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 209000,
+      "priceFormatted": "₩209,000",
+      "description": "이지런과 회복주에 맞는 데일리 러닝화예요. 힐 35mm/전족부 28mm 스택과 6mm 드롭이라 장거리 조깅에서도 발을 무난하게 굴리기 좋아요. 다만 반응성이 낮아서 템포를 올릴 때 반발감이 약하고 안정성이 낮아서 코너나 노면 변화 구간에서는 흔들림을 느끼기 쉬워요.",
+      "shortDescription": "이지런·회복주 중심 데일리 러너",
+      "imageUrl": "/shoes/cloudmonster.webp",
+      "specs": {
+        "weight": 275,
+        "drop": 6,
+        "cushioning": 5,
+        "responsiveness": 4,
+        "stability": 2,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 35,
+          "forefoot": 28
+        },
+        "weightScore": 4,
+        "valueScore": 4,
+        "rawCushioning": 5.45,
+        "rawResponsiveness": 3.66,
+        "rawStability": 2.05,
+        "rawDurability": 5.0,
+        "rawLightness": 4.08,
+        "rawValueScore": 4.09
+      },
+      "pros": [
+        "힐 35mm·전족부 28mm 스택 기반의 장거리 조깅 충격 완화",
+        "6mm 드롭 기반의 자연스러운 발 구름 전환",
+        "CloudTec®, Helion™ 조합의 부드러운 착지 감각"
+      ],
+      "cons": [
+        "안정성이 낮아 착지 시 좌우 흔들림 체감",
+        "반응성이 낮아서 템포런·인터벌에서 둔한 가속감",
+        "275g 무게로 빠른 케이던스 유지 부담"
+      ],
+      "bestFor": [
+        "이지런 중심 러너",
+        "회복주 비중 높은 러너",
+        "장거리 조깅 위주 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™"
+      ],
+      "releaseYear": 2022,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-61/mens/alloy-silver-shoes-61.97657",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudmonster"
+      }
+    },
+    {
+      "id": "cloudmonster-2",
+      "brandId": "on",
+      "name": "Cloudmonster 2",
+      "nameKo": "클라우드몬스터 2",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 219000,
+      "priceFormatted": "₩219,000",
+      "description": "클라우드몬스터 2는 장거리 이지런을 안정적으로 이어가기 좋은 데일리 맥스쿠션 모델이에요. 힐 38mm와 전족부 31mm 스택, 6mm 드롭 조합이라 천천히 페이스를 유지하는 회복주와 지속주에서 착지 부담을 덜어줘요. 반응성이 낮아서 페이스를 끌어올리는 구간에서는 반발감이 약하게 느껴지고 300g 무게로 발이 무겁게 느껴질 수 있어요.",
+      "shortDescription": "이지런 장거리 데일리 러너용",
+      "imageUrl": "/shoes/cloudmonster-2.webp",
+      "specs": {
+        "weight": 300,
+        "drop": 6,
+        "cushioning": 6,
+        "responsiveness": 4,
+        "stability": 5,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 31
+        },
+        "weightScore": 3,
+        "valueScore": 6,
+        "rawCushioning": 6.18,
+        "rawResponsiveness": 3.76,
+        "rawStability": 4.65,
+        "rawDurability": 7.78,
+        "rawLightness": 3.07,
+        "rawValueScore": 5.98
+      },
+      "pros": [
+        "힐 38mm·전족부 31mm 스택 기반의 충격 완화",
+        "6mm 드롭 설계의 부드러운 착지 전환",
+        "내구성이 좋아 누적 주행량 높은 데일리 운용 적합성"
+      ],
+      "cons": [
+        "300g 무게로 경쾌한 가속감 부족",
+        "반응성이 낮아 템포런에서 페이스 업 한계"
+      ],
+      "bestFor": [
+        "장거리 이지런 러너",
+        "회복주 비중이 높은 러너",
+        "내구성 우선 데일리 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster-2",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-2-m-3me1012/mens/black-glacier-shoes-3ME10120777",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-2"
+      }
+    },
+    {
+      "id": "cloudmonster-3",
+      "brandId": "on",
+      "name": "Cloudmonster 3",
+      "nameKo": "클라우드몬스터 3",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 229000,
+      "priceFormatted": "₩229,000",
+      "description": "클라우드몬스터 3는 장거리 이지런과 데일리 조깅에 무난하게 쓰기 좋은 모델이에요. 힐 38mm와 전족부 31mm 스택, 6mm 드롭 조합이라 페이스를 급하게 올리지 않는 주행에서 편하게 굴리기 좋아요. 반응성이 낮아서 템포런에서는 반발감이 약하고 295g 무게로 빠른 가속 구간은 답답할 수 있어요.",
+      "shortDescription": "장거리 이지런 데일리 쿠션형",
+      "imageUrl": "/shoes/cloudmonster-3.webp",
+      "specs": {
+        "weight": 295,
+        "drop": 6,
+        "cushioning": 6,
+        "responsiveness": 4,
+        "stability": 5,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 31
+        },
+        "weightScore": 3,
+        "valueScore": 6,
+        "rawCushioning": 6.18,
+        "rawResponsiveness": 3.66,
+        "rawStability": 4.55,
+        "rawDurability": 7.14,
+        "rawLightness": 3.27,
+        "rawValueScore": 5.36
+      },
+      "pros": [
+        "힐 38mm·전족부 31mm 스택 기반의 충격 완화",
+        "6mm 드롭 설계로 안정적인 체중 이동",
+        "내구성이 좋아 누적 주행거리 대응"
+      ],
+      "cons": [
+        "295g 무게로 빠른 페이스 전환 부담",
+        "반응성이 낮아 템포런·인터벌 비효율"
+      ],
+      "bestFor": [
+        "장거리 이지런 중심 러너",
+        "데일리 조깅 위주 러너",
+        "기록보다 완주 안정성을 우선하는 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™",
+        "Speedboard®"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster-3",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-m-3mg1005/mens/limelight-seedling-shoes-3MG10054859",
+      "confidence": "low",
+      "sources": {}
+    },
+    {
+      "id": "cloudmonster-hyper",
+      "brandId": "on",
+      "name": "Cloudmonster Hyper",
+      "nameKo": "클라우드몬스터 하이퍼",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 259000,
+      "priceFormatted": "₩259,000",
+      "description": "클라우드몬스터 하이퍼는 장거리 이지런에서 편안함과 안정감을 원하는 러너에게 잘 맞아요. 쿠션이 풍부해서 힐 40mm/전족부 33mm 스택에서도 충격을 부드럽게 줄여주고, 안정감이 탄탄해서 페이스를 길게 유지하기 좋아요. 반응성이 낮아서 템포런이나 빠른 가속 구간에서는 반발감이 약하게 느껴질 수 있고 265g 무게로 경쾌한 발 전환은 제한적이에요.",
+      "shortDescription": "장거리 이지런 안정형 트레이너",
+      "imageUrl": "/shoes/cloudmonster-hyper.webp",
+      "specs": {
+        "weight": 265,
+        "drop": 6,
+        "cushioning": 7,
+        "responsiveness": 4,
+        "stability": 6,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 33
+        },
+        "weightScore": 4,
+        "valueScore": 6,
+        "rawCushioning": 6.55,
+        "rawResponsiveness": 3.5,
+        "rawStability": 5.73,
+        "rawDurability": 8.3,
+        "rawLightness": 4.49,
+        "rawValueScore": 5.28
+      },
+      "pros": [
+        "힐 40mm·전족부 33mm 스택의 풍부한 충격 완화",
+        "6mm 드롭 기반의 자연스러운 전진 롤링",
+        "내구성이 좋아 장거리 누적 주행에 유리한 설계"
+      ],
+      "cons": [
+        "반응성이 낮아 템포런에서 둔한 가속감",
+        "265g 무게로 경쾌한 발 전환 부족"
+      ],
+      "bestFor": [
+        "장거리 이지런 비중이 높은 러너",
+        "안정적인 착지감을 우선하는 러너",
+        "내구성 중심 데일리 훈련 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™",
+        "Speedboard®"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster-hyper",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-hyper-m-3me1013/mens/fade-lime-shoes-3ME10134323",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-hyper"
+      }
+    },
+    {
+      "id": "cloudmonster-3-hyper",
+      "brandId": "on",
+      "name": "Cloudmonster 3 Hyper",
+      "nameKo": "클라우드몬스터 3 하이퍼",
+      "categoryId": "super-trainer",
+      "subcategoryId": "light-plate",
+      "price": 319000,
+      "priceFormatted": "₩319,000",
+      "description": "쿠션이 풍부하고 안정감이 탄탄해서 장거리와 이지런에 특히 잘 맞아요. 205g 경량에 5mm 드롭, 힐 40mm/전족부 33mm 스택 조합이라 꾸준한 페이스 유지와 중후반 충격 완화에 유리해요. 가격 부담이 있는 편이라 레이스 겸용 데일리로 자주 활용할 러너에게 더 적합해요.",
+      "shortDescription": "이지런·롱런 중심 경량 러너",
+      "imageUrl": "/shoes/cloudmonster-3-hyper.webp",
+      "specs": {
+        "weight": 205,
+        "drop": 5,
+        "cushioning": 7,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 33
+        },
+        "weightScore": 7,
+        "valueScore": 5,
+        "rawCushioning": 6.55,
+        "rawResponsiveness": 5.99,
+        "rawStability": 5.73,
+        "rawDurability": 7.86,
+        "rawLightness": 6.92,
+        "rawValueScore": 4.44
+      },
+      "pros": [
+        "205g 경량으로 장거리 후반 피로 누적 완화",
+        "힐 40mm·전족부 33mm 스택 기반의 풍부한 충격 흡수",
+        "5mm 드롭과 라이트 플레이트 조합의 매끄러운 전진 전환",
+        "내구성이 좋아 높은 주간 주행량 대응"
+      ],
+      "cons": [
+        "라이트 플레이트 대비 폭발적 반발감 제한",
+        "높은 스택 구조에서 급격한 코너링 민첩성 제한"
+      ],
+      "bestFor": [
+        "장거리 이지런 비중이 높은 러너",
+        "쿠션 우선 데일리 트레이닝 러너",
+        "가벼운 슈퍼트레이너를 찾는 러너"
+      ],
+      "technologies": [
+        "LightSpray™",
+        "CloudTec®",
+        "Speedboard®"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudmonster-3-hyper",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
+      "confidence": "low",
+      "sources": {}
+    },
+    {
+      "id": "cloudboom-volt",
+      "brandId": "on",
+      "name": "Cloudboom Volt",
+      "nameKo": "클라우드붐 볼트",
+      "categoryId": "racing",
+      "subcategoryId": "light-plate",
+      "price": 259000,
+      "priceFormatted": "₩259,000",
+      "description": "클라우드붐 볼트는 레이스와 템포 주행에 맞춘 경량 플레이트 러닝화예요. 쿠션이 풍부해서 10K부터 하프 거리까지 충격 부담을 줄여 주고, 210g 무게와 5mm 드롭 조합이라 발 전환이 빠르게 이어져요. 다만 반응성이 아주 강한 타입은 아니라 폭발적인 스퍼트 위주의 주행에서는 추진감이 덜하게 느껴질 수 있어요.",
+      "shortDescription": "단거리·하프 레이스 지향 경량러너",
+      "imageUrl": "/shoes/cloudboom-volt.webp",
+      "specs": {
+        "weight": 210,
+        "drop": 5,
+        "cushioning": 7,
+        "responsiveness": 6,
+        "stability": 6,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 32
+        },
+        "weightScore": 7,
+        "valueScore": 6,
+        "rawCushioning": 6.55,
+        "rawResponsiveness": 5.99,
+        "rawStability": 5.73,
+        "rawDurability": 7.86,
+        "rawLightness": 6.72,
+        "rawValueScore": 5.89
+      },
+      "pros": [
+        "210g 경량 설계의 레이스 후반 피로 관리",
+        "힐 37mm·전족부 32mm 스택 기반의 안정적 충격 흡수",
+        "5mm 드롭과 플레이트 조합의 빠른 보폭 전환",
+        "내구성이 좋아 반복 스피드 훈련 대응"
+      ],
+      "cons": [
+        "폭발적 스퍼트 구간에서 반발감 체감 제한",
+        "고속 코너링 상황에서 지지력 여유 부족"
+      ],
+      "bestFor": [
+        "10K·하프 레이스 기록 단축을 노리는 러너",
+        "경량 플레이트화로 템포런을 소화하는 러너",
+        "쿠션감 있는 레이싱화를 선호하는 러너"
+      ],
+      "technologies": [
+        "CloudTec Phase™",
+        "Helion™",
+        "Carbon Speedboard™"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudboom-volt",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-volt-m-3mf3098/mens/black-juniper-shoes-3MF30984766",
+      "confidence": "low",
+      "sources": {}
+    },
+    {
+      "id": "cloudboom-max",
+      "brandId": "on",
+      "name": "Cloudboom Max",
+      "nameKo": "클라우드붐 맥스",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 279000,
+      "priceFormatted": "₩279,000",
+      "description": "풀코스 레이스에서 흔들림을 줄이고 리듬을 지키기 좋은 모델이에요. 안정감이 탄탄해서 후반에 폼이 무너지기 쉬운 구간에서도 일정 페이스로 달릴 때 잘 맞아요. 다만 296g 무게와 두툼하지 않은 쿠션감 때문에 폭발적인 가속이나 매우 가벼운 착화감을 원하면 답답하게 느껴질 수 있어요.",
+      "shortDescription": "안정적 페이스 유지형 풀코스 레이서",
+      "imageUrl": "/shoes/cloudboom-max.webp",
+      "specs": {
+        "weight": 296,
+        "drop": 8,
+        "cushioning": 5,
+        "responsiveness": 6,
+        "stability": 9,
+        "durability": 8,
+        "stackHeight": {
+          "heel": 39,
+          "forefoot": 30
+        },
+        "weightScore": 3,
+        "valueScore": 6,
+        "rawCushioning": 5.25,
+        "rawResponsiveness": 5.99,
+        "rawStability": 8.8,
+        "rawDurability": 7.86,
+        "rawLightness": 3.23,
+        "rawValueScore": 5.82
+      },
+      "pros": [
+        "힐 39mm·전족부 30mm 스택 기반의 장거리 충격 분산",
+        "8mm 드롭에서 이어지는 일정한 페이스 전개",
+        "내구성이 좋아 반복 착화에 유리한 훈련 효율"
+      ],
+      "cons": [
+        "296g 무게로 빠른 케이던스 유지 부담",
+        "폭발적 반발을 기대할 때 아쉬운 추진감"
+      ],
+      "bestFor": [
+        "풀코스 완주 안정성을 중시하는 러너",
+        "레이스 후반 폼 유지를 원하는 러너",
+        "장거리에서 지지력과 내구성을 우선하는 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™ HF",
+        "Speedboard® (glass fiber)"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudboom-max",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-max-m-3mf3031/mens/white-juniper-shoes-3MF30310438",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudboom-max"
+      }
+    },
+    {
+      "id": "cloudboom-strike",
+      "brandId": "on",
+      "name": "Cloudboom Strike",
+      "nameKo": "클라우드붐 스트라이크",
+      "categoryId": "racing",
+      "subcategoryId": "light-plate",
+      "price": 329000,
+      "priceFormatted": "₩329,000",
+      "description": "클라우드붐 스트라이크는 레이스 페이스를 노리는 러너에게 맞는 경량 플레이트 레이싱화예요. 쿠션이 풍부해서 장거리에서도 충격을 줄여 주고, 반응성이 좋아서 페이스를 끌어올리는 구간에 특히 잘 맞아요. 가격 부담이 있는 편이라 데일리 훈련화보다 기록전용으로 운용할 때 효율이 좋아요.",
+      "shortDescription": "레이스 집중 스피드 러너용",
+      "imageUrl": "/shoes/cloudboom-strike.webp",
+      "specs": {
+        "weight": 210,
+        "drop": 4,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 5,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 35
+        },
+        "weightScore": 7,
+        "valueScore": 4,
+        "rawCushioning": 7.36,
+        "rawResponsiveness": 7.91,
+        "rawStability": 4.6,
+        "rawDurability": 5.09,
+        "rawLightness": 6.72,
+        "rawValueScore": 3.98
+      },
+      "pros": [
+        "210g 경량 설계로 후반 피로 누적 완화",
+        "힐 38mm 전족부 35mm 스택 기반의 풍부한 충격 흡수",
+        "4mm 드롭 구조로 빠른 착지 전환"
+      ],
+      "cons": [
+        "안정성 한계로 급코너 구간 흔들림",
+        "반복 주행 시 아웃솔 마모 체감"
+      ],
+      "bestFor": [
+        "하프 풀 레이스 기록 추구 러너",
+        "빠른 템포런 중심 훈련 러너",
+        "경량 플레이트 감각 선호 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™ HF",
+        "Speedboard®"
+      ],
+      "releaseYear": 2024,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudboom-strike",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens/juniper-limelight-shoes-3ME30484834",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudboom-strike"
+      }
+    },
+    {
+      "id": "cloudsurfer-max",
+      "brandId": "on",
+      "name": "Cloudsurfer Max",
+      "nameKo": "클라우드서퍼 맥스",
+      "categoryId": "daily",
+      "subcategoryId": "max-cushion",
+      "price": 219000,
+      "priceFormatted": "₩219,000",
+      "description": "클라우드서퍼 맥스는 장거리 이지런과 회복주에 잘 맞는 데일리 러닝화예요. 쿠션이 풍부해서 힐 착지로 오래 달릴 때 충격을 부드럽게 줄여 주고, 내구성이 좋아서 주간 훈련용으로 꾸준히 돌리기 좋아요. 반응성이 낮아서 템포런이나 인터벌처럼 페이스를 끌어올리는 구간에서는 반발감이 약하게 느껴질 수 있어요.",
+      "shortDescription": "힐착지 장거리 이지런 맥스쿠션",
+      "imageUrl": "/shoes/cloudsurfer-max.webp",
+      "specs": {
+        "weight": 292,
+        "drop": 6,
+        "cushioning": 7,
+        "responsiveness": 1,
+        "stability": 5,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 37,
+          "forefoot": 29
+        },
+        "weightScore": 3,
+        "valueScore": 5,
+        "rawCushioning": 6.87,
+        "rawResponsiveness": 1.0,
+        "rawStability": 4.55,
+        "rawDurability": 7.14,
+        "rawLightness": 3.39,
+        "rawValueScore": 5.0
+      },
+      "pros": [
+        "힐 37mm / 전족부 29mm 스택 기반의 부드러운 충격 완화",
+        "6mm 드롭으로 이어지는 자연스러운 착지 전환",
+        "내구성이 좋아 데일리 장거리 로테이션 운용"
+      ],
+      "cons": [
+        "292g 무게로 빠른 페이스 전개 시 둔한 발걸음",
+        "낮은 반응성으로 템포런/인터벌 대응 한계"
+      ],
+      "bestFor": [
+        "장거리 이지런 비중이 높은 러너",
+        "회복주에서 착지 충격 완화를 원하는 러너",
+        "데일리 트레이너 한 켤레로 꾸준히 달리는 러너"
+      ],
+      "technologies": [
+        "CloudTec®",
+        "Helion™ HF"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "기본 컬러"
+      ],
+      "slug": "cloudsurfer-max",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-max-m-3mf3043/mens/",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-max"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudsurfer-max",
+  "modelName": "CLOUDSURFER MAX",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudsurfer-max",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudsurfer-max",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 141.06361969248,
+          "forefootShockAbsorption": 119.99040076794,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 48.3,
+          "forefootEnergyReturn": 49.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": null,
+          "midsoleWidthHeel_mm": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "1.0 mm",
+          "outsoleThickness": "3.2 mm",
+          "toeboxDurability": null,
+          "heelPaddingDurability": null,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 292,
+          "drop_mm": 6.0,
+          "heelStack_mm": 37.3,
+          "forefootStack_mm": 29.4,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 141.06361969248 / 119.99040076794 SA",
+        "Energy return heel/forefoot: 48.3% / 49.4%",
+        "Lab specs weight/drop/stack: 292g, 6.0mm, 37.3mm/29.4mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 292,
+    "drop": 6,
+    "heelStack": 37,
+    "forefootStack": 29
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudsurfer-2",
+  "modelName": "CLOUDSURFER 2",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudsurfer-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudsurfer-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 136.56724571179,
+          "forefootShockAbsorption": 100.49948242767,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 52.58,
+          "forefootEnergyReturn": 54.07,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 113.6,
+          "midsoleWidthHeel_mm": 88.8,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.63 mm",
+          "outsoleThickness": "3 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 261,
+          "drop_mm": 8.0,
+          "heelStack_mm": 37.5,
+          "forefootStack_mm": 27.1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 136.56724571179 / 100.49948242767 SA",
+        "Energy return heel/forefoot: 52.58% / 54.07%",
+        "Lab specs weight/drop/stack: 261g, 8.0mm, 37.5mm/27.1mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 261,
+    "drop": 8,
+    "heelStack": 38,
+    "forefootStack": 27
+  }
+}

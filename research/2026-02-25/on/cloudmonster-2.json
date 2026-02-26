@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudmonster-2",
+  "modelName": "CLOUDMONSTER 2",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudmonster-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudmonster-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 136.99005452204,
+          "forefootShockAbsorption": 114.83429411359,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 56.48,
+          "forefootEnergyReturn": 60.32,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": null,
+          "midsoleWidthHeel_mm": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.85 mm",
+          "outsoleThickness": "3.3 mm",
+          "toeboxDurability": null,
+          "heelPaddingDurability": null,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 300,
+          "drop_mm": 6.0,
+          "heelStack_mm": 37.9,
+          "forefootStack_mm": 31.3,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 136.99005452204 / 114.83429411359 SA",
+        "Energy return heel/forefoot: 56.48% / 60.32%",
+        "Lab specs weight/drop/stack: 300g, 6.0mm, 37.9mm/31.3mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 300,
+    "drop": 6,
+    "heelStack": 38,
+    "forefootStack": 31
+  }
+}

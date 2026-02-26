@@ -1,0 +1,74 @@
+{
+  "shoeId": "cloudmonster-hyper",
+  "modelName": "CLOUDMONSTER HYPER",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 3.0,
+      "url": "https://runrepeat.com/on-cloudmonster-hyper",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/on-cloudmonster-hyper",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 138.32597900212,
+          "forefootShockAbsorption": 118.15582390056,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 54.43,
+          "forefootEnergyReturn": 60.24,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": null,
+          "midsoleWidthHeel_mm": null,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": "0.62 mm",
+          "outsoleThickness": "2.8 mm",
+          "toeboxDurability": null,
+          "heelPaddingDurability": null,
+          "scale": "mm"
+        },
+        "physical": {
+          "weight_g": 265,
+          "drop_mm": 6.0,
+          "heelStack_mm": 39.7,
+          "forefootStack_mm": 33.0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 138.32597900212 / 118.15582390056 SA",
+        "Energy return heel/forefoot: 54.43% / 60.24%",
+        "Lab specs weight/drop/stack: 265g, 6.0mm, 39.7mm/33.0mm"
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 265,
+    "drop": 6,
+    "heelStack": 40,
+    "forefootStack": 33
+  }
+}
