@@ -409,8 +409,8 @@
         "stability": 5,
         "durability": 7,
         "stackHeight": {
-          "heel": 38,
-          "forefoot": 31
+          "heel": 35,
+          "forefoot": 29
         },
         "weightScore": 3,
         "valueScore": 6,
@@ -447,7 +447,9 @@
       "slug": "cloudmonster-3",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-m-3mg1005/mens/limelight-seedling-shoes-3MG10054859",
       "confidence": "low",
-      "sources": {}
+      "sources": {
+        "fleetfeet": "https://www.fleetfeet.com/blog/on-cloudmonster-3-review-third-times-the-charm"
+      }
     },
     {
       "id": "cloudmonster-hyper",
