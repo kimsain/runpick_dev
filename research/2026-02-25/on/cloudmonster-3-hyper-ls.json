@@ -1,6 +1,6 @@
 {
-  "shoeId": "cloudmonster-3-hyper",
-  "modelName": "CLOUDMONSTER 3 HYPER",
+  "shoeId": "cloudmonster-3-hyper-ls",
+  "modelName": "LIGHTSPRAY CLOUDMONSTER 3 HYPER",
   "researchDate": "2026-02-26",
   "attemptLog": [
     {
@@ -35,17 +35,22 @@
     {
       "source": "RoadTrailRun",
       "priority": 4,
-      "url": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html",
+      "url": "https://www.roadtrailrun.com/2026/02/lightspray-cloudmonster-3-hyper-review.html",
       "type": "qualitative",
       "keyFindings": [
-        "Dual foam setup (PEBA Helion HF top layer over Helion base) delivers plush comfort with reported leg recovery after long efforts",
-        "Balances plush, supportive cushioning with enough energy return to maintain efficiency during longer runs",
-        "Segmented rubber outsole with Cloudtec hollowed areas provides ample flex points, keeping the shoe maneuverable despite its thick midsole",
-        "Grips well in challenging conditions including icy surfaces",
-        "Functions as a workhorse for easy long runs and recovery efforts — not intended for workouts or uptempo efforts"
+        "Dual-density Helion HF foam (springy upper layer over firmer base) creates 'dynamic deep cushion' described as bottomless yet never mushy; recovers well after long efforts",
+        "Smooth turnover at all paces with adequate energy return; one tester wished the base layer were slightly softer for improved rollover",
+        "Surprisingly stable for its extreme stack height (45mm/39mm); dual-density foam and substantial outsole resist lateral motion, though narrow-footed runners may experience hot spots",
+        "Copious outsole rubber coverage across segmented design provides excellent grip in varied conditions including icy surfaces; long-term durability expected to be very good",
+        "Best for long runs, marathon training, and mid-pack racers; designed as a daily trainer with LightSpray upper — not a pure race shoe"
       ]
     }
   ],
   "confidence": "medium",
-  "currentSpecs": {}
+  "currentSpecs": {
+    "weight": 210,
+    "drop": 6,
+    "heelStack": 45,
+    "forefootStack": 39
+  }
 }

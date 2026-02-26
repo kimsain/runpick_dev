@@ -515,27 +515,27 @@
       }
     },
     {
-      "id": "cloudmonster-3-hyper",
+      "id": "cloudmonster-3-hyper-ls",
       "brandId": "on",
-      "name": "Cloudmonster 3 Hyper",
-      "nameKo": "클라우드몬스터 3 하이퍼",
+      "name": "LightSpray Cloudmonster 3 Hyper",
+      "nameKo": "라이트스프레이 클라우드몬스터 3 하이퍼",
       "categoryId": "super-trainer",
       "subcategoryId": "light-plate",
       "price": 319000,
       "priceFormatted": "₩319,000",
-      "description": "쿠션이 풍부하고 안정감이 탄탄해서 장거리와 이지런에 특히 잘 맞아요. 205g 경량에 5mm 드롭, 힐 40mm/전족부 33mm 스택 조합이라 꾸준한 페이스 유지와 중후반 충격 완화에 유리해요. 가격 부담이 있는 편이라 레이스 겸용 데일리로 자주 활용할 러너에게 더 적합해요.",
-      "shortDescription": "이지런·롱런 중심 경량 러너",
-      "imageUrl": "/shoes/cloudmonster-3-hyper.webp",
+      "description": "쿠션이 풍부하고 안정감이 탄탄해서 장거리 이지런을 꾸준히 소화하기 좋아요. 210g 무게와 6mm 드롭, 힐 45mm·전족부 39mm 스택 조합이라 후반에도 충격을 부드럽게 넘기며 페이스를 유지하기 좋아요. 가격 부담이 있는 편이라 레이스 겸용 데일리로 자주 활용할 러너에게 더 잘 맞아요.",
+      "shortDescription": "장거리 이지런 경량 슈퍼트레이너",
+      "imageUrl": "/shoes/cloudmonster-3-hyper-ls.webp",
       "specs": {
-        "weight": 205,
-        "drop": 5,
+        "weight": 210,
+        "drop": 6,
         "cushioning": 7,
         "responsiveness": 6,
         "stability": 6,
         "durability": 8,
         "stackHeight": {
-          "heel": 40,
-          "forefoot": 33
+          "heel": 45,
+          "forefoot": 39
         },
         "weightScore": 7,
         "valueScore": 5,
@@ -543,13 +543,13 @@
         "rawResponsiveness": 5.99,
         "rawStability": 5.73,
         "rawDurability": 7.86,
-        "rawLightness": 6.92,
+        "rawLightness": 6.72,
         "rawValueScore": 4.44
       },
       "pros": [
-        "205g 경량으로 장거리 후반 피로 누적 완화",
-        "힐 40mm·전족부 33mm 스택 기반의 풍부한 충격 흡수",
-        "5mm 드롭과 라이트 플레이트 조합의 매끄러운 전진 전환",
+        "210g 경량 설계로 장거리 후반 피로 누적 완화",
+        "힐 45mm·전족부 39mm 스택의 풍부한 충격 흡수",
+        "6mm 드롭과 라이트 플레이트 기반의 매끄러운 전진 전환",
         "내구성이 좋아 높은 주간 주행량 대응"
       ],
       "cons": [
@@ -570,7 +570,7 @@
       "colorways": [
         "기본 컬러"
       ],
-      "slug": "cloudmonster-3-hyper",
+      "slug": "cloudmonster-3-hyper-ls",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
       "confidence": "medium",
       "sources": {
@@ -765,6 +765,74 @@
       "sources": {
         "runrepeat": "https://runrepeat.com/on-cloudboom-strike",
         "rtr": "https://www.roadtrailrun.com/2025/01/on-cloudboom-strike-review-5-comparisons.html"
+      }
+    },
+    {
+      "id": "cloudboom-strike-ls",
+      "brandId": "on",
+      "name": "LightSpray Cloudboom Strike",
+      "nameKo": "라이트스프레이 클라우드붐 스트라이크",
+      "categoryId": "racing",
+      "subcategoryId": "light-plate",
+      "price": 409000,
+      "priceFormatted": "₩409,000",
+      "description": "레이스에서 기록을 노릴 때 선택하기 좋은 초경량 카본화예요. 170g 무게와 4mm 드롭, 힐 38mm·전족부 35mm 스택 조합에 쿠션이 풍부해서 하프부터 풀코스까지 빠른 페이스 유지에 유리해요. 가격 부담이 있는 편이라 데일리 훈련화보다는 대회와 핵심 스피드 세션 중심으로 운용하는 게 좋아요.",
+      "shortDescription": "하프·풀 기록 단축 레이스러닝",
+      "imageUrl": "/shoes/cloudboom-strike-ls.webp",
+      "specs": {
+        "weight": 170,
+        "drop": 4,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 5,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 35
+        },
+        "weightScore": 8,
+        "valueScore": 3,
+        "rawCushioning": 7.36,
+        "rawResponsiveness": 7.91,
+        "rawStability": 4.6,
+        "rawDurability": 5.09,
+        "rawLightness": 8.34,
+        "rawValueScore": 2.85
+      },
+      "pros": [
+        "170g 초경량 기반의 경쾌한 가속 전개",
+        "힐 38mm·전족부 35mm 스택의 풍부한 충격 흡수",
+        "4mm 드롭에서 이어지는 빠른 발구름 전환",
+        "반응성이 좋아 레이스 페이스 유지 용이"
+      ],
+      "cons": [
+        "안정성 한계로 급코너 구간에서 흔들림 가능성",
+        "내구성 무난 수준으로 고빈도 사용 시 마모 누적",
+        "4mm 낮은 드롭에서 종아리·아킬레스 부담 가능성"
+      ],
+      "bestFor": [
+        "하프·풀코스 PB를 노리는 러너",
+        "레이스데이용 경량 카본화를 찾는 러너",
+        "스피드 세션과 대회화를 분리 운용하는 러너"
+      ],
+      "technologies": [
+        "LightSpray™",
+        "CloudTec®",
+        "Helion™ HF",
+        "Carbon Speedboard™"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "White | Black"
+      ],
+      "slug": "cloudboom-strike-ls",
+      "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-strike-ls-u-3ue3001/unisex/white-black-shoes-3UE30010462",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudboom-strike",
+        "dor": "https://www.doctorsofrunning.com/2024/11/on-cloudboom-strike-review-2024-their.html",
+        "rtr": "https://www.roadtrailrun.com/2025/01/on-cloudboom-strike-review-5-comparisons.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/on-cloudboom-strike-review/"
       }
     },
     {
