@@ -1,0 +1,51 @@
+{
+  "shoeId": "cloudmonster-3-hyper",
+  "modelName": "CLOUDMONSTER 3 HYPER",
+  "researchDate": "2026-02-26",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "no_page"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "not_reviewed"
+    }
+  ],
+  "sources": [
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Improved posterolateral heel bevel creates a much nicer heel transition compared to its predecessor",
+        "Dual-layer midsole (stable Cloudtec base + Helion HF top) maintains a firmer platform overall despite maximum stack height, with noticeable bounce after a brief break-in period",
+        "Foam provides adequate snap for uptempo efforts and progression runs, but performs best at easier paces where rhythm flows naturally",
+        "Wide base and encasing sidewalls resist lateral motion, functioning as a stable neutral option suitable for runners needing guidance",
+        "Designed for daily training, long runs, and modest speedwork — more versatile for recreational runners than racing-focused efforts"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Dual foam setup (PEBA Helion HF top layer over Helion base) delivers plush comfort with reported leg recovery after long efforts",
+        "Balances plush, supportive cushioning with enough energy return to maintain efficiency during longer runs",
+        "Segmented rubber outsole with Cloudtec hollowed areas provides ample flex points, keeping the shoe maneuverable despite its thick midsole",
+        "Grips well in challenging conditions including icy surfaces",
+        "Functions as a workhorse for easy long runs and recovery efforts — not intended for workouts or uptempo efforts"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {}
+}

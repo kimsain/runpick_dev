@@ -62,6 +62,19 @@
         "Energy return heel/forefoot: 72.1% / 73.4%",
         "Lab specs weight/drop/stack: 210g, 4.0mm, 38.1mm/34.9mm"
       ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/on-cloudboom-strike-review-5-comparisons.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Highly bouncy and energetic Helion HF foam delivers exceptional energy return at race pace; feels squishy and less comfortable during easy/recovery runs",
+        "Narrow midfoot platform causes noticeable midfoot wobble and instability at slower speeds; instability lessens during tempo and race-pace efforts",
+        "Highly reactive foam provides impressive propulsive feel at race pace; drop-in midsole maximizes energy return within World Athletics standards",
+        "Upper is narrow in midfoot/arch — difficult to put on; wide-footed runners may need to size up",
+        "Designed specifically for road racing at faster paces; not recommended for easy training runs due to limited outsole grip and instability"
+      ]
     }
   ],
   "confidence": "high",

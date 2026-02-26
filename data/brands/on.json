@@ -66,7 +66,9 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudsurfer-2"
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-2",
+        "dor": "https://www.doctorsofrunning.com/2025/03/on-cloudsurfer-2-review-2025.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudsurfer-2-review/"
       }
     },
     {
@@ -128,7 +130,9 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-next-3me3002",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudsurfer-next"
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-next",
+        "dor": "https://www.doctorsofrunning.com/2025/02/on-cloudsurfer-next-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2024/10/on-cloudsurfer-next-review-does-lot-in.html"
       }
     },
     {
@@ -188,8 +192,11 @@
       ],
       "slug": "cloudrunner-3",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudrunner-3-m-3mg1007/mens/linen-ivory-shoes-3MG10074751",
-      "confidence": "low",
-      "sources": {}
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/01/on-cloudrunner-3-review-2026.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudrunner-3-review/"
+      }
     },
     {
       "id": "cloudflow-5",
@@ -249,7 +256,8 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudflow-5-m-3mf1011/mens/juniper-ice-shoes-3MF10114851",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudflow-5"
+        "runrepeat": "https://runrepeat.com/on-cloudflow-5",
+        "rtr": "https://www.roadtrailrun.com/2025/07/on-cloudflow-5-multi-tester-review.html"
       }
     },
     {
@@ -311,7 +319,10 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-61/mens/alloy-silver-shoes-61.97657",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudmonster"
+        "runrepeat": "https://runrepeat.com/on-cloudmonster",
+        "dor": "https://www.doctorsofrunning.com/2022/04/on-cloudmonster-review-2022-release.html",
+        "rtr": "https://www.roadtrailrun.com/2022/03/on-running-cloudmonster-initial-multi.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-review/"
       }
     },
     {
@@ -372,7 +383,10 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-2-m-3me1012/mens/black-glacier-shoes-3ME10120777",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudmonster-2"
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-2",
+        "dor": "https://www.doctorsofrunning.com/2024/02/on-cloudmonster-2-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/02/on-cloudmonster-2024-multi-tester.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-2-review/"
       }
     },
     {
@@ -494,7 +508,10 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-hyper-m-3me1013/mens/fade-lime-shoes-3ME10134323",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudmonster-hyper"
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-hyper",
+        "dor": "https://www.doctorsofrunning.com/2024/04/on-cloudmonster-hyper-review-2024.html",
+        "rtr": "https://www.roadtrailrun.com/2024/03/on-cloudmonster-hyper-review.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-hyper-review/"
       }
     },
     {
@@ -555,8 +572,11 @@
       ],
       "slug": "cloudmonster-3-hyper",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
-      "confidence": "low",
-      "sources": {}
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html"
+      }
     },
     {
       "id": "cloudboom-volt",
@@ -678,7 +698,10 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-max-m-3mf3031/mens/white-juniper-shoes-3MF30310438",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudboom-max"
+        "runrepeat": "https://runrepeat.com/on-cloudboom-max",
+        "dor": "https://www.doctorsofrunning.com/2025/09/on-cloudboom-max-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/08/on-cloudboom-max-review-versatile-and.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudboom-max-review/"
       }
     },
     {
@@ -740,7 +763,8 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens/juniper-limelight-shoes-3ME30484834",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudboom-strike"
+        "runrepeat": "https://runrepeat.com/on-cloudboom-strike",
+        "rtr": "https://www.roadtrailrun.com/2025/01/on-cloudboom-strike-review-5-comparisons.html"
       }
     },
     {
@@ -801,7 +825,10 @@
       "officialUrl": "https://www.on.com/ko-kr/products/cloudsurfer-max-m-3mf3043/mens/",
       "confidence": "high",
       "sources": {
-        "runrepeat": "https://runrepeat.com/on-cloudsurfer-max"
+        "runrepeat": "https://runrepeat.com/on-cloudsurfer-max",
+        "dor": "https://www.doctorsofrunning.com/2025/07/on-cloudsurfer-max-review-2025.html",
+        "rtr": "https://www.roadtrailrun.com/2025/07/on-running-cloudsurfer-max-multi-tester.html",
+        "bitr": "https://www.believeintherun.com/shoe-reviews/on-cloudsurfer-max-review/"
       }
     }
   ]

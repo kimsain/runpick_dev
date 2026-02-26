@@ -62,6 +62,45 @@
         "Energy return heel/forefoot: 61.4% / 69.7%",
         "Lab specs weight/drop/stack: 296g, 8.0mm, 39.2mm/30.0mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/09/on-cloudboom-max-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Firm, cushioned midsole with dual Helion HF layers and stiffness plate designed for slower paces rather than speed",
+        "Smooth forefoot rocker and heel bevel create rolling sensation, but awkward heel-to-midfoot transition at faster speeds",
+        "Neutral shoe with medial guidance features; rigid platform provides structure but may feel clunky for higher-cadence runners",
+        "Excellent durability with minimal outsole wear even after 50+ miles; not recommended for those needing orthotic accommodation",
+        "Best suited for recovery runs and easy-paced distance running by slower recreational runners; too heavy for tempo or speed work"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/08/on-cloudboom-max-review-versatile-and.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Deep, very reactive cushioning from dual supercritical foams that feel lively and energetic without being overly soft",
+        "Stability is inherent and unobtrusive: broad heel platform and rising midsole sidewalls keep runners tracking straight without intrusive guides",
+        "Versatile across all paces: handles easy recovery runs smoothly while also supporting tempo and faster training",
+        "Durable construction with extensive rubber outsole coverage; deep treading and stable platform suggest very good durability",
+        "Best suited for everyday marathoners and training runners seeking well-integrated stability"
+      ]
+    },
+    {
+      "source": "BelieveInTheRun",
+      "priority": 5,
+      "url": "https://www.believeintherun.com/shoe-reviews/on-cloudboom-max-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Dual-density foam feels soft but muted; lacks inherent rocker or pop, creating a blocky ride that feels overbuilt for race day",
+        "Stable-neutral shoe provides good support for long miles, though stiffness and plate geometry made it difficult to flex naturally",
+        "Too heavy for a dedicated race shoe, making it impractical for marathon race day use",
+        "Upper has fit issues: persistent pinky-toe rubbing causing blisters in one tester",
+        "Best suited as a max-stack super trainer for casual runners wanting comfort over speed; not recommended for actual race day"
+      ]
     }
   ],
   "confidence": "high",

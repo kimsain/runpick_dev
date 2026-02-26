@@ -62,6 +62,45 @@
         "Energy return heel/forefoot: 56.48% / 60.32%",
         "Lab specs weight/drop/stack: 300g, 6.0mm, 37.9mm/31.3mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/02/on-cloudmonster-2-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Slightly firmer but highly cushioned daily trainer; dual-density midsole delivers snappier forefoot response with plush rearfoot",
+        "Neutral with mild guidance: bilateral sidewalls and full-length Speedboard offer gentle midfoot support without traditional stability features",
+        "Handles uptempo efforts and fartlek workouts adequately despite daily-trainer positioning; forefoot rocker enables smooth transitions",
+        "Above-average durability expected; filled-in midfoot groove prevents rock entrapment better than v1",
+        "Best for easy daily miles and long runs; higher-volume upper accommodates foot swelling but requires snug lacing for security"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/02/on-cloudmonster-2024-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Ride feels firm and flat — reviewers describe it as energy-zapping compared to v1, lacking the fun bounce of its predecessor",
+        "Dual-density midsole absorbs impact but increased stack height distances from ground feel rather than enhancing comfort",
+        "More stable than v1 with improved upper overlays, though flat midsole provides minimal arch support",
+        "Limited responsiveness on easy paces; better at tempo/strides when adding force, but lacks smooth rolling transition of earlier versions",
+        "Solid traction/outsole; heavy feel leads reviewers to suggest treating it more as a lifestyle shoe than a dedicated trainer"
+      ]
+    },
+    {
+      "source": "BelieveInTheRun",
+      "priority": 5,
+      "url": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-2-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Tank-tread-like ride sensation — each CloudTec pod ripples underfoot, protective but not bouncy",
+        "Dual-density Helion midsole with Speedboard creates slightly softer ride than earlier On models, but overall feel remains firm",
+        "Wide platform delivers stability despite high stack; however, unstructured upper makes secure lockdown difficult without aggressive lacing",
+        "Not nimble — designed for steady-paced mileage accumulation, not dynamic or faster work",
+        "Sizing runs large, which complicates fit; suits runners preferring firm, cushioned daily trainers"
+      ]
     }
   ],
   "confidence": "high",

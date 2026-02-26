@@ -62,6 +62,19 @@
         "Energy return heel/forefoot: 46.9% / 46.8%",
         "Lab specs weight/drop/stack: 278g, 6.0mm, 32.8mm/28.7mm"
       ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/on-cloudflow-5-multi-tester-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Firm ride with propulsive energy return at faster paces, but rides a little firm at slower paces making it less versatile",
+        "Excellent breathable upper with snug midfoot fit and minimal padding, designed for uptempo work rather than easy runs",
+        "Thin layer of premium Helion HF foam wraps sidewalls but only 7mm underfoot, limiting cushioning depth",
+        "Best suited for marathon-paced tempo work and interval training; too heavy and stiff for casual daily use or recovery runs",
+        "Great traction and durable outsole, but lacks responsiveness at slower speeds despite supercritical foam claims"
+      ]
     }
   ],
   "confidence": "high",

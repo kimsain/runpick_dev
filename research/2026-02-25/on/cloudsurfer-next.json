@@ -62,6 +62,32 @@
         "Energy return heel/forefoot: 55.99% / 56.68%",
         "Lab specs weight/drop/stack: 273g, 6.0mm, 33.8mm/29.3mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/02/on-cloudsurfer-next-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Firm midsole with modest bounce — responsive but not cushioned, suitable for lightweight daily training",
+        "Balanced heel and forefoot rocker provides smooth transitions without propulsive feel",
+        "Narrow midfoot platform with minimal guidance; stable underfoot for neutral runners only",
+        "Durable construction with extensive outsole coverage; minimal wear after 30 miles",
+        "Best for runners preferring firmer, simpler shoes; too stiff for those wanting plush cushioning"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/10/on-cloudsurfer-next-review-does-lot-in.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Firm CloudTec Phase elements compress sequentially, creating a responsive ride without excessive softness",
+        "Stable platform with trail-shoe-quality upper; described as stable platform suitable for varied terrain",
+        "Versatile shoe performing well on roads, light trails, wet grass, and everyday wear",
+        "Durable outsole with firm rubber expected to last well; rugged upper construction suggests longevity",
+        "Best for runners seeking all-around functionality beyond pure road running"
+      ]
     }
   ],
   "confidence": "high",

@@ -62,6 +62,32 @@
         "Energy return heel/forefoot: 52.58% / 54.07%",
         "Lab specs weight/drop/stack: 261g, 8.0mm, 37.5mm/27.1mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/03/on-cloudsurfer-2-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Soft CloudTec Phase midsole balances cushioning and mild responsiveness, but leans plush rather than snappy",
+        "Narrow midfoot and rearfoot create reduced stability; not suited for runners needing additional support",
+        "Aggressive toe spring combined with flexible forefoot can cause metatarsal/forefoot burning pain in sensitive individuals",
+        "Durable outsole with thicker rubber shows minimal wear; above-average longevity expected",
+        "Best for easy recovery runs and comfortable-pace daily training; not responsive enough for faster efforts"
+      ]
+    },
+    {
+      "source": "BelieveInTheRun",
+      "priority": 5,
+      "url": "https://www.believeintherun.com/shoe-reviews/on-cloudsurfer-2-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Smooth rocker geometry but ride becomes monotonous and flat after 3-6 miles; lacks energy return for premium price",
+        "Firmer than v1 — Helion foam no longer bottoms out but reviewers feel On overcorrected toward too-basic for a $160 trainer",
+        "Adequate grip on wet surfaces; upper prevents heel lift but feels roomy in midfoot, creating somewhat loose fit",
+        "Decent for short runs but sluggish and uninspiring on longer efforts; lacks snappiness at this price tier",
+        "Functions better as a casual walking shoe than a dedicated running trainer; suits runners doing only 3-5 mile runs"
+      ]
     }
   ],
   "confidence": "high",

@@ -62,6 +62,44 @@
         "Energy return heel/forefoot: 56.99% / 59.44%",
         "Lab specs weight/drop/stack: 275g, 6.0mm, 34.9mm/28.1mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2022/04/on-cloudmonster-review-2022-release.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "The larger cloud pods deliver extremely cushioned, protective rearfoot cushioning rather than a soft or bouncy sensation",
+        "The significant rocker geometry produces a rolling ride rather than a bouncing one, making it smooth for steady-pace efforts",
+        "Despite its maximalist build, the shoe offers mild flexibility and pop at toe-off, handling strides and slight uptempo efforts without problems",
+        "Stability comes from bilateral sidewalls and forward guidance in the midsole rather than traditional stability features",
+        "Best suited as a long-run and daily training shoe for mileage-focused sessions rather than pace-driven workouts"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2022/03/on-running-cloudmonster-initial-multi.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Delivers a smooth, well-cushioned ride with a lively sense of rebound — softer than previous On models without feeling dense or unstable",
+        "Aggressive rocker combined with Speedboard plate creates dynamic forward propulsion, performing well at varied paces though not optimized as a speed shoe",
+        "The midsole provides stable, substantial cushioning suitable for daily training and long distances, though the minimalist upper offers reduced ankle support at faster efforts",
+        "Lighter runners may struggle to fully compress the CloudTec pods, while heavier runners risk bottoming out the suspension",
+        "Best suited as a recovery and easy-day trainer for runners prioritizing comfort over performance demands"
+      ]
+    },
+    {
+      "source": "BelieveInTheRun",
+      "priority": 5,
+      "url": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Helion foam is the softest On shoe yet — finally delivering genuine cushioned comfort rather than the firm, hard sensation of earlier On models",
+        "Individual cloud pod compression and release creates a bouncy, enjoyable ride with an exaggerated forefoot rocker for snappy toe-off",
+        "Excels as a daily trainer and long-run shoe but struggles at faster efforts — weight becomes noticeable at tempo paces",
+        "Runs narrow with a shallow toebox; most runners should size up, and quality issues including peeling welded tape and insole compression after extended mileage are notable drawbacks"
+      ]
     }
   ],
   "confidence": "high",

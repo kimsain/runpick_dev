@@ -62,6 +62,45 @@
         "Energy return heel/forefoot: 54.43% / 60.24%",
         "Lab specs weight/drop/stack: 265g, 6.0mm, 39.7mm/33.0mm"
       ]
+    },
+    {
+      "source": "DoctorsOfRunning",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/04/on-cloudmonster-hyper-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Dual-density design: firm CloudTec outer layer plus softer Helion HF core creates distinctly different heel vs forefoot feel by strike pattern",
+        "Excellent cushioning compliance with responsive bounce, especially for midfoot strikers; heel strikers experience firmer initial contact",
+        "Technically neutral but mild medial forefoot structure; suitable for runners not requiring significant stability support",
+        "Bounce is easily accessible at easy-to-moderate paces but feels somewhat restrictive at faster speeds",
+        "Outstanding outsole durability; Pebax-based foam may degrade faster than EVA at high-impact zones over time"
+      ]
+    },
+    {
+      "source": "RoadTrailRun",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/03/on-cloudmonster-hyper-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Lively and responsive midsole — not soft or mushy; natural feel despite large Helion HF foam insert",
+        "Large heel stack provides generous softness for long runs while maintaining energetic ride; Helion HF forefoot adds energy return without instability",
+        "Firm heel counter and structured overlays deliver stable support; no wobbling reported even with baggy forefoot fit",
+        "Excellent outsole durability with strategic rubber placement; minimal wear after 60km of testing",
+        "Versatile for recovery through tempo; best for runners wanting responsiveness and control rather than pure plushness"
+      ]
+    },
+    {
+      "source": "BelieveInTheRun",
+      "priority": 5,
+      "url": "https://www.believeintherun.com/shoe-reviews/on-cloudmonster-hyper-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Responsive and steady ride — balanced underfoot feel that is neither soft nor firm; lacks the trampoline effect of competing super trainers",
+        "Partial Pebax midsole feels firm but forgiving; blocky midsole geometry creates clunky transitions rather than smooth cushioning",
+        "Excellent heel/midfoot lockdown from engineered upper, but blocky geometry makes the shoe feel heavier and constrains agility",
+        "Lacks propulsive reaction — shoe never disappears underfoot as premium trainers should; noticeable presence through each stride",
+        "Best for On enthusiasts and heavier runners preferring firmer rides; awkwardly positioned as a $220 premium trainer without true super trainer performance"
+      ]
     }
   ],
   "confidence": "high",
