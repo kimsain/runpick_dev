@@ -81,9 +81,9 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: 'RunRepeat torsionalRigidity + heelCounterStiffness → 전문가 리뷰 키워드 보정',
       formula:
-        'score = clamp(round(torsionalRigidity + heelCounterStiffness), 1, 10)\n# 키워드 보정: stable/supportive → +1  /  unstable/wobbly → -1',
+        '# TR, HCS는 RunRepeat 1–5 스케일 → 1–10 정규화\ntr_norm = 1 + 9 × (TR − 2) / 3\nhcs_norm = 1 + 9 × (HCS − 1) / 4\nbase = 0.4 × tr_norm + 0.6 × hcs_norm  # midsoleWidth 없을 때\n# (midsoleWidth 있을 때: 0.35 × tr_norm + 0.50 × hcs_norm + 0.15 × width_norm)\n# sway 패널티: 높은 SA·스택 → 최대 −2점; ER% 높으면 일부 상쇄\n# subcategory=\'stability\' → base += 1\nscore = clamp(round(base), 1, 10)',
       rationale:
-        '두 항목 /5 스케일 합산 → 0~10 범위 (별도 정규화 불필요). 전문가 리뷰 키워드로 ±1 미세 보정.',
+        'TR(2–5)·HCS(1–5) 각각 1–10 정규화 후 40/60 가중합산. 높은 SA·스택은 sway 패널티를 유발해 점수 감소; ER%가 높은 신발은 일부 상쇄. midsoleWidth 있을 때 35/50/15 가중합산. subcategory=stability +1 보너스. 리뷰 키워드 ±1 보정은 별도 적용.',
     },
   },
   {
@@ -96,7 +96,7 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: 'RunRepeat 아웃솔 두께·마모 측정값 → 전문가 리뷰 키워드 보정',
       formula:
-        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\nscore = clamp(round(log(ratio+1) / log(8.2) × 9 + 1), 1, 10)\n\n# 마모 데이터만 있을 때\ncapped = min(outsoleDurability, 10.0)\nscore = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
+        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\noutsole_raw = log(ratio+1) / log(8.2) × 9 + 1\n# toebox·heel-pad durability(1–5 rating) 있을 때: 70/20/10 블렌딩\nscore = 0.70 × outsole_raw + 0.20 × toebox_norm + 0.10 × heelpad_norm\n# 없을 때: outsole_raw만 사용\nscore = clamp(round(outsole_raw), 1, 10)\n\n# 마모 데이터만 있을 때\ncapped = min(outsoleDurability, 10.0)\nscore = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
       rationale:
         '로그 스케일로 수확체감 반영. ratio ≥ 6.43이면 10점 만점. 두께 데이터 없을 때는 마모량 반비례 선형 공식으로 fallback.',
     },
@@ -110,7 +110,7 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: '실측 무게(g) — 항상 직접 계산',
       formula:
-        'score = clamp(round((351 − weight) / 222 × 10), 1, 10)\nLIGHT = 129g (metaspeed-ray)  /  HEAVY = 351g (vomero-premium)',
+        'score = clamp(round(1 + 9 × (351 − weight) / 222), 1, 10)\nLIGHT = 129g (metaspeed-ray)  /  HEAVY = 351g (vomero-premium)',
       rationale:
         '고정 상수 사용 (신발 추가 시 기존 점수 불변), 선형 반비례. 기준값은 현재 데이터베이스 최경량·최중량 기준.',
     },
@@ -125,7 +125,7 @@ const SPEC_ITEMS: SpecItem[] = [
     modalContent: {
       dataSource: '4개 스펙 합산 ÷ 출시가(KRW) — 항상 직접 계산',
       formula:
-        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 22/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 28/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
+        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 22/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 26.18/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
       rationale:
         'weightScore와 동일한 min/max 고정 앵커 정규화. 앵커 최솟값(1점)=adizero-pro-evo-2, 최댓값(10점)=novablast-5. 신발 추가 시 기존 점수 불변. 경량성 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
     },
