@@ -1,0 +1,10 @@
+{
+  "shoeId": "cloudboom-volt",
+  "researchDate": "2026-02-27",
+  "attemptLog": [
+    {"source": "RunRepeat", "status": "not_found", "reason": "no_page"},
+    {"source": "RTINGS", "status": "not_found", "reason": "not_reviewed"}
+  ],
+  "dataIntegrityNote": "rawCushioning/rawStability values copied from cloudmonster-3-hyper-ls — not independently measured. Confidence: low is correct.",
+  "sources": []
+}
