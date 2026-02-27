@@ -21,28 +21,28 @@
       "shortDescription": "입문 이지페이스 롱런 데일리화",
       "imageUrl": "/shoes/supernova-rise-3.webp",
       "specs": {
-        "weight": 261,
+        "weight": 264,
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 4,
-        "stability": 6,
-        "durability": 7,
+        "stability": 9,
+        "durability": 6,
         "stackHeight": {
-          "heel": 36,
-          "forefoot": 28
+          "heel": 35,
+          "forefoot": 27
         },
         "weightScore": 5,
-        "valueScore": 9,
-        "rawValueScore": 9.04,
-        "rawLightness": 4.65,
-        "rawCushioning": 5.56,
-        "rawResponsiveness": 3.83,
-        "rawStability": 6.29,
-        "rawDurability": 6.95
+        "valueScore": 10,
+        "rawValueScore": 10.47,
+        "rawLightness": 4.53,
+        "rawCushioning": 6.13,
+        "rawResponsiveness": 4.47,
+        "rawStability": 8.54,
+        "rawDurability": 6.47
       },
       "pros": [
-        "261g 무게 기반의 데일리·롱런 피로 누적 완화",
-        "힐 36mm / 전족부 28mm 스택의 안정적인 충격 흡수",
+        "264g 무게 기반의 데일리·롱런 피로 누적 완화",
+        "힐 35mm / 전족부 27mm 스택의 안정적인 충격 흡수",
         "₩159,000 가격의 높은 훈련 가성비"
       ],
       "cons": [
@@ -66,9 +66,10 @@
         "Cloud White/Lucid Blue"
       ],
       "slug": "supernova-rise-3",
-      "officialUrl": "https://www.doctorsofrunning.com/2024/12/adidas-supernova-rise-2-review-2024.html",
-      "confidence": "low",
+      "officialUrl": "https://www.roadtrailrun.com/2025/12/adidas-supernova-rise-3-review.html",
+      "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-supernova-rise-3",
         "rtr": "https://www.roadtrailrun.com/2025/12/adidas-supernova-rise-3-review.html"
       }
     },

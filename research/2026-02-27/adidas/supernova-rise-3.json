@@ -1,0 +1,83 @@
+{
+  "shoeId": "supernova-rise-3",
+  "modelName": "SUPERNOVA RISE 3",
+  "researchDate": "2026-02-27",
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-supernova-rise-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 140.10,
+          "forefootShockAbsorption": 112.18,
+          "scale": "SA"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 58.8,
+          "forefootEnergyReturn": 62.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 5,
+          "scale": "/5"
+        },
+        "durability": {
+          "outsoleDurability": 0.81,
+          "outsoleThickness": 2.1,
+          "scale": "mm"
+        }
+      },
+      "physical": {
+        "weight_g": 264,
+        "heelStack_mm": 35,
+        "forefootStack_mm": 27.2,
+        "drop_mm": 7.8,
+        "flexStiffness_n": 16.6,
+        "midsoleWidthForefoot_mm": 116.4,
+        "midsoleWidthHeel_mm": 93.3,
+        "toeboxDurability": 4,
+        "heelPaddingDurability": 1
+      }
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 3,
+      "url": "https://www.roadtrailrun.com/2025/12/adidas-supernova-rise-3-review.html",
+      "type": "qualitative",
+      "keyQuotes": [
+        "The midsole does feel very soft and bouncy — Dreamstrike+ PEBA foam delivers plush impact protection.",
+        "Forces midfoot strike despite (relatively) high drop — forefoot geometry encourages forward propulsion.",
+        "Completely neutral despite broad platform, not for runners with any stability needs.",
+        "Near complete outsole coverage — the shoe should last for a very long time.",
+        "Fits quite narrow in the midfoot; wide-foot runners may find it uncomfortable.",
+        "Densely protective and very vibration absorbing — more serious/dense ride than springy."
+      ]
+    },
+    {
+      "source": "Road Trail Run (Multi-Tester)",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/01/adidas-supernova-rise-3-multi-tester.html",
+      "type": "qualitative",
+      "keyQuotes": [
+        "Quite rigid at midfoot and lacking flex when new; more rocker would be welcome.",
+        "Extremely plush upper with exceptional foothold despite the low heel counter."
+      ]
+    }
+  ],
+  "computedScores": {
+    "cushioning": 6,
+    "rawCushioning": 6.13,
+    "responsiveness": 4,
+    "rawResponsiveness": 4.47,
+    "stability": 9,
+    "rawStability": 8.54,
+    "durability": 6,
+    "rawDurability": 6.47,
+    "weightScore": 5,
+    "rawLightness": 4.53
+  },
+  "confidence": "high"
+}
