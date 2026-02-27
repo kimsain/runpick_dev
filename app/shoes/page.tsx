@@ -4,7 +4,7 @@ import { getAllShoes, getBrands, getPriceRange, getWeightRange, getDropRange } f
 
 export const metadata = {
   title: '러닝화 탐색 — RunPick',
-  description: '9개 브랜드 러닝화를 필터링하고 비교하세요.',
+  description: '10개 브랜드 러닝화를 필터링하고 비교하세요.',
 }
 
 function GridSkeleton() {
@@ -30,7 +30,7 @@ export default function ShoesPage() {
         러닝화 탐색
       </h1>
       <p className="text-secondary text-sm font-body mb-10">
-        {shoes.length}개 러닝화 · 9개 브랜드
+        {shoes.length}개 러닝화 · 10개 브랜드
       </p>
 
       <Suspense fallback={<GridSkeleton />}>

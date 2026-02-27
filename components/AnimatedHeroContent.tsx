@@ -29,7 +29,7 @@ const HERO_SHOES = [
 ] as const
 
 const STATS = (totalCount: number) => [
-  { value: '9', label: '개 브랜드' },
+  { value: '10', label: '개 브랜드' },
   { value: String(totalCount), label: '개 신발' },
   { value: '실측', label: '데이터 기반' },
 ]

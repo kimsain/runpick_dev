@@ -5,10 +5,10 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   metadataBase: new URL('https://runpick.vercel.app'),
   title: 'RunPick — 러닝화 탐색',
-  description: '9개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
+  description: '10개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
   openGraph: {
     title: 'RunPick — 러닝화 탐색',
-    description: '9개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
+    description: '10개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
     type: 'website',
   },
 }
