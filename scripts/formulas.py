@@ -16,7 +16,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 26.18 / 169_000  # 최고 가성비: novablast-5 (sum=26.18, price=169,000) — 2026-02-25 업데이트
+VALUE_RATIO_MAX = 0.0001656610  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -134,7 +134,7 @@ def value_score(cush, resp, stab, dur, price):
 
     min/max 고정 앵커 선형 정규화:
       VALUE_RATIO_MIN = adizero-pro-evo-2 → 1점
-      VALUE_RATIO_MAX = novablast-5 → 10점
+      VALUE_RATIO_MAX = top-5 경계 (--calibrate 자동 갱신)
     """
     if price <= 0:
         return 1
@@ -354,3 +354,36 @@ def raw_value_score(raw_cush, raw_resp, raw_stab, raw_dur, price):
         return 1.0
     ratio = (raw_cush + raw_resp + raw_stab + raw_dur) / price
     return round(max(1.0, (ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1), 2)
+
+
+def compute_value_ratio_max(shoes_data, top_n=5):
+    """전체 신발의 value ratio를 계산하여 VALUE_RATIO_MAX를 반환.
+
+    score = round((ratio - MIN) / (MAX - MIN) * 9 + 1) 공식 기준:
+      - top_n번째 신발: score ≥ 9.5 → 10점
+      - (top_n+1)번째 신발: score < 9.5 → 9점
+    이 두 조건을 모두 만족하는 MAX 범위의 중간값을 반환.
+    """
+    ratios = []
+    for shoe in shoes_data:
+        specs = shoe.get("specs", {})
+        price = shoe.get("price")
+        cush = specs.get("cushioning")
+        resp = specs.get("responsiveness")
+        stab = specs.get("stability")
+        dur = specs.get("durability")
+        if price and price > 0 and all(v is not None for v in [cush, resp, stab, dur]):
+            ratios.append((cush + resp + stab + dur) / price)
+    ratios.sort(reverse=True)
+    if len(ratios) <= top_n:
+        return ratios[-1] if ratios else VALUE_RATIO_MAX
+    lo = ratios[top_n]      # (top_n+1)번째: 9점이어야 → score < 9.5
+    hi = ratios[top_n - 1]  # top_n번째: 10점이어야 → score ≥ 9.5
+    # score < 9.5: MAX > MIN + (lo - MIN)*9/8.5  (= max_lower)
+    # score ≥ 9.5: MAX ≤ MIN + (hi - MIN)*9/8.5  (= max_upper)
+    max_lower = VALUE_RATIO_MIN + (lo - VALUE_RATIO_MIN) * 9 / 8.5
+    max_upper = VALUE_RATIO_MIN + (hi - VALUE_RATIO_MIN) * 9 / 8.5
+    if max_lower >= max_upper:
+        # 동률 (두 ratio가 동일) → 기존 MAX 유지
+        return VALUE_RATIO_MAX
+    return (max_lower + max_upper) / 2

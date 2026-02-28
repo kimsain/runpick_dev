@@ -34,7 +34,42 @@ def main():
     parser = argparse.ArgumentParser(description="weightScore + valueScore 통합 재계산")
     parser.add_argument("--apply", action="store_true", help="실제로 JSON 업데이트")
     parser.add_argument("--only", choices=["weight", "value"], help="특정 점수만 계산")
+    parser.add_argument("--calibrate", action="store_true",
+                        help="VALUE_RATIO_MAX를 데이터 기반으로 재보정 후 formulas.py에 기록")
     args = parser.parse_args()
+
+    import re as _re
+    import importlib
+    import formulas as fm
+
+    if args.calibrate:
+        all_shoes = []
+        for fpath in sorted(BRANDS_DIR.glob("*.json")):
+            with open(fpath) as f:
+                all_shoes.extend(json.load(f)["shoes"])
+
+        new_max = fm.compute_value_ratio_max(all_shoes, top_n=5)
+        old_max = fm.VALUE_RATIO_MAX
+
+        if abs(new_max - old_max) / old_max > 0.001:
+            formulas_path = Path(__file__).parent / "formulas.py"
+            text = formulas_path.read_text()
+            text = _re.sub(
+                r'^VALUE_RATIO_MAX\s*=\s*[^\n]+',
+                f'VALUE_RATIO_MAX = {new_max:.10f}  '
+                f'# 동적 보정 (top-5 경계, --calibrate 자동 갱신)',
+                text,
+                flags=_re.MULTILINE,
+            )
+            formulas_path.write_text(text)
+            importlib.reload(fm)
+            print(f"✓ VALUE_RATIO_MAX 보정: {old_max:.10f} → {new_max:.10f}")
+        else:
+            print(f"· VALUE_RATIO_MAX 변동 없음 ({old_max:.10f})")
+
+    # Always use fm's current functions (updated after calibrate reload, or original)
+    value_score = fm.value_score
+    raw_value_score = fm.raw_value_score
 
     do_weight = args.only is None or args.only == "weight"
     do_value = args.only is None or args.only == "value"

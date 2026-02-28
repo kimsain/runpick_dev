@@ -33,12 +33,12 @@
           "forefoot": 25.8
         },
         "weightScore": 4,
-        "valueScore": 9,
+        "valueScore": 8,
         "rawCushioning": 5.03,
         "rawResponsiveness": 2.77,
         "rawStability": 7.34,
         "rawDurability": 7.94,
-        "rawValueScore": 8.6,
+        "rawValueScore": 7.97,
         "rawLightness": 3.64
       },
       "pros": [
@@ -103,12 +103,12 @@
           "forefoot": 25.2
         },
         "weightScore": 5,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 4.34,
         "rawResponsiveness": 3.63,
         "rawStability": 7.25,
         "rawDurability": 6.47,
-        "rawValueScore": 6.94,
+        "rawValueScore": 6.45,
         "rawLightness": 5.34
       },
       "pros": [
@@ -171,12 +171,12 @@
           "forefoot": 31.2
         },
         "weightScore": 3,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 6.07,
         "rawResponsiveness": 1.42,
         "rawStability": 7.52,
         "rawDurability": 7.47,
-        "rawValueScore": 7.77,
+        "rawValueScore": 7.2,
         "rawLightness": 2.95
       },
       "pros": [
@@ -239,12 +239,12 @@
           "forefoot": 28.2
         },
         "weightScore": 4,
-        "valueScore": 7,
+        "valueScore": 6,
         "rawCushioning": 5.48,
         "rawResponsiveness": 3.22,
         "rawStability": 6.17,
         "rawDurability": 8.73,
-        "rawValueScore": 6.8,
+        "rawValueScore": 6.32,
         "rawLightness": 3.51
       },
       "pros": [
@@ -308,7 +308,7 @@
         },
         "weightScore": 3,
         "valueScore": 7,
-        "rawValueScore": 7.53,
+        "rawValueScore": 6.99,
         "rawLightness": 3.03,
         "rawCushioning": 7.97,
         "rawResponsiveness": 4.12,
@@ -375,7 +375,7 @@
         "valueScore": 6,
         "rawCushioning": 8.59,
         "rawResponsiveness": 3.87,
-        "rawValueScore": 6.15,
+        "rawValueScore": 5.72,
         "rawLightness": 2.26,
         "rawStability": 6.11,
         "rawDurability": 7.4
@@ -440,10 +440,10 @@
           "forefoot": 27.3
         },
         "weightScore": 3,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 3.65,
         "rawResponsiveness": 3.82,
-        "rawValueScore": 7.51,
+        "rawValueScore": 6.97,
         "rawLightness": 3.03,
         "rawStability": 7.51,
         "rawDurability": 8.12
@@ -513,7 +513,7 @@
         "rawResponsiveness": 5.67,
         "rawStability": 6.53,
         "rawDurability": 7.03,
-        "rawValueScore": 7.88,
+        "rawValueScore": 7.31,
         "rawLightness": 3.84
       },
       "pros": [
@@ -582,7 +582,7 @@
         "rawResponsiveness": 9.23,
         "rawStability": 5.84,
         "rawDurability": 4.51,
-        "rawValueScore": 4.79,
+        "rawValueScore": 4.48,
         "rawLightness": 7.28
       },
       "pros": [
