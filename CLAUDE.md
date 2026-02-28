@@ -1,6 +1,6 @@
 # RunPick Project
 
-러닝화 스펙 비교 사이트. Next.js 14 SSG, 10개 브랜드 ~101개 신발.
+러닝화 스펙 비교 사이트. Next.js 14 SSG, 11개 브랜드 ~102개 신발.
 
 ## Commands
 
@@ -13,7 +13,7 @@ npm run lint     # ESLint
 ## Architecture
 
 ```
-data/brands/*.json   — 신발 데이터 원본 (10개 브랜드)
+data/brands/*.json   — 신발 데이터 원본 (11개 브랜드)
 scripts/             — Python 데이터 파이프라인
 lib/data.ts          — 브랜드 JSON 통합 진입점
 lib/types.ts         — TypeScript 타입 정의
@@ -37,7 +37,6 @@ python3 scripts/normalize_from_runrepeat.py --apply  # Case B: RunRepeat+RTINGS
 python3 scripts/normalize_from_rtings.py --apply     # Case A: RTINGS-only
 python3 scripts/normalize_from_reviews.py --apply    # Case C-리뷰: 정성 리뷰 → proposedScores (사람 검토 필요)
 python3 scripts/impute_scores.py --apply             # Case C-KNN: 측정값 없음
-python3 scripts/recalculate.py --calibrate           # 앵커 변경 시 VALUE_RATIO 갱신 (formulas.py 수정)
 python3 scripts/recalculate.py --apply               # weightScore + valueScore 갱신
 ```
 

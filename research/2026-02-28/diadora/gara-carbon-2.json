@@ -1,0 +1,194 @@
+{
+  "shoeId": "gara-carbon-2",
+  "modelName": "Gara Carbon 2",
+  "researchDate": "2026-02-28",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/diadora/gara-carbon-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 11.2,
+      "url": "https://www.doctorsofrunning.com/2025/01/diadora-gara-carbon-2-review.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 10.5,
+      "url": "https://www.roadtrailrun.com/2025/03/diadora-gara-carbon-2-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 7.4,
+      "url": "https://believeintherun.com/shoe-reviews/diadora-gara-carbon-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/diadora/gara-carbon-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.0,
+          "forefootShockAbsorption": 7.7,
+          "heelFirmnessScore": 6.5,
+          "forefootFirmnessScore": 8.4,
+          "longRunForefoot_score": 7.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.0,
+          "forefootEnergyReturn": 84.1,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 53.9,
+          "at1100N_Nmm": 136.1,
+          "at1900N_Nmm": 317.9,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 109.8,
+          "at1300N_Nmm": 234.1,
+          "at2050N_Nmm": 502.9,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.54,
+          "at1100N_J": 8.63,
+          "at1900N_J": 13.93,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.06,
+          "at1300N_J": 8.27,
+          "at2050N_J": 11.69,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.75,
+          "at20km_J": 7.66,
+          "at30km_J": 7.62,
+          "at40km_J": 7.59,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 208.1,
+          "heelStack_mm": 38.1,
+          "forefootStack_mm": 31.0,
+          "drop_mm": 7.1,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 80.0,
+          "outsoleArchWidth_mm": 74.0,
+          "outsoleForefootWidth_mm": 111.0,
+          "internalLength_mm": 275.0,
+          "internalHeelWidth_mm": 59.0,
+          "internalForefootWidth_mm": 88.0,
+          "heelWidthToStackRatio": 2.1,
+          "forefootWidthToStackRatio": 3.58,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.0%",
+        "Forefoot ER: 84.1%",
+        "Heel Cushioning: 7.0 /10",
+        "Forefoot Cushioning: 7.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/diadora-gara-carbon-2-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Gara Carbon 2 is generally soft and well-cushioned in the heel/midfoot with a comfortable, somewhat plush feel, but it is less aggressive than premium super-soles and can feel clunky at very early contact due to the geometry.",
+        "Responsiveness: It is described as soft and bouncy with moderate energy return, better for tempo to marathon-style efforts than all-out 5k–10k speed; reviewers say the ride is less propulsive and not highly responsive.",
+        "Stability: Overall stability is a weakness for this model, with noted foot translation during turns and an explicit “not stable” verdict, though the toe box/midfoot overlays and lacing can improve lockdown for some runners.",
+        "Durability: Outsole durability is below average for a super shoe, with average traction but a lateral heel piece tearing off around 40 miles and quick midsole wear after the opening in the outsole."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/03/diadora-gara-carbon-2-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The shoe is notably soft and plush—described as soft foam with a very cushioned heel collar and comfortable long-run comfort, but multiple testers call it softer than an ideal racer and better suited for distance/training mileage.",
+        "Responsiveness: It has a bouncy, light, and comfortable ride with good bounce, yet several reviewers say it is not as snappy or “pop”y as other modern carbon-plated race shoes.",
+        "Stability: Fit and lockdown are strong (heel-to-midfoot secure), but testers report fewer support cues for overpronation, a lower-riding heel collar that can affect longer-run stability, and generally rate it as a neutral-stability platform.",
+        "Durability: The review repeatedly highlights a grippy Duratech 5000 outsole and premium materials, but does not provide direct evidence of outsole wear or long-term material longevity from usage testing."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/diadora-gara-carbon-2-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The shoe uses a 40 mm heel / 35 mm forefoot stack (5 mm drop) and is described as “squishy without falling into soft territory,” giving a soft, controlled heel-to-forefoot ride that stays comfortable over distance.",
+        "Responsiveness: The Anima PBX midsole is repeatedly called “bouncy” with “noticeable energy return,” and the ride is praised as pleasant for faster paces, indicating good snappiness and rebound.",
+        "Stability: Fit is reported as strong with a premium Matryx upper that “wraps the foot,” but the review does not directly assess torsional rigidity, heel-counter firmness, or lateral support, so those aspects are not clearly evaluated.",
+        "Durability: The outsole was intentionally detailed for longevity and the Matryx upper is noted for durability, which points to positive outsole wear and material longevity expectations, though no long-term wear mileage evidence is provided."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 208,
+    "drop": 7,
+    "heelStack": 38,
+    "forefootStack": 31
+  },
+  "proposedSpecs": {
+    "weight": 208,
+    "drop": 7,
+    "heelStack": 38,
+    "forefootStack": 31
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": null,
+    "responsiveness": null,
+    "stability": null,
+    "durability": null
+  },
+  "proposedScores": {
+    "cushioning": null,
+    "responsiveness": null,
+    "stability": null,
+    "durability": null
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

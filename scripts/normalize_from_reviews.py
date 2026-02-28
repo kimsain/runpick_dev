@@ -16,11 +16,30 @@ data/brands/*.json 업데이트는 사람이 검토 후 수동으로 진행.
 import argparse
 import json
 import os
+import re
+import sys
 import time
 from pathlib import Path
 
-RESEARCH_DIR = Path(__file__).parent.parent / "research" / "2026-02-18"
+RESEARCH_BASE = Path(__file__).parent.parent / "research"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
+
+
+def resolve_research_dir(date_arg=None):
+    """--date 지정 시 해당 날짜, 미지정 시 YYYY-MM-DD 패턴의 최신 디렉터리."""
+    if date_arg:
+        d = RESEARCH_BASE / date_arg
+        if not d.is_dir():
+            sys.exit(f"ERROR: {d} 디렉터리 없음")
+        return d
+    candidates = sorted(
+        [d for d in RESEARCH_BASE.iterdir() if d.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}$", d.name)],
+        key=lambda d: d.name,
+        reverse=True,
+    )
+    if not candidates:
+        sys.exit("ERROR: research/ 에 YYYY-MM-DD 디렉터리 없음")
+    return candidates[0]
 
 CLAUDE_MODEL = "claude-haiku-4-5-20251001"
 
@@ -120,13 +139,16 @@ def main():
         action="store_true",
         help="Claude API 호출 후 research JSON proposedScores 업데이트 (없으면 dry-run)",
     )
+    parser.add_argument("--date", metavar="YYYY-MM-DD", help="리서치 날짜 (기본: 최신)")
+    parser.add_argument("--shoe-id", metavar="ID", help="특정 신발만 처리")
     args = parser.parse_args()
 
+    research_dir = resolve_research_dir(args.date)
     production = load_production()
 
     case_b_shoes = []
 
-    for brand_dir in sorted(RESEARCH_DIR.iterdir()):
+    for brand_dir in sorted(research_dir.iterdir()):
         if not brand_dir.is_dir():
             continue
         for fpath in sorted(brand_dir.glob("*.json")):
@@ -136,6 +158,8 @@ def main():
                 research = json.load(f)
 
             shoe_id = research["shoeId"]
+            if args.shoe_id and shoe_id != args.shoe_id:
+                continue
             if shoe_id not in production:
                 continue
 
