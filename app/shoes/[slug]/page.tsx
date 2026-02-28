@@ -87,8 +87,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   데이터 수집 중
                 </p>
                 <p className="text-sm font-body text-secondary leading-relaxed">
-                  이 러닝화는 실측 데이터가 아직 확보되지 않아 유사 모델 기반의 추정 점수입니다.
-                  실제 성능과 다를 수 있으니 참고용으로만 활용하세요.
+                  전문가 리뷰와 실측 데이터가 모두 없어, 유사 모델의 측정값으로 채운 점수입니다.
+                  실제 성능과 크게 다를 수 있습니다.
                 </p>
               </div>
             </div>
@@ -103,8 +103,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   리뷰 기반 추정
                 </p>
                 <p className="text-sm font-body text-secondary leading-relaxed">
-                  실측 데이터 없이 전문가 리뷰를 바탕으로 추정한 점수입니다.
-                  실측 데이터가 확보되면 점수가 변경될 수 있습니다.
+                  실측 데이터는 없지만 전문가 리뷰(DOR · RTR · BITR)를 바탕으로 추정한 점수입니다.
+                  실측 후 일부 수치가 변경될 수 있습니다.
                 </p>
               </div>
             </div>
