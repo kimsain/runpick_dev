@@ -1,0 +1,77 @@
+{
+  "brand": {
+    "id": "decathlon",
+    "name": "Decathlon",
+    "nameKo": "데카트론",
+    "logo": "/brands/decathlon-logo.svg",
+    "color": "#3643BA",
+    "description": "킵런(Kiprun) 서브브랜드를 통해 합리적인 가격에 고성능 러닝화를 제공하는 글로벌 스포츠 용품 브랜드",
+    "officialUrl": "https://www.decathlon.co.kr/"
+  },
+  "shoes": [
+    {
+      "id": "kipstorm-tempo",
+      "brandId": "decathlon",
+      "name": "Kipstorm Tempo",
+      "nameKo": "킵스톰 템포",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 159000,
+      "priceFormatted": "₩159,000",
+      "description": "225g으로 가볍게 시작하기 좋은 가성비형 데일리 트레이닝화에요. 쿠션이 풍부해서 착지 충격이 부드럽고 반응성이 좋아 템포 구간 스텝 전환이 편안해요. 다만 안정감이 넉넉하지 않아 급회전이나 빠른 방향 전환 구간에서는 흔들림이 생길 수 있으니 피로가 누적된 구간에서 페이스를 조절해 주세요.",
+      "shortDescription": "225g 가성비 데일리 슈퍼트레이너",
+      "imageUrl": "/images/shoes/kipstorm-tempo.png",
+      "specs": {
+        "weight": 225,
+        "drop": 8,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 5,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 45,
+          "forefoot": 37
+        },
+        "rawCushioning": 6.78,
+        "rawResponsiveness": 7.52,
+        "rawStability": 4.73,
+        "rawDurability": 5.63,
+        "weightScore": 6,
+        "rawLightness": 6.11,
+        "valueScore": 10,
+        "rawValueScore": 10.01
+      },
+      "pros": [
+        "225g 경량으로 장거리 초반 피로 완화",
+        "힐45mm/전족부37mm 스택으로 충격 흡수 체감",
+        "8mm 드롭으로 자연스러운 스텝 전환",
+        "내구성이 좋아 반복 주행에서 안정적 사용"
+      ],
+      "cons": [
+        "측면 흔들림 체감이 생기는 급회전 구간",
+        "빠른 가속 구간에서 안정성 유지만의 부담"
+      ],
+      "bestFor": [
+        "가성비 중시 러너",
+        "데일리 훈련 러너",
+        "템포 전환 연습 러너"
+      ],
+      "technologies": [
+        "고반발 폼",
+        "Fastech+ 미드솔",
+        "폴스 플레이트 기술",
+        "설포 일체형 갑피"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "화이트/오렌지",
+        "블랙/레드",
+        "블루/핑크"
+      ],
+      "slug": "kipstorm-tempo",
+      "officialUrl": "https://www.decathlon.co.kr/p/%EB%82%A8%EC%84%B1-%EB%9F%AC%EB%8B%9D%ED%99%94-%ED%82%B5%EC%8A%A4%ED%86%B0-%ED%85%9C%ED%8F%AC-kiprun-8962853.html",
+      "confidence": "low",
+      "sources": {}
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import type { Shoe, Brand, BrandData } from './types'
 import adidasData from '../data/brands/adidas.json'
 import asicsData from '../data/brands/asics.json'
 import brooksData from '../data/brands/brooks.json'
+import decathlonData from '../data/brands/decathlon.json'
 import diadoraData from '../data/brands/diadora.json'
 import hokaData from '../data/brands/hoka.json'
 import mizunoData from '../data/brands/mizuno.json'
@@ -16,6 +17,7 @@ const allBrandData: BrandData[] = [
   adidasData as BrandData,
   asicsData as BrandData,
   brooksData as BrandData,
+  decathlonData as BrandData,
   diadoraData as BrandData,
   hokaData as BrandData,
   mizunoData as BrandData,
