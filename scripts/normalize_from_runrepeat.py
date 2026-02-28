@@ -122,6 +122,7 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
             stack_heel=stack_heel, stack_fore=stack_fore,
             subcategory=subcategoryId,
             midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
+            findings_text=findings_text,
         )
         raw_stab = raw_stability_from_runrepeat(
             tr, hcs,
@@ -130,6 +131,7 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
             stack_heel=stack_heel, stack_fore=stack_fore,
             subcategory=subcategoryId,
             midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
+            findings_text=findings_text,
         )
     else:
         old_stab = existing_specs.get("stability", 6)

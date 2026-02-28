@@ -16,7 +16,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 0.0001656610  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
+VALUE_RATIO_MAX = 0.0001631237  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -71,6 +71,14 @@ STAB_MW_FORE_HI  = 124   # forefoot midsoleWidth 최댓값 mm (hurricane-25 기�
 STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계수
 # SCORE_VERSION = "2026-02-25-durability-stability-v2"
 
+# 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
+# intermediate rawStability를 1-10 스케일로 rescale
+# 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
+STAB_RAW_MIN = 2.4334375000  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.0315625000  # top-5 경계 (--calibrate 자동 갱신)
+
+STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
+
 
 # RTINGS 반응성 카테고리 페널티 (2026-02-23 재보정 — RESPONSIVENESS_DEBATE_2026-02-23.md)
 # RESP_LO=40 기준 RunRepeat vs RTINGS 61개 신발 비교 후 subcategory별 avg bias 재계산
@@ -88,10 +96,15 @@ RESP_PENALTY_BY_SUBCAT: dict = {
 
 # ─── 정규식 ─────────────────────────────────────────────────────────
 
-STABILITY_POS_RE = re.compile(r"\b(?:stable|supportive)\b", re.IGNORECASE)
+STABILITY_POS_RE = re.compile(
+    r"\b(?:stable|supportive|locked[-\s]in|secure(?:\s+fit)?"
+    r"|guide[-\s]rail|medial[-\s]post|wide[-\s](?:base|platform))\b",
+    re.IGNORECASE,
+)
 STABILITY_NEG_RE = re.compile(
-    r"\b(?:unstable|wobbly|sloppy|less[-\s]+stable"
-    r"|not(?:\s+\w+){0,2}\s+stable|lack(?:s|ing)?\s+stability)\b",
+    r"\b(?:unstable|wobbly|sloppy|tippy|less[-\s]+stable"
+    r"|not(?:\s+\w+){0,2}\s+stable|lack(?:s|ing)?\s+stability"
+    r"|narrow[-\s](?:base|platform)|rolls?\s+(?:in|out)ward)\b",
     re.IGNORECASE,
 )
 DURABILITY_POS_RE = re.compile(
@@ -172,22 +185,18 @@ def responsiveness_from_runrepeat(heel_er, forefoot_er):
     return clamp(round((avg_er - RESP_LO) / RESP_RANGE_INT * 10), 1, 10)
 
 
-def stability_from_runrepeat(
-    torsional_rigidity, heel_counter_stiffness,
+def _stab_intermediate(
+    tr, hcs,
     heel_sa=None, fore_sa=None,
     heel_er=None, fore_er=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
     midsole_width_heel=None, midsole_width_fore=None,
+    findings_text=None,
 ):
-    """RunRepeat 안정성 → 정수 점수 (1-10).
-
-    midsoleWidth 있으면: TR 35%/HCS 50%/Width 15%, sway 패널티 STAB_SWAY_SCALE 배.
-    없으면: 기존 TR 40%/HCS 60%, sway 패널티 전체 적용 (하위 호환).
-    subcategoryId="stability" 신발에 +1 보너스.
-    """
-    tr_norm  = 1 + 9 * (torsional_rigidity      - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
-    hcs_norm = 1 + 9 * (heel_counter_stiffness  - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
+    """구조+sway+키워드 → intermediate 안정성 (rescale 전)."""
+    tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
+    hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
 
     if midsole_width_heel is not None:
         mw_h = 1 + 9 * (midsole_width_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
@@ -217,7 +226,36 @@ def stability_from_runrepeat(
     if subcategory == "stability":
         base += 1
 
-    return clamp(round(base), 1, 10)
+    if findings_text:
+        kw_delta = keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE)
+        base += kw_delta * STAB_KEYWORD_MODIFIER
+
+    return base
+
+
+def stability_from_runrepeat(
+    torsional_rigidity, heel_counter_stiffness,
+    heel_sa=None, fore_sa=None,
+    heel_er=None, fore_er=None,
+    stack_heel=None, stack_fore=None,
+    subcategory=None,
+    midsole_width_heel=None, midsole_width_fore=None,
+    findings_text=None,
+):
+    """RunRepeat 안정성 → 정수 점수 (1-10), STAB_RAW_MIN/MAX 보정 적용.
+
+    midsoleWidth 있으면: TR 35%/HCS 50%/Width 15%, sway 패널티 STAB_SWAY_SCALE 배.
+    없으면: 기존 TR 40%/HCS 60%, sway 패널티 전체 적용 (하위 호환).
+    subcategoryId="stability" 신발에 +1 보너스.
+    """
+    intermediate = _stab_intermediate(
+        torsional_rigidity, heel_counter_stiffness,
+        heel_sa, fore_sa, heel_er, fore_er,
+        stack_heel, stack_fore, subcategory,
+        midsole_width_heel, midsole_width_fore, findings_text,
+    )
+    rescaled = 1 + 9 * (intermediate - STAB_RAW_MIN) / (STAB_RAW_MAX - STAB_RAW_MIN)
+    return clamp(round(rescaled), 1, 10)
 
 
 def _dur_intermediate(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
@@ -307,39 +345,16 @@ def raw_stability_from_runrepeat(
     stack_heel=None, stack_fore=None,
     subcategory=None,
     midsole_width_heel=None, midsole_width_fore=None,
+    findings_text=None,
 ):
     """stability_from_runrepeat과 동일 로직, round 없이 float 반환 (소수점 2자리)."""
-    tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
-    hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
-
-    if midsole_width_heel is not None:
-        mw_h = 1 + 9 * (midsole_width_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
-        mw_f = (1 + 9 * (midsole_width_fore - STAB_MW_FORE_LO) / (STAB_MW_FORE_HI - STAB_MW_FORE_LO)
-                if midsole_width_fore is not None else mw_h)
-        mw_norm = clamp(0.4 * mw_h + 0.6 * mw_f, 1, 10)
-        base = 0.35 * tr_norm + 0.50 * hcs_norm + 0.15 * mw_norm
-        sway_scale = STAB_SWAY_SCALE
-    else:
-        base = 0.4 * tr_norm + 0.6 * hcs_norm
-        sway_scale = 1.0
-
-    if heel_sa is not None and stack_heel is not None:
-        soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
-        soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
-        soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
-        stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
-        stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
-        stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
-        sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
-        if heel_er is not None:
-            avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
-            er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
-            sway = max(0, sway - er_offset)
-        base -= sway * sway_scale
-
-    if subcategory == "stability":
-        base += 1
-    return round(max(1.0, base), 2)
+    intermediate = _stab_intermediate(
+        tr, hcs, heel_sa, fore_sa, heel_er, fore_er,
+        stack_heel, stack_fore, subcategory,
+        midsole_width_heel, midsole_width_fore, findings_text,
+    )
+    rescaled = 1 + 9 * (intermediate - STAB_RAW_MIN) / (STAB_RAW_MAX - STAB_RAW_MIN)
+    return round(max(1.0, rescaled), 2)
 
 
 def raw_durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
@@ -433,6 +448,42 @@ def compute_dur_anchors(shoes_data, top_n=5):
 
     # score=1.5 경계 = tb_mid, score=9.5 경계 = tt_mid
     # → RANGE = 9/8 * (tt_mid - tb_mid)
+    dur_range = 9.0 / 8.0 * (tt_mid - tb_mid)
+    new_min = tb_mid - 0.5 * dur_range / 9.0
+    new_max = new_min + dur_range
+
+    return round(new_min, 10), round(new_max, 10)
+
+
+def compute_stab_anchors(shoes_data, top_n=5):
+    """전체 신발의 rawStability로 STAB_RAW_MIN/MAX 반환.
+
+    compute_dur_anchors()와 동일 알고리즘:
+    - un-rescale → intermediate 복원
+    - rank-(top_n)/(top_n+1) 경계 midpoint
+    - RANGE = 9/8 * (top_mid - bottom_mid)
+    """
+    raws = []
+    for shoe in shoes_data:
+        rs = shoe.get("specs", {}).get("rawStability")
+        if rs is not None:
+            raws.append(rs)
+    raws.sort()
+
+    if len(raws) <= 2 * top_n:
+        return STAB_RAW_MIN, STAB_RAW_MAX
+
+    cur_range = STAB_RAW_MAX - STAB_RAW_MIN
+    if abs(cur_range - 9.0) > 0.01:  # 이미 보정된 상태
+        intermediates = sorted([
+            STAB_RAW_MIN + (r - 1) * cur_range / 9 for r in raws
+        ])
+    else:
+        intermediates = raws  # 초기 상태 (identity)
+
+    tb_mid = (intermediates[top_n - 1] + intermediates[top_n]) / 2
+    tt_mid = (intermediates[-(top_n + 1)] + intermediates[-top_n]) / 2
+
     dur_range = 9.0 / 8.0 * (tt_mid - tb_mid)
     new_min = tb_mid - 0.5 * dur_range / 9.0
     new_max = new_min + dur_range

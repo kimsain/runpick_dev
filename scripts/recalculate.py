@@ -17,7 +17,7 @@ import argparse
 import json
 from pathlib import Path
 
-from formulas import clamp, weight_score, raw_lightness, value_score, raw_value_score, compute_dur_anchors
+from formulas import clamp, weight_score, raw_lightness, value_score, raw_value_score, compute_dur_anchors, compute_stab_anchors
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -35,7 +35,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description="weightScore + valueScore 통합 재계산")
     parser.add_argument("--apply", action="store_true", help="실제로 JSON 업데이트")
-    parser.add_argument("--only", choices=["weight", "value", "durability"], help="특정 점수만 계산")
+    parser.add_argument("--only", choices=["weight", "value", "durability", "stability"], help="특정 점수만 계산")
     parser.add_argument("--calibrate", action="store_true",
                         help="VALUE_RATIO_MAX를 데이터 기반으로 재보정 후 formulas.py에 기록")
     args = parser.parse_args()
@@ -43,6 +43,14 @@ def main():
     import re as _re
     import importlib
     import formulas as fm
+
+    # 앵커 변경 추적 (main loop에서 rawStability/rawDurability 재변환에 사용)
+    _stab_changed = False
+    _old_stab_min = fm.STAB_RAW_MIN
+    _old_stab_max = fm.STAB_RAW_MAX
+    _dur_changed = False
+    _old_dur_min = fm.DUR_RAW_MIN
+    _old_dur_max = fm.DUR_RAW_MAX
 
     if args.calibrate:
         all_shoes = []
@@ -91,8 +99,38 @@ def main():
             importlib.reload(fm)
             print(f"✓ DUR_RAW_MIN 보정: {old_dur_min:.10f} → {new_dur_min:.10f}")
             print(f"✓ DUR_RAW_MAX 보정: {old_dur_max:.10f} → {new_dur_max:.10f}")
+            _dur_changed = True
+            _old_dur_min = old_dur_min
+            _old_dur_max = old_dur_max
         else:
             print(f"· DUR_RAW anchors 변동 없음")
+
+        # 안정성 앵커 보정
+        new_stab_min, new_stab_max = fm.compute_stab_anchors(all_shoes, top_n=5)
+        old_stab_min, old_stab_max = fm.STAB_RAW_MIN, fm.STAB_RAW_MAX
+
+        stab_min_pct = abs(new_stab_min - old_stab_min) / max(abs(old_stab_min), 1e-9)
+        stab_max_pct = abs(new_stab_max - old_stab_max) / max(abs(old_stab_max), 1e-9)
+
+        if stab_min_pct > 0.001 or stab_max_pct > 0.001:
+            text = formulas_path.read_text()
+            text = _re.sub(
+                r'^STAB_RAW_MIN\s*=\s*[^\n]+',
+                f'STAB_RAW_MIN = {new_stab_min:.10f}  # bottom-5 경계 (--calibrate 자동 갱신)',
+                text, flags=_re.MULTILINE)
+            text = _re.sub(
+                r'^STAB_RAW_MAX\s*=\s*[^\n]+',
+                f'STAB_RAW_MAX = {new_stab_max:.10f}  # top-5 경계 (--calibrate 자동 갱신)',
+                text, flags=_re.MULTILINE)
+            formulas_path.write_text(text)
+            importlib.reload(fm)
+            print(f"✓ STAB_RAW_MIN 보정: {old_stab_min:.10f} → {new_stab_min:.10f}")
+            print(f"✓ STAB_RAW_MAX 보정: {old_stab_max:.10f} → {new_stab_max:.10f}")
+            _stab_changed = True
+            _old_stab_min = old_stab_min
+            _old_stab_max = old_stab_max
+        else:
+            print(f"· STAB_RAW anchors 변동 없음")
 
     # Always use fm's current functions (updated after calibrate reload, or original)
     value_score = fm.value_score
@@ -101,6 +139,7 @@ def main():
     do_weight = args.only is None or args.only == "weight"
     do_value = args.only is None or args.only == "value"
     do_durability = args.only is None or args.only == "durability"
+    do_stability = args.only is None or args.only == "stability"
 
     rows = []
 
@@ -131,23 +170,57 @@ def main():
                         specs["rawLightness"] = new_raw
                         file_changed = True
 
-            # durabilityScore (rescale via DUR_RAW_MIN/MAX)
+            # stabilityScore
+            # rawStability는 normalize가 현재 앵커로 calibrated 값을 저장.
+            # --calibrate 시 앵커가 변경된 경우에만 rawStability를 재변환.
+            # 일반 --apply에서는 rawStability를 건드리지 않고 정수만 갱신.
+            if do_stability:
+                raw_stab = specs.get("rawStability")
+                if raw_stab is not None:
+                    if _stab_changed:
+                        # 앵커 변경: old calibrated → intermediate → new calibrated
+                        _old_stab_range = _old_stab_max - _old_stab_min
+                        intermediate = _old_stab_min + (raw_stab - 1) * _old_stab_range / 9
+                        new_raw_stab = round(max(1.0, 1 + 9 * (intermediate - fm.STAB_RAW_MIN) / (fm.STAB_RAW_MAX - fm.STAB_RAW_MIN)), 2)
+                        new_stab = clamp(round(new_raw_stab), 1, 10)
+                        if args.apply and specs.get("rawStability") != new_raw_stab:
+                            specs["rawStability"] = new_raw_stab
+                            file_changed = True
+                    else:
+                        # 앵커 불변: rawStability는 이미 calibrated → 정수만 갱신
+                        new_raw_stab = None
+                        new_stab = clamp(round(raw_stab), 1, 10)
+                    old_stab = specs.get("stability")
+                    row["old_stab"] = old_stab
+                    row["new_stab"] = new_stab
+                    if args.apply and old_stab != new_stab:
+                        specs["stability"] = new_stab
+                        file_changed = True
+
+            # durabilityScore
+            # rawDurability는 normalize가 현재 앵커로 calibrated 값을 저장.
+            # --calibrate 시 앵커가 변경된 경우에만 rawDurability를 재변환.
+            # 일반 --apply에서는 rawDurability를 건드리지 않고 정수만 갱신.
             if do_durability:
                 raw_dur = specs.get("rawDurability")
                 if raw_dur is not None:
-                    cur_range = fm.DUR_RAW_MAX - fm.DUR_RAW_MIN
-                    rescaled = 1 + 9 * (raw_dur - fm.DUR_RAW_MIN) / cur_range
-                    new_dur = clamp(round(rescaled), 1, 10)
-                    new_raw_dur = round(max(1.0, rescaled), 2)
+                    if _dur_changed:
+                        # 앵커 변경: old calibrated → intermediate → new calibrated
+                        _old_dur_range = _old_dur_max - _old_dur_min
+                        intermediate = _old_dur_min + (raw_dur - 1) * _old_dur_range / 9
+                        new_raw_dur = round(max(1.0, 1 + 9 * (intermediate - fm.DUR_RAW_MIN) / (fm.DUR_RAW_MAX - fm.DUR_RAW_MIN)), 2)
+                        new_dur = clamp(round(new_raw_dur), 1, 10)
+                        if args.apply and specs.get("rawDurability") != new_raw_dur:
+                            specs["rawDurability"] = new_raw_dur
+                            file_changed = True
+                    else:
+                        # 앵커 불변: rawDurability는 이미 calibrated → 정수만 갱신
+                        new_dur = clamp(round(raw_dur), 1, 10)
                     old_dur = specs.get("durability")
-                    old_raw_dur = specs.get("rawDurability")
                     row["old_dur"] = old_dur
                     row["new_dur"] = new_dur
                     if args.apply and old_dur != new_dur:
                         specs["durability"] = new_dur
-                        file_changed = True
-                    if args.apply and old_raw_dur != new_raw_dur:
-                        specs["rawDurability"] = new_raw_dur
                         file_changed = True
 
             # valueScore
@@ -184,17 +257,20 @@ def main():
 
     # 출력
     mode_label = "적용 모드" if args.apply else "Dry-run"
-    scope = args.only or "weight+value+durability"
+    scope = args.only or "weight+value+stability+durability"
     print(f"\n=== recalculate [{scope}] ({len(rows)}개 신발) [{mode_label}] ===\n")
 
     has_weight = do_weight and any("new_ws" in r for r in rows)
     has_value = do_value and any("new_vs" in r for r in rows)
     has_dur = do_durability and any("new_dur" in r for r in rows)
+    has_stab = do_stability and any("new_stab" in r for r in rows)
 
     # 헤더
     header = f"{'shoeId':<42}"
     if has_weight:
         header += f" {'weight':>7} {'ws_old':>6} {'ws_new':>6}"
+    if has_stab:
+        header += f" {'stb_old':>7} {'stb_new':>7}"
     if has_dur:
         header += f" {'dur_old':>7} {'dur_new':>7}"
     if has_value:
@@ -206,6 +282,7 @@ def main():
     for r in rows:
         line = f"{r['shoeId']:<42}"
         ws_changed = r.get("old_ws") != r.get("new_ws") and "new_ws" in r
+        stab_changed = r.get("old_stab") != r.get("new_stab") and "new_stab" in r
         dur_changed = r.get("old_dur") != r.get("new_dur") and "new_dur" in r
         vs_changed = r.get("old_vs") != r.get("new_vs") and "new_vs" in r
 
@@ -214,6 +291,11 @@ def main():
                 line += f" {str(r['weight']):>7}g {str(r['old_ws']):>6} {r['new_ws']:>6}"
             else:
                 line += f" {'':>7}  {'':>6} {'':>6}"
+        if has_stab:
+            if "new_stab" in r:
+                line += f" {str(r['old_stab']):>7} {r['new_stab']:>7}"
+            else:
+                line += f" {'':>7} {'':>7}"
         if has_dur:
             if "new_dur" in r:
                 line += f" {str(r['old_dur']):>7} {r['new_dur']:>7}"
@@ -225,9 +307,9 @@ def main():
             else:
                 line += f" {'':>8} {'':>6} {'':>6}"
 
-        marker = " ←" if ws_changed or dur_changed or vs_changed else ""
+        marker = " ←" if ws_changed or stab_changed or dur_changed or vs_changed else ""
         print(line + marker)
-        if ws_changed or dur_changed or vs_changed:
+        if ws_changed or stab_changed or dur_changed or vs_changed:
             changed += 1
 
     print(f"\n변경: {changed}개")

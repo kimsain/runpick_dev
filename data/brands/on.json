@@ -26,7 +26,7 @@
         "drop": 8,
         "cushioning": 5,
         "responsiveness": 2,
-        "stability": 5,
+        "stability": 4,
         "durability": 8,
         "stackHeight": {
           "heel": 38,
@@ -36,10 +36,10 @@
         "valueScore": 5,
         "rawCushioning": 4.91,
         "rawResponsiveness": 2.2,
-        "rawStability": 4.92,
+        "rawStability": 4.39,
         "rawDurability": 8.09,
         "rawLightness": 4.65,
-        "rawValueScore": 5.49
+        "rawValueScore": 5.39
       },
       "pros": [
         "데일리 러닝에 맞는 무난한 충격 흡수 성향",
@@ -99,10 +99,10 @@
         "valueScore": 5,
         "rawCushioning": 3.67,
         "rawResponsiveness": 3.06,
-        "rawStability": 6.1,
+        "rawStability": 6.41,
         "rawDurability": 5.41,
         "rawLightness": 4.16,
-        "rawValueScore": 5.17
+        "rawValueScore": 5.37
       },
       "pros": [
         "6mm 드롭 기반의 자연스러운 착지 전환",
@@ -163,10 +163,10 @@
         "valueScore": 8,
         "rawCushioning": 5.65,
         "rawResponsiveness": 4.62,
-        "rawStability": 7.89,
+        "rawStability": 8.44,
         "rawDurability": 8.81,
         "rawLightness": 2.62,
-        "rawValueScore": 7.9
+        "rawValueScore": 8.23
       },
       "pros": [
         "힐 38mm, 전족부 30mm 스택 기반의 안정적 충격 흡수",
@@ -226,10 +226,10 @@
         "valueScore": 4,
         "rawCushioning": 6.01,
         "rawResponsiveness": 1.0,
-        "rawStability": 6.1,
+        "rawStability": 6.0,
         "rawDurability": 4.77,
         "rawLightness": 3.96,
-        "rawValueScore": 4.14
+        "rawValueScore": 4.17
       },
       "pros": [
         "힐 33mm·전족부 29mm 스택 기반의 무난한 충격 흡수",
@@ -278,7 +278,7 @@
         "drop": 6,
         "cushioning": 5,
         "responsiveness": 4,
-        "stability": 2,
+        "stability": 1,
         "durability": 3,
         "stackHeight": {
           "heel": 35,
@@ -288,10 +288,10 @@
         "valueScore": 3,
         "rawCushioning": 5.45,
         "rawResponsiveness": 3.66,
-        "rawStability": 2.05,
+        "rawStability": 1.0,
         "rawDurability": 3.48,
         "rawLightness": 4.08,
-        "rawValueScore": 3.33
+        "rawValueScore": 3.01
       },
       "pros": [
         "힐 35mm·전족부 28mm 스택 기반의 장거리 조깅 충격 완화",
@@ -344,7 +344,7 @@
         "drop": 6,
         "cushioning": 6,
         "responsiveness": 4,
-        "stability": 5,
+        "stability": 4,
         "durability": 8,
         "stackHeight": {
           "heel": 38,
@@ -354,10 +354,10 @@
         "valueScore": 6,
         "rawCushioning": 6.18,
         "rawResponsiveness": 3.76,
-        "rawStability": 4.65,
-        "rawDurability": 8.02,
+        "rawStability": 4.43,
+        "rawDurability": 8.03,
         "rawLightness": 3.07,
-        "rawValueScore": 5.64
+        "rawValueScore": 5.67
       },
       "pros": [
         "힐 38mm·전족부 31mm 스택 기반의 충격 완화",
@@ -409,7 +409,7 @@
         "drop": 6,
         "cushioning": 6,
         "responsiveness": 4,
-        "stability": 5,
+        "stability": 4,
         "durability": 7,
         "stackHeight": {
           "heel": 35,
@@ -419,10 +419,10 @@
         "valueScore": 5,
         "rawCushioning": 6.18,
         "rawResponsiveness": 3.66,
-        "rawStability": 4.55,
+        "rawStability": 3.89,
         "rawDurability": 6.98,
         "rawLightness": 3.27,
-        "rawValueScore": 4.95
+        "rawValueScore": 4.82
       },
       "pros": [
         "힐 35mm·전족부 29mm 스택 기반의 충격 완화",
@@ -478,13 +478,13 @@
           "forefoot": 33
         },
         "weightScore": 4,
-        "valueScore": 5,
+        "valueScore": 6,
         "rawCushioning": 6.55,
         "rawResponsiveness": 3.5,
-        "rawStability": 5.73,
-        "rawDurability": 8.87,
+        "rawStability": 5.91,
+        "rawDurability": 8.88,
         "rawLightness": 4.49,
-        "rawValueScore": 5.08
+        "rawValueScore": 5.21
       },
       "pros": [
         "힐 40mm·전족부 33mm 스택의 풍부한 충격 완화",
@@ -546,10 +546,10 @@
         "valueScore": 6,
         "rawCushioning": 6.55,
         "rawResponsiveness": 5.99,
-        "rawStability": 5.73,
+        "rawStability": 5.5,
         "rawDurability": 8.15,
         "rawLightness": 4.12,
-        "rawValueScore": 5.56
+        "rawValueScore": 5.59
       },
       "pros": [
         "힐 40mm·전족부 34mm 스택의 풍부한 충격 흡수",
@@ -609,10 +609,10 @@
         "valueScore": 4,
         "rawCushioning": 6.55,
         "rawResponsiveness": 5.99,
-        "rawStability": 5.73,
+        "rawStability": 5.5,
         "rawDurability": 8.15,
         "rawLightness": 6.72,
-        "rawValueScore": 4.22
+        "rawValueScore": 4.23
       },
       "pros": [
         "210g 경량 설계로 장거리 후반 피로 누적 완화",
@@ -673,10 +673,10 @@
         "valueScore": 6,
         "rawCushioning": 6.55,
         "rawResponsiveness": 5.99,
-        "rawStability": 5.73,
+        "rawStability": 5.5,
         "rawDurability": 8.15,
         "rawLightness": 6.72,
-        "rawValueScore": 5.56
+        "rawValueScore": 5.59
       },
       "pros": [
         "210g 경량 설계로 레이스 후반 피로 부담 완화",
@@ -724,20 +724,20 @@
         "drop": 8,
         "cushioning": 5,
         "responsiveness": 6,
-        "stability": 9,
+        "stability": 10,
         "durability": 8,
         "stackHeight": {
           "heel": 39,
           "forefoot": 30
         },
         "weightScore": 3,
-        "valueScore": 5,
+        "valueScore": 6,
         "rawCushioning": 5.25,
         "rawResponsiveness": 5.99,
-        "rawStability": 8.8,
+        "rawStability": 10.09,
         "rawDurability": 8.15,
         "rawLightness": 3.23,
-        "rawValueScore": 5.49
+        "rawValueScore": 5.91
       },
       "pros": [
         "힐 39mm·전족부 30mm 스택 기반의 장거리 충격 분산",
@@ -789,20 +789,20 @@
         "drop": 4,
         "cushioning": 7,
         "responsiveness": 8,
-        "stability": 5,
+        "stability": 4,
         "durability": 4,
         "stackHeight": {
           "heel": 38,
           "forefoot": 35
         },
         "weightScore": 7,
-        "valueScore": 4,
+        "valueScore": 3,
         "rawCushioning": 7.36,
         "rawResponsiveness": 7.91,
-        "rawStability": 4.6,
+        "rawStability": 3.96,
         "rawDurability": 3.63,
         "rawLightness": 6.72,
-        "rawValueScore": 3.42
+        "rawValueScore": 3.33
       },
       "pros": [
         "210g 경량 설계로 후반 피로 누적 완화",
@@ -852,20 +852,20 @@
         "drop": 4,
         "cushioning": 7,
         "responsiveness": 8,
-        "stability": 5,
+        "stability": 4,
         "durability": 4,
         "stackHeight": {
           "heel": 38,
           "forefoot": 35
         },
         "weightScore": 8,
-        "valueScore": 3,
+        "valueScore": 2,
         "rawCushioning": 7.36,
         "rawResponsiveness": 7.91,
-        "rawStability": 4.6,
+        "rawStability": 3.96,
         "rawDurability": 3.63,
         "rawLightness": 8.34,
-        "rawValueScore": 2.45
+        "rawValueScore": 2.36
       },
       "pros": [
         "170g 초경량 기반의 경쾌한 가속 전개",
@@ -920,7 +920,7 @@
         "drop": 6,
         "cushioning": 7,
         "responsiveness": 1,
-        "stability": 5,
+        "stability": 4,
         "durability": 7,
         "stackHeight": {
           "heel": 37,
@@ -930,10 +930,10 @@
         "valueScore": 5,
         "rawCushioning": 6.87,
         "rawResponsiveness": 1.0,
-        "rawStability": 4.55,
-        "rawDurability": 6.98,
+        "rawStability": 4.3,
+        "rawDurability": 6.97,
         "rawLightness": 3.39,
-        "rawValueScore": 4.62
+        "rawValueScore": 4.61
       },
       "pros": [
         "힐 37mm / 전족부 29mm 스택 기반의 부드러운 충격 완화",

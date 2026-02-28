@@ -26,7 +26,7 @@
         "drop": 8,
         "cushioning": 7,
         "responsiveness": 8,
-        "stability": 5,
+        "stability": 4,
         "durability": 5,
         "stackHeight": {
           "heel": 45,
@@ -34,12 +34,12 @@
         },
         "rawCushioning": 6.78,
         "rawResponsiveness": 7.52,
-        "rawStability": 4.73,
+        "rawStability": 4.13,
         "rawDurability": 4.51,
         "weightScore": 6,
         "rawLightness": 6.11,
         "valueScore": 9,
-        "rawValueScore": 8.77
+        "rawValueScore": 8.66
       },
       "pros": [
         "225g 경량으로 장거리 초반 피로 완화",
