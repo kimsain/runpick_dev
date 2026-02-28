@@ -12,6 +12,7 @@ import {
 
 interface Props {
   totalCount: number
+  brandCount: number
 }
 
 const EASE_OUT_QUART = [0.25, 0.46, 0.45, 0.94] as const
@@ -28,13 +29,13 @@ const HERO_SHOES = [
   { src: '/images/shoes/fuelcell-sc-elite-v5.webp', alt: 'New Balance FuelCell SC Elite v5' },
 ] as const
 
-const STATS = (totalCount: number) => [
-  { value: '10', label: '개 브랜드' },
+const STATS = (totalCount: number, brandCount: number) => [
+  { value: String(brandCount), label: '개 브랜드' },
   { value: String(totalCount), label: '개 신발' },
   { value: '실측', label: '데이터 기반' },
 ]
 
-export default function AnimatedHeroContent({ totalCount }: Props) {
+export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
   const prefersReduced = useReducedMotion()
   const [isDesktop, setIsDesktop] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
@@ -130,7 +131,7 @@ export default function AnimatedHeroContent({ totalCount }: Props) {
             {...fadeUp(0.5)}
             className="flex flex-wrap gap-3 mb-8"
           >
-            {STATS(totalCount).map((stat) => (
+            {STATS(totalCount, brandCount).map((stat) => (
               <div
                 key={stat.label}
                 className="border border-elevated px-3 py-2 text-sm font-body"

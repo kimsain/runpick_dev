@@ -1,13 +1,14 @@
-import { getAllShoes } from '@/lib/data'
+import { getAllShoes, getBrands } from '@/lib/data'
 import AnimatedHeroContent from './AnimatedHeroContent'
 
 export default function HeroSection() {
   const shoes = getAllShoes()
-  const totalCount = shoes.length
+  const brands = getBrands()
 
   return (
     <AnimatedHeroContent
-      totalCount={totalCount}
+      totalCount={shoes.length}
+      brandCount={brands.length}
     />
   )
 }

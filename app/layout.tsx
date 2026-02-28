@@ -1,14 +1,17 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Link from 'next/link'
+import { getBrands } from '@/lib/data'
+
+const brandCount = getBrands().length
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://runpick.vercel.app'),
   title: 'RunPick — 러닝화 탐색',
-  description: '10개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
+  description: `${brandCount}개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼`,
   openGraph: {
     title: 'RunPick — 러닝화 탐색',
-    description: '10개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼',
+    description: `${brandCount}개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼`,
     type: 'website',
   },
 }
