@@ -1,0 +1,267 @@
+{
+  "shoeId": "wave-rider-29",
+  "modelName": "Wave Rider 29",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/mizuno-wave-rider-29",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rider-29",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 18.5,
+      "url": "https://www.doctorsofrunning.com/2025/08/mizuno-wave-rider-29-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 19.8,
+      "url": "https://www.roadtrailrun.com/2025/06/mizuno-wave-rider-29-review-true-to-its.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.6,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-wave-rider-29-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/mizuno-wave-rider-29",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 141.52278516841,
+          "forefootShockAbsorption": 116.21150493899,
+          "midsoleSoftness_ha": 16.9,
+          "midsoleSoftnessCold_ha": 22.6,
+          "midsoleSoftness_ac": 36.1,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 53.3,
+          "forefootEnergyReturn": 55.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 114.2,
+          "midsoleWidthHeel_mm": 89.6,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1 mm",
+          "outsoleThickness": "3 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 258,
+          "drop_mm": 8.3,
+          "heelStack_mm": 37.5,
+          "forefootStack_mm": 29.2,
+          "flexStiffness_n": 15.8,
+          "forefootTraction": 0.52,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 94.6,
+          "toeboxWidthBigToePart_mm": 76.7,
+          "toeboxHeight_mm": 28.3,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "midsoleSoftnessCold_pct": 33.7,
+          "insoleThickness_mm": 5.3,
+          "tonguePadding_mm": 7.9,
+          "tongueGussetType": "both-sides-full",
+          "heelTab": "extended-heel-collar",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 141.52278516841 / 116.21150493899 SA",
+        "Energy return heel/forefoot: 53.3% / 55.8%",
+        "Lab specs weight/drop/stack: 258g, 8.3mm, 37.5mm/29.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rider-29",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.4,
+          "forefootShockAbsorption": 6.3,
+          "heelFirmnessScore": 6.5,
+          "forefootFirmnessScore": 8.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.7,
+          "forefootEnergyReturn": 70.3,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 59.4,
+          "at1100N_Nmm": 135.9,
+          "at1900N_Nmm": 280.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 127.9,
+          "at1300N_Nmm": 259.3,
+          "at2050N_Nmm": 478.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.08,
+          "at1100N_J": 8.02,
+          "at1900N_J": 13.53,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.95,
+          "at1300N_J": 6.76,
+          "at2050N_J": 9.94,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 262.1,
+          "heelStack_mm": 36.6,
+          "forefootStack_mm": 28.2,
+          "drop_mm": 8.4,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 87.0,
+          "outsoleArchWidth_mm": 65.0,
+          "outsoleForefootWidth_mm": 111.0,
+          "internalLength_mm": 277.0,
+          "internalHeelWidth_mm": 63.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.38,
+          "forefootWidthToStackRatio": 3.94,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Plastic",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.7%",
+        "Forefoot ER: 70.3%",
+        "Heel Cushioning: 6.4 /10",
+        "Forefoot Cushioning: 6.3 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/mizuno-wave-rider-29-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length ENERZY NXT midsole is notably softer and more cushioned than prior Wave Riders, with a soft/compressive heel and protective impact feel on easy and long runs; the forefoot has more foam but stays flexible.",
+        "Responsiveness: The ride is bouncier and becomes more responsive as pace increases, and the lighter weight improves pace versatility, but it shifts away from the older firm/snappy Wave Rider feel.",
+        "Stability: Stability is reduced versus prior versions because the soft midsole compresses more and the wave plate is more flexible/less noticeable; small rearfoot sidewalls and a tiny heel bevel offer limited lateral/rearfoot control, best for neutral mechanics.",
+        "Durability: Outsole durability appears strong (no visible outsole wear after 35 miles) with durable X10 rubber and solid wet/dry road grip, but there is some concern about exposed foam/outsole-rubber tear risk and unknown long-term soft-foam longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/06/mizuno-wave-rider-29-review-true-to-its.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Enerzy NXT supercritical nitrogen-infused EVA feels soft with strong impact protection, with stack increased to 38.5/28.5 mm (+1 mm heel, +3 mm forefoot) and a 10 mm drop.",
+        "Responsiveness: The ride is described as very energetic, springy, and bouncy, though forefoot snappiness is somewhat limited by reduced front flex and some break-in needs.",
+        "Stability: A higher Wave Plate, rigid heel counter, secure lockdown, and stable heel platform create a notably stable neutral ride with mild pronation control.",
+        "Durability: Material longevity looks strong from the dense Jacquard Air Mesh holding shape in heat, but direct outsole wear data is limited in this excerpt."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-wave-rider-29-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The nitrogen-infused ENERZY NXT midsole is soft and protective without feeling mushy, with a smooth heel-to-forefoot transition and slightly more pronounced forefoot ground feel.",
+        "Responsiveness: The ride is notably bouncy and efficient, and the Wave Plate helps add forward propulsion plus a clean, snappy toe-off.",
+        "Stability: The half-length PEBAX Wave Plate provides structure for a surprisingly stable platform, while the secure heel/midfoot lockdown improves lateral support.",
+        "Durability: The X10 carbon rubber outsole showed strong grip in wet and sandy conditions, and the generous heel/forefoot rubber coverage is expected to hold up well over high mileage."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 258,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "proposedSpecs": {
+    "weight": 258,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 8.3,
+      "rtings": 8.4,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 3,
+    "stability": 7,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 3,
+    "stability": 7,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,279 @@
+{
+  "shoeId": "hyperion-elite-5",
+  "modelName": "Hyperion Elite 5",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/brooks-hyperion-elite-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-elite-5",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 19.6,
+      "url": "https://www.doctorsofrunning.com/2025/08/brooks-hyperion-elite-5-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 28.5,
+      "url": "https://www.roadtrailrun.com/2025/07/brooks-hyperion-elite-5-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 19.4,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-hyperion-elite-5-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/brooks-hyperion-elite-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 150.53439710974,
+          "forefootShockAbsorption": 107.11225364182,
+          "midsoleSoftness_ha": 11.6,
+          "midsoleSoftnessCold_ha": 12.5,
+          "midsoleSoftness_ac": 27.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.9,
+          "forefootEnergyReturn": 77.7,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 2,
+          "midsoleWidthForefoot_mm": 110.9,
+          "midsoleWidthHeel_mm": 84.5,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "2.2 mm",
+          "outsoleThickness": "2 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 204,
+          "drop_mm": 11.2,
+          "heelStack_mm": 37.6,
+          "forefootStack_mm": 26.4,
+          "flexStiffness_n": 20.1,
+          "forefootTraction": 0.59,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 92.7,
+          "toeboxWidthBigToePart_mm": 71.5,
+          "toeboxHeight_mm": 24.1,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "midsoleSoftnessCold_pct": 7.8,
+          "insoleThickness_mm": 3.3,
+          "tonguePadding_mm": 4.1,
+          "tongueGussetType": "both-sides-full",
+          "heelTab": "pull-tab",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 150.53439710974 / 107.11225364182 SA",
+        "Energy return heel/forefoot: 76.9% / 77.7%",
+        "Lab specs weight/drop/stack: 204g, 11.2mm, 37.6mm/26.4mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-elite-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.7,
+          "forefootShockAbsorption": 7.1,
+          "heelFirmnessScore": 6.0,
+          "forefootFirmnessScore": 8.3,
+          "longRunForefoot_score": 6.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.7,
+          "forefootEnergyReturn": 83.9,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 51.9,
+          "at1100N_Nmm": 123.3,
+          "at1900N_Nmm": 285.7,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 110.5,
+          "at1300N_Nmm": 225.4,
+          "at2050N_Nmm": 482.6,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.85,
+          "at1100N_J": 9.31,
+          "at1900N_J": 15.28,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.41,
+          "at1300N_J": 7.69,
+          "at2050N_J": 11.25,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.09,
+          "at20km_J": 6.98,
+          "at30km_J": 6.92,
+          "at40km_J": 6.86,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 200.9,
+          "heelStack_mm": 38.2,
+          "forefootStack_mm": 28.9,
+          "drop_mm": 9.3,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 81.0,
+          "outsoleArchWidth_mm": 59.0,
+          "outsoleForefootWidth_mm": 110.0,
+          "internalLength_mm": 275.0,
+          "internalHeelWidth_mm": 63.0,
+          "internalForefootWidth_mm": 92.0,
+          "heelWidthToStackRatio": 2.12,
+          "forefootWidthToStackRatio": 3.81,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.7%",
+        "Forefoot ER: 83.9%",
+        "Heel Cushioning: 7.7 /10",
+        "Forefoot Cushioning: 7.1 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/brooks-hyperion-elite-5-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length DNA Gold PEBA feels soft and protective, with softness most noticeable in the heel; the forefoot is firmer, very stiff, and strongly rockered/high-toe-spring.",
+        "Responsiveness: The ride is bouncy with strong heel energy return and quick rocker-driven roll-through, working best at tempo to long-race paces; it feels awkward and less snappy for sprinting or forefoot push-off.",
+        "Stability: This is a neutral, narrow-platform shoe with minimal flare; poor midfoot stability (narrow, medially biased midfoot sidewall that collapses) plus a thin flexible heel counter and heel slippage reduce lateral/rearfoot support.",
+        "Durability: Early durability is good (no major outsole wear after about 30 hard miles), foam bounce stayed consistent, and expected longevity is average-to-above-average, though rearfoot outsole patch peeling is a concern."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/brooks-hyperion-elite-5-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: DNA Gold PEBA feels plush at step-in and the heel area is well-cushioned, but overall underfoot cushioning is not maximal and the forefoot can feel firm for some runners over marathon distance.",
+        "Responsiveness: The shoe is described as fast, smooth-rolling, and energetic, with solid bounce and a plate/bubble setup that adds some flex instead of a harsh rigid feel.",
+        "Stability: Lockdown and lacing are excellent, and the shaped stiff-but-comfortable heel counter provides secure rearfoot hold and lateral control; however, midfoot stability was questioned for longer races.",
+        "Durability: Outsole wear is not reported in this excerpt; the main longevity note is that V5 updates heel-collar materials after V4’s heel area reportedly wore down early."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-hyperion-elite-5-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The ride is notably soft/plush and squishy for a race shoe, with strong impact comfort and a forefoot-forward feel from the 8 mm drop; some testers felt it may be a bit too soft.",
+        "Responsiveness: It is efficient enough to hit workout and tempo splits, but lacks the pronounced bounce, snap, and propulsive spring found in leading super shoes.",
+        "Stability: Secure upper lockdown, padded heel counter, and good road control support stability, but there is no strong indication of high torsional rigidity and the platform feels comfort-biased.",
+        "Durability: The thin SpeedTack outsole still showed minimal wear in testing while maintaining excellent traction, indicating better-than-expected outsole durability for the weight."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 196,
+    "drop": 8,
+    "heelStack": 37.6,
+    "forefootStack": 26.4
+  },
+  "proposedSpecs": {
+    "weight": 196,
+    "drop": 8,
+    "heelStack": 37.6,
+    "forefootStack": 26.4
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 11.2,
+      "rtings": 9.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 26.4,
+      "runRepeat": 26.4,
+      "rtings": 28.9,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 9,
+    "stability": 6,
+    "durability": 4
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 9,
+    "stability": 6,
+    "durability": 4
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

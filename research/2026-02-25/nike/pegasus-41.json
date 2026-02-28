@@ -1,0 +1,294 @@
+{
+  "shoeId": "pegasus-41",
+  "modelName": "PEGASUS 41",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/nike-pegasus-41",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/pegasus-41",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.4,
+      "url": "https://www.doctorsofrunning.com/2024/06/nike-pegasus-41-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 19.0,
+      "url": "https://www.roadtrailrun.com/2024/06/nike-pegasus-41-review-6-comparisons.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 19.7,
+      "url": "https://believeintherun.com/shoe-reviews/nike-pegasus-41-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-pegasus-41",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 125.42644992976,
+          "forefootShockAbsorption": 92.10053694613,
+          "midsoleSoftness_ha": 15.8,
+          "midsoleSoftnessCold_ha": 21.6,
+          "midsoleSoftness_ac": 35.2,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 55.51,
+          "forefootEnergyReturn": 61.37,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 2,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 115.6,
+          "midsoleWidthHeel_mm": 89.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.88 mm",
+          "outsoleThickness": "3 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 281,
+          "drop_mm": 11.4,
+          "heelStack_mm": 33.6,
+          "forefootStack_mm": 22.2,
+          "flexStiffness_n": 9.4,
+          "stiffness_n": 19.2,
+          "stiffnessCold_n": 26.9,
+          "stiffnessCold_pct": 40.4,
+          "forefootTraction": 0.25,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidest_mm": 101.4,
+          "toeboxWidthBigToe_mm": 77.3,
+          "toeboxWidthWidestPart_mm": 94.6,
+          "toeboxWidthBigToePart_mm": 72.9,
+          "internalLength_mm": 273.9,
+          "toeboxHeight_mm": 26.4,
+          "sizeRating": 2.85,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "outsoleHardness_hc": 89,
+          "midsoleSoftnessCold_pct": 37.1,
+          "insoleThickness_mm": 5.1,
+          "tonguePadding_mm": 6.6,
+          "tongueGussetType": "both-sides-full",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 125.42644992976 / 92.10053694613 SA",
+        "Energy return heel/forefoot: 55.51% / 61.37%",
+        "Lab specs weight/drop/stack: 281g, 11.4mm, 33.6mm/22.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/pegasus-41",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.1,
+          "forefootShockAbsorption": 5.1,
+          "heelFirmnessScore": 6.4,
+          "forefootFirmnessScore": 9.2,
+          "longRunForefoot_score": 4.7,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.8,
+          "forefootEnergyReturn": 71.9,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 73.3,
+          "at1100N_Nmm": 119.1,
+          "at1900N_Nmm": 232.6,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 154.8,
+          "at1300N_Nmm": 312.3,
+          "at2050N_Nmm": 615.2,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.72,
+          "at1100N_J": 7.54,
+          "at1900N_J": 14.09,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.18,
+          "at1300N_J": 5.57,
+          "at2050N_J": 8.15,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 5.24,
+          "at20km_J": 5.12,
+          "at30km_J": 5.06,
+          "at40km_J": 5.03,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 283.2,
+          "heelStack_mm": 36.0,
+          "forefootStack_mm": 24.6,
+          "drop_mm": 11.4,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 86.0,
+          "outsoleArchWidth_mm": 63.0,
+          "outsoleForefootWidth_mm": 111.0,
+          "internalLength_mm": 274.0,
+          "internalHeelWidth_mm": 62.0,
+          "internalForefootWidth_mm": 89.0,
+          "heelWidthToStackRatio": 2.39,
+          "forefootWidthToStackRatio": 4.51,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.8%",
+        "Forefoot ER: 71.9%",
+        "Heel Cushioning: 6.1 /10",
+        "Forefoot Cushioning: 5.1 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/06/nike-pegasus-41-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length ReactX and higher 37/27 mm stack give a mildly soft, well-protected heel landing, while the forefoot still feels slightly firmer and more grounded.",
+        "Responsiveness: Energy return is moderate with only a slight bounce, and the shoe feels best at easy/long paces rather than snappy for faster uptempo running.",
+        "Stability: Rearfoot guidance is improved by medial/lateral heel sidewalls plus a stiff heel counter that helps center the foot, while the forefoot remains moderately flexible rather than highly rigid.",
+        "Durability: Outsole grip is strong, but rearfoot lugs showed early wear around 40 miles; overall durability is described as average, with foam structure holding up reasonably well."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/06/nike-pegasus-41-review-6-comparisons.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: ReactX foam plus a 4 mm stack increase makes the Pegasus 41 softer than recent versions, improves impact protection, and reduces bottoming out, but the forefoot Air Zoom areas can feel firmer and uneven until break-in.",
+        "Responsiveness: The ride is described as lively and bouncy with solid energy return (Nike claims +13% vs older React), with enough pop for moderate uptempo work, though overall weight limits snappiness.",
+        "Stability: Fit/hold is secure through heel, midfoot, and toe box with a well-structured heel collar and good lockdown, and the waffle outsole adds traction-based stability, but torsional rigidity and true lateral structure are not deeply detailed.",
+        "Durability: Outsole durability is a standout, with a tough rubber waffle design showing virtually no wear after 50+ miles and expected longevity for road use and light-to-medium dry trail running."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-pegasus-41-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: ReactX is perceived as softer and comfortable overall, but both reviewers report the forefoot feels thin/under-cushioned, with less impact protection up front than in the heel.",
+        "Responsiveness: The shoe has some bounce from ReactX + Air Zoom and occasional mild propulsion, but the ride is generally described as lacking pop/snappiness, with forefoot Zoom not very noticeable.",
+        "Stability: Lockdown is strong via the internal midfoot band/lacing and supportive mesh, and the ride feels sturdy and secure; no specific torsional rigidity or heel-counter weaknesses were called out.",
+        "Durability: Durability is a strength, with substantial/near full outsole rubber coverage and tread noted for longevity and traction, though the rubber compound is described as waxy and less tacky than desired."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 37,
+    "forefootStack": 27
+  },
+  "proposedSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 37,
+    "forefootStack": 27
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 11.4,
+      "rtings": 11.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 37,
+      "runRepeat": 33.6,
+      "rtings": 36.0,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 27,
+      "runRepeat": 22.2,
+      "rtings": 24.6,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 3,
+    "responsiveness": 4,
+    "stability": 5,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 3,
+    "responsiveness": 4,
+    "stability": 5,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

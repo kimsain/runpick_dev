@@ -1,0 +1,295 @@
+{
+  "shoeId": "neo-zen",
+  "modelName": "Neo Zen",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/mizuno-neo-zen",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-zen",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.4,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-neo-zen-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 18.6,
+      "url": "https://www.roadtrailrun.com/2025/01/mizuno-neo-zen-multi-tester-review-art.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 16.7,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-zen-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/mizuno-neo-zen",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 158.36315839483,
+          "forefootShockAbsorption": 128.55618548086,
+          "midsoleSoftness_ha": 13.5,
+          "midsoleSoftnessCold_ha": 18,
+          "midsoleSoftness_ac": 33.3,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 71.7,
+          "forefootEnergyReturn": 67.71,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 113.5,
+          "midsoleWidthHeel_mm": 94.7,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.95 mm",
+          "outsoleThickness": "2.7 mm",
+          "toeboxDurability": 5,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 234,
+          "drop_mm": 7,
+          "heelStack_mm": 41,
+          "forefootStack_mm": 34,
+          "flexStiffness_n": 12.8,
+          "forefootTraction": 0.38,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.7,
+          "toeboxWidthBigToePart_mm": 73.4,
+          "toeboxHeight_mm": 27,
+          "sizeRating": 3.27,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "outsoleHardness_hc": 62.5,
+          "midsoleSoftnessCold_pct": 33.3,
+          "insoleThickness_mm": 4.8,
+          "tonguePadding_mm": 4.1,
+          "tongueGussetType": "sock-like",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 158.36315839483 / 128.55618548086 SA",
+        "Energy return heel/forefoot: 71.7% / 67.71%",
+        "Lab specs weight/drop/stack: 234g, 7mm, 41mm/34mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/neo-zen",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.3,
+          "forefootShockAbsorption": 8.4,
+          "heelFirmnessScore": 5.6,
+          "forefootFirmnessScore": 7.9,
+          "longRunForefoot_score": 8.0,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.4,
+          "forefootEnergyReturn": 76.5,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 47.9,
+          "at1100N_Nmm": 117.4,
+          "at1900N_Nmm": 268.4,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 98.0,
+          "at1300N_Nmm": 206.9,
+          "at2050N_Nmm": 435.7,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.24,
+          "at1100N_J": 10.05,
+          "at1900N_J": 16.18,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.48,
+          "at1300N_J": 9.1,
+          "at2050N_J": 12.99,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 8.88,
+          "at20km_J": 8.72,
+          "at30km_J": 8.63,
+          "at40km_J": 8.53,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 226.3,
+          "heelStack_mm": 41.1,
+          "forefootStack_mm": 36.2,
+          "drop_mm": 4.9,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 92.0,
+          "outsoleArchWidth_mm": 79.0,
+          "outsoleForefootWidth_mm": 111.0,
+          "internalLength_mm": 275.0,
+          "internalHeelWidth_mm": 62.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.24,
+          "forefootWidthToStackRatio": 3.07,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 9.9,
+          "archWidthFitScore": 7.4,
+          "forefootHeightFitScore": 7.7,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": 0.7,
+          "ballOfFootTtsDeviation_mm": -0.5,
+          "archWidthTtsDeviation_mm": -4.1,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.4%",
+        "Forefoot ER: 76.5%",
+        "Heel Cushioning: 8.3 /10",
+        "Forefoot Cushioning: 8.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-neo-zen-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length ENERZY NXT delivers a very soft, highly protective ride in both heel and forefoot, with heavy compression that makes the 40/34 mm stack and 6 mm drop feel lower.",
+        "Responsiveness: The midsole is notably bouncy, but turnover is moderate rather than snappy; it can handle small pace pickups yet feels best for easy/long runs, not fast efforts.",
+        "Stability: Platform stiffness is moderate with minimal forefoot flex, but rearfoot structure is flexible (no traditional heel counter); lockdown relies on knit upper overlays/circular heel panels and was generally secure with limited foot translation.",
+        "Durability: Reported as above average, with extensive outsole coverage showing virtually no wear after ~30 miles and midsole feel holding up well, suggesting strong material longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/mizuno-neo-zen-multi-tester-review-art.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-cushion setup (39.5 mm heel / 33.5 mm forefoot) is notably soft and plush with strong impact protection, with heel feel described as especially soft/bouncy; some testers felt it could verge on mushy.",
+        "Responsiveness: The nitrogen/supercritical TPU foam is consistently described as energetic and bouncy, giving strong perceived energy return and a fun, snappy-enough ride for a plateless trainer.",
+        "Stability: Broad platform and secure upper/lockdown help lateral stability, but rearfoot support is a weakness because heel counter/collar structure is minimal; this may be less stable for pronation control, slower paces, and heel-strike landings.",
+        "Durability: This excerpt does not provide meaningful outsole wear or long-term material longevity data, so durability is not yet clearly established."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/mizuno-neo-zen-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: High-stack geometry (40 mm heel / 34 mm forefoot, 6 mm drop) is described as soft and comfortable, with strong underfoot protection for daily training at any distance.",
+        "Responsiveness: The Enerzy NXT midsole is characterized as super bouncy, indicating strong energy return and a lively ride even without a plate.",
+        "Stability: Despite the soft ride, the shoe is noted as surprisingly stable, with a wide base, secure lockdown, and no reported heel slippage supporting lateral control.",
+        "Durability: The provided excerpt gives no direct long-term outsole wear or upper/longevity results, so durability remains unconfirmed from this text alone."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 240,
+    "drop": 6,
+    "heelStack": 40,
+    "forefootStack": 34
+  },
+  "proposedSpecs": {
+    "weight": 240,
+    "drop": 6,
+    "heelStack": 40,
+    "forefootStack": 34
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 240,
+      "runRepeat": 234,
+      "rtings": 226.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 7,
+      "rtings": 4.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 34,
+      "runRepeat": 34,
+      "rtings": 36.2,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 7,
+    "stability": 1,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 7,
+    "stability": 1,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

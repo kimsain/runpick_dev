@@ -1,0 +1,281 @@
+{
+  "shoeId": "hurricane-25",
+  "modelName": "Hurricane 25",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/saucony-hurricane-25",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/hurricane-25-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.2,
+      "url": "https://www.doctorsofrunning.com/2025/06/saucony-hurricane-25-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.3,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-hurricane-25-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-hurricane-25",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 150.69318866787,
+          "forefootShockAbsorption": 140.46916701784,
+          "midsoleSoftness_ha": 16.6,
+          "midsoleSoftnessCold_ha": 20,
+          "midsoleSoftness_ac": 33.6,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 68.4,
+          "forefootEnergyReturn": 74.0,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 124.4,
+          "midsoleWidthHeel_mm": 102.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "outsoleThickness": "3.3 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 286,
+          "drop_mm": 7.1,
+          "heelStack_mm": 40.2,
+          "forefootStack_mm": 33.1,
+          "flexStiffness_n": 15.5,
+          "forefootTraction": 0.54,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 95.1,
+          "toeboxWidthBigToePart_mm": 72.9,
+          "toeboxHeight_mm": 28.1,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 2,
+          "midsoleSoftnessCold_pct": 20.5,
+          "insoleThickness_mm": 6,
+          "tonguePadding_mm": 10.5,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 150.69318866787 / 140.46916701784 SA",
+        "Energy return heel/forefoot: 68.4% / 74.0%",
+        "Lab specs weight/drop/stack: 286g, 7.1mm, 40.2mm/33.1mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/hurricane-25-running-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.0,
+          "forefootShockAbsorption": 8.9,
+          "heelFirmnessScore": 5.2,
+          "forefootFirmnessScore": 7.1,
+          "longRunForefoot_score": 8.1,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.3,
+          "forefootEnergyReturn": 80.7,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 54.1,
+          "at1100N_Nmm": 98.8,
+          "at1900N_Nmm": 206.2,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 84.0,
+          "at1300N_Nmm": 169.9,
+          "at2050N_Nmm": 370.2,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.5,
+          "at1100N_J": 9.69,
+          "at1900N_J": 17.42,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.71,
+          "at1300N_J": 10.02,
+          "at2050N_J": 14.7,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 9.14,
+          "at20km_J": 8.81,
+          "at30km_J": 8.57,
+          "at40km_J": 8.41,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 292.9,
+          "heelStack_mm": 40.7,
+          "forefootStack_mm": 36.2,
+          "drop_mm": 4.4,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 101.0,
+          "outsoleArchWidth_mm": 79.0,
+          "outsoleForefootWidth_mm": 124.0,
+          "internalLength_mm": 280.0,
+          "internalHeelWidth_mm": 66.0,
+          "internalForefootWidth_mm": 91.0,
+          "heelWidthToStackRatio": 2.49,
+          "forefootWidthToStackRatio": 3.43,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 9.8,
+          "archWidthFitScore": 10.0,
+          "forefootHeightFitScore": 7.3,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -0.3,
+          "ballOfFootTtsDeviation_mm": 1.7,
+          "archWidthTtsDeviation_mm": -0.3,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 76.3%",
+        "Forefoot ER: 80.7%",
+        "Heel Cushioning: 8.0 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/saucony-hurricane-25-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The dual-layer PWRRUN PB/PWRRUN midsole is very soft and highly cushioned, with strong impact protection and a notably compressive heel; the forefoot feels smooth with mild flexibility but can turn mushy at slower paces.",
+        "Responsiveness: Energy return is strong for a stability shoe, with clear bounce from the PWRRUN PB that improves at normal-to-uptempo paces and with longer strides, but it is less snappy for easy recovery running.",
+        "Stability: Stability is mild-to-moderate, supported by medial heel guidance, a rigid heel counter, secure lockdown, and a generally non-flexible platform; however, the softer foam and deeper heel compression make it less stable than firmer options.",
+        "Durability: Expected durability is above average, aided by extensive XT-900 outsole coverage and generally durable materials, though outsole performance shows only average traction and some wet-surface slipping."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-hurricane-25-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-cushion setup (38/32 mm) with PWRRUN + PWRRUN PB feels soft and protective, with a comfortable underfoot squish in both heel and forefoot that keeps legs feeling fresher.",
+        "Responsiveness: Reviewers noted more pop and a bouncier ride than v24; the PB-heavy feel adds energy return and can pull easy runs toward faster cruising paces.",
+        "Stability: CenterPath design (higher sidewalls, rocker geometry, wide base, sole flare) delivers strong but non-intrusive guidance; platform felt secure with good pronation control and lateral confidence.",
+        "Durability: Direct wear/longevity testing is not reported; XT-900 outsole is listed, but the review provides no concrete outsole-wear or long-term material durability findings."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 283,
+    "drop": 6,
+    "heelStack": 38,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 283,
+    "drop": 6,
+    "heelStack": 38,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 7.1,
+      "rtings": 4.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 38,
+      "runRepeat": 40.2,
+      "rtings": 40.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 32,
+      "runRepeat": 33.1,
+      "rtings": 36.2,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 8,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 8,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,281 @@
+{
+  "shoeId": "endorphin-speed-5",
+  "modelName": "Endorphin Speed 5",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/saucony-endorphin-speed-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-speed-5",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 18.3,
+      "url": "https://www.doctorsofrunning.com/2025/05/saucony-endorphin-speed-5-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.4,
+      "url": "https://www.roadtrailrun.com/2025/05/saucony-endorphin-speed-5-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 17.7,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-5-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-endorphin-speed-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 131.76272169078,
+          "forefootShockAbsorption": 107.57430695253,
+          "midsoleSoftness_ha": 18.5,
+          "midsoleSoftnessCold_ha": 24.2,
+          "midsoleSoftness_ac": 44.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.24,
+          "forefootEnergyReturn": 78.16,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 118.1,
+          "midsoleWidthHeel_mm": 95,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.97 mm",
+          "outsoleThickness": "2.5 mm",
+          "toeboxDurability": 2,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 241,
+          "drop_mm": 10.6,
+          "heelStack_mm": 37.4,
+          "forefootStack_mm": 26.8,
+          "flexStiffness_n": 12.9,
+          "forefootTraction": 0.52,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.8,
+          "toeboxWidthBigToePart_mm": 72.9,
+          "toeboxHeight_mm": 29.3,
+          "sizeRating": 2.72,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 71.1,
+          "midsoleSoftnessCold_pct": 30.6,
+          "insoleThickness_mm": 4.7,
+          "tonguePadding_mm": 5.7,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "extended-heel-collar",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 131.76272169078 / 107.57430695253 SA",
+        "Energy return heel/forefoot: 73.24% / 78.16%",
+        "Lab specs weight/drop/stack: 241g, 10.6mm, 37.4mm/26.8mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-speed-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.0,
+          "forefootShockAbsorption": 6.7,
+          "heelFirmnessScore": 5.9,
+          "forefootFirmnessScore": 8.6,
+          "longRunForefoot_score": 6.1,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.1,
+          "forefootEnergyReturn": 82.6,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 54.3,
+          "at1100N_Nmm": 110.3,
+          "at1900N_Nmm": 267.2,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 121.7,
+          "at1300N_Nmm": 245.2,
+          "at2050N_Nmm": 518.4,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.99,
+          "at1100N_J": 8.92,
+          "at1900N_J": 15.42,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.18,
+          "at1300N_J": 7.19,
+          "at2050N_J": 10.48,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 6.68,
+          "at20km_J": 6.55,
+          "at30km_J": 6.44,
+          "at40km_J": 6.37,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 239.2,
+          "heelStack_mm": 36.4,
+          "forefootStack_mm": 28.0,
+          "drop_mm": 8.4,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 93.0,
+          "outsoleArchWidth_mm": 66.0,
+          "outsoleForefootWidth_mm": 116.0,
+          "internalLength_mm": 275.0,
+          "internalHeelWidth_mm": 61.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.55,
+          "forefootWidthToStackRatio": 4.14,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Plastic",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 9.1,
+          "archWidthFitScore": 9.8,
+          "forefootHeightFitScore": 10.0,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -3.4,
+          "ballOfFootTtsDeviation_mm": 0.7,
+          "archWidthTtsDeviation_mm": 2.4,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.1%",
+        "Forefoot ER: 82.6%",
+        "Heel Cushioning: 7.0 /10",
+        "Forefoot Cushioning: 6.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/saucony-endorphin-speed-5-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length PWRRUN PB feels softer than v4 with good heel and forefoot protection, a smoother heel transition, and forefoot cushioning that no longer bottoms out on long runs.",
+        "Responsiveness: The ride is bouncy and responsive with moderate nylon-plate snappiness up front, but it is slightly less aggressive/fast than v4 or top super shoes.",
+        "Stability: Though neutral, it has mild guidance from plate geometry (medial guidance/lateral bias), some torsional rigidity, a stiff heel counter, and generally secure lateral support with only mild midfoot slip on turns.",
+        "Durability: Traction is fair with strategic XT-900 rubber, but exposed PWRRUN PB shows early wear (noted around 45 miles, including posterolateral heel), indicating average overall longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/05/saucony-endorphin-speed-5-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: PWRRUN PB is notably firm rather than plush (36/28 mm stack), giving controlled impact protection with a heel/forefoot feel geared more to smooth rolling than softness.",
+        "Responsiveness: The shoe is quick, snappy, and efficient (SPEEDROLL + nylon plate), but bounce and perceived energy return are moderate rather than highly springy.",
+        "Stability: A key strength, with plate-driven torsional rigidity, a more secure higher heel counter, strong heel hold, and added medial-side support for confident lateral control/cornering.",
+        "Durability: Improved via added strategic outsole rubber and coverage; traction is excellent and testers saw minimal outsole wear after roughly 40 miles."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-5-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The PWRRUN PB midsole gives a balanced soft feel with good impact protection (36 mm heel / 28 mm forefoot), but it is not especially plush for easy-run comfort.",
+        "Responsiveness: Ride quality is lively and bouncy with strong energy return for tempo work, though it is less snappy than more aggressive carbon-plated options.",
+        "Stability: Fit feels secure around the heel/collar, but the plate redesign (single medial wing) increases torsional and forefoot flexibility, trading some rigid lateral support for smoother movement.",
+        "Durability: The shoe held up well on unexpected dirt-road/light-trail use with no major breakdown noted, but the upper showed cosmetic dirt quickly and long-term outsole wear data was limited."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 238,
+    "drop": 8,
+    "heelStack": 36,
+    "forefootStack": 28
+  },
+  "proposedSpecs": {
+    "weight": 238,
+    "drop": 8,
+    "heelStack": 36,
+    "forefootStack": 28
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 10.6,
+      "rtings": 8.4,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 9,
+    "stability": 7,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 9,
+    "stability": 7,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

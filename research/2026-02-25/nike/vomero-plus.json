@@ -1,0 +1,265 @@
+{
+  "shoeId": "vomero-plus",
+  "modelName": "VOMERO PLUS",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/nike-vomero-plus",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.5,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-plus",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.6,
+      "url": "https://www.doctorsofrunning.com/2025/08/nike-vomero-plus-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 19.5,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-vomero-plus-initial-review-big-fun.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 12.9,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-plus-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-vomero-plus",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 147.49262536873,
+          "forefootShockAbsorption": 130.97576948265,
+          "midsoleSoftness_ha": 15.1,
+          "midsoleSoftnessCold_ha": 16,
+          "midsoleSoftness_ac": 32.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 67.1,
+          "forefootEnergyReturn": 68.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 117,
+          "midsoleWidthHeel_mm": 99.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.8 mm",
+          "outsoleThickness": "2.9 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 289,
+          "drop_mm": 9.6,
+          "heelStack_mm": 42.3,
+          "forefootStack_mm": 32.7,
+          "flexStiffness_n": 19.8,
+          "forefootTraction": 0.42,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 94.6,
+          "toeboxWidthBigToePart_mm": 71.1,
+          "toeboxHeight_mm": 26.2,
+          "sizeRating": 3.05,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "midsoleSoftnessCold_pct": 6,
+          "insoleThickness_mm": 3.3,
+          "tonguePadding_mm": 11.2,
+          "tongueGussetType": "none",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 147.49262536873 / 130.97576948265 SA",
+        "Energy return heel/forefoot: 67.1% / 68.8%",
+        "Lab specs weight/drop/stack: 289g, 9.6mm, 42.3mm/32.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-plus",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.4,
+          "forefootShockAbsorption": 8.6,
+          "heelFirmnessScore": 4.7,
+          "forefootFirmnessScore": 7.3,
+          "longRunForefoot_score": 7.1,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 79.4,
+          "forefootEnergyReturn": 79.5,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 46.6,
+          "at1100N_Nmm": 95.6,
+          "at1900N_Nmm": 220.5,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 87.8,
+          "at1300N_Nmm": 182.2,
+          "at2050N_Nmm": 376.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.64,
+          "at1100N_J": 10.4,
+          "at1900N_J": 18.04,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.41,
+          "at1300N_J": 9.5,
+          "at2050N_J": 13.92,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.7,
+          "at20km_J": 7.54,
+          "at30km_J": 7.43,
+          "at40km_J": 7.37,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 280.7,
+          "heelStack_mm": 43.8,
+          "forefootStack_mm": 34.4,
+          "drop_mm": 9.4,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 99.0,
+          "outsoleArchWidth_mm": 75.0,
+          "outsoleForefootWidth_mm": 115.0,
+          "internalLength_mm": 278.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 91.0,
+          "heelWidthToStackRatio": 2.26,
+          "forefootWidthToStackRatio": 3.34,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 79.4%",
+        "Forefoot ER: 79.5%",
+        "Heel Cushioning: 8.4 /10",
+        "Forefoot Cushioning: 8.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/nike-vomero-plus-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning is slight-to-moderately soft (not mushy) with strong impact protection from the 43/33 mm full-length ZoomX stack; heel transitions are smooth from the posterolateral bevel, and the forefoot feels rockered with limited flex.",
+        "Responsiveness is a major strength: ZoomX provides high bounce and energy return for daily running and moderate uptempo work, but it feels less snappy when pushed faster than tempo pace.",
+        "Stability is neutral but improved over prior Invincible models: large heel sidewalls, a stiff heel counter, and mild lateral guidance add support, though the tall soft platform can still feel a bit unstable on longer efforts.",
+        "Durability appears above average: at about 100 miles there was only mild outsole lug wear with the outsole intact, and the midsole largely preserved its bounce while becoming slightly firmer."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-vomero-plus-initial-review-big-fun.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 45 mm heel / 35 mm forefoot all-ZoomX setup is described as very plush with strong impact protection and a deep, protective heel/forefoot feel, though one tester found it a bit firmer than the Vomero 18.",
+        "Responsiveness: Testers repeatedly call the deep ZoomX midsole energetic and bouncy with better response than the Vomero 18, but one reviewer said turnover can feel lazy/long instead of very snappy.",
+        "Stability: Stability is considered good for such a soft max-stack shoe due to deep foot sit in sidewalls, a stout heel counter, wider midfoot platform, and full-coverage waffle outsole, though some reported forefoot lockdown/roominess issues.",
+        "Durability: Reviewers broadly report durability as excellent, citing the fuller, more substantial waffle outsole and reinforced upper/toe bumper construction."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-plus-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-cush 45/35 mm full-length ZoomX delivers a very plush, squishy ride with strong impact protection and a soft heel-to-forefoot feel.",
+        "Responsiveness: The ride is described as bouncy and energetic with strong perceived energy return, feeling more responsive than the Vomero 18 despite using TPE-based (not PEBA) ZoomX.",
+        "Stability: It appears less stable than the firmer Vomero 18; the review gives no specific torsional rigidity, heel-counter stiffness, or lateral support measurements.",
+        "Durability: No meaningful outsole wear or material longevity data is provided, so durability cannot be reliably assessed from this review."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 43,
+    "forefootStack": 33
+  },
+  "proposedSpecs": {
+    "weight": 281,
+    "drop": 10,
+    "heelStack": 43,
+    "forefootStack": 33
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

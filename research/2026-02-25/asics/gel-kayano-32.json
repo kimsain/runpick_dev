@@ -1,0 +1,262 @@
+{
+  "shoeId": "gel-kayano-32",
+  "modelName": "GEL-KAYANO 32",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/asics-gel-kayano-32",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-kayano-32",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.5,
+      "url": "https://www.doctorsofrunning.com/2025/05/asics-gel-kayano-32-review-2025-8mm-drop.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.0,
+      "url": "https://believeintherun.com/shoe-reviews/asics-gel-kayano-32-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-gel-kayano-32",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 133.3760136577,
+          "forefootShockAbsorption": 115.98640639317,
+          "midsoleSoftness_ha": 22,
+          "midsoleSoftnessCold_ha": 25.8,
+          "midsoleSoftness_ac": 41.3,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 47.75,
+          "forefootEnergyReturn": 49.29,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 5,
+          "midsoleWidthForefoot_mm": 119.8,
+          "midsoleWidthHeel_mm": 97.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.73 mm",
+          "outsoleThickness": "4.5 mm",
+          "toeboxDurability": 4,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 295,
+          "drop_mm": 9.3,
+          "heelStack_mm": 39.9,
+          "forefootStack_mm": 30.6,
+          "flexStiffness_n": 16.9,
+          "forefootTraction": 0.84,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 96.6,
+          "toeboxWidthBigToePart_mm": 73.9,
+          "toeboxHeight_mm": 27.5,
+          "sizeRating": 3.03,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "outsoleHardness_hc": 71.5,
+          "midsoleSoftnessCold_pct": 17.3,
+          "insoleThickness_mm": 4.9,
+          "tonguePadding_mm": 2.5,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 133.3760136577 / 115.98640639317 SA",
+        "Energy return heel/forefoot: 47.75% / 49.29%",
+        "Lab specs weight/drop/stack: 295g, 9.3mm, 39.9mm/30.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-kayano-32",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.3,
+          "forefootShockAbsorption": 7.4,
+          "heelFirmnessScore": 5.3,
+          "forefootFirmnessScore": 7.8,
+          "longRunForefoot_score": 6.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 65.5,
+          "forefootEnergyReturn": 67.0,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 57.3,
+          "at1100N_Nmm": 102.7,
+          "at1900N_Nmm": 199.2,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 106.5,
+          "at1300N_Nmm": 200.4,
+          "at2050N_Nmm": 387.6,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.98,
+          "at1100N_J": 8.96,
+          "at1900N_J": 16.53,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.29,
+          "at1300N_J": 7.86,
+          "at2050N_J": 11.92,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.53,
+          "at20km_J": 7.35,
+          "at30km_J": 7.25,
+          "at40km_J": 7.18,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 300.2,
+          "heelStack_mm": 41.7,
+          "forefootStack_mm": 32.6,
+          "drop_mm": 9.1,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 94.0,
+          "outsoleArchWidth_mm": 78.0,
+          "outsoleForefootWidth_mm": 118.0,
+          "internalLength_mm": 280.0,
+          "internalHeelWidth_mm": 68.0,
+          "internalForefootWidth_mm": 97.0,
+          "heelWidthToStackRatio": 2.25,
+          "forefootWidthToStackRatio": 3.62,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 65.5%",
+        "Forefoot ER: 67.0%",
+        "Heel Cushioning: 7.3 /10",
+        "Forefoot Cushioning: 7.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/asics-gel-kayano-32-review-2025-8mm-drop.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The ride is well-cushioned but slightly firmer than expected, with improved heel compression/transition for impact protection and a stiff, less-flexible forefoot feel.",
+        "Responsiveness: There is some bounce from the 4D Guidance system and a mildly snappy forefoot, but overall energy return feels moderate and better suited to easy paces than fast running.",
+        "Stability: Moderate-to-strong guidance comes from a wide base, medial/lateral sidewalls, adaptive geometry that resists excess motion, and a stiff heel counter (softly padded) with generally good lateral support.",
+        "Durability: Expected durability is average; traction is solid on dry roads but mild wet slippage was noted, and slight outsole/midsole wear appeared at exposed FF Blast+ after about 30 miles."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/asics-gel-kayano-32-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: FF Blast Plus Eco is soft but not mushy, with an overall firmer-than-max-cushion feel; Rearfoot PureGEL provides clear heel-strike impact protection and a more heel-cushioned ride than forefoot plushness.",
+        "Responsiveness: The ride is described as consistent rather than lively, with no rocker sensation and limited bounce/snappiness, making it better for easy/recovery running than speed work.",
+        "Stability: Stability is a standout via the 4D Guidance System and wide base, giving strong anti-overpronation control and dependable lateral support; the heel feels slightly heavier.",
+        "Durability: The AsicsGrip outsole is specifically called good quality and durable, with substantial rubber/grooving that suggests strong wear resistance and long material longevity."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 300,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 300,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 9.3,
+      "rtings": 9.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 1,
+    "stability": 10,
+    "durability": 10
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 1,
+    "stability": 10,
+    "durability": 10
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

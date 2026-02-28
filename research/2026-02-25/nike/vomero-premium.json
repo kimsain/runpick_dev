@@ -1,0 +1,293 @@
+{
+  "shoeId": "vomero-premium",
+  "modelName": "VOMERO PREMIUM",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/nike-vomero-premium",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-premium-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 18.2,
+      "url": "https://www.doctorsofrunning.com/2025/11/nike-vomero-premium-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 21.7,
+      "url": "https://www.roadtrailrun.com/2025/09/nike-vomero-premium-review-bold-radical.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.1,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-premium-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-vomero-premium",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 173.37031900139,
+          "forefootShockAbsorption": 147.36221632773,
+          "midsoleSoftness_ha": 15.9,
+          "midsoleSoftnessCold_ha": 19.8,
+          "midsoleSoftness_ac": 34.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 63.3,
+          "forefootEnergyReturn": 64.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 118.4,
+          "midsoleWidthHeel_mm": 103.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.65 mm",
+          "outsoleThickness": "2.8 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 326,
+          "drop_mm": 8.8,
+          "heelStack_mm": 50.1,
+          "forefootStack_mm": 41.3,
+          "flexStiffness_n": 21.5,
+          "forefootTraction": 0.51,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 94.6,
+          "toeboxWidthBigToePart_mm": 68.6,
+          "toeboxHeight_mm": 30.8,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "midsoleSoftnessCold_pct": 24.2,
+          "insoleThickness_mm": 4.1,
+          "tonguePadding_mm": 12.4,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 173.37031900139 / 147.36221632773 SA",
+        "Energy return heel/forefoot: 63.3% / 64.4%",
+        "Lab specs weight/drop/stack: 326g, 8.8mm, 50.1mm/41.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/vomero-premium-running-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 9.5,
+          "forefootShockAbsorption": 9.7,
+          "heelFirmnessScore": 3.2,
+          "forefootFirmnessScore": 5.3,
+          "longRunForefoot_score": 9.5,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.6,
+          "forefootEnergyReturn": 78.2,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 40.0,
+          "at1100N_Nmm": 73.8,
+          "at1900N_Nmm": 152.2,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 62.4,
+          "at1300N_Nmm": 126.9,
+          "at2050N_Nmm": 268.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.26,
+          "at1100N_J": 12.61,
+          "at1900N_J": 23.31,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 6.57,
+          "at1300N_J": 12.8,
+          "at2050N_J": 19.06,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 11.8,
+          "at20km_J": 11.59,
+          "at30km_J": 11.5,
+          "at40km_J": 11.44,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 329.5,
+          "heelStack_mm": 52.7,
+          "forefootStack_mm": 42.8,
+          "drop_mm": 9.9,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 104.0,
+          "outsoleArchWidth_mm": 89.0,
+          "outsoleForefootWidth_mm": 119.0,
+          "internalLength_mm": 279.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 91.0,
+          "heelWidthToStackRatio": 1.97,
+          "forefootWidthToStackRatio": 2.78,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 76.6%",
+        "Forefoot ER: 78.2%",
+        "Heel Cushioning: 9.5 /10",
+        "Forefoot Cushioning: 9.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/11/nike-vomero-premium-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Maximal 55/45 mm stack with full-length ZoomX and heel/forefoot Air Zoom units delivers high impact protection; heel/forefoot loading feels suspension-like, but initial contact is reported as mildly firm rather than ultra-soft.",
+        "Responsiveness: The ride is strongly rockered with noticeable bounce and rebound, giving good energy return at easy/steady paces, but the heavy build (11.6 oz men’s US 9) limits snappiness at faster efforts.",
+        "Stability: Wide platform and sole flare, a stiff rocker platform, and a rigid heel counter provide relatively stable lateral support and secure lockdown despite the tall stack, though runners with balance/proprioception issues may still find it too high.",
+        "Durability: Durability expectation is rated good; the outsole is relatively full-contact with good traction, and the thicker premium upper materials suggest solid long-term wear."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/09/nike-vomero-premium-review-bold-radical.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Extremely soft, maximal cushioning (55 mm heel / 45 mm forefoot) with ZoomX plus dual Air Zoom gives a cloud-like heel and forefoot feel with excellent impact protection for easy and recovery runs.",
+        "Responsiveness: The ride is very bouncy with strong perceived energy return that helps it feel lighter than its weight, but it is not especially snappy for marathon pace or faster efforts.",
+        "Stability: Despite the towering stack, a wide base, rigid extended heel counter, padded rear structure, and midfoot support features make it surprisingly stable laterally, though some testers noted heel-lock/Achilles irritation.",
+        "Durability: The excerpt does not provide clear long-term durability evidence; specific outsole wear and material longevity findings are largely not reported."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-vomero-premium-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Extremely plush max-cushion ride with a 55 mm heel / 45 mm forefoot stack, full ZoomX foam, and large heel/forefoot Air Zoom units, giving very soft impact protection at both ends.",
+        "Responsiveness: ZoomX plus dual Air Zoom units creates a notably bouncy, springy, energetic ride, adding clear rebound even on easy and long runs.",
+        "Stability: Better than expected for the extreme stack height; testers reported secure heel lockdown and said it felt more stable/runnable than anticipated rather than overly wobbly.",
+        "Durability: Full rubber outsole coverage and strong rain traction indicate good outsole wear resistance, with no major early durability concerns called out for the reviewed pair."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 351,
+    "drop": 10,
+    "heelStack": 55,
+    "forefootStack": 45
+  },
+  "proposedSpecs": {
+    "weight": 351,
+    "drop": 10,
+    "heelStack": 55,
+    "forefootStack": 45
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 351,
+      "runRepeat": 326,
+      "rtings": 329.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 8.8,
+      "rtings": 9.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 55,
+      "runRepeat": 50.1,
+      "rtings": 52.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 45,
+      "runRepeat": 41.3,
+      "rtings": 42.8,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 10,
+    "responsiveness": 5,
+    "stability": 5,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 10,
+    "responsiveness": 5,
+    "stability": 5,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

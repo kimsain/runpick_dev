@@ -1,0 +1,281 @@
+{
+  "shoeId": "magnify-nitro-3",
+  "modelName": "Magnify NITRO 3",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/puma-magnify-nitro-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/magnify-nitro-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.8,
+      "url": "https://www.doctorsofrunning.com/2025/09/puma-magnify-nitro-3-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 19.5,
+      "url": "https://www.roadtrailrun.com/2025/07/puma-magnify-nitro-3-review-2.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/puma-magnify-nitro-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 135.64839934889,
+          "forefootShockAbsorption": 99.009900990099,
+          "midsoleSoftness_ha": 14.5,
+          "midsoleSoftnessCold_ha": 15.5,
+          "midsoleSoftness_ac": 32.3,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 65.2,
+          "forefootEnergyReturn": 73.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 112.6,
+          "midsoleWidthHeel_mm": 91.6,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.3 mm",
+          "outsoleThickness": "3.8 mm",
+          "toeboxDurability": 5,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 261,
+          "drop_mm": 11.5,
+          "heelStack_mm": 37.4,
+          "forefootStack_mm": 25.9,
+          "flexStiffness_n": 17.8,
+          "forefootTraction": 0.61,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 96,
+          "toeboxWidthBigToePart_mm": 72.3,
+          "toeboxHeight_mm": 26,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "midsoleSoftnessCold_pct": 6.9,
+          "insoleThickness_mm": 5.3,
+          "tonguePadding_mm": 6.3,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 135.64839934889 / 99.009900990099 SA",
+        "Energy return heel/forefoot: 65.2% / 73.6%",
+        "Lab specs weight/drop/stack: 261g, 11.5mm, 37.4mm/25.9mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/magnify-nitro-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.7,
+          "forefootShockAbsorption": 6.9,
+          "heelFirmnessScore": 5.7,
+          "forefootFirmnessScore": 8.6,
+          "longRunForefoot_score": 6.5,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.6,
+          "forefootEnergyReturn": 80.0,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 52.9,
+          "at1100N_Nmm": 115.3,
+          "at1900N_Nmm": 255.9,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 121.7,
+          "at1300N_Nmm": 254.9,
+          "at2050N_Nmm": 513.8,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.56,
+          "at1100N_J": 9.28,
+          "at1900N_J": 15.78,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.49,
+          "at1300N_J": 7.42,
+          "at2050N_J": 10.6,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.13,
+          "at20km_J": 6.97,
+          "at30km_J": 6.86,
+          "at40km_J": 6.76,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 261.0,
+          "heelStack_mm": 38.7,
+          "forefootStack_mm": 28.5,
+          "drop_mm": 10.2,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 94.0,
+          "outsoleArchWidth_mm": 71.0,
+          "outsoleForefootWidth_mm": 113.0,
+          "internalLength_mm": 281.0,
+          "internalHeelWidth_mm": 65.0,
+          "internalForefootWidth_mm": 91.0,
+          "heelWidthToStackRatio": 2.43,
+          "forefootWidthToStackRatio": 3.96,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Semi-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 6.0,
+          "forefootWidthFitScore": 9.8,
+          "archWidthFitScore": 5.2,
+          "forefootHeightFitScore": 7.7,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -0.9,
+          "ballOfFootTtsDeviation_mm": 1.2,
+          "archWidthTtsDeviation_mm": -6.7,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.6%",
+        "Forefoot ER: 80.0%",
+        "Heel Cushioning: 7.7 /10",
+        "Forefoot Cushioning: 6.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/09/puma-magnify-nitro-3-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length Nitro foam is notably soft/compliant with strong impact protection and a plush ride; heel transition can feel clunky, while the forefoot feels well-cushioned and smooth.",
+        "Responsiveness: Energy return is moderate with some rebound/bounce for easy to moderate uptempo efforts, but it is not especially snappy for faster interval work.",
+        "Stability: This is a true neutral shoe; the very soft foam and narrow midfoot can feel a bit wobbly laterally, though lockdown is secure and the heel counter is moderately stiff.",
+        "Durability: Outsole durability appears average with early wear on exposed areas and reported posterolateral rubber tearing around 30 miles, while midsole feel has remained consistent so far."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/puma-magnify-nitro-3-review-2.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 100% PEBA NitroFoam feels highly comfortable and protective but less mushy than v2; the 40/30 mm stack and 10 mm drop give smooth heel-first landings with a pleasant forefoot feel.",
+        "Responsiveness: Energy return is strong and the ride is distinctly bouncy; the updated foam feels more responsive and the decoupling groove makes toe-off snappier, though transitions remain on the slower side at faster paces.",
+        "Stability: It is notably stable for a bouncy trainer, helped by a wide platform, rearfoot cradle/rails, secure lockdown, and a semi-structured padded heel counter; the softer exposed midfoot is the least stable area.",
+        "Durability: PumaGrip is described as top-tier for traction and lasting power, but limited outsole coverage (about one-third uncovered midsole) may modestly reduce long-term lifespan."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 260,
+    "drop": 10,
+    "heelStack": 40,
+    "forefootStack": 30
+  },
+  "proposedSpecs": {
+    "weight": 260,
+    "drop": 10,
+    "heelStack": 40,
+    "forefootStack": 30
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 11.5,
+      "rtings": 10.2,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 40,
+      "runRepeat": 37.4,
+      "rtings": 38.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 30,
+      "runRepeat": 25.9,
+      "rtings": 28.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

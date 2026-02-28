@@ -1,0 +1,259 @@
+{
+  "shoeId": "wave-rebellion-pro-3",
+  "modelName": "Wave Rebellion Pro 3",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/mizuno-wave-rebellion-pro-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rebellion-pro-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 23.0,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-wave-rebellion-pro-3-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 21.0,
+      "url": "https://www.roadtrailrun.com/2025/01/mizuno-wave-rebellion-pro-3-review-8.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/mizuno-wave-rebellion-pro-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 184.19598452754,
+          "forefootShockAbsorption": 125.89701624072,
+          "midsoleSoftness_ha": 16.5,
+          "midsoleSoftnessCold_ha": 16.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 66.3,
+          "forefootEnergyReturn": 69.1,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 116.7,
+          "midsoleWidthHeel_mm": 86.7,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.4 mm",
+          "outsoleThickness": "2.5 mm",
+          "toeboxDurability": 4,
+          "heelPaddingDurability": 1,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 227,
+          "drop_mm": 5.4,
+          "heelStack_mm": 39.9,
+          "forefootStack_mm": 34.5,
+          "flexStiffness_n": 20.7,
+          "forefootTraction": 0.62,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 96.6,
+          "toeboxWidthBigToePart_mm": 72.8,
+          "toeboxHeight_mm": 25.4,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "midsoleSoftnessCold_pct": 0,
+          "insoleThickness_mm": 3.9,
+          "tonguePadding_mm": 1,
+          "tongueGussetType": "none",
+          "heelTab": "pull-tab",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 184.19598452754 / 125.89701624072 SA",
+        "Energy return heel/forefoot: 66.3% / 69.1%",
+        "Lab specs weight/drop/stack: 227g, 5.4mm, 39.9mm/34.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/wave-rebellion-pro-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 9.9,
+          "forefootShockAbsorption": 8.5,
+          "heelFirmnessScore": 3.2,
+          "forefootFirmnessScore": 6.9,
+          "longRunForefoot_score": 8.0,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.0,
+          "forefootEnergyReturn": 80.3,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 34.7,
+          "at1100N_Nmm": 81.4,
+          "at1900N_Nmm": 170.0,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 87.3,
+          "at1300N_Nmm": 170.5,
+          "at2050N_Nmm": 327.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 5.95,
+          "at1100N_J": 14.06,
+          "at1900N_J": 23.47,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.13,
+          "at1300N_J": 9.33,
+          "at2050N_J": 14.26,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 8.91,
+          "at20km_J": 8.7,
+          "at30km_J": 8.58,
+          "at40km_J": 8.49,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 222.0,
+          "heelStack_mm": 41.2,
+          "forefootStack_mm": 34.3,
+          "drop_mm": 6.9,
+          "advertisedDrop_mm": 4.0,
+          "outsoleHeelWidth_mm": 83.0,
+          "outsoleArchWidth_mm": 72.0,
+          "outsoleForefootWidth_mm": 112.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 61.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.01,
+          "forefootWidthToStackRatio": 3.27,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.0%",
+        "Forefoot ER: 80.3%",
+        "Heel Cushioning: 9.9 /10",
+        "Forefoot Cushioning: 8.5 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/mizuno-wave-rebellion-pro-3-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The ultra-high 61/57 mm stack and improved midsole compliance suggest strong impact protection, with the best heel/forefoot feel for midfoot or forward-heel strikers.",
+        "Responsiveness: The midsole is described as more resilient than v2, and the aggressive geometry is built for faster efforts, delivering a race-oriented rebound rather than a relaxed easy-pace ride.",
+        "Stability: Stability is mixed; the very tall, aggressive platform may feel unstable for some and the heel counter is very flexible (with some heel slippage noted), but midfoot lockdown and lateral/frontal-plane control are generally good when laced securely.",
+        "Durability: Outsole wear and long-term material longevity are not clearly reported in the provided text; the light mesh upper is breathable but showed mild abrasion potential when run sockless."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/mizuno-wave-rebellion-pro-3-review-8.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The midsole feels very soft and almost bottomless at heel impact, with cushioning most pronounced just in front of the heel and a less evenly distributed forefoot feel.",
+        "Responsiveness: Energy return is a standout (described as explosive and 10/10), with huge bounce and a snappy late transition, though the very tall stack causes a longer compression/release phase.",
+        "Stability: Stability is a clear weakness—split/beveled heel geometry and high stack make landings less stable than competitors, and the reviewer reports ankle strain risk despite a very rigid plate and secure upper lockdown.",
+        "Durability: Outsole traction and full coverage are praised, but the prominent toe-area nubs are expected to wear relatively quickly; upper materials are described as strong and long-lasting."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 218,
+    "drop": 4,
+    "heelStack": 40,
+    "forefootStack": 36
+  },
+  "proposedSpecs": {
+    "weight": 218,
+    "drop": 4,
+    "heelStack": 40,
+    "forefootStack": 36
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 4,
+      "runRepeat": 5.4,
+      "rtings": 6.9,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 10,
+    "responsiveness": 6,
+    "stability": 3,
+    "durability": 5
+  },
+  "proposedScores": {
+    "cushioning": 10,
+    "responsiveness": 6,
+    "stability": 3,
+    "durability": 5
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

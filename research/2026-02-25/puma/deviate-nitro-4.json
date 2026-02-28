@@ -1,0 +1,108 @@
+{
+  "shoeId": "deviate-nitro-4",
+  "modelName": "Deviate NITRO 4",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.2,
+      "url": "https://www.doctorsofrunning.com/2026/01/puma-deviate-nitro-4-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 22.5,
+      "url": "https://www.roadtrailrun.com/2026/01/puma-running-deviate-4-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.4,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-4-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/01/puma-deviate-nitro-4-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: NITROFOAM feels relatively soft with good impact protection in the 38 mm heel, but the 30 mm forefoot rides firmer because the stiff plate dominates forefoot feel.",
+        "Responsiveness: Energy return is high (described as very responsive with noticeable bounce), especially at tempo/faster paces, though snappy rocker/plate behavior is highly mechanics-dependent and can feel like fighting the shoe.",
+        "Stability: Forefoot rigidity is very high from the carbon-composite plate, while the midfoot is more compliant; heel hold is secure via a semi-rigid heel counter and wraparound overlays, with generally good lateral lockdown from the upper.",
+        "Durability: PUMAGRIP outsole showed very strong grip and minimal early wear (no visible denting reported), and overall durability expectation was rated good."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/01/puma-running-deviate-4-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Updated dual-layer PEBA setup (38/30 mm) feels softer and bouncier than v3 while staying controlled; impact protection is described as soft-yet-firm, with the heel as the softest landing zone and a balanced forefoot feel.",
+        "Responsiveness: The ride is more energetic and dynamic, with improved bounce/energy return from the new foams; the revised PWRPLATE provides a long, snappy flex and smoother, quicker toe-off.",
+        "Stability: A wider midfoot platform (+8 mm) helps the base, but support is less locked-in than v3; reviewers note reduced arch/midfoot guidance and want more heel-counter/ankle-collar support.",
+        "Durability: Long-term durability evidence is limited in this excerpt; no explicit outsole wear or material longevity results are provided, beyond short-term comfort over runs up to about 15 miles."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-4-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The dual-density setup (softer PEBA-based top layer over a firmer Nitrofoam layer) makes v4 softer than prior versions but still more \"racy\" than plush, with better impact give at landing and toe-off plus a smoother heel-to-forefoot transition from the 38/30 mm stack and 8 mm drop.",
+        "Responsiveness: The ride stays energetic and quick, with strong snappiness/energy return from the plated construction (PWRPlate/carbon-composite plate) and firmer lower foam that preserves the Deviate’s signature responsive feel.",
+        "Stability: Heel and collar structure provide secure lockdown, and reviewers noted reliable ankle hold despite being a plated shoe; the slightly wider fit and firmer plated platform improve overall lateral confidence and torsional control.",
+        "Durability: PUMAGRIP remains a standout for sticky traction, especially in wet conditions; although rubber is thinner with more cutouts for weight reduction, early testing did not show obvious durability loss."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": 250,
+    "drop": 8,
+    "heelStack": 38,
+    "forefootStack": 30
+  },
+  "proposedSpecs": {
+    "weight": 250,
+    "drop": 8,
+    "heelStack": 38,
+    "forefootStack": 30
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

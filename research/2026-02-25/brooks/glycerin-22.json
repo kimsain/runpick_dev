@@ -1,0 +1,257 @@
+{
+  "shoeId": "glycerin-22",
+  "modelName": "Glycerin 22",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/brooks-glycerin-22",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/glycerin-22",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 18.7,
+      "url": "https://www.doctorsofrunning.com/2025/05/brooks-glycerin-22-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 16.2,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-glycerin-22-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/brooks-glycerin-22",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 133.20190745131,
+          "forefootShockAbsorption": 109.33861074361,
+          "midsoleSoftness_ha": 17.3,
+          "midsoleSoftnessCold_ha": 23,
+          "midsoleSoftness_ac": 30,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 54.78,
+          "forefootEnergyReturn": 58.41,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 117.2,
+          "midsoleWidthHeel_mm": 89.7,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.5 mm",
+          "outsoleThickness": "3.4 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 293,
+          "drop_mm": 10.3,
+          "heelStack_mm": 38.5,
+          "forefootStack_mm": 28.2,
+          "flexStiffness_n": 15,
+          "stiffness_n": 26.5,
+          "stiffnessCold_n": 30.8,
+          "stiffnessCold_pct": 16.2,
+          "forefootTraction": 0.44,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 96.3,
+          "toeboxWidthBigToePart_mm": 73.7,
+          "toeboxHeight_mm": 23.6,
+          "sizeRating": 2.67,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 84,
+          "midsoleSoftnessCold_pct": 32.9,
+          "insoleThickness_mm": 5,
+          "tonguePadding_mm": 11.5,
+          "tongueGussetType": "none",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 133.20190745131 / 109.33861074361 SA",
+        "Energy return heel/forefoot: 54.78% / 58.41%",
+        "Lab specs weight/drop/stack: 293g, 10.3mm, 38.5mm/28.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/glycerin-22",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.6,
+          "forefootShockAbsorption": 6.2,
+          "heelFirmnessScore": 5.0,
+          "forefootFirmnessScore": 8.7,
+          "longRunForefoot_score": 5.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 68.5,
+          "forefootEnergyReturn": 73.1,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 50.9,
+          "at1100N_Nmm": 100.3,
+          "at1900N_Nmm": 207.9,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 132.1,
+          "at1300N_Nmm": 256.3,
+          "at2050N_Nmm": 491.4,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.98,
+          "at1100N_J": 9.68,
+          "at1900N_J": 17.13,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.79,
+          "at1300N_J": 6.6,
+          "at2050N_J": 9.81,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 6.18,
+          "at20km_J": 6.05,
+          "at30km_J": 6.0,
+          "at40km_J": 5.96,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 292.9,
+          "heelStack_mm": 37.6,
+          "forefootStack_mm": 27.4,
+          "drop_mm": 10.2,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 93.0,
+          "outsoleArchWidth_mm": 76.0,
+          "outsoleForefootWidth_mm": 117.0,
+          "internalLength_mm": 279.0,
+          "internalHeelWidth_mm": 66.0,
+          "internalForefootWidth_mm": 92.0,
+          "heelWidthToStackRatio": 2.47,
+          "forefootWidthToStackRatio": 4.27,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 68.5%",
+        "Forefoot ER: 73.1%",
+        "Heel Cushioning: 7.6 /10",
+        "Forefoot Cushioning: 6.2 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/brooks-glycerin-22-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: DNA Tuned creates a plush, softer heel with solid impact protection for daily and long runs, while the forefoot feels slightly firmer.",
+        "Responsiveness: The smaller-cell forefoot foam adds a noticeably snappier toe-off than prior versions, but overall energy return is still not high enough for true fast-effort use.",
+        "Stability: Despite being neutral, it rides stable from a wide flared platform and strong lockdown; the heel counter is very stiff and supportive, while sidewall guidance is mild.",
+        "Durability: Durability is characterized as average, with outsole grip reported as good in most situations and no major material longevity problems specifically called out."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-glycerin-22-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The DNA Tuned midsole delivers a soft heel landing, strong impact protection, and a smooth heel-to-forefoot transition; overall underfoot comfort is high.",
+        "Responsiveness: The forefoot tuning creates a responsive, sometimes snappy toe-off with noticeable bounce for a daily trainer.",
+        "Stability: Despite the high stack, the firmer carrier foam keeps the ride stable, and heel lockdown is good; torsional rigidity/lateral structure are not deeply detailed.",
+        "Durability: Outsole durability is a standout, with lots of forefoot rubber and repeated claims of rock-solid longevity and long outdoor life."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 289,
+    "drop": 10,
+    "heelStack": 38.5,
+    "forefootStack": 28.2
+  },
+  "proposedSpecs": {
+    "weight": 289,
+    "drop": 10,
+    "heelStack": 38.5,
+    "forefootStack": 28.2
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 3,
+    "stability": 6,
+    "durability": 10
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 3,
+    "stability": 6,
+    "durability": 10
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

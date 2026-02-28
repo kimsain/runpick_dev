@@ -1,0 +1,287 @@
+{
+  "shoeId": "deviate-nitro-elite-3",
+  "modelName": "Deviate NITRO Elite 3",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.3,
+      "url": "https://www.doctorsofrunning.com/2024/10/puma-deviate-nitro-elite-3-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.8,
+      "url": "https://www.roadtrailrun.com/2024/08/puma-deviate-nitro-elite-3-review-up-in.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 24.4,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/puma-deviate-nitro-elite-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 146.74590945777,
+          "forefootShockAbsorption": 123.69654762936,
+          "midsoleSoftness_ha": 15.1,
+          "midsoleSoftnessCold_ha": 19,
+          "midsoleSoftness_ac": 35.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.13,
+          "forefootEnergyReturn": 76.31,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 108,
+          "midsoleWidthHeel_mm": 82.7,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.61 mm",
+          "outsoleThickness": "2.6 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 204,
+          "drop_mm": 10.6,
+          "heelStack_mm": 39.2,
+          "forefootStack_mm": 28.6,
+          "flexStiffness_n": 18.1,
+          "stiffness_n": 51.4,
+          "stiffnessCold_n": 52.17,
+          "stiffnessCold_pct": 1.5,
+          "forefootTraction": 0.67,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidest_mm": 95.7,
+          "toeboxWidthBigToe_mm": 76.1,
+          "toeboxWidthWidestPart_mm": 94.4,
+          "toeboxWidthBigToePart_mm": 69.5,
+          "internalLength_mm": 264.9,
+          "toeboxHeight_mm": 26.5,
+          "sizeRating": 3,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "outsoleHardness_hc": 72.6,
+          "midsoleSoftnessCold_pct": 25.8,
+          "insoleThickness_mm": 2.8,
+          "tonguePadding_mm": 6.1,
+          "tongueGussetType": "none",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 146.74590945777 / 123.69654762936 SA",
+        "Energy return heel/forefoot: 77.13% / 76.31%",
+        "Lab specs weight/drop/stack: 204g, 10.6mm, 39.2mm/28.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/deviate-nitro-elite-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.0,
+          "forefootShockAbsorption": 8.0,
+          "heelFirmnessScore": 5.0,
+          "forefootFirmnessScore": 7.6,
+          "longRunForefoot_score": 6.3,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.8,
+          "forefootEnergyReturn": 82.4,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 48.9,
+          "at1100N_Nmm": 96.1,
+          "at1900N_Nmm": 233.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 95.0,
+          "at1300N_Nmm": 190.6,
+          "at2050N_Nmm": 394.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.43,
+          "at1100N_J": 10.0,
+          "at1900N_J": 17.4,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.84,
+          "at1300N_J": 8.68,
+          "at2050N_J": 12.94,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 6.88,
+          "at20km_J": 6.73,
+          "at30km_J": 6.64,
+          "at40km_J": 6.58,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 199.9,
+          "heelStack_mm": 39.2,
+          "forefootStack_mm": 29.1,
+          "drop_mm": 10.1,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 81.0,
+          "outsoleArchWidth_mm": 55.0,
+          "outsoleForefootWidth_mm": 103.0,
+          "internalLength_mm": 275.0,
+          "internalHeelWidth_mm": 58.0,
+          "internalForefootWidth_mm": 90.0,
+          "heelWidthToStackRatio": 2.07,
+          "forefootWidthToStackRatio": 3.54,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.8%",
+        "Forefoot ER: 82.4%",
+        "Heel Cushioning: 8.0 /10",
+        "Forefoot Cushioning: 8.0 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/10/puma-deviate-nitro-elite-3-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The larger Nitro Elite midsole feels protective and bouncy but overall slightly firm, and the very stiff plate can feel harsh over longer distances.",
+        "Responsiveness: The Nitro Elite plus carbon PWRPLATE setup is very snappy with quick transitions, and the bounce becomes more aggressive as pace increases (strongest at fast efforts like 5K-10K).",
+        "Stability: Although it is a neutral racer, stability is helped by near-zero torsional flex and a very stiff plate, plus a mild-to-moderately stiff heel counter and secure upper lockdown.",
+        "Durability: The biggest issue is rearfoot outsole adhesion (a PUMAGRIP piece came off around 10 miles), but after re-gluing there was limited additional wear by about 25 miles and traction stayed strong on wet and dry roads."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/08/puma-deviate-nitro-elite-3-review-up-in.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Very high cushion-to-weight with a 40/32 mm stack (+4 mm vs v2); ride is protective and comfortable, with a slightly firmer forefoot layer feel.",
+        "Responsiveness: The new aliphatic TPU Nitro Elite foam is springy with strong rebound, and the bottom-loaded carbon PWRPLATE creates a notably propulsive, snappy toe-off.",
+        "Stability: Mixed overall; there is a noted slight lack of heel stability and no rigid heel counter, but PWRTAPE/upper lockdown is excellent with little to no heel movement reported.",
+        "Durability: Outsole grip and wear resistance are still rated among the best, and early midsole signs are positive (no wrinkling after about 60 km), though long-term foam longevity is not yet fully proven."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-3-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Added foam and a 40/32 mm stack give a softer, more protective underfoot ride with better long-run comfort; heel/forefoot feel is lively rather than mushy.",
+        "Responsiveness: The aliphatic TPU midsole and full-length carbon plate create strong bounce, high energy return, and a snappy, propulsive toe-off that improves at faster paces.",
+        "Stability: Overall stability is a weak spot (described as slightly unstable), though upper lockdown is solid with secure heel hold, ankle-collar support, and midfoot wrap.",
+        "Durability: PumaGrip is repeatedly described as very reliable/tacky for traction, and the foam is called more resilient, but explicit long-term outsole wear data is limited."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 209,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 209,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 10.6,
+      "rtings": 10.1,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 32,
+      "runRepeat": 28.6,
+      "rtings": 29.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 5
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 5,
+    "durability": 5
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

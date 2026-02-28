@@ -1,0 +1,267 @@
+{
+  "shoeId": "guide-18",
+  "modelName": "Guide 18",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/saucony-guide-18",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/guide-18-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.7,
+      "url": "https://www.doctorsofrunning.com/2024/12/saucony-guide-18-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.2,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-guide-18-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-guide-18",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 124.25601709763,
+          "forefootShockAbsorption": 119.35453069799,
+          "midsoleSoftness_ha": 23,
+          "midsoleSoftnessCold_ha": 24.9,
+          "midsoleSoftness_ac": 38.3,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 61.29,
+          "forefootEnergyReturn": 61.97,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 2,
+          "midsoleWidthForefoot_mm": 121.9,
+          "midsoleWidthHeel_mm": 105,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.6 mm",
+          "outsoleThickness": "3.4 mm",
+          "toeboxDurability": 4,
+          "heelPaddingDurability": 2,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 278,
+          "drop_mm": 8.3,
+          "heelStack_mm": 36,
+          "forefootStack_mm": 27.7,
+          "flexStiffness_n": 13.2,
+          "stiffness_n": 25.6,
+          "stiffnessCold_n": 30.3,
+          "stiffnessCold_pct": 18.4,
+          "forefootTraction": 0.51,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 96.3,
+          "toeboxWidthBigToePart_mm": 73.6,
+          "toeboxHeight_mm": 34.3,
+          "sizeRating": 2.65,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 87.5,
+          "midsoleSoftnessCold_pct": 8.3,
+          "insoleThickness_mm": 6.1,
+          "tonguePadding_mm": 4.1,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 124.25601709763 / 119.35453069799 SA",
+        "Energy return heel/forefoot: 61.29% / 61.97%",
+        "Lab specs weight/drop/stack: 278g, 8.3mm, 36mm/27.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/guide-18-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.0,
+          "forefootShockAbsorption": 7.4,
+          "heelFirmnessScore": 6.2,
+          "forefootFirmnessScore": 7.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 66.0,
+          "forefootEnergyReturn": 70.5,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 73.2,
+          "at1100N_Nmm": 122.7,
+          "at1900N_Nmm": 210.4,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 111.2,
+          "at1300N_Nmm": 201.8,
+          "at2050N_Nmm": 376.2,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.6,
+          "at1100N_J": 7.39,
+          "at1900N_J": 14.14,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.42,
+          "at1300N_J": 7.88,
+          "at2050N_J": 12.05,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 277.5,
+          "heelStack_mm": 35.1,
+          "forefootStack_mm": 26.4,
+          "drop_mm": 8.7,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 103.0,
+          "outsoleArchWidth_mm": 84.0,
+          "outsoleForefootWidth_mm": 117.0,
+          "internalLength_mm": 280.0,
+          "internalHeelWidth_mm": 63.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.93,
+          "forefootWidthToStackRatio": 4.43,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 66.0%",
+        "Forefoot ER: 70.5%",
+        "Heel Cushioning: 6.0 /10",
+        "Forefoot Cushioning: 7.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/12/saucony-guide-18-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Moderately cushioned and comfortably firm; PWRRUN provides solid impact protection with only mild softness from the PWRRUN+ sockliner, and heel/forefoot feel is more smooth-rolling than plush.",
+        "Responsiveness: Low to moderate; the midsole is described as not very bouncy or snappy and can feel plodding on hills, though the shoe is light enough for short uptempo efforts.",
+        "Stability: Strong but non-intrusive stability via Center Path geometry, lateral flare/crash pad, and a generally stiff platform; heel security is high with a stiff/partially rigid heel counter and good lockdown.",
+        "Durability: Overall expected to be average; some early heel outsole wear was noted but did not rapidly worsen, traction is average with occasional wet-road slipping, and exposed midsole favors road/track use for longevity."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-guide-18-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The ride is soft and well-cushioned with a smooth rocker, with PWRRUN midsole plus PWRRUN PB sockliner giving comfortable impact protection and a non-firm heel/forefoot feel for easy and long runs.",
+        "Responsiveness: It feels slightly to moderately responsive (more smooth than snappy), with the rocker and 6 mm drop helping forward roll, but energy return decreases as the foam starts to die around 200 miles.",
+        "Stability: Stability is subtle/light, mainly from the asymmetrical build, wide platform, and heel bevel; raised sidewalls were not very noticeable in use, and support is likely insufficient for runners needing strong pronation control.",
+        "Durability: Outsole durability appears somewhat better than the prior version but zonal rubber shows wet/cold traction limits, and midsole longevity is the bigger issue, with expected life closer to ~250 miles than 300+ miles."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 272,
+    "drop": 6,
+    "heelStack": 35,
+    "forefootStack": 29
+  },
+  "proposedSpecs": {
+    "weight": 272,
+    "drop": 6,
+    "heelStack": 35,
+    "forefootStack": 29
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 8.3,
+      "rtings": 8.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 29,
+      "runRepeat": 27.7,
+      "rtings": 26.4,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 9
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 9
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

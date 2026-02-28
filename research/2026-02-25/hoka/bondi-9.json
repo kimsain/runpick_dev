@@ -1,0 +1,291 @@
+{
+  "shoeId": "bondi-9",
+  "modelName": "Bondi 9",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/hoka-bondi-9",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.5,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.9,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-bondi-9-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.1,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-bondi-9-og-of-max-cushion-roars.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 19.8,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-bondi-9-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-bondi-9",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 146.23517540909,
+          "forefootShockAbsorption": 132.90626121397,
+          "midsoleSoftness_ha": 25.1,
+          "midsoleSoftnessCold_ha": 30.2,
+          "midsoleSoftness_ac": 43,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 60.17,
+          "forefootEnergyReturn": 60.34,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 123.2,
+          "midsoleWidthHeel_mm": 104.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.95 mm",
+          "outsoleThickness": "3.4 mm",
+          "toeboxDurability": 4,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 303,
+          "drop_mm": 9.1,
+          "heelStack_mm": 41.3,
+          "forefootStack_mm": 32.2,
+          "flexStiffness_n": 16.5,
+          "stiffness_n": 30.6,
+          "stiffnessCold_n": 35.4,
+          "stiffnessCold_pct": 15.7,
+          "forefootTraction": 0.45,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 94.1,
+          "toeboxWidthBigToePart_mm": 72.5,
+          "toeboxHeight_mm": 29.6,
+          "sizeRating": 2.85,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "outsoleHardness_hc": 76.5,
+          "midsoleSoftnessCold_pct": 20.3,
+          "insoleThickness_mm": 4.4,
+          "tonguePadding_mm": 9,
+          "tongueGussetType": "none",
+          "heelTab": "extended-heel-collar",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 146.23517540909 / 132.90626121397 SA",
+        "Energy return heel/forefoot: 60.17% / 60.34%",
+        "Lab specs weight/drop/stack: 303g, 9.1mm, 41.3mm/32.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.8,
+          "forefootShockAbsorption": 8.9,
+          "heelFirmnessScore": 4.3,
+          "forefootFirmnessScore": 7.2,
+          "longRunForefoot_score": 8.3,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.3,
+          "forefootEnergyReturn": 75.4,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 45.2,
+          "at1100N_Nmm": 88.7,
+          "at1900N_Nmm": 192.9,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 83.5,
+          "at1300N_Nmm": 177.4,
+          "at2050N_Nmm": 379.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.81,
+          "at1100N_J": 11.03,
+          "at1900N_J": 19.35,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.77,
+          "at1300N_J": 10.02,
+          "at2050N_J": 14.47,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 9.31,
+          "at20km_J": 9.03,
+          "at30km_J": 8.86,
+          "at40km_J": 8.72,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 297.8,
+          "heelStack_mm": 41.5,
+          "forefootStack_mm": 34.5,
+          "drop_mm": 7.0,
+          "advertisedDrop_mm": 5.0,
+          "outsoleHeelWidth_mm": 99.0,
+          "outsoleArchWidth_mm": 87.0,
+          "outsoleForefootWidth_mm": 120.0,
+          "internalLength_mm": 277.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.39,
+          "forefootWidthToStackRatio": 3.48,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 7.6,
+          "archWidthFitScore": 8.6,
+          "forefootHeightFitScore": 8.3,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -8.3,
+          "ballOfFootTtsDeviation_mm": -1.1,
+          "archWidthTtsDeviation_mm": -2.5,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74.3%",
+        "Forefoot ER: 75.4%",
+        "Heel Cushioning: 8.8 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/hoka-bondi-9-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-stack cushioning feels plush/compliant with strong impact protection, but slightly firm for running (softer for walking); heel bevel plus early forefoot rocker gives smooth heel-to-toe transition with mild forefoot flex.",
+        "Responsiveness: The supercritical EVA is lighter and somewhat more responsive than past Bondi versions, but rebound is still muted overall—more steady than bouncy/snappy, and clunky when pushing pace.",
+        "Stability: Stability is strong from the stiff platform/midfoot (low flexibility), widened heel frame, large heel sidewalls, and rigid heel counter, giving solid lateral support and lockdown but a very structured rearfoot feel.",
+        "Durability: Midsole performance stayed consistent over ~30 miles, while outsole durability is average with visible early posterior-lateral wear; harder outsole wearers may see slightly below-average longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/hoka-bondi-9-og-of-max-cushion-roars.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The supercritical EVA midsole is notably soft and plush, and the 43 mm heel / 38 mm forefoot stack delivers high impact protection with a deep, smooth heel-to-forefoot feel.",
+        "Responsiveness: Energy return is clearly improved versus prior Bondi models, with a lively, bouncy rebound and easier turnover, though snappiness/pop is still moderate rather than aggressive.",
+        "Stability: Rear sidewall 'Active Foot Frame' geometry and secure lockdown provide stable landings and lateral guidance, but softer foam and greater flex make it slightly less stable (and less torsionally rigid) than Bondi 8.",
+        "Durability: The Durabrasion rubber outsole is expected to hold up well, but the review notes long-term outsole and material longevity is still to be confirmed."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/hoka-bondi-9-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Bondi 9 stays very plush and soft with max-cushion comfort, 2 mm more stack, and strong impact protection that shines on easy/recovery runs.",
+        "Responsiveness: The supercritical EVA midsole is noticeably livelier and bouncier than past Bondis, with smoother rocker-driven transitions, but it is still not a truly snappy lightweight ride.",
+        "Stability: Fit is described as locked-in with secure heel/collar hold and supportive arch structure, giving controlled guidance for a very soft, high-stack shoe.",
+        "Durability: Reviewers note improved foam durability/shape retention plus a generous layer of durable, grippy outsole rubber, suggesting good long-term wear."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 297,
+    "drop": 5,
+    "heelStack": 43,
+    "forefootStack": 38
+  },
+  "proposedSpecs": {
+    "weight": 297,
+    "drop": 5,
+    "heelStack": 43,
+    "forefootStack": 38
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 5,
+      "runRepeat": 9.1,
+      "rtings": 7.0,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 38,
+      "runRepeat": 32.2,
+      "rtings": 34.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 5,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 5,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

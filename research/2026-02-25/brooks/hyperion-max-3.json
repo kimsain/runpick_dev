@@ -1,0 +1,280 @@
+{
+  "shoeId": "hyperion-max-3",
+  "modelName": "Hyperion Max 3",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/brooks-hyperion-max-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-max-3-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.9,
+      "url": "https://www.doctorsofrunning.com/2025/05/brooks-hyperion-max-3-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 26.5,
+      "url": "https://www.roadtrailrun.com/2025/06/brooks-hyperion-max-3-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.6,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-hyperion-max-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/brooks-hyperion-max-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 150.94339622642,
+          "forefootShockAbsorption": 133.31555792561,
+          "midsoleSoftness_ha": 12.1,
+          "midsoleSoftnessCold_ha": 14.1,
+          "midsoleSoftness_ac": 25.7,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 63.9,
+          "forefootEnergyReturn": 66.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 115.4,
+          "midsoleWidthHeel_mm": 87,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "outsoleThickness": "2.8 mm",
+          "toeboxDurability": 4,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 283,
+          "drop_mm": 10.6,
+          "heelStack_mm": 45.6,
+          "forefootStack_mm": 35,
+          "flexStiffness_n": 17,
+          "forefootTraction": 0.51,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 94.9,
+          "toeboxWidthBigToePart_mm": 72.6,
+          "toeboxHeight_mm": 25,
+          "sizeRating": 2.96,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "midsoleSoftnessCold_pct": 16.5,
+          "insoleThickness_mm": 2.8,
+          "tonguePadding_mm": 1.8,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 150.94339622642 / 133.31555792561 SA",
+        "Energy return heel/forefoot: 63.9% / 66.2%",
+        "Lab specs weight/drop/stack: 283g, 10.6mm, 45.6mm/35mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/hyperion-max-3-running-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.8,
+          "forefootShockAbsorption": 9.2,
+          "heelFirmnessScore": 4.5,
+          "forefootFirmnessScore": 6.3,
+          "longRunForefoot_score": 8.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.3,
+          "forefootEnergyReturn": 80.2,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 45.2,
+          "at1100N_Nmm": 93.2,
+          "at1900N_Nmm": 210.0,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 74.1,
+          "at1300N_Nmm": 156.1,
+          "at2050N_Nmm": 304.4,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.02,
+          "at1100N_J": 10.97,
+          "at1900N_J": 18.87,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.81,
+          "at1300N_J": 10.61,
+          "at2050N_J": 15.92,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 10.09,
+          "at20km_J": 9.91,
+          "at30km_J": 9.79,
+          "at40km_J": 9.7,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 290.0,
+          "heelStack_mm": 45.4,
+          "forefootStack_mm": 37.7,
+          "drop_mm": 7.7,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 89.0,
+          "outsoleArchWidth_mm": 55.0,
+          "outsoleForefootWidth_mm": 114.0,
+          "internalLength_mm": 277.0,
+          "internalHeelWidth_mm": 66.0,
+          "internalForefootWidth_mm": 92.0,
+          "heelWidthToStackRatio": 1.96,
+          "forefootWidthToStackRatio": 3.02,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Plastic",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 76.3%",
+        "Forefoot ER: 80.2%",
+        "Heel Cushioning: 8.8 /10",
+        "Forefoot Cushioning: 9.2 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/brooks-hyperion-max-3-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Hyperion Max 3 is a true max-cushioned setup (45 mm heel / 37 mm forefoot) with high impact protection and a slightly soft but still firm, controlled underfoot feel.",
+        "Responsiveness: The PEBA-based DNA Gold foam and stiff SpeedVault plate deliver strong bounce/energy return and a quick, snappy response when pace picks up.",
+        "Stability: Torsional/forefoot rigidity is high (very little flexibility), and the rigid heel counter plus secure, reinforced upper provide strong heel hold and lateral support.",
+        "Durability: The review’s stated durability expectation is average, with no major outsole-wear red flags noted and upper materials appearing sturdy but not highlighted as exceptionally long-lasting."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/06/brooks-hyperion-max-3-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Hyperion Max 3 uses a dual supercritical midsole (PEBA DNA Gold on top, firmer Flash v2 below), jumps to a 46/40 mm stack, and is described as softer, more comfortable, and more protective than v2.",
+        "Responsiveness: The nylon plate plus RapidRoll rocker provide moderate propulsion and good pace range, but multiple testers found v3 less snappy and agile than v2, with a stiffer overall ride.",
+        "Stability: Testers call it one of the most stable super-max trainers, citing the rigid heel counter, secure heel/midfoot lockdown, and supportive platform for strong rearfoot/lateral control.",
+        "Durability: Direct v3 durability evidence is limited in the provided text; no specific outsole-wear complaints are reported, and only prior v2 longevity (~250 miles for one tester) is explicitly noted."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-hyperion-max-3-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Hyperion Max 3 is now true max-stack (46 mm heel/40 mm forefoot), giving strong impact protection for long runs, but the ride is described as more firm-than-soft underfoot.",
+        "Responsiveness: The DNA Gold PEBA top layer provides noticeable bounce, and the RapidRoll rocker gives a smooth landing-to-toe-off transition; it is more of a rolling cruiser than a snappy tempo shoe.",
+        "Stability: The review repeatedly notes some instability (\"somewhat unstable,\" \"squirrelly\" at times), especially on uneven terrain/walking, but fit lockdown is solid with no heel slip and it feels fairly stable once moving.",
+        "Durability: It uses RoadTack outsole rubber and handled a rough 10-mile gravel run without major problems, but the text does not provide strong long-term outsole wear or material longevity data."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 281,
+    "drop": 6,
+    "heelStack": 45.6,
+    "forefootStack": 35
+  },
+  "proposedSpecs": {
+    "weight": 281,
+    "drop": 6,
+    "heelStack": 45.6,
+    "forefootStack": 35
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 6,
+      "runRepeat": 10.6,
+      "rtings": 7.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 35,
+      "runRepeat": 35,
+      "rtings": 37.7,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 6,
+    "stability": 6,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

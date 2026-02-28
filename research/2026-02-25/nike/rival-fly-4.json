@@ -1,0 +1,84 @@
+{
+  "shoeId": "rival-fly-4",
+  "modelName": "RIVAL FLY 4",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 18.1,
+      "url": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/12/nike-rival-fly-4-review-2024-100-racing.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Air Zoom midsole feels firmer/EVA-like rather than soft, with enough impact protection for longer efforts (reviewer handled a 13-mile workout); heel transition is smooth and forefoot toe-off feels natural due to moderate flexibility.",
+        "Responsiveness: A plastic plate adds mild rigidity and some forefoot snappiness, but overall bounce/energy return is modest and clearly below super-shoe levels.",
+        "Stability: The ride is highly neutral with little sole flaring or sidewall guidance; upper lockdown is good, heel counter is decently rigid, and traction supports confident cornering/lateral control despite minimal inherent stability features.",
+        "Durability: Durability expectation is described as average; outsole traction/grip is very good on track and road, with no specific early-wear issues reported."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": 245,
+    "drop": 8,
+    "heelStack": 30,
+    "forefootStack": 22
+  },
+  "proposedSpecs": {
+    "weight": 245,
+    "drop": 8,
+    "heelStack": 30,
+    "forefootStack": 22
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 4,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 4,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

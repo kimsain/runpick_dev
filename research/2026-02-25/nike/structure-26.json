@@ -1,0 +1,268 @@
+{
+  "shoeId": "structure-26",
+  "modelName": "STRUCTURE 26",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/nike-structure-26",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/structure-26-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.0,
+      "url": "https://www.doctorsofrunning.com/2025/07/nike-structure-26-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.6,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-structure-26-multi-tester-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-structure-26",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 132.32764324467,
+          "forefootShockAbsorption": 99.393698439519,
+          "midsoleSoftness_ha": 16.9,
+          "midsoleSoftnessCold_ha": 21,
+          "midsoleSoftness_ac": 34.9,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 57.2,
+          "forefootEnergyReturn": 59.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 114.4,
+          "midsoleWidthHeel_mm": 92.4,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.63 mm",
+          "outsoleThickness": "3.2 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 296,
+          "drop_mm": 10.1,
+          "heelStack_mm": 36.1,
+          "forefootStack_mm": 26,
+          "flexStiffness_n": 13.8,
+          "forefootTraction": 0.37,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.7,
+          "toeboxWidthBigToePart_mm": 71.9,
+          "toeboxHeight_mm": 25.7,
+          "sizeRating": 2.41,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "midsoleSoftnessCold_pct": 24.5,
+          "insoleThickness_mm": 3.9,
+          "tonguePadding_mm": 10.2,
+          "tongueGussetType": "none",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 132.32764324467 / 99.393698439519 SA",
+        "Energy return heel/forefoot: 57.2% / 59.4%",
+        "Lab specs weight/drop/stack: 296g, 10.1mm, 36.1mm/26mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/structure-26-running-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.9,
+          "forefootShockAbsorption": 5.5,
+          "heelFirmnessScore": 5.9,
+          "forefootFirmnessScore": 8.9,
+          "longRunForefoot_score": 4.8,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.3,
+          "forefootEnergyReturn": 70.1,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 61.9,
+          "at1100N_Nmm": 109.8,
+          "at1900N_Nmm": 226.5,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 152.0,
+          "at1300N_Nmm": 287.6,
+          "at2050N_Nmm": 462.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.89,
+          "at1100N_J": 8.48,
+          "at1900N_J": 15.38,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.33,
+          "at1300N_J": 5.78,
+          "at2050N_J": 8.98,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 5.35,
+          "at20km_J": 5.21,
+          "at30km_J": 5.12,
+          "at40km_J": 5.07,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 293.9,
+          "heelStack_mm": 37.9,
+          "forefootStack_mm": 29.4,
+          "drop_mm": 8.5,
+          "advertisedDrop_mm": 10.0,
+          "outsoleHeelWidth_mm": 93.0,
+          "outsoleArchWidth_mm": 81.0,
+          "outsoleForefootWidth_mm": 114.0,
+          "internalLength_mm": 277.0,
+          "internalHeelWidth_mm": 66.0,
+          "internalForefootWidth_mm": 92.0,
+          "heelWidthToStackRatio": 2.46,
+          "forefootWidthToStackRatio": 3.88,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Semi-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.3%",
+        "Forefoot ER: 70.1%",
+        "Heel Cushioning: 6.9 /10",
+        "Forefoot Cushioning: 5.5 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/07/nike-structure-26-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length ReactX delivers a softer, well-cushioned ride with solid impact protection for easy and longer runs, but heel landings can feel clunky and the foam can feel dead after about 12-14 miles.",
+        "Responsiveness: Energy return is moderate-to-low; it is smoother but less snappy than Structure 25, with limited bounce and weaker pace-up performance due to the heavier, less lively ride.",
+        "Stability: Moderate stability is strongest in the heel and midfoot from the medial sidewall/post-like guidance, lateral heel sidewall, wide midfoot base, and moderately stiff heel counter; forefoot support is comparatively neutral.",
+        "Durability: Durability is above average, with thick heel outsole rubber showing almost no wear after 30 miles; some forefoot outsole wear appears, but overall outsole and midsole longevity look strong."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-structure-26-multi-tester-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length ReactX midsole (38 mm heel / 28 mm forefoot) is described as plush and soft, with smoother impact protection and a more uniform heel-to-forefoot feel after removing the forefoot Air Zoom unit.",
+        "Responsiveness: ReactX gives a natural, moderate energy return, but testers characterize the ride as more recovery-pace friendly than truly bouncy or snappy.",
+        "Stability: Stability comes from subtle guidance rather than rigid posting, driven by the internal midfoot fit band, high medial/lateral crash rails, secure heel hold, and reinforced forefoot structure for controlled lateral support.",
+        "Durability: The review claims improved material longevity from ReactX and a better-executed upper, but it does not provide concrete outsole wear results from long-term testing."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 298,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "proposedSpecs": {
+    "weight": 298,
+    "drop": 10,
+    "heelStack": 38,
+    "forefootStack": 28
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": 10.1,
+      "rtings": 8.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 28,
+      "runRepeat": 26,
+      "rtings": 29.4,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 4,
+    "stability": 7,
+    "durability": 9
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 4,
+    "stability": 7,
+    "durability": 9
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

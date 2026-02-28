@@ -1,0 +1,288 @@
+{
+  "shoeId": "adizero-prime-x3-strung",
+  "modelName": "ADIZERO PRIME X3 STRUNG",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-prime-x3-strung",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.7,
+      "url": "https://www.doctorsofrunning.com/2025/07/adidas-adizero-prime-x3-strung-review.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 22.7,
+      "url": "https://www.roadtrailrun.com/2025/07/adidas-adizero-prime-x3-initial-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 22.8,
+      "url": "https://believeintherun.com/shoe-reviews/adidas-prime-x3-strung-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-adizero-prime-x-3-strung",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 159.74440894569,
+          "forefootShockAbsorption": 125.03907471085,
+          "midsoleSoftness_ha": 19.5,
+          "midsoleSoftnessCold_ha": 21.7,
+          "midsoleSoftness_ac": 36.1,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.71,
+          "forefootEnergyReturn": 76.69,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 124.3,
+          "midsoleWidthHeel_mm": 84.6,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.9 mm",
+          "outsoleThickness": "1.8 mm",
+          "toeboxDurability": 5,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 291,
+          "drop_mm": 13,
+          "heelStack_mm": 48.1,
+          "forefootStack_mm": 35.1,
+          "flexStiffness_n": 38.5,
+          "forefootTraction": 0.56,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 97.8,
+          "toeboxWidthBigToePart_mm": 73.2,
+          "toeboxHeight_mm": 25.4,
+          "sizeRating": 3.07,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "outsoleHardness_hc": 56.2,
+          "midsoleSoftnessCold_pct": 11.3,
+          "insoleThickness_mm": 2.7,
+          "tonguePadding_mm": 1.6,
+          "tongueGussetType": "sock-like",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 159.74440894569 / 125.03907471085 SA",
+        "Energy return heel/forefoot: 73.71% / 76.69%",
+        "Lab specs weight/drop/stack: 291g, 13mm, 48.1mm/35.1mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-prime-x3-strung",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 9.3,
+          "forefootShockAbsorption": 9.0,
+          "heelFirmnessScore": 3.8,
+          "forefootFirmnessScore": 5.8,
+          "longRunForefoot_score": 8.7,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 81.9,
+          "forefootEnergyReturn": 85.6,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 39.4,
+          "at1100N_Nmm": 80.5,
+          "at1900N_Nmm": 205.9,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 78.3,
+          "at1300N_Nmm": 138.3,
+          "at2050N_Nmm": 249.4,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.16,
+          "at1100N_J": 12.18,
+          "at1900N_J": 20.84,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.21,
+          "at1300N_J": 10.17,
+          "at2050N_J": 16.55,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 9.74,
+          "at20km_J": 9.63,
+          "at30km_J": 9.54,
+          "at40km_J": 9.46,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 291.6,
+          "heelStack_mm": 48.4,
+          "forefootStack_mm": 38.1,
+          "drop_mm": 10.3,
+          "advertisedDrop_mm": 7.0,
+          "outsoleHeelWidth_mm": 79.0,
+          "outsoleArchWidth_mm": 83.0,
+          "outsoleForefootWidth_mm": 122.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 63.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 1.63,
+          "forefootWidthToStackRatio": 3.2,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 8.9,
+          "archWidthFitScore": 0.0,
+          "forefootHeightFitScore": 10.0,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": 5.8,
+          "ballOfFootTtsDeviation_mm": 3.6,
+          "archWidthTtsDeviation_mm": -11.2,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 81.9%",
+        "Forefoot ER: 85.6%",
+        "Heel Cushioning: 9.3 /10",
+        "Forefoot Cushioning: 9.0 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/07/adidas-adizero-prime-x3-strung-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 50 mm heel / 43 mm forefoot Lightstrike Pro setup gives very high impact protection with a soft, highly cushioned ride at the heel, while the forefoot feels more firm/stiff and needs break-in.",
+        "Responsiveness: Energy return is strongest at the heel with pronounced bounce, and the plate + Energy Rods + rocker create a quick, snappy heel-to-forefoot roll (especially for rearfoot strikers).",
+        "Stability: Torsional rigidity is very high (the shoe is essentially non-flexible), but midfoot stability is reduced versus the prior version; heel lockdown is decent via collar padding despite no heel counter, and lateral support is best only on stable, even surfaces.",
+        "Durability: Outsole durability looks above average with no visible wear after 35+ miles and good material longevity so far, though there is a noted concern about possible wear/separation risk around the split midfoot outsole."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/adidas-adizero-prime-x3-initial-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Extremely deep max cushioning (50 mm heel / 43 mm forefoot) feels soft, dynamic, and highly forgiving, with strong impact protection and a smoother heel-to-forefoot roll than prior versions.",
+        "Responsiveness: Energy return is strong and consistent from the plate + EnergyRods setup, giving solid forefoot impulse and smooth toe-off, but bounce/flight feels less explosive than earlier Prime X models.",
+        "Stability: Major stability improvement from the wider midfoot/forefoot platform and revised geometry/plating, with secure heel-midfoot lockdown, better torsional control, and reliable lateral tracking across paces.",
+        "Durability: New mostly Traxxion outsole (with a small Continental forefoot piece) is described as a lighter material with a good durability reputation, but long-term wear is not yet confirmed from the short test period."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/adidas-prime-x3-strung-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 50 mm heel / 43 mm forefoot stack and three-density Lightstrike Pro create a plush, highly protective ride, with softer foam underfoot, firmer foam at the perimeter, and smoother long-run comfort than the X2’s harsher feel.",
+        "Responsiveness: The shoe keeps a springy, trampoline-like character, and the single full-length carbon plate plus Energy Rods 2.0 improve toe-off snap and turnover; Lightstrike Pro is described as very resilient with strong energy return.",
+        "Stability: A tighter Strung upper and sock-like collar improve lockdown, while firmer outer-side foam and the plate/rods setup add structure, though the very tall platform can still feel somewhat bottom-heavy.",
+        "Durability: The Continental + Lighttraxion outsole is specifically called out for added durability and grip, with no early outsole-wear issues mentioned in the review."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 291,
+    "drop": 7,
+    "heelStack": 50,
+    "forefootStack": 43
+  },
+  "proposedSpecs": {
+    "weight": 291,
+    "drop": 7,
+    "heelStack": 50,
+    "forefootStack": 43
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 7,
+      "runRepeat": 13,
+      "rtings": 10.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 43,
+      "runRepeat": 35.1,
+      "rtings": 38.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 3,
+    "durability": 4
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 9,
+    "stability": 3,
+    "durability": 4
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

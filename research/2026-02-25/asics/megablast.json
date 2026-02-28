@@ -1,0 +1,294 @@
+{
+  "shoeId": "megablast",
+  "modelName": "MEGABLAST",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/asics-megablast",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/megablast",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 17.7,
+      "url": "https://www.doctorsofrunning.com/2025/08/asics-megablast-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 17.1,
+      "url": "https://www.roadtrailrun.com/2025/09/asics-megablast-review-5-comparisons.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 20.2,
+      "url": "https://believeintherun.com/shoe-reviews/asics-megablast-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-megablast",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 160.15374759769,
+          "forefootShockAbsorption": 144.05070584846,
+          "midsoleSoftness_ha": 15.5,
+          "midsoleSoftnessCold_ha": 17.4,
+          "midsoleSoftness_ac": 30.8,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73,
+          "forefootEnergyReturn": 73.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 117.9,
+          "midsoleWidthHeel_mm": 95.4,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.9 mm",
+          "outsoleThickness": "3 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 218,
+          "drop_mm": 9.9,
+          "heelStack_mm": 45.1,
+          "forefootStack_mm": 35.2,
+          "flexStiffness_n": 18.8,
+          "forefootTraction": 0.8,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.7,
+          "toeboxWidthBigToePart_mm": 74.3,
+          "toeboxHeight_mm": 24.2,
+          "sizeRating": 2.86,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "midsoleSoftnessCold_pct": 12.3,
+          "insoleThickness_mm": 4.4,
+          "tonguePadding_mm": 0.9,
+          "tongueGussetType": "both-sides-full",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 160.15374759769 / 144.05070584846 SA",
+        "Energy return heel/forefoot: 73% / 73.8%",
+        "Lab specs weight/drop/stack: 218g, 9.9mm, 45.1mm/35.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/megablast",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 9.3,
+          "forefootShockAbsorption": 9.4,
+          "heelFirmnessScore": 3.8,
+          "forefootFirmnessScore": 6.0,
+          "longRunForefoot_score": 8.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.9,
+          "forefootEnergyReturn": 82.8,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 41.2,
+          "at1100N_Nmm": 80.3,
+          "at1900N_Nmm": 190.4,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 69.2,
+          "at1300N_Nmm": 141.0,
+          "at2050N_Nmm": 308.6,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.35,
+          "at1100N_J": 12.12,
+          "at1900N_J": 21.19,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 6.16,
+          "at1300N_J": 11.21,
+          "at2050N_J": 16.62,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 10.19,
+          "at20km_J": 9.98,
+          "at30km_J": 9.84,
+          "at40km_J": 9.74,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 229.9,
+          "heelStack_mm": 44.6,
+          "forefootStack_mm": 35.9,
+          "drop_mm": 8.7,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 96.0,
+          "outsoleArchWidth_mm": 80.0,
+          "outsoleForefootWidth_mm": 119.0,
+          "internalLength_mm": 282.0,
+          "internalHeelWidth_mm": 66.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.15,
+          "forefootWidthToStackRatio": 3.31,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 7.9,
+          "archWidthFitScore": 8.0,
+          "forefootHeightFitScore": 8.1,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -2.9,
+          "ballOfFootTtsDeviation_mm": -3.6,
+          "archWidthTtsDeviation_mm": -3.3,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.9%",
+        "Forefoot ER: 82.8%",
+        "Heel Cushioning: 9.3 /10",
+        "Forefoot Cushioning: 9.4 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/asics-megablast-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 45/37 mm FF Turbo Squared midsole is well-cushioned and bouncy with a balanced firm-soft feel; impact protection is strong, the heel transition is smooth (good bevel), and the forefoot feels stiffer with limited flex.",
+        "Responsiveness: Ride is highly energetic and snappy, with clear bounce/energy return that increases when pace picks up, making it especially strong for uptempo and long efforts.",
+        "Stability: Stability is only moderate (explicitly less stable than Superblast); the high-stack, performance-focused geometry feels less controlled, though heel hold is secure from the semi-structured/flexible padded heel counter and traction is very secure in turns/wet conditions.",
+        "Durability: Stated durability expectation is normal; ASICSGRIP outsole shows excellent grip and confidence in wet surfaces, but no specific long-term outsole wear issues or upper longevity concerns were reported."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/09/asics-megablast-review-5-comparisons.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 45/37 mm FF Turbo Squared midsole is described as plush/soft with strong impact protection, feeling soft to the touch but relatively firm underfoot; heel hold is secure, while forefoot toe-off can feel a bit labored at slower paces.",
+        "Responsiveness: Ride is repeatedly called bouncy, lively, and high-energy, with claimed improvements (about 32% bouncier) and good energy return across paces after a short break-in.",
+        "Stability: Stability is mixed—some testers found the platform stable and smooth through gait, but others reported it is not particularly stable because of the soft foam, very light upper, and minimal/gusset-related tongue support.",
+        "Durability: Outsole rubber is strategically placed with good thickness and strong grip (including wet traction), and reviewers expect solid durability despite some exposed midsole foam."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/asics-megablast-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 45 mm heel / 37 mm forefoot stack and new Flytefoam Turbo Squared are described as soft and bouncy, pointing to strong impact protection with a max-cushion feel.",
+        "Responsiveness: Flytefoam Turbo Squared is positioned as \"ultimate bounce\" (claimed ~33% bouncier than FF Turbo), and the ride is repeatedly described as lively.",
+        "Stability: The shoe can feel a little blocky, while the more structured woven upper and padded heel collar are noted to help lock the heel in place.",
+        "Durability: The review ties Megablast to Superblast-like reliability and \"hundreds of miles\" longevity, with AsicsGrip called Asics' best outsole rubber."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 220,
+    "drop": 8,
+    "heelStack": 46,
+    "forefootStack": 38
+  },
+  "proposedSpecs": {
+    "weight": 220,
+    "drop": 8,
+    "heelStack": 46,
+    "forefootStack": 38
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 220,
+      "runRepeat": 218,
+      "rtings": 229.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 9.9,
+      "rtings": 8.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 38,
+      "runRepeat": 35.2,
+      "rtings": 35.9,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 10,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 10,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

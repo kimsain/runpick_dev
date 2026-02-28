@@ -1,0 +1,258 @@
+{
+  "shoeId": "fresh-foam-x-more-v6",
+  "modelName": "Fresh Foam X More v6",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-more-v-6",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-more-v6",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 15.0,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-more-v6-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-more-v-6",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 151.88335358445,
+          "forefootShockAbsorption": 143.71945961483,
+          "midsoleSoftness_ha": 9.5,
+          "midsoleSoftnessCold_ha": 16,
+          "midsoleSoftness_ac": 27.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 60.1,
+          "forefootEnergyReturn": 58.8,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 3,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 122.5,
+          "midsoleWidthHeel_mm": 102,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.82 mm",
+          "outsoleThickness": "1.9 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 302,
+          "drop_mm": 3.3,
+          "heelStack_mm": 41.8,
+          "forefootStack_mm": 38.5,
+          "flexStiffness_n": 17.7,
+          "forefootTraction": 0.44,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.5,
+          "toeboxWidthBigToePart_mm": 71.3,
+          "toeboxHeight_mm": 24.4,
+          "sizeRating": 3.08,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 2,
+          "midsoleSoftnessCold_pct": 68.4,
+          "insoleThickness_mm": 3.5,
+          "tonguePadding_mm": 7.4,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 151.88335358445 / 143.71945961483 SA",
+        "Energy return heel/forefoot: 60.1% / 58.8%",
+        "Lab specs weight/drop/stack: 302g, 3.3mm, 41.8mm/38.5mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-more-v6",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.2,
+          "forefootShockAbsorption": 8.9,
+          "heelFirmnessScore": 4.8,
+          "forefootFirmnessScore": 6.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.7,
+          "forefootEnergyReturn": 71.2,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 47.3,
+          "at1100N_Nmm": 99.2,
+          "at1900N_Nmm": 214.6,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 82.1,
+          "at1300N_Nmm": 171.2,
+          "at2050N_Nmm": 336.9,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.6,
+          "at1100N_J": 10.19,
+          "at1900N_J": 17.65,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.62,
+          "at1300N_J": 9.97,
+          "at2050N_J": 14.7,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 302.3,
+          "heelStack_mm": 41.8,
+          "forefootStack_mm": 37.1,
+          "drop_mm": 4.7,
+          "advertisedDrop_mm": 4.0,
+          "outsoleHeelWidth_mm": 95.0,
+          "outsoleArchWidth_mm": 85.0,
+          "outsoleForefootWidth_mm": 122.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 69.0,
+          "internalForefootWidth_mm": 91.0,
+          "heelWidthToStackRatio": 2.27,
+          "forefootWidthToStackRatio": 3.2,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 69.7%",
+        "Forefoot ER: 71.2%",
+        "Heel Cushioning: 8.2 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-more-v6-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-cushioned Fresh Foam X (44 mm heel / 40 mm forefoot) is consistently described as plush and soft, with smooth, protected landings for easy/recovery miles without feeling overly mushy.",
+        "Responsiveness: The midsole provides noticeable bounce/energy return, and the rocker helps turnover feel smoother and livelier than typical heavy max-cushion trainers.",
+        "Stability: Torsional rigidity is not explicitly quantified, but reviewers report a wide, stable platform plus secure lockdown and a plush heel counter that improve lateral support.",
+        "Durability: Outsole durability is a strength, with solid rubber coverage for high-mileage use, tackier grip than the prior version, and minimal visible wear after about 30 miles."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 306,
+    "drop": 4,
+    "heelStack": 44,
+    "forefootStack": 40
+  },
+  "proposedSpecs": {
+    "weight": 306,
+    "drop": 4,
+    "heelStack": 44,
+    "forefootStack": 40
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 4,
+      "runRepeat": 3.3,
+      "rtings": 4.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 44,
+      "runRepeat": 41.8,
+      "rtings": 41.8,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 40,
+      "runRepeat": 38.5,
+      "rtings": 37.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

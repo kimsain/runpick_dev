@@ -1,0 +1,170 @@
+{
+  "shoeId": "arahi-8",
+  "modelName": "Arahi 8",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.2,
+      "url": "https://runrepeat.com/hoka-arahi-8",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.9,
+      "url": "https://www.doctorsofrunning.com/2025/08/hoka-arahi-8-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/hoka-arahi-8",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 138.10247203425,
+          "forefootShockAbsorption": 113.09658448315,
+          "midsoleSoftness_ha": 16.4,
+          "midsoleSoftnessCold_ha": 21.5,
+          "midsoleSoftness_ac": 35.8,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 54.4,
+          "forefootEnergyReturn": 60.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 117.6,
+          "midsoleWidthHeel_mm": 96.3,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.53 mm",
+          "outsoleThickness": "3.3 mm",
+          "toeboxDurability": 5,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 259,
+          "drop_mm": 11.3,
+          "heelStack_mm": 39.4,
+          "forefootStack_mm": 28.1,
+          "flexStiffness_n": 18.3,
+          "forefootTraction": 0.36,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 95.3,
+          "toeboxWidthBigToePart_mm": 73.6,
+          "toeboxHeight_mm": 27.6,
+          "sizeRating": 2.99,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 2,
+          "midsoleSoftnessCold_pct": 31.3,
+          "insoleThickness_mm": 4.5,
+          "tonguePadding_mm": 11.7,
+          "tongueGussetType": "none",
+          "heelTab": "extended-heel-collar",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 138.10247203425 / 113.09658448315 SA",
+        "Energy return heel/forefoot: 54.4% / 60.9%",
+        "Lab specs weight/drop/stack: 259g, 11.3mm, 39.4mm/28.1mm"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/08/hoka-arahi-8-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length EVA is moderately soft with a higher 41/33 mm stack for solid impact protection, but heel landings feel clunky/medially biased while the forefoot transitions more smoothly via the rocker.",
+        "Responsiveness: Energy return is low; the EVA ride is described as not responsive, with limited bounce/snappiness and a slower feel that makes faster paces harder.",
+        "Stability: The H-frame, wide base, sidewalls, and moderately stiff heel counter provide mild-to-moderate guidance and lateral/medial motion control with high overall stiffness, though medial correction is less pronounced than prior J-frame versions.",
+        "Durability: Durability is below average for running, with exposed EVA outsole wear showing early (around 10 miles, especially midfoot) and the midsole beginning to firm by about 40 miles."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 264,
+    "drop": 8,
+    "heelStack": 41,
+    "forefootStack": 33
+  },
+  "proposedSpecs": {
+    "weight": 264,
+    "drop": 8,
+    "heelStack": 41,
+    "forefootStack": 33
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 11.3,
+      "rtings": null,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 33,
+      "runRepeat": 28.1,
+      "rtings": null,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 4,
+    "stability": 8,
+    "durability": 10
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 4,
+    "stability": 8,
+    "durability": 10
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

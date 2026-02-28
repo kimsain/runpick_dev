@@ -1,0 +1,266 @@
+{
+  "shoeId": "adizero-pro-evo-2",
+  "modelName": "ADIZERO ADIOS PRO EVO 2",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-adios-pro-evo-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 23.4,
+      "url": "https://www.doctorsofrunning.com/2025/05/adidas-adizero-adios-pro-evo-2-review.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.2,
+      "url": "https://www.roadtrailrun.com/2025/04/adidas-adizero-adios-pro-evo-2-details.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-adizero-adios-pro-evo-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 150.24038461538,
+          "forefootShockAbsorption": 133.5648457326,
+          "midsoleSoftness_ha": 22.1,
+          "midsoleSoftnessCold_ha": 23.38,
+          "midsoleSoftness_ac": 36.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.5,
+          "forefootEnergyReturn": 74.4,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 114,
+          "midsoleWidthHeel_mm": 80.1,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "16.3 mm",
+          "outsoleThickness": "0.5 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 139,
+          "drop_mm": 7.8,
+          "heelStack_mm": 38.4,
+          "forefootStack_mm": 30.6,
+          "flexStiffness_n": 27.1,
+          "forefootTraction": 0.64,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 89.5,
+          "toeboxWidthBigToePart_mm": 68,
+          "toeboxHeight_mm": 23.4,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "midsoleSoftnessCold_pct": 5.6,
+          "tonguePadding_mm": 0.4,
+          "tongueGussetType": "none",
+          "heelTab": "pull-tab",
+          "removableInsole": 0,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 150.24038461538 / 133.5648457326 SA",
+        "Energy return heel/forefoot: 73.5% / 74.4%",
+        "Lab specs weight/drop/stack: 139g, 7.8mm, 38.4mm/30.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-adios-pro-evo-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.7,
+          "forefootShockAbsorption": 9.1,
+          "heelFirmnessScore": 5.0,
+          "forefootFirmnessScore": 7.0,
+          "longRunForefoot_score": 8.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.5,
+          "forefootEnergyReturn": 82.9,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 44.5,
+          "at1100N_Nmm": 108.3,
+          "at1900N_Nmm": 243.2,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 80.0,
+          "at1300N_Nmm": 155.6,
+          "at2050N_Nmm": 388.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.21,
+          "at1100N_J": 10.55,
+          "at1900N_J": 17.38,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.82,
+          "at1300N_J": 10.45,
+          "at2050N_J": 15.35,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 10.24,
+          "at20km_J": 10.06,
+          "at30km_J": 9.95,
+          "at40km_J": 9.87,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 134.5,
+          "heelStack_mm": 39.2,
+          "forefootStack_mm": 35.1,
+          "drop_mm": 4.1,
+          "advertisedDrop_mm": 3.0,
+          "outsoleHeelWidth_mm": 81.0,
+          "outsoleArchWidth_mm": 65.0,
+          "outsoleForefootWidth_mm": 115.0,
+          "internalLength_mm": 272.0,
+          "internalHeelWidth_mm": 58.0,
+          "internalForefootWidth_mm": 82.0,
+          "heelWidthToStackRatio": 2.06,
+          "forefootWidthToStackRatio": 3.27,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber Rods",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.5%",
+        "Forefoot ER: 82.9%",
+        "Heel Cushioning: 8.7 /10",
+        "Forefoot Cushioning: 9.1 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/05/adidas-adizero-adios-pro-evo-2-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Lighstrike Pro Evo midsole is very light and soft with mild bounce mostly in the heel, giving smooth heel transitions, while the aggressive forefoot rocker makes the forefoot feel more rolling than plush.",
+        "Responsiveness: Evo 2 is faster and bouncier than Evo 1 with strong efficiency at tempo/race paces, but its energy return/snappiness is still not top-tier versus other super shoes, especially at slower efforts.",
+        "Stability: Stability is limited, with reported poor midfoot medial stability, mild foot sliding, and slippage on turns; the heel counter is narrow/flexible and mostly unstructured, so lateral and rearfoot hold rely on tight lockdown.",
+        "Durability: Durability is still a weakness (below-average expectation) despite slightly improved outsole durability and traction versus the prior version, with longevity concerns remaining."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/04/adidas-adizero-adios-pro-evo-2-details.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Forefoot stack rises to 36 mm (+3 mm vs EVO 1), giving a very deep front feel with smoother, less harsh impact than EVO 1; foam feels slightly firmer but more vibration/shock-absorbing and consistent through the ride.",
+        "Responsiveness: The shoe feels quick-reacting with strong forefoot rebound (adidas claims ~5% more energy), but tuning is more marathon-smooth and slightly less snappy/agile than EVO 1.",
+        "Stability: The flatter lateral side creates a clear 'rail' effect that improves lateral guidance and overall stability; forefoot remains rigid, and the heel counter/collar are firmer with better rear lockdown.",
+        "Durability: Outsole keeps liquid-rubber coverage with a more grid-like forefoot and a tackier/stickier new feel; toe bumper is a bit more substantial, but long-term outsole wear and material longevity are not yet confirmed in this initial review."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 138,
+    "drop": 3,
+    "heelStack": 39,
+    "forefootStack": 36
+  },
+  "proposedSpecs": {
+    "weight": 138,
+    "drop": 3,
+    "heelStack": 39,
+    "forefootStack": 36
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 3,
+      "runRepeat": 7.8,
+      "rtings": 4.1,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 36,
+      "runRepeat": 30.6,
+      "rtings": 35.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 4,
+    "durability": 1
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 4,
+    "durability": 1
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

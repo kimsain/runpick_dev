@@ -1,0 +1,287 @@
+{
+  "shoeId": "gel-nimbus-28",
+  "modelName": "GEL-NIMBUS 28",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/asics-gel-nimbus-28",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.3,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-nimbus-28",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.6,
+      "url": "https://www.doctorsofrunning.com/2025/12/asics-gel-nimbus-28-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 22.5,
+      "url": "https://www.roadtrailrun.com/2026/01/ryans-asics-gel-nimbus-28-review-6.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 15.4,
+      "url": "https://believeintherun.com/shoe-reviews/asics-nimbus-28-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/asics-gel-nimbus-28",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 136.98630136986,
+          "forefootShockAbsorption": 133.06719893546,
+          "midsoleSoftness_ha": 19.5,
+          "midsoleSoftnessCold_ha": 23.3,
+          "midsoleSoftness_ac": 38.8,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 44.2,
+          "forefootEnergyReturn": 45.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 119,
+          "midsoleWidthHeel_mm": 99.1,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.96 mm",
+          "outsoleThickness": "3.3 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 278,
+          "drop_mm": 5.2,
+          "heelStack_mm": 39.5,
+          "forefootStack_mm": 34.3,
+          "flexStiffness_n": 23.1,
+          "forefootTraction": 0.76,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 97.6,
+          "toeboxWidthBigToePart_mm": 72.5,
+          "internalLength_mm": 273.5,
+          "toeboxHeight_mm": 22.7,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "midsoleSoftnessCold_pct": 19.2,
+          "insoleThickness_mm": 5.4,
+          "tonguePadding_mm": 1.5,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 136.98630136986 / 133.06719893546 SA",
+        "Energy return heel/forefoot: 44.2% / 45.9%",
+        "Lab specs weight/drop/stack: 278g, 5.2mm, 39.5mm/34.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/asics/gel-nimbus-28",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.2,
+          "forefootShockAbsorption": 8.9,
+          "heelFirmnessScore": 4.5,
+          "forefootFirmnessScore": 6.3,
+          "longRunForefoot_score": 8.3,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 64.7,
+          "forefootEnergyReturn": 67.4,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 45.7,
+          "at1100N_Nmm": 98.9,
+          "at1900N_Nmm": 193.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 82.5,
+          "at1300N_Nmm": 156.5,
+          "at2050N_Nmm": 274.5,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.43,
+          "at1100N_J": 10.28,
+          "at1900N_J": 18.03,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.43,
+          "at1300N_J": 9.95,
+          "at2050N_J": 15.38,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 9.28,
+          "at20km_J": 9.07,
+          "at30km_J": 8.97,
+          "at40km_J": 8.88,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 272.9,
+          "heelStack_mm": 42.5,
+          "forefootStack_mm": 36.1,
+          "drop_mm": 6.4,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 97.0,
+          "outsoleArchWidth_mm": 84.0,
+          "outsoleForefootWidth_mm": 117.0,
+          "internalLength_mm": 278.0,
+          "internalHeelWidth_mm": 67.0,
+          "internalForefootWidth_mm": 96.0,
+          "heelWidthToStackRatio": 2.28,
+          "forefootWidthToStackRatio": 3.24,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 64.7%",
+        "Forefoot ER: 67.4%",
+        "Heel Cushioning: 8.2 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/12/asics-gel-nimbus-28-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Max-stack build delivers strong impact protection and near-zero ground feel, but the ride is firmer/stiffer than expected; heel feels balanced between firm and soft, while the forefoot is firmer and stiffer.",
+        "Responsiveness: Firmer tuning with a snappy forefoot and lighter weight improves uptempo capability and transitions, but it is more snappy than truly bouncy.",
+        "Stability: Highly stable-neutral setup from a wide, firmer platform, sidewalls, sole flare, filled midfoot, and stiff construction; heel counter is stiff and supportive.",
+        "Durability: Less outsole rubber and more exposed midsole reduce confidence in long-term wear; early forefoot outsole wear is visible by ~55 miles with concern about potential heel rubber peeling, suggesting average durability."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/01/ryans-asics-gel-nimbus-28-review-6.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The high stack (43.5 mm heel / 35.5 mm forefoot) gives strong long-run impact protection, but the FF Blast+ setup feels more firm than plush and the forefoot can feel flat/slappy.",
+        "Responsiveness: Energy return is moderate at best; the ride is described as low-rebound, not very bouncy, and lacking snappy toe-off, with a blocky feel at faster paces.",
+        "Stability: A wide platform, stiff heel-to-toe construction, supportive upper containment, and a solid rearfoot build produce a guided, stable neutral ride with good lateral support.",
+        "Durability: Upper/build quality is robust, but durability concerns center on minimal forefoot rubber coverage, early heel outsole wear, and midfoot foam graining after only a few runs."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/asics-nimbus-28-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Very plush and soft FF Blast Plus foam with noticeable compression and strong impact protection from the high stack; heel and forefoot feel smooth and forgiving rather than firm.",
+        "Responsiveness: Comfort is prioritized over energy return, with the ride described as not springy or energetic and lacking snappy rebound.",
+        "Stability: No explicit torsional rigidity or heel-counter detail is given, but the ride is characterized as blocky and predictable with sufficient lateral support for easy running and walking.",
+        "Durability: The unchanged hybrid AsicsGrip + AHAR Plus outsole is called predictably durable with reliable traction, suggesting solid outsole wear resistance and material longevity."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 283,
+    "drop": 8,
+    "heelStack": 43.5,
+    "forefootStack": 35.5
+  },
+  "proposedSpecs": {
+    "weight": 283,
+    "drop": 8,
+    "heelStack": 43.5,
+    "forefootStack": 35.5
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 283,
+      "runRepeat": 278,
+      "rtings": 272.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 5.2,
+      "rtings": 6.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 43.5,
+      "runRepeat": 39.5,
+      "rtings": 42.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 1,
+    "stability": 8,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 1,
+    "stability": 8,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

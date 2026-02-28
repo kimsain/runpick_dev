@@ -1,0 +1,284 @@
+{
+  "shoeId": "fresh-foam-x-880v15",
+  "modelName": "Fresh Foam X 880 v15",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.2,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-880v15",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 16.6,
+      "url": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 23.1,
+      "url": "https://www.roadtrailrun.com/2025/01/new-balance-fresh-foam-x-880-v15-multi.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 17.6,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-880v15-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 127.70739681242,
+          "forefootShockAbsorption": 113.89262203594,
+          "midsoleSoftness_ha": 19.6,
+          "midsoleSoftnessCold_ha": 23.6,
+          "midsoleSoftness_ac": 35.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 56.4,
+          "forefootEnergyReturn": 60.11,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 4,
+          "midsoleWidthForefoot_mm": 113.3,
+          "midsoleWidthHeel_mm": 89.2,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.1 mm",
+          "outsoleThickness": "1.9 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 286,
+          "drop_mm": 4.3,
+          "heelStack_mm": 39.7,
+          "forefootStack_mm": 35.4,
+          "flexStiffness_n": 19.2,
+          "stiffness_n": 34.3,
+          "stiffnessCold_n": 40.4,
+          "stiffnessCold_pct": 17.8,
+          "forefootTraction": 0.52,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 95,
+          "toeboxWidthBigToePart_mm": 74.6,
+          "toeboxHeight_mm": 28.5,
+          "sizeRating": 2.52,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 3,
+          "outsoleHardness_hc": 85.7,
+          "midsoleSoftnessCold_pct": 20.4,
+          "insoleThickness_mm": 4.7,
+          "tonguePadding_mm": 7.1,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 127.70739681242 / 113.89262203594 SA",
+        "Energy return heel/forefoot: 56.4% / 60.11%",
+        "Lab specs weight/drop/stack: 286g, 4.3mm, 39.7mm/35.4mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fresh-foam-x-880v15",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.9,
+          "forefootShockAbsorption": 7.3,
+          "heelFirmnessScore": 6.3,
+          "forefootFirmnessScore": 8.1,
+          "longRunForefoot_score": 6.5,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 73.3,
+          "forefootEnergyReturn": 73.7,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 56.9,
+          "at1100N_Nmm": 130.0,
+          "at1900N_Nmm": 268.7,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 109.4,
+          "at1300N_Nmm": 217.8,
+          "at2050N_Nmm": 425.4,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.21,
+          "at1100N_J": 8.48,
+          "at1900N_J": 14.65,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.35,
+          "at1300N_J": 7.72,
+          "at2050N_J": 11.56,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.2,
+          "at20km_J": 6.96,
+          "at30km_J": 6.81,
+          "at40km_J": 6.69,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 286.6,
+          "heelStack_mm": 39.4,
+          "forefootStack_mm": 32.1,
+          "drop_mm": 7.3,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 90.0,
+          "outsoleArchWidth_mm": 77.0,
+          "outsoleForefootWidth_mm": 111.0,
+          "internalLength_mm": 283.0,
+          "internalHeelWidth_mm": 67.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.28,
+          "forefootWidthToStackRatio": 3.46,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 73.3%",
+        "Forefoot ER: 73.7%",
+        "Heel Cushioning: 6.9 /10",
+        "Forefoot Cushioning: 7.3 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/new-balance-fresh-foam-x-880-v15-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 880 v15 moves to a maximal 40.5/34.5 mm stack with a slightly compliant but notably firm Fresh Foam X feel, giving solid underfoot protection for easy/long miles rather than a plush-soft ride; heel bevel feels a bit clunky early, and the forefoot is stiff/non-flexible.",
+        "Responsiveness: The midsole is described as slower-responding with limited bounce/snappiness, so the shoe performs best at easy efforts and not for faster paces.",
+        "Stability: It rides as a stable-neutral trainer via a wide platform (especially midfoot), moderate rearfoot sidewalls, mild medial/lateral flare, and a stiff rockered forefoot; heel counter is stiff and straight-line lockdown is good once laced, though lateral movement can feel mildly loose.",
+        "Durability: After ~40 miles, foam consistency remains mostly intact with only slight break-in, but visible abrasion is already present on outsole rubber and exposed midsole, indicating average overall mileage/longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/01/new-balance-fresh-foam-x-880-v15-multi.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The v15 adds foam at both ends (+3 mm heel, +5 mm forefoot; 40.5/34.5 mm stack), delivering a more cushioned and protective ride, though Fresh Foam X is described as cushioned but still relatively firm.",
+        "Responsiveness: Testers describe a firm-responsive feel with smooth rocker-driven transitions and a solid/powerful toe-off, but less bounce and energy return than newer supercritical-foam competitors.",
+        "Stability: A stiffer midsole and broader heel/midfoot platform support a neutral-but-stable ride with good lockdown/lateral security, while some runners reported slight heel slippage.",
+        "Durability: The shoe is repeatedly characterized as a reliable everyday workhorse built for daily mileage; no clear outsole/material breakdown issues were reported in this review, but wet-surface grip was noted as reduced."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-fresh-foam-880v15-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The high-stack Fresh Foam X setup (40.5 mm heel / 34.5 mm forefoot) is firmer and denser than expected, giving solid impact protection with just a touch of softness rather than a plush, squishy feel.",
+        "Responsiveness: The ride is firm-yet-flexible with modest bounce, comfortable across easy-to-steady paces but not notably snappy or high in energy return.",
+        "Stability: A structured platform (firmer foam, rocker geometry), wide forefoot fit, and secure lockdown deliver strong daily-trainer stability and dependable lateral support.",
+        "Durability: Updated outsole traction was praised as excellent/sticky, and reviewers repeatedly highlighted strong build quality and expected long mileage from the materials."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 286.6,
+    "drop": 7.3,
+    "heelStack": 39.4,
+    "forefootStack": 32.1
+  },
+  "proposedSpecs": {
+    "weight": 286.6,
+    "drop": 7.3,
+    "heelStack": 39.4,
+    "forefootStack": 32.1
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 7.3,
+      "runRepeat": 4.3,
+      "rtings": 7.3,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 32.1,
+      "runRepeat": 35.4,
+      "rtings": 32.1,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 7,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

@@ -1,0 +1,185 @@
+{
+  "shoeId": "hyperwarp-pro",
+  "modelName": "HyperWarp Pro",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pro",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 22.2,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pro-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/mizuno/hyperwarp-pro",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.5,
+          "forefootShockAbsorption": 7.6,
+          "heelFirmnessScore": 5.4,
+          "forefootFirmnessScore": 8.1,
+          "longRunForefoot_score": 6.9,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 81.8,
+          "forefootEnergyReturn": 80.9,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 47.3,
+          "at1100N_Nmm": 114.8,
+          "at1900N_Nmm": 257.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 104.5,
+          "at1300N_Nmm": 215.6,
+          "at2050N_Nmm": 441.2,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.37,
+          "at1100N_J": 10.31,
+          "at1900N_J": 16.67,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.72,
+          "at1300N_J": 8.09,
+          "at2050N_J": 11.88,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.5,
+          "at20km_J": 7.31,
+          "at30km_J": 7.19,
+          "at40km_J": 7.1,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 198.7,
+          "heelStack_mm": 39.4,
+          "forefootStack_mm": 32.7,
+          "drop_mm": 6.7,
+          "advertisedDrop_mm": 5.5,
+          "outsoleHeelWidth_mm": 87.0,
+          "outsoleArchWidth_mm": 76.0,
+          "outsoleForefootWidth_mm": 114.0,
+          "internalLength_mm": 270.0,
+          "internalHeelWidth_mm": 56.0,
+          "internalForefootWidth_mm": 90.0,
+          "heelWidthToStackRatio": 2.21,
+          "forefootWidthToStackRatio": 3.49,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 7.0,
+          "forefootWidthFitScore": 8.3,
+          "archWidthFitScore": 1.8,
+          "forefootHeightFitScore": 6.8,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -0.4,
+          "ballOfFootTtsDeviation_mm": -3.9,
+          "archWidthTtsDeviation_mm": -9.6,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 81.8%",
+        "Forefoot ER: 80.9%",
+        "Heel Cushioning: 8.5 /10",
+        "Forefoot Cushioning: 7.6 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/12/mizuno-hyperwarp-pro-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Full-length Enerzy XP foam is soft and bouncy with high stack (39 mm heel/33.5 mm forefoot) for strong long-run impact protection, but the heel/midfoot can feel clunky while the forefoot rides smooth with little flex.",
+        "Responsiveness: The carbon-infused nylon plate adds snap and the foam returns energy, but the ride is less aggressive than true super racers and works better for tempo/long-distance efforts than sharp 5K-10K surges.",
+        "Stability: Rigidity is high (shoe is not flexible), and the extreme lateral flare plus plate extension can help runners with lateral ankle instability, yet it can also cause a quick inward push and clunky transitions; there is no heel counter and lateral upper support is limited.",
+        "Durability: Durability expectation is above average, and the Mizuno G3 outsole nubs provide strong road traction with likely solid outsole wear resistance."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 200,
+    "drop": 5.5,
+    "heelStack": 39,
+    "forefootStack": 33.5
+  },
+  "proposedSpecs": {
+    "weight": 200,
+    "drop": 5.5,
+    "heelStack": 39,
+    "forefootStack": 33.5
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 5.5,
+      "runRepeat": null,
+      "rtings": 6.7,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

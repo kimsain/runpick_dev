@@ -1,0 +1,294 @@
+{
+  "shoeId": "fuelcell-sc-elite-v5",
+  "modelName": "FuelCell SuperComp Elite v5",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fuelcell-supercomp-elite-v5-running-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.6,
+      "url": "https://www.doctorsofrunning.com/2025/06/new-balance-fuelcell-supercomp-elite-v5.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 18.5,
+      "url": "https://www.roadtrailrun.com/2025/06/new-balance-fuelcell-sc-elite-v5-multi.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 27.5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-sc-elite-v5-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 143.63688595231,
+          "forefootShockAbsorption": 112.08249271464,
+          "midsoleSoftness_ha": 15.2,
+          "midsoleSoftnessCold_ha": 16.5,
+          "midsoleSoftness_ac": 33.8,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.8,
+          "forefootEnergyReturn": 74.9,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 2,
+          "midsoleWidthForefoot_mm": 107,
+          "midsoleWidthHeel_mm": 71.6,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.1 mm",
+          "outsoleThickness": "3.5 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 198,
+          "drop_mm": 10.7,
+          "heelStack_mm": 39.3,
+          "forefootStack_mm": 28.6,
+          "flexStiffness_n": 16.2,
+          "forefootTraction": 0.61,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 93.8,
+          "toeboxWidthBigToePart_mm": 74.5,
+          "toeboxHeight_mm": 26.4,
+          "sizeRating": 2.93,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "midsoleSoftnessCold_pct": 8.6,
+          "insoleThickness_mm": 3.1,
+          "tonguePadding_mm": 1,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 143.63688595231 / 112.08249271464 SA",
+        "Energy return heel/forefoot: 74.8% / 74.9%",
+        "Lab specs weight/drop/stack: 198g, 10.7mm, 39.3mm/28.6mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/new-balance/fuelcell-supercomp-elite-v5-running-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.2,
+          "forefootShockAbsorption": 7.9,
+          "heelFirmnessScore": 6.9,
+          "forefootFirmnessScore": 8.1,
+          "longRunForefoot_score": 7.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 84.8,
+          "forefootEnergyReturn": 84.6,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 58.9,
+          "at1100N_Nmm": 143.4,
+          "at1900N_Nmm": 328.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 103.6,
+          "at1300N_Nmm": 223.0,
+          "at2050N_Nmm": 445.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.89,
+          "at1100N_J": 8.66,
+          "at1900N_J": 13.82,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.08,
+          "at1300N_J": 8.46,
+          "at2050N_J": 12.15,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 7.78,
+          "at20km_J": 7.65,
+          "at30km_J": 7.56,
+          "at40km_J": 7.49,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 200.5,
+          "heelStack_mm": 39.4,
+          "forefootStack_mm": 30.5,
+          "drop_mm": 8.9,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 75.0,
+          "outsoleArchWidth_mm": 55.0,
+          "outsoleForefootWidth_mm": 106.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 90.0,
+          "heelWidthToStackRatio": 1.9,
+          "forefootWidthToStackRatio": 3.48,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Semi-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 9.2,
+          "archWidthFitScore": 5.4,
+          "forefootHeightFitScore": 8.5,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -2.7,
+          "ballOfFootTtsDeviation_mm": -1.2,
+          "archWidthTtsDeviation_mm": -6.5,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 84.8%",
+        "Forefoot ER: 84.6%",
+        "Heel Cushioning: 7.2 /10",
+        "Forefoot Cushioning: 7.9 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/new-balance-fuelcell-supercomp-elite-v5.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The FuelCell (PEBA) midsole is comfortable with a soft/compressive heel for impact protection, then transitions into a firmer, stiffer forefoot feel.",
+        "Responsiveness: It feels somewhat snappier than prior versions but is not especially bouncy or highly propulsive, performing better at tempo/marathon paces than top-end speed.",
+        "Stability: Torsional/longitudinal rigidity is high (very stiff plate, minimal flexibility), lockdown is secure, but the narrower platform and semi-rigid/flexible heel counter make it less forgiving laterally than earlier SC Elite models.",
+        "Durability: Overall durability is rated as average; wet-road outsole traction is noted as good, with no standout evidence of exceptional long-term outsole or upper longevity."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/06/new-balance-fuelcell-sc-elite-v5-multi.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning is moderately firm but deeply protective (40 mm heel / 32 mm forefoot), with a cushioned, secure heel feel and a firmer, flatter forefoot transition.",
+        "Responsiveness is a weakness: testers report limited bounce/energy return, a flat ride, and less snap at faster efforts due to rigid midfoot-to-toe-off behavior.",
+        "Stability is a major strength: despite a much narrower heel/midfoot platform, rearfoot stability is rated among the best in super shoes, supported by a firm high heel counter and medial support geometry.",
+        "Durability signals are positive from deep heel rubber and broad forefoot rubber coverage plus good grip (even on gravel), though some forefoot rubber may add weight without clear ground-contact benefit."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/new-balance-sc-elite-v5-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Ride is slightly firmer and less squishy than v4, but still soft/forgiving enough for long efforts; heel-to-forefoot protection stayed comfortable through marathon distance despite reduced foam volume.",
+        "Responsiveness: Updated forefoot plate tuning with PEBA FuelCell adds clear pop, bounce, and sharper/snappier toe-offs, giving a more race-ready feel.",
+        "Stability: Forefoot rigidity is higher from the stiffer plate, but the platform is narrower (about 25% slimmer) with lower forefoot stack, so lateral support may feel less accommodating for some runners; heel hold improved via a cushier heel counter and secure upper.",
+        "Durability: Early signs are strong, with reviewers saying the shoe held up well across training and a marathon; updated forefoot/outsole rubber plus a solid single-layer mesh upper indicate improved wear longevity and grip."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 213,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 213,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 213,
+      "runRepeat": 198,
+      "rtings": 200.5,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 10.7,
+      "rtings": 8.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 32,
+      "runRepeat": 28.6,
+      "rtings": 30.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 8,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

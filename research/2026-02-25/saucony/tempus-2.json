@@ -1,0 +1,270 @@
+{
+  "shoeId": "tempus-2",
+  "modelName": "Tempus 2",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/saucony-tempus-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/tempus-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.3,
+      "url": "https://www.doctorsofrunning.com/2024/10/saucony-tempus-2-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 21.7,
+      "url": "https://www.roadtrailrun.com/2024/11/saucony-tempus-2-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-tempus-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 122.81994595922,
+          "forefootShockAbsorption": 108.03802938634,
+          "midsoleSoftness_ha": 18.6,
+          "midsoleSoftnessCold_ha": 20.4,
+          "midsoleSoftness_ac": 42.3,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 69.9,
+          "forefootEnergyReturn": 72.2,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 5,
+          "midsoleWidthForefoot_mm": 119.1,
+          "midsoleWidthHeel_mm": 94.5,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.44 mm",
+          "outsoleThickness": "3.7 mm",
+          "toeboxDurability": 2,
+          "heelPaddingDurability": 2,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 264,
+          "drop_mm": 10.1,
+          "heelStack_mm": 36.8,
+          "forefootStack_mm": 26.7,
+          "flexStiffness_n": 15.1,
+          "forefootTraction": 0.63,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 92.5,
+          "toeboxWidthBigToePart_mm": 70.8,
+          "internalLength_mm": 268.9,
+          "toeboxHeight_mm": 31.9,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 2,
+          "midsoleSoftnessCold_pct": 9.7,
+          "insoleThickness_mm": 4.4,
+          "tonguePadding_mm": 5,
+          "tongueGussetType": "both-sides-full",
+          "heelTab": "finger-loop",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 122.81994595922 / 108.03802938634 SA",
+        "Energy return heel/forefoot: 69.9% / 72.2%",
+        "Lab specs weight/drop/stack: 264g, 10.1mm, 36.8mm/26.7mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/tempus-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.1,
+          "forefootShockAbsorption": 7.3,
+          "heelFirmnessScore": 5.6,
+          "forefootFirmnessScore": 8.2,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 77.1,
+          "forefootEnergyReturn": 79.8,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 59.4,
+          "at1100N_Nmm": 98.9,
+          "at1900N_Nmm": 225.7,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 104.8,
+          "at1300N_Nmm": 218.8,
+          "at2050N_Nmm": 477.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.8,
+          "at1100N_J": 8.98,
+          "at1900N_J": 16.4,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.52,
+          "at1300N_J": 7.87,
+          "at2050N_J": 11.45,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 265.6,
+          "heelStack_mm": 37.4,
+          "forefootStack_mm": 28.0,
+          "drop_mm": 9.4,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 96.0,
+          "outsoleArchWidth_mm": 76.0,
+          "outsoleForefootWidth_mm": 118.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.57,
+          "forefootWidthToStackRatio": 4.21,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 77.1%",
+        "Forefoot ER: 79.8%",
+        "Heel Cushioning: 7.1 /10",
+        "Forefoot Cushioning: 7.3 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/10/saucony-tempus-2-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The dual-foam setup feels moderately firm rather than plush, with softer rearfoot compression for impact protection; heel landings are mostly smooth after break-in, while the forefoot feels stiffer with limited flex.",
+        "Responsiveness: The midsole is snappy with noticeable bounce (especially at steady-to-fast paces) and can respond to tempo changes, but it can feel slightly mushy/slow when trying to change gears at higher uptempo efforts.",
+        "Stability: Stability is a core strength, with a supportive frame, very stiff/non-flexible midfoot (high torsional rigidity), secure lockdown, and a thick/stiff heel counter that improves control but may feel intrusive for sensitive heels.",
+        "Durability: Overall durability is rated above average, but outsole/grip performance is a weakness on wet smooth surfaces due exposed foam and limited traction."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/11/saucony-tempus-2-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The ride is notably soft and protective for tired legs, with a firmer heel feel from PWRRUN EVA and a softer/more forgiving forefoot-center feel from PWRRUN PB.",
+        "Responsiveness: It has solid energy return and enough bounce for strides/faster paces, but feels less springy and less snappy than plated Endorphin options.",
+        "Stability: Stability is strong but unobtrusive; a wide platform, medial sidewalls, and guidance-frame geometry provide dependable lateral support while keeping a fairly neutral underfoot feel.",
+        "Durability: The XT-900 carbon-rubber outsole delivered good grip across wet pavement/gravel/dirt and showed no meaningful wear at roughly 60 miles, indicating good durability."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 269,
+    "drop": 8,
+    "heelStack": 33,
+    "forefootStack": 25
+  },
+  "proposedSpecs": {
+    "weight": 269,
+    "drop": 8,
+    "heelStack": 33,
+    "forefootStack": 25
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 10.1,
+      "rtings": 9.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 33,
+      "runRepeat": 36.8,
+      "rtings": 37.4,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 25,
+      "runRepeat": 26.7,
+      "rtings": 28.0,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 7,
+    "stability": 10,
+    "durability": 10
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 7,
+    "stability": 10,
+    "durability": 10
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

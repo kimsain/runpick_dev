@@ -1,0 +1,271 @@
+{
+  "shoeId": "fast-r-nitro-elite-3",
+  "modelName": "FAST-R Nitro Elite 3",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.0,
+      "url": "https://runrepeat.com/puma-fast-r-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/fast-r-nitro-elite-3",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.8,
+      "url": "https://www.doctorsofrunning.com/2025/06/puma-fast-r-nitro-elite-3-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 18.3,
+      "url": "https://www.roadtrailrun.com/2025/04/puma-fast-r-nitro-elite-3-review-bold.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 22.9,
+      "url": "https://believeintherun.com/shoe-reviews/puma-fast-r-nitro-elite-3-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/puma-fast-r-nitro-elite-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 148.34594273847,
+          "forefootShockAbsorption": 123.68583797155,
+          "midsoleSoftness_ha": 20.1,
+          "midsoleSoftnessCold_ha": 20.5,
+          "midsoleSoftness_ac": 36.1,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 80.4,
+          "forefootEnergyReturn": 82.6,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 111.6,
+          "midsoleWidthHeel_mm": 80,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "3.1 mm",
+          "outsoleThickness": "1.5 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 2,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 173,
+          "drop_mm": 8.3,
+          "heelStack_mm": 38.5,
+          "forefootStack_mm": 30.2,
+          "flexStiffness_n": 23.1,
+          "forefootTraction": 0.71,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 92.9,
+          "toeboxWidthBigToePart_mm": 72.3,
+          "toeboxHeight_mm": 26.3,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 4,
+          "midsoleSoftnessCold_pct": 2,
+          "insoleThickness_mm": 3.5,
+          "tonguePadding_mm": 0.4,
+          "tongueGussetType": "none",
+          "heelTab": "none",
+          "removableInsole": 0,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 148.34594273847 / 123.68583797155 SA",
+        "Energy return heel/forefoot: 80.4% / 82.6%",
+        "Lab specs weight/drop/stack: 173g, 8.3mm, 38.5mm/30.2mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/fast-r-nitro-elite-3",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.1,
+          "forefootShockAbsorption": 8.7,
+          "heelFirmnessScore": 5.8,
+          "forefootFirmnessScore": 7.4,
+          "longRunForefoot_score": 8.0,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 86.1,
+          "forefootEnergyReturn": 86.7,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 47.1,
+          "at1100N_Nmm": 130.6,
+          "at1900N_Nmm": 295.0,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 88.5,
+          "at1300N_Nmm": 177.7,
+          "at2050N_Nmm": 394.7,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 4.3,
+          "at1100N_J": 9.78,
+          "at1900N_J": 15.43,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.56,
+          "at1300N_J": 9.67,
+          "at2050N_J": 14.13,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 8.81,
+          "at20km_J": 8.6,
+          "at30km_J": 8.47,
+          "at40km_J": 8.39,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 173.3,
+          "heelStack_mm": 39.3,
+          "forefootStack_mm": 30.4,
+          "drop_mm": 8.9,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 82.0,
+          "outsoleArchWidth_mm": 25.0,
+          "outsoleForefootWidth_mm": 113.0,
+          "internalLength_mm": 273.0,
+          "internalHeelWidth_mm": 60.0,
+          "internalForefootWidth_mm": 93.0,
+          "heelWidthToStackRatio": 2.09,
+          "forefootWidthToStackRatio": 3.72,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 9.4,
+          "archWidthFitScore": 8.8,
+          "forefootHeightFitScore": 6.9,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -2.3,
+          "ballOfFootTtsDeviation_mm": -1.0,
+          "archWidthTtsDeviation_mm": -2.2,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 86.1%",
+        "Forefoot ER: 86.7%",
+        "Heel Cushioning: 8.1 /10",
+        "Forefoot Cushioning: 8.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/puma-fast-r-nitro-elite-3-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Nitro Elite foam gives a soft, bouncy ride, with a softer heel and a soft-but-responsive forefoot that provides strong impact protection at race efforts.",
+        "Responsiveness: Energy return is elite, with the foam plus full-length extended carbon plate producing a highly propulsive, snappy toe-off that improves as pace increases.",
+        "Stability: Torsional rigidity is very high (minimal flexibility) due to the stiff plate, but heel and midfoot stability are less secure, including noted medial bias; forefoot support is comparatively better.",
+        "Durability: Outsole wear is a weakness because the outsole can get permanently indented by rocks/pebbles, and overall durability is described as average."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/04/puma-fast-r-nitro-elite-3-review-bold.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Nitrofoam Elite midsole is described as deeply cushioned, very soft, and bouncy, with excellent forefoot feel and reassuring toe-off, while the split heel feels less stable/reliable at slower paces.",
+        "Responsiveness: The ride is highly dynamic and energetic, with explosive rebound, strong rocker-assisted roll, and powerful propulsion/snappy toe-off during hard efforts.",
+        "Stability: Forefoot control and toe-off leverage are strong, and the upper/heel lockdown is secure with a rigid heel cup, but overall stability is limited by a soft, narrow split heel that can feel wobbly (especially for heel strikers or when form breaks down).",
+        "Durability: The Ultraweave upper is thin but reported as capable and resistant to stretching, PumaGrip outsole quality is viewed positively, and Puma's stated lifespan is about 300 km (200 mi)."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-fast-r-nitro-elite-3-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The Fast-R 3 is described as having a softer ride with a good amount of soft cushioning, and its 40 mm heel / 32 mm forefoot stack indicates substantial impact protection in both heel and forefoot.",
+        "Responsiveness: The midsole is repeatedly called bouncier and the shoe extremely fast; workout anecdotes and cited run-economy gains indicate strong energy return and snappy propulsion.",
+        "Stability: The carbon plate is lighter and less rigid, and the upper is noted as a bit unstructured, suggesting a less rigid, less locked-down feel with potentially reduced lateral/heel support versus firmer racers.",
+        "Durability: Durability evidence is limited in the provided text; it mentions a PUMAGRIP outsole but gives no concrete outsole-wear or long-term material longevity results."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 170,
+    "drop": 8,
+    "heelStack": 39,
+    "forefootStack": 31
+  },
+  "proposedSpecs": {
+    "weight": 170,
+    "drop": 8,
+    "heelStack": 39,
+    "forefootStack": 31
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 10,
+    "stability": 5,
+    "durability": 3
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 10,
+    "stability": 5,
+    "durability": 3
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

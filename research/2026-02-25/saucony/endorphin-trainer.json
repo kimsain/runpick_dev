@@ -1,0 +1,269 @@
+{
+  "shoeId": "endorphin-trainer",
+  "modelName": "Endorphin Trainer",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 2.1,
+      "url": "https://runrepeat.com/saucony-endorphin-trainer",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.6,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-trainer-carbon-fiber",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 23.5,
+      "url": "https://www.doctorsofrunning.com/2024/12/saucony-endorphin-trainer-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 24.9,
+      "url": "https://www.roadtrailrun.com/2024/12/saucony-endorphin-trainer-review-with8.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 59.8,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-endorphin-trainer-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/saucony-endorphin-trainer",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 138.35660030162,
+          "forefootShockAbsorption": 111.9281868753,
+          "midsoleSoftness_ha": 5.9,
+          "midsoleSoftnessCold_ha": 6.1,
+          "midsoleSoftness_ac": 19.6,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 68.82,
+          "forefootEnergyReturn": 76.3,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 5,
+          "heelCounterStiffness": 2,
+          "midsoleWidthForefoot_mm": 121.7,
+          "midsoleWidthHeel_mm": 100.1,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.7 mm",
+          "outsoleThickness": "3.1 mm",
+          "toeboxDurability": 3,
+          "heelPaddingDurability": 3,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 285,
+          "drop_mm": 6.9,
+          "heelStack_mm": 38.9,
+          "forefootStack_mm": 32,
+          "flexStiffness_n": 25.6,
+          "forefootTraction": 0.46,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 92.3,
+          "toeboxWidthBigToePart_mm": 70.1,
+          "toeboxHeight_mm": 28.9,
+          "sizeRating": 2.85,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 81.8,
+          "midsoleSoftnessCold_pct": 3.4,
+          "insoleThickness_mm": 7.2,
+          "tonguePadding_mm": 6.5,
+          "tongueGussetType": "both-sides-semi",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 1,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 138.35660030162 / 111.9281868753 SA",
+        "Energy return heel/forefoot: 68.82% / 76.3%",
+        "Lab specs weight/drop/stack: 285g, 6.9mm, 38.9mm/32mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-trainer-carbon-fiber",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.1,
+          "forefootShockAbsorption": 7.7,
+          "heelFirmnessScore": 5.1,
+          "forefootFirmnessScore": 7.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.0,
+          "forefootEnergyReturn": 79.2,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 53.0,
+          "at1100N_Nmm": 97.2,
+          "at1900N_Nmm": 206.1,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 108.3,
+          "at1300N_Nmm": 198.8,
+          "at2050N_Nmm": 349.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.51,
+          "at1100N_J": 9.86,
+          "at1900N_J": 17.72,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.6,
+          "at1300N_J": 8.05,
+          "at2050N_J": 12.49,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 278.5,
+          "heelStack_mm": 40.2,
+          "forefootStack_mm": 31.7,
+          "drop_mm": 8.5,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 101.0,
+          "outsoleArchWidth_mm": 76.0,
+          "outsoleForefootWidth_mm": 115.0,
+          "internalLength_mm": 278.0,
+          "internalHeelWidth_mm": 69.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.51,
+          "forefootWidthToStackRatio": 3.63,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74.0%",
+        "Forefoot ER: 79.2%",
+        "Heel Cushioning: 8.1 /10",
+        "Forefoot Cushioning: 7.7 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2024/12/saucony-endorphin-trainer-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Soft IncrediRun over firmer PWRRUN gives a balanced, non-mushy feel with strong impact protection from the high stack, though the rearfoot can feel slightly clunky while the forefoot is stiffer.",
+        "Responsiveness: The 3/4 carbon plate plus IncrediRun produce a snappy, moderately bouncy ride with better energy return at uptempo/workout paces than easy runs.",
+        "Stability: The shoe is stable-neutral with a stiff platform (limited forefoot flexibility), a moderately stiff/rigid heel counter, and lateral/medial sole flare that improves support but can feel laterally biased in the heel.",
+        "Durability: Outsole coverage improves durability versus Kinvara Pro, but early posterior-lateral heel wear was noted and overall durability trends average to slightly below average."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/12/saucony-endorphin-trainer-review-with8.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 42/34 mm stack and soft IncrediRun top layer provide strong impact protection and a plush feel, but heel touchdown is reported as lumpy/back-weighted and overly soft at slower paces.",
+        "Responsiveness: IncrediRun is described as highly reactive with quick rebound and improved roll-to-toe-off from the 3/4 carbon plate, but the dense lower PWRRUN layer makes overall energy return feel somewhat muted.",
+        "Stability: Medial sidewalls, firmer lower foam, and the plated platform give steady underfoot support, yet upper structure is loose (especially midfoot/heel) with heel lift reports, reducing lateral/heel security for low-volume feet.",
+        "Durability: Ground-contact durability relies on PWRRUN foam plus limited rubber wear patches, with very little traditional outsole coverage, suggesting decent foam longevity but higher outsole wear risk than fully rubberized designs."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/saucony-endorphin-trainer-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The IncrediRun top layer feels softer and bouncier than prior versions, but the dense PWRRUN base makes underfoot feel firmer, blockier, and less smooth than expected.",
+        "Responsiveness: Despite the plate and premium foam mix, rebound/snappiness is described as muted, with the shoe feeling harder to bring up to speed.",
+        "Stability: Upper lockdown is secure with no heel lift, but the platform geometry is described as awkward on uneven ground, suggesting weaker lateral confidence.",
+        "Durability: Some outsole rubber was added, but much of the outsole is still exposed carbonized EVA, leaving potential long-term wear concerns."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 286,
+    "drop": 8,
+    "heelStack": 39.5,
+    "forefootStack": 31.5
+  },
+  "proposedSpecs": {
+    "weight": 286,
+    "drop": 8,
+    "heelStack": 39.5,
+    "forefootStack": 31.5
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 8,
+      "runRepeat": 6.9,
+      "rtings": 8.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 6,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 6,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

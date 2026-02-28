@@ -1,0 +1,209 @@
+{
+  "shoeId": "adrenaline-gts-25",
+  "modelName": "Adrenaline GTS 25",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.9,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/adrenaline-gts-25",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 20.4,
+      "url": "https://www.doctorsofrunning.com/2025/09/brooks-adrenaline-gts-25-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 14.6,
+      "url": "https://www.roadtrailrun.com/2025/08/brooks-adrenaline-gts-25-review.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.5,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-adrenaline-gts-25-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/brooks/adrenaline-gts-25",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 7.2,
+          "forefootShockAbsorption": 5.2,
+          "heelFirmnessScore": 5.6,
+          "forefootFirmnessScore": 9.1,
+          "longRunForefoot_score": 4.7,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 67.4,
+          "forefootEnergyReturn": 69.0,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 56.4,
+          "at1100N_Nmm": 110.8,
+          "at1900N_Nmm": 215.1,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 152.9,
+          "at1300N_Nmm": 312.8,
+          "at2050N_Nmm": 545.7,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.05,
+          "at1100N_J": 8.96,
+          "at1900N_J": 16.0,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.21,
+          "at1300N_J": 5.6,
+          "at2050N_J": 8.34,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 5.24,
+          "at20km_J": 5.11,
+          "at30km_J": 5.05,
+          "at40km_J": 4.99,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 289.1,
+          "heelStack_mm": 40.9,
+          "forefootStack_mm": 27.3,
+          "drop_mm": 13.6,
+          "advertisedDrop_mm": 12.0,
+          "outsoleHeelWidth_mm": 93.0,
+          "outsoleArchWidth_mm": 77.0,
+          "outsoleForefootWidth_mm": 110.0,
+          "internalLength_mm": 280.0,
+          "internalHeelWidth_mm": 65.0,
+          "internalForefootWidth_mm": 90.0,
+          "heelWidthToStackRatio": 2.27,
+          "forefootWidthToStackRatio": 4.03,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "Yes",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 67.4%",
+        "Forefoot ER: 69.0%",
+        "Heel Cushioning: 7.2 /10",
+        "Forefoot Cushioning: 5.2 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/09/brooks-adrenaline-gts-25-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning is mildly soft with moderate impact protection and a smoother heel transition; the heel feels plush/decently cushioned, but the forefoot firms up and gets less comfortable on longer runs (especially past 8-10 miles).",
+        "Responsiveness is a clear weak point: the DNA Loft v3 setup feels non-bouncy and not snappy, and it becomes even less responsive as mileage increases.",
+        "Stability is a strength, with prominent medial post + GuideRails support, a very stiff heel counter, and structured midfoot/lateral geometry that provide consistent moderate guidance after break-in.",
+        "Durability is average: outsole rubber begins wearing through around 100 miles, exposed midsole can get torn up off-road, and the midsole/forefoot materials compress and firm up over time."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/08/brooks-adrenaline-gts-25-review.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning is soft and plush with added DNA LOFT v3 (+3 mm forefoot, +1 mm heel), giving solid impact protection and a smooth, balanced heel-to-forefoot transition.",
+        "Responsiveness is subdued: energy return is muted with limited bounce/snappiness at faster paces, though rebound is acceptable for easy daily running.",
+        "Stability is a major strength, with GuideRails, a secure heel/midfoot hold, and a firmer medial side delivering strong lateral support and predictable control.",
+        "Durability is strong, with high-quality upper materials and a redesigned RoadTack outsole showing minimal wear while maintaining reliable traction across road and light gravel surfaces."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/brooks-adrenaline-gts-25-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Feedback was mixed—one tester found the added DNA Loft v3 stack (37 mm heel / 27 mm forefoot) soft-enough with decent impact protection, while another found it firm/hard and uncomfortable for easy running.",
+        "Responsiveness: Limited overall—there was some initial energy return, but the shoe was also described as losing pep after about 5–6 miles and lacking bounce/snappiness.",
+        "Stability: Clear strength—GuideRails and raised medial/lateral sidewalls provided strong lateral guidance and pronation control; torsional rigidity and heel-counter stiffness were not explicitly detailed.",
+        "Durability: Outsole durability and wet-road grip were rated highly; upper/ankle padding showed quick dirt pickup and some lace-lock changes as cushioning compressed, with no major outsole breakdown noted over ~50 miles."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 301,
+    "drop": 10,
+    "heelStack": 40.9,
+    "forefootStack": 27.3
+  },
+  "proposedSpecs": {
+    "weight": 301,
+    "drop": 10,
+    "heelStack": 40.9,
+    "forefootStack": 27.3
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 301,
+      "runRepeat": null,
+      "rtings": 289.1,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "drop",
+      "current": 10,
+      "runRepeat": null,
+      "rtings": 13.6,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 4,
+    "responsiveness": 4,
+    "stability": 7,
+    "durability": 9
+  },
+  "proposedScores": {
+    "cushioning": 4,
+    "responsiveness": 4,
+    "stability": 7,
+    "durability": 9
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

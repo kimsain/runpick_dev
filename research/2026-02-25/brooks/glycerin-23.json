@@ -1,0 +1,96 @@
+{
+  "shoeId": "glycerin-23",
+  "modelName": "Glycerin 23",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 15.2,
+      "url": "https://www.doctorsofrunning.com/2026/02/brooks-glycerin-23-review-2026.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 17.8,
+      "url": "https://www.roadtrailrun.com/2026/01/brooks-glycerin-23-review-5-comparisons.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2026/02/brooks-glycerin-23-review-2026.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: DNA Tuned midsole is soft (on the firmer side of soft) with a rounded, softer heel landing and added 2 mm forefoot foam; heel-to-forefoot transition feels smooth and impact protection is geared for daily mileage comfort.",
+        "Responsiveness: The forefoot is described as more poppy/responsive with a touch of resilience, but overall energy return is moderate and best at easy-to-daily paces rather than fast, snappy efforts.",
+        "Stability: This is a true neutral shoe with limited formal stability features; lockdown is strong (secure upper, stiff padded heel counter, no heel slippage), while gentle sole flaring/slightly wide platform provide mild lateral support and flexibility remains mild-to-moderate rather than rigid.",
+        "Durability: Outsole durability is expected to be good, with substantial rubber coverage and ridged tread providing solid grip and likely strong underfoot wear resistance over time."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/01/brooks-glycerin-23-review-5-comparisons.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Very plush, soft, and protective ride with a high 38 mm heel / 30 mm forefoot stack; heel cushioning feels especially good and forgiving, while the forefoot is also well-cushioned but can feel overly soft/sloppy.",
+        "Responsiveness: Energy return is moderate rather than snappy; reviewers repeatedly note limited forefoot pop and that toe-off feels more lively only when pace increases.",
+        "Stability: Rearfoot/midfoot stability is decent for a neutral trainer (wide platform, sturdy heel counter, substantial outsole coverage), but forefoot security/lateral hold is weaker due to a stretchy, roomy upper and soft front platform.",
+        "Durability: Outsole rubber coverage is deep and extensive, with expected strong wear resistance; early upper durability is positive, with the knit still looking fresh after ~30 miles."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": 301,
+    "drop": 8,
+    "heelStack": 38,
+    "forefootStack": 30
+  },
+  "proposedSpecs": {
+    "weight": 301,
+    "drop": 8,
+    "heelStack": 38,
+    "forefootStack": 30
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

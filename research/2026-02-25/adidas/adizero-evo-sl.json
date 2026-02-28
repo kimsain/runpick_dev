@@ -1,0 +1,301 @@
+{
+  "shoeId": "adizero-evo-sl",
+  "modelName": "ADIZERO EVO SL",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/adidas-adizero-evo-sl",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-evo-sl",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 24.7,
+      "url": "https://www.doctorsofrunning.com/2025/01/adidas-adizero-evo-sl-review-2024.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 23.3,
+      "url": "https://www.roadtrailrun.com/2024/12/review-adidas-adizero-evo-sl-lot-of.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.2,
+      "url": "https://believeintherun.com/shoe-reviews/adidas-adizero-evo-sl-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/adidas-adizero-evo-sl",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 146.95077149155,
+          "forefootShockAbsorption": 125.8558195731,
+          "midsoleSoftness_ha": 21.3,
+          "midsoleSoftnessCold_ha": 24,
+          "midsoleSoftness_ac": 43.5,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.3,
+          "forefootEnergyReturn": 73.54,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 4,
+          "heelCounterStiffness": 3,
+          "midsoleWidthForefoot_mm": 116.3,
+          "midsoleWidthHeel_mm": 87.3,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "0.55 mm",
+          "outsoleThickness": "1.6 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 5,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 223,
+          "drop_mm": 8,
+          "heelStack_mm": 36.1,
+          "forefootStack_mm": 28.1,
+          "flexStiffness_n": 9.8,
+          "stiffness_n": 19.2,
+          "stiffnessCold_n": 21.3,
+          "stiffnessCold_pct": 11,
+          "forefootTraction": 0.4,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidest_mm": 98.7,
+          "toeboxWidthBigToe_mm": 78.3,
+          "toeboxWidthWidestPart_mm": 97.5,
+          "toeboxWidthBigToePart_mm": 71.6,
+          "internalLength_mm": 272.6,
+          "toeboxHeight_mm": 28.1,
+          "sizeRating": 2.85,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 57.1,
+          "midsoleSoftnessCold_pct": 12.9,
+          "insoleThickness_mm": 2.4,
+          "tonguePadding_mm": 1.5,
+          "tongueGussetType": "none",
+          "heelTab": "none",
+          "removableInsole": 1,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 146.95077149155 / 125.8558195731 SA",
+        "Energy return heel/forefoot: 74.3% / 73.54%",
+        "Lab specs weight/drop/stack: 223g, 8mm, 36.1mm/28.1mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/adizero-evo-sl",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.0,
+          "forefootShockAbsorption": 8.1,
+          "heelFirmnessScore": 5.0,
+          "forefootFirmnessScore": 8.0,
+          "longRunForefoot_score": 7.6,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 81.4,
+          "forefootEnergyReturn": 83.3,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 47.8,
+          "at1100N_Nmm": 98.2,
+          "at1900N_Nmm": 234.4,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 96.4,
+          "at1300N_Nmm": 209.8,
+          "at2050N_Nmm": 459.6,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.46,
+          "at1100N_J": 10.03,
+          "at1900N_J": 17.07,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.16,
+          "at1300N_J": 8.87,
+          "at2050N_J": 12.68,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 8.31,
+          "at20km_J": 8.17,
+          "at30km_J": 8.07,
+          "at40km_J": 7.99,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 220.0,
+          "heelStack_mm": 36.9,
+          "forefootStack_mm": 30.2,
+          "drop_mm": 6.7,
+          "advertisedDrop_mm": 6.0,
+          "outsoleHeelWidth_mm": 84.0,
+          "outsoleArchWidth_mm": 64.0,
+          "outsoleForefootWidth_mm": 114.0,
+          "internalLength_mm": 276.0,
+          "internalHeelWidth_mm": 61.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.27,
+          "forefootWidthToStackRatio": 3.77,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Plastic Shank",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 10.0,
+          "forefootWidthFitScore": 7.6,
+          "archWidthFitScore": 8.5,
+          "forefootHeightFitScore": 8.5,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -6.4,
+          "ballOfFootTtsDeviation_mm": -2.2,
+          "archWidthTtsDeviation_mm": -2.6,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 81.4%",
+        "Forefoot ER: 83.3%",
+        "Heel Cushioning: 8.0 /10",
+        "Forefoot Cushioning: 8.1 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/01/adidas-adizero-evo-sl-review-2024.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length Lightstrike Pro midsole is soft and comfortable with solid impact protection for training and longer efforts; heel landings feel smooth from the posterolateral bevel, and the forefoot rolls easily with a mildly flexible feel.",
+        "Responsiveness: Energy return is moderate at first but improves after break-in (around 20 miles), with more bounce at faster paces; the nylon shank/plate adds stiffness and noticeable snappiness on pickups.",
+        "Stability: This is a neutral shoe with a narrower midfoot, but shank-driven torsional rigidity helps transitions; the heel geometry adds slight guidance, while the heel counter is small and somewhat flexible rather than highly rigid.",
+        "Durability: Midsole longevity appears good and improves with use, but outsole durability is a concern because posterolateral heel rubber began tearing around 45 miles; traction is strong, though exposed foam is vulnerable on rough surfaces."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2024/12/review-adidas-adizero-evo-sl-lot-of.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full-length Lightstrike Pro midsole with a high 38.5/32 mm stack is repeatedly described as excellent for softness and impact protection, but heel-strike running at slower paces is noted as less favorable than forefoot/midfoot use.",
+        "Responsiveness: Energy return is a standout, with testers highlighting strong bounce/propulsion from Lightstrike Pro and a 60% forefoot rocker that feels most effective at faster paces.",
+        "Stability: A padded, fairly stiff internal heel counter provides secure heel hold and no major heel slip, but the thin roomy upper and non-gusseted tongue reduce lock-down and lateral security, especially on uneven terrain, corners, or cobblestones.",
+        "Durability: The provided text does not report explicit outsole wear or long-term material longevity results; the upper is described as thin and cost-cut, which may imply weaker long-term robustness versus more structured trainers."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/adidas-adizero-evo-sl-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The full Lightstrike Pro setup (38 mm heel / 32 mm forefoot) is described as soft, squishy, and smooth, with strong impact comfort for both short and long runs.",
+        "Responsiveness: Ride is consistently called bouncy and responsive with buttery rebound, and the low weight helps pace pickups, though it is not as snappy as plated race shoes.",
+        "Stability: Upper/heel hold is decent with a more structured heel counter, but the platform has limited guidance and support, so torsional/lateral stability is modest for runners needing control.",
+        "Durability: Continental rubber outsole and overall construction are highlighted as quality; with 50+ miles logged, no notable outsole or material wear issues were reported."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 224,
+    "drop": 7,
+    "heelStack": 38.5,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 224,
+    "drop": 7,
+    "heelStack": 38.5,
+    "forefootStack": 32
+  },
+  "specConflicts": [
+    {
+      "field": "drop",
+      "current": 7,
+      "runRepeat": 8,
+      "rtings": 6.7,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "heelStack",
+      "current": 38.5,
+      "runRepeat": 36.1,
+      "rtings": 36.9,
+      "notes": "Quantitative source variance vs baseline."
+    },
+    {
+      "field": "forefootStack",
+      "current": 32,
+      "runRepeat": 28.1,
+      "rtings": 30.2,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 7
+  },
+  "proposedScores": {
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 6,
+    "durability": 7
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

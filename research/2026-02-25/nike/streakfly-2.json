@@ -1,0 +1,281 @@
+{
+  "shoeId": "streakfly-2",
+  "modelName": "STREAKFLY 2",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "found",
+      "elapsedSec": 1.9,
+      "url": "https://runrepeat.com/nike-streakfly-2",
+      "reason": null
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/streakfly-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "found",
+      "elapsedSec": 21.3,
+      "url": "https://www.doctorsofrunning.com/2025/06/nike-streakfly-2-review-2025.html",
+      "reason": null
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 23.2,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-streakfly-2-multi-tester-review-7.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 23.3,
+      "url": "https://believeintherun.com/shoe-reviews/nike-streakfly-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RunRepeat",
+      "priority": 1,
+      "url": "https://runrepeat.com/nike-streakfly-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 106.47246089799,
+          "forefootShockAbsorption": 81.943033203317,
+          "midsoleSoftness_ha": 16.4,
+          "midsoleSoftnessCold_ha": 19.6,
+          "midsoleSoftness_ac": 31.9,
+          "scale": "SA",
+          "scaleHA": "Shore A (≤v2.1)",
+          "scaleAC": "Asker C (v2.2+)"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 76.34,
+          "forefootEnergyReturn": 77.86,
+          "scale": "%"
+        },
+        "stability": {
+          "torsionalRigidity": 2,
+          "heelCounterStiffness": 1,
+          "midsoleWidthForefoot_mm": 102.2,
+          "midsoleWidthHeel_mm": 70.8,
+          "scale": "/5",
+          "scaleWidth": "mm"
+        },
+        "durability": {
+          "outsoleDurability": "1.7 mm",
+          "outsoleThickness": "2.4 mm",
+          "toeboxDurability": 1,
+          "heelPaddingDurability": 4,
+          "scale": "mm",
+          "scaleDurabilityRating": "rating 1-5"
+        },
+        "physical": {
+          "weight_g": 128,
+          "drop_mm": 3.7,
+          "heelStack_mm": 27,
+          "forefootStack_mm": 23.3,
+          "flexStiffness_n": 7,
+          "forefootTraction": 0.49,
+          "scale": "mixed"
+        },
+        "sizeAndFit": {
+          "toeboxWidthWidestPart_mm": 89.7,
+          "toeboxWidthBigToePart_mm": 66.7,
+          "toeboxHeight_mm": 23.1,
+          "sizeRating": 2.35,
+          "scale": "mixed"
+        },
+        "misc": {
+          "breathability": 5,
+          "outsoleHardness_hc": 43,
+          "midsoleSoftnessCold_pct": 19.5,
+          "insoleThickness_mm": 3,
+          "tonguePadding_mm": 0.4,
+          "tongueGussetType": "none",
+          "heelTab": "pull-tab",
+          "removableInsole": 0,
+          "reflectiveElements": 0,
+          "scale": "mixed"
+        }
+      },
+      "keyFindings": [
+        "Shock absorption heel/forefoot: 106.47246089799 / 81.943033203317 SA",
+        "Energy return heel/forefoot: 76.34% / 77.86%",
+        "Lab specs weight/drop/stack: 128g, 3.7mm, 27mm/23.3mm"
+      ]
+    },
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/nike/streakfly-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 4.3,
+          "forefootShockAbsorption": 5.3,
+          "heelFirmnessScore": 8.8,
+          "forefootFirmnessScore": 9.4,
+          "longRunForefoot_score": 5.1,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 82.9,
+          "forefootEnergyReturn": 84.0,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 84.5,
+          "at1100N_Nmm": 231.0,
+          "at1900N_Nmm": 542.7,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 168.6,
+          "at1300N_Nmm": 360.2,
+          "at2050N_Nmm": 736.3,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.85,
+          "at1100N_J": 5.95,
+          "at1900N_J": 9.03,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 3.6,
+          "at1300N_J": 5.68,
+          "at2050N_J": 7.94,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 5.57,
+          "at20km_J": 5.48,
+          "at30km_J": 5.43,
+          "at40km_J": 5.38,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 121.5,
+          "heelStack_mm": 26.7,
+          "forefootStack_mm": 22.6,
+          "drop_mm": 4.1,
+          "advertisedDrop_mm": 4.0,
+          "outsoleHeelWidth_mm": 71.0,
+          "outsoleArchWidth_mm": 48.0,
+          "outsoleForefootWidth_mm": 99.0,
+          "internalLength_mm": 264.0,
+          "internalHeelWidth_mm": 55.0,
+          "internalForefootWidth_mm": 85.0,
+          "heelWidthToStackRatio": 2.66,
+          "forefootWidthToStackRatio": 4.38,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "Carbon Fiber",
+          "tongueGussetType": "Non-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "lengthFitScore": 7.0,
+          "forefootWidthFitScore": 7.0,
+          "archWidthFitScore": 5.4,
+          "forefootHeightFitScore": 7.6,
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "toeTtsDeviation_mm": -2.8,
+          "ballOfFootTtsDeviation_mm": -5.4,
+          "archWidthTtsDeviation_mm": -6.5,
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 82.9%",
+        "Forefoot ER: 84.0%",
+        "Heel Cushioning: 4.3 /10",
+        "Forefoot Cushioning: 5.3 /10"
+      ]
+    },
+    {
+      "source": "Doctors of Running",
+      "priority": 3,
+      "url": "https://www.doctorsofrunning.com/2025/06/nike-streakfly-2-review-2025.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: ZoomX cushioning is soft with a low 26/22 mm stack and high ground feel; heel feels slightly softer and forefoot slightly firmer, with protection best suited to short races.",
+        "Responsiveness: The full-length carbon Flyplate plus ZoomX gives strong bounce and very snappy turnover, and the ride performs best at faster paces (about 200 m to 5K effort).",
+        "Stability: Plate stiffness improves torsional control and forefoot rigidity, but rearfoot structure is minimal (small semi-rigid heel counter), so some runners needed tighter lacing for heel lock; the snug upper provides solid lateral hold in turns.",
+        "Durability: Durability is expected to be below average overall; traction is reported as good on softer surfaces, but outsole/material longevity is not a strength."
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/07/nike-streakfly-2-multi-tester-review-7.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: ZoomX is described as soft, but the ride is also harsh/aggressive versus typical road shoes; with a 27/23 mm low-stack, 4 mm drop setup, heel comfort is minimal and the shoe is best for forefoot strikers needing impact protection at speed.",
+        "Responsiveness: The full-length carbon FlyPlate is a major upgrade over Streakfly 1, adding clear stiffness and snappier power transfer for quick turnover; it is highly race-oriented but still not as stiff as a Vaporfly.",
+        "Stability: Stability improves through the plate stabilizing soft foam and a very secure upper lockdown/heel structure, yet the narrow, aggressively tapered platform and forward geometry make it less stable for heel strikers or less efficient runners.",
+        "Durability: Traction is a standout with a phenomenally grippy outsole, but testers explicitly call out likely durability concerns given the ultra-light, minimal construction and weight-saving cutouts/material exposure."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/nike-streakfly-2-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning is intentionally low and race-focused (27 mm heel / 23 mm forefoot): ZoomX still feels soft, but overall underfoot feel is more road/forefoot-biased than plush, with enough impact protection for short hard efforts and very little heel comfort for heel strikers.",
+        "Responsiveness is a standout: the stiff, aggressive carbon Flyplate plus ZoomX creates strong bounce/energy return and very snappy turnover, with an \"extra gear\" sensation at race pace.",
+        "Stability is limited outside fast forefoot running: the narrow midfoot, deep cutout, and track-spike geometry feel unstable when walking or landing on the heel, though the snug upper provides secure lockdown at speed.",
+        "Durability feedback is mostly outsole-focused: rubber is notably tacky/grippy (including wet runs), but the review does not provide long-term outsole wear or broader material-longevity results."
+      ]
+    }
+  ],
+  "confidence": "high",
+  "currentSpecs": {
+    "weight": 144,
+    "drop": 4,
+    "heelStack": 27,
+    "forefootStack": 23
+  },
+  "proposedSpecs": {
+    "weight": 144,
+    "drop": 4,
+    "heelStack": 27,
+    "forefootStack": 23
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 144,
+      "runRepeat": 128,
+      "rtings": 121.5,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 2,
+    "responsiveness": 9,
+    "stability": 1,
+    "durability": 5
+  },
+  "proposedScores": {
+    "cushioning": 2,
+    "responsiveness": 9,
+    "stability": 1,
+    "durability": 5
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

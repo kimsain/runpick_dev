@@ -1,0 +1,190 @@
+{
+  "shoeId": "magmax-nitro-2",
+  "modelName": "MagMax NITRO 2",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.7,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/magmax-nitro-2-shoe",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 20.9,
+      "url": "https://www.roadtrailrun.com/2025/11/puma-magmax-nitro-2-review-4-comparisons.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 19.6,
+      "url": "https://believeintherun.com/shoe-reviews/puma-magmax-nitro-2-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/puma/magmax-nitro-2-shoe",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 8.9,
+          "forefootShockAbsorption": 8.9,
+          "heelFirmnessScore": 3.8,
+          "forefootFirmnessScore": 6.5,
+          "longRunForefoot_score": 8.0,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 66.9,
+          "forefootEnergyReturn": 68.9,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 43.6,
+          "at1100N_Nmm": 87.0,
+          "at1900N_Nmm": 157.6,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 84.7,
+          "at1300N_Nmm": 160.4,
+          "at2050N_Nmm": 291.2,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 3.86,
+          "at1100N_J": 11.21,
+          "at1900N_J": 20.25,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 5.45,
+          "at1300N_J": 9.91,
+          "at2050N_J": 15.14,
+          "scale": "J"
+        },
+        "longRun": {
+          "at10km_J": 9.06,
+          "at20km_J": 8.77,
+          "at30km_J": 8.57,
+          "at40km_J": 8.42,
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 267.7,
+          "heelStack_mm": 44.9,
+          "forefootStack_mm": 36.1,
+          "drop_mm": 8.8,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 103.0,
+          "outsoleArchWidth_mm": 81.0,
+          "outsoleForefootWidth_mm": 123.0,
+          "internalLength_mm": 281.0,
+          "internalHeelWidth_mm": 67.0,
+          "internalForefootWidth_mm": 94.0,
+          "heelWidthToStackRatio": 2.29,
+          "forefootWidthToStackRatio": 3.4,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 66.9%",
+        "Forefoot ER: 68.9%",
+        "Heel Cushioning: 8.9 /10",
+        "Forefoot Cushioning: 8.9 /10"
+      ]
+    },
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2025/11/puma-magmax-nitro-2-review-4-comparisons.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Very soft, highly cushioned ride from the 46 mm heel / 38 mm forefoot Nitro foam stack, with strong impact protection and a plush heel-to-forefoot feel plus some forefoot flex.",
+        "Responsiveness: Bounce is high but energy return is only moderate; the ride is described as not particularly quick to return energy and lacking decisive pop/snappiness at faster paces.",
+        "Stability: Stability is the main weakness, with a soft high stack, narrow 75 mm midfoot, less-than-rigid heel counter, and limited rear/midfoot outsole support causing slight wobble and side rotation on landings.",
+        "Durability: Outsole durability is a positive via PumaGrip (called high-performing and durable), but the sparse rubber layout (two rear patches and forefoot strips) prioritizes low weight and may limit long-term structural support."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-magmax-nitro-2-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The 46/38 mm NitroFoam setup feels plush and soft with strong impact protection, with reviewers noting v2 is slightly softer and more resilient than v1 across heel-to-forefoot landings.",
+        "Responsiveness: NitroFoam adds noticeable rebound/energy return, giving a bouncy, snappy-enough ride that handled easy runs through moderate uptempo sections (but not true speed-session focus).",
+        "Stability: A wide, stable platform, secure upper lockdown, and a less bulbous forefoot improved lateral support and overall control for a neutral max-cushion shoe; mild overpronation was tolerated, while severe overpronators may need more guidance.",
+        "Durability: PumaGrip outsole traction stayed reliable even on post-snow/icy patches, and reviewers called overall shoe durability/material longevity exceptional for the price."
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 290,
+    "drop": 8,
+    "heelStack": 46,
+    "forefootStack": 38
+  },
+  "proposedSpecs": {
+    "weight": 290,
+    "drop": 8,
+    "heelStack": 46,
+    "forefootStack": 38
+  },
+  "specConflicts": [
+    {
+      "field": "weight",
+      "current": 290,
+      "runRepeat": null,
+      "rtings": 267.7,
+      "notes": "Quantitative source variance vs baseline."
+    }
+  ],
+  "currentScores": {
+    "cushioning": 9,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 9,
+    "responsiveness": 4,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

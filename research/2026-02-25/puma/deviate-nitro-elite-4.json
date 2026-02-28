@@ -1,0 +1,96 @@
+{
+  "shoeId": "deviate-nitro-elite-4",
+  "modelName": "Deviate NITRO Elite 4",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "found",
+      "elapsedSec": 21.2,
+      "url": "https://www.roadtrailrun.com/2026/01/puma-deviate-elite-4-multi-tester.html",
+      "reason": null
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "found",
+      "elapsedSec": 18.6,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/",
+      "reason": null
+    }
+  ],
+  "sources": [
+    {
+      "source": "Road Trail Run",
+      "priority": 4,
+      "url": "https://www.roadtrailrun.com/2026/01/puma-deviate-elite-4-multi-tester.html",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: Dual-density A-TPU (softer top, firmer bottom) delivers a forgiving, well-protected, leg-friendly ride at 40/32 stack, with comfortable heel feel but a flatter/less rolling forefoot toe-off sensation.",
+        "Responsiveness: Energy return is pronounced with clear rebound, but bounce is controlled rather than trampoline-like; the stiffer plate feels most propulsive when pushed and can feel rigid at easier paces.",
+        "Stability: Front-to-back stability is a standout for such a light racer, aided by a wider midfoot platform and rigid plate/sidewall geometry; heel counter support is slightly reduced vs v3 but lockdown remains secure.",
+        "Durability: The review flags reduced outsole coverage and thinner rubber depth as a potential durability tradeoff, with possible increased outsole wear over time."
+      ]
+    },
+    {
+      "source": "Believe in the Run",
+      "priority": 5,
+      "url": "https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/",
+      "type": "qualitative",
+      "keyFindings": [
+        "Cushioning: The updated ATPU/Nitrofoam feels noticeably softer and lighter than prior versions, compresses well on impact, and keeps full cushioning despite weight loss (40 mm heel / 32 mm forefoot).",
+        "Responsiveness: Energy return is a standout, with a bouncier foam that snaps back quickly and makes the carbon plate’s propulsion feel more pronounced and snappy at faster paces.",
+        "Stability: Race-day lockdown is strong from the fit/flat laces, and the collar plus heel counter add enough structure for controlled, approachable stability even late in runs when form fades.",
+        "Durability: A thin Pumagrip layer covers heel and forefoot for lightweight protection; grip was reported as less tacky than usual, and after 27 miles no wear issues were flagged, but long-term outsole/material longevity remains unproven."
+      ]
+    }
+  ],
+  "confidence": "low",
+  "currentSpecs": {
+    "weight": 170,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "proposedSpecs": {
+    "weight": 170,
+    "drop": 8,
+    "heelStack": 40,
+    "forefootStack": 32
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "proposedScores": {
+    "cushioning": 7,
+    "responsiveness": 7,
+    "stability": 5,
+    "durability": 6
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}

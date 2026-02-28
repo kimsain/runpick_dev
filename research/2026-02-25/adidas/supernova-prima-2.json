@@ -1,0 +1,153 @@
+{
+  "shoeId": "supernova-prima-2",
+  "modelName": "SUPERNOVA PRIMA 2",
+  "researchDate": "2026-02-25",
+  "attemptLog": [
+    {
+      "source": "RunRepeat",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "RTINGS",
+      "status": "found",
+      "elapsedSec": 0.8,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2",
+      "reason": null
+    },
+    {
+      "source": "Doctors of Running",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Road Trail Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    },
+    {
+      "source": "Believe in the Run",
+      "status": "not_found",
+      "elapsedSec": 0,
+      "url": null,
+      "reason": "missing_url"
+    }
+  ],
+  "sources": [
+    {
+      "source": "RTINGS",
+      "priority": 2,
+      "url": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2",
+      "type": "quantitative",
+      "attributeScores": {
+        "cushioning": {
+          "heelShockAbsorption": 6.5,
+          "forefootShockAbsorption": 6.9,
+          "heelFirmnessScore": 6.0,
+          "forefootFirmnessScore": 8.3,
+          "scale": "/10"
+        },
+        "responsiveness": {
+          "heelEnergyReturn": 74.7,
+          "forefootEnergyReturn": 77.1,
+          "scale": "%"
+        },
+        "firmnessHeel": {
+          "at550N_Nmm": 63.3,
+          "at1100N_Nmm": 115.5,
+          "at1900N_Nmm": 227.3,
+          "scale": "N/mm"
+        },
+        "firmnessForefoot": {
+          "at800N_Nmm": 120.9,
+          "at1300N_Nmm": 246.2,
+          "at2050N_Nmm": 397.1,
+          "scale": "N/mm"
+        },
+        "energyHeel": {
+          "at550N_J": 2.73,
+          "at1100N_J": 8.07,
+          "at1900N_J": 14.78,
+          "scale": "J"
+        },
+        "energyForefoot": {
+          "at800N_J": 4.29,
+          "at1300N_J": 7.28,
+          "at2050N_J": 10.9,
+          "scale": "J"
+        },
+        "longRun": {
+          "scale": "J"
+        },
+        "physical": {
+          "weight_g": 278.7,
+          "heelStack_mm": 36.3,
+          "forefootStack_mm": 28.7,
+          "drop_mm": 7.6,
+          "advertisedDrop_mm": 8.0,
+          "outsoleHeelWidth_mm": 89.0,
+          "outsoleArchWidth_mm": 79.0,
+          "outsoleForefootWidth_mm": 116.0,
+          "internalLength_mm": 281.0,
+          "internalHeelWidth_mm": 64.0,
+          "internalForefootWidth_mm": 98.0,
+          "heelWidthToStackRatio": 2.45,
+          "forefootWidthToStackRatio": 4.04,
+          "scale": "mixed"
+        },
+        "design": {
+          "plate": "None",
+          "tongueGussetType": "Fully-gusseted",
+          "wideSizingAvailable": "No",
+          "scale": "categorical"
+        },
+        "fitScores": {
+          "scale": "/10"
+        },
+        "fitDeviations": {
+          "scale": "mm"
+        }
+      },
+      "keyFindings": [
+        "Heel ER: 74.7%",
+        "Forefoot ER: 77.1%",
+        "Heel Cushioning: 6.5 /10",
+        "Forefoot Cushioning: 6.9 /10"
+      ]
+    }
+  ],
+  "confidence": "medium",
+  "currentSpecs": {
+    "weight": 279,
+    "drop": 8,
+    "heelStack": 37,
+    "forefootStack": 29
+  },
+  "proposedSpecs": {
+    "weight": 279,
+    "drop": 8,
+    "heelStack": 37,
+    "forefootStack": 29
+  },
+  "specConflicts": [],
+  "currentScores": {
+    "cushioning": 5,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 8
+  },
+  "proposedScores": {
+    "cushioning": 5,
+    "responsiveness": 5,
+    "stability": 6,
+    "durability": 8
+  },
+  "scoreDiffs": [],
+  "specsDecision": "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision."
+}
