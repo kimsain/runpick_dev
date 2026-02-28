@@ -10,6 +10,7 @@ import {
   ResponsiveContainer,
 } from 'recharts'
 import type { Specs } from '@/lib/types'
+import { SPEC_LABELS } from '@/lib/constants'
 
 interface Props {
   specs: Specs
@@ -45,11 +46,11 @@ export default function SpecRadar({ specs }: Props) {
   }, [])
 
   const data = [
-    { subject: '쿠션성', value: specs.cushioning, fullMark: 10 },
-    { subject: '반응성', value: specs.responsiveness, fullMark: 10 },
-    { subject: '안정성', value: specs.stability, fullMark: 10 },
-    { subject: '내구성', value: specs.durability, fullMark: 10 },
-    { subject: '경량성', value: specs.weightScore ?? 0, fullMark: 10 },
+    { subject: SPEC_LABELS.cushioning,     value: specs.cushioning,         fullMark: 10 },
+    { subject: SPEC_LABELS.responsiveness, value: specs.responsiveness,     fullMark: 10 },
+    { subject: SPEC_LABELS.stability,      value: specs.stability,          fullMark: 10 },
+    { subject: SPEC_LABELS.durability,     value: specs.durability,         fullMark: 10 },
+    { subject: SPEC_LABELS.weightScore,    value: specs.weightScore ?? 0,   fullMark: 10 },
   ]
 
   return (

@@ -29,3 +29,17 @@ export const CONF_LABELS: Record<string, string> = {
   'medium':    '보통',
   'low':       '낮음',
 }
+
+export const CONF_BADGE_LABELS: Record<string, string> = {
+  'very-high': 'VERIFIED',
+  'high':      'RELIABLE',
+  'medium':    'LIMITED',
+  'low':       'PENDING',
+}
+
+export const CONF_TOOLTIPS: Record<string, string> = {
+  'very-high': 'RunRepeat + RTINGS 실측 데이터 완비',
+  'high':      '실측 데이터 + 전문가 리뷰 확인',
+  'medium':    '전문가 리뷰 기반 (실측 없음)',
+  'low':       '데이터 수집 중',
+}

@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback, useState } from 'react'
 import type { Brand } from '@/lib/types'
+import { CATEGORIES, SPEC_LABELS } from '@/lib/constants'
 
 interface Props {
   brands: Brand[]
@@ -12,12 +13,6 @@ interface Props {
   mobile?: boolean
 }
 
-const CATEGORIES = [
-  { id: 'all', label: '전체' },
-  { id: 'daily', label: '데일리' },
-  { id: 'super-trainer', label: '슈퍼트레이너' },
-  { id: 'racing', label: '레이싱' },
-]
 
 const SORTS_META = [
   { key: 'name',           label: '이름',   defaultDir: 'asc'  as const },
@@ -45,12 +40,12 @@ function parseSort(s: string): [string, 'asc' | 'desc'] {
 }
 
 const SPEC_FILTERS = [
-  { param: 'minCush', label: '쿠션성', color: 'spec-cushion' },
-  { param: 'minResp', label: '반응성', color: 'spec-response' },
-  { param: 'minStab', label: '안정성', color: 'spec-stability' },
-  { param: 'minDur', label: '내구성', color: 'spec-durability' },
-  { param: 'minWS',  label: '경량성', color: 'spec-weight' },
-  { param: 'minVS',  label: '가성비', color: 'spec-value' },
+  { param: 'minCush', label: SPEC_LABELS.cushioning,     color: 'spec-cushion' },
+  { param: 'minResp', label: SPEC_LABELS.responsiveness, color: 'spec-response' },
+  { param: 'minStab', label: SPEC_LABELS.stability,      color: 'spec-stability' },
+  { param: 'minDur',  label: SPEC_LABELS.durability,     color: 'spec-durability' },
+  { param: 'minWS',   label: SPEC_LABELS.weightScore,    color: 'spec-weight' },
+  { param: 'minVS',   label: SPEC_LABELS.valueScore,     color: 'spec-value' },
 ]
 
 function formatPrice(v: number) {

@@ -61,6 +61,7 @@ export interface Brand {
   logo: string
   color: string
   description: string
+  officialUrl?: string
 }
 
 export interface BrandData {

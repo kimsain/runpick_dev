@@ -27,6 +27,8 @@ const HERO_SHOES = [
   { src: '/images/shoes/cielo-x1-3-0.png', alt: 'Hoka Cielo X1 3.0' },
   { src: '/images/shoes/hyperion-elite-5.png', alt: 'Brooks Hyperion Elite 5' },
   { src: '/images/shoes/fuelcell-sc-elite-v5.webp', alt: 'New Balance FuelCell SC Elite v5' },
+  { src: '/images/shoes/cloudboom-strike.webp', alt: 'On Cloudboom Strike' },
+  { src: '/images/shoes/gara-carbon-2.webp', alt: 'Diadora Gara Carbon 2' },
 ] as const
 
 const STATS = (totalCount: number, brandCount: number) => [
