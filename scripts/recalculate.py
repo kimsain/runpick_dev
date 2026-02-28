@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 """
-recalculate.py — weightScore + valueScore 통합 재계산
+recalculate.py — weightScore + valueScore + durability 통합 재계산
 
 새 신발 추가 후 이 스크립트 하나만 실행하면 파생 점수 갱신 완료.
 
 사용법:
-  python3 scripts/recalculate.py                    # dry-run: 전부
-  python3 scripts/recalculate.py --apply             # 적용
-  python3 scripts/recalculate.py --only weight       # weightScore만
-  python3 scripts/recalculate.py --only value        # valueScore만
+  python3 scripts/recalculate.py                         # dry-run: 전부
+  python3 scripts/recalculate.py --apply                 # 적용
+  python3 scripts/recalculate.py --only weight           # weightScore만
+  python3 scripts/recalculate.py --only value            # valueScore만
+  python3 scripts/recalculate.py --only durability       # durabilityScore만
+  python3 scripts/recalculate.py --calibrate --apply     # 앵커 보정 + 전체 재계산
 """
 
 import argparse
 import json
 from pathlib import Path
 
-from formulas import clamp, weight_score, raw_lightness, value_score, raw_value_score
+from formulas import clamp, weight_score, raw_lightness, value_score, raw_value_score, compute_dur_anchors
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -33,7 +35,7 @@ def main():
     """
     parser = argparse.ArgumentParser(description="weightScore + valueScore 통합 재계산")
     parser.add_argument("--apply", action="store_true", help="실제로 JSON 업데이트")
-    parser.add_argument("--only", choices=["weight", "value"], help="특정 점수만 계산")
+    parser.add_argument("--only", choices=["weight", "value", "durability"], help="특정 점수만 계산")
     parser.add_argument("--calibrate", action="store_true",
                         help="VALUE_RATIO_MAX를 데이터 기반으로 재보정 후 formulas.py에 기록")
     args = parser.parse_args()
@@ -51,8 +53,9 @@ def main():
         new_max = fm.compute_value_ratio_max(all_shoes, top_n=5)
         old_max = fm.VALUE_RATIO_MAX
 
+        formulas_path = Path(__file__).parent / "formulas.py"
+
         if abs(new_max - old_max) / old_max > 0.001:
-            formulas_path = Path(__file__).parent / "formulas.py"
             text = formulas_path.read_text()
             text = _re.sub(
                 r'^VALUE_RATIO_MAX\s*=\s*[^\n]+',
@@ -67,12 +70,37 @@ def main():
         else:
             print(f"· VALUE_RATIO_MAX 변동 없음 ({old_max:.10f})")
 
+        # 내구성 앵커 보정
+        new_dur_min, new_dur_max = fm.compute_dur_anchors(all_shoes, top_n=5)
+        old_dur_min, old_dur_max = fm.DUR_RAW_MIN, fm.DUR_RAW_MAX
+
+        dur_min_pct = abs(new_dur_min - old_dur_min) / max(abs(old_dur_min), 1e-9)
+        dur_max_pct = abs(new_dur_max - old_dur_max) / max(abs(old_dur_max), 1e-9)
+
+        if dur_min_pct > 0.001 or dur_max_pct > 0.001:
+            text = formulas_path.read_text()
+            text = _re.sub(
+                r'^DUR_RAW_MIN\s*=\s*[^\n]+',
+                f'DUR_RAW_MIN = {new_dur_min:.10f}  # bottom-5 경계 (--calibrate 자동 갱신)',
+                text, flags=_re.MULTILINE)
+            text = _re.sub(
+                r'^DUR_RAW_MAX\s*=\s*[^\n]+',
+                f'DUR_RAW_MAX = {new_dur_max:.10f}  # top-5 경계 (--calibrate 자동 갱신)',
+                text, flags=_re.MULTILINE)
+            formulas_path.write_text(text)
+            importlib.reload(fm)
+            print(f"✓ DUR_RAW_MIN 보정: {old_dur_min:.10f} → {new_dur_min:.10f}")
+            print(f"✓ DUR_RAW_MAX 보정: {old_dur_max:.10f} → {new_dur_max:.10f}")
+        else:
+            print(f"· DUR_RAW anchors 변동 없음")
+
     # Always use fm's current functions (updated after calibrate reload, or original)
     value_score = fm.value_score
     raw_value_score = fm.raw_value_score
 
     do_weight = args.only is None or args.only == "weight"
     do_value = args.only is None or args.only == "value"
+    do_durability = args.only is None or args.only == "durability"
 
     rows = []
 
@@ -101,6 +129,25 @@ def main():
                         file_changed = True
                     if args.apply and specs.get("rawLightness") != new_raw:
                         specs["rawLightness"] = new_raw
+                        file_changed = True
+
+            # durabilityScore (rescale via DUR_RAW_MIN/MAX)
+            if do_durability:
+                raw_dur = specs.get("rawDurability")
+                if raw_dur is not None:
+                    cur_range = fm.DUR_RAW_MAX - fm.DUR_RAW_MIN
+                    rescaled = 1 + 9 * (raw_dur - fm.DUR_RAW_MIN) / cur_range
+                    new_dur = clamp(round(rescaled), 1, 10)
+                    new_raw_dur = round(max(1.0, rescaled), 2)
+                    old_dur = specs.get("durability")
+                    old_raw_dur = specs.get("rawDurability")
+                    row["old_dur"] = old_dur
+                    row["new_dur"] = new_dur
+                    if args.apply and old_dur != new_dur:
+                        specs["durability"] = new_dur
+                        file_changed = True
+                    if args.apply and old_raw_dur != new_raw_dur:
+                        specs["rawDurability"] = new_raw_dur
                         file_changed = True
 
             # valueScore
@@ -137,16 +184,19 @@ def main():
 
     # 출력
     mode_label = "적용 모드" if args.apply else "Dry-run"
-    scope = args.only or "weight+value"
+    scope = args.only or "weight+value+durability"
     print(f"\n=== recalculate [{scope}] ({len(rows)}개 신발) [{mode_label}] ===\n")
 
     has_weight = do_weight and any("new_ws" in r for r in rows)
     has_value = do_value and any("new_vs" in r for r in rows)
+    has_dur = do_durability and any("new_dur" in r for r in rows)
 
     # 헤더
     header = f"{'shoeId':<42}"
     if has_weight:
         header += f" {'weight':>7} {'ws_old':>6} {'ws_new':>6}"
+    if has_dur:
+        header += f" {'dur_old':>7} {'dur_new':>7}"
     if has_value:
         header += f" {'price':>8} {'vs_old':>6} {'vs_new':>6}"
     print(header)
@@ -156,6 +206,7 @@ def main():
     for r in rows:
         line = f"{r['shoeId']:<42}"
         ws_changed = r.get("old_ws") != r.get("new_ws") and "new_ws" in r
+        dur_changed = r.get("old_dur") != r.get("new_dur") and "new_dur" in r
         vs_changed = r.get("old_vs") != r.get("new_vs") and "new_vs" in r
 
         if has_weight:
@@ -163,15 +214,20 @@ def main():
                 line += f" {str(r['weight']):>7}g {str(r['old_ws']):>6} {r['new_ws']:>6}"
             else:
                 line += f" {'':>7}  {'':>6} {'':>6}"
+        if has_dur:
+            if "new_dur" in r:
+                line += f" {str(r['old_dur']):>7} {r['new_dur']:>7}"
+            else:
+                line += f" {'':>7} {'':>7}"
         if has_value:
             if "new_vs" in r:
                 line += f" {str(r['price']):>8} {str(r['old_vs']):>6} {r['new_vs']:>6}"
             else:
                 line += f" {'':>8} {'':>6} {'':>6}"
 
-        marker = " ←" if ws_changed or vs_changed else ""
+        marker = " ←" if ws_changed or dur_changed or vs_changed else ""
         print(line + marker)
-        if ws_changed or vs_changed:
+        if ws_changed or dur_changed or vs_changed:
             changed += 1
 
     print(f"\n변경: {changed}개")

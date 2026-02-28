@@ -37,8 +37,8 @@
         "rawCushioning": 4.83,
         "rawResponsiveness": 7.51,
         "rawStability": 3.83,
-        "rawDurability": 6.88,
-        "rawValueScore": 7.42,
+        "rawDurability": 6.55,
+        "rawValueScore": 7.3,
         "rawLightness": 5.3
       },
       "pros": [
@@ -173,8 +173,8 @@
         "rawCushioning": 4.73,
         "rawResponsiveness": 7.13,
         "rawStability": 5.04,
-        "rawDurability": 7.34,
-        "rawValueScore": 6.94,
+        "rawDurability": 7.3,
+        "rawValueScore": 6.92,
         "rawLightness": 4.69
       },
       "pros": [
@@ -241,8 +241,8 @@
         "rawCushioning": 5.46,
         "rawResponsiveness": 4.81,
         "rawStability": 4.17,
-        "rawDurability": 7.37,
-        "rawValueScore": 6.09,
+        "rawDurability": 7.35,
+        "rawValueScore": 6.08,
         "rawLightness": 3.76
       },
       "pros": [
@@ -301,7 +301,7 @@
         "cushioning": 5,
         "responsiveness": 5,
         "stability": 5,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 39,
           "forefoot": 29
@@ -311,8 +311,8 @@
         "rawCushioning": 4.57,
         "rawResponsiveness": 4.8,
         "rawStability": 4.7,
-        "rawDurability": 5.73,
-        "rawValueScore": 4.75,
+        "rawDurability": 4.68,
+        "rawValueScore": 4.41,
         "rawLightness": 4.36
       },
       "pros": [
@@ -370,19 +370,19 @@
         "cushioning": 7,
         "responsiveness": 7,
         "stability": 5,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 38,
           "forefoot": 30
         },
         "weightScore": 5,
         "valueScore": 6,
-        "rawValueScore": 6.13,
+        "rawValueScore": 5.77,
         "rawLightness": 5.09,
         "rawCushioning": 6.78,
         "rawResponsiveness": 6.99,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "DN3 대비 약 14g 경량화로 반복 훈련 후반 다리 부담 완화",
@@ -437,18 +437,18 @@
         "cushioning": 8,
         "responsiveness": 9,
         "stability": 5,
-        "durability": 5,
+        "durability": 3,
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 4,
         "rawCushioning": 7.52,
         "rawResponsiveness": 9.01,
         "rawStability": 4.58,
-        "rawDurability": 4.78,
-        "rawValueScore": 4.69,
+        "rawDurability": 3.12,
+        "rawValueScore": 4.29,
         "rawLightness": 6.76
       },
       "pros": [
@@ -506,19 +506,19 @@
         "cushioning": 7,
         "responsiveness": 7,
         "stability": 5,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
         },
         "weightScore": 8,
         "valueScore": 4,
-        "rawValueScore": 4.26,
+        "rawValueScore": 3.99,
         "rawLightness": 8.34,
         "rawCushioning": 6.78,
         "rawResponsiveness": 6.99,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "170g 경량 기반의 후반 턴오버 유지 용이",
@@ -571,7 +571,7 @@
         "cushioning": 8,
         "responsiveness": 10,
         "stability": 5,
-        "durability": 2,
+        "durability": 1,
         "stackHeight": {
           "heel": 39,
           "forefoot": 31
@@ -581,8 +581,8 @@
         "rawCushioning": 7.61,
         "rawResponsiveness": 10.51,
         "rawStability": 4.67,
-        "rawDurability": 2.41,
-        "rawValueScore": 3.08,
+        "rawDurability": 1.0,
+        "rawValueScore": 2.82,
         "rawLightness": 8.34
       },
       "pros": [

@@ -37,8 +37,8 @@
         "rawCushioning": 7.35,
         "rawResponsiveness": 2.71,
         "rawStability": 6.91,
-        "rawDurability": 7.82,
-        "rawValueScore": 7.13,
+        "rawDurability": 8.09,
+        "rawValueScore": 7.23,
         "rawLightness": 4.08
       },
       "pros": [
@@ -107,8 +107,8 @@
         "rawCushioning": 8.29,
         "rawResponsiveness": 4.2,
         "rawStability": 6.05,
-        "rawDurability": 7.81,
-        "rawValueScore": 6.47,
+        "rawDurability": 8.07,
+        "rawValueScore": 6.55,
         "rawLightness": 3.19
       },
       "pros": [
@@ -175,8 +175,8 @@
         "rawCushioning": 6.1,
         "rawResponsiveness": 3.62,
         "rawStability": 8.18,
-        "rawDurability": 9.62,
-        "rawValueScore": 8.09,
+        "rawDurability": 11.03,
+        "rawValueScore": 8.58,
         "rawLightness": 4.53
       },
       "pros": [
@@ -242,8 +242,8 @@
         "rawCushioning": 7.86,
         "rawResponsiveness": 5.63,
         "rawStability": 5.48,
-        "rawDurability": 6.37,
-        "rawValueScore": 5.54,
+        "rawDurability": 5.72,
+        "rawValueScore": 5.36,
         "rawLightness": 4.53
       },
       "pros": [
@@ -301,7 +301,7 @@
         "cushioning": 9,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 5,
+        "durability": 4,
         "stackHeight": {
           "heel": 38,
           "forefoot": 31
@@ -310,10 +310,10 @@
         "valueScore": 4,
         "rawCushioning": 9.12,
         "rawResponsiveness": 8.11,
-        "rawValueScore": 4.03,
+        "rawValueScore": 3.76,
         "rawLightness": 7.2,
         "rawStability": 4.61,
-        "rawDurability": 5.33
+        "rawDurability": 4.02
       },
       "pros": [
         "198g 경량으로 레이스 후반 턴오버 유지",
@@ -378,8 +378,8 @@
         "rawCushioning": 6.93,
         "rawResponsiveness": 8.93,
         "rawStability": 4.49,
-        "rawDurability": 6.47,
-        "rawValueScore": 4.7,
+        "rawDurability": 5.88,
+        "rawValueScore": 4.56,
         "rawLightness": 6.72
       },
       "pros": [

@@ -29,15 +29,15 @@
         "cushioning": 6,
         "responsiveness": 8,
         "stability": 5,
-        "durability": 5,
+        "durability": 4,
         "rawCushioning": 6.15,
         "rawResponsiveness": 8.4,
         "rawStability": 4.61,
-        "rawDurability": 5.33,
+        "rawDurability": 4.02,
         "weightScore": 7,
         "rawLightness": 6.8,
-        "valueScore": 4,
-        "rawValueScore": 3.63
+        "valueScore": 3,
+        "rawValueScore": 3.35
       },
       "technologies": [
         "Anima PBX",

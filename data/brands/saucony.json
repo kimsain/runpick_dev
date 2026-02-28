@@ -36,10 +36,10 @@
         "valueScore": 9,
         "rawCushioning": 6.53,
         "rawResponsiveness": 5.87,
-        "rawValueScore": 8.56,
+        "rawValueScore": 8.63,
         "rawLightness": 4.73,
         "rawStability": 3.03,
-        "rawDurability": 7.64
+        "rawDurability": 7.79
       },
       "pros": [
         "259g 무게와 8mm 드롭 조합의 자연스러운 보폭 전환",
@@ -96,18 +96,18 @@
         "cushioning": 3,
         "responsiveness": 2,
         "stability": 5,
-        "durability": 4,
+        "durability": 2,
         "stackHeight": {
           "heel": 28,
           "forefoot": 23.5
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 4,
         "rawCushioning": 3.25,
         "rawResponsiveness": 1.85,
         "rawStability": 5.0,
-        "rawDurability": 4.27,
-        "rawValueScore": 4.74,
+        "rawDurability": 2.29,
+        "rawValueScore": 3.88,
         "rawLightness": 6.84
       },
       "pros": [
@@ -172,8 +172,8 @@
         "rawCushioning": 8.78,
         "rawResponsiveness": 6.99,
         "rawStability": 7.66,
-        "rawDurability": 7.9,
-        "rawValueScore": 9.43,
+        "rawDurability": 8.22,
+        "rawValueScore": 9.54,
         "rawLightness": 4.57
       },
       "pros": [
@@ -229,7 +229,7 @@
         "cushioning": 6,
         "responsiveness": 5,
         "stability": 7,
-        "durability": 8,
+        "durability": 9,
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
@@ -239,8 +239,8 @@
         "rawCushioning": 5.84,
         "rawResponsiveness": 4.62,
         "rawStability": 6.5,
-        "rawDurability": 8.26,
-        "rawValueScore": 9.51,
+        "rawDurability": 8.81,
+        "rawValueScore": 9.75,
         "rawLightness": 4.2
       },
       "pros": [
@@ -308,8 +308,8 @@
         "rawCushioning": 9.21,
         "rawResponsiveness": 7.58,
         "rawStability": 8.6,
-        "rawDurability": 6.96,
-        "rawValueScore": 9.78,
+        "rawDurability": 6.68,
+        "rawValueScore": 9.69,
         "rawLightness": 3.76
       },
       "pros": [
@@ -366,7 +366,7 @@
         "cushioning": 5,
         "responsiveness": 7,
         "stability": 10,
-        "durability": 8,
+        "durability": 9,
         "stackHeight": {
           "heel": 33,
           "forefoot": 25
@@ -376,8 +376,8 @@
         "rawCushioning": 4.77,
         "rawResponsiveness": 7.44,
         "rawStability": 9.61,
-        "rawDurability": 8.39,
-        "rawValueScore": 9.03,
+        "rawDurability": 9.02,
+        "rawValueScore": 9.25,
         "rawLightness": 4.32
       },
       "pros": [
@@ -443,7 +443,7 @@
         "rawCushioning": 6.01,
         "rawResponsiveness": 8.03,
         "rawStability": 6.47,
-        "rawDurability": 7.42,
+        "rawDurability": 7.43,
         "rawValueScore": 7.34,
         "rawLightness": 3.64
       },
@@ -502,7 +502,7 @@
         "cushioning": 8,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
@@ -511,10 +511,10 @@
         "valueScore": 8,
         "rawCushioning": 8.02,
         "rawResponsiveness": 6.18,
-        "rawValueScore": 7.51,
+        "rawValueScore": 7.09,
         "rawLightness": 5.5,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "240g 경량 대비 풍부한 쿠션으로 템포 전환 부담 완화",
@@ -570,7 +570,7 @@
         "cushioning": 5,
         "responsiveness": 9,
         "stability": 7,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 36,
           "forefoot": 28
@@ -580,8 +580,8 @@
         "rawCushioning": 5.25,
         "rawResponsiveness": 8.88,
         "rawStability": 7.46,
-        "rawDurability": 6.17,
-        "rawValueScore": 7.71,
+        "rawDurability": 5.39,
+        "rawValueScore": 7.45,
         "rawLightness": 5.58
       },
       "pros": [
@@ -647,8 +647,8 @@
         "rawCushioning": 8.09,
         "rawResponsiveness": 10.43,
         "rawStability": 3.95,
-        "rawDurability": 7.23,
-        "rawValueScore": 4.55,
+        "rawDurability": 7.12,
+        "rawValueScore": 4.53,
         "rawLightness": 7.16
       },
       "pros": [
@@ -715,8 +715,8 @@
         "rawCushioning": 5.26,
         "rawResponsiveness": 7.52,
         "rawStability": 4.02,
-        "rawDurability": 7.64,
-        "rawValueScore": 4.78,
+        "rawDurability": 7.79,
+        "rawValueScore": 4.82,
         "rawLightness": 6.64
       },
       "pros": [
@@ -773,19 +773,19 @@
         "cushioning": 6,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 39.5,
           "forefoot": 31.5
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 4,
         "rawCushioning": 5.91,
         "rawResponsiveness": 8.21,
-        "rawValueScore": 4.15,
+        "rawValueScore": 3.89,
         "rawLightness": 6.88,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "206g 경량 설계로 레이스 후반 턴오버 유지 용이",

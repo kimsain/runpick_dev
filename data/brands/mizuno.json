@@ -37,8 +37,8 @@
         "rawCushioning": 6.56,
         "rawResponsiveness": 2.59,
         "rawStability": 7.05,
-        "rawDurability": 6.95,
-        "rawValueScore": 8.0,
+        "rawDurability": 6.67,
+        "rawValueScore": 7.88,
         "rawLightness": 4.77
       },
       "pros": [
@@ -106,8 +106,8 @@
         "rawCushioning": 9.14,
         "rawResponsiveness": 1,
         "rawStability": 9.09,
-        "rawDurability": 6.28,
-        "rawValueScore": 7.86,
+        "rawDurability": 5.57,
+        "rawValueScore": 7.6,
         "rawLightness": 3.72
       },
       "pros": [
@@ -164,7 +164,7 @@
         "cushioning": 10,
         "responsiveness": 4,
         "stability": 3,
-        "durability": 9,
+        "durability": 10,
         "stackHeight": {
           "heel": 45,
           "forefoot": 37
@@ -174,8 +174,8 @@
         "rawCushioning": 9.98,
         "rawResponsiveness": 4.12,
         "rawStability": 2.79,
-        "rawDurability": 9.1,
-        "rawValueScore": 7.12,
+        "rawDurability": 10.18,
+        "rawValueScore": 7.48,
         "rawLightness": 4.41
       },
       "pros": [
@@ -244,8 +244,8 @@
         "rawCushioning": 8.62,
         "rawResponsiveness": 6.85,
         "rawStability": 2.51,
-        "rawDurability": 7.51,
-        "rawValueScore": 8.96,
+        "rawDurability": 7.58,
+        "rawValueScore": 8.99,
         "rawLightness": 5.5
       },
       "pros": [
@@ -304,18 +304,18 @@
         "cushioning": 9,
         "responsiveness": 6,
         "stability": 6,
-        "durability": 5,
+        "durability": 4,
         "stackHeight": {
           "heel": 37.5,
           "forefoot": 34.5
         },
         "weightScore": 5,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 8.74,
         "rawResponsiveness": 6.06,
         "rawStability": 5.57,
-        "rawDurability": 5.29,
-        "rawValueScore": 7.44,
+        "rawDurability": 3.96,
+        "rawValueScore": 6.97,
         "rawLightness": 5.34
       },
       "pros": [
@@ -374,7 +374,7 @@
         "cushioning": 6,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 34,
           "forefoot": 30.5
@@ -383,10 +383,10 @@
         "valueScore": 4,
         "rawCushioning": 6.47,
         "rawResponsiveness": 8.44,
-        "rawValueScore": 4.14,
+        "rawValueScore": 3.89,
         "rawLightness": 9.59,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "139g 초경량으로 피치 전개에 유리한 가속감",
@@ -440,7 +440,7 @@
         "cushioning": 7,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 38,
           "forefoot": 34.5
@@ -449,10 +449,10 @@
         "valueScore": 5,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.2,
-        "rawValueScore": 4.86,
+        "rawValueScore": 4.58,
         "rawLightness": 8.58,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "164g 경량으로 레이스 후반까지 가벼운 발 회전",
@@ -506,7 +506,7 @@
         "cushioning": 7,
         "responsiveness": 8,
         "stability": 6,
-        "durability": 6,
+        "durability": 5,
         "stackHeight": {
           "heel": 39,
           "forefoot": 33.5
@@ -515,10 +515,10 @@
         "valueScore": 6,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.13,
-        "rawValueScore": 5.61,
+        "rawValueScore": 5.3,
         "rawLightness": 7.12,
         "rawStability": 4.73,
-        "rawDurability": 5.63
+        "rawDurability": 4.51
       },
       "pros": [
         "200g 경량과 힐 39mm/전족부 33.5mm 스택의 장거리 대응 쿠션",
@@ -572,7 +572,7 @@
         "cushioning": 10,
         "responsiveness": 6,
         "stability": 4,
-        "durability": 5,
+        "durability": 4,
         "stackHeight": {
           "heel": 40,
           "forefoot": 36
@@ -582,8 +582,8 @@
         "rawCushioning": 9.89,
         "rawResponsiveness": 6.46,
         "rawStability": 4.24,
-        "rawDurability": 5.42,
-        "rawValueScore": 5.45,
+        "rawDurability": 4.17,
+        "rawValueScore": 5.11,
         "rawLightness": 6.39
       },
       "pros": [

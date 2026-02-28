@@ -37,8 +37,8 @@
         "rawCushioning": 5.03,
         "rawResponsiveness": 2.77,
         "rawStability": 7.34,
-        "rawDurability": 7.94,
-        "rawValueScore": 7.97,
+        "rawDurability": 8.28,
+        "rawValueScore": 8.11,
         "rawLightness": 3.64
       },
       "pros": [
@@ -107,8 +107,8 @@
         "rawCushioning": 4.34,
         "rawResponsiveness": 3.63,
         "rawStability": 7.25,
-        "rawDurability": 6.47,
-        "rawValueScore": 6.45,
+        "rawDurability": 5.88,
+        "rawValueScore": 6.23,
         "rawLightness": 5.34
       },
       "pros": [
@@ -165,7 +165,7 @@
         "cushioning": 6,
         "responsiveness": 1,
         "stability": 8,
-        "durability": 7,
+        "durability": 8,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 31.2
@@ -175,8 +175,8 @@
         "rawCushioning": 6.07,
         "rawResponsiveness": 1.42,
         "rawStability": 7.52,
-        "rawDurability": 7.47,
-        "rawValueScore": 7.2,
+        "rawDurability": 7.52,
+        "rawValueScore": 7.22,
         "rawLightness": 2.95
       },
       "pros": [
@@ -233,7 +233,7 @@
         "cushioning": 5,
         "responsiveness": 3,
         "stability": 6,
-        "durability": 9,
+        "durability": 10,
         "stackHeight": {
           "heel": 38.5,
           "forefoot": 28.2
@@ -243,8 +243,8 @@
         "rawCushioning": 5.48,
         "rawResponsiveness": 3.22,
         "rawStability": 6.17,
-        "rawDurability": 8.73,
-        "rawValueScore": 6.32,
+        "rawDurability": 9.57,
+        "rawValueScore": 6.6,
         "rawLightness": 3.51
       },
       "pros": [
@@ -434,19 +434,19 @@
         "cushioning": 4,
         "responsiveness": 4,
         "stability": 8,
-        "durability": 8,
+        "durability": 9,
         "stackHeight": {
           "heel": 40.9,
           "forefoot": 27.3
         },
         "weightScore": 3,
-        "valueScore": 7,
+        "valueScore": 8,
         "rawCushioning": 3.65,
         "rawResponsiveness": 3.82,
-        "rawValueScore": 6.97,
+        "rawValueScore": 7.14,
         "rawLightness": 3.03,
         "rawStability": 7.51,
-        "rawDurability": 8.12
+        "rawDurability": 8.58
       },
       "pros": [
         "안정화 가이던스 구조 기반의 탄탄한 착지 지지력",
@@ -512,8 +512,8 @@
         "rawCushioning": 8.6,
         "rawResponsiveness": 5.67,
         "rawStability": 6.53,
-        "rawDurability": 7.03,
-        "rawValueScore": 7.31,
+        "rawDurability": 6.8,
+        "rawValueScore": 7.23,
         "rawLightness": 3.84
       },
       "pros": [
@@ -571,18 +571,18 @@
         "cushioning": 6,
         "responsiveness": 9,
         "stability": 6,
-        "durability": 5,
+        "durability": 3,
         "stackHeight": {
           "heel": 37.6,
           "forefoot": 26.4
         },
         "weightScore": 7,
-        "valueScore": 5,
+        "valueScore": 4,
         "rawCushioning": 6.3,
         "rawResponsiveness": 9.23,
         "rawStability": 5.84,
-        "rawDurability": 4.51,
-        "rawValueScore": 4.48,
+        "rawDurability": 2.68,
+        "rawValueScore": 4.05,
         "rawLightness": 7.28
       },
       "pros": [

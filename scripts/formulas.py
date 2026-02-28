@@ -43,6 +43,12 @@ DUR_OUTSOLE_WEIGHT   = 0.70
 DUR_TOEBOX_WEIGHT    = 0.20
 DUR_HEEL_PAD_WEIGHT  = 0.10
 
+# 내구성 보정 앵커 (ratchet rule + --calibrate 갱신)
+# intermediate rawDurability를 1-10 스케일로 rescale
+# 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
+DUR_RAW_MIN = 3.4787500000  # bottom-5 경계 (--calibrate 자동 갱신)
+DUR_RAW_MAX = 8.9912500000  # top-5 경계 (--calibrate 자동 갱신)
+
 # 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
 # ratchet rule: 새 신발이 범위 벗어날 때만 변경
 # SCORE_VERSION = "2026-02-23-stability-v3"
@@ -214,19 +220,24 @@ def stability_from_runrepeat(
     return clamp(round(base), 1, 10)
 
 
-def durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
-    """RunRepeat 두께+마모 → 내구성 정수 점수 (1-10).
-
-    toebox_dur, heel_pad_dur (1-5 rating) 있으면 70/20/10 블렌딩.
-    없으면 기존 아웃솔 단독 공식 유지 (하위 호환).
-    """
+def _dur_intermediate(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
+    """Log-ratio + 블렌딩 → intermediate 내구성 (rescale 전)."""
     ratio = thickness_mm / abrasion_mm
     outsole_raw = math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1
     if toebox_dur is not None and heel_pad_dur is not None:
-        tb_norm = 1 + 9 * (toebox_dur - 1) / 4    # 1-5 → 1-10
+        tb_norm = 1 + 9 * (toebox_dur - 1) / 4
         hp_norm = 1 + 9 * (heel_pad_dur - 1) / 4
-        outsole_raw = DUR_OUTSOLE_WEIGHT * outsole_raw + DUR_TOEBOX_WEIGHT * tb_norm + DUR_HEEL_PAD_WEIGHT * hp_norm
-    return clamp(round(outsole_raw), 1, 10)
+        outsole_raw = (DUR_OUTSOLE_WEIGHT * outsole_raw
+                       + DUR_TOEBOX_WEIGHT * tb_norm
+                       + DUR_HEEL_PAD_WEIGHT * hp_norm)
+    return outsole_raw
+
+
+def durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
+    """RunRepeat 두께+마모 → 내구성 정수 점수 (1-10), DUR_RAW_MIN/MAX 보정 적용."""
+    intermediate = _dur_intermediate(thickness_mm, abrasion_mm, toebox_dur, heel_pad_dur)
+    rescaled = 1 + 9 * (intermediate - DUR_RAW_MIN) / (DUR_RAW_MAX - DUR_RAW_MIN)
+    return clamp(round(rescaled), 1, 10)
 
 
 def durability_from_abrasion_only(abrasion_mm):
@@ -333,13 +344,9 @@ def raw_stability_from_runrepeat(
 
 def raw_durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
     """durability_from_runrepeat과 동일 로직, round 없이 float 반환."""
-    ratio = thickness_mm / abrasion_mm
-    outsole_raw = math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1
-    if toebox_dur is not None and heel_pad_dur is not None:
-        tb_norm = 1 + 9 * (toebox_dur - 1) / 4
-        hp_norm = 1 + 9 * (heel_pad_dur - 1) / 4
-        outsole_raw = DUR_OUTSOLE_WEIGHT * outsole_raw + DUR_TOEBOX_WEIGHT * tb_norm + DUR_HEEL_PAD_WEIGHT * hp_norm
-    return round(max(1.0, outsole_raw), 2)
+    intermediate = _dur_intermediate(thickness_mm, abrasion_mm, toebox_dur, heel_pad_dur)
+    rescaled = 1 + 9 * (intermediate - DUR_RAW_MIN) / (DUR_RAW_MAX - DUR_RAW_MIN)
+    return round(max(1.0, rescaled), 2)
 
 
 def raw_durability_from_abrasion_only(abrasion_mm):
@@ -387,3 +394,47 @@ def compute_value_ratio_max(shoes_data, top_n=5):
         # 동률 (두 ratio가 동일) → 기존 MAX 유지
         return VALUE_RATIO_MAX
     return (max_lower + max_upper) / 2
+
+
+def compute_dur_anchors(shoes_data, top_n=5):
+    """전체 신발의 rawDurability로 DUR_RAW_MIN/MAX 반환.
+
+    score = round(1 + 9*(x - MIN)/(MAX - MIN)) 공식 기준:
+      - bottom top_n: score 1 (rescaled < 1.5)
+      - top top_n: score 10 (rescaled >= 9.5)
+    rank-(top_n)과 rank-(top_n+1) 경계의 중간값 기반으로 MIN/MAX 계산.
+
+    NOTE: 저장된 rawDurability가 이미 보정 스케일이면
+    현재 DUR_RAW_MIN/MAX로 un-rescale해서 intermediate를 복원한 후 계산.
+    """
+    raws = []
+    for shoe in shoes_data:
+        rd = shoe.get("specs", {}).get("rawDurability")
+        if rd is not None:
+            raws.append(rd)
+    raws.sort()
+
+    if len(raws) <= 2 * top_n:
+        return DUR_RAW_MIN, DUR_RAW_MAX
+
+    # un-rescale: calibrated → intermediate (identity면 그대로)
+    cur_range = DUR_RAW_MAX - DUR_RAW_MIN
+    if abs(cur_range - 9.0) > 0.01:  # 이미 보정된 상태
+        intermediates = sorted([
+            DUR_RAW_MIN + (r - 1) * cur_range / 9 for r in raws
+        ])
+    else:
+        intermediates = raws  # 초기 상태 (identity)
+
+    # 하위 경계: rank-5와 rank-6 중간값
+    tb_mid = (intermediates[top_n - 1] + intermediates[top_n]) / 2
+    # 상위 경계: rank-5(from top)와 rank-6(from top) 중간값
+    tt_mid = (intermediates[-(top_n + 1)] + intermediates[-top_n]) / 2
+
+    # score=1.5 경계 = tb_mid, score=9.5 경계 = tt_mid
+    # → RANGE = 9/8 * (tt_mid - tb_mid)
+    dur_range = 9.0 / 8.0 * (tt_mid - tb_mid)
+    new_min = tb_mid - 0.5 * dur_range / 9.0
+    new_max = new_min + dur_range
+
+    return round(new_min, 10), round(new_max, 10)
