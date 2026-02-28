@@ -16,30 +16,12 @@ data/brands/*.json 업데이트는 사람이 검토 후 수동으로 진행.
 import argparse
 import json
 import os
-import re
-import sys
 import time
 from pathlib import Path
 
-RESEARCH_BASE = Path(__file__).parent.parent / "research"
+from research_utils import resolve_research_files, describe_date_range
+
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
-
-
-def resolve_research_dir(date_arg=None):
-    """--date 지정 시 해당 날짜, 미지정 시 YYYY-MM-DD 패턴의 최신 디렉터리."""
-    if date_arg:
-        d = RESEARCH_BASE / date_arg
-        if not d.is_dir():
-            sys.exit(f"ERROR: {d} 디렉터리 없음")
-        return d
-    candidates = sorted(
-        [d for d in RESEARCH_BASE.iterdir() if d.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}$", d.name)],
-        key=lambda d: d.name,
-        reverse=True,
-    )
-    if not candidates:
-        sys.exit("ERROR: research/ 에 YYYY-MM-DD 디렉터리 없음")
-    return candidates[0]
 
 CLAUDE_MODEL = "claude-haiku-4-5-20251001"
 
@@ -143,52 +125,48 @@ def main():
     parser.add_argument("--shoe-id", metavar="ID", help="특정 신발만 처리")
     args = parser.parse_args()
 
-    research_dir = resolve_research_dir(args.date)
+    research_files = resolve_research_files(args.date)
     production = load_production()
 
     case_b_shoes = []
 
-    for brand_dir in sorted(research_dir.iterdir()):
-        if not brand_dir.is_dir():
+    for fpath in research_files:
+        with open(fpath) as f:
+            research = json.load(f)
+
+        shoe_id = research["shoeId"]
+        if args.shoe_id and shoe_id != args.shoe_id:
             continue
-        for fpath in sorted(brand_dir.glob("*.json")):
-            if fpath.name == "batch-summary.json":
-                continue
-            with open(fpath) as f:
-                research = json.load(f)
+        if shoe_id not in production:
+            continue
 
-            shoe_id = research["shoeId"]
-            if args.shoe_id and shoe_id != args.shoe_id:
-                continue
-            if shoe_id not in production:
-                continue
+        attempt_log = research.get("attemptLog", [])
+        rr_status = get_attempt_status(attempt_log, "RunRepeat")
+        rt_status = get_attempt_status(attempt_log, "RTINGS")
 
-            attempt_log = research.get("attemptLog", [])
-            rr_status = get_attempt_status(attempt_log, "RunRepeat")
-            rt_status = get_attempt_status(attempt_log, "RTINGS")
+        # Case B: RunRepeat 없음 + RTINGS 없음
+        if rr_status == "found" or rt_status == "found":
+            continue
 
-            # Case B: RunRepeat 없음 + RTINGS 없음
-            if rr_status == "found" or rt_status == "found":
-                continue
+        sources = research.get("sources", [])
+        findings = collect_all_findings(sources)
+        if not findings:
+            continue  # 텍스트 데이터도 없으면 스킵
 
-            sources = research.get("sources", [])
-            findings = collect_all_findings(sources)
-            if not findings:
-                continue  # 텍스트 데이터도 없으면 스킵
-
-            case_b_shoes.append({
-                "shoeId": shoe_id,
-                "brand": production[shoe_id]["brand"],
-                "subcatId": production[shoe_id]["subcategoryId"],
-                "fpath": fpath,
-                "research": research,
-                "findings": findings,
-                "currentScores": research.get("currentScores", {}),
-            })
+        case_b_shoes.append({
+            "shoeId": shoe_id,
+            "brand": production[shoe_id]["brand"],
+            "subcatId": production[shoe_id]["subcategoryId"],
+            "fpath": fpath,
+            "research": research,
+            "findings": findings,
+            "currentScores": research.get("currentScores", {}),
+        })
 
     # 미리보기
     mode_label = "적용 모드 (Claude API 호출)" if args.apply else "Dry-run (--apply 없으면 API 호출 없음)"
-    print(f"\n=== Case B 정성 텍스트 정규화 ({len(case_b_shoes)}개 신발) [{mode_label}] ===\n")
+    date_info = describe_date_range(args.date)
+    print(f"\n=== Case B 정성 텍스트 정규화 ({len(case_b_shoes)}개 신발) [{mode_label}] [{date_info}] ===\n")
 
     if not case_b_shoes:
         print("Case B 신발 없음 (RunRepeat 없음 + RTINGS 없음 + 정성 소스 보유 + 생산 포함).")

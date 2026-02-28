@@ -16,7 +16,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 28 / 169_000  # 최고 가성비: novablast-5 (sum=28, price=169,000)
+VALUE_RATIO_MAX = 26.18 / 169_000  # 최고 가성비: novablast-5 (sum=26.18, price=169,000) — 2026-02-25 업데이트
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -37,6 +37,12 @@ RESP_RANGE_RAW = 45    # raw 정밀용 (85-40)
 
 DUR_LOG_BASE = 8.2     # 내구성 로그 밑
 
+# 내구성 블렌딩 가중치 (2026-02-25 Codex+Gemini 합의)
+# 아웃솔 70% + toeboxDurability 20% + heelPaddingDurability 10%
+DUR_OUTSOLE_WEIGHT   = 0.70
+DUR_TOEBOX_WEIGHT    = 0.20
+DUR_HEEL_PAD_WEIGHT  = 0.10
+
 # 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
 # ratchet rule: 새 신발이 범위 벗어날 때만 변경
 # SCORE_VERSION = "2026-02-23-stability-v3"
@@ -49,6 +55,15 @@ STAB_SA_FO_LO = 125     # forefoot SA 임계값
 STAB_STACK_LO = 40      # heel stack(mm) 임계값
 STAB_STACK_FO_LO = 30   # forefoot stack(mm) 임계값
 STAB_ER_PIVOT = 60      # ER% 오프셋 피벗 — 이상이면 sway 패널티 상쇄
+
+# 안정성 midsoleWidth 앵커 (2026-02-25 Codex+Gemini 합의, ratchet rule)
+# 86개 신발 실측 기준 — 새 신발이 범위 벗어날 때만 확장
+STAB_MW_HEEL_LO  = 71    # heel midsoleWidth 최솟값 mm (streakfly-2 기준)
+STAB_MW_HEEL_HI  = 105   # heel midsoleWidth 최댓값 mm (guide-18 기준)
+STAB_MW_FORE_LO  = 101   # forefoot midsoleWidth 최솟값 mm (metaspeed-ray 기준)
+STAB_MW_FORE_HI  = 124   # forefoot midsoleWidth 최댓값 mm (hurricane-25 기준)
+STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계수
+# SCORE_VERSION = "2026-02-25-durability-stability-v2"
 
 
 # RTINGS 반응성 카테고리 페널티 (2026-02-23 재보정 — RESPONSIVENESS_DEBATE_2026-02-23.md)
@@ -157,51 +172,61 @@ def stability_from_runrepeat(
     heel_er=None, fore_er=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
+    midsole_width_heel=None, midsole_width_fore=None,
 ):
     """RunRepeat 안정성 → 정수 점수 (1-10).
 
-    각 구조 변수를 개별 min-max 정규화(1~10) 후 40/60 가중합.
-    Sway 패널티(미드솔 부드러움 × 스택 높이) 차감.
+    midsoleWidth 있으면: TR 35%/HCS 50%/Width 15%, sway 패널티 STAB_SWAY_SCALE 배.
+    없으면: 기존 TR 40%/HCS 60%, sway 패널티 전체 적용 (하위 호환).
     subcategoryId="stability" 신발에 +1 보너스.
-    SA/stack 데이터 없으면 정규화된 base만 반환 (graceful fallback).
     """
-    # 개별 min-max 정규화 → 1~10
     tr_norm  = 1 + 9 * (torsional_rigidity      - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
     hcs_norm = 1 + 9 * (heel_counter_stiffness  - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
 
-    # 40/60 가중합 (HCS 중심)
-    base = 0.4 * tr_norm + 0.6 * hcs_norm  # 범위 1~10
+    if midsole_width_heel is not None:
+        mw_h = 1 + 9 * (midsole_width_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
+        mw_f = (1 + 9 * (midsole_width_fore - STAB_MW_FORE_LO) / (STAB_MW_FORE_HI - STAB_MW_FORE_LO)
+                if midsole_width_fore is not None else mw_h)
+        mw_norm = clamp(0.4 * mw_h + 0.6 * mw_f, 1, 10)
+        base = 0.35 * tr_norm + 0.50 * hcs_norm + 0.15 * mw_norm
+        sway_scale = STAB_SWAY_SCALE
+    else:
+        base = 0.4 * tr_norm + 0.6 * hcs_norm
+        sway_scale = 1.0
 
-    # Sway 패널티 (SA + stack 데이터 있을 때만)
     if heel_sa is not None and stack_heel is not None:
         soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
         soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
         soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
-
         stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
         stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
         stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
-
         sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
-
         if heel_er is not None:
             avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
             er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
             sway = max(0, sway - er_offset)
+        base -= sway * sway_scale
 
-        base -= sway
-
-    # stability 카테고리 보너스 (medial post / guide rail 등 미포착 설계 특성)
     if subcategory == "stability":
         base += 1
 
     return clamp(round(base), 1, 10)
 
 
-def durability_from_runrepeat(thickness_mm, abrasion_mm):
-    """RunRepeat 두께+마모 → 내구성 정수 점수 (1-10)."""
+def durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
+    """RunRepeat 두께+마모 → 내구성 정수 점수 (1-10).
+
+    toebox_dur, heel_pad_dur (1-5 rating) 있으면 70/20/10 블렌딩.
+    없으면 기존 아웃솔 단독 공식 유지 (하위 호환).
+    """
     ratio = thickness_mm / abrasion_mm
-    return clamp(round(math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1), 1, 10)
+    outsole_raw = math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1
+    if toebox_dur is not None and heel_pad_dur is not None:
+        tb_norm = 1 + 9 * (toebox_dur - 1) / 4    # 1-5 → 1-10
+        hp_norm = 1 + 9 * (heel_pad_dur - 1) / 4
+        outsole_raw = DUR_OUTSOLE_WEIGHT * outsole_raw + DUR_TOEBOX_WEIGHT * tb_norm + DUR_HEEL_PAD_WEIGHT * hp_norm
+    return clamp(round(outsole_raw), 1, 10)
 
 
 def durability_from_abrasion_only(abrasion_mm):
@@ -270,11 +295,23 @@ def raw_stability_from_runrepeat(
     heel_er=None, fore_er=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
+    midsole_width_heel=None, midsole_width_fore=None,
 ):
     """stability_from_runrepeat과 동일 로직, round 없이 float 반환 (소수점 2자리)."""
     tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
     hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
-    base = 0.4 * tr_norm + 0.6 * hcs_norm
+
+    if midsole_width_heel is not None:
+        mw_h = 1 + 9 * (midsole_width_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
+        mw_f = (1 + 9 * (midsole_width_fore - STAB_MW_FORE_LO) / (STAB_MW_FORE_HI - STAB_MW_FORE_LO)
+                if midsole_width_fore is not None else mw_h)
+        mw_norm = clamp(0.4 * mw_h + 0.6 * mw_f, 1, 10)
+        base = 0.35 * tr_norm + 0.50 * hcs_norm + 0.15 * mw_norm
+        sway_scale = STAB_SWAY_SCALE
+    else:
+        base = 0.4 * tr_norm + 0.6 * hcs_norm
+        sway_scale = 1.0
+
     if heel_sa is not None and stack_heel is not None:
         soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
         soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
@@ -287,16 +324,22 @@ def raw_stability_from_runrepeat(
             avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
             er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
             sway = max(0, sway - er_offset)
-        base -= sway
+        base -= sway * sway_scale
+
     if subcategory == "stability":
         base += 1
     return round(max(1.0, base), 2)
 
 
-def raw_durability_from_runrepeat(thickness_mm, abrasion_mm):
+def raw_durability_from_runrepeat(thickness_mm, abrasion_mm, toebox_dur=None, heel_pad_dur=None):
     """durability_from_runrepeat과 동일 로직, round 없이 float 반환."""
     ratio = thickness_mm / abrasion_mm
-    return round(max(1.0, math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1), 2)
+    outsole_raw = math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1
+    if toebox_dur is not None and heel_pad_dur is not None:
+        tb_norm = 1 + 9 * (toebox_dur - 1) / 4
+        hp_norm = 1 + 9 * (heel_pad_dur - 1) / 4
+        outsole_raw = DUR_OUTSOLE_WEIGHT * outsole_raw + DUR_TOEBOX_WEIGHT * tb_norm + DUR_HEEL_PAD_WEIGHT * hp_norm
+    return round(max(1.0, outsole_raw), 2)
 
 
 def raw_durability_from_abrasion_only(abrasion_mm):

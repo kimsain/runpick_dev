@@ -11,8 +11,6 @@ RunRepeat 없음 + RTINGS 있음인 생산 신발의 스코어를 RTINGS 계측�
 
 import argparse
 import json
-import re
-import sys
 from pathlib import Path
 
 from formulas import (
@@ -25,28 +23,11 @@ from formulas import (
     DURABILITY_POS_RE,
     DURABILITY_NEG_RE,
 )
+from research_utils import resolve_research_files, describe_date_range
 
-RESEARCH_BASE = Path(__file__).parent.parent / "research"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
 RR_FOUND_STATUSES = {"found", "found_via_shared_midsole"}
-
-
-def resolve_research_dir(date_arg=None):
-    """--date 지정 시 해당 날짜, 미지정 시 YYYY-MM-DD 패턴의 최신 디렉터리."""
-    if date_arg:
-        d = RESEARCH_BASE / date_arg
-        if not d.is_dir():
-            sys.exit(f"ERROR: {d} 디렉터리 없음")
-        return d
-    candidates = sorted(
-        [d for d in RESEARCH_BASE.iterdir() if d.is_dir() and re.match(r"\d{4}-\d{2}-\d{2}$", d.name)],
-        key=lambda d: d.name,
-        reverse=True,
-    )
-    if not candidates:
-        sys.exit("ERROR: research/ 에 YYYY-MM-DD 디렉터리 없음")
-    return candidates[0]
 
 
 def get_attempt_status(attempt_log, source_name):
@@ -155,79 +136,75 @@ def main():
     parser.add_argument("--shoe-id", metavar="ID", help="특정 신발만 처리")
     args = parser.parse_args()
 
-    research_dir = resolve_research_dir(args.date)
+    research_files = resolve_research_files(args.date)
     production = load_production()
 
     # {brand_id: [{shoeId, cushioning, responsiveness, stability}]}
     updates_by_brand: dict = {}
     preview_rows = []
 
-    for brand_dir in sorted(research_dir.iterdir()):
-        if not brand_dir.is_dir():
+    for fpath in research_files:
+        with open(fpath) as f:
+            research = json.load(f)
+
+        shoe_id = research["shoeId"]
+        if args.shoe_id and shoe_id != args.shoe_id:
             continue
-        for fpath in sorted(brand_dir.glob("*.json")):
-            if fpath.name == "batch-summary.json":
-                continue
-            with open(fpath) as f:
-                research = json.load(f)
+        if shoe_id not in production:
+            continue  # 생산에 없는 신발 스킵
 
-            shoe_id = research["shoeId"]
-            if args.shoe_id and shoe_id != args.shoe_id:
-                continue
-            if shoe_id not in production:
-                continue  # 생산에 없는 신발 스킵
+        attempt_log = research.get("attemptLog", [])
+        rr_status = get_attempt_status(attempt_log, "RunRepeat")
+        rt_status = get_attempt_status(attempt_log, "RTINGS")
 
-            attempt_log = research.get("attemptLog", [])
-            rr_status = get_attempt_status(attempt_log, "RunRepeat")
-            rt_status = get_attempt_status(attempt_log, "RTINGS")
+        # Case A: RunRepeat 없음 + RTINGS 있음
+        if rr_status in RR_FOUND_STATUSES or rt_status != "found":
+            continue
 
-            # Case A: RunRepeat 없음 + RTINGS 있음
-            if rr_status in RR_FOUND_STATUSES or rt_status != "found":
-                continue
+        rtings_src = get_source(research.get("sources", []), "RTINGS")
+        if rtings_src is None:
+            continue
 
-            rtings_src = get_source(research.get("sources", []), "RTINGS")
-            if rtings_src is None:
-                continue
+        prod = production[shoe_id]
+        subcatId = prod["subcategoryId"]
+        old_specs = prod["specs"]
+        findings_text = get_qualitative_findings(research.get("sources", []))
 
-            prod = production[shoe_id]
-            subcatId = prod["subcategoryId"]
-            old_specs = prod["specs"]
-            findings_text = get_qualitative_findings(research.get("sources", []))
+        new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp = compute_scores(
+            rtings_src, subcatId, findings_text, old_specs
+        )
 
-            new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp = compute_scores(
-                rtings_src, subcatId, findings_text, old_specs
-            )
+        brand_id = prod["brand"]
+        if brand_id not in updates_by_brand:
+            updates_by_brand[brand_id] = []
+        updates_by_brand[brand_id].append({
+            "shoeId": shoe_id,
+            "cushioning": new_cush,
+            "responsiveness": new_resp,
+            "stability": new_stab,
+            "durability": new_dur,
+            "rawCushioning": new_raw_cush,
+            "rawResponsiveness": new_raw_resp,
+        })
 
-            brand_id = prod["brand"]
-            if brand_id not in updates_by_brand:
-                updates_by_brand[brand_id] = []
-            updates_by_brand[brand_id].append({
-                "shoeId": shoe_id,
-                "cushioning": new_cush,
-                "responsiveness": new_resp,
-                "stability": new_stab,
-                "durability": new_dur,
-                "rawCushioning": new_raw_cush,
-                "rawResponsiveness": new_raw_resp,
-            })
-
-            preview_rows.append({
-                "shoeId": shoe_id,
-                "brand": brand_id,
-                "subcatId": subcatId,
-                "old_cush": old_specs.get("cushioning"),
-                "new_cush": new_cush,
-                "old_resp": old_specs.get("responsiveness"),
-                "new_resp": new_resp,
-                "old_stab": old_specs.get("stability"),
-                "new_stab": new_stab,
-                "old_dur": old_specs.get("durability"),
-                "new_dur": new_dur,
-            })
+        preview_rows.append({
+            "shoeId": shoe_id,
+            "brand": brand_id,
+            "subcatId": subcatId,
+            "old_cush": old_specs.get("cushioning"),
+            "new_cush": new_cush,
+            "old_resp": old_specs.get("responsiveness"),
+            "new_resp": new_resp,
+            "old_stab": old_specs.get("stability"),
+            "new_stab": new_stab,
+            "old_dur": old_specs.get("durability"),
+            "new_dur": new_dur,
+        })
 
     # 미리보기 출력
     mode_label = "적용 모드" if args.apply else "Dry-run (--apply 없으면 변경 없음)"
-    print(f"\n=== Case A RTINGS 정규화 ({len(preview_rows)}개 신발) [{mode_label}] ===\n")
+    date_info = describe_date_range(args.date)
+    print(f"\n=== Case A RTINGS 정규화 ({len(preview_rows)}개 신발) [{mode_label}] [{date_info}] ===\n")
     if not preview_rows:
         print("Case A 신발 없음 (RunRepeat 없음 + RTINGS 있음 + 생산 포함).")
         return

@@ -21,6 +21,16 @@ BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
 
 def main():
+    """
+    weightScore(경량성)와 valueScore(가성비)를 계산해 모든 브랜드 JSON에 반영한다.
+
+    처리 순서:
+    1. 기본(dry-run): 현재 데이터 기준으로 변경 예정 점수를 출력만 함
+    2. --apply: 계산된 weightScore + valueScore를 JSON에 실제 저장
+    3. --only weight | value: 특정 점수만 계산
+
+    normalize_from_*.py 실행 이후에 사용한다.
+    """
     parser = argparse.ArgumentParser(description="weightScore + valueScore 통합 재계산")
     parser.add_argument("--apply", action="store_true", help="실제로 JSON 업데이트")
     parser.add_argument("--only", choices=["weight", "value"], help="특정 점수만 계산")

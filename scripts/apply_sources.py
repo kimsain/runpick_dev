@@ -7,8 +7,19 @@ Replaces any existing sources data.
 import json
 import glob
 
-# All collected sources from research agents
-# Key: brand -> slug -> {site: url_or_null}
+# SOURCES 딕셔너리 스키마
+# {
+#   brand_id: {
+#     shoe_id: {
+#       "runrepeat": "https://runrepeat.com/...",   # RunRepeat 리뷰 URL (선택)
+#       "rtings":    "https://www.rtings.com/...",  # RTINGS 리뷰 URL (선택)
+#       "dor":       "https://doctorsofrunning.com/...", # Doctors of Running (선택)
+#       "rtr":       "https://roadtrailrun.com/...",     # Road Trail Run (선택)
+#       "bitr":      "https://believeintherun.com/...",  # Believe in the Run (선택)
+#     }
+#   }
+# }
+# URL이 없는 소스는 null로 표시. apply 시 null 값은 sources 필드에서 제외됨.
 SOURCES = {
     "adidas": {
         "supernova-rise-3": {
