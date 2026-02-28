@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
-import { CONF_TEXT, CONF_DOT } from '@/lib/confidence'
+import { CONF_TEXT, CONF_DOT, CONF_BADGE_LABELS, CONF_TOOLTIPS } from '@/lib/confidence'
+import { SPEC_LABELS } from '@/lib/constants'
 
 interface Props {
   shoe: Shoe
@@ -9,12 +10,12 @@ interface Props {
 }
 
 const SPEC_BARS: { key: keyof typeof specColors; label: string }[] = [
-  { key: 'cushioning', label: '쿠션성' },
-  { key: 'responsiveness', label: '반응성' },
-  { key: 'stability', label: '안정성' },
-  { key: 'durability', label: '내구성' },
-  { key: 'weightScore', label: '경량성' },
-  { key: 'valueScore', label: '가성비' },
+  { key: 'cushioning',     label: SPEC_LABELS.cushioning },
+  { key: 'responsiveness', label: SPEC_LABELS.responsiveness },
+  { key: 'stability',      label: SPEC_LABELS.stability },
+  { key: 'durability',     label: SPEC_LABELS.durability },
+  { key: 'weightScore',    label: SPEC_LABELS.weightScore },
+  { key: 'valueScore',     label: SPEC_LABELS.valueScore },
 ]
 
 const specColors = {
@@ -42,12 +43,8 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           const conf = shoe.confidence
           const colorClass = CONF_TEXT[conf] ?? 'text-secondary'
           const dotClass = CONF_DOT[conf] ?? 'bg-secondary'
-          const label = conf === 'very-high' ? 'VERIFIED' :
-            conf === 'high' ? 'RELIABLE' :
-            conf === 'medium' ? 'LIMITED' : 'PENDING'
-          const tooltipText = conf === 'very-high' ? 'RunRepeat + RTINGS 실측 데이터 완비' :
-            conf === 'high' ? '실측 데이터 + 전문가 리뷰 확인' :
-            conf === 'medium' ? '전문가 리뷰 기반 (실측 없음)' : '데이터 수집 중'
+          const label = CONF_BADGE_LABELS[conf] ?? conf.toUpperCase()
+          const tooltipText = CONF_TOOLTIPS[conf] ?? ''
           return (
             <div className="absolute top-2 right-2 z-10 group/badge">
               <div

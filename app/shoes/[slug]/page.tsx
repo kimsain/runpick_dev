@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { getShoeBySlug, getAllSlugs, getSimilarShoes } from '@/lib/data'
+import { getShoeBySlug, getAllSlugs, getSimilarShoes, getBrands } from '@/lib/data'
+import { CATEGORY_LABELS, SOURCE_LABELS } from '@/lib/constants'
 import RelatedShoes from '@/components/RelatedShoes'
 
 const SpecRadar = dynamic(() => import('@/components/SpecRadar'), { ssr: false })
@@ -29,37 +30,13 @@ export async function generateMetadata({
   }
 }
 
-const CATEGORY_LABELS: Record<string, string> = {
-  daily: '데일리',
-  'super-trainer': '슈퍼트레이너',
-  racing: '레이싱',
-}
-
-const BRAND_KOREA_URLS: Record<string, string> = {
-  adidas: 'https://www.adidas.co.kr/',
-  asics: 'https://www.asics.com/kr/ko-kr/',
-  brooks: 'https://www.brooksrunning.com/ko_kr/',
-  hoka: 'https://www.hoka.com/ko/ko/',
-  mizuno: 'https://mizuno.com/kr/ko/',
-  'new-balance': 'https://www.newbalance.co.kr/',
-  nike: 'https://www.nike.com/kr/',
-  puma: 'https://kr.puma.com/',
-  saucony: 'https://www.saucony.com/',
-}
-
-const SOURCE_LABELS: Record<string, string> = {
-  runrepeat: 'RunRepeat',
-  rtings: 'RTINGS',
-  dor: 'Doctors of Running',
-  rtr: 'Road Trail Run',
-  bitr: 'Believe in the Run',
-}
 
 export default function ShoeDetailPage({ params }: { params: { slug: string } }) {
   const shoe = getShoeBySlug(params.slug)
   if (!shoe) notFound()
 
   const related = getSimilarShoes(shoe, 3)
+  const brand = getBrands().find((b) => b.id === shoe.brandId)
   const reviewLinks = shoe.sources
     ? (Object.entries(shoe.sources) as [string, string | undefined][])
         .filter((entry): entry is [string, string] => typeof entry[1] === 'string' && entry[1] !== '')
@@ -207,9 +184,9 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* 링크 버튼 그룹 */}
           <div className="flex flex-wrap gap-2 items-start">
-            {BRAND_KOREA_URLS[shoe.brandId] && (
+            {brand?.officialUrl && (
               <a
-                href={BRAND_KOREA_URLS[shoe.brandId]}
+                href={brand.officialUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"

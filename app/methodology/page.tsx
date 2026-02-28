@@ -216,7 +216,7 @@ export default function MethodologyPage() {
       {/* 점수 산정 방식 */}
       <section className="mb-16">
         <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
-          6개 스펙 점수
+          {SPEC_ITEMS.length}개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
           각 스펙은 0–10점으로 정규화됩니다. 쿠션성·반응성은 실측 데이터(SA, ER%)를

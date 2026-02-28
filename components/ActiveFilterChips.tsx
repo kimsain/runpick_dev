@@ -2,12 +2,7 @@
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback } from 'react'
-
-const CATEGORY_LABELS: Record<string, string> = {
-  daily: '데일리',
-  'super-trainer': '슈퍼트레이너',
-  racing: '레이싱',
-}
+import { CATEGORY_LABELS, SPEC_LABELS } from '@/lib/constants'
 
 const SORT_LABELS: Record<string, string> = {
   'name-asc': '이름↑', 'name-desc': '이름↓',
@@ -21,12 +16,12 @@ const SORT_LABELS: Record<string, string> = {
 }
 
 const SPEC_CHIP_LABELS: Record<string, string> = {
-  minCush: '쿠션성',
-  minResp: '반응성',
-  minStab: '안정성',
-  minDur: '내구성',
-  minWS: '경량성',
-  minVS: '가성비',
+  minCush: SPEC_LABELS.cushioning,
+  minResp: SPEC_LABELS.responsiveness,
+  minStab: SPEC_LABELS.stability,
+  minDur:  SPEC_LABELS.durability,
+  minWS:   SPEC_LABELS.weightScore,
+  minVS:   SPEC_LABELS.valueScore,
 }
 
 export default function ActiveFilterChips() {
