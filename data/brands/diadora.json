@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "id": "diadora",
+    "name": "Diadora",
+    "nameKo": "디아도라",
+    "logo": "/brands/diadora-logo.svg",
+    "color": "#1A1A1A",
+    "description": "이탈리아 장인 정신 기반의 카본 레이스 슈즈 브랜드"
+  },
+  "shoes": [
+    {
+      "id": "gara-carbon-2",
+      "brandId": "diadora",
+      "name": "Gara Carbon 2",
+      "nameKo": "가라 카본 2",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 329000,
+      "priceFormatted": "₩329,000",
+      "description": "Gara Carbon 2는 이탈리아 브랜드 Diadora의 카본 플레이트 레이스화예요. Anima PBX(PEBA) 미드솔이 부드럽고 탄력 있는 쿠션을 제공하고, 두카티와 공동 설계한 카본 플레이트가 착지 에너지를 추진력으로 전환해줘요. 경쟁 레이스화 대비 넓고 높이 있는 토박스가 특징이라 발볼이 넓은 러너도 편하게 착용할 수 있어요. 공격적인 추진감보다 자연스럽게 롤링하는 라이드에 가까워 하프마라톤·풀마라톤 페이스에서 특히 잘 어울려요. 다만 아웃솔 측면 내구성에 대한 지적이 일부 있어 마일리지 관리가 필요해요.",
+      "shortDescription": "넓은 발볼 배려한 카본 레이스화",
+      "imageUrl": "/shoes/placeholder-shoe.svg",
+      "specs": {
+        "weight": 208,
+        "drop": 7,
+        "cushioning": 6,
+        "responsiveness": 8,
+        "stability": 5,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 31
+        },
+        "weightScore": 7,
+        "valueScore": 4,
+        "rawCushioning": 6.15,
+        "rawResponsiveness": 8.4,
+        "rawStability": 4.61,
+        "rawDurability": 5.33,
+        "rawLightness": 6.8,
+        "rawValueScore": 3.87
+      },
+      "pros": [
+        "208g 경량 설계와 Anima PBX 미드솔 조합의 부드러운 장거리 쿠션",
+        "두카티 협업 카본 플레이트 기반의 자연스러운 롤링 추진 전환",
+        "경쟁 레이스화 대비 여유로운 토박스로 발볼 넓은 러너도 편안한 착용감"
+      ],
+      "cons": [
+        "아웃솔 측면 내구성 일부 우려 — 마일리지 누적 시 관리 필요",
+        "공격적 추진감 부족 — 단거리 고속 스프린트보다 마라톤 페이스에 최적화"
+      ],
+      "bestFor": [
+        "발볼이 넓어 일반 레이스화 착용에 불편함을 느끼던 러너",
+        "하프~풀마라톤 페이스로 장거리를 안정적으로 소화하려는 러너",
+        "카본 플레이트 슈즈를 처음 입문하는 러너"
+      ],
+      "technologies": [
+        "Anima PBX",
+        "고반발 슈퍼폼",
+        "카본 플레이트",
+        "Matryx 어퍼"
+      ],
+      "releaseYear": 2025,
+      "colorways": [
+        "블루"
+      ],
+      "slug": "gara-carbon-2",
+      "officialUrl": "https://diadorakorea.com/product/detail.html?product_no=4883&cate_no=26",
+      "confidence": "high",
+      "sources": {
+        "rtings": "https://www.rtings.com/running-shoes/reviews/diadora/gara-carbon-2",
+        "dor": "https://www.doctorsofrunning.com/2025/01/diadora-gara-carbon-2-review.html",
+        "rtr": "https://www.roadtrailrun.com/2025/03/diadora-gara-carbon-2-multi-tester.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/diadora-gara-carbon-2-review/"
+      }
+    }
+  ]
+}

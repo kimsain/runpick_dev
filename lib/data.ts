@@ -10,6 +10,7 @@ import nikeData from '../data/brands/nike.json'
 import pumaData from '../data/brands/puma.json'
 import sauconyData from '../data/brands/saucony.json'
 import onData from '../data/brands/on.json'
+import diadoraData from '../data/brands/diadora.json'
 
 const allBrandData: BrandData[] = [
   adidasData as BrandData,
@@ -22,6 +23,7 @@ const allBrandData: BrandData[] = [
   pumaData as BrandData,
   sauconyData as BrandData,
   onData as BrandData,
+  diadoraData as BrandData,
 ]
 
 let _shoes: Shoe[] | null = null
