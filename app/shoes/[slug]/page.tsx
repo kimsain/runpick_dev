@@ -78,12 +78,34 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             </p>
           </div>
 
+          {/* Low confidence warning banner */}
+          {shoe.confidence === 'low' && (
+            <div className="mb-8 bg-conf-low/5 border border-conf-low/20 p-4 flex gap-3" role="alert">
+              <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-low" />
+              <div>
+                <p className="text-sm font-body text-conf-low font-medium mb-1">
+                  데이터 수집 중
+                </p>
+                <p className="text-sm font-body text-secondary leading-relaxed">
+                  이 러닝화는 실측 데이터가 아직 확보되지 않아 유사 모델 기반의 추정 점수입니다.
+                  실제 성능과 다를 수 있으니 참고용으로만 활용하세요.
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Spec radar + stat cards */}
           <section className="mb-8">
             <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
               스펙
+              {shoe.confidence === 'medium' && (
+                <span className="ml-2 inline-flex items-center gap-1 text-xs font-body text-conf-medium align-middle">
+                  <span className="w-1.5 h-1.5 rounded-full bg-conf-medium inline-block" />
+                  추정 포함
+                </span>
+              )}
             </h2>
-            <SpecRadar specs={shoe.specs} />
+            <SpecRadar specs={shoe.specs} confidence={shoe.confidence} />
 
             {/* Numeric specs */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-6">

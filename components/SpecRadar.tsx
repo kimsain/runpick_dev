@@ -14,6 +14,7 @@ import { SPEC_LABELS } from '@/lib/constants'
 
 interface Props {
   specs: Specs
+  confidence?: string
 }
 
 function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number }) {
@@ -37,8 +38,9 @@ function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number })
   )
 }
 
-export default function SpecRadar({ specs }: Props) {
+export default function SpecRadar({ specs, confidence }: Props) {
   const [animate, setAnimate] = useState(true)
+  const isLow = confidence === 'low'
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -65,10 +67,11 @@ export default function SpecRadar({ specs }: Props) {
         <Radar
           name="specs"
           dataKey="value"
-          stroke="#c8ff00"
-          fill="#c8ff00"
-          fillOpacity={0.15}
+          stroke={isLow ? '#f87171' : '#c8ff00'}
+          fill={isLow ? '#f87171' : '#c8ff00'}
+          fillOpacity={isLow ? 0.05 : 0.15}
           strokeWidth={2}
+          strokeDasharray={isLow ? '4 4' : undefined}
           isAnimationActive={animate}
           animationDuration={800}
           animationEasing="ease-out"
