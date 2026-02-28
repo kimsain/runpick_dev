@@ -3,27 +3,27 @@ import type { Shoe, Brand, BrandData } from './types'
 import adidasData from '../data/brands/adidas.json'
 import asicsData from '../data/brands/asics.json'
 import brooksData from '../data/brands/brooks.json'
+import diadoraData from '../data/brands/diadora.json'
 import hokaData from '../data/brands/hoka.json'
 import mizunoData from '../data/brands/mizuno.json'
 import newBalanceData from '../data/brands/new-balance.json'
 import nikeData from '../data/brands/nike.json'
+import onData from '../data/brands/on.json'
 import pumaData from '../data/brands/puma.json'
 import sauconyData from '../data/brands/saucony.json'
-import onData from '../data/brands/on.json'
-import diadoraData from '../data/brands/diadora.json'
 
 const allBrandData: BrandData[] = [
   adidasData as BrandData,
   asicsData as BrandData,
   brooksData as BrandData,
+  diadoraData as BrandData,
   hokaData as BrandData,
   mizunoData as BrandData,
   newBalanceData as BrandData,
   nikeData as BrandData,
+  onData as BrandData,
   pumaData as BrandData,
   sauconyData as BrandData,
-  onData as BrandData,
-  diadoraData as BrandData,
 ]
 
 let _shoes: Shoe[] | null = null
@@ -37,7 +37,9 @@ export function getAllShoes(): Shoe[] {
 
 export function getBrands(): Brand[] {
   if (_brands) return _brands
-  _brands = allBrandData.map((bd) => bd.brand)
+  _brands = allBrandData
+    .map((bd) => bd.brand)
+    .sort((a, b) => a.name.localeCompare(b.name))
   return _brands
 }
 
