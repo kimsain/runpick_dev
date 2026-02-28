@@ -23,9 +23,9 @@
       "specs": {
         "weight": 259,
         "drop": 8,
-        "cushioning": 6,
+        "cushioning": 7,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 3,
         "durability": 8,
         "stackHeight": {
           "heel": 37,
@@ -33,9 +33,9 @@
         },
         "weightScore": 5,
         "valueScore": 10,
-        "rawCushioning": 5.91,
+        "rawCushioning": 6.53,
         "rawResponsiveness": 5.87,
-        "rawValueScore": 8.96,
+        "rawValueScore": 9.25,
         "rawLightness": 4.73,
         "rawStability": 3.03,
         "rawDurability": 7.64

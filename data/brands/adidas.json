@@ -154,22 +154,22 @@
       "specs": {
         "weight": 261,
         "drop": 10,
-        "cushioning": 6,
-        "responsiveness": 7,
+        "cushioning": 4,
+        "responsiveness": 6,
         "stability": 8,
-        "durability": 8,
+        "durability": 6,
         "stackHeight": {
           "heel": 36,
           "forefoot": 26
         },
         "weightScore": 5,
-        "valueScore": 10,
+        "valueScore": 8,
         "rawCushioning": 3.85,
-        "rawResponsiveness": 6.88,
-        "rawValueScore": 9.64,
+        "rawResponsiveness": 6.44,
+        "rawValueScore": 8.71,
         "rawLightness": 4.65,
-        "rawStability": 7.89,
-        "rawDurability": 8.26
+        "rawStability": 8.31,
+        "rawDurability": 6.1
       },
       "pros": [
         "261g 무게의 안정화치고 경쾌한 발걸음",

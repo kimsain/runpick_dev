@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-normalize_from_runrepeat.py  — Case B 정규화
+normalize_from_runrepeat.py  — RunRepeat 계측치 기반 정규화
 
-RunRepeat + RTINGS 둘 다 있는 신발의 스코어를 RunRepeat 계측치 기반으로 정규화.
+RunRepeat 계측치(SA, ER%, TR, HCS, 내구성)가 있는 신발의 스코어를 정규화.
+RTINGS 유무와 무관하게 RunRepeat found 신발 전체에 적용.
 
 사용법:
   python3 scripts/normalize_from_runrepeat.py --dry-run   # preview
@@ -36,6 +37,8 @@ from formulas import (
 
 RESEARCH_BASE = Path(__file__).parent.parent / "research"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
+
+RR_FOUND_STATUSES = {"found", "found_via_shared_midsole"}
 
 
 def resolve_research_dir(date_arg=None):
@@ -185,7 +188,7 @@ def fmt_change(old, new, width=12):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Case B RunRepeat+RTINGS 정규화")
+    parser = argparse.ArgumentParser(description="RunRepeat 계측치 기반 정규화")
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--dry-run", action="store_true", help="Preview only")
     group.add_argument("--apply", action="store_true", help="Apply to brand JSON files")
@@ -218,8 +221,8 @@ def main():
             rr_status = get_attempt_status(attempt_log, "RunRepeat")
             rt_status = get_attempt_status(attempt_log, "RTINGS")
 
-            # Case B: RunRepeat found AND RTINGS found
-            if rr_status != "found" or rt_status != "found":
+            # RunRepeat 계측치 기반: RTINGS 유무 무관
+            if rr_status not in RR_FOUND_STATUSES:
                 continue
 
             rr_src = get_source(research.get("sources", []), "RunRepeat")
@@ -263,7 +266,7 @@ def main():
             })
 
     mode_label = "적용 모드" if args.apply else "Dry-run"
-    print(f"\n=== Case B RunRepeat+RTINGS 정규화 ({len(preview_rows)}개 신발) [{mode_label}] ===\n")
+    print(f"\n=== RunRepeat 계측치 기반 정규화 ({len(preview_rows)}개 신발) [{mode_label}] ===\n")
     if not preview_rows:
         print("Case B 신발 없음.")
         return

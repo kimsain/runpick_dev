@@ -29,6 +29,8 @@ from formulas import (
 RESEARCH_BASE = Path(__file__).parent.parent / "research"
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
+RR_FOUND_STATUSES = {"found", "found_via_shared_midsole"}
+
 
 def resolve_research_dir(date_arg=None):
     """--date 지정 시 해당 날짜, 미지정 시 YYYY-MM-DD 패턴의 최신 디렉터리."""
@@ -180,7 +182,7 @@ def main():
             rt_status = get_attempt_status(attempt_log, "RTINGS")
 
             # Case A: RunRepeat 없음 + RTINGS 있음
-            if rr_status == "found" or rt_status != "found":
+            if rr_status in RR_FOUND_STATUSES or rt_status != "found":
                 continue
 
             rtings_src = get_source(research.get("sources", []), "RTINGS")
