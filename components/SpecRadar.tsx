@@ -41,6 +41,7 @@ function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number })
 export default function SpecRadar({ specs, confidence }: Props) {
   const [animate, setAnimate] = useState(true)
   const isLow = confidence === 'low'
+  const isMedium = confidence === 'medium'
 
   useEffect(() => {
     const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -69,7 +70,7 @@ export default function SpecRadar({ specs, confidence }: Props) {
           dataKey="value"
           stroke={isLow ? '#f87171' : '#c8ff00'}
           fill={isLow ? '#f87171' : '#c8ff00'}
-          fillOpacity={isLow ? 0.05 : 0.15}
+          fillOpacity={isLow ? 0.05 : isMedium ? 0.10 : 0.15}
           strokeWidth={2}
           strokeDasharray={isLow ? '4 4' : undefined}
           isAnimationActive={animate}

@@ -94,15 +94,28 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             </div>
           )}
 
+          {/* Medium confidence info banner */}
+          {shoe.confidence === 'medium' && (
+            <div className="mb-8 bg-conf-medium/5 border border-conf-medium/20 p-4 flex gap-3" role="status">
+              <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-medium" />
+              <div>
+                <p className="text-sm font-body text-conf-medium font-medium mb-1">
+                  리뷰 기반 추정
+                </p>
+                <p className="text-sm font-body text-secondary leading-relaxed">
+                  실측 데이터 없이 전문가 리뷰를 바탕으로 추정한 점수입니다.
+                  실측 데이터가 확보되면 점수가 변경될 수 있습니다.
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Spec radar + stat cards */}
           <section className="mb-8">
             <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
               스펙
               {shoe.confidence === 'medium' && (
-                <span className="ml-2 inline-flex items-center gap-1 text-xs font-body text-conf-medium align-middle">
-                  <span className="w-1.5 h-1.5 rounded-full bg-conf-medium inline-block" />
-                  추정 포함
-                </span>
+                <span className="ml-2 inline-block w-1.5 h-1.5 rounded-full bg-conf-medium align-middle" />
               )}
             </h2>
             <SpecRadar specs={shoe.specs} confidence={shoe.confidence} />
