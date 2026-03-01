@@ -16,7 +16,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 0.0001631237  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
+VALUE_RATIO_MAX = 0.0001617587  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -60,7 +60,7 @@ STAB_HCS_MAX = 5   # heelCounterStiffness 실측 최댓값
 # 중립점 = 데이터 median. 저스택=안정 보너스, 고스택=가속 페널티 (x³)
 STAB_STACK_HEEL_MID = 39   # heel 중립점 mm (median, penalty=0)
 STAB_STACK_FORE_MID = 32   # forefoot 중립점 mm (median, penalty=0)
-STAB_STACK_SCALE    = 15   # 정규화 스케일 (heel/fore 공통)
+STAB_STACK_SCALE    = 10   # 정규화 스케일 (heel/fore 공통, 15→10 리밸런싱)
 
 # 미드솔 소프트니스 앵커 (Asker C durometer, lower = softer)
 # 2026-03-01 Codex+Gemini 합의: SA→AC 교체, ER% 보상 완전 제거
@@ -80,8 +80,8 @@ STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계�
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 2.5382855437  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.0173607805  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 2.7225342457  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.1246704641  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
 
@@ -234,7 +234,7 @@ def _stab_intermediate(
         stk_f = u_f ** 3
         stk = max(-1.5, min(1.5, 0.7 * stk_h + 0.3 * stk_f))
 
-        sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
+        sway = 0.4 * soft + 1.2 * stk + 1.0 * (soft * stk)
         base -= sway * sway_scale
 
     if subcategory == "stability":
