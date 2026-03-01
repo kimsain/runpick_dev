@@ -28,16 +28,16 @@
         },
         "cushioning": 6,
         "responsiveness": 8,
-        "stability": 4,
+        "stability": 3,
         "durability": 4,
         "rawCushioning": 6.15,
         "rawResponsiveness": 8.4,
-        "rawStability": 3.66,
+        "rawStability": 3.12,
         "rawDurability": 4.02,
         "weightScore": 7,
         "rawLightness": 6.8,
         "valueScore": 3,
-        "rawValueScore": 3.22
+        "rawValueScore": 3.07
       },
       "technologies": [
         "Anima PBX",

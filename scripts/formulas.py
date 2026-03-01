@@ -16,7 +16,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 0.0001617587  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
+VALUE_RATIO_MAX = 0.0001635516  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -80,10 +80,46 @@ STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계�
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 2.7225342457  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.1246704641  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 3.1866891215  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.2367078479  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
+
+# Sway: tanh 기울기 (cubic → tanh 전환, 3-LLM 합의 2026-03-01)
+STAB_TANH_GAIN = 1.5
+
+# Subcategory 그룹별 Width imputation (실측 median, width 누락 시 사용)
+SUBCAT_WIDTH = {
+    'racing':    (77, 110),    # half+full (n=19)
+    'speed':     (87, 114),    # light-plate+carbon-plate+lightweight (n=13)
+    'daily':     (91, 115),    # all-rounder+entry+no-plate (n=18)
+    'cushion':   (99, 119),    # max-cushion (n=12)
+    'stability': (97, 119),    # stability (n=8)
+}
+SUBCAT_WIDTH_MAP = {
+    'half': 'racing', 'full': 'racing',
+    'light-plate': 'speed', 'carbon-plate': 'speed', 'lightweight': 'speed',
+    'all-rounder': 'daily', 'entry': 'daily', 'no-plate': 'daily',
+    'max-cushion': 'cushion',
+    'stability': 'stability',
+}
+
+# Subcategory AC prior (실측 median, AC 누락 시 사용 — 기존 STAB_AC_MEDIAN=34.0 대체)
+SUBCAT_AC_PRIOR = {
+    'half': 30.4, 'full': 34.3,
+    'light-plate': 37.5, 'carbon-plate': 31.8, 'lightweight': 36.2,
+    'all-rounder': 36.2, 'entry': 35.2, 'no-plate': 32.0,
+    'max-cushion': 32.5,
+    'stability': 38.3,
+}
+
+# Subcategory 안정성 보너스/패널티 (3-LLM 합의 2026-03-01)
+SUBCAT_STAB_DELTA = {
+    'stability': 1.0,       # 구조적 안정화 장치 인정
+    'half': -1.0,           # 레이싱 플랫 본질적 불안정
+    'full': -0.5,           # 플레이트 레이싱 (플레이트가 일부 강성 보완)
+    'max-cushion': -0.5,    # 고스택 쿠션 고유수용감각 저하
+}
 
 
 # RTINGS 반응성 카테고리 페널티 (2026-02-23 재보정 — RESPONSIVENESS_DEBATE_2026-02-23.md)
@@ -200,45 +236,61 @@ def _stab_intermediate(
     midsole_width_heel=None, midsole_width_fore=None,
     findings_text=None,
 ):
-    """구조+sway+키워드 → intermediate 안정성 (rescale 전).
+    """구조(TR/HCS/Width) + sway(tanh) + subcategory delta → intermediate 안정성.
 
-    sway 패널티: AC durometer 기반 (max(primary, secondary), AC 없으면 중앙값 34.0 대입).
-    스택: cubic 함수 (저스택=보너스, 고스택=가속 페널티).
-    ER% 보상 없음 (바이오메커닉스 비근거).
+    3-LLM 합의 (2026-03-01):
+    - Base: TR 30% + HCS 30% + Width 40% (width는 subcategory median imputation)
+    - Sway: tanh(1.5) 기반 stack penalty, 비대칭 bound [-0.5, 1.0]
+    - AC: subcategory prior (일괄 median 34.0 폐지)
+    - Subcategory delta: stability +1.0, half -1.0, full/max-cushion -0.5
+    - 측정 확인 보너스: stability + TR≥4 → +0.5
     """
-    tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
-    hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
+    tr_norm  = clamp(1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN), 1, 10)
+    hcs_norm = clamp(1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN), 1, 10)
 
+    # Width: 항상 계산 (누락 시 subcategory median imputation)
     if midsole_width_heel is not None:
-        mw_h = 1 + 9 * (midsole_width_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
-        mw_f = (1 + 9 * (midsole_width_fore - STAB_MW_FORE_LO) / (STAB_MW_FORE_HI - STAB_MW_FORE_LO)
-                if midsole_width_fore is not None else mw_h)
-        mw_norm = clamp(0.4 * mw_h + 0.6 * mw_f, 1, 10)
-        base = 0.35 * tr_norm + 0.50 * hcs_norm + 0.15 * mw_norm
-        sway_scale = STAB_SWAY_SCALE
+        mw_heel = midsole_width_heel
+        mw_fore = midsole_width_fore if midsole_width_fore is not None else mw_heel
     else:
-        base = 0.4 * tr_norm + 0.6 * hcs_norm
-        sway_scale = 1.0
+        grp = SUBCAT_WIDTH_MAP.get(subcategory, 'daily')
+        mw_heel, mw_fore = SUBCAT_WIDTH[grp]
 
+    mw_h = 1 + 9 * (mw_heel - STAB_MW_HEEL_LO) / (STAB_MW_HEEL_HI - STAB_MW_HEEL_LO)
+    mw_f = 1 + 9 * (mw_fore - STAB_MW_FORE_LO) / (STAB_MW_FORE_HI - STAB_MW_FORE_LO)
+    mw_norm = clamp(0.4 * mw_h + 0.6 * mw_f, 1, 10)
+
+    # Base: TR 30% + HCS 30% + Width 40%
+    base = 0.30 * tr_norm + 0.30 * hcs_norm + 0.40 * mw_norm
+
+    # Sway (stack + softness): tanh 기반, 비대칭 bound
     if stack_heel is not None:
-        # AC: max(primary, secondary) → soft
+        # AC: max(primary, secondary) — 더 단단한 폼이 구조적 지지 제공
+        # 누락 시 subcategory prior 사용
         ac_vals = [v for v in [heel_ac, secondary_foam_ac] if v is not None]
-        ac = max(ac_vals) if ac_vals else STAB_AC_MEDIAN
+        ac = max(ac_vals) if ac_vals else SUBCAT_AC_PRIOR.get(subcategory, 34.0)
         soft = min(1.5, max(0, (STAB_AC_HI - ac) / STAB_AC_SCALE))
 
-        # Stack: cubic (x³), 저스택=보너스, 고스택=가속 페널티
-        u_h = max(-1.0, min(1.0, (stack_heel - STAB_STACK_HEEL_MID) / STAB_STACK_SCALE))
-        stk_h = u_h ** 3
-        u_f = (max(-1.0, min(1.0, (stack_fore - STAB_STACK_FORE_MID) / STAB_STACK_SCALE))
+        # Stack: tanh(gain=1.5), midpoint = dataset median (39mm heel, 32mm fore)
+        u_h = (stack_heel - STAB_STACK_HEEL_MID) / STAB_STACK_SCALE
+        u_f = ((stack_fore - STAB_STACK_FORE_MID) / STAB_STACK_SCALE
                if stack_fore is not None else u_h)
-        stk_f = u_f ** 3
-        stk = max(-1.5, min(1.5, 0.7 * stk_h + 0.3 * stk_f))
+        stk_h = math.tanh(STAB_TANH_GAIN * u_h)
+        stk_f = math.tanh(STAB_TANH_GAIN * u_f)
+        stk_raw = 0.7 * stk_h + 0.3 * stk_f
 
-        sway = 0.4 * soft + 1.2 * stk + 1.0 * (soft * stk)
-        base -= sway * sway_scale
+        # 비대칭 bound: 저스택 보너스 ≤ 50% of 고스택 패널티
+        stk = max(-0.5, min(1.0, stk_raw))
 
-    if subcategory == "stability":
-        base += 1
+        sway = 0.4 * soft + 1.0 * stk + 0.8 * (soft * stk)
+        base -= sway
+
+    # Subcategory delta
+    base += SUBCAT_STAB_DELTA.get(subcategory, 0.0)
+
+    # 측정 확인 보너스: stability 카테고리 + TR≥4 (실측 torsional rigidity 뒷받침)
+    if subcategory == 'stability' and tr >= 4:
+        base += 0.5
 
     if findings_text:
         kw_delta = keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE)
@@ -257,10 +309,7 @@ def stability_from_runrepeat(
 ):
     """RunRepeat 안정성 → 정수 점수 (1-10), STAB_RAW_MIN/MAX 보정 적용.
 
-    midsoleWidth 있으면: TR 35%/HCS 50%/Width 15%, sway 패널티 STAB_SWAY_SCALE 배.
-    없으면: 기존 TR 40%/HCS 60%, sway 패널티 전체 적용 (하위 호환).
-    subcategoryId="stability" 신발에 +1 보너스.
-    sway 패널티: AC durometer 기반, max(primary, secondary) 선택 (ER% 보상 없음).
+    3-LLM 합의 (2026-03-01): TR 30%/HCS 30%/Width 40%, tanh sway, subcat imputation+delta.
     """
     intermediate = _stab_intermediate(
         torsional_rigidity, heel_counter_stiffness,
