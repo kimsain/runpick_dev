@@ -56,11 +56,17 @@ STAB_TR_MIN = 2    # torsionalRigidity 실측 최솟값 (ratchet rule)
 STAB_TR_MAX = 5    # torsionalRigidity 실측 최댓값
 STAB_HCS_MIN = 1   # heelCounterStiffness 실측 최솟값
 STAB_HCS_MAX = 5   # heelCounterStiffness 실측 최댓값
-STAB_SA_LO = 130        # heel SA 임계값 — 이상 시 소프트니스 패널티 시작
-STAB_SA_FO_LO = 125     # forefoot SA 임계값
-STAB_STACK_LO = 40      # heel stack(mm) 임계값
-STAB_STACK_FO_LO = 30   # forefoot stack(mm) 임계값
-STAB_ER_PIVOT = 60      # ER% 오프셋 피벗 — 이상이면 sway 패널티 상쇄
+# 스택 높이 cubic 패널티 앵커 (2026-03-01 유저+Codex+Gemini 합의)
+# 중립점 = 데이터 median. 저스택=안정 보너스, 고스택=가속 페널티 (x³)
+STAB_STACK_HEEL_MID = 39   # heel 중립점 mm (median, penalty=0)
+STAB_STACK_FORE_MID = 32   # forefoot 중립점 mm (median, penalty=0)
+STAB_STACK_SCALE    = 15   # 정규화 스케일 (heel/fore 공통)
+
+# 미드솔 소프트니스 앵커 (Asker C durometer, lower = softer)
+# 2026-03-01 Codex+Gemini 합의: SA→AC 교체, ER% 보상 완전 제거
+STAB_AC_HI    = 42    # AC ≥ 42: firm EVA, 소프트니스 패널티 없음
+STAB_AC_SCALE = 15    # 정규화 (soft = max(0, (HI - ac) / SCALE))
+STAB_AC_MEDIAN = 34.0 # AC 미가용 시 중앙값 대입 (63개 신발 median)
 
 # 안정성 midsoleWidth 앵커 (2026-02-25 Codex+Gemini 합의, ratchet rule)
 # 86개 신발 실측 기준 — 새 신발이 범위 벗어날 때만 확장
@@ -74,8 +80,8 @@ STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계�
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 2.4334375000  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.0315625000  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 2.5382855437  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.0173607805  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
 
@@ -187,14 +193,19 @@ def responsiveness_from_runrepeat(heel_er, forefoot_er):
 
 def _stab_intermediate(
     tr, hcs,
-    heel_sa=None, fore_sa=None,
-    heel_er=None, fore_er=None,
+    heel_ac=None,
+    secondary_foam_ac=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
     midsole_width_heel=None, midsole_width_fore=None,
     findings_text=None,
 ):
-    """구조+sway+키워드 → intermediate 안정성 (rescale 전)."""
+    """구조+sway+키워드 → intermediate 안정성 (rescale 전).
+
+    sway 패널티: AC durometer 기반 (max(primary, secondary), AC 없으면 중앙값 34.0 대입).
+    스택: cubic 함수 (저스택=보너스, 고스택=가속 페널티).
+    ER% 보상 없음 (바이오메커닉스 비근거).
+    """
     tr_norm  = 1 + 9 * (tr  - STAB_TR_MIN)  / (STAB_TR_MAX  - STAB_TR_MIN)
     hcs_norm = 1 + 9 * (hcs - STAB_HCS_MIN) / (STAB_HCS_MAX - STAB_HCS_MIN)
 
@@ -209,18 +220,21 @@ def _stab_intermediate(
         base = 0.4 * tr_norm + 0.6 * hcs_norm
         sway_scale = 1.0
 
-    if heel_sa is not None and stack_heel is not None:
-        soft_h = max(0, (heel_sa - STAB_SA_LO) / 20)
-        soft_f = max(0, (fore_sa - STAB_SA_FO_LO) / 20) if fore_sa is not None else soft_h
-        soft = min(1.5, 0.7 * soft_h + 0.3 * soft_f)
-        stk_h = max(0, (stack_heel - STAB_STACK_LO) / 15)
-        stk_f = max(0, (stack_fore - STAB_STACK_FO_LO) / 10) if stack_fore is not None else stk_h
-        stk = min(1.5, 0.7 * stk_h + 0.3 * stk_f)
+    if stack_heel is not None:
+        # AC: max(primary, secondary) → soft
+        ac_vals = [v for v in [heel_ac, secondary_foam_ac] if v is not None]
+        ac = max(ac_vals) if ac_vals else STAB_AC_MEDIAN
+        soft = min(1.5, max(0, (STAB_AC_HI - ac) / STAB_AC_SCALE))
+
+        # Stack: cubic (x³), 저스택=보너스, 고스택=가속 페널티
+        u_h = max(-1.0, min(1.0, (stack_heel - STAB_STACK_HEEL_MID) / STAB_STACK_SCALE))
+        stk_h = u_h ** 3
+        u_f = (max(-1.0, min(1.0, (stack_fore - STAB_STACK_FORE_MID) / STAB_STACK_SCALE))
+               if stack_fore is not None else u_h)
+        stk_f = u_f ** 3
+        stk = max(-1.5, min(1.5, 0.7 * stk_h + 0.3 * stk_f))
+
         sway = 0.9 * soft + 0.8 * stk + 1.2 * (soft * stk)
-        if heel_er is not None:
-            avg_er = heel_er * 0.4 + fore_er * 0.6 if fore_er is not None else heel_er
-            er_offset = max(0, (avg_er - STAB_ER_PIVOT) / 20)
-            sway = max(0, sway - er_offset)
         base -= sway * sway_scale
 
     if subcategory == "stability":
@@ -235,8 +249,7 @@ def _stab_intermediate(
 
 def stability_from_runrepeat(
     torsional_rigidity, heel_counter_stiffness,
-    heel_sa=None, fore_sa=None,
-    heel_er=None, fore_er=None,
+    heel_ac=None, secondary_foam_ac=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
     midsole_width_heel=None, midsole_width_fore=None,
@@ -247,10 +260,11 @@ def stability_from_runrepeat(
     midsoleWidth 있으면: TR 35%/HCS 50%/Width 15%, sway 패널티 STAB_SWAY_SCALE 배.
     없으면: 기존 TR 40%/HCS 60%, sway 패널티 전체 적용 (하위 호환).
     subcategoryId="stability" 신발에 +1 보너스.
+    sway 패널티: AC durometer 기반, max(primary, secondary) 선택 (ER% 보상 없음).
     """
     intermediate = _stab_intermediate(
         torsional_rigidity, heel_counter_stiffness,
-        heel_sa, fore_sa, heel_er, fore_er,
+        heel_ac, secondary_foam_ac,
         stack_heel, stack_fore, subcategory,
         midsole_width_heel, midsole_width_fore, findings_text,
     )
@@ -340,8 +354,7 @@ def raw_responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id=""):
 
 def raw_stability_from_runrepeat(
     tr, hcs,
-    heel_sa=None, fore_sa=None,
-    heel_er=None, fore_er=None,
+    heel_ac=None, secondary_foam_ac=None,
     stack_heel=None, stack_fore=None,
     subcategory=None,
     midsole_width_heel=None, midsole_width_fore=None,
@@ -349,7 +362,7 @@ def raw_stability_from_runrepeat(
 ):
     """stability_from_runrepeat과 동일 로직, round 없이 float 반환 (소수점 2자리)."""
     intermediate = _stab_intermediate(
-        tr, hcs, heel_sa, fore_sa, heel_er, fore_er,
+        tr, hcs, heel_ac, secondary_foam_ac,
         stack_heel, stack_fore, subcategory,
         midsole_width_heel, midsole_width_fore, findings_text,
     )

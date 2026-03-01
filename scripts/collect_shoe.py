@@ -115,6 +115,8 @@ def _rr_attr_scores(data: dict) -> dict:
             "midsoleSoftness_ha":     c.get("midsoleSoftness_ha"),
             "midsoleSoftnessCold_ha": c.get("midsoleSoftnessCold_ha"),
             "midsoleSoftness_ac":     c.get("midsoleSoftness_ac"),
+            "secondaryFoamSoftness_ac": c.get("secondaryFoamSoftness_ac"),  # 듀얼폼 2차 경도
+            "secondaryFoamSoftness_ha": c.get("secondaryFoamSoftness_ha"),  # 듀얼폼 2차 경도 (HA scale)
             "scale":   "SA",
             "scaleHA": "Shore A (≤v2.1)",
             "scaleAC": "Asker C (v2.2+)",

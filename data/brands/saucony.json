@@ -36,9 +36,9 @@
         "valueScore": 9,
         "rawCushioning": 6.53,
         "rawResponsiveness": 5.87,
-        "rawValueScore": 8.43,
+        "rawValueScore": 8.47,
         "rawLightness": 4.73,
-        "rawStability": 2.22,
+        "rawStability": 2.31,
         "rawDurability": 7.8
       },
       "pros": [
@@ -105,9 +105,9 @@
         "valueScore": 3,
         "rawCushioning": 3.25,
         "rawResponsiveness": 1.85,
-        "rawStability": 4.5,
+        "rawStability": 4.41,
         "rawDurability": 2.29,
-        "rawValueScore": 3.71,
+        "rawValueScore": 3.67,
         "rawLightness": 6.84
       },
       "pros": [
@@ -171,9 +171,9 @@
         "valueScore": 10,
         "rawCushioning": 8.78,
         "rawResponsiveness": 6.99,
-        "rawStability": 8.13,
+        "rawStability": 8.32,
         "rawDurability": 8.22,
-        "rawValueScore": 9.88,
+        "rawValueScore": 9.95,
         "rawLightness": 4.57
       },
       "pros": [
@@ -238,9 +238,9 @@
         "valueScore": 10,
         "rawCushioning": 5.84,
         "rawResponsiveness": 4.62,
-        "rawStability": 6.96,
+        "rawStability": 6.77,
         "rawDurability": 8.8,
-        "rawValueScore": 10.13,
+        "rawValueScore": 10.04,
         "rawLightness": 4.2
       },
       "pros": [
@@ -307,9 +307,9 @@
         "valueScore": 10,
         "rawCushioning": 9.21,
         "rawResponsiveness": 7.58,
-        "rawStability": 9.41,
+        "rawStability": 9.34,
         "rawDurability": 6.69,
-        "rawValueScore": 10.15,
+        "rawValueScore": 10.13,
         "rawLightness": 3.76
       },
       "pros": [
@@ -375,9 +375,9 @@
         "valueScore": 9,
         "rawCushioning": 4.77,
         "rawResponsiveness": 7.44,
-        "rawStability": 11.2,
+        "rawStability": 11.29,
         "rawDurability": 9.01,
-        "rawValueScore": 9.99,
+        "rawValueScore": 10.02,
         "rawLightness": 4.32
       },
       "pros": [
@@ -432,7 +432,7 @@
         "drop": 8,
         "cushioning": 6,
         "responsiveness": 8,
-        "stability": 7,
+        "stability": 6,
         "durability": 7,
         "stackHeight": {
           "heel": 39.5,
@@ -442,9 +442,9 @@
         "valueScore": 7,
         "rawCushioning": 6.01,
         "rawResponsiveness": 8.03,
-        "rawStability": 6.92,
+        "rawStability": 5.94,
         "rawDurability": 7.43,
-        "rawValueScore": 7.62,
+        "rawValueScore": 7.3,
         "rawLightness": 3.64
       },
       "pros": [
@@ -511,9 +511,9 @@
         "valueScore": 7,
         "rawCushioning": 8.02,
         "rawResponsiveness": 6.18,
-        "rawValueScore": 6.99,
+        "rawValueScore": 6.96,
         "rawLightness": 5.5,
-        "rawStability": 4.13,
+        "rawStability": 4.04,
         "rawDurability": 4.51
       },
       "pros": [
@@ -579,7 +579,7 @@
         "valueScore": 8,
         "rawCushioning": 5.25,
         "rawResponsiveness": 8.88,
-        "rawStability": 8.27,
+        "rawStability": 8.26,
         "rawDurability": 5.39,
         "rawValueScore": 7.85,
         "rawLightness": 5.58
@@ -646,9 +646,9 @@
         "valueScore": 4,
         "rawCushioning": 8.09,
         "rawResponsiveness": 10.43,
-        "rawStability": 3.48,
+        "rawStability": 2.55,
         "rawDurability": 7.12,
-        "rawValueScore": 4.5,
+        "rawValueScore": 4.31,
         "rawLightness": 7.16
       },
       "pros": [
@@ -714,9 +714,9 @@
         "valueScore": 5,
         "rawCushioning": 5.26,
         "rawResponsiveness": 7.52,
-        "rawStability": 3.16,
+        "rawStability": 2.77,
         "rawDurability": 7.79,
-        "rawValueScore": 4.67,
+        "rawValueScore": 4.56,
         "rawLightness": 6.64
       },
       "pros": [
@@ -782,9 +782,9 @@
         "valueScore": 4,
         "rawCushioning": 5.91,
         "rawResponsiveness": 8.21,
-        "rawValueScore": 3.8,
+        "rawValueScore": 3.78,
         "rawLightness": 6.88,
-        "rawStability": 4.13,
+        "rawStability": 4.04,
         "rawDurability": 4.51
       },
       "pros": [

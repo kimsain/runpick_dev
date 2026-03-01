@@ -36,9 +36,9 @@
         "valueScore": 8,
         "rawCushioning": 7.35,
         "rawResponsiveness": 2.71,
-        "rawStability": 7.52,
+        "rawStability": 7.74,
         "rawDurability": 8.09,
-        "rawValueScore": 7.57,
+        "rawValueScore": 7.65,
         "rawLightness": 4.08
       },
       "pros": [
@@ -96,19 +96,19 @@
         "drop": 5,
         "cushioning": 8,
         "responsiveness": 4,
-        "stability": 6,
+        "stability": 7,
         "durability": 8,
         "stackHeight": {
           "heel": 43,
           "forefoot": 38
         },
         "weightScore": 3,
-        "valueScore": 6,
+        "valueScore": 7,
         "rawCushioning": 8.29,
         "rawResponsiveness": 4.2,
-        "rawStability": 5.93,
+        "rawStability": 6.7,
         "rawDurability": 8.06,
-        "rawValueScore": 6.62,
+        "rawValueScore": 6.86,
         "rawLightness": 3.19
       },
       "pros": [
@@ -174,9 +174,9 @@
         "valueScore": 9,
         "rawCushioning": 6.1,
         "rawResponsiveness": 3.62,
-        "rawStability": 9.25,
+        "rawStability": 9.28,
         "rawDurability": 11.03,
-        "rawValueScore": 9.12,
+        "rawValueScore": 9.13,
         "rawLightness": 4.53
       },
       "pros": [
@@ -241,9 +241,9 @@
         "valueScore": 6,
         "rawCushioning": 7.86,
         "rawResponsiveness": 5.63,
-        "rawStability": 5.56,
+        "rawStability": 5.87,
         "rawDurability": 5.72,
-        "rawValueScore": 5.47,
+        "rawValueScore": 5.56,
         "rawLightness": 4.53
       },
       "pros": [
@@ -310,9 +310,9 @@
         "valueScore": 4,
         "rawCushioning": 9.12,
         "rawResponsiveness": 8.11,
-        "rawValueScore": 3.68,
+        "rawValueScore": 3.66,
         "rawLightness": 7.2,
-        "rawStability": 3.97,
+        "rawStability": 3.88,
         "rawDurability": 4.02
       },
       "pros": [
@@ -377,9 +377,9 @@
         "valueScore": 5,
         "rawCushioning": 6.93,
         "rawResponsiveness": 8.93,
-        "rawStability": 4.21,
+        "rawStability": 3.9,
         "rawDurability": 5.88,
-        "rawValueScore": 4.56,
+        "rawValueScore": 4.49,
         "rawLightness": 6.72
       },
       "pros": [

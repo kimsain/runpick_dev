@@ -111,14 +111,15 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
     mw_heel = rr_stab.get("midsoleWidthHeel_mm")
     mw_fore = rr_stab.get("midsoleWidthForefoot_mm")
     if tr is not None and hcs is not None:
-        # SA/ER 데이터 (이미 위에서 추출)
+        # AC durometer (미드솔 경도, sway 패널티용)
+        heel_ac = rr_cush.get("midsoleSoftness_ac")
+        secondary_foam_ac = rr_cush.get("secondaryFoamSoftness_ac")  # 듀얼폼 2차 경도
         # stack 데이터는 production JSON에서 추출
         stack_heel = existing_specs.get("stackHeight", {}).get("heel")
         stack_fore = existing_specs.get("stackHeight", {}).get("forefoot")
         stability = stability_from_runrepeat(
             tr, hcs,
-            heel_sa=heel_sa, fore_sa=fore_sa,
-            heel_er=heel_er, fore_er=fore_er,
+            heel_ac=heel_ac, secondary_foam_ac=secondary_foam_ac,
             stack_heel=stack_heel, stack_fore=stack_fore,
             subcategory=subcategoryId,
             midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
@@ -126,8 +127,7 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
         )
         raw_stab = raw_stability_from_runrepeat(
             tr, hcs,
-            heel_sa=heel_sa, fore_sa=fore_sa,
-            heel_er=heel_er, fore_er=fore_er,
+            heel_ac=heel_ac, secondary_foam_ac=secondary_foam_ac,
             stack_heel=stack_heel, stack_fore=stack_fore,
             subcategory=subcategoryId,
             midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
