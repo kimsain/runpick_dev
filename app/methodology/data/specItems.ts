@@ -43,11 +43,11 @@ export const SPEC_ITEMS: SpecItem[] = [
       },
       expert: {
         dataSource:
-          'RunRepeat Heel/Forefoot SA(충격흡수) → RTINGS SA → 정성 리뷰 순으로 우선 적용',
+          'RunRepeat Heel/Forefoot SA(충격흡수) 우선 적용 → RTINGS SA 보조 → 정성 리뷰는 결측·이탈 구간 보정용',
         formula:
           'raw = heelSA × 0.4 + forefootSA × 0.6\nscore = clamp(round(1 + (raw − 88) / 62 × 9), 1, 10)',
         rationale:
-          'forefoot SA에 60% 가중 적용 (현대 midfoot 착지 주류). 범위 88~150: 하한=adizero-adios-9 기준, 상한=max-cushion 실용 상한 (p95=149.8). 고정 앵커(ratchet rule): 새 신발이 범위를 벗어날 때만 확장. 2026-02-23 멀티에이전트 토론 합의.',
+          'GRF(Ground Reaction Force) 피크가 지면 접촉에서 미드솔로 전달될 때 점탄성(viscoelastic) 손실이 충격 강도를 감쇠시켜 체감 충격을 줄인다. 포어풋 구간은 주행의 주 동력 전달 구간이므로 에너지 완충의 핵심 기여로 60% 가중치를 부여한다. 원시 SA는 최저~최고 경계 기반의 min-max 정규화 후 1–10 스케일로 변환해 모델 간 비교 가능성을 확보한다. 정규화 범위를 벗어나는 극단값이 등장할 때만 앵커를 갱신하는 래칫(ratchet) 규칙으로 척도의 종단적 일관성을 유지한다.',
         constants: [
           { name: 'CUSH_MIN_SA', value: '88', meaning: 'SA 하한 앵커 (adizero-adios-9 기준)' },
           { name: 'CUSH_MAX_SA', value: '150', meaning: 'SA 상한 앵커 (max-cushion p95 기준)' },
@@ -76,11 +76,12 @@ export const SPEC_ITEMS: SpecItem[] = [
           '8–10점: 발이 땅에서 튕기듯 앞으로 밀리는 느낌, 페이스가 자연스럽게 유지됨. 1–3점: 에너지 흡수형, 착지가 묵직하고 안정적인 느낌.',
       },
       expert: {
-        dataSource: 'RunRepeat Energy Return %(ER%) → RTINGS ER% 순으로 우선 적용',
+        dataSource:
+          'RunRepeat Energy Return %(ER%) 우선 적용 → RTINGS ER% 보조 → 정성 리뷰는 카테고리 오차 보정에만 사용',
         formula:
           'avg_er = heelER × 0.4 + forefootER × 0.6\nscore = clamp(round((avg_er − 46) / 34 × 10), 1, 10)',
         rationale:
-          '범위 46~80% (RESP_LO=46, RESP_RANGE_INT=34). forefoot 60% 가중 (쿠션성과 통일). RTINGS-only 데이터 사용 시 카테고리별 −1~−3 페널티 적용 (stability −3, max-cushion −3, all-rounder −2 등). 2026-02-23 재보정.',
+          '에너지 리턴은 착지 후 저장 에너지 중 반발 탄성(resilience)으로 되돌아오는 비율이며, 이력 손실(hysteresis loss)이 클수록 전환 효율이 감소한다. 포어풋이 에너지 방출 구간을 크게 차지하므로 60% 가중치로 반응성 핵심 항목을 반영한다. ER 분포는 46~80% 범위를 min-max 정규화해 1–10 스케일로 통일하고, 카테고리별 오차는 고정 규칙 기반으로 완화한다. RTINGS-only와 결측 구간은 규칙 보정으로 스케일 정합성을 확보한다.',
         constants: [
           {
             name: 'RESP_LO',
@@ -118,16 +119,16 @@ export const SPEC_ITEMS: SpecItem[] = [
       },
       expert: {
         dataSource:
-          'RunRepeat torsionalRigidity(TR, 1–5) + heelCounterStiffness(HCS, 1–5) + midsoleWidth(mm) → 스택/소프트니스 sway 패널티 → 전문가 리뷰 키워드 ±1 보정',
+          'RunRepeat torsionalRigidity(TR, 1–5) + heelCounterStiffness(HCS, 1–5) + midsoleWidth(mm) → 스택/소프트니스 sway 패널티 보정 → 전문가 리뷰 키워드 ±1',
         formula:
-          '# TR, HCS → 1–10 정규화\ntr_norm  = clamp(1 + 9 × (TR − 2) / 3, 1, 10)\nhcs_norm = clamp(1 + 9 × (HCS − 1) / 4, 1, 10)\n\n# Width: 실측 없으면 카테고리 median imputation\nmw_norm = clamp(0.4 × heel_norm + 0.6 × fore_norm, 1, 10)\n\n# Base 가중합 (3-LLM 합의 2026-03-01)\nbase = 0.30 × tr_norm + 0.30 × hcs_norm + 0.40 × mw_norm\n\n# Sway 패널티 (스택 높이 + 폼 소프트니스)\nac = max(heelAC, secondaryAC)  # 없으면 카테고리 prior\nsoft = min(1.5, max(0, (42 − ac) / 15))\nu_h = (stackHeel − 39) / 10\nu_f = (stackFore − 32) / 10\nstk = clamp(0.7 × tanh(1.5 × u_h) + 0.3 × tanh(1.5 × u_f), −0.5, 1.0)\nsway = 0.4 × soft + 1.0 × stk + 0.8 × (soft × stk)\nbase −= sway\n\n# Subcategory delta\nbase += SUBCAT_STAB_DELTA.get(subcategory, 0.0)\n# stability + TR≥4: base += 0.5 (측정 확인 보너스)\n\n# Rescale → 1–10\nintermediate = base\nscore = clamp(round(1 + 9 × (intermediate − RAW_MIN) / (RAW_MAX − RAW_MIN)), 1, 10)',
+          '# TR, HCS → 1–10 정규화\ntr_norm  = clamp(1 + 9 × (TR − 2) / 3, 1, 10)\nhcs_norm = clamp(1 + 9 × (HCS − 1) / 4, 1, 10)\n\n# Width: 실측 없으면 카테고리 median imputation\nmw_norm = clamp(0.4 × heel_norm + 0.6 × fore_norm, 1, 10)\n\n# Base 가중합 (TR/HCS/Width 결합)\nbase = 0.30 × tr_norm + 0.30 × hcs_norm + 0.40 × mw_norm\n\n# Sway 패널티 (스택 높이 + 폼 소프트니스)\nac = max(heelAC, secondaryAC)  # 없으면 카테고리 prior\nsoft = min(1.5, max(0, (42 − ac) / 15))\nu_h = (stackHeel − 39) / 10\nu_f = (stackFore − 32) / 10\nstk = clamp(0.7 × tanh(1.5 × u_h) + 0.3 × tanh(1.5 × u_f), −0.5, 1.0)\nsway = 0.4 × soft + 1.0 × stk + 0.8 × (soft × stk)\nbase −= sway\n\n# Subcategory delta\nbase += SUBCAT_STAB_DELTA.get(subcategory, 0.0)\n# stability + TR≥4: base += 0.5 (측정 확인 보너스)\n\n# Rescale → 1–10\nintermediate = base\nscore = clamp(round(1 + 9 × (intermediate − RAW_MIN) / (RAW_MAX − RAW_MIN)), 1, 10)',
         rationale:
-          'TR 30% + HCS 30% + Width 40%로 가중치 재설계. Width 누락 시 카테고리 median을 대입해 On 브랜드 등 데이터 부재 신발에 공정한 기준 적용. 스택 sway 패널티: cubic → tanh(gain=1.5)로 교체, 비대칭 bound [-0.5, 1.0] (저스택 보너스는 고스택 패널티의 50%로 제한). AC(Asker C durometer) 누락 시 카테고리별 prior 사용. 3-LLM(Claude+Codex+Gemini) 합의 2026-03-01.',
+          '내-외측(medio-lateral) 동요는 GRF 전달선과 비틀림 강성(torsional rigidity), 관성 모멘트(inertia moment)의 상호작용으로 안정성이 결정된다. TR은 횡강성, HCS는 회내 저항, 미드솔 폭은 고유수용감각(proprioception) 기반 지지 확보로 해석한다. Width 결측은 카테고리 median imputation으로 보완하고, 스택/폴리머 소프트니스 패널티는 tanh 포화로 과대 패널티를 억제한다. base와 카테고리 보정을 결합한 뒤 min-max 정규화로 전 모델 1–10 점수를 산출한다.',
         constants: [
           {
             name: 'Base 가중치',
             value: 'TR 30% / HCS 30% / Width 40%',
-            meaning: '3-LLM 합의 (2026-03-01)',
+            meaning: '비틀림 강성, HCS, 미드솔 폭의 생체역학 균형을 반영한 가중치 설계',
           },
           {
             name: 'STAB_TANH_GAIN',
@@ -170,17 +171,17 @@ export const SPEC_ITEMS: SpecItem[] = [
       },
       expert: {
         dataSource:
-          'RunRepeat 아웃솔 두께(mm) + 마모량(mm) → toebox 내구성(1–5) + heel-pad 내구성(1–5) → 전문가 리뷰 키워드 보정',
+          'RunRepeat 아웃솔 두께(mm) + 마모량(mm) 우선 적용 → toebox/heel-pad 내구성(1–5) → 전문가 리뷰 키워드 보정',
         formula:
           '# 두께 + 마모 모두 있을 때\nratio = outsoleThickness / outsoleDurability\noutsole_raw = log(ratio + 1) / log(8.2) × 9 + 1\n\n# toebox·heel-pad 있으면 블렌딩\ntb_norm  = 1 + 9 × (toeboxDur − 1) / 4\nhp_norm  = 1 + 9 × (heelPadDur − 1) / 4\nblended  = 0.70 × outsole_raw + 0.20 × tb_norm + 0.10 × hp_norm\n\n# Rescale → 1–10\nscore = clamp(round(1 + 9 × (blended − RAW_MIN) / (RAW_MAX − RAW_MIN)), 1, 10)\n\n# 마모 데이터만 있을 때 (fallback)\ncapped = min(outsoleDurability, 10.0)\nscore  = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
         rationale:
-          '로그 스케일로 수확체감 반영 (두꺼운 아웃솔이라도 한계 존재). 아웃솔 70% + toebox 20% + heel-pad 10% 블렌딩으로 전체 신발 내구성 반영. 두께 데이터 없을 때는 마모량 반비례 선형 공식으로 fallback.',
+          '내구성은 반복 충격에서 재료 피로(material fatigue)가 누적되는 과정이므로 두꺼운 쿠션일수록 초기 이득은 있으나 한계가 존재한다. 이를 반영해 아웃솔 두께-마모 비율을 log transform하고 toebox·heel-pad 신호를 가중 블렌딩해 신발 전체의 마찰·마모 거동을 통합한다. 두께 결측 시에는 마모량 반비례 선형 fallback로 모노토닉 성질을 유지한다. 최종 지표는 데이터군 하한·상한으로 min-max 정규화한다.',
         constants: [
           { name: 'DUR_LOG_BASE', value: '8.2', meaning: '로그 스케일 밑수 (수확체감 반영)' },
           {
             name: '블렌딩 가중치',
             value: '아웃솔 70% / Toebox 20% / Heel-pad 10%',
-            meaning: '2026-02-25 Codex+Gemini 합의',
+            meaning: '두께·마모율·부위 내구를 통합하는 로그변환 기반 통계 설계',
           },
           {
             name: 'DUR_RAW_MIN / MAX',
@@ -206,11 +207,12 @@ export const SPEC_ITEMS: SpecItem[] = [
           '8–10점: 190g 이하 초경량, 발이 없는 것처럼 가벼운 레이싱 느낌. 1–3점: 290g 이상 맥시멀 쿠션화·안정화 수준, 장거리 후반 다리가 무거울 수 있음.',
       },
       expert: {
-        dataSource: '실측 무게(g) — RunRepeat 또는 브랜드 공식 제원, 항상 직접 계산',
+        dataSource:
+          '실측 무게(g) 우선 적용 — RunRepeat 또는 브랜드 공식 제원 보완, 항상 직접 계산',
         formula:
           'score = clamp(round(1 + 9 × (HEAVY_G − weight_g) / (HEAVY_G − LIGHT_G)), 1, 10)\n\nLIGHT_G = 129  # ASICS Metaspeed Sky Tokyo\nHEAVY_G = 351  # Nike Vomero Premium',
         rationale:
-          '고정 상수 사용 (신발 추가 시 기존 점수 불변). 선형 반비례 정규화. 기준값은 현재 데이터베이스 최경량·최중량 기준이며, ratchet rule 적용 (새 극단값 출현 시만 앵커 갱신).',
+          '경량성은 관성 모멘트(mass moment of inertia)와 대사 비용(metabolic cost)에 직접 작용해 지속 속도와 피로 누적에 영향이 크다. 동일 거리에서 질량이 낮을수록 가속·감속 에너지 손실이 줄고 움직임 반응이 빨라진다. 데이터군의 최경량·최중량을 기준으로 선형 반비례 min-max 정규화를 수행해 1–10 척도로 변환한다. 새 모델 극단치 유입 시에는 기존 점수 체계를 유지하다가 필요할 때만 갱신하는 고정 앵커 확장 정책을 적용한다.',
         constants: [
           {
             name: 'LIGHT_G',
@@ -243,11 +245,11 @@ export const SPEC_ITEMS: SpecItem[] = [
       },
       expert: {
         dataSource:
-          '쿠션성 + 반응성 + 안정성 + 내구성 점수 합산 ÷ 출시가(KRW) — 항상 직접 계산',
+          '쿠션성 + 반응성 + 안정성 + 내구성 점수 합산 ÷ 출시가(KRW) → 항상 직접 계산',
         formula:
           'ratio = (cushioning + responsiveness + stability + durability) / price\n\nVALUE_RATIO_MIN = 22 / 599000   # 앵커: adizero-pro-evo-2 → 1점\nVALUE_RATIO_MAX = 동적 보정     # top-5 경계 (--calibrate 자동 갱신)\n\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
         rationale:
-          '최하점 앵커는 가장 비싼 레이싱화(adizero-pro-evo-2, 599,000원)로 고정. 최고점(10점) 앵커는 특정 신발로 고정하지 않고 데이터베이스 내 top-5 경계 midpoint를 자동 보정 (recalculate.py --calibrate). 경량성 미포함 (독립 스펙). 할인가 미반영, 출시 정가 기준.',
+          '가성비는 주어진 가격에서 획득하는 성능 밀도(utility-to-cost ratio)로 해석해야 하며, 쿠션성·반응성·안정성·내구성 점수의 합을 가격으로 나누어 산정한다. 각 항목은 동일 척도로 정규화되어 있어 단위 편향을 줄이고 비율 비교가 가능해진다. 상·하한은 데이터 경계를 rank-based dynamic anchor로 갱신해 극단값 민감도를 제어한다. 경량성은 독립 스펙으로 제외하고, 할인 미반영 출시가 기준을 사용해 통계적 일관성을 유지한다.',
         constants: [
           {
             name: 'VALUE_RATIO_MIN',
