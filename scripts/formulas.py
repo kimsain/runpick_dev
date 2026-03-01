@@ -433,10 +433,14 @@ def raw_durability_from_abrasion_only(abrasion_mm):
 
 
 def raw_value_score(raw_cush, raw_resp, raw_stab, raw_dur, price):
-    """가성비 raw 점수 (≥1 소수점, 상한 없음). 입력은 혼합 raw(float) 값. 정렬 전용."""
+    """가성비 raw 점수 (≥1 소수점, 상한 없음). 서브스코어는 [1,10] 클램프 후 합산. 정렬 전용."""
     if price <= 0:
         return 1.0
-    ratio = (raw_cush + raw_resp + raw_stab + raw_dur) / price
+    c = min(10.0, max(1.0, raw_cush))
+    r = min(10.0, max(1.0, raw_resp))
+    s = min(10.0, max(1.0, raw_stab))
+    d = min(10.0, max(1.0, raw_dur))
+    ratio = (c + r + s + d) / price
     return round(max(1.0, (ratio - VALUE_RATIO_MIN) / (VALUE_RATIO_MAX - VALUE_RATIO_MIN) * 9 + 1), 2)
 
 
