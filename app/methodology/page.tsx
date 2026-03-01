@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { CONF_COLORS } from '@/lib/confidence'
-import SpecCardsSection, { type SpecItem } from '@/components/SpecCardsSection'
+import SpecCardsSection from '@/components/SpecCardsSection'
+import { SPEC_ITEMS } from './data/specItems'
 
 const DATA_SOURCES = [
   {
@@ -40,97 +41,6 @@ const DATA_SOURCES = [
   },
 ]
 
-const SPEC_ITEMS: SpecItem[] = [
-  {
-    name: '쿠션성',
-    nameEn: 'Cushioning',
-    color: 'var(--spec-cushion)',
-    description:
-      '힐과 포어풋의 충격흡수(Shock Attenuation, SA) 측정값을 기반으로 산출합니다. SA 값이 높을수록 충격을 효과적으로 흡수합니다.',
-    basis: '힐/포어풋 SA 기반 0–10점',
-    modalContent: {
-      dataSource: 'RunRepeat Heel/Forefoot SA → RTINGS → 정성 리뷰 순으로 적용',
-      formula:
-        'raw = heelSA × 0.4 + forefootSA × 0.6\nscore = clamp(round(1 + (raw − 88) / 62 × 9), 1, 10)',
-      rationale:
-        'forefoot SA에 60% 가중 적용 (현대 midfoot 착지 주류). 범위 88~150: 하한=adizero-adios-9 기준, 상한=max-cushion 실용 상한 (p95). 2026-02-23 재보정.',
-    },
-  },
-  {
-    name: '반응성',
-    nameEn: 'Responsiveness',
-    color: 'var(--spec-response)',
-    description:
-      '에너지 리턴(Energy Return, ER%) 측정값을 기반으로 산출합니다. ER%가 높을수록 착지 시 에너지를 더 많이 돌려받습니다.',
-    basis: '에너지 리턴 ER% 기반 0–10점',
-    modalContent: {
-      dataSource: 'RunRepeat Energy Return % → RTINGS 순으로 적용',
-      formula:
-        'avg_er = heelER × 0.4 + forefootER × 0.6\nscore = clamp(round((avg_er − 46) / 34 × 10), 1, 10)',
-      rationale:
-        '범위 46~80%. forefoot 60% 가중 (쿠션성과 동일). RTINGS-only 데이터 사용 시 카테고리별 −1~−3 페널티 적용. 2026-02-23 재보정.',
-    },
-  },
-  {
-    name: '안정성',
-    nameEn: 'Stability',
-    color: 'var(--spec-stability)',
-    description:
-      '전문가 리뷰에서 평가한 착지 안정성, 흔들림 제어, 가이드 레일 효과 등을 종합합니다.',
-    basis: '전문가 리뷰 종합 0–10점',
-    modalContent: {
-      dataSource: 'RunRepeat torsionalRigidity + heelCounterStiffness → 전문가 리뷰 키워드 보정',
-      formula:
-        '# TR, HCS는 RunRepeat 1–5 스케일 → 1–10 정규화\ntr_norm = 1 + 9 × (TR − 2) / 3\nhcs_norm = 1 + 9 × (HCS − 1) / 4\nbase = 0.4 × tr_norm + 0.6 × hcs_norm  # midsoleWidth 없을 때\n# (midsoleWidth 있을 때: 0.35 × tr_norm + 0.50 × hcs_norm + 0.15 × width_norm)\n# sway 패널티: 높은 SA·스택 → 최대 −2점; ER% 높으면 일부 상쇄\n# subcategory=\'stability\' → base += 1\nscore = clamp(round(base), 1, 10)',
-      rationale:
-        'TR(2–5)·HCS(1–5) 각각 1–10 정규화 후 40/60 가중합산. 높은 SA·스택은 sway 패널티를 유발해 점수 감소; ER%가 높은 신발은 일부 상쇄. midsoleWidth 있을 때 35/50/15 가중합산. subcategory=stability +1 보너스. 리뷰 키워드 ±1 보정은 별도 적용.',
-    },
-  },
-  {
-    name: '내구성',
-    nameEn: 'Durability',
-    color: 'var(--spec-durability)',
-    description:
-      '아웃솔 고무 마모도, 미드솔 변형, 장거리 착용 후 상태 등 내구성 관련 데이터를 종합합니다.',
-    basis: '아웃솔 내구성 평가 0–10점',
-    modalContent: {
-      dataSource: 'RunRepeat 아웃솔 두께·마모 측정값 → 전문가 리뷰 키워드 보정',
-      formula:
-        '# 두께+마모 데이터 모두 있을 때\nratio = outsoleThickness / outsoleDurability\noutsole_raw = log(ratio+1) / log(8.2) × 9 + 1\n# toebox·heel-pad durability(1–5 rating) 있을 때: 70/20/10 블렌딩\nscore = 0.70 × outsole_raw + 0.20 × toebox_norm + 0.10 × heelpad_norm\n# 없을 때: outsole_raw만 사용\nscore = clamp(round(outsole_raw), 1, 10)\n\n# 마모 데이터만 있을 때\ncapped = min(outsoleDurability, 10.0)\nscore = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
-      rationale:
-        '로그 스케일로 수확체감 반영. ratio ≥ 6.43이면 10점 만점. 두께 데이터 없을 때는 마모량 반비례 선형 공식으로 fallback.',
-    },
-  },
-  {
-    name: '경량성',
-    nameEn: 'Lightness',
-    color: 'var(--spec-weight)',
-    description: '실측 무게(g) 기준 역정규화. 가벼울수록 높은 점수.',
-    basis: '전 모델 실측 무게 역정규화 0–10점',
-    modalContent: {
-      dataSource: '실측 무게(g) — 항상 직접 계산',
-      formula:
-        'score = clamp(round(1 + 9 × (351 − weight) / 222), 1, 10)\nLIGHT = 129g (metaspeed-ray)  /  HEAVY = 351g (vomero-premium)',
-      rationale:
-        '고정 상수 사용 (신발 추가 시 기존 점수 불변), 선형 반비례. 기준값은 현재 데이터베이스 최경량·최중량 기준.',
-    },
-  },
-  {
-    name: '가성비',
-    nameEn: 'Value',
-    color: 'var(--spec-value)',
-    description:
-      '가격 대비 성능. (쿠션성+반응성+안정성+내구성) ÷ 가격 비율을 전 모델 대비 정규화.',
-    basis: '성능 합산 ÷ 가격 비율 정규화 0–10점',
-    modalContent: {
-      dataSource: '4개 스펙 합산 ÷ 출시가(KRW) — 항상 직접 계산',
-      formula:
-        'ratio = (쿠션 + 반응 + 안정 + 내구) / price\nVALUE_RATIO_MIN = 22/599000  # 앵커: adizero-pro-evo-2\nVALUE_RATIO_MAX = 26.18/169000  # 앵커: novablast-5\nscore = clamp(round((ratio − MIN) / (MAX − MIN) × 9 + 1), 1, 10)',
-      rationale:
-        'weightScore와 동일한 min/max 고정 앵커 정규화. 앵커 최솟값(1점)=adizero-pro-evo-2, 최댓값(10점)=novablast-5. 신발 추가 시 기존 점수 불변. 경량성 미포함 (별도 독립 스펙). 할인가 미반영, 출시가(정가) 기준.',
-    },
-  },
-]
 
 const CONFIDENCE_LEVELS = [
   {
