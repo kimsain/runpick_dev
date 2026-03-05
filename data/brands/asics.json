@@ -37,8 +37,8 @@
         "rawCushioning": 7.77,
         "rawResponsiveness": 1,
         "rawStability": 7.66,
-        "rawDurability": 6.44,
-        "rawValueScore": 6.55,
+        "rawDurability": 6.47,
+        "rawValueScore": 6.56,
         "rawLightness": 3.76
       },
       "pros": [
@@ -87,42 +87,43 @@
       "subcategoryId": "max-cushion",
       "price": 199000,
       "priceFormatted": "₩199,000",
-      "description": "쿠션이 풍부해서 뒤꿈치 착지로 거리를 쌓는 데일리 러닝화로 잘 맞아요. 힐 46mm와 전족부 40mm의 높은 스택에 6mm 드롭이 더해져 이지런부터 롱런까지 리듬을 유지하며 편하게 달리기 좋아요. 반응성이 낮아서 템포런처럼 빠른 페이스에서는 추진감이 둔하게 느껴질 수 있고 토박스가 타이트해 앞발 압박이 생길 수 있어요.",
-      "shortDescription": "힐착지 장거리 이지런 맥스쿠션",
+      "description": "뒤꿈치 착지 중심으로 장거리를 자주 뛰는 러너에게 맞는 쿠셔닝형 데일리 슈즈예요. FF BLAST MAX와 FF BLAST PLUS를 결합한 쿠션이 충격 흡수를 도와 편안한 리듬을 오래 유지하기 좋고, GUIDESOLE과 Hybrid ASICSGRIP은 미끄러운 구간과 구릉 구간에서 안정적인 접지감을 만들어줘요. 힐 46mm·전족부 40mm의 고스택과 6mm 드롭은 착지 시 흔들림을 줄여 균형 있는 페이스 조절을 돕고, AHARPLUS는 반복 사용에 유리한 마모 저항을 기대하게 해요. 다만 반응성이 낮아 템포런처럼 급가속이 필요한 날은 추진감이 다소 둔하게 느껴질 수 있고, 토박스가 타이트해서 발볼이 넓은 발은 앞부분 압박이 생길 수 있어요.",
+      "shortDescription": "뒤꿈치형 장거리 데일리 쿠셔닝 러닝화",
       "imageUrl": "/shoes/glideride-max-2.webp",
       "specs": {
         "weight": 261,
         "drop": 6,
-        "cushioning": 7,
-        "responsiveness": 4,
-        "stability": 5,
-        "durability": 7,
+        "cushioning": 6,
+        "responsiveness": 3,
+        "stability": 8,
+        "durability": 8,
         "stackHeight": {
           "heel": 46,
           "forefoot": 40
         },
         "weightScore": 5,
         "valueScore": 7,
-        "rawCushioning": 7.21,
-        "rawResponsiveness": 3.92,
-        "rawValueScore": 6.87,
+        "rawCushioning": 6.39,
+        "rawResponsiveness": 3.41,
+        "rawValueScore": 7.37,
         "rawLightness": 4.65,
-        "rawStability": 5.37,
-        "rawDurability": 7.26
+        "rawStability": 7.62,
+        "rawDurability": 7.75
       },
       "pros": [
-        "힐 46mm·전족부 40mm 고스택 기반의 장거리 충격 완화",
-        "261g 무게로 맥스쿠션 대비 부담 덜한 데일리 주행감",
-        "안정감이 탄탄해서 러닝 후반에도 유지되는 착지 밸런스"
+        "힐 46mm·전족부 40mm 고스택 기반 착지 충격 완화력",
+        "261g 무게의 경량 편안함으로 장거리 피로 관리 유리",
+        "FF BLAST MAX·FF BLAST PLUS와 GUIDESOLE·Hybrid ASICSGRIP의 안정성 조합",
+        "AHARPLUS 적용으로 반복 러닝에 유리한 내구성 확보"
       ],
       "cons": [
-        "토박스가 좁은 편이라 발볼 넓은 발에 생기는 앞발 압박",
-        "반응성이 낮아서 템포런에서 부족한 가속 반발감"
+        "반응성 한계로 템포런 급가속 전환 시 추진력 체감 둔화",
+        "토박스 체형이 다소 타이트해 발볼 넓은 러너의 앞발 압박 가능성"
       ],
       "bestFor": [
-        "뒤꿈치 착지로 10km 이상을 자주 달리는 장거리 러너",
-        "이지런부터 롱런까지 한 켤레로 주간 거리를 쌓는 데일리 러너",
-        "마라톤 준비 기간에 다리 피로를 줄여 페이스 유지를 노리는 러너"
+        "뒤꿈치 착지형 10km 이상 장거리 주행 러너",
+        "이지런부터 롱런까지 루틴 훈련을 꾸준히 이어가는 데일리 러너",
+        "마라톤 준비 기간에 피로 관리와 안정성을 우선하는 러너"
       ],
       "technologies": [
         "FF BLAST MAX",
@@ -139,8 +140,9 @@
       ],
       "slug": "glideride-max-2",
       "officialUrl": "https://www.rtings.com/running-shoes/reviews/asics/glideride-max-2-shoe",
-      "confidence": "high",
+      "confidence": "very-high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/asics-glideride-max-2",
         "rtings": "https://www.rtings.com/running-shoes/reviews/asics/glideride-max-2-shoe",
         "dor": "https://www.doctorsofrunning.com/2025/12/asics-glideride-max-2-review-2025.html"
       }
@@ -241,8 +243,8 @@
         "rawCushioning": 8.11,
         "rawResponsiveness": 5.69,
         "rawStability": 6.3,
-        "rawDurability": 5.26,
-        "rawValueScore": 9.04,
+        "rawDurability": 5.3,
+        "rawValueScore": 9.06,
         "rawLightness": 4.89
       },
       "pros": [
@@ -352,6 +354,68 @@
       }
     },
     {
+      "id": "superblast-3",
+      "brandId": "asics",
+      "name": "SUPERBLAST 3",
+      "nameKo": "슈퍼블라스트 3",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 259000,
+      "priceFormatted": "₩259,000",
+      "description": "쿠션이 풍부해서 장거리 데일리 주행에서 피로를 부드럽게 낮춰줘요. 반응성이 좋아서 일정한 템포로 오래 달릴 때 추진감이 안정적으로 이어지고, 47mm/39mm 스택은 착지 충격을 완만하게 받아줘요. 다만 237g 무게감과 결합된 8mm 드롭 특성 탓에 스피드 레이스 전환 구간의 민첩한 가속은 다소 제한될 수 있어요.",
+      "shortDescription": "장거리 데일리용 고쿠션 안정형 슈퍼트레이너",
+      "imageUrl": "/shoes/superblast-3.webp",
+      "specs": {
+        "weight": 237,
+        "drop": 8,
+        "cushioning": 9,
+        "responsiveness": 7,
+        "stability": 6,
+        "durability": 6,
+        "stackHeight": {
+          "heel": 47,
+          "forefoot": 39
+        },
+        "weightScore": 6,
+        "valueScore": 6,
+        "rawCushioning": 6.78,
+        "rawResponsiveness": 7.52,
+        "rawStability": 3.29,
+        "rawDurability": 4.56,
+        "rawValueScore": 4.46,
+        "rawLightness": 5.62
+      },
+      "pros": [
+        "237g 무게의 반복 주행 피로 분산",
+        "47mm/39mm 스택의 충격 완충",
+        "8mm 드롭의 안정적인 착지 리듬",
+        "꾸준한 페이스 유지에 맞는 반응성"
+      ],
+      "cons": [
+        "스피드 레이스 구간에서 민첩한 가속 한계",
+        "빠른 템포 전환에서 즉발성 체감 한계"
+      ],
+      "bestFor": [
+        "장거리 데일리 러너",
+        "회복 주행 러너",
+        "안정성 우선 러너"
+      ],
+      "technologies": [
+        "FF LEAP",
+        "FF BLAST+",
+        "ASICSGRIP"
+      ],
+      "releaseYear": 2026,
+      "colorways": [],
+      "slug": "superblast-3",
+      "confidence": "medium",
+      "sources": {
+        "dor": "https://www.doctorsofrunning.com/2026/02/asics-superblast-3-review-2026.html",
+        "rtr": "https://www.roadtrailrun.com/2026/02/asics-superblast-multi-tester-review.html",
+        "bitr": "https://believeintherun.com/shoe-reviews/asics-superblast-3-review/"
+      }
+    },
+    {
       "id": "megablast",
       "brandId": "asics",
       "name": "MEGABLAST",
@@ -379,8 +443,8 @@
         "rawCushioning": 10.07,
         "rawResponsiveness": 8.08,
         "rawStability": 5.41,
-        "rawDurability": 5.22,
-        "rawValueScore": 5.21,
+        "rawDurability": 5.26,
+        "rawValueScore": 5.22,
         "rawLightness": 6.31
       },
       "pros": [
@@ -446,8 +510,8 @@
         "rawCushioning": 8.44,
         "rawResponsiveness": 6.74,
         "rawStability": 5.07,
-        "rawDurability": 3.79,
-        "rawValueScore": 5.84,
+        "rawDurability": 3.85,
+        "rawValueScore": 5.86,
         "rawLightness": 4.89
       },
       "pros": [
@@ -515,8 +579,8 @@
         "rawCushioning": 6.62,
         "rawResponsiveness": 5.12,
         "rawStability": 4.6,
-        "rawDurability": 4.37,
-        "rawValueScore": 5.43,
+        "rawDurability": 4.42,
+        "rawValueScore": 5.44,
         "rawLightness": 7.41
       },
       "pros": [
@@ -582,8 +646,8 @@
         "rawCushioning": 8.53,
         "rawResponsiveness": 9.94,
         "rawStability": 1.0,
-        "rawDurability": 1.16,
-        "rawValueScore": 1.73,
+        "rawDurability": 1.24,
+        "rawValueScore": 1.74,
         "rawLightness": 10.0
       },
       "pros": [
@@ -650,8 +714,8 @@
         "rawCushioning": 5.19,
         "rawResponsiveness": 5.09,
         "rawStability": 3.52,
-        "rawDurability": 3.03,
-        "rawValueScore": 3.0,
+        "rawDurability": 3.09,
+        "rawValueScore": 3.02,
         "rawLightness": 5.95
       },
       "pros": [
@@ -717,8 +781,8 @@
         "rawCushioning": 7.41,
         "rawResponsiveness": 9.51,
         "rawStability": 2.45,
-        "rawDurability": 1.83,
-        "rawValueScore": 2.97,
+        "rawDurability": 1.91,
+        "rawValueScore": 2.98,
         "rawLightness": 8.34
       },
       "pros": [
@@ -785,8 +849,8 @@
         "rawCushioning": 8.27,
         "rawResponsiveness": 9.24,
         "rawStability": 1.54,
-        "rawDurability": 2.88,
-        "rawValueScore": 3.12,
+        "rawDurability": 2.95,
+        "rawValueScore": 3.14,
         "rawLightness": 8.34
       },
       "pros": [
