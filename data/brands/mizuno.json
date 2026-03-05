@@ -37,8 +37,8 @@
         "rawCushioning": 6.56,
         "rawResponsiveness": 2.59,
         "rawStability": 7.19,
-        "rawDurability": 6.67,
-        "rawValueScore": 8.06,
+        "rawDurability": 6.7,
+        "rawValueScore": 8.07,
         "rawLightness": 4.77
       },
       "pros": [
@@ -106,8 +106,8 @@
         "rawCushioning": 9.14,
         "rawResponsiveness": 1,
         "rawStability": 8.1,
-        "rawDurability": 5.58,
-        "rawValueScore": 7.34,
+        "rawDurability": 5.62,
+        "rawValueScore": 7.35,
         "rawLightness": 3.72
       },
       "pros": [
@@ -174,7 +174,7 @@
         "rawCushioning": 9.98,
         "rawResponsiveness": 4.12,
         "rawStability": 1.62,
-        "rawDurability": 10.19,
+        "rawDurability": 10.18,
         "rawValueScore": 7.13,
         "rawLightness": 4.41
       },
@@ -244,8 +244,8 @@
         "rawCushioning": 8.62,
         "rawResponsiveness": 6.85,
         "rawStability": 1.56,
-        "rawDurability": 7.57,
-        "rawValueScore": 8.72,
+        "rawDurability": 7.59,
+        "rawValueScore": 8.73,
         "rawLightness": 5.5
       },
       "pros": [
@@ -287,6 +287,67 @@
       }
     },
     {
+      "id": "neo-zen-2",
+      "brandId": "mizuno",
+      "name": "Neo Zen 2",
+      "nameKo": "Neo Zen 2",
+      "categoryId": "super-trainer",
+      "subcategoryId": "no-plate",
+      "price": 169000,
+      "priceFormatted": "₩169,000",
+      "imageUrl": "/shoes/neo-zen-2.webp",
+      "slug": "neo-zen-2",
+      "releaseYear": 2026,
+      "confidence": "high",
+      "specs": {
+        "weight": 240,
+        "drop": 5,
+        "stackHeight": {
+          "heel": 40,
+          "forefoot": 35
+        },
+        "cushioning": 8,
+        "responsiveness": 1,
+        "stability": 4,
+        "durability": 2,
+        "rawCushioning": 8.01,
+        "rawResponsiveness": 1.03,
+        "rawStability": 3.69,
+        "rawDurability": 1.76,
+        "valueScore": 5,
+        "rawValueScore": 4.48,
+        "weightScore": 6,
+        "rawLightness": 5.5
+      },
+      "sources": {
+        "runrepeat": "https://runrepeat.com/mizuno-neo-zen-2"
+      },
+      "shortDescription": "장거리 데일리 주행 편안 쿠션형",
+      "description": "쿠션이 풍부해서 장거리 데일리 주행을 편안하게 밀어붙이기 좋아요. 5mm 드롭과 힐 40mm, 전족부 35mm 스택 덕분에 착지 충격을 비교적 안정적으로 받아요. 다만 반응성이 낮아서 스피드 업 구간의 추진감이 둔하고, 내구성도 낮아 마모가 빠른 편이라 사용 간격이 짧아질 수 있어요.",
+      "pros": [
+        "힐 40mm 스택의 완만한 충격 완화",
+        "전족부 35mm 스택의 편안한 접지 반응",
+        "낮은 5mm 드롭의 부드러운 스텝 전환"
+      ],
+      "cons": [
+        "반응성이 낮아 템포 전환 시 가속 둔감함",
+        "안정성 낮아 급격한 방향 전환에서 흔들림",
+        "내구성 낮아 마모가 빠른 편"
+      ],
+      "bestFor": [
+        "장거리 러너",
+        "데일리 러너",
+        "회복기 러너"
+      ],
+      "technologies": [
+        "고반발 슈퍼폼",
+        "데일리 트레이닝 설계"
+      ],
+      "colorways": [
+        "기본 컬러"
+      ]
+    },
+    {
       "id": "wave-rebellion-flash-3",
       "brandId": "mizuno",
       "name": "Wave Rebellion Flash 3",
@@ -314,8 +375,8 @@
         "rawCushioning": 8.74,
         "rawResponsiveness": 6.06,
         "rawStability": 5.76,
-        "rawDurability": 3.95,
-        "rawValueScore": 7.13,
+        "rawDurability": 4.0,
+        "rawValueScore": 7.15,
         "rawLightness": 5.34
       },
       "pros": [
@@ -383,10 +444,10 @@
         "valueScore": 3,
         "rawCushioning": 6.47,
         "rawResponsiveness": 8.44,
-        "rawValueScore": 3.61,
+        "rawValueScore": 3.62,
         "rawLightness": 9.59,
         "rawStability": 3.29,
-        "rawDurability": 4.51
+        "rawDurability": 4.56
       },
       "pros": [
         "139g 초경량으로 피치 전개에 유리한 가속감",
@@ -449,10 +510,10 @@
         "valueScore": 4,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.2,
-        "rawValueScore": 4.27,
+        "rawValueScore": 4.28,
         "rawLightness": 8.58,
         "rawStability": 3.29,
-        "rawDurability": 4.51
+        "rawDurability": 4.56
       },
       "pros": [
         "164g 경량으로 레이스 후반까지 가벼운 발 회전",
@@ -515,10 +576,10 @@
         "valueScore": 5,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.13,
-        "rawValueScore": 4.96,
+        "rawValueScore": 4.97,
         "rawLightness": 7.12,
         "rawStability": 3.29,
-        "rawDurability": 4.51
+        "rawDurability": 4.56
       },
       "pros": [
         "200g 경량과 힐 39mm/전족부 33.5mm 스택의 장거리 대응 쿠션",
@@ -582,8 +643,8 @@
         "rawCushioning": 9.89,
         "rawResponsiveness": 6.46,
         "rawStability": 3.34,
-        "rawDurability": 4.17,
-        "rawValueScore": 4.93,
+        "rawDurability": 4.22,
+        "rawValueScore": 4.94,
         "rawLightness": 6.39
       },
       "pros": [

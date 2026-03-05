@@ -37,8 +37,8 @@
         "rawCushioning": 4.83,
         "rawResponsiveness": 7.51,
         "rawStability": 2.8,
-        "rawDurability": 6.56,
-        "rawValueScore": 7.0,
+        "rawDurability": 6.59,
+        "rawValueScore": 7.01,
         "rawLightness": 5.3
       },
       "pros": [
@@ -108,7 +108,7 @@
         "rawValueScore": 5.91,
         "rawLightness": 3.47,
         "rawStability": 5.35,
-        "rawDurability": 7.4
+        "rawDurability": 7.42
       },
       "pros": [
         "힐 46mm·전족부 38mm 스택 기반의 넓은 충격 분산",
@@ -173,7 +173,7 @@
         "rawCushioning": 4.73,
         "rawResponsiveness": 7.13,
         "rawStability": 2.85,
-        "rawDurability": 7.31,
+        "rawDurability": 7.33,
         "rawValueScore": 6.25,
         "rawLightness": 4.69
       },
@@ -241,8 +241,8 @@
         "rawCushioning": 5.46,
         "rawResponsiveness": 4.81,
         "rawStability": 5.59,
-        "rawDurability": 7.35,
-        "rawValueScore": 6.67,
+        "rawDurability": 7.37,
+        "rawValueScore": 6.68,
         "rawLightness": 3.76
       },
       "pros": [
@@ -311,8 +311,8 @@
         "rawCushioning": 4.57,
         "rawResponsiveness": 4.8,
         "rawStability": 3.39,
-        "rawDurability": 4.67,
-        "rawValueScore": 4.04,
+        "rawDurability": 4.72,
+        "rawValueScore": 4.06,
         "rawLightness": 4.36
       },
       "pros": [
@@ -377,12 +377,12 @@
         },
         "weightScore": 5,
         "valueScore": 6,
-        "rawValueScore": 5.38,
+        "rawValueScore": 5.4,
         "rawLightness": 5.09,
         "rawCushioning": 6.78,
         "rawResponsiveness": 6.99,
         "rawStability": 3.29,
-        "rawDurability": 4.51
+        "rawDurability": 4.56
       },
       "pros": [
         "DN3 대비 약 14g 경량화로 반복 훈련 후반 다리 부담 완화",
@@ -447,8 +447,8 @@
         "rawCushioning": 7.52,
         "rawResponsiveness": 9.01,
         "rawStability": 2.27,
-        "rawDurability": 3.12,
-        "rawValueScore": 3.78,
+        "rawDurability": 3.18,
+        "rawValueScore": 3.79,
         "rawLightness": 6.76
       },
       "pros": [
@@ -513,12 +513,12 @@
         },
         "weightScore": 8,
         "valueScore": 4,
-        "rawValueScore": 3.69,
+        "rawValueScore": 3.7,
         "rawLightness": 8.34,
         "rawCushioning": 6.78,
         "rawResponsiveness": 6.99,
         "rawStability": 3.29,
-        "rawDurability": 4.51
+        "rawDurability": 4.56
       },
       "pros": [
         "170g 경량 기반의 후반 턴오버 유지 용이",
@@ -581,8 +581,8 @@
         "rawCushioning": 7.61,
         "rawResponsiveness": 10.51,
         "rawStability": 2.92,
-        "rawDurability": 1.0,
-        "rawValueScore": 2.42,
+        "rawDurability": 1.08,
+        "rawValueScore": 2.44,
         "rawLightness": 8.34
       },
       "pros": [

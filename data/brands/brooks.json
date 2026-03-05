@@ -37,7 +37,7 @@
         "rawCushioning": 5.03,
         "rawResponsiveness": 2.77,
         "rawStability": 8.03,
-        "rawDurability": 8.28,
+        "rawDurability": 8.29,
         "rawValueScore": 8.52,
         "rawLightness": 3.64
       },
@@ -107,8 +107,8 @@
         "rawCushioning": 4.34,
         "rawResponsiveness": 3.63,
         "rawStability": 7.65,
-        "rawDurability": 5.88,
-        "rawValueScore": 6.47,
+        "rawDurability": 5.92,
+        "rawValueScore": 6.48,
         "rawLightness": 5.34
       },
       "pros": [
@@ -175,8 +175,8 @@
         "rawCushioning": 6.07,
         "rawResponsiveness": 1.42,
         "rawStability": 7.45,
-        "rawDurability": 7.51,
-        "rawValueScore": 7.29,
+        "rawDurability": 7.53,
+        "rawValueScore": 7.3,
         "rawLightness": 2.95
       },
       "pros": [
@@ -313,7 +313,7 @@
         "rawCushioning": 7.97,
         "rawResponsiveness": 4.12,
         "rawStability": 5.35,
-        "rawDurability": 7.4
+        "rawDurability": 7.42
       },
       "pros": [
         "힐 38mm/전족부 30mm 스택의 풍부한 충격 흡수",
@@ -378,7 +378,7 @@
         "rawValueScore": 5.58,
         "rawLightness": 2.26,
         "rawStability": 5.35,
-        "rawDurability": 7.4
+        "rawDurability": 7.42
       },
       "pros": [
         "힐 45mm·전족부 39mm 스택 기반의 장거리 충격 누적 완화",
@@ -446,7 +446,7 @@
         "rawValueScore": 7.21,
         "rawLightness": 3.03,
         "rawStability": 7.43,
-        "rawDurability": 8.58
+        "rawDurability": 8.59
       },
       "pros": [
         "안정화 가이던스 구조 기반의 탄탄한 착지 지지력",
@@ -512,8 +512,8 @@
         "rawCushioning": 8.6,
         "rawResponsiveness": 5.67,
         "rawStability": 4.32,
-        "rawDurability": 6.8,
-        "rawValueScore": 6.62,
+        "rawDurability": 6.83,
+        "rawValueScore": 6.63,
         "rawLightness": 3.84
       },
       "pros": [
@@ -581,8 +581,8 @@
         "rawCushioning": 6.3,
         "rawResponsiveness": 9.23,
         "rawStability": 4.61,
-        "rawDurability": 2.69,
-        "rawValueScore": 3.81,
+        "rawDurability": 2.76,
+        "rawValueScore": 3.83,
         "rawLightness": 7.28
       },
       "pros": [

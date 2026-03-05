@@ -34,12 +34,12 @@
         },
         "weightScore": 4,
         "valueScore": 7,
-        "rawValueScore": 6.44,
+        "rawValueScore": 6.46,
         "rawLightness": 3.61,
         "rawCushioning": 5.56,
         "rawResponsiveness": 3.71,
         "rawStability": 7.74,
-        "rawDurability": 4.43
+        "rawDurability": 4.48
       },
       "pros": [
         "힐 39.4mm·전족부 32.1mm 스택의 안정적인 충격 분산",
@@ -102,12 +102,12 @@
         },
         "weightScore": 5,
         "valueScore": 7,
-        "rawValueScore": 6.72,
+        "rawValueScore": 6.73,
         "rawLightness": 4.65,
         "rawCushioning": 7.67,
         "rawResponsiveness": 6.42,
         "rawStability": 3.77,
-        "rawDurability": 6.67
+        "rawDurability": 6.7
       },
       "pros": [
         "261g 무게로 맥스쿠션 대비 부담 적은 데일리 운용",
@@ -173,10 +173,10 @@
         "valueScore": 6,
         "rawCushioning": 9.56,
         "rawResponsiveness": 3.92,
-        "rawValueScore": 5.94,
+        "rawValueScore": 5.95,
         "rawLightness": 2.82,
         "rawStability": 3.35,
-        "rawDurability": 5.39
+        "rawDurability": 5.43
       },
       "pros": [
         "힐 44mm·전족부 40mm 스택 기반 부드러운 충격 분산",
@@ -241,10 +241,10 @@
         "valueScore": 6,
         "rawCushioning": 5.75,
         "rawResponsiveness": 5.38,
-        "rawValueScore": 5.81,
+        "rawValueScore": 5.83,
         "rawLightness": 6.03,
         "rawStability": 3.73,
-        "rawDurability": 4.9
+        "rawDurability": 4.95
       },
       "pros": [
         "227g 경량 설계로 발걸음 부담 완화",
@@ -311,8 +311,8 @@
         "rawCushioning": 6.23,
         "rawResponsiveness": 4.36,
         "rawStability": 3.76,
-        "rawDurability": 3.62,
-        "rawValueScore": 5.94,
+        "rawDurability": 3.68,
+        "rawValueScore": 5.96,
         "rawLightness": 4.08
       },
       "pros": [
@@ -374,10 +374,10 @@
         "valueScore": 2,
         "rawCushioning": 6.33,
         "rawResponsiveness": 8.49,
-        "rawValueScore": 2.66,
+        "rawValueScore": 2.67,
         "rawLightness": 6.59,
         "rawStability": 1.46,
-        "rawDurability": 4.68
+        "rawDurability": 4.73
       },
       "pros": [
         "213g 경량으로 풀코스 후반 부담 감소",

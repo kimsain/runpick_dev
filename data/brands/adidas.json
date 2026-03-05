@@ -34,12 +34,12 @@
         },
         "weightScore": 5,
         "valueScore": 10,
-        "rawValueScore": 9.75,
+        "rawValueScore": 9.77,
         "rawLightness": 4.53,
         "rawCushioning": 6.13,
         "rawResponsiveness": 4.47,
         "rawStability": 8.97,
-        "rawDurability": 5.88
+        "rawDurability": 5.92
       },
       "pros": [
         "264g 무게 기반의 데일리·롱런 피로 누적 완화",
@@ -101,10 +101,10 @@
         "valueScore": 6,
         "rawCushioning": 4.95,
         "rawResponsiveness": 4.59,
-        "rawValueScore": 6.25,
+        "rawValueScore": 6.26,
         "rawLightness": 3.92,
         "rawStability": 5.28,
-        "rawDurability": 7.22
+        "rawDurability": 7.24
       },
       "pros": [
         "힐 37mm·전족부 29mm 스택의 안정적인 충격 보호",
@@ -167,10 +167,10 @@
         "valueScore": 8,
         "rawCushioning": 3.85,
         "rawResponsiveness": 6.44,
-        "rawValueScore": 7.87,
+        "rawValueScore": 7.89,
         "rawLightness": 4.65,
         "rawStability": 8.34,
-        "rawDurability": 5.28
+        "rawDurability": 5.32
       },
       "pros": [
         "261g 무게의 안정화치고 경쾌한 발걸음",
@@ -231,12 +231,12 @@
         },
         "weightScore": 6,
         "valueScore": 7,
-        "rawValueScore": 7.3,
+        "rawValueScore": 7.32,
         "rawLightness": 5.66,
         "rawCushioning": 5.42,
         "rawResponsiveness": 4.43,
         "rawStability": 3.23,
-        "rawDurability": 5.63
+        "rawDurability": 5.67
       },
       "pros": [
         "236g 경량 설계로 데일리 주행 피로 감소",
@@ -304,8 +304,8 @@
         "rawCushioning": 1.08,
         "rawResponsiveness": 9.08,
         "rawStability": 1.0,
-        "rawDurability": 3.06,
-        "rawValueScore": 4.36,
+        "rawDurability": 3.12,
+        "rawValueScore": 4.39,
         "rawLightness": 8.09
       },
       "pros": [
@@ -370,8 +370,8 @@
         "rawCushioning": 7.72,
         "rawResponsiveness": 8.19,
         "rawStability": 6.12,
-        "rawDurability": 5.09,
-        "rawValueScore": 7.6,
+        "rawDurability": 5.13,
+        "rawValueScore": 7.62,
         "rawLightness": 6.15
       },
       "pros": [
@@ -437,8 +437,8 @@
         "rawCushioning": 4.96,
         "rawResponsiveness": 6.24,
         "rawStability": 9.38,
-        "rawDurability": 7.21,
-        "rawValueScore": 9.41,
+        "rawDurability": 7.23,
+        "rawValueScore": 9.42,
         "rawLightness": 4.89
       },
       "pros": [
@@ -507,8 +507,8 @@
         "rawCushioning": 3.97,
         "rawResponsiveness": 9.21,
         "rawStability": 1.39,
-        "rawDurability": 3.74,
-        "rawValueScore": 4.33,
+        "rawDurability": 3.8,
+        "rawValueScore": 4.35,
         "rawLightness": 7.77
       },
       "pros": [
@@ -577,8 +577,8 @@
         "rawCushioning": 8.39,
         "rawResponsiveness": 8.68,
         "rawStability": 3.53,
-        "rawDurability": 4.25,
-        "rawValueScore": 3.45,
+        "rawDurability": 4.3,
+        "rawValueScore": 3.46,
         "rawLightness": 3.43
       },
       "pros": [
@@ -648,8 +648,8 @@
         "rawCushioning": 6.62,
         "rawResponsiveness": 10.1,
         "rawStability": 1.7,
-        "rawDurability": 2.39,
-        "rawValueScore": 3.31,
+        "rawDurability": 2.46,
+        "rawValueScore": 3.33,
         "rawLightness": 7.12
       },
       "pros": [
@@ -718,7 +718,7 @@
         "rawCushioning": 8.58,
         "rawResponsiveness": 8.25,
         "rawStability": 2.88,
-        "rawDurability": 1.0,
+        "rawDurability": 1.08,
         "rawValueScore": 1.0,
         "rawLightness": 9.64
       },

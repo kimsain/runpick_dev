@@ -37,8 +37,8 @@
         "rawCushioning": 7.35,
         "rawResponsiveness": 2.71,
         "rawStability": 6.81,
-        "rawDurability": 8.09,
-        "rawValueScore": 7.29,
+        "rawDurability": 8.1,
+        "rawValueScore": 7.3,
         "rawLightness": 4.08
       },
       "pros": [
@@ -107,7 +107,7 @@
         "rawCushioning": 8.29,
         "rawResponsiveness": 4.2,
         "rawStability": 6.0,
-        "rawDurability": 8.06,
+        "rawDurability": 8.07,
         "rawValueScore": 6.62,
         "rawLightness": 3.19
       },
@@ -175,7 +175,7 @@
         "rawCushioning": 6.1,
         "rawResponsiveness": 3.62,
         "rawStability": 9.62,
-        "rawDurability": 11.03,
+        "rawDurability": 11.01,
         "rawValueScore": 8.86,
         "rawLightness": 4.53
       },
@@ -242,8 +242,8 @@
         "rawCushioning": 7.86,
         "rawResponsiveness": 5.63,
         "rawStability": 4.47,
-        "rawDurability": 5.72,
-        "rawValueScore": 5.14,
+        "rawDurability": 5.76,
+        "rawValueScore": 5.15,
         "rawLightness": 4.53
       },
       "pros": [
@@ -310,10 +310,10 @@
         "valueScore": 3,
         "rawCushioning": 9.12,
         "rawResponsiveness": 8.11,
-        "rawValueScore": 3.5,
+        "rawValueScore": 3.51,
         "rawLightness": 7.2,
         "rawStability": 3.12,
-        "rawDurability": 4.02
+        "rawDurability": 4.07
       },
       "pros": [
         "198g 경량으로 레이스 후반 턴오버 유지",
@@ -378,8 +378,8 @@
         "rawCushioning": 6.93,
         "rawResponsiveness": 8.93,
         "rawStability": 1.83,
-        "rawDurability": 5.88,
-        "rawValueScore": 3.99,
+        "rawDurability": 5.92,
+        "rawValueScore": 4.0,
         "rawLightness": 6.72
       },
       "pros": [
