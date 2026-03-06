@@ -292,43 +292,43 @@
       "subcategoryId": "carbon-plate",
       "price": 339000,
       "priceFormatted": "₩339,000",
-      "description": "Cielo X1 3.0은 하프부터 풀마라톤까지 기록 단축을 노릴 때 잘 맞는 공격형 레이스화예요. 198g 경량에 힐 38mm/전족부 31mm 스택이라 쿠션이 풍부하고 반응성이 좋아 페이스를 끌어올리는 구간에서 전진감이 또렷하게 살아나요. 안정성이 낮아서 코너나 후반 피로 구간에서 흔들릴 수 있고 토박스가 좁아 발볼이 넓으면 답답할 수 있으며 가격 부담이 있는 편이라 입문용으로는 신중한 선택이 필요해요.",
-      "shortDescription": "하프~풀 기록추구 레이스용",
+      "description": "하프·풀 거리의 기록 단축을 노리는 러너에게 방향성을 살려주는 공격형 레이스화예요. 198g 경량과 힐 38mm/전족부 31mm 스택 덕분에 쿠션이 풍부해서 장거리에서도 착지가 편하고 반응성이 좋아 템포 전환이 매끄러워요. 다만 안정성이 낮아 코너링이나 후반 피로 구간에서 흔들림이 생길 수 있고, 마모가 빠른 편이라 아웃솔 교체 주기가 빨라요.",
+      "shortDescription": "하프·풀 기록형 레이스화",
       "imageUrl": "/shoes/cielo-x1-3-0.png",
       "specs": {
         "weight": 198,
         "drop": 7,
-        "cushioning": 9,
+        "cushioning": 10,
         "responsiveness": 8,
-        "stability": 3,
-        "durability": 4,
+        "stability": 2,
+        "durability": 2,
         "stackHeight": {
           "heel": 38,
           "forefoot": 31
         },
         "weightScore": 7,
         "valueScore": 3,
-        "rawCushioning": 9.12,
-        "rawResponsiveness": 8.11,
-        "rawValueScore": 3.51,
+        "rawCushioning": 10.0,
+        "rawResponsiveness": 7.75,
+        "rawValueScore": 2.89,
         "rawLightness": 7.2,
-        "rawStability": 3.12,
-        "rawDurability": 4.07
+        "rawStability": 2.21,
+        "rawDurability": 1.53
       },
       "pros": [
-        "198g 경량으로 레이스 후반 턴오버 유지",
-        "힐 38mm/전족부 31mm 스택의 풍부한 장거리 쿠션",
-        "반응성이 좋아 페이스 업 구간 전진 추진감 강화"
+        "198g 경량으로 장거리 턴오버 부담 완화",
+        "힐 38mm/전족부 31mm 스택의 충분한 충격 흡수",
+        "반응성이 좋아 레이스 템포 전환 선명감 강화"
       ],
       "cons": [
-        "좁은 토박스로 발볼 넓은 발에 압박감",
-        "고스택 대비 좁은 기반에서 오는 좌우 흔들림",
-        "빠른 아웃솔 마모"
+        "안정성이 낮아 측면 흔들림",
+        "마모가 빠른 편이라 아웃솔 수명 단축",
+        "토박스가 좁아 발볼 넓은 편 압박"
       ],
       "bestFor": [
-        "하프~풀마라톤에서 기록 단축을 노리는 러너",
-        "레이스 후반까지 높은 페이스를 유지하려는 러너",
-        "풍부한 쿠션의 경량 레이스화를 선호하는 러너"
+        "하프 마라톤 기록을 노리는 러너",
+        "풀 마라톤 페이스 업을 원하는 러너",
+        "가벼운 쿠션 레이스화를 선호하는 러너"
       ],
       "technologies": [
         "카본 플레이트",
@@ -345,6 +345,7 @@
       "officialUrl": "https://www.hoka.com/en/us/road-running/cielo-x1-3.0/1171927.html",
       "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/hoka-cielo-x-1-3-0",
         "rtings": "https://www.rtings.com/running-shoes/reviews/hoka/cielo-x1-3-0-carbon-fiber",
         "dor": "https://www.doctorsofrunning.com/2026/01/hoka-cielo-x1-30-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2026/01/hoka-cielo-x-1-30-review-all-good.html"

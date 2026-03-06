@@ -370,14 +370,14 @@
         "drop": 8,
         "cushioning": 9,
         "responsiveness": 7,
-        "stability": 6,
-        "durability": 6,
+        "stability": 3,
+        "durability": 5,
         "stackHeight": {
           "heel": 47,
           "forefoot": 39
         },
         "weightScore": 6,
-        "valueScore": 6,
+        "valueScore": 5,
         "rawCushioning": 6.78,
         "rawResponsiveness": 7.52,
         "rawStability": 3.29,
