@@ -262,15 +262,18 @@ def build_test_index(array):
 def extract_weight_g(array):
     """배열에서 oz/g 형식 문자열을 스캔하여 무게(g) 추출.
 
-    '8.6 oz / 245' → 245, '245 g' → 245 등의 패턴 처리.
+    '8.6 oz / 245' → 245, '8.7 oz (247g)' → 247 등의 패턴 처리.
+    단독 'NNNg' 패턴은 경쟁 신발 무게 오추출 위험이 있어 제외.
     """
     for elem in array:
         if not isinstance(elem, str):
             continue
-        # 'X oz / YYY' 패턴 (RunRepeat 표준 형식)
-        m = re.search(r"\d+\.?\d*\s*oz\s*/\s*(\d+)", elem)
+        # "8.6 oz / 245", "8.7 oz (247g)", "8.7 oz or 247g" 등
+        m = re.search(r"\d+\.?\d*\s*oz\s*(?:/|\(|or)\s*(\d+)\s*g?\s*\)?", elem)
         if m:
-            return int(m.group(1))
+            val = int(m.group(1))
+            if 50 < val < 600:
+                return val
     return None
 
 
@@ -304,6 +307,10 @@ def map_fields(test_index, array):
                 "units": info["units"],
                 "slug": info["slug"],
             }
+
+    # weight_g fallback: test_id=24가 lab_tests에 없어도 Nuxt 배열에서 추출 시도
+    if out["physical"].get("weight_g") is None:
+        out["physical"]["weight_g"] = extract_weight_g(array)
 
     return out
 
