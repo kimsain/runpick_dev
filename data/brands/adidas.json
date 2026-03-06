@@ -756,6 +756,66 @@
         "dor": "https://www.doctorsofrunning.com/2025/05/adidas-adizero-adios-pro-evo-2-review.html",
         "rtr": "https://www.roadtrailrun.com/2025/04/adidas-adizero-adios-pro-evo-2-details.html"
       }
+    },
+    {
+      "id": "hyperboost-edge",
+      "brandId": "adidas",
+      "name": "HYPERBOOST EDGE",
+      "nameKo": "하이퍼부스트 엣지",
+      "categoryId": "daily",
+      "subcategoryId": "all-rounder",
+      "price": 289000,
+      "priceFormatted": "₩289,000",
+      "description": "하이퍼부스트 엣지는 아디다스의 새로운 Hyperboost Pro 폼을 탑재한 고쿠션 슈퍼트레이너예요. 힐 45mm·전족부 38mm 스택으로 쿠션이 풍부하면서도 73% 에너지 리턴 덕분에 데일리 훈련부터 장거리 레이스까지 경쾌하게 쓸 수 있어요. 통기성이 낮아 더운 여름보다 서늘한 날씨에 맞고, 테이퍼드 토박스로 발볼이 넓은 러너에게는 압박감이 생길 수 있어요.",
+      "shortDescription": "고쿠션 데일리 장거리 올라운더",
+      "imageUrl": "/shoes/hyperboost-edge.png",
+      "specs": {
+        "weight": 247,
+        "drop": 7,
+        "cushioning": 10,
+        "responsiveness": 8,
+        "stability": 4,
+        "durability": 7,
+        "stackHeight": {
+          "heel": 45,
+          "forefoot": 38
+        },
+        "weightScore": 5,
+        "valueScore": 6,
+        "rawCushioning": 9.77,
+        "rawResponsiveness": 7.98,
+        "rawStability": 4.42,
+        "rawDurability": 7.08,
+        "rawLightness": 5.22,
+        "rawValueScore": 5.58
+      },
+      "pros": [
+        "힐 45mm·전족부 38mm 스택 + Hyperboost Pro의 풍부한 충격 흡수",
+        "73% 에너지 리턴으로 이 사이즈 대비 경쾌한 반발감",
+        "Lighttraxion 풀커버리지 아웃솔로 마모 내구성 우수"
+      ],
+      "cons": [
+        "통기성 2/5 — 더운 날씨·고강도 훈련 시 발열 주의",
+        "테이퍼드 토박스(71.4mm)로 발볼 넓은 러너에게 압박감"
+      ],
+      "bestFor": [
+        "쿠션과 반발력 모두 원하는 데일리·장거리 러너",
+        "아웃솔 내구성을 중시하는 고회전 훈련 러너",
+        "울트라부스트 라인업에서 한 단계 업그레이드를 원하는 러너"
+      ],
+      "technologies": [
+        "Hyperboost Pro",
+        "Lighttraxion",
+        "Primeweave"
+      ],
+      "releaseYear": 2026,
+      "colorways": [],
+      "slug": "hyperboost-edge",
+      "officialUrl": "https://runrepeat.com/adidas-hyperboost-edge",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-hyperboost-edge"
+      }
     }
   ]
 }
