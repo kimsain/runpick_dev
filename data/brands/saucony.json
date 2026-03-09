@@ -493,43 +493,43 @@
       "subcategoryId": "light-plate",
       "price": 189000,
       "priceFormatted": "₩189,000",
-      "description": "쿠션이 풍부하고 가성비가 뛰어나서 데일리 러닝과 페이스 훈련을 한 켤레로 묶기 좋아요. 240g 무게와 힐 40mm/전족부 32mm 스택 조합이라 이지런에서는 충격을 부드럽게 줄이고 템포런에서도 리듬을 이어가기 쉬워요. 다만 스택이 높고 플랫폼이 넓은 편이라 발볼이 좁으면 갑피 핏이 헐겁게 느껴질 수 있어요.",
-      "shortDescription": "이지런·템포런 겸용 올라운더",
+      "description": "쿠션이 풍부하고 반응성이 좋아서 합리적인 가격에 데일리 러닝부터 템포런까지 폭넓게 쓰기 좋은 올라운더예요. 240g 무게에 힐 40mm·전족부 32mm 스택, 8mm 드롭 조합이라 이지런에서는 충격을 부드럽게 덜어주고 템포런에서는 리듬을 안정감 있게 이어가기 쉬워요. 다만 스택이 높은 편이라 지면 감각은 둔하게 느껴질 수 있고, 발볼이 좁으면 여유 있는 핏이 헐겁게 느껴질 수 있어요.",
+      "shortDescription": "이지런·템포런 겸용 경량 트레이너",
       "imageUrl": "/shoes/endorphin-azura.png",
       "specs": {
         "weight": 240,
         "drop": 8,
-        "cushioning": 8,
-        "responsiveness": 6,
-        "stability": 3,
-        "durability": 5,
+        "cushioning": 7,
+        "responsiveness": 8,
+        "stability": 8,
+        "durability": 8,
         "stackHeight": {
           "heel": 40,
           "forefoot": 32
         },
         "weightScore": 6,
-        "valueScore": 7,
-        "rawCushioning": 8.02,
-        "rawResponsiveness": 6.18,
-        "rawValueScore": 6.67,
+        "valueScore": 10,
+        "rawCushioning": 6.85,
+        "rawResponsiveness": 7.96,
+        "rawValueScore": 9.96,
         "rawLightness": 5.5,
-        "rawStability": 3.29,
-        "rawDurability": 4.56
+        "rawStability": 8.4,
+        "rawDurability": 7.6
       },
       "pros": [
-        "240g 경량 대비 풍부한 쿠션으로 템포 전환 부담 완화",
-        "힐 40mm·전족부 32mm 스택 기반 장거리 충격 분산",
-        "8mm 드롭으로 이지런부터 페이스런까지 자연스러운 롤링",
-        "합리적인 가격에 데일리·템포 겸용 운용성"
+        "240g 경량 기반의 데일리·템포 전환 부담 완화",
+        "힐 40mm·전족부 32mm 스택의 장거리 충격 분산",
+        "8mm 드롭과 템포 지오메트리의 자연스러운 롤링 전개",
+        "합리적인 가격의 데일리·템포 겸용 운용성"
       ],
       "cons": [
-        "높은 스택 구조에서 지면 감각 전달 둔화",
-        "넓은 플랫폼과 여유 있는 갑피로 발볼 좁은 발의 핏 저하"
+        "높은 스택 특유의 둔한 지면 감각",
+        "발볼 좁은 발에 남기 쉬운 여유 핏"
       ],
       "bestFor": [
-        "이지런부터 하프마라톤 페이스 훈련까지 한 켤레로 커버하고 싶은 러너",
-        "쿠션감은 충분히 원하지만 과한 무게감은 피하고 싶은 러너",
-        "데일리런과 템포런을 합리적인 가격에 병행하고 싶은 러너"
+        "이지런과 템포런을 한 켤레로 소화하고 싶은 러너",
+        "풍부한 쿠션과 경쾌한 반발감을 함께 원하는 러너",
+        "합리적인 가격으로 슈퍼트레이너를 찾는 러너"
       ],
       "technologies": [
         "플레이트 미드솔",
@@ -544,8 +544,9 @@
       ],
       "slug": "endorphin-azura",
       "officialUrl": "https://www.saucony.com/en/endorphin-azura/60807M.html",
-      "confidence": "high",
+      "confidence": "very-high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-azura",
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-azura-running-shoe",
         "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-azura-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2025/11/saucony-azura-multi-tester-review-light.html",

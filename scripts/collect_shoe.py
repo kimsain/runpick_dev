@@ -89,6 +89,23 @@ def run_subprocess(cmd: list) -> tuple:
         return None, round(time.time() - t0, 1), str(e)
 
 
+def run_subprocess_stdin(cmd: list, input_text: str, timeout: int = 90) -> tuple:
+    """stdin으로 프롬프트를 전달해 argv 길이/쉘 파싱 이슈를 피한다."""
+    t0 = time.time()
+    try:
+        result = subprocess.run(
+            cmd, input=input_text, capture_output=True, text=True, timeout=timeout
+        )
+        elapsed = round(time.time() - t0, 1)
+        if result.returncode != 0:
+            return None, elapsed, result.stderr.strip() or "non-zero exit"
+        return result.stdout.strip(), elapsed, None
+    except subprocess.TimeoutExpired:
+        return None, round(time.time() - t0, 1), "timeout"
+    except Exception as e:
+        return None, round(time.time() - t0, 1), str(e)
+
+
 
 def _nn(d: dict) -> dict:
     """None 값인 키 제거. scale 같은 문자열 값은 보존."""
@@ -341,7 +358,7 @@ def collect_review(shoe_id: str, source_name: str, priority: int, url: str) -> t
 
     # Codex로 keyFindings 생성
     prompt = CODEX_PROMPT_TEMPLATE.format(text=raw_text[:8000])
-    codex_out, codex_elapsed, _ = run_subprocess(["codex", "exec", prompt])
+    codex_out, codex_elapsed, _ = run_subprocess_stdin(["codex", "exec", "-"], prompt)
     attempt["elapsedSec"] = round(elapsed + codex_elapsed, 1)
 
     key_findings = []
@@ -424,13 +441,13 @@ def build_research_json(shoe: dict, brand_id: str, shoe_id: str,
     quant_count = sum(1 for s in sources if s["type"] == "quantitative")
     qual_count  = sum(1 for s in sources if s["type"] == "qualitative")
     if quant_count >= 2:
-        confidence = "high"
+        confidence = "very-high"
     elif quant_count == 1:
+        confidence = "high"
+    elif qual_count >= 2:
         confidence = "medium"
-    elif qual_count >= 1:
-        confidence = "low"
     else:
-        confidence = "none"
+        confidence = "low"
 
     current_scores = {
         "cushioning":    specs.get("cushioning"),

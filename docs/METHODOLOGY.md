@@ -274,9 +274,9 @@ valueScore = clamp(round((ratio − VALUE_RATIO_MIN) / (VALUE_RATIO_MAX − VALU
 | 등급 | 영문 | 기준 |
 |------|------|------|
 | 최고 신뢰 | `very-high` | RunRepeat found AND RTINGS found |
-| 검증됨 | `high` | (RunRepeat OR RTINGS) found AND 정성 리뷰 1개 이상 found/partial |
+| 검증됨 | `high` | RunRepeat OR RTINGS found |
 | 참고용 | `medium` | RunRepeat/RTINGS 모두 없음 AND 정성 리뷰 2개 이상 found/partial |
-| 평가중 | `low` | 그 외 (정성 리뷰 1개 이하) |
+| 평가중 | `low` | 그 외 |
 
 ### 데이터 타입
 
@@ -289,7 +289,7 @@ confidence?: 'very-high' | 'high' | 'medium' | 'low'
 
 ### add_confidence.py
 
-`research/2026-02-18/checkpoint.json`의 confidence 값을 각 브랜드 JSON 파일(`data/brands/*.json`)에 주입합니다.
+레거시 스크립트입니다. `research/2026-02-18/checkpoint.json` 고정 경로를 사용하므로 현재 운영 워크플로우의 기준 스크립트로 사용하지 않습니다.
 
 ```bash
 cd /path/to/runpick
@@ -300,6 +300,10 @@ python3 scripts/add_confidence.py
 1. `checkpoint.json`의 `completed` 맵에서 `"brandId/slug"` → `confidence` 매핑을 읽음
 2. `data/brands/*.json`의 각 신발 객체에 `confidence` 필드를 추가/업데이트
 3. 매핑에 없는 신발은 기본값 `"low"` 적용
+
+현재 운영 기준:
+- production `confidence`는 실제 `sources` 조합과 최신 수집 결과에 맞게 함께 갱신해야 합니다.
+- 새 RunRepeat/RTINGS 소스가 추가될 때는 해당 신발의 `confidence`도 같이 검토하세요.
 
 ## 디렉토리 구조 / Directory Structure
 

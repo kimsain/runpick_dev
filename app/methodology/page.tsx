@@ -53,7 +53,7 @@ const CONFIDENCE_LEVELS = [
     label: 'RELIABLE',
     badge: CONF_COLORS['high'],
     description:
-      'RunRepeat 또는 RTINGS 실측 데이터 + 전문가 리뷰 1개 이상이 확인된 경우.',
+      'RunRepeat 또는 RTINGS 중 하나의 실측 데이터가 확인된 경우. 전문가 리뷰 수와 무관하게 정량 데이터 1종을 확보한 상태입니다.',
   },
   {
     label: 'LIMITED',
@@ -65,7 +65,7 @@ const CONFIDENCE_LEVELS = [
     label: 'PENDING',
     badge: CONF_COLORS['low'],
     description:
-      '전문가 리뷰 1개 이하 또는 제한적인 데이터만 존재하는 경우.',
+      '정량 데이터가 없고 전문가 리뷰도 1개 이하이거나, 전체 데이터가 매우 제한적인 경우.',
   },
 ]
 

@@ -607,7 +607,7 @@ SOURCES = {
             "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-trainer-review/",
         },
         "endorphin-azura": {
-            "runrepeat": None,
+            "runrepeat": "https://runrepeat.com/saucony-endorphin-azura",
             "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-azura-running-shoe",
             "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-azura-review-2026.html",
             "rtr": "https://www.roadtrailrun.com/2025/11/saucony-azura-multi-tester-review-light.html",
