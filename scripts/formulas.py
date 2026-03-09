@@ -8,6 +8,8 @@ I/O 없음. 다른 스크립트에서 import하여 사용.
 import math
 import re
 
+SCORE_VERSION = "durability-stability-v3"
+
 # ─── 상수 ───────────────────────────────────────────────────────────
 
 LIGHT_G = 129          # 최경량 기준 (g) — metaspeed-ray
@@ -16,7 +18,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 0.0001635516  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
+VALUE_RATIO_MAX = 0.0001638934  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -46,8 +48,8 @@ DUR_HEEL_PAD_WEIGHT  = 0.10
 # 내구성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawDurability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-DUR_RAW_MIN = 3.4266875000  # bottom-5 경계 (--calibrate 자동 갱신)
-DUR_RAW_MAX = 8.9943125000  # top-5 경계 (--calibrate 자동 갱신)
+DUR_RAW_MIN = 3.6574798136  # bottom-5 경계 (--calibrate 자동 갱신)
+DUR_RAW_MAX = 9.3334864638  # top-5 경계 (--calibrate 자동 갱신)
 
 # 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
 # ratchet rule: 새 신발이 범위 벗어날 때만 변경
@@ -68,20 +70,37 @@ STAB_AC_HI    = 42    # AC ≥ 42: firm EVA, 소프트니스 패널티 없음
 STAB_AC_SCALE = 15    # 정규화 (soft = max(0, (HI - ac) / SCALE))
 STAB_AC_MEDIAN = 34.0 # AC 미가용 시 중앙값 대입 (63개 신발 median)
 
-# 안정성 midsoleWidth 앵커 (2026-02-25 Codex+Gemini 합의, ratchet rule)
-# 86개 신발 실측 기준 — 새 신발이 범위 벗어날 때만 확장
-STAB_MW_HEEL_LO  = 71    # heel midsoleWidth 최솟값 mm (streakfly-2 기준)
-STAB_MW_HEEL_HI  = 105   # heel midsoleWidth 최댓값 mm (guide-18 기준)
-STAB_MW_FORE_LO  = 101   # forefoot midsoleWidth 최솟값 mm (metaspeed-ray 기준)
-STAB_MW_FORE_HI  = 124   # forefoot midsoleWidth 최댓값 mm (hurricane-25 기준)
-STAB_SWAY_SCALE  = 0.5   # width 데이터 있을 때 sway 패널티 축소 계수
-# SCORE_VERSION = "2026-02-25-durability-stability-v2"
+# 안정성 플랫폼 앵커 (V3 rollout 기준 p10 / p90 고정)
+STAB_MW_HEEL_LO  = 76.70   # RunRepeat midsole heel width p10
+STAB_MW_HEEL_HI  = 99.62   # RunRepeat midsole heel width p90
+STAB_MW_FORE_LO  = 108.98  # RunRepeat midsole forefoot width p10
+STAB_MW_FORE_HI  = 122.02  # RunRepeat midsole forefoot width p90
+
+STAB_RT_OUTSOLE_HEEL_LO = 75.50   # RTINGS outsole heel width p10
+STAB_RT_OUTSOLE_HEEL_HI = 98.50   # RTINGS outsole heel width p90
+STAB_RT_OUTSOLE_FORE_LO = 106.50  # RTINGS outsole forefoot width p10
+STAB_RT_OUTSOLE_FORE_HI = 119.50  # RTINGS outsole forefoot width p90
+
+STAB_RT_RATIO_HEEL_LO = 1.90    # RTINGS heel width-to-stack ratio p10
+STAB_RT_RATIO_HEEL_HI = 2.575   # RTINGS heel width-to-stack ratio p90
+STAB_RT_RATIO_FORE_LO = 3.045   # RTINGS forefoot width-to-stack ratio p10
+STAB_RT_RATIO_FORE_HI = 4.36    # RTINGS forefoot width-to-stack ratio p90
+
+RTINGS_FIRM_HEEL_1100_LO = 87.85   # p10
+RTINGS_FIRM_HEEL_1100_HI = 144.15  # p90
+RTINGS_FIRM_FORE_1300_LO = 158.95  # p10
+RTINGS_FIRM_FORE_1300_HI = 290.45  # p90
+
+MIDSOLE_RETENTION_MIN = 0.90   # RTINGS long-run retention ratio 하한
+MIDSOLE_RETENTION_MAX = 0.98   # RTINGS long-run retention ratio 상한
+MIDSOLE_LONGRUN_CORE_ENABLED = False  # 최신 merged research 커버리지 52.2% → modifier-only
+MIDSOLE_LONGRUN_MODIFIER_CAP = 1.00
 
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 3.1866891215  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.2367078479  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 2.4418987303  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.3481369037  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
 
@@ -164,6 +183,26 @@ DURABILITY_NEG_RE = re.compile(
 
 def clamp(val, lo, hi):
     return max(lo, min(hi, val))
+
+
+def normalize_1_10(val, lo, hi):
+    """선형 1-10 정규화. 경계 밖은 clamp."""
+    if val is None:
+        return None
+    if hi <= lo:
+        return 5.5
+    return clamp(1 + 9 * (val - lo) / (hi - lo), 1, 10)
+
+
+def weighted_mean_available(pairs):
+    """[(value, weight)]에서 None 제외 후 가중평균."""
+    valid = [(float(v), float(w)) for v, w in pairs if v is not None and w > 0]
+    if not valid:
+        return None
+    total_weight = sum(w for _, w in valid)
+    if total_weight <= 0:
+        return None
+    return sum(v * w for v, w in valid) / total_weight
 
 
 def keyword_delta(text, pos_re, neg_re):
@@ -367,6 +406,209 @@ def responsiveness_from_rtings(heel_er, forefoot_er, subcategory_id):
     if penalty != 0:
         resp = clamp(resp + penalty, 1, 10)
     return resp
+
+
+# ─── V3: Stability / Durability components ────────────────────────────
+
+
+def stability_structure_component(tr, hcs):
+    """RunRepeat TR/HCS 구조 점수 (1-10 intermediate)."""
+    tr_norm = normalize_1_10(tr, STAB_TR_MIN, STAB_TR_MAX)
+    hcs_norm = normalize_1_10(hcs, STAB_HCS_MIN, STAB_HCS_MAX)
+    if tr_norm is None or hcs_norm is None:
+        return None
+    return round(0.55 * tr_norm + 0.45 * hcs_norm, 2)
+
+
+def stability_rr_platform_component(mw_heel, mw_fore):
+    """RunRepeat midsole width 기반 플랫폼 점수."""
+    heel_norm = normalize_1_10(mw_heel, STAB_MW_HEEL_LO, STAB_MW_HEEL_HI)
+    fore_norm = normalize_1_10(mw_fore, STAB_MW_FORE_LO, STAB_MW_FORE_HI)
+    if heel_norm is None or fore_norm is None:
+        return None
+    return round(0.4 * heel_norm + 0.6 * fore_norm, 2)
+
+
+def stability_rtings_outsole_platform_component(width_heel, width_fore):
+    """RTINGS outsole width 기반 플랫폼 점수."""
+    heel_norm = normalize_1_10(width_heel, STAB_RT_OUTSOLE_HEEL_LO, STAB_RT_OUTSOLE_HEEL_HI)
+    fore_norm = normalize_1_10(width_fore, STAB_RT_OUTSOLE_FORE_LO, STAB_RT_OUTSOLE_FORE_HI)
+    if heel_norm is None or fore_norm is None:
+        return None
+    return round(0.4 * heel_norm + 0.6 * fore_norm, 2)
+
+
+def stability_rtings_ratio_platform_component(ratio_heel, ratio_fore):
+    """RTINGS width-to-stack ratio 기반 플랫폼 점수."""
+    heel_norm = normalize_1_10(ratio_heel, STAB_RT_RATIO_HEEL_LO, STAB_RT_RATIO_HEEL_HI)
+    fore_norm = normalize_1_10(ratio_fore, STAB_RT_RATIO_FORE_LO, STAB_RT_RATIO_FORE_HI)
+    if heel_norm is None or fore_norm is None:
+        return None
+    return round(0.4 * heel_norm + 0.6 * fore_norm, 2)
+
+
+def stability_platform_component(rr_platform=None, rt_outsole_platform=None, rt_ratio_platform=None):
+    """가용 플랫폼 신호 결합: RR midsole 45%, RT outsole 35%, RT ratio 20%."""
+    score = weighted_mean_available([
+        (rr_platform, 0.45),
+        (rt_outsole_platform, 0.35),
+        (rt_ratio_platform, 0.20),
+    ])
+    return round(score, 2) if score is not None else None
+
+
+def stability_softness_from_ac(heel_ac=None, secondary_foam_ac=None, subcategory=None):
+    """RunRepeat AC 또는 subcategory prior → softness scalar(0~1.5)."""
+    ac_vals = [v for v in [heel_ac, secondary_foam_ac] if v is not None]
+    ac = max(ac_vals) if ac_vals else SUBCAT_AC_PRIOR.get(subcategory, STAB_AC_MEDIAN)
+    soft = min(1.5, max(0.0, (STAB_AC_HI - ac) / STAB_AC_SCALE))
+    return round(soft, 2), round(ac, 2)
+
+
+def stability_softness_from_rtings_firmness(heel_firmness=None, fore_firmness=None):
+    """RTINGS firmness를 softness scalar(0~1.5)로 변환."""
+    heel_norm = normalize_1_10(heel_firmness, RTINGS_FIRM_HEEL_1100_LO, RTINGS_FIRM_HEEL_1100_HI)
+    fore_norm = normalize_1_10(fore_firmness, RTINGS_FIRM_FORE_1300_LO, RTINGS_FIRM_FORE_1300_HI)
+    firm_norm = weighted_mean_available([(heel_norm, 0.4), (fore_norm, 0.6)])
+    if firm_norm is None:
+        return None
+    soft = 1.5 * (10 - firm_norm) / 9
+    return round(clamp(soft, 0.0, 1.5), 2)
+
+
+def stability_sway_penalty(stack_heel=None, stack_fore=None, softness_scalar=None):
+    """tanh 기반 sway 패널티. negative 값은 저스택 보너스 역할."""
+    if stack_heel is None or softness_scalar is None:
+        return 0.0
+    u_h = (stack_heel - STAB_STACK_HEEL_MID) / STAB_STACK_SCALE
+    u_f = ((stack_fore - STAB_STACK_FORE_MID) / STAB_STACK_SCALE
+           if stack_fore is not None else u_h)
+    stk_h = math.tanh(STAB_TANH_GAIN * u_h)
+    stk_f = math.tanh(STAB_TANH_GAIN * u_f)
+    stk_raw = 0.7 * stk_h + 0.3 * stk_f
+    stk = max(-0.5, min(1.0, stk_raw))
+    sway = 0.4 * softness_scalar + 1.0 * stk + 0.8 * (softness_scalar * stk)
+    return round(sway, 2)
+
+
+def stability_qualitative_modifier(lockdown=0.0, guidance_sidewall=0.0, wide_base=0.0,
+                                   heel_slip=0.0, instability=0.0):
+    raw = (
+        0.30 * lockdown
+        + 0.35 * guidance_sidewall
+        + 0.20 * wide_base
+        - 0.45 * heel_slip
+        - 0.60 * instability
+    )
+    return round(clamp(raw, -1.25, 1.25), 2)
+
+
+def stability_intermediate_v3(structure_score=None, platform_score=None, subcategory=None,
+                              sway_penalty=0.0, qual_modifier=0.0):
+    core = weighted_mean_available([
+        (structure_score, 0.55),
+        (platform_score, 0.45),
+    ])
+    base = 5.5 if core is None else core
+    raw = base + SUBCAT_STAB_DELTA.get(subcategory, 0.0) + qual_modifier
+    if core is not None:
+        raw -= sway_penalty
+    return round(raw, 2)
+
+
+def stability_from_intermediate_v3(intermediate):
+    rescaled = 1 + 9 * (intermediate - STAB_RAW_MIN) / (STAB_RAW_MAX - STAB_RAW_MIN)
+    return clamp(round(rescaled), 1, 10)
+
+
+def raw_stability_from_intermediate_v3(intermediate):
+    rescaled = 1 + 9 * (intermediate - STAB_RAW_MIN) / (STAB_RAW_MAX - STAB_RAW_MIN)
+    return round(max(1.0, rescaled), 2)
+
+
+def durability_outsole_component(thickness_mm, abrasion_mm):
+    """Outsole thickness/abrasion log 점수 (1-10 intermediate)."""
+    ratio = thickness_mm / abrasion_mm
+    return round(math.log(ratio + 1) / math.log(DUR_LOG_BASE) * 9 + 1, 2)
+
+
+def durability_outsole_from_abrasion_only(abrasion_mm):
+    capped = min(abrasion_mm, 10.0)
+    return round(clamp((10.0 - capped) / 10.0 * 9 + 1, 1, 10), 2)
+
+
+def durability_upper_component(toebox_dur=None, heel_pad_dur=None):
+    """Upper wear 점수: toebox 60%, heel padding 40%."""
+    tb_norm = normalize_1_10(toebox_dur, 1, 5)
+    hp_norm = normalize_1_10(heel_pad_dur, 1, 5)
+    score = weighted_mean_available([
+        (tb_norm, 0.60),
+        (hp_norm, 0.40),
+    ])
+    return round(score, 2) if score is not None else None
+
+
+def durability_midsole_longevity_component(retention_ratio):
+    """RTINGS long-run retention ratio → midsole longevity 점수."""
+    score = normalize_1_10(retention_ratio, MIDSOLE_RETENTION_MIN, MIDSOLE_RETENTION_MAX)
+    return round(score, 2) if score is not None else None
+
+
+def durability_midsole_longevity_modifier(retention_ratio):
+    """Coverage<60 rollout: midsole longevity는 core 대신 bounded raw modifier로 사용."""
+    score = durability_midsole_longevity_component(retention_ratio)
+    if score is None:
+        return 0.0
+    raw = ((score - 5.5) / 4.5) * MIDSOLE_LONGRUN_MODIFIER_CAP
+    return round(clamp(raw, -MIDSOLE_LONGRUN_MODIFIER_CAP, MIDSOLE_LONGRUN_MODIFIER_CAP), 2)
+
+
+def durability_compound_modifier(outsole_hardness_hc=None):
+    """Outsole hardness는 modifier만 담당."""
+    if outsole_hardness_hc is None:
+        return 0.0
+    if outsole_hardness_hc < 78:
+        raw = -0.5 * (78 - outsole_hardness_hc) / (78 - 55)
+    else:
+        raw = 0.5 * (outsole_hardness_hc - 78) / (88 - 78)
+    return round(clamp(raw, -0.75, 0.75), 2)
+
+
+def durability_qualitative_modifier(outsole_coverage=0.0, upper_reinforcement=0.0, durable=0.0,
+                                    early_wear=0.0, exposed_foam=0.0, midsole_breakdown=0.0):
+    raw = (
+        0.30 * outsole_coverage
+        + 0.25 * upper_reinforcement
+        + 0.15 * durable
+        - 0.45 * early_wear
+        - 0.35 * exposed_foam
+        - 0.35 * midsole_breakdown
+    )
+    return round(clamp(raw, -1.5, 1.5), 2)
+
+
+def durability_intermediate_v3(outsole_score=None, upper_score=None, midsole_longevity_score=None,
+                               midsole_longevity_modifier=0.0, compound_modifier=0.0, qual_modifier=0.0):
+    core_inputs = [
+        (outsole_score, 0.60),
+        (upper_score, 0.20),
+    ]
+    if MIDSOLE_LONGRUN_CORE_ENABLED:
+        core_inputs.append((midsole_longevity_score, 0.20))
+    core = weighted_mean_available(core_inputs)
+    if core is None:
+        return round(5.5 + midsole_longevity_modifier + qual_modifier, 2)
+    return round(core + midsole_longevity_modifier + compound_modifier + qual_modifier, 2)
+
+
+def durability_from_intermediate_v3(intermediate):
+    rescaled = 1 + 9 * (intermediate - DUR_RAW_MIN) / (DUR_RAW_MAX - DUR_RAW_MIN)
+    return clamp(round(rescaled), 1, 10)
+
+
+def raw_durability_from_intermediate_v3(intermediate):
+    rescaled = 1 + 9 * (intermediate - DUR_RAW_MIN) / (DUR_RAW_MAX - DUR_RAW_MIN)
+    return round(max(1.0, rescaled), 2)
 
 
 # ─── Raw 정밀 점수 ──────────────────────────────────────────────────

@@ -27,7 +27,7 @@
         "cushioning": 7,
         "responsiveness": 3,
         "stability": 7,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 38,
           "forefoot": 28
@@ -36,10 +36,78 @@
         "valueScore": 8,
         "rawCushioning": 6.56,
         "rawResponsiveness": 2.59,
-        "rawStability": 7.19,
-        "rawDurability": 6.7,
-        "rawValueScore": 8.07,
-        "rawLightness": 4.77
+        "rawStability": 6.78,
+        "rawDurability": 6.14,
+        "rawValueScore": 7.64,
+        "rawLightness": 4.77,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 7.34,
+          "platformScore": 5.42,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 5.19,
+            "rtingsOutsoleScore": 4.67,
+            "rtingsWidthToStackScore": 7.24
+          },
+          "coreScore": 6.48,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": -0.2,
+          "qualitativeModifier": 0.32,
+          "intermediateRaw": 7.0,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 37.5,
+            "forefoot": 29.2
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.39,
+            "proxyAc": 36.1,
+            "heelAc": 36.1,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "lockdown": 0.6667,
+              "guidance_sidewall": 0.3333,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 6.93,
+          "upperScore": 7.3,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 7.02,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": -0.12,
+          "intermediateRaw": 6.9,
+          "inputs": {
+            "abrasionMm": 1.0,
+            "outsoleThicknessMm": 3.0,
+            "toeboxDurability": 3,
+            "heelPaddingDurability": 5,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.3333,
+              "exposed_foam": 0.3333,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "258g 무게로 주간 러닝 피로 누적 완화",
@@ -95,8 +163,8 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 1,
-        "stability": 8,
-        "durability": 6,
+        "stability": 7,
+        "durability": 5,
         "stackHeight": {
           "heel": 44,
           "forefoot": 38
@@ -105,10 +173,78 @@
         "valueScore": 7,
         "rawCushioning": 9.14,
         "rawResponsiveness": 1,
-        "rawStability": 8.1,
-        "rawDurability": 5.62,
-        "rawValueScore": 7.35,
-        "rawLightness": 3.72
+        "rawStability": 7.07,
+        "rawDurability": 5.26,
+        "rawValueScore": 6.81,
+        "rawLightness": 3.72,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 10.0,
+          "platformScore": 7.97,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 9.16,
+            "rtingsOutsoleScore": 9.3,
+            "rtingsWidthToStackScore": 2.97
+          },
+          "coreScore": 9.09,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": 1.56,
+          "qualitativeModifier": 0.18,
+          "intermediateRaw": 7.21,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 44.3,
+            "forefoot": 38.1
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 0.93,
+            "proxyAc": null,
+            "heelFirmness1100": 99.3,
+            "forefootFirmness1300": 224.2
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "lockdown": 0.6667,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.6667,
+              "heel_slip": 0.3333,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 5.33,
+          "upperScore": 8.65,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 6.16,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.18,
+          "intermediateRaw": 6.34,
+          "inputs": {
+            "abrasionMm": 1.14,
+            "outsoleThicknessMm": 2.0,
+            "toeboxDurability": 4,
+            "heelPaddingDurability": 5,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.3333,
+              "durable": 0.6667,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "힐 44mm·전족부 38mm 고스택 기반의 부드러운 충격 분산",
@@ -163,7 +299,7 @@
         "drop": 8,
         "cushioning": 10,
         "responsiveness": 4,
-        "stability": 2,
+        "stability": 1,
         "durability": 10,
         "stackHeight": {
           "heel": 45,
@@ -173,10 +309,78 @@
         "valueScore": 7,
         "rawCushioning": 9.98,
         "rawResponsiveness": 4.12,
-        "rawStability": 1.62,
-        "rawDurability": 10.18,
-        "rawValueScore": 7.13,
-        "rawLightness": 4.41
+        "rawStability": 1.38,
+        "rawDurability": 11.04,
+        "rawValueScore": 7.03,
+        "rawLightness": 4.41,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 4.3,
+          "platformScore": 6.33,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 7.07,
+            "rtingsOutsoleScore": 8.41,
+            "rtingsWidthToStackScore": 1.0
+          },
+          "coreScore": 5.21,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": 2.11,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 3.1,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 46,
+            "forefoot": 37.5
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 1.36,
+            "proxyAc": 21.6,
+            "heelAc": 21.6,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 1,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 9.04,
+          "upperScore": 9.1,
+          "midsoleLongevityScore": 9.05,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.79,
+          "coreScore": 9.05,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.15,
+          "intermediateRaw": 9.99,
+          "inputs": {
+            "abrasionMm": 0.63,
+            "outsoleThicknessMm": 3.5,
+            "toeboxDurability": 5,
+            "heelPaddingDurability": 4,
+            "midsoleRetentionRatio": 0.9716,
+            "outsoleHardnessHc": 78
+          },
+          "qualitativeSignals": {
+            "sourceCount": 1,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "힐 45mm/전족부 37mm 스택의 부드러운 충격 흡수",
@@ -233,7 +437,7 @@
         "drop": 6,
         "cushioning": 9,
         "responsiveness": 7,
-        "stability": 2,
+        "stability": 1,
         "durability": 8,
         "stackHeight": {
           "heel": 40,
@@ -243,10 +447,78 @@
         "valueScore": 9,
         "rawCushioning": 8.62,
         "rawResponsiveness": 6.85,
-        "rawStability": 1.56,
-        "rawDurability": 7.59,
-        "rawValueScore": 8.73,
-        "rawLightness": 5.5
+        "rawStability": 1.45,
+        "rawDurability": 7.53,
+        "rawValueScore": 8.64,
+        "rawLightness": 5.5,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 2.65,
+          "platformScore": 5.06,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 5.7,
+            "rtingsOutsoleScore": 5.45,
+            "rtingsWidthToStackScore": 2.92
+          },
+          "coreScore": 3.73,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": 0.66,
+          "qualitativeModifier": 0.08,
+          "intermediateRaw": 3.15,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 41,
+            "forefoot": 34
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.58,
+            "proxyAc": 33.3,
+            "heelAc": 33.3,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "lockdown": 1.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.6667,
+              "heel_slip": 0.3333,
+              "instability": 0.3333
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 6.76,
+          "upperScore": 9.1,
+          "midsoleLongevityScore": 7.82,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.52,
+          "coreScore": 7.34,
+          "compoundModifier": -0.34,
+          "qualitativeModifier": 0.25,
+          "intermediateRaw": 7.78,
+          "inputs": {
+            "abrasionMm": 0.95,
+            "outsoleThicknessMm": 2.7,
+            "toeboxDurability": 5,
+            "heelPaddingDurability": 4,
+            "midsoleRetentionRatio": 0.9606,
+            "outsoleHardnessHc": 62.5
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "outsole_coverage": 0.3333,
+              "upper_reinforcement": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "240g 무게로 장거리 후반 다리 부담 완화",
@@ -312,12 +584,80 @@
         "durability": 2,
         "rawCushioning": 8.01,
         "rawResponsiveness": 1.03,
-        "rawStability": 3.69,
-        "rawDurability": 1.76,
+        "rawStability": 3.89,
+        "rawDurability": 1.7,
         "valueScore": 5,
-        "rawValueScore": 4.48,
+        "rawValueScore": 4.53,
         "weightScore": 6,
-        "rawLightness": 5.5
+        "rawLightness": 5.5,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 4.68,
+          "platformScore": 6.53,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 6.53,
+            "rtingsOutsoleScore": null,
+            "rtingsWidthToStackScore": null
+          },
+          "coreScore": 5.51,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": 0.6,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 4.91,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 39.9,
+            "forefoot": 34.9
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.66,
+            "proxyAc": 32.1,
+            "heelAc": 32.1,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 5.13,
+          "upperScore": 1.0,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 4.1,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 4.1,
+          "inputs": {
+            "abrasionMm": 0.86,
+            "outsoleThicknessMm": 1.4,
+            "toeboxDurability": 1,
+            "heelPaddingDurability": 1,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "sources": {
         "runrepeat": "https://runrepeat.com/mizuno-neo-zen-2"
@@ -364,7 +704,7 @@
         "drop": 3,
         "cushioning": 9,
         "responsiveness": 6,
-        "stability": 6,
+        "stability": 4,
         "durability": 4,
         "stackHeight": {
           "heel": 37.5,
@@ -374,10 +714,78 @@
         "valueScore": 7,
         "rawCushioning": 8.74,
         "rawResponsiveness": 6.06,
-        "rawStability": 5.76,
-        "rawDurability": 4.0,
-        "rawValueScore": 7.15,
-        "rawLightness": 5.34
+        "rawStability": 4.3,
+        "rawDurability": 3.54,
+        "rawValueScore": 6.45,
+        "rawLightness": 5.34,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 6.33,
+          "platformScore": 5.94,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 6.41,
+            "rtingsOutsoleScore": 6.43,
+            "rtingsWidthToStackScore": 4.02
+          },
+          "coreScore": 6.15,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": 0.74,
+          "qualitativeModifier": -0.2,
+          "intermediateRaw": 5.21,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 40,
+            "forefoot": 32.5
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 1.22,
+            "proxyAc": null,
+            "heelFirmness1100": 99.2,
+            "forefootFirmness1300": 182.0
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.3333
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 5.2,
+          "upperScore": 5.05,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 5.16,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.1,
+          "intermediateRaw": 5.26,
+          "inputs": {
+            "abrasionMm": 1.26,
+            "outsoleThicknessMm": 2.1,
+            "toeboxDurability": 4,
+            "heelPaddingDurability": 1,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.6667,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "3mm 저드롭에서 빠르게 이어지는 포어풋 발 구름",
@@ -434,20 +842,88 @@
         "drop": 3.5,
         "cushioning": 6,
         "responsiveness": 8,
-        "stability": 3,
+        "stability": 4,
         "durability": 5,
         "stackHeight": {
           "heel": 34,
           "forefoot": 30.5
         },
         "weightScore": 10,
-        "valueScore": 3,
+        "valueScore": 4,
         "rawCushioning": 6.47,
         "rawResponsiveness": 8.44,
-        "rawValueScore": 3.62,
+        "rawValueScore": 3.98,
         "rawLightness": 9.59,
-        "rawStability": 3.29,
-        "rawDurability": 4.56
+        "rawStability": 4.05,
+        "rawDurability": 5.38,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 4.85,
+          "platformInputs": {
+            "runRepeatMidsoleScore": null,
+            "rtingsOutsoleScore": 3.78,
+            "rtingsWidthToStackScore": 6.73
+          },
+          "coreScore": 4.85,
+          "subcategoryDelta": -1.0,
+          "swayPenalty": -0.5,
+          "qualitativeModifier": 0.68,
+          "intermediateRaw": 5.03,
+          "stackInput": {
+            "source": "rtings",
+            "heel": 33.9,
+            "forefoot": 29.7
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 0.43,
+            "proxyAc": null,
+            "heelFirmness1100": 144.9,
+            "forefootFirmness1300": 227.9
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "lockdown": 1.0,
+              "guidance_sidewall": 0.5,
+              "wide_base": 1.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": null,
+          "upperScore": null,
+          "midsoleLongevityScore": 10,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 1.0,
+          "coreScore": null,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": -0.08,
+          "intermediateRaw": 6.42,
+          "inputs": {
+            "abrasionMm": null,
+            "outsoleThicknessMm": null,
+            "toeboxDurability": null,
+            "heelPaddingDurability": null,
+            "midsoleRetentionRatio": 0.9829,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.5,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "139g 초경량으로 피치 전개에 유리한 가속감",
@@ -500,7 +976,7 @@
         "drop": 3.5,
         "cushioning": 7,
         "responsiveness": 8,
-        "stability": 3,
+        "stability": 1,
         "durability": 5,
         "stackHeight": {
           "heel": 38,
@@ -510,10 +986,78 @@
         "valueScore": 4,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.2,
-        "rawValueScore": 4.28,
+        "rawValueScore": 3.69,
         "rawLightness": 8.58,
-        "rawStability": 3.29,
-        "rawDurability": 4.56
+        "rawStability": 1.0,
+        "rawDurability": 4.53,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 3.05,
+          "platformInputs": {
+            "runRepeatMidsoleScore": null,
+            "rtingsOutsoleScore": 2.8,
+            "rtingsWidthToStackScore": 3.48
+          },
+          "coreScore": 3.05,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": 0.18,
+          "qualitativeModifier": 0.25,
+          "intermediateRaw": 2.62,
+          "stackInput": {
+            "source": "rtings",
+            "heel": 37.8,
+            "forefoot": 33.1
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 0.76,
+            "proxyAc": null,
+            "heelFirmness1100": 134.7,
+            "forefootFirmness1300": 194.0
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "lockdown": 0.5,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.5,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": null,
+          "upperScore": null,
+          "midsoleLongevityScore": 6.91,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.31,
+          "coreScore": null,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.07,
+          "intermediateRaw": 5.88,
+          "inputs": {
+            "abrasionMm": null,
+            "outsoleThicknessMm": null,
+            "toeboxDurability": null,
+            "heelPaddingDurability": null,
+            "midsoleRetentionRatio": 0.9525,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.5,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "164g 경량으로 레이스 후반까지 가벼운 발 회전",
@@ -567,7 +1111,7 @@
         "cushioning": 7,
         "responsiveness": 8,
         "stability": 3,
-        "durability": 5,
+        "durability": 4,
         "stackHeight": {
           "heel": 39,
           "forefoot": 33.5
@@ -576,10 +1120,78 @@
         "valueScore": 5,
         "rawCushioning": 7.11,
         "rawResponsiveness": 8.13,
-        "rawValueScore": 4.97,
+        "rawValueScore": 4.85,
         "rawLightness": 7.12,
-        "rawStability": 3.29,
-        "rawDurability": 4.56
+        "rawStability": 3.25,
+        "rawDurability": 4.19,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 5.4,
+          "platformInputs": {
+            "runRepeatMidsoleScore": null,
+            "rtingsOutsoleScore": 5.92,
+            "rtingsWidthToStackScore": 4.48
+          },
+          "coreScore": 5.4,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": 0.45,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 4.45,
+          "stackInput": {
+            "source": "rtings",
+            "heel": 39.4,
+            "forefoot": 32.7
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 0.83,
+            "proxyAc": null,
+            "heelFirmness1100": 114.8,
+            "forefootFirmness1300": 215.6
+          },
+          "qualitativeSignals": {
+            "sourceCount": 1,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": null,
+          "upperScore": null,
+          "midsoleLongevityScore": 6.25,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.17,
+          "coreScore": null,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 5.67,
+          "inputs": {
+            "abrasionMm": null,
+            "outsoleThicknessMm": null,
+            "toeboxDurability": null,
+            "heelPaddingDurability": null,
+            "midsoleRetentionRatio": 0.9467,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 1,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "200g 경량과 힐 39mm/전족부 33.5mm 스택의 장거리 대응 쿠션",
@@ -632,8 +1244,8 @@
         "drop": 4,
         "cushioning": 10,
         "responsiveness": 6,
-        "stability": 3,
-        "durability": 4,
+        "stability": 2,
+        "durability": 5,
         "stackHeight": {
           "heel": 40,
           "forefoot": 36
@@ -642,10 +1254,78 @@
         "valueScore": 5,
         "rawCushioning": 9.89,
         "rawResponsiveness": 6.46,
-        "rawStability": 3.34,
-        "rawDurability": 4.22,
-        "rawValueScore": 4.94,
-        "rawLightness": 6.39
+        "rawStability": 1.71,
+        "rawDurability": 4.59,
+        "rawValueScore": 4.59,
+        "rawLightness": 6.39,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 5.95,
+          "platformScore": 4.66,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 5.77,
+            "rtingsOutsoleScore": 4.46,
+            "rtingsWidthToStackScore": 2.51
+          },
+          "coreScore": 5.37,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": 1.0,
+          "qualitativeModifier": -0.53,
+          "intermediateRaw": 3.34,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 39.9,
+            "forefoot": 34.5
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 1.42,
+            "proxyAc": null,
+            "heelFirmness1100": 81.4,
+            "forefootFirmness1300": 170.5
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "lockdown": 1.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.5,
+              "instability": 1.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 5.38,
+          "upperScore": 5.05,
+          "midsoleLongevityScore": 6.95,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.32,
+          "coreScore": 5.3,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.3,
+          "intermediateRaw": 5.92,
+          "inputs": {
+            "abrasionMm": 1.4,
+            "outsoleThicknessMm": 2.5,
+            "toeboxDurability": 4,
+            "heelPaddingDurability": 1,
+            "midsoleRetentionRatio": 0.9529,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 2,
+            "shares": {
+              "outsole_coverage": 0.5,
+              "upper_reinforcement": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
       },
       "pros": [
         "힐 40mm 스택 기반의 풍부한 충격 흡수",

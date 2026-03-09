@@ -16,7 +16,7 @@ const DATA_SOURCES = [
     type: '실측 + 착용 테스트',
     description:
       '자체 장비 측정과 표준화된 착용 테스트를 병행하여 스펙과 실착 데이터를 모두 수집합니다.',
-    data: ['무게 · 스택 하이트', '착용 테스트 스코어', '아웃솔 내구성'],
+    data: ['무게 · 스택 하이트', '플랫폼 폭 · width-to-stack', 'long-run 에너지 유지율'],
   },
   {
     name: 'Doctors of Running',
@@ -53,7 +53,7 @@ const CONFIDENCE_LEVELS = [
     label: 'RELIABLE',
     badge: CONF_COLORS['high'],
     description:
-      'RunRepeat 또는 RTINGS 실측 데이터 + 전문가 리뷰 1개 이상이 확인된 경우.',
+      'RunRepeat 또는 RTINGS 중 하나의 실측 데이터가 확인된 경우. 전문가 리뷰 수와 무관하게 정량 데이터 1종을 확보한 상태입니다.',
   },
   {
     label: 'LIMITED',
@@ -65,7 +65,7 @@ const CONFIDENCE_LEVELS = [
     label: 'PENDING',
     badge: CONF_COLORS['low'],
     description:
-      '전문가 리뷰 1개 이하 또는 제한적인 데이터만 존재하는 경우.',
+      '정량 데이터가 없고 전문가 리뷰도 1개 이하이거나, 전체 데이터가 매우 제한적인 경우.',
   },
 ]
 
@@ -130,8 +130,9 @@ export default function MethodologyPage() {
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
           각 스펙은 0–10점으로 정규화됩니다. 쿠션성·반응성은 실측 데이터(SA, ER%)를
-          최우선으로 적용하고, 안정성·내구성은 실측 기준값에 전문가 리뷰 키워드 분석
-          결과를 ±1 보정하여 반영합니다. 경량성은 전 모델 실측 무게를 역정규화하고,
+          최우선으로 적용하고, 안정성은 TR/HCS·플랫폼 폭·스택/소프트니스 sway·정성 신호를
+          결합한 V3 공식을 사용합니다. 내구성은 아웃솔/어퍼 core에 hardness·정성 신호를 더하고,
+          커버리지 60% 미만인 RTINGS long-run은 modifier-only로 반영합니다. 경량성은 전 모델 실측 무게를 역정규화하고,
           가성비는 (쿠션성+반응성+안정성+내구성)÷가격 비율을 min/max 앵커 기준으로 정규화합니다.
         </p>
         <SpecCardsSection items={SPEC_ITEMS} />

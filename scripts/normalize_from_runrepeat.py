@@ -15,24 +15,13 @@ import json
 from pathlib import Path
 
 from formulas import (
-    clamp,
-    keyword_delta,
     cushioning_from_runrepeat,
     responsiveness_from_runrepeat,
-    stability_from_runrepeat,
-    durability_from_runrepeat,
-    durability_from_abrasion_only,
     raw_cushioning_from_runrepeat,
     raw_responsiveness_from_runrepeat,
-    raw_stability_from_runrepeat,
-    raw_durability_from_runrepeat,
-    raw_durability_from_abrasion_only,
-    STABILITY_POS_RE,
-    STABILITY_NEG_RE,
-    DURABILITY_POS_RE,
-    DURABILITY_NEG_RE,
 )
 from research_utils import resolve_research_files, describe_date_range
+from stability_durability_v3 import derive_signals, compute_stability_v3, compute_durability_v3
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -78,11 +67,9 @@ def get_qualitative_findings(sources):
     return " ".join(findings)
 
 
-def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
-    """
-    RunRepeat 계측치 기반으로 cushioning, responsiveness 계산.
-    stability, durability는 기존값 + 키워드 delta.
-    """
+def compute_scores(sources, rr_src, existing_specs, subcategoryId=None):
+    """RunRepeat 우선 + V3 stability/durability 조립."""
+    derived = derive_signals(sources)
     rr_cush = rr_src["attributeScores"]["cushioning"]
     rr_resp = rr_src["attributeScores"]["responsiveness"]
 
@@ -104,61 +91,31 @@ def compute_scores(rr_src, existing_specs, findings_text, subcategoryId=None):
         responsiveness = responsiveness_from_runrepeat(heel_er, fore_er)
         raw_resp = raw_responsiveness_from_runrepeat(heel_er, fore_er)
 
-    # stability: torsionalRigidity + heelCounterStiffness + Sway 패널티
-    rr_stab = rr_src["attributeScores"]["stability"]
-    tr = rr_stab.get("torsionalRigidity")
-    hcs = rr_stab.get("heelCounterStiffness")
-    mw_heel = rr_stab.get("midsoleWidthHeel_mm")
-    mw_fore = rr_stab.get("midsoleWidthForefoot_mm")
-    if tr is not None and hcs is not None:
-        # AC durometer (미드솔 경도, sway 패널티용)
-        heel_ac = rr_cush.get("midsoleSoftness_ac")
-        secondary_foam_ac = rr_cush.get("secondaryFoamSoftness_ac")  # 듀얼폼 2차 경도
-        # stack 데이터는 production JSON에서 추출
-        stack_heel = existing_specs.get("stackHeight", {}).get("heel")
-        stack_fore = existing_specs.get("stackHeight", {}).get("forefoot")
-        stability = stability_from_runrepeat(
-            tr, hcs,
-            heel_ac=heel_ac, secondary_foam_ac=secondary_foam_ac,
-            stack_heel=stack_heel, stack_fore=stack_fore,
-            subcategory=subcategoryId,
-            midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
-            findings_text=findings_text,
-        )
-        raw_stab = raw_stability_from_runrepeat(
-            tr, hcs,
-            heel_ac=heel_ac, secondary_foam_ac=secondary_foam_ac,
-            stack_heel=stack_heel, stack_fore=stack_fore,
-            subcategory=subcategoryId,
-            midsole_width_heel=mw_heel, midsole_width_fore=mw_fore,
-            findings_text=findings_text,
-        )
-    else:
-        old_stab = existing_specs.get("stability", 6)
-        stability = clamp(old_stab + keyword_delta(findings_text, STABILITY_POS_RE, STABILITY_NEG_RE), 1, 10)
-        raw_stab = None
+    stability, raw_stab, stab_components, derived = compute_stability_v3(
+        sources,
+        existing_specs,
+        subcategoryId,
+        derived=derived,
+    )
+    durability, raw_dur, dur_components, derived = compute_durability_v3(
+        sources,
+        existing_specs,
+        derived=derived,
+    )
 
-    # durability: log ratio of outsoleThickness / outsoleDurability (abrasion mm)
-    rr_dur = rr_src["attributeScores"]["durability"]
-    outsole_dur = rr_dur.get("outsoleDurability")
-    outsole_thick = rr_dur.get("outsoleThickness")
-    toebox_dur = rr_dur.get("toeboxDurability")
-    heel_pad_dur = rr_dur.get("heelPaddingDurability")
-    if outsole_dur is not None and outsole_thick is not None:
-        abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
-        thick_mm = float(str(outsole_thick).replace(" mm", "").strip())
-        durability = durability_from_runrepeat(thick_mm, abr_mm, toebox_dur=toebox_dur, heel_pad_dur=heel_pad_dur)
-        raw_dur = raw_durability_from_runrepeat(thick_mm, abr_mm, toebox_dur=toebox_dur, heel_pad_dur=heel_pad_dur)
-    elif outsole_dur is not None:
-        abr_mm = float(str(outsole_dur).replace(" mm", "").strip())
-        durability = durability_from_abrasion_only(abr_mm)
-        raw_dur = raw_durability_from_abrasion_only(abr_mm)
-    else:
-        old_dur = existing_specs.get("durability", 5)
-        durability = clamp(old_dur + keyword_delta(findings_text, DURABILITY_POS_RE, DURABILITY_NEG_RE), 1, 10)
-        raw_dur = None
-
-    return cushioning, responsiveness, stability, durability, raw_cush, raw_resp, raw_stab, raw_dur
+    return (
+        cushioning,
+        responsiveness,
+        stability,
+        durability,
+        raw_cush,
+        raw_resp,
+        raw_stab,
+        raw_dur,
+        stab_components,
+        dur_components,
+        derived,
+    )
 
 
 def fmt_change(old, new, width=12):
@@ -183,6 +140,7 @@ def main():
     production = load_production()
 
     updates_by_brand: dict = {}
+    research_updates: dict = {}
     preview_rows = []
 
     for fpath in research_files:
@@ -197,8 +155,6 @@ def main():
 
         attempt_log = research.get("attemptLog", [])
         rr_status = get_attempt_status(attempt_log, "RunRepeat")
-        rt_status = get_attempt_status(attempt_log, "RTINGS")
-
         # RunRepeat 계측치 기반: RTINGS 유무 무관
         if rr_status not in RR_FOUND_STATUSES:
             continue
@@ -209,10 +165,24 @@ def main():
 
         prod = production[shoe_id]
         old_specs = prod["specs"]
-        findings_text = get_qualitative_findings(research.get("sources", []))
 
-        new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp, new_raw_stab, new_raw_dur = compute_scores(
-            rr_src, old_specs, findings_text, subcategoryId=prod["subcategoryId"]
+        (
+            new_cush,
+            new_resp,
+            new_stab,
+            new_dur,
+            new_raw_cush,
+            new_raw_resp,
+            new_raw_stab,
+            new_raw_dur,
+            stab_components,
+            dur_components,
+            derived_signals,
+        ) = compute_scores(
+            research.get("sources", []),
+            rr_src,
+            old_specs,
+            subcategoryId=prod["subcategoryId"],
         )
 
         brand_id = prod["brand"]
@@ -228,7 +198,23 @@ def main():
             "rawResponsiveness": new_raw_resp,
             "rawStability": new_raw_stab,
             "rawDurability": new_raw_dur,
+            "stabilityComponents": stab_components,
+            "durabilityComponents": dur_components,
         })
+        research_updates[shoe_id] = {
+            "fpath": fpath,
+            "derivedSignals": derived_signals,
+            "proposedScores": {
+                "cushioning": new_cush,
+                "responsiveness": new_resp,
+                "stability": new_stab,
+                "durability": new_dur,
+            },
+            "specsDecision": (
+                "[normalize_from_runrepeat.py] Stability/Durability V3 rollout applied. "
+                "RunRepeat core + structured qualitative signals reflected in proposedScores."
+            ),
+        }
 
         preview_rows.append({
             "shoeId": shoe_id,
@@ -281,6 +267,7 @@ def main():
     print("\n[적용 중...]")
     updated_files = 0
     updated_shoes = 0
+    updated_research = 0
 
     for fname in sorted(BRANDS_DIR.iterdir()):
         if fname.suffix != ".json":
@@ -304,7 +291,8 @@ def main():
             shoe_changed = False
 
             for field in ["cushioning", "responsiveness", "stability", "durability",
-                          "rawCushioning", "rawResponsiveness", "rawStability", "rawDurability"]:
+                          "rawCushioning", "rawResponsiveness", "rawStability", "rawDurability",
+                          "stabilityComponents", "durabilityComponents"]:
                 new_val = u[field]
                 if new_val is None:
                     continue
@@ -324,7 +312,22 @@ def main():
                 f.write("\n")
             updated_files += 1
 
-    print(f"\n완료: {updated_shoes}개 신발 업데이트, {updated_files}개 브랜드 파일 수정")
+    for shoe_id, payload in research_updates.items():
+        with open(payload["fpath"]) as f:
+            research = json.load(f)
+        research["derivedSignals"] = payload["derivedSignals"]
+        proposed = research.get("proposedScores", {})
+        for field, value in payload["proposedScores"].items():
+            if value is not None:
+                proposed[field] = value
+        research["proposedScores"] = proposed
+        research["specsDecision"] = payload["specsDecision"]
+        with open(payload["fpath"], "w") as f:
+            json.dump(research, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        updated_research += 1
+
+    print(f"\n완료: {updated_shoes}개 신발 업데이트, {updated_files}개 브랜드 파일 수정, research {updated_research}개 갱신")
 
 
 if __name__ == "__main__":

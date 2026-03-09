@@ -3,6 +3,43 @@ export interface StackHeight {
   forefoot: number
 }
 
+export interface QualitativeSignalDebug {
+  sourceCount: number
+  shares: Record<string, number>
+}
+
+export interface StabilityComponents {
+  scoreVersion: string
+  structureScore?: number | null
+  platformScore?: number | null
+  platformInputs?: Record<string, number | null>
+  coreScore?: number | null
+  subcategoryDelta?: number
+  swayPenalty?: number
+  qualitativeModifier?: number
+  intermediateRaw?: number
+  stackInput?: {
+    source: string
+    heel?: number | null
+    forefoot?: number | null
+  }
+  softnessInput?: Record<string, string | number | null | undefined>
+  qualitativeSignals?: QualitativeSignalDebug
+}
+
+export interface DurabilityComponents {
+  scoreVersion: string
+  outsoleScore?: number | null
+  upperScore?: number | null
+  midsoleLongevityScore?: number | null
+  coreScore?: number | null
+  compoundModifier?: number
+  qualitativeModifier?: number
+  intermediateRaw?: number
+  inputs?: Record<string, number | null>
+  qualitativeSignals?: QualitativeSignalDebug
+}
+
 export interface Specs {
   weight: number
   drop: number
@@ -19,6 +56,8 @@ export interface Specs {
   rawDurability?: number      // ≥1 소수점, 정렬 전용 (상한 없음), RunRepeat 기반 (Case B)
   rawValueScore?: number      // ≥1 소수점, 정렬 전용 (상한 없음), 혼합 raw 입력 가성비
   rawLightness?: number       // ≥1 소수점, 정렬 전용 (상한 없음), 무게 기반
+  stabilityComponents?: StabilityComponents
+  durabilityComponents?: DurabilityComponents
 }
 
 export interface ReviewSources {

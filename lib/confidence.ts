@@ -39,7 +39,7 @@ export const CONF_BADGE_LABELS: Record<string, string> = {
 
 export const CONF_TOOLTIPS: Record<string, string> = {
   'very-high': 'RunRepeat + RTINGS 실측 데이터 완비',
-  'high':      '실측 데이터 + 전문가 리뷰 확인',
+  'high':      'RunRepeat 또는 RTINGS 실측 데이터 확인',
   'medium':    '전문가 리뷰 기반 (실측 없음)',
   'low':       '데이터 수집 중',
 }

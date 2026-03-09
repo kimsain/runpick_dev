@@ -108,46 +108,46 @@ export const SPEC_ITEMS: SpecItem[] = [
     nameEn: 'Stability',
     color: 'var(--spec-stability)',
     summary:
-      '착지 시 발이 얼마나 안정적으로 지지되는지 수치화합니다. 비틀림 저항·힐 카운터 강성·미드솔 너비와 스택 높이를 종합 평가합니다.',
-    basis: 'TR/HCS/미드솔 너비 실측값 + 스택 패널티 → 1–10점',
+      '착지 시 발이 얼마나 안정적으로 지지되는지 수치화합니다. TR/HCS, 플랫폼 폭, 스택/소프트니스 sway, 구조화된 리뷰 신호를 함께 반영합니다.',
+    basis: 'TR/HCS + 플랫폼 폭/비율 + sway 패널티 + 정성 signal → 1–10점',
     modalContent: {
       general: {
         description:
-          '점수가 높을수록 발이 좌우로 흔들리지 않고 안정적으로 착지합니다. 발목이 약하거나 과도하게 안쪽으로 돌아가는(초과 회내) 러너에게 특히 중요한 지표입니다. 반대로 높은 스택의 맥시멀 쿠션화는 지면 감각이 줄어 불안정할 수 있어 패널티가 적용됩니다.',
+          '점수가 높을수록 발이 좌우로 흔들리지 않고 안정적으로 착지합니다. 발목이 약하거나 과도하게 안쪽으로 돌아가는(초과 회내) 러너에게 특히 중요한 지표입니다. 구조가 단단하고 플랫폼이 넓을수록 점수가 올라가고, 높은 스택과 부드러운 폼이 겹치면 sway 패널티가 적용됩니다.',
         impact:
           '8–10점: 가이드 레일 느낌으로 발이 중립을 잡아줌, 장거리 후반에도 흔들림 적음. 1–3점: 발의 움직임이 자유롭지만 지지가 적어 발목 컨트롤이 필요.',
       },
       expert: {
         dataSource:
-          'RunRepeat torsionalRigidity(TR, 1–5) + heelCounterStiffness(HCS, 1–5) + midsoleWidth(mm) → 스택/소프트니스 sway 패널티 보정 → 전문가 리뷰 키워드 ±1',
+          'RunRepeat TR/HCS + RunRepeat midsole width + RTINGS outsole width/width-to-stack + RunRepeat·RTINGS stack/firmness + qualitative share signal',
         formula:
-          '# TR, HCS → 1–10 정규화\ntr_norm  = clamp(1 + 9 × (TR − 2) / 3, 1, 10)\nhcs_norm = clamp(1 + 9 × (HCS − 1) / 4, 1, 10)\n\n# Width: 실측 없으면 카테고리 median imputation\nmw_norm = clamp(0.4 × heel_norm + 0.6 × fore_norm, 1, 10)\n\n# Base 가중합 (TR/HCS/Width 결합)\nbase = 0.30 × tr_norm + 0.30 × hcs_norm + 0.40 × mw_norm\n\n# Sway 패널티 (스택 높이 + 폼 소프트니스)\nac = max(heelAC, secondaryAC)  # 없으면 카테고리 prior\nsoft = min(1.5, max(0, (42 − ac) / 15))\nu_h = (stackHeel − 39) / 10\nu_f = (stackFore − 32) / 10\nstk = clamp(0.7 × tanh(1.5 × u_h) + 0.3 × tanh(1.5 × u_f), −0.5, 1.0)\nsway = 0.4 × soft + 1.0 × stk + 0.8 × (soft × stk)\nbase −= sway\n\n# Subcategory delta\nbase += SUBCAT_STAB_DELTA.get(subcategory, 0.0)\n# stability + TR≥4: base += 0.5 (측정 확인 보너스)\n\n# Rescale → 1–10\nintermediate = base\nscore = clamp(round(1 + 9 × (intermediate − RAW_MIN) / (RAW_MAX − RAW_MIN)), 1, 10)',
+          'structure = 0.55 × TR_norm + 0.45 × HCS_norm\nplatform = weighted_mean(RR midsole 45%, RT outsole 35%, RT ratio 20%)\ncore = weighted_mean(structure 55%, platform 45%)\nraw = core_or_5.5 + SUBCAT_STAB_DELTA − swayPenalty + qualitativeModifier\nscore = clamp(round(1 + 9 × (raw − 2.4419) / (9.3481 − 2.4419)), 1, 10)',
         rationale:
-          '내-외측(medio-lateral) 동요는 GRF 전달선과 비틀림 강성(torsional rigidity), 관성 모멘트(inertia moment)의 상호작용으로 안정성이 결정된다. TR은 횡강성, HCS는 회내 저항, 미드솔 폭은 고유수용감각(proprioception) 기반 지지 확보로 해석한다. Width 결측은 카테고리 median imputation으로 보완하고, 스택/폴리머 소프트니스 패널티는 tanh 포화로 과대 패널티를 억제한다. base와 카테고리 보정을 결합한 뒤 min-max 정규화로 전 모델 1–10 점수를 산출한다.',
+          'V3는 구조 강성, 플랫폼 지지 면적, 스택-소프트니스 기반 sway, 정성 containment 신호를 분리해서 계산합니다. stack 입력 우선순위는 RunRepeat physical stack → RTINGS physical stack → production spec이며, softness는 RunRepeat AC → RTINGS firmness proxy → subcategory prior 순서로 선택합니다. 정성 신호는 lockdown, guidance/sidewall, wide base, heel slip, instability의 source share로 계산해 free-text ±1 보정보다 일관성을 높였습니다.',
         constants: [
           {
-            name: 'Base 가중치',
-            value: 'TR 30% / HCS 30% / Width 40%',
-            meaning: '비틀림 강성, HCS, 미드솔 폭의 생체역학 균형을 반영한 가중치 설계',
+            name: 'Structure 가중치',
+            value: 'TR 55% / HCS 45%',
+            meaning: 'RunRepeat 구조 강성 신호 결합',
           },
           {
-            name: 'STAB_TANH_GAIN',
-            value: '1.5',
-            meaning: '스택 sway 패널티 tanh 기울기',
+            name: 'Platform 가중치',
+            value: 'RR width 45% / RT outsole 35% / RT ratio 20%',
+            meaning: '플랫폼 신호 결합 비율',
           },
           {
-            name: 'SUBCAT_STAB_DELTA',
-            value: 'stability +1.0 / half −1.0 / full −0.5 / max-cushion −0.5',
-            meaning: '카테고리별 구조적 특성 보정',
+            name: 'Qualitative modifier',
+            value: '+0.30 lockdown +0.35 guidance +0.20 wideBase −0.45 heelSlip −0.60 instability',
+            meaning: 'source share 기반 raw modifier, cap ±1.25',
           },
           {
-            name: 'Width median imputation',
-            value: 'racing(77/110) speed(87/114) daily(91/115) cushion(99/119) stability(97/119)',
-            meaning: '힐/포어풋 mm, width 데이터 없는 신발에 적용',
+            name: 'Stack / softness',
+            value: 'RunRepeat stack 우선, 없으면 RTINGS stack / AC→firmness→subcategory prior',
+            meaning: 'sway 패널티 입력 우선순위',
           },
           {
             name: 'STAB_RAW_MIN / MAX',
-            value: '3.1867 / 9.2367',
+            value: '2.4419 / 9.3481',
             meaning: 'Bottom-5 / Top-5 경계 (--calibrate 자동 갱신)',
           },
         ],
@@ -160,32 +160,42 @@ export const SPEC_ITEMS: SpecItem[] = [
     nameEn: 'Durability',
     color: 'var(--spec-durability)',
     summary:
-      '아웃솔 두께와 마모량 실측값 기반. 오래 신어도 밑창이 얼마나 잘 버티는지 수치화합니다.',
-    basis: '아웃솔 두께/마모 실측값 → 1–10점',
+      '오래 신어도 밑창과 어퍼가 얼마나 잘 버티는지 수치화합니다. 아웃솔/어퍼 core에 hardness, long-run, 구조화된 리뷰 신호를 합쳐 계산합니다.',
+    basis: '아웃솔/어퍼 core + hardness/long-run/정성 modifier → 1–10점',
     modalContent: {
       general: {
         description:
-          '점수가 높을수록 밑창이 오래 버티는 신발입니다. 아웃솔 고무 두께와 마모 속도를 기준으로 산정하며, 발볼·힐 패딩 내구성도 보조 지표로 반영합니다. 경량 레이싱화는 재료 특성상 낮게 나타날 수 있습니다.',
+          '점수가 높을수록 밑창과 어퍼가 오래 버티는 신발입니다. 아웃솔 고무 두께와 마모 속도, 토박스와 힐 패딩 마모, 정성 리뷰의 wear/longevity 언급을 함께 봅니다. 경량 레이싱화는 재료 특성상 낮게 나타날 수 있습니다.',
         impact:
           '8–10점: 고내구성 고무 아웃솔, 수백km 후에도 밑창 손상 적음. 1–3점: 얇은 아웃솔 또는 빠른 마모, 레이싱화 등에서 흔히 나타남.',
       },
       expert: {
         dataSource:
-          'RunRepeat 아웃솔 두께(mm) + 마모량(mm) 우선 적용 → toebox/heel-pad 내구성(1–5) → 전문가 리뷰 키워드 보정',
+          'RunRepeat outsole thickness/abrasion + toebox/heel padding durability + RunRepeat outsole hardness + RTINGS long-run retention + qualitative durability shares',
         formula:
-          '# 두께 + 마모 모두 있을 때\nratio = outsoleThickness / outsoleDurability\noutsole_raw = log(ratio + 1) / log(8.2) × 9 + 1\n\n# toebox·heel-pad 있으면 블렌딩\ntb_norm  = 1 + 9 × (toeboxDur − 1) / 4\nhp_norm  = 1 + 9 × (heelPadDur − 1) / 4\nblended  = 0.70 × outsole_raw + 0.20 × tb_norm + 0.10 × hp_norm\n\n# Rescale → 1–10\nscore = clamp(round(1 + 9 × (blended − RAW_MIN) / (RAW_MAX − RAW_MIN)), 1, 10)\n\n# 마모 데이터만 있을 때 (fallback)\ncapped = min(outsoleDurability, 10.0)\nscore  = clamp(round((10.0 − capped) / 10.0 × 9 + 1), 1, 10)',
+          'outsole = log(thickness / abrasion + 1) / log(8.2) × 9 + 1\nupper = 0.60 × toebox_norm + 0.40 × heelPad_norm\nmidsoleModifier = capped((longRunScore − 5.5) / 4.5, ±1.0)  # 2026-03 rollout\nraw = core_or_5.5 + midsoleModifier + compoundModifier + qualitativeModifier\nscore = clamp(round(1 + 9 × (raw − 3.6575) / (9.3335 − 3.6575)), 1, 10)',
         rationale:
-          '내구성은 반복 충격에서 재료 피로(material fatigue)가 누적되는 과정이므로 두꺼운 쿠션일수록 초기 이득은 있으나 한계가 존재한다. 이를 반영해 아웃솔 두께-마모 비율을 log transform하고 toebox·heel-pad 신호를 가중 블렌딩해 신발 전체의 마찰·마모 거동을 통합한다. 두께 결측 시에는 마모량 반비례 선형 fallback로 모노토닉 성질을 유지한다. 최종 지표는 데이터군 하한·상한으로 min-max 정규화한다.',
+          'V3는 outsole과 upper를 내구성 core로 두고, outsole hardness와 리뷰 기반 wear/longevity 신호를 raw modifier로 더합니다. RTINGS long-run retention은 유용하지만 현재 merged research 커버리지가 52.2%라서 core가 아니라 modifier-only로 사용합니다. core가 없는 RTINGS-only/리뷰-only 신발은 neutral prior 5.5에서 시작해 modifier만 반영합니다.',
         constants: [
           { name: 'DUR_LOG_BASE', value: '8.2', meaning: '로그 스케일 밑수 (수확체감 반영)' },
           {
-            name: '블렌딩 가중치',
-            value: '아웃솔 70% / Toebox 20% / Heel-pad 10%',
-            meaning: '두께·마모율·부위 내구를 통합하는 로그변환 기반 통계 설계',
+            name: 'Core 가중치',
+            value: 'Outsole 60% / Upper 20%',
+            meaning: '현재 rollout에서는 long-run을 core에서 제외',
+          },
+          {
+            name: 'Long-run rule',
+            value: '0.90→1점, 0.98→10점, 현재는 modifier-only (cap ±1.0)',
+            meaning: 'RTINGS long-run retention 적용 규칙',
+          },
+          {
+            name: 'Qualitative modifier',
+            value: '+0.30 coverage +0.25 reinforcement +0.15 durable −0.45 earlyWear −0.35 exposedFoam −0.35 breakdown',
+            meaning: 'source share 기반 raw modifier, cap ±1.5',
           },
           {
             name: 'DUR_RAW_MIN / MAX',
-            value: '3.4788 / 8.9913',
+            value: '3.6575 / 9.3335',
             meaning: 'Bottom-5 / Top-5 경계 (--calibrate 자동 갱신)',
           },
         ],

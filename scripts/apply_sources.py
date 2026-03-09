@@ -607,7 +607,7 @@ SOURCES = {
             "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-trainer-review/",
         },
         "endorphin-azura": {
-            "runrepeat": None,
+            "runrepeat": "https://runrepeat.com/saucony-endorphin-azura",
             "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-azura-running-shoe",
             "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-azura-review-2026.html",
             "rtr": "https://www.roadtrailrun.com/2025/11/saucony-azura-multi-tester-review-light.html",
@@ -646,7 +646,11 @@ SOURCES = {
 
 
 def make_sources(url_map):
-    """Return sources dict with only non-null values, or None if all null."""
+    """Return only explicitly provided source URLs.
+
+    None means "do not overwrite this key" so existing production URLs survive
+    until we intentionally replace or remove them.
+    """
     filtered = {k: v for k, v in url_map.items() if v is not None}
     return filtered if filtered else None
 
@@ -667,10 +671,12 @@ for path in sorted(glob.glob("data/brands/*.json")):
         if slug in brand_sources:
             sources = make_sources(brand_sources[slug])
             if sources:
-                shoe["sources"] = sources
+                existing = shoe.get("sources") if isinstance(shoe.get("sources"), dict) else {}
+                shoe["sources"] = {**existing, **sources}
             else:
-                # No reviews found — remove sources if previously set
-                shoe.pop("sources", None)
+                # Leave existing sources untouched when the mapping has no explicit URLs yet.
+                if not shoe.get("sources"):
+                    shoe.pop("sources", None)
             changed += 1
         else:
             total_skipped += 1

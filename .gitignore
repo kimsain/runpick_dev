@@ -39,6 +39,7 @@ next-env.d.ts
 
 # research & internal docs
 /research/
+/outdated/
 /docs/plans/
 /docs/quality/
 __pycache__/
