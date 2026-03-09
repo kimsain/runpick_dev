@@ -10,7 +10,7 @@ RunPick의 점수 데이터는 5개 전문 소스에서 수집한 실측 데이�
 | 소스 | 유형 | 주요 데이터 |
 |------|------|------------|
 | RunRepeat | 실측 측정 | Heel/Forefoot SA (충격흡수), Energy Return ER%, Weight |
-| RTINGS | 실측 + 착용 | 무게, 스택 하이트, 착용 테스트, 아웃솔 내구성 |
+| RTINGS | 실측 + 착용 | 무게, 스택 하이트, 플랫폼 폭/비율, long-run 에너지 유지율 |
 | Doctors of Running | 전문가 리뷰 | 안정성, 착지감, 주법 적합성 |
 | Road Trail Run | 전문가 리뷰 | 내구성, 다목적 활용, 장거리 착용감 |
 | Believe in the Run | 전문가 리뷰 | 착용감, 레이스 퍼포먼스, 가성비 |
@@ -21,8 +21,8 @@ RunPick의 점수 데이터는 5개 전문 소스에서 수집한 실측 데이�
 |------|------|-----------|------|
 | 쿠션 | Cushioning | Heel/Forefoot Shock Attenuation (SA) | 0–10 |
 | 반응 | Responsiveness | Energy Return (ER%) | 0–10 |
-| 안정 | Stability | 전문가 리뷰 종합 평가 | 0–10 |
-| 내구 | Durability | 아웃솔 마모, 미드솔 변형 등 종합 | 0–10 |
+| 안정 | Stability | TR/HCS, 플랫폼 폭·비율, sway, 구조화 리뷰 signal 결합 | 0–10 |
+| 내구 | Durability | outsole/upper core + hardness·long-run·정성 modifier | 0–10 |
 
 ## 점수 정규화 / Score Normalization
 
@@ -35,6 +35,16 @@ RunPick의 점수 데이터는 5개 전문 소스에서 수집한 실측 데이�
 | **Case B** | RunRepeat **found** AND RTINGS **found** | `normalize_from_runrepeat.py` |
 | **Case A** | RunRepeat **not found** AND RTINGS **found** | `normalize_from_rtings.py` |
 | **Case C** | RunRepeat/RTINGS 모두 없음 (정성 리뷰만) | `normalize_from_reviews.py` |
+
+현재 안정성/내구성 score version은 `durability-stability-v3`입니다.
+
+- 커버리지 `60% 이상`인 정량 필드는 core input으로 사용합니다.
+- 커버리지 `60% 미만`인 정량 필드는 modifier-only로만 사용합니다.
+- 2026-03-09 기준 merged research 커버리지:
+  - RunRepeat `TR/HCS`: `92/115 = 80.0%`
+  - RunRepeat `midsole width`: `75/115 = 65.2%`
+  - RTINGS `outsole width`: `76/115 = 66.1%`
+  - RTINGS `longRun`: `60/115 = 52.2%` → durability에서 modifier-only
 
 ---
 
@@ -71,69 +81,58 @@ responsiveness = clamp(round((avg_er - RESP_LO) / (RESP_HI - RESP_LO) × 10), 1,
 - **상한 80% (46+34)**: avg ER% ≥78.3% → 10점. 분모 34 = 80 − 46.
 - **forefoot 60% 가중**: 달리기에서 toe-off phase의 전족부 반응성이 체감 탄성을 더 잘 대표. 쿠션성(40/60)과 동일 가중치로 측정 일관성 확보.
 - **선형**: ER%는 물리적 에너지 보존율로 지각과 선형 관계.
-- **rawResponsiveness는 하한 40, 상한 85(분모 45)로 분리하여 레이싱화 간 정렬 변별 유지.**
+- **rawResponsiveness도 같은 하한/범위(`RESP_LO = 46`, `RESP_RANGE_INT = 34`)를 사용합니다.**
 - **측정 한계**: ER%는 플레이트 강성, 로커 형상, 스택 높이 비선형성을 반영하지 못함. 대안 지표 부재로 유지하되 한계 인지 필요.
 - → 토론 레코드: `docs/RESPONSIVENESS_DEBATE_2026-02-23.md`
 
 #### 안정 (Stability)
 
 ```
-# 개별 min-max 정규화 (STAB_TR: 2~5, STAB_HCS: 1~5)
-tr_norm  = 1 + 9 × (torsionalRigidity - 2) / 3
-hcs_norm = 1 + 9 × (heelCounterStiffness - 1) / 4
-base = 0.4 × tr_norm + 0.6 × hcs_norm
+structure = 0.55 × TR_norm + 0.45 × HCS_norm
+platform  = weighted_mean(RR midsole 45%, RT outsole 35%, RT ratio 20%)
+core      = weighted_mean(structure 55%, platform 45%)
 
-# Sway 패널티 (힐 SA ≥ 130 또는 힐 스택 ≥ 40mm 시 차감, ER% ≥ 60% 이면 상쇄)
-base -= sway(heelSA, forefootSA, stackHeel, stackFore, avgER)
+raw = core_or_5.5
+    + SUBCAT_STAB_DELTA
+    - swayPenalty(stack + softness)
+    + qualitativeModifier
 
-# stability 카테고리 +1 보너스
-if subcategoryId == "stability": base += 1
-
-stability = clamp(round(base), 1, 10)
+score = clamp(round(1 + 9 × (raw − 2.4419) / (9.3481 − 2.4419)), 1, 10)
 ```
 
-Fallback (RunRepeat 미수집):
-```
-stability = clamp(기존값 + keyword_delta, 1, 10)
-```
-
-**설계 근거 (2026-02-23 재보정):**
-- **개별 min-max 정규화 후 HCS 60% 가중합**: 힐카운터 고정력이 회전 안정성보다 착지 안정에 더 직결. STAB_TR 앵커 2~5, STAB_HCS 앵커 1~5.
-- **Sway 패널티**: 두꺼운 소프트 폼은 정적 강성이 높아도 달리기 시 측방 흔들림 발생 — SA × 스택 높이 조합으로 정량화. 높은 ER%는 탄성 복원력으로 사이드 스웨이를 상쇄하여 패널티 경감.
-- **Fallback**: 기존 스펙 + 키워드 delta. 정성 리뷰에서 stable/supportive → +1, unstable/wobbly 등 → -1.
-- → 토론 레코드: `docs/CUSHIONING_DEBATE_2026-02-23.md` (안정성 Sway 합의 포함)
+**설계 근거 (V3, 2026-03-09 rollout):**
+- structure는 RunRepeat `torsionalRigidity`와 `heelCounterStiffness`를 55/45로 결합합니다.
+- platform은 RunRepeat `midsoleWidth`, RTINGS `outsole width`, RTINGS `width-to-stack ratio`를 결합합니다.
+- sway 패널티 입력 우선순위는 `RunRepeat physical stack → RTINGS physical stack → production stack`이며, softness는 `RunRepeat AC → RTINGS firmness proxy → subcategory prior` 순서입니다.
+- 정성 보정은 자유 텍스트 ±1이 아니라 source share 기반입니다.
+  - `+0.30 lockdown +0.35 guidance/sidewall +0.20 wide_base −0.45 heel_slip −0.60 instability`
+  - cap `±1.25 raw`
+- `SUBCAT_STAB_DELTA`는 카테고리 구조 편향을 보정합니다.
+- stack source 우선순위 drift는 현재 `0건`입니다.
 
 #### 내구 (Durability)
 
-두께 + 마모 데이터 모두 있을 때:
 ```
-ratio = outsoleThickness_mm / outsoleDurability_mm
-durability = clamp(round(log(ratio + 1) / log(8.2) × 9 + 1), 1, 10)
+outsole = log(outsoleThickness / abrasion + 1) / log(8.2) × 9 + 1
+upper   = 0.60 × toebox_norm + 0.40 × heelPad_norm
+
+midsoleLongevityScore    = normalize(retentionRatio, 0.90 → 1점, 0.98 → 10점)
+midsoleLongevityModifier = capped((midsoleLongevityScore − 5.5) / 4.5, ±1.0)
+compoundModifier         = outsoleHardness_hc 기반 bounded raw modifier
+qualitativeModifier      = durability signal share 기반 bounded raw modifier
+
+raw = core_or_5.5 + midsoleLongevityModifier + compoundModifier + qualitativeModifier
+score = clamp(round(1 + 9 × (raw − 3.6575) / (9.3335 − 3.6575)), 1, 10)
 ```
 
-두께 데이터 없고 마모 데이터만 있을 때:
-```
-capped = min(outsoleDurability_mm, 10.0)
-durability = clamp(round((10.0 - capped) / 10.0 × 9 + 1), 1, 10)
-```
-
-**설계 근거:**
-- **ratio 개념**: 마모 속도(abr) 대비 남은 재료(thick). 두꺼워도 무른 고무면 빨리 닳고, 얇아도 단단하면 오래 감. ratio 하나로 두 변수를 통합.
-- **로그 스케일**: 내구성의 체감은 비선형. ratio 1→2 개선(얇은 신발이 조금 두꺼워짐)은 수명을 크게 늘리지만, ratio 10→20(이미 충분히 두꺼운 신발이 더 두꺼워짐)은 체감 차이가 거의 없음. log로 수확체감 반영.
-- **+1 오프셋 (log(ratio+1))**: ratio=0일 때 log(0) 방지. 극단적 마모를 1점으로 수렴시킴.
-- **log(8.2) 분모 캘리브레이션**: ratio=6.43(gel-kayano-32)이 정확히 10점이 되도록 역산. 상위 4개 신발(tempus-2, glycerin-22, arahi-8, gel-kayano-32)이 모두 10점을 받는 것이 직관적으로 타당한 분포.
-
-  실증 분포:
-  | ratio | 점수 | 예시 |
-  |-------|------|------|
-  | ≥ 6.43 | 10 | tempus-2, glycerin-22, arahi-8, gel-kayano-32 |
-  | 5.0–6.4 | 9 | superblast-2, ghost-17 |
-  | 3.0–5.0 | 8 | bondi-9, clifton-10 |
-  | 2.0–3.0 | 6–7 | endorphin-elite-2 |
-  | 0.5–1.5 | 4–5 | wave-sky-9 |
-  | < 0.5 | 1–3 | alphafly-3, vaporfly-4, adizero-pro-evo-2 |
-
-- **fallback (두께 없음)**: 마모 데이터만 있으면 선형 반비례. abr=0 → 10점, abr=10mm 이상 → 1점.
+**설계 근거 (V3, 2026-03-09 rollout):**
+- outsole과 upper를 core로 두고, hardness와 정성 signal을 raw modifier로 더합니다.
+- RunRepeat `outsoleHardness_hc`는 compound modifier만 담당합니다.
+- RTINGS `longRun`은 retention ratio로 계산하지만 현재 커버리지가 `52.2%`라서 core가 아니라 modifier-only입니다.
+- 정성 보정은 자유 텍스트 ±1이 아니라 source share 기반입니다.
+  - `+0.30 coverage +0.25 reinforcement +0.15 durable −0.45 early_wear −0.35 exposed_foam −0.35 midsole_breakdown`
+  - cap `±1.5 raw`
+- core가 하나도 없으면 neutral prior `5.5`에서 시작합니다.
 
 ---
 
@@ -184,35 +183,39 @@ responsiveness = clamp(round(avg_er / 10) + penalty_by_subcat, 1, 10)
 #### 안정 (Stability)
 
 ```
-stability = 8 if subcategoryId == "stability" else 6
-if stable/supportive keyword in findings:
-    stability = clamp(stability + 1, 1, 10)
+platform = weighted_mean(RTINGS outsole width, RTINGS width-to-stack)
+raw = platform_or_5.5 + SUBCAT_STAB_DELTA − swayPenalty + qualitativeModifier
+score = clamp(round(1 + 9 × (raw − 2.4419) / (9.3481 − 2.4419)), 1, 10)
 ```
 
 **설계 근거:**
-- RTINGS는 안정성을 직접 수치 측정하지 않음 → 카테고리 휴리스틱이 최선.
-- **기본값 8 (stability 카테고리)**: 안정화는 설계 자체가 안정성 우선이지만, 최고 강성 보조기기가 아닌 이상 10을 부여하기 어려움. 8 = "상당히 안정적이나 최대치 아님".
-- **기본값 6 (그 외)**: 중립화는 의도적으로 안정성을 낮추거나 중립 유지. 5가 순수 중립이나 현행 데이터 기반 실측 평균이 6에 가까워 6으로 설정.
-- **+1 키워드 보정**: 전문가 리뷰에서 명시적 언급이 있을 때만 가산.
+- V3부터 Case A는 더 이상 `8/6` 휴리스틱을 쓰지 않습니다.
+- RTINGS platform 계열과 sway, qualitative share modifier만으로 stability를 계산합니다.
 
 #### 내구 (Durability)
 
 ```
-durability = clamp(기존값 + keyword_delta, 1, 10)
+midsoleLongevityScore    = normalize(retentionRatio, 0.90 → 1점, 0.98 → 10점)
+midsoleLongevityModifier = capped((score − 5.5) / 4.5, ±1.0)
+raw = 5.5 + midsoleLongevityModifier + qualitativeModifier
+score = clamp(round(1 + 9 × (raw − 3.6575) / (9.3335 − 3.6575)), 1, 10)
 ```
 
 **설계 근거:**
-- RTINGS는 아웃솔 마모를 대부분 측정하지 않아 정성 리뷰 키워드가 유일한 신호.
+- V3부터 Case A는 더 이상 `기존값 ±1`을 쓰지 않습니다.
+- RTINGS long-run retention과 structured qualitative durability signal로 durability를 계산합니다.
+- longRun은 현재 coverage policy 때문에 modifier-only입니다.
 
 ---
 
 ### Case C: 정성 리뷰만 있음
 
-RunRepeat/RTINGS 모두 없음. Claude API 추론(`normalize_from_reviews.py`) 사용.
+RunRepeat/RTINGS 모두 없음. `normalize_from_reviews.py`를 사용합니다.
 
-1. 각 전문가 소스의 리뷰 점수를 해당 소스의 점수 체계에서 0–10 스케일로 변환.
-2. 복수 소스가 있으면 산술 평균 적용.
-3. 단일 소스만 있으면 해당 점수를 그대로 사용하되 신뢰도를 `low`로 설정.
+- `cushioning`, `responsiveness`: Claude API가 제안합니다.
+- `stability`, `durability`: LLM이 직접 점수를 찍지 않고 structured signal rubric으로 계산합니다.
+- `--apply --sync-production` 실행 시 research `proposedScores`와 production JSON을 함께 갱신합니다.
+- Anthropic 인증이 없으면 기존 production/current score를 `c/r` fallback으로 유지하고, stability/durability만 deterministic하게 동기화합니다.
 
 ---
 
@@ -241,16 +244,15 @@ weightScore = clamp(round((HEAVY_G - weight) / (HEAVY_G - LIGHT_G) × 10), 1, 10
 ```
 ratio = (cushioning + responsiveness + stability + durability) / price
 VALUE_RATIO_MIN = 22 / 599_000  # 앵커 최솟값: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 28 / 169_000  # 앵커 최댓값: novablast-5 (sum=28, price=169,000)
+VALUE_RATIO_MAX = 0.0001638934  # top-5 경계 (2026-03-09 calibrate)
 valueScore = clamp(round((ratio − VALUE_RATIO_MIN) / (VALUE_RATIO_MAX − VALUE_RATIO_MIN) × 9 + 1), 1, 10)
 ```
 
 **설계 근거:**
 - **4개 스펙 합산 / 가격**: 단위 가격당 성능 비율. 스펙이 높고 가격이 낮을수록 가성비 높음.
-- **min/max 고정 앵커 정규화**: `weightScore`와 동일한 설계. 현 데이터셋 극단값을 고정 기준으로 사용하여 신발 추가 시 기존 점수 불변.
+- **rank-based dynamic anchor**: 최솟값은 고정(`adizero-pro-evo-2`), 최댓값은 top-5 경계로 `recalculate.py --calibrate --apply` 때 갱신합니다.
   - 앵커 최솟값(1점): adizero-pro-evo-2 — sum=22, price=599,000원
-  - 앵커 최댓값(10점): novablast-5 — sum=28, price=169,000원
-  - 앵커 업데이트 조건: 새 신발이 기존 앵커보다 더 극단적인 ratio를 가질 때만 변경
+  - 앵커 최댓값(10점): 현재 `0.0001638934`
 - **가격 기준**: 출시 MSRP (KRW). 할인가 미반영.
 - **weightScore 미포함**: 경량성은 별도 스펙으로 표시되며, 가성비 판단 기준은 핵심 퍼포먼스 4개로 한정.
 - **clamp(1, 10)**: 다른 스펙과 동일하게 최솟값 1점 보장.
@@ -260,12 +262,13 @@ valueScore = clamp(round((ratio − VALUE_RATIO_MIN) / (VALUE_RATIO_MAX − VALU
 
 ### 정성 리뷰 보정 / Qualitative Correction
 
-케이스와 관계없이 Stability, Durability에 정성 리뷰 키워드 분석 결과를 ±1 보정합니다.
+V3에서는 자유 텍스트 ±1 보정 대신, `keyFindings`를 deterministic extractor로 구조화해 source share modifier를 계산합니다.
 
-- **Stability +1**: stable, supportive 언급
-- **Stability -1**: unstable, wobbly, sloppy, less stable, not stable, lacks stability 언급
-- **Durability +1**: durable, long-lasting, holds up, durable outsole 언급
-- **Durability -1**: wears fast, breaks down, poor durability 언급
+- Stability signals:
+  - `lockdown`, `guidance_sidewall`, `wide_base`, `heel_slip`, `instability`
+- Durability signals:
+  - `outsole_coverage`, `upper_reinforcement`, `durable`, `early_wear`, `exposed_foam`, `midsole_breakdown`
+- 이 구조화 결과는 research JSON의 `derivedSignals`와 production JSON의 `stabilityComponents` / `durabilityComponents`에 남습니다.
 
 ## 신뢰도 등급 / Confidence Levels
 
@@ -342,7 +345,7 @@ scripts/
 
 **rawResponsiveness**
 
-- RunRepeat ER% 우선: `(heelER × 0.4 + forefootER × 0.6 − 40) / 45 × 10`, clamped 0–10  (정규화 상한 85%, 40/60 가중)
+- RunRepeat ER% 우선: `(heelER × 0.4 + forefootER × 0.6 − 46) / 34 × 10`, clamped 0–10  (정수 점수와 동일 앵커)
 - RTINGS fallback: `(heelScore + forefootScore) / 2 / 10`, clamped 0–10
 
 ### RTINGS 쿠션 편향 분석 / RTINGS Cushioning Bias
@@ -357,9 +360,8 @@ RTINGS-only 신발(RunRepeat 데이터 없음)의 `rawCushioning`이 RunRepeat �
 
 | 파라미터 | 이전 값 | 현행 값 | 근거 |
 |---------|---------|---------|------|
-| `RESP_LO` (하한) | 30% | **40%** | 실측 최솟값 44.2% 기반, 5포인트 버퍼 |
-| 정수 상한 (`RESP_RANGE_INT`) | 52 (=82−30) | **42** (=82−40) | 상한 82% 유지, 하한 상향으로 range 축소 |
-| raw 상한 (`RESP_RANGE_RAW`) | 55 (=85−30) | **45** (=85−40) | 상한 85% 유지, 하한 상향으로 range 축소 |
+| `RESP_LO` (하한) | 30% | **46%** | 실측 하위권 기반 ratchet |
+| 정수/RAW 범위 (`RESP_RANGE_INT`) | 52 (=82−30) | **34** (=80−46) | 정수/RAW 모두 동일 범위 사용 |
 | heel/forefoot 가중치 | 50/50 | **40/60** | 전족부 반응성 체감 우세 + 쿠션성과 통일 |
 
 기존 상한 75% 기준에서는 레이싱화 15개 전부 `rawResp = 10.0`이 되어

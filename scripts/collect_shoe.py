@@ -18,6 +18,8 @@ import time
 from datetime import date
 from pathlib import Path
 
+from stability_durability_v3 import derive_signals
+
 # 프로젝트 루트 (이 스크립트 기준 한 단계 위)
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data" / "brands"
@@ -387,6 +389,7 @@ def collect_review(shoe_id: str, source_name: str, priority: int, url: str) -> t
 def build_research_json(shoe: dict, brand_id: str, shoe_id: str,
                          research_date: str, sources: list, attempts: list) -> dict:
     """Research JSON 조립. normalize_from_*.py 호환 스키마."""
+    derived_signals = derive_signals(sources)
     specs = shoe.get("specs", {})
     current_specs = {
         "weight":       specs.get("weight"),
@@ -469,6 +472,7 @@ def build_research_json(shoe: dict, brand_id: str, shoe_id: str,
         "currentScores":  current_scores,
         "proposedScores": dict(current_scores),
         "scoreDiffs":     [],
+        "derivedSignals": derived_signals,
         "specsDecision":  "No automatic score/spec change proposed. Conflicts were recorded for reviewer decision.",
     }
 

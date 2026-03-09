@@ -114,12 +114,15 @@
 - 정수 점수: `cushioning`, `responsiveness`, `stability`, `durability`, `weightScore`, `valueScore`
 - 물성: `weight`, `drop`, `stackHeight`
 - raw 정렬값: `rawCushioning`, `rawResponsiveness`, `rawStability`, `rawDurability`, `rawValueScore`, `rawLightness`
+- 디버그 컴포넌트: `stabilityComponents`, `durabilityComponents`
 
 ### raw 점수 해석
 
 - 정수 점수는 사용자 노출과 필터 기준이다.
 - raw 점수는 더 미세한 정렬과 유사도 계산에 쓰인다.
 - `rawStability`, `rawDurability`는 현재 앵커 기준으로 이미 보정된 값이므로 plain `recalculate --apply`로 다시 만지면 drift 위험이 있다.
+- 현재 안정성/내구성 score version은 `durability-stability-v3`다.
+- `stabilityComponents`, `durabilityComponents`는 methodology 검증과 drift 확인용 내부 디버그 필드다.
 
 ### 운영상 해석
 
@@ -133,7 +136,7 @@
 1. `python3 scripts/collect_shoe.py --shoe-id <id>`
 2. `python3 scripts/normalize_from_runrepeat.py --apply`
 3. `python3 scripts/normalize_from_rtings.py --apply`
-4. `python3 scripts/normalize_from_reviews.py --apply`
+4. `python3 scripts/normalize_from_reviews.py --apply --sync-production`
 5. `python3 scripts/impute_scores.py --apply`
 6. `python3 scripts/recalculate.py --calibrate --apply`
 7. `python3 scripts/verify_all_specs.py`
@@ -142,13 +145,16 @@
 ### 케이스별 역할
 
 - Case B: RunRepeat 계측치가 있으면 `normalize_from_runrepeat.py`가 우선 신호를 사용한다.
-- Case A: RunRepeat는 없고 RTINGS만 있으면 `normalize_from_rtings.py`를 사용한다.
-- Case C-리뷰: 실측이 없고 정성 리뷰만 있으면 `normalize_from_reviews.py`가 `research/`의 `proposedScores`만 갱신한다.
+- Case A: RunRepeat는 없고 RTINGS만 있으면 `normalize_from_rtings.py`가 RTINGS platform core와 structured qualitative signal을 사용한다.
+- Case C-리뷰: 실측이 없고 정성 리뷰만 있으면 `normalize_from_reviews.py`가 stability/durability를 deterministic하게 계산하고, cushioning/responsiveness는 LLM 또는 fallback으로 동기화한다.
 - Case C-KNN: 실측과 리뷰가 모두 부족하면 `impute_scores.py`가 production JSON을 직접 보정한다.
 
 ### 점수 체계 운영 원칙
 
 - 공식 변경은 `scripts/formulas.py`에서만 한다.
+- 안정성 V3는 `structure(TR/HCS) + platform(width/ratio) - sway(stack+softness) + qualitative share modifier` 구조다.
+- 내구성 V3는 `outsole + upper` core에 `outsole hardness`, `qualitative durability signal`, `RTINGS longRun modifier`를 더하는 구조다.
+- `RTINGS longRun`은 2026-03-09 기준 커버리지가 `60/115 = 52.2%`라서 core가 아니라 modifier-only로 사용한다.
 - `recalculate.py --calibrate --apply`는 `VALUE_RATIO_MAX`, `STAB_RAW_MIN/MAX`, `DUR_RAW_MIN/MAX`를 현재 데이터 기준으로 갱신한다.
 - 가성비만 다시 계산할 때는 `python3 scripts/recalculate.py --apply --only value`를 우선 사용한다.
 - 공개 설명 페이지와 실제 공식이 어긋날 수 있으므로, 공식 변경 뒤에는 `app/methodology/page.tsx`와 `docs/METHODOLOGY.md`도 같이 확인한다.
@@ -212,6 +218,9 @@
 
 2026-03-09에 아래를 실제 실행해 확인했다.
 
+- `python3 -m py_compile scripts/formulas.py scripts/stability_durability_v3.py scripts/collect_shoe.py scripts/normalize_from_runrepeat.py scripts/normalize_from_rtings.py scripts/normalize_from_reviews.py scripts/recalculate.py`: 통과
+- confidence audit: `mismatch_count 0`
+- `python3 scripts/verify_all_specs.py`: 이상값 0건
 - `npm run lint`: 통과, ESLint 경고/오류 없음
 - `npm run build`: 통과, Next.js 14.2.35 기준 정적 페이지 생성 완료
 
@@ -244,6 +253,8 @@
 - 2026-03-09: `docs/PROJECT_CONTEXT.md` 생성. production 106개, research 고유 ID 115개, research 스냅샷 JSON 205개 기준으로 문서화.
 - 2026-03-09: `npm run lint`, `npm run build` 통과 상태를 문서에 고정.
 - 2026-03-09: production/research 불일치, 빈 `sources`, 하드코딩 히어로, `/methodology` sitemap 누락을 현재 리스크로 기록.
+- 2026-03-09: stability/durability V3 rollout 반영. `stabilityComponents`, `durabilityComponents`, `derivedSignals`, `durability-stability-v3` score version을 운영 문서에 반영.
+- 2026-03-09: `RTINGS longRun` 커버리지 `60/115 = 52.2%`를 확인했고, coverage policy에 따라 durability에서는 modifier-only로 사용하도록 확정.
 
 ## Update Checklist
 

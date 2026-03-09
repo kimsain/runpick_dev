@@ -41,7 +41,7 @@ python3 scripts/fetch_rtings.py --fetch <url> --shoe-id <id>      # RTINGS 단�
 ```bash
 python3 scripts/normalize_from_runrepeat.py --apply  # Case B: RunRepeat+RTINGS
 python3 scripts/normalize_from_rtings.py --apply     # Case A: RTINGS-only
-python3 scripts/normalize_from_reviews.py --apply    # Case C-리뷰: 정성 리뷰 → proposedScores (사람 검토 필요)
+python3 scripts/normalize_from_reviews.py --apply --sync-production  # Case C-리뷰: c/r 제안 + stab/dur V3 구조화 반영
 python3 scripts/impute_scores.py --apply             # Case C-KNN: 측정값 없음
 python3 scripts/recalculate.py --calibrate --apply   # 앵커 재보정 + weightScore + valueScore 갱신
 python3 scripts/recalculate.py --apply --only value  # 가성비만 재계산 (stability/durability raw 보호)
@@ -63,7 +63,7 @@ python3 scripts/write_copy.py --brand <brand> --shoe <shoe-id> --apply
 |------|------|--------------|
 | A | RTINGS 데이터만 | `normalize_from_rtings.py` |
 | B | RunRepeat + RTINGS | `normalize_from_runrepeat.py` |
-| C-리뷰 | 실측 없음, 정성 리뷰 있음 | `normalize_from_reviews.py` → 사람 검토 후 적용 |
+| C-리뷰 | 실측 없음, 정성 리뷰 있음 | `normalize_from_reviews.py` → stab/dur는 deterministic, c/r만 LLM 또는 fallback |
 | C-KNN | 실측 없음, 리뷰도 부족 | `impute_scores.py` (KNN 자동) |
 
 ## Shoe Confidence Levels
@@ -97,3 +97,6 @@ python3 scripts/verify_all_specs.py
 - RTINGS ER%는 0–100 스케일 (0–10 아님)
 - `scripts/formulas.py`가 모든 점수 공식의 단일 출처 — 여기서만 수정
 - `rawStability` / `rawDurability`는 normalize 스크립트가 기록한 calibrated 값 — `recalculate --apply` (plain)으로 덮어쓰면 앵커 drift 발생. 재계산 필요 시 `--calibrate --apply` 또는 `--only value` 사용
+- 현재 안정성/내구성 score version은 `durability-stability-v3`
+- `normalize_from_reviews.py`는 `ANTHROPIC_API_KEY`가 없으면 기존 production/current score를 c/r fallback으로 유지하고 stab/dur만 동기화한다
+- `RTINGS longRun` 커버리지는 2026-03-09 기준 52.2%라서 durability에서는 core가 아니라 modifier-only로 사용한다

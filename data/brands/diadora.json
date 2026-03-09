@@ -28,16 +28,84 @@
         },
         "cushioning": 6,
         "responsiveness": 8,
-        "stability": 3,
-        "durability": 4,
+        "stability": 2,
+        "durability": 5,
         "rawCushioning": 6.15,
         "rawResponsiveness": 8.4,
-        "rawStability": 3.12,
-        "rawDurability": 4.07,
+        "rawStability": 2.13,
+        "rawDurability": 5.45,
         "weightScore": 7,
         "rawLightness": 6.8,
         "valueScore": 3,
-        "rawValueScore": 3.08
+        "rawValueScore": 3.16,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 3.82,
+          "platformInputs": {
+            "runRepeatMidsoleScore": null,
+            "rtingsOutsoleScore": 3.57,
+            "rtingsWidthToStackScore": 4.26
+          },
+          "coreScore": 3.82,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": -0.0,
+          "qualitativeModifier": 0.32,
+          "intermediateRaw": 3.64,
+          "stackInput": {
+            "source": "rtings",
+            "heel": 38.1,
+            "forefoot": 31.0
+          },
+          "softnessInput": {
+            "source": "rtings_firmness",
+            "softnessScalar": 0.47,
+            "proxyAc": null,
+            "heelFirmness1100": 136.1,
+            "forefootFirmness1300": 234.1
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "lockdown": 0.6667,
+              "guidance_sidewall": 0.3333,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": null,
+          "upperScore": null,
+          "midsoleLongevityScore": 9.93,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.98,
+          "coreScore": null,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": -0.02,
+          "intermediateRaw": 6.46,
+          "inputs": {
+            "abrasionMm": null,
+            "outsoleThicknessMm": null,
+            "toeboxDurability": null,
+            "heelPaddingDurability": null,
+            "midsoleRetentionRatio": 0.9794,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 3,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.6667,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.3333
+            }
+          }
+        }
       },
       "technologies": [
         "Anima PBX",

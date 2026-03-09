@@ -4,6 +4,40 @@
 
 ---
 
+## 2026-03-09 — Stability·Durability V3 rollout
+
+- `scripts/formulas.py`
+  - `SCORE_VERSION = "durability-stability-v3"` 추가
+  - stability V3 component 함수 추가: `structure`, `platform`, `sway`, `qualitative modifier`
+  - durability V3 component 함수 추가: `outsole`, `upper`, `compound modifier`, `qualitative modifier`
+  - `RTINGS longRun` 커버리지 52.2% 확인 후 `MIDSOLE_LONGRUN_CORE_ENABLED = False`로 rollout 고정
+  - `STAB_RAW_MIN/MAX`, `DUR_RAW_MIN/MAX`, `VALUE_RATIO_MAX`를 2026-03-09 기준으로 재보정
+- `scripts/stability_durability_v3.py` 신규 추가
+  - `keyFindings`에서 stability/durability signal을 deterministic extractor로 구조화
+  - shared V3 계산 함수(`compute_stability_v3`, `compute_durability_v3`) 도입
+- `scripts/collect_shoe.py`
+  - research JSON에 `derivedSignals.stability`, `derivedSignals.durability` 저장
+  - confidence 규칙을 `very-high / high / medium / low` 운영 기준으로 통일
+- `scripts/normalize_from_runrepeat.py`
+  - stability/durability를 shared V3 로직으로 계산
+  - production JSON에 `stabilityComponents`, `durabilityComponents` 저장
+  - research JSON의 `derivedSignals`, `proposedScores`, `specsDecision` 동기화
+- `scripts/normalize_from_rtings.py`
+  - Case A를 기존 휴리스틱(`8/6`, `기존값 ±1`)에서 V3 계산으로 전환
+  - production/research에 component debug 필드 동기화
+- `scripts/normalize_from_reviews.py`
+  - cushioning/responsiveness만 LLM 제안, stability/durability는 deterministic structured rubric으로 전환
+  - `--sync-production` 추가
+  - Anthropic 인증이 없을 때 기존 production/current score를 c/r fallback으로 유지하는 경로 추가
+- 검증
+  - `normalize_from_runrepeat.py --apply`
+  - `normalize_from_rtings.py --apply`
+  - `normalize_from_reviews.py --apply --sync-production`
+  - `recalculate.py --calibrate --apply`
+  - `verify_all_specs.py`, confidence audit(`mismatch_count 0`), `npm run lint`, `npm run build` 통과
+
+---
+
 ## 2026-02-26 — 신발 문구 스타일 통일 (86개 전체 재작성)
 
 - shortDescription/pros/cons: 해요체 → 명사구 간결체 (종결어미 제거)

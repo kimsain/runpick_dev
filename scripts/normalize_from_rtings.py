@@ -14,16 +14,13 @@ import json
 from pathlib import Path
 
 from formulas import (
-    clamp,
     cushioning_from_rtings,
     responsiveness_from_rtings,
     raw_cushioning_from_rtings,
     raw_responsiveness_from_rtings,
-    STABILITY_POS_RE,
-    DURABILITY_POS_RE,
-    DURABILITY_NEG_RE,
 )
 from research_utils import resolve_research_files, describe_date_range
+from stability_durability_v3 import derive_signals, compute_stability_v3, compute_durability_v3
 
 BRANDS_DIR = Path(__file__).parent.parent / "data" / "brands"
 
@@ -60,20 +57,11 @@ def load_production():
     return production
 
 
-def get_qualitative_findings(sources):
-    """RTINGS 제외 소스들의 keyFindings 텍스트 합산 (stability 키워드 탐지용)."""
-    findings = []
-    for src in sources:
-        if src["source"] != "RTINGS":
-            findings.extend(src.get("keyFindings", []))
-    return " ".join(findings)
-
-
-def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
+def compute_scores(sources, rtings_src, subcategoryId, existing_specs):
     """
-    RTINGS 계측치 + 카테고리 휴리스틱으로 4개 스코어 계산.
-    Returns (cushioning, responsiveness, stability, durability, rawCushioning, rawResponsiveness)
+    RTINGS 계측치 + V3 stability/durability 조립.
     """
+    derived = derive_signals(sources)
     cush = rtings_src["attributeScores"]["cushioning"]
     resp = rtings_src["attributeScores"]["responsiveness"]
 
@@ -93,26 +81,31 @@ def compute_scores(rtings_src, subcategoryId, findings_text, existing_specs):
         responsiveness = responsiveness_from_rtings(heel_er, fore_er, subcategoryId)
         raw_resp = raw_responsiveness_from_rtings(heel_er, fore_er, subcategoryId)
 
-    # stability — RTINGS 미측정, 카테고리 휴리스틱
-    if subcategoryId == "stability":
-        stability = 8
-    else:
-        stability = 6
-    if STABILITY_POS_RE.search(findings_text):
-        stability = clamp(stability + 1, 1, 10)
+    stability, raw_stab, stab_components, derived = compute_stability_v3(
+        sources,
+        existing_specs,
+        subcategoryId,
+        derived=derived,
+    )
+    durability, raw_dur, dur_components, derived = compute_durability_v3(
+        sources,
+        existing_specs,
+        derived=derived,
+    )
 
-    # durability — 기존값 + 키워드 delta
-    old_dur = existing_specs.get("durability", 5)
-    has_dur_pos = bool(DURABILITY_POS_RE.search(findings_text))
-    has_dur_neg = bool(DURABILITY_NEG_RE.search(findings_text))
-    if has_dur_pos and not has_dur_neg:
-        durability = clamp(old_dur + 1, 1, 10)
-    elif has_dur_neg and not has_dur_pos:
-        durability = clamp(old_dur - 1, 1, 10)
-    else:
-        durability = old_dur
-
-    return cushioning, responsiveness, stability, durability, raw_cush, raw_resp
+    return (
+        cushioning,
+        responsiveness,
+        stability,
+        durability,
+        raw_cush,
+        raw_resp,
+        raw_stab,
+        raw_dur,
+        stab_components,
+        dur_components,
+        derived,
+    )
 
 
 def fmt_change(old, new, width=12):
@@ -141,6 +134,7 @@ def main():
 
     # {brand_id: [{shoeId, cushioning, responsiveness, stability}]}
     updates_by_brand: dict = {}
+    research_updates: dict = {}
     preview_rows = []
 
     for fpath in research_files:
@@ -168,10 +162,23 @@ def main():
         prod = production[shoe_id]
         subcatId = prod["subcategoryId"]
         old_specs = prod["specs"]
-        findings_text = get_qualitative_findings(research.get("sources", []))
-
-        new_cush, new_resp, new_stab, new_dur, new_raw_cush, new_raw_resp = compute_scores(
-            rtings_src, subcatId, findings_text, old_specs
+        (
+            new_cush,
+            new_resp,
+            new_stab,
+            new_dur,
+            new_raw_cush,
+            new_raw_resp,
+            new_raw_stab,
+            new_raw_dur,
+            stab_components,
+            dur_components,
+            derived_signals,
+        ) = compute_scores(
+            research.get("sources", []),
+            rtings_src,
+            subcatId,
+            old_specs,
         )
 
         brand_id = prod["brand"]
@@ -185,7 +192,25 @@ def main():
             "durability": new_dur,
             "rawCushioning": new_raw_cush,
             "rawResponsiveness": new_raw_resp,
+            "rawStability": new_raw_stab,
+            "rawDurability": new_raw_dur,
+            "stabilityComponents": stab_components,
+            "durabilityComponents": dur_components,
         })
+        research_updates[shoe_id] = {
+            "fpath": fpath,
+            "derivedSignals": derived_signals,
+            "proposedScores": {
+                "cushioning": new_cush,
+                "responsiveness": new_resp,
+                "stability": new_stab,
+                "durability": new_dur,
+            },
+            "specsDecision": (
+                "[normalize_from_rtings.py] Stability/Durability V3 rollout applied. "
+                "RTINGS platform/long-run signals and structured qualitative signals reflected in proposedScores."
+            ),
+        }
 
         preview_rows.append({
             "shoeId": shoe_id,
@@ -240,6 +265,7 @@ def main():
     print("\n[적용 중...]")
     updated_files = 0
     updated_shoes = 0
+    updated_research = 0
 
     for fname in sorted((BRANDS_DIR).iterdir()):
         if fname.suffix != ".json":
@@ -262,7 +288,11 @@ def main():
             specs = shoe["specs"]
             shoe_changed = False
 
-            for field in ["cushioning", "responsiveness", "stability", "durability", "rawCushioning", "rawResponsiveness"]:
+            for field in [
+                "cushioning", "responsiveness", "stability", "durability",
+                "rawCushioning", "rawResponsiveness", "rawStability", "rawDurability",
+                "stabilityComponents", "durabilityComponents",
+            ]:
                 new_val = u[field]
                 if new_val is None:
                     continue
@@ -282,7 +312,22 @@ def main():
                 f.write("\n")
             updated_files += 1
 
-    print(f"\n완료: {updated_shoes}개 신발 업데이트, {updated_files}개 브랜드 파일 수정")
+    for shoe_id, payload in research_updates.items():
+        with open(payload["fpath"]) as f:
+            research = json.load(f)
+        research["derivedSignals"] = payload["derivedSignals"]
+        proposed = research.get("proposedScores", {})
+        for field, value in payload["proposedScores"].items():
+            if value is not None:
+                proposed[field] = value
+        research["proposedScores"] = proposed
+        research["specsDecision"] = payload["specsDecision"]
+        with open(payload["fpath"], "w") as f:
+            json.dump(research, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        updated_research += 1
+
+    print(f"\n완료: {updated_shoes}개 신발 업데이트, {updated_files}개 브랜드 파일 수정, research {updated_research}개 갱신")
 
 
 if __name__ == "__main__":
