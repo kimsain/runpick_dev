@@ -5,6 +5,8 @@ import dynamic from 'next/dynamic'
 import { getShoeBySlug, getAllSlugs, getSimilarShoes, getBrands } from '@/lib/data'
 import { CATEGORY_LABELS, SOURCE_LABELS } from '@/lib/constants'
 import RelatedShoes from '@/components/RelatedShoes'
+import ScoreMethodNotice from '@/components/ScoreMethodNotice'
+import { STABILITY_METHOD_NOTICE } from '@/lib/scoreMethodNotice'
 
 const SpecRadar = dynamic(() => import('@/components/SpecRadar'), { ssr: false })
 
@@ -69,7 +71,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             <p className="font-display text-sm text-secondary tracking-widest uppercase mb-1">
               {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
             </p>
-            <h1 className="font-display text-xl text-primary leading-tight mb-3">
+            <h1 className="font-display text-xl text-primary leading-tight break-keep mb-3">
               {shoe.name}
             </h1>
             <p className="font-display text-lg text-accent mb-4">{shoe.priceFormatted}</p>
@@ -112,12 +114,18 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Spec radar + stat cards */}
           <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
               스펙
               {shoe.confidence === 'medium' && (
                 <span className="ml-2 inline-block w-1.5 h-1.5 rounded-full bg-conf-medium align-middle" />
               )}
             </h2>
+            <ScoreMethodNotice
+              notice={STABILITY_METHOD_NOTICE}
+              linkHref="/methodology"
+              linkLabel="점수 산정 방법 보기"
+              className="mb-4"
+            />
             <SpecRadar specs={shoe.specs} confidence={shoe.confidence} />
 
             {/* Numeric specs */}
@@ -141,7 +149,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Description */}
           <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
               리뷰
             </h2>
             <p className="text-secondary text-sm font-body leading-relaxed">
@@ -153,7 +161,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           <section className="mb-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <h3 className="font-display text-sm text-spec-response tracking-widest uppercase mb-3">
+                <h3 className="font-display text-sm text-spec-response tracking-widest uppercase break-keep mb-3">
                   장점
                 </h3>
                 <ul className="space-y-2">
@@ -166,7 +174,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </div>
               <div>
-                <h3 className="font-display text-sm text-spec-durability tracking-widest uppercase mb-3">
+                <h3 className="font-display text-sm text-spec-durability tracking-widest uppercase break-keep mb-3">
                   단점
                 </h3>
                 <ul className="space-y-2">
@@ -183,7 +191,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Best For */}
           <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
               이런 러너에게 추천
             </h2>
             <div className="flex flex-wrap gap-2">
@@ -201,7 +209,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           {/* Technologies */}
           {shoe.technologies.length > 0 && (
             <section className="mb-8">
-              <h2 className="font-display text-md text-primary tracking-widest uppercase mb-4">
+              <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
                 주요 기술
               </h2>
               <div className="flex flex-wrap gap-2">

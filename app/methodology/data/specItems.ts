@@ -1,3 +1,6 @@
+import type { ScoreMethodNoticeContent } from '@/lib/scoreMethodNotice'
+import { STABILITY_METHOD_NOTICE } from '@/lib/scoreMethodNotice'
+
 export interface SpecConstant {
   name: string
   value: string
@@ -9,6 +12,8 @@ export interface SpecItem {
   name: string
   nameEn: string
   color: string
+  badgeLabel?: string
+  notice?: ScoreMethodNoticeContent
   summary: string   // 카드용 1-2줄
   basis: string     // 카드용 1줄 기준 요약
   modalContent: {
@@ -107,6 +112,8 @@ export const SPEC_ITEMS: SpecItem[] = [
     name: '안정성',
     nameEn: 'Stability',
     color: 'var(--spec-stability)',
+    badgeLabel: STABILITY_METHOD_NOTICE.label,
+    notice: STABILITY_METHOD_NOTICE,
     summary:
       '착지 시 발이 얼마나 안정적으로 지지되는지 수치화합니다. TR/HCS, 플랫폼 폭, 스택/소프트니스 sway, 구조화된 리뷰 신호를 함께 반영합니다.',
     basis: 'TR/HCS + 플랫폼 폭/비율 + sway 패널티 + 정성 signal → 1–10점',

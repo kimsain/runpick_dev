@@ -71,24 +71,24 @@ const CONFIDENCE_LEVELS = [
 
 export default function MethodologyPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
+    <main className="max-w-4xl mx-auto px-5 sm:px-6 py-12 sm:py-16">
       {/* Hero */}
-      <div className="mb-16">
+      <div className="mb-12 sm:mb-16">
         <p className="text-accent text-sm font-body tracking-widest uppercase mb-4">
           METHODOLOGY
         </p>
-        <h1 className="font-display text-2xl text-primary leading-none mb-6">
+        <h1 className="font-display text-lg sm:text-xl md:text-2xl text-primary leading-none break-keep mb-4 sm:mb-6">
           점수 산정 방법
         </h1>
-        <p className="text-secondary font-body text-lg max-w-2xl">
+        <p className="text-secondary font-body text-sm sm:text-base md:text-md max-w-2xl leading-relaxed">
           RunPick의 모든 데이터는 공개된 전문 측정 기관과 리뷰어의 실측 데이터를
           기반으로 합니다. 어떤 브랜드로부터도 후원을 받지 않습니다.
         </p>
       </div>
 
       {/* 데이터 수집 방법 */}
-      <section className="mb-16">
-        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
+      <section className="mb-12 sm:mb-16">
+        <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep mb-6 sm:mb-8">
           데이터 소스
         </h2>
         <div className="space-y-4">
@@ -124,8 +124,8 @@ export default function MethodologyPage() {
       </section>
 
       {/* 점수 산정 방식 */}
-      <section className="mb-16">
-        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
+      <section className="mb-12 sm:mb-16">
+        <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep mb-6 sm:mb-8">
           {SPEC_ITEMS.length}개 스펙 점수
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
@@ -139,8 +139,8 @@ export default function MethodologyPage() {
       </section>
 
       {/* 신뢰도 등급 */}
-      <section className="mb-16">
-        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
+      <section className="mb-12 sm:mb-16">
+        <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep mb-6 sm:mb-8">
           신뢰도 등급
         </h2>
         <p className="text-secondary text-sm font-body mb-8">
@@ -167,8 +167,8 @@ export default function MethodologyPage() {
       </section>
 
       {/* 한계 및 주의사항 */}
-      <section className="mb-16">
-        <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
+      <section className="mb-12 sm:mb-16">
+        <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep mb-6 sm:mb-8">
           한계 및 주의사항
         </h2>
         <div className="bg-card border border-elevated p-6 space-y-4">

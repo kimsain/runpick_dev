@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import type { SpecItem } from '@/app/methodology/data/specItems'
+import ScoreMethodNotice from '@/components/ScoreMethodNotice'
 
 interface Props {
   items: SpecItem[]
@@ -49,11 +50,19 @@ export default function SpecCardsSection({ items }: Props) {
             onClick={() => openModal(spec)}
             className="bg-card border border-elevated p-6 text-left hover:ring-1 hover:ring-accent/50 transition-shadow cursor-pointer"
           >
-            <div className="flex items-baseline gap-2 mb-3">
-              <span className="font-display text-xl" style={{ color: spec.color }}>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span
+                className="font-display text-lg sm:text-xl break-keep"
+                style={{ color: spec.color }}
+              >
                 {spec.name}
               </span>
               <span className="text-sm font-body text-muted">{spec.nameEn}</span>
+              {spec.badgeLabel && (
+                <span className="inline-flex items-center rounded-full border border-spec-stability/25 bg-spec-stability/10 px-2 py-1 text-xs font-body text-spec-stability">
+                  {spec.badgeLabel}
+                </span>
+              )}
             </div>
             <p className="text-secondary text-sm font-body mb-3">{spec.summary}</p>
             <p className="text-xs font-body text-muted">{spec.basis}</p>
@@ -75,10 +84,10 @@ export default function SpecCardsSection({ items }: Props) {
           <div className="relative bg-card border border-elevated w-full max-w-lg max-h-[85vh] flex flex-col overflow-hidden">
             {/* Header — 고정 */}
             <div className="flex items-baseline justify-between px-6 pt-6 pb-4 border-b border-elevated shrink-0">
-              <div className="flex items-baseline gap-2">
+              <div className="flex min-w-0 flex-wrap items-baseline gap-2">
                 <span
                   id="spec-modal-title"
-                  className="font-display text-xl"
+                  className="font-display text-lg sm:text-xl break-keep"
                   style={{ color: selected.color }}
                 >
                   {selected.name}
@@ -119,6 +128,8 @@ export default function SpecCardsSection({ items }: Props) {
 
             {/* Body — 스크롤 */}
             <div className="flex-1 overflow-y-auto p-6 space-y-6">
+              {selected.notice && <ScoreMethodNotice notice={selected.notice} />}
+
               {activeTab === 'general' && (
                 <>
                   <p className="text-secondary text-sm font-body leading-relaxed">

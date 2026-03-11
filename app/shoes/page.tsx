@@ -28,7 +28,7 @@ export default function ShoesPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-12">
-      <h1 className="font-display text-xl text-primary mb-2 tracking-widest uppercase">
+      <h1 className="font-display text-xl text-primary mb-2 tracking-widest uppercase break-keep">
         러닝화 탐색
       </h1>
       <p className="text-secondary text-sm font-body mb-10">

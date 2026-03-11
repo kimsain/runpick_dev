@@ -78,9 +78,9 @@ export default function HomePage() {
       {/* Curation Sections */}
       {sections.map((section, sectionIdx) => (
         <section key={section.title} className="py-16 px-6 max-w-7xl mx-auto">
-          <div className="flex items-start justify-between mb-8">
+          <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div>
-              <h2 className="font-display text-lg text-primary tracking-widest uppercase">
+              <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
                 {section.title}
               </h2>
               {section.subtitle && (
@@ -89,7 +89,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/shoes"
-              className="text-sm font-body text-secondary hover:text-accent transition-colors min-h-[44px] flex items-center px-2"
+              className="text-sm font-body text-secondary hover:text-accent transition-colors min-h-[44px] inline-flex items-center px-2 self-start sm:self-auto"
             >
               전체 보기 →
             </Link>

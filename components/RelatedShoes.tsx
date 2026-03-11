@@ -10,7 +10,7 @@ export default function RelatedShoes({ shoes }: Props) {
 
   return (
     <section className="mt-16 pt-12 border-t border-elevated">
-      <h2 className="font-display text-lg text-primary tracking-widest uppercase mb-8">
+      <h2 className="font-display text-lg text-primary tracking-widest uppercase break-keep mb-8">
         유사한 러닝화
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
