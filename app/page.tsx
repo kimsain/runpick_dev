@@ -61,13 +61,13 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Brand Bar */}
-      <section className="border-y border-elevated py-8 px-6">
-        <div className="max-w-7xl mx-auto flex flex-wrap gap-6 justify-center">
+      <section className="border-y border-border bg-surface/40 px-6 py-8">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-2 gap-y-1">
           {brands.map((brand) => (
             <Link
               key={brand.id}
               href={`/shoes?brands=${brand.id}`}
-              className="font-display text-md text-muted hover:text-accent transition-colors tracking-widest px-2 py-2 min-h-[44px] flex items-center"
+              className="flex min-h-[44px] items-center rounded-lg px-3 py-2 font-display text-md tracking-widest text-muted transition-all hover:bg-accent/5 hover:text-accent"
             >
               {brand.name}
             </Link>
@@ -77,24 +77,27 @@ export default function HomePage() {
 
       {/* Curation Sections */}
       {sections.map((section, sectionIdx) => (
-        <section key={section.title} className="py-16 px-6 max-w-7xl mx-auto">
-          <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+        <section key={section.title} className="max-w-7xl mx-auto px-6 py-20">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
                 {section.title}
               </h2>
               {section.subtitle && (
-                <p className="text-muted text-xs font-body mt-1">{section.subtitle}</p>
+                <p className="mt-2 max-w-lg text-xs font-body text-muted sm:text-sm">{section.subtitle}</p>
               )}
             </div>
             <Link
               href="/shoes"
-              className="text-sm font-body text-secondary hover:text-accent transition-colors min-h-[44px] inline-flex items-center px-2 self-start sm:self-auto"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-body text-secondary transition-colors self-start hover:bg-accent/5 hover:text-accent sm:self-auto"
             >
-              전체 보기 →
+              전체 보기
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {section.shoes.map((shoe, i) => (
               <ShoeCard
                 key={shoe.slug}

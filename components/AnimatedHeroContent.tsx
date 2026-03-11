@@ -90,7 +90,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#080808]">
       {/* Desktop: left-right split / Mobile: stacked */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row md:items-center md:gap-12">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-20 md:flex-row md:items-center md:gap-16">
 
         {/* ── Left: Text content ── */}
         <motion.div
@@ -100,7 +100,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           {/* Label */}
           <motion.p
             {...fadeLeft(0)}
-            className="text-secondary text-sm font-body tracking-widest uppercase mb-4 flex items-center gap-3"
+            className="mb-5 flex items-center gap-3 text-sm font-body uppercase tracking-widest text-secondary"
           >
             러닝화 탐색 플랫폼
             <motion.span
@@ -113,7 +113,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           </motion.p>
 
           {/* Headline */}
-          <h1 className="font-display leading-none mb-6">
+          <h1 className="mb-8 font-display leading-none">
             <motion.span
               {...fadeUp(0.25)}
               className="block text-[clamp(3rem,10vw,7rem)] text-accent"
@@ -131,15 +131,15 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           {/* Stat chips */}
           <motion.div
             {...fadeUp(0.5)}
-            className="flex flex-wrap gap-3 mb-8"
+            className="mb-10 flex flex-wrap gap-3"
           >
             {STATS(totalCount, brandCount).map((stat) => (
               <div
                 key={stat.label}
-                className="border border-elevated px-3 py-2 text-sm font-body"
+                className="rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm"
               >
-                <span className="text-accent font-display">{stat.value}</span>
-                <span className="text-secondary ml-1">{stat.label}</span>
+                <span className="text-lg font-display text-accent">{stat.value}</span>
+                <span className="ml-1.5 text-secondary">{stat.label}</span>
               </div>
             ))}
           </motion.div>
@@ -151,15 +151,18 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
             transition={transition(0.6)}
           >
             <motion.div
-              whileHover={prefersReduced ? {} : { scale: 1.04 }}
+              whileHover={prefersReduced ? {} : { scale: 1.03 }}
               whileTap={prefersReduced ? {} : { scale: 0.97 }}
               className="inline-block"
             >
               <Link
                 href="/shoes"
-                className="inline-flex items-center gap-3 bg-accent text-dark font-display text-xl px-6 py-4 min-h-[44px] transition-shadow hover:shadow-[0_0_24px_rgba(200,255,0,0.4)]"
+                className="inline-flex min-h-[52px] items-center gap-3 rounded-xl bg-accent px-8 py-4 text-xl font-display text-dark transition-all hover:bg-accent-dim hover:shadow-glow"
               >
-                신발 탐색 →
+                신발 탐색
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </Link>
             </motion.div>
           </motion.div>
