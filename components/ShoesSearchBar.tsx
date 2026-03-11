@@ -49,6 +49,8 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
   const listboxId = useId()
   const wrapperRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
+  const inputValueRef = useRef('')
+  const isComposingRef = useRef(false)
 
   const urlQuery = searchParams.get('q') ?? ''
   const [inputValue, setInputValue] = useState(urlQuery)
@@ -149,10 +151,29 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
   const showEmptyState = showPanel && hasSearchInput && suggestionItems.length === 0
 
   useEffect(() => {
+    inputValueRef.current = inputValue
+  }, [inputValue])
+
+  useEffect(() => {
     setRecentSearches(loadRecentSearches())
   }, [])
 
   useEffect(() => {
+    const normalizedInput = normalizeSearchText(inputValueRef.current)
+    const normalizedUrl = normalizeSearchText(urlQuery)
+
+    if (isComposingRef.current) {
+      return
+    }
+
+    if (normalizedInput === normalizedUrl) {
+      return
+    }
+
+    if (inputRef.current === document.activeElement) {
+      return
+    }
+
     setInputValue(urlQuery)
   }, [urlQuery])
 
@@ -182,6 +203,10 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
   useEffect(() => {
     const normalizedInput = normalizeSearchText(inputValue)
     const normalizedUrl = normalizeSearchText(urlQuery)
+
+    if (isComposingRef.current) {
+      return
+    }
 
     if (normalizedInput === normalizedUrl) {
       return
@@ -216,6 +241,9 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
         <form
           onSubmit={(event) => {
             event.preventDefault()
+            if (isComposingRef.current) {
+              return
+            }
             commitSearch(inputValue, true)
           }}
           className={`relative flex min-h-[56px] items-center gap-3 rounded-full border bg-card/95 px-4 py-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.18)] transition-all ${
@@ -254,7 +282,20 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
               setInputValue(event.target.value)
               setIsOpen(true)
             }}
+            onCompositionStart={() => {
+              isComposingRef.current = true
+            }}
+            onCompositionEnd={(event) => {
+              isComposingRef.current = false
+              setInputValue(event.currentTarget.value)
+              setIsOpen(true)
+              replaceQuery(event.currentTarget.value)
+            }}
             onKeyDown={(event) => {
+              if (isComposingRef.current || event.nativeEvent.isComposing) {
+                return
+              }
+
               if (event.key === 'ArrowDown') {
                 event.preventDefault()
                 setIsOpen(true)
@@ -425,4 +466,3 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
     </div>
   )
 }
-
