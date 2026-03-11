@@ -17,14 +17,40 @@ interface Props {
   confidence?: string
 }
 
-function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number }) {
+const MAX_SCORE_OFFSETS = [
+  { dx: 0, dy: 12 },
+  { dx: -12, dy: 10 },
+  { dx: -12, dy: -10 },
+  { dx: 12, dy: -10 },
+  { dx: 12, dy: 10 },
+] as const
+
+function ValueLabel({
+  x,
+  y,
+  value,
+  index,
+}: {
+  x?: number
+  y?: number
+  value?: number
+  index?: number
+}) {
   if (x === undefined || y === undefined || value === undefined) return null
+
+  const offset =
+    value === 10 && index !== undefined
+      ? MAX_SCORE_OFFSETS[index] ?? { dx: 0, dy: 0 }
+      : { dx: 0, dy: 0 }
+  const badgeX = x + offset.dx
+  const badgeY = y + offset.dy
+
   return (
     <g>
-      <rect x={x - 12} y={y - 10} width={24} height={20} fill="#141414" rx={6} stroke="#222222" strokeWidth={0.5} />
+      <rect x={badgeX - 12} y={badgeY - 10} width={24} height={20} fill="#141414" rx={6} stroke="#222222" strokeWidth={0.5} />
       <text
-        x={x}
-        y={y}
+        x={badgeX}
+        y={badgeY}
         fill="#c8ff00"
         fontSize={11}
         fontFamily="Outfit"
@@ -58,11 +84,12 @@ export default function SpecRadar({ specs, confidence }: Props) {
 
   return (
     <ResponsiveContainer width="100%" height={300}>
-      <RadarChart data={data} margin={{ top: 16, right: 36, bottom: 16, left: 36 }}>
+      <RadarChart data={data} margin={{ top: 18, right: 42, bottom: 18, left: 42 }}>
         <PolarGrid stroke="#222222" strokeWidth={0.5} />
         <PolarRadiusAxis angle={90} domain={[0, 10]} tick={false} axisLine={false} />
         <PolarAngleAxis
           dataKey="subject"
+          tickSize={14}
           tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit', fontWeight: 500 }}
         />
         <Radar
