@@ -705,49 +705,51 @@
         "drop": 10,
         "cushioning": 6,
         "responsiveness": 5,
-        "stability": 7,
-        "durability": 4,
+        "stability": 10,
+        "durability": 7,
         "stackHeight": {
           "heel": 42,
           "forefoot": 32
         },
         "weightScore": 3,
-        "valueScore": 6,
-        "rawValueScore": 5.87,
+        "valueScore": 8,
+        "rawValueScore": 7.95,
         "rawLightness": 3.27,
-        "rawCushioning": 5.84,
-        "rawResponsiveness": 4.62,
-        "rawStability": 6.54,
-        "rawDurability": 4.0,
+        "rawCushioning": 5.91,
+        "rawResponsiveness": 4.83,
+        "rawStability": 9.51,
+        "rawDurability": 6.59,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
-          "platformScore": null,
+          "structureScore": 7.34,
+          "platformScore": 8.14,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 8.14,
             "rtingsOutsoleScore": null,
             "rtingsWidthToStackScore": null
           },
-          "coreScore": null,
+          "coreScore": 7.7,
           "subcategoryDelta": 1.0,
-          "swayPenalty": 0.0,
-          "qualitativeModifier": 0.33,
-          "intermediateRaw": 6.83,
+          "swayPenalty": 0.23,
+          "qualitativeModifier": 0.5,
+          "intermediateRaw": 8.97,
           "stackInput": {
-            "source": "production",
-            "heel": 42,
-            "forefoot": 32
+            "source": "runrepeat",
+            "heel": 40.9,
+            "forefoot": 29.7
           },
           "softnessInput": {
-            "source": "subcategory_prior",
-            "softnessScalar": 0.25,
-            "proxyAc": 38.3
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.29,
+            "proxyAc": 37.7,
+            "heelAc": 29.5,
+            "secondaryAc": 37.7
           },
           "qualitativeSignals": {
-            "sourceCount": 3,
+            "sourceCount": 2,
             "shares": {
-              "lockdown": 0.3333,
-              "guidance_sidewall": 0.6667,
+              "lockdown": 0.5,
+              "guidance_sidewall": 1.0,
               "wide_base": 0.0,
               "heel_slip": 0.0,
               "instability": 0.0
@@ -756,29 +758,29 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 7.69,
+          "upperScore": 5.05,
           "midsoleLongevityScore": null,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.0,
-          "coreScore": null,
+          "coreScore": 7.03,
           "compoundModifier": 0.0,
-          "qualitativeModifier": 0.05,
-          "intermediateRaw": 5.55,
+          "qualitativeModifier": 0.15,
+          "intermediateRaw": 7.18,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 0.9,
+            "outsoleThicknessMm": 3.4,
+            "toeboxDurability": 2,
+            "heelPaddingDurability": 4,
             "midsoleRetentionRatio": null,
             "outsoleHardnessHc": null
           },
           "qualitativeSignals": {
-            "sourceCount": 3,
+            "sourceCount": 2,
             "shares": {
               "outsole_coverage": 0.0,
               "upper_reinforcement": 0.0,
-              "durable": 0.3333,
+              "durable": 1.0,
               "early_wear": 0.0,
               "exposed_foam": 0.0,
               "midsole_breakdown": 0.0
@@ -812,9 +814,10 @@
         "Green/White/Black"
       ],
       "slug": "structure-plus",
-      "officialUrl": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
-      "confidence": "medium",
+      "officialUrl": "https://runrepeat.com/nike-structure-plus",
+      "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/nike-structure-plus",
         "dor": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2025/12/nike-structure-plus-review-gentle.html",
         "bitr": "https://believeintherun.com/shoe-reviews/nike-structure-plus-review/"

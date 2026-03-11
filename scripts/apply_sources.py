@@ -442,7 +442,7 @@ SOURCES = {
             "bitr": None,
         },
         "structure-plus": {
-            "runrepeat": None,
+            "runrepeat": "https://runrepeat.com/nike-structure-plus",
             "rtings": None,
             "dor": "https://www.doctorsofrunning.com/2026/01/nike-structure-plus-review-2026.html",
             "rtr": "https://www.roadtrailrun.com/2025/12/nike-structure-plus-review-gentle.html",

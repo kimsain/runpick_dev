@@ -1,6 +1,6 @@
 # RunPick Project Context
 
-마지막 검증일: 2026-03-09
+마지막 검증일: 2026-03-11
 
 ## 문서 목적
 
@@ -22,9 +22,9 @@
 - 렌더링 방식: `lib/data.ts`에서 로컬 JSON을 동기 로드하고 SSG로 페이지를 생성
 - 운영 카탈로그 기준: 12개 브랜드, 106개 생산 신발
 - 카테고리 분포: `daily` 50, `super-trainer` 26, `racing` 30
-- confidence 분포: `very-high` 68, `high` 26, `medium` 8, `low` 4
+- confidence 분포: `very-high` 70, `high` 25, `medium` 7, `low` 4
 - research 기준 고유 신발 ID: 115개
-- research 스냅샷 JSON 수: 205개
+- research 스냅샷 JSON 수: 207개
 - production과 research 불일치: production only 1개(`decathlon/kipstorm-tempo`), research only 10개
 - 비고: build 로그의 `115`는 전체 정적 페이지 수이며 신발 수가 아니다
 
@@ -216,13 +216,12 @@
 
 ## 검증된 현재 상태
 
-2026-03-09에 아래를 실제 실행해 확인했다.
+2026-03-11에 아래를 실제 실행해 확인했다.
 
-- `python3 -m py_compile scripts/formulas.py scripts/stability_durability_v3.py scripts/collect_shoe.py scripts/normalize_from_runrepeat.py scripts/normalize_from_rtings.py scripts/normalize_from_reviews.py scripts/recalculate.py`: 통과
-- confidence audit: `mismatch_count 0`
 - `python3 scripts/verify_all_specs.py`: 이상값 0건
-- `npm run lint`: 통과, ESLint 경고/오류 없음
 - `npm run build`: 통과, Next.js 14.2.35 기준 정적 페이지 생성 완료
+- confidence distribution recount: `very-high 70`, `high 25`, `medium 7`, `low 4`
+- research snapshot recount: `207`개 JSON, research unique IDs `115`
 
 검증 메모:
 - build 로그의 `Generating static pages (115/115)`는 전체 정적 페이지 수다.
@@ -250,6 +249,9 @@
 
 ## Recent Context Updates
 
+- 2026-03-11: `nike/structure-plus`에 RunRepeat source(`https://runrepeat.com/nike-structure-plus`)를 연결하고 오늘자 research 스냅샷을 추가했다.
+- 2026-03-11: `structure-plus`를 Case B로 재정규화해 stability `10`, durability `7`, valueScore `8`, confidence `high`로 반영했다.
+- 2026-03-11: 운영 스냅샷을 재계산해 confidence 분포 `70/25/7/4`, research 스냅샷 JSON 수 `207`로 문서를 갱신했다.
 - 2026-03-09: `docs/PROJECT_CONTEXT.md` 생성. production 106개, research 고유 ID 115개, research 스냅샷 JSON 205개 기준으로 문서화.
 - 2026-03-09: `npm run lint`, `npm run build` 통과 상태를 문서에 고정.
 - 2026-03-09: production/research 불일치, 빈 `sources`, 하드코딩 히어로, `/methodology` sitemap 누락을 현재 리스크로 기록.
