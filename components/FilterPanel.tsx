@@ -40,12 +40,12 @@ function parseSort(s: string): [string, 'asc' | 'desc'] {
 }
 
 const SPEC_FILTERS = [
-  { param: 'minCush', label: SPEC_LABELS.cushioning,     color: 'spec-cushion' },
-  { param: 'minResp', label: SPEC_LABELS.responsiveness, color: 'spec-response' },
-  { param: 'minStab', label: SPEC_LABELS.stability,      color: 'spec-stability' },
-  { param: 'minDur',  label: SPEC_LABELS.durability,     color: 'spec-durability' },
-  { param: 'minWS',   label: SPEC_LABELS.weightScore,    color: 'spec-weight' },
-  { param: 'minVS',   label: SPEC_LABELS.valueScore,     color: 'spec-value' },
+  { param: 'minCush', label: SPEC_LABELS.cushioning,     colorVar: '--spec-cushion', textClass: 'text-spec-cushion' },
+  { param: 'minResp', label: SPEC_LABELS.responsiveness, colorVar: '--spec-response', textClass: 'text-spec-response' },
+  { param: 'minStab', label: SPEC_LABELS.stability,      colorVar: '--spec-stability', textClass: 'text-spec-stability' },
+  { param: 'minDur',  label: SPEC_LABELS.durability,     colorVar: '--spec-durability', textClass: 'text-spec-durability' },
+  { param: 'minWS',   label: SPEC_LABELS.weightScore,    colorVar: '--spec-weight', textClass: 'text-spec-weight' },
+  { param: 'minVS',   label: SPEC_LABELS.valueScore,     colorVar: '--spec-value', textClass: 'text-spec-value' },
 ]
 
 function formatPrice(v: number) {
@@ -108,12 +108,12 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const [activeKey, activeDir] = parseSort(currentSort)
 
   return (
-    <aside className={mobile ? 'w-full' : 'w-60 shrink-0 sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto pr-2 scrollbar-hide'}>
-      <div className="space-y-6 pb-8">
+    <aside className={mobile ? 'w-full' : 'sticky top-20 h-[calc(100vh-5rem)] w-64 shrink-0 overflow-y-auto pr-3 scrollbar-hide'}>
+      <div className="space-y-8 pb-8">
         {/* Sort */}
         <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">정렬</h3>
-          <div className="grid grid-cols-2 gap-2">
+          <h3 className="mb-3 text-sm font-display tracking-widest uppercase text-secondary">정렬</h3>
+          <div className="grid grid-cols-2 gap-1.5">
             {SORTS_META.map((s) => {
               const isActive = activeKey === s.key
               const dir = isActive ? activeDir : s.defaultDir
@@ -129,10 +129,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                       updateParam('sort', `${s.key}-${nextDir}`)
                     }
                   }}
-                  className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center justify-between ${
+                  className={`flex min-h-[44px] items-center justify-between rounded-lg border px-3 py-2 text-sm font-body transition-all ${
                     isActive
-                      ? 'border-accent text-accent bg-accent/10'
-                      : 'border-elevated text-secondary hover:border-secondary'
+                      ? 'border-accent/40 bg-accent/8 text-accent shadow-glow-sm'
+                      : 'border-border text-secondary hover:border-border-hover hover:text-primary'
                   }`}
                 >
                   <span>{s.label}</span>
@@ -145,8 +145,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Category */}
         <section>
-          <h3 className="text-secondary text-sm font-display tracking-widest uppercase mb-2">카테고리</h3>
-          <div className="grid grid-cols-2 gap-2">
+          <h3 className="mb-3 text-sm font-display tracking-widest uppercase text-secondary">카테고리</h3>
+          <div className="grid grid-cols-2 gap-1.5">
             {CATEGORIES.map((c) => (
               <button
                 key={c.id}
@@ -160,10 +160,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   params.delete('subcategory')
                   router.push(`${pathname}?${params.toString()}`)
                 }}
-                className={`text-sm font-body px-3 py-2 border transition-colors min-h-[44px] flex items-center justify-center text-center ${
+                className={`flex min-h-[44px] items-center justify-center rounded-lg border px-3 py-2 text-center text-sm font-body transition-all ${
                   category === c.id
-                    ? 'border-accent text-accent bg-accent/10'
-                    : 'border-elevated text-secondary hover:border-secondary'
+                    ? 'border-accent/40 bg-accent/8 text-accent shadow-glow-sm'
+                    : 'border-border text-secondary hover:border-border-hover hover:text-primary'
                 }`}
               >
                 {c.label}
@@ -176,23 +176,23 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setBrandsOpen(!brandsOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
               브랜드{selectedBrands.length > 0 && (
-                <span className="text-accent normal-case font-body ml-1">({selectedBrands.length})</span>
+                <span className="ml-1 text-accent normal-case font-body">({selectedBrands.length})</span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className={`h-4 w-4 transition-transform duration-200 ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           {brandsOpen && (
-            <div className={mobile ? 'grid grid-cols-2 gap-2' : 'space-y-1'}>
+            <div className={mobile ? 'grid grid-cols-2 gap-1.5' : 'space-y-1'}>
               {brands.map((brand) => (
                 <label
                   key={brand.id}
-                  className="flex items-center gap-2 cursor-pointer group min-h-[44px]"
+                  className="group flex min-h-[44px] cursor-pointer items-center gap-2.5 rounded-lg px-2 py-1 transition-colors hover:bg-elevated/50"
                 >
                   <input
                     type="checkbox"
@@ -201,10 +201,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                     className="sr-only"
                   />
                   <span
-                    className={`w-4 h-4 border flex items-center justify-center shrink-0 transition-colors ${
+                    className={`flex h-4 w-4 shrink-0 items-center justify-center rounded border transition-all ${
                       selectedBrands.includes(brand.id)
                         ? 'border-accent bg-accent'
-                        : 'border-elevated group-hover:border-secondary'
+                        : 'border-border group-hover:border-border-hover'
                     }`}
                   >
                     {selectedBrands.includes(brand.id) && (
@@ -230,7 +230,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setRangeOpen(!rangeOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
               범위 필터{[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length > 0 && (
@@ -239,17 +239,17 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                 </span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className={`h-4 w-4 transition-transform duration-200 ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           {rangeOpen && (
-            <div className="space-y-4">
+            <div className="space-y-5">
               {/* 최대 가격 */}
               <div>
-                <div className="flex justify-between text-sm font-body mb-1">
+                <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 가격(원)</span>
-                  <span className="text-primary font-bold">{formatPrice(maxPrice)}</span>
+                  <span className="text-primary font-semibold">{formatPrice(maxPrice)}</span>
                 </div>
                 <input
                   type="range"
@@ -269,9 +269,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               </div>
               {/* 최대 무게 */}
               <div>
-                <div className="flex justify-between text-sm font-body mb-1">
+                <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 무게(g)</span>
-                  <span className="text-primary font-bold">{maxWeight}</span>
+                  <span className="text-primary font-semibold">{maxWeight}</span>
                 </div>
                 <input
                   type="range"
@@ -291,9 +291,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               </div>
               {/* 최대 드롭 */}
               <div>
-                <div className="flex justify-between text-sm font-body mb-1">
+                <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">드롭(mm)</span>
-                  <span className="text-primary font-bold">{maxDrop}</span>
+                  <span className="text-primary font-semibold">{maxDrop}</span>
                 </div>
                 <input
                   type="range"
@@ -319,32 +319,32 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setSpecOpen(!specOpen)}
-            className="w-full flex items-center justify-between text-secondary text-sm font-display tracking-widest uppercase mb-2 min-h-[44px]"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
               스펙 필터{activeSpecCount > 0 && (
                 <span className="text-accent normal-case font-body ml-1">({activeSpecCount}개 활성)</span>
               )}
             </span>
-            <svg className={`w-4 h-4 transition-transform ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg className={`h-4 w-4 transition-transform duration-200 ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           {specOpen && (
-            <div className="space-y-4">
+            <div className="space-y-5">
               {SPEC_FILTERS.map((f) => {
                 const val = Number(searchParams.get(f.param) ?? 1)
                 return (
                   <div key={f.param}>
-                    <div className="flex justify-between items-center text-sm font-body mb-1">
-                      <span className={`text-${f.color}`}>{f.label}</span>
+                    <div className="mb-1.5 flex items-center justify-between text-sm font-body">
+                      <span className={f.textClass}>{f.label}</span>
                       <div className="flex items-center gap-1">
-                        <span className="text-primary font-bold">{val}</span>
+                        <span className="text-primary font-semibold">{val}</span>
                         {val > 1 && (
                           <button
                             onClick={() => updateParam(f.param, '')}
                             aria-label={`${f.label} 필터 초기화`}
-                            className="text-muted hover:text-primary text-sm p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+                            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg p-2 text-sm text-muted transition-colors hover:bg-elevated/50 hover:text-primary"
                           >
                             ×
                           </button>
@@ -363,7 +363,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                         updateParam(f.param, Number(e.target.value) > 1 ? e.target.value : '')
                       }
                       className="w-full slider-spec"
-                      style={{ '--slider-color': `var(--${f.color})` } as React.CSSProperties}
+                      style={{ '--slider-color': `var(${f.colorVar})` } as React.CSSProperties}
                     />
                   </div>
                 )

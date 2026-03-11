@@ -11,9 +11,9 @@ export function generateMetadata() {
 
 function GridSkeleton() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="aspect-[3/4] bg-card animate-pulse" />
+        <div key={i} className="aspect-[3/4] rounded-xl bg-card animate-pulse" />
       ))}
     </div>
   )
@@ -27,13 +27,15 @@ export default function ShoesPage() {
   const dropRange = getDropRange()
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12">
-      <h1 className="font-display text-xl text-primary mb-2 tracking-widest uppercase break-keep">
-        러닝화 탐색
-      </h1>
-      <p className="text-secondary text-sm font-body mb-10">
-        {shoes.length}개 러닝화 · {brands.length}개 브랜드
-      </p>
+    <main className="max-w-7xl mx-auto px-6 py-12 sm:py-16">
+      <div className="mb-10">
+        <h1 className="font-display text-xl text-primary tracking-widest uppercase break-keep sm:text-2xl">
+          러닝화 탐색
+        </h1>
+        <p className="mt-2 text-secondary text-sm font-body">
+          {shoes.length}개 러닝화 · {brands.length}개 브랜드
+        </p>
+      </div>
 
       <Suspense fallback={<GridSkeleton />}>
         <ShoesBrowser

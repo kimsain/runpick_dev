@@ -35,10 +35,10 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
   return (
     <Link
       href={`/shoes/${shoe.slug}`}
-      className="group block bg-card border border-elevated hover:border-accent/30 transition-colors duration-300 overflow-hidden"
+      className="group block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20 hover:shadow-card-hover"
     >
       {/* Image */}
-      <div className="relative aspect-[4/3] md:aspect-[3/4] overflow-hidden bg-elevated">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-t-xl bg-elevated/70 md:aspect-[3/4]">
         {shoe.confidence && (() => {
           const conf = shoe.confidence
           const colorClass = CONF_TEXT[conf] ?? 'text-secondary'
@@ -46,12 +46,12 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           const label = CONF_BADGE_LABELS[conf] ?? conf.toUpperCase()
           const tooltipText = CONF_TOOLTIPS[conf] ?? ''
           return (
-            <div className="absolute top-2 right-2 z-10 group/badge">
+            <div className="absolute right-3 top-3 z-10">
               <div
-                className={`flex items-center gap-1 bg-dark/80 backdrop-blur-sm px-2 py-1 text-xs font-body border border-elevated ${colorClass}`}
+                className={`glass flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-body ${colorClass}`}
                 title={tooltipText}
               >
-                <span className={`w-2 h-2 rounded-full inline-block ${dotClass}`} />
+                <span className={`inline-block h-1.5 w-1.5 rounded-full ${dotClass}`} />
                 {label}
               </div>
             </div>
@@ -62,48 +62,51 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           alt={shoe.name}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
-          className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+          className="object-contain p-5 transition-transform duration-500 group-hover:scale-105"
           priority={priority}
         />
         {/* Hover overlay — desktop only */}
-        <div className="absolute inset-0 bg-dark/80 flex-col items-start justify-end p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 hidden md:flex">
-          <p className="text-primary text-sm leading-snug mb-2 font-body">
+        <div className="absolute inset-0 hidden translate-y-full flex-col items-start justify-end rounded-t-xl bg-dark/85 p-5 transition-transform duration-300 md:flex md:backdrop-blur-sm group-hover:translate-y-0">
+          <p className="mb-3 text-sm font-body leading-relaxed text-primary">
             {shoe.shortDescription}
           </p>
-          <span className="text-accent text-sm font-display tracking-widest uppercase">
-            자세히 →
+          <span className="inline-flex items-center gap-2 text-sm font-display uppercase tracking-widest text-accent">
+            자세히 보기
+            <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </span>
         </div>
       </div>
 
       {/* Mobile: always-visible short description */}
-      <div className="md:hidden px-4 pt-0">
-        <p className="text-secondary text-xs font-body line-clamp-2 mt-2">
+      <div className="px-5 pt-3 md:hidden">
+        <p className="mt-0 line-clamp-2 text-xs font-body leading-relaxed text-secondary">
           {shoe.shortDescription}
         </p>
       </div>
 
       {/* Info */}
-      <div className="p-4">
-        <p className="text-secondary text-sm font-display tracking-widest uppercase mb-1">
+      <div className="p-5">
+        <p className="mb-1 text-xs font-display uppercase tracking-widest text-muted">
           {shoe.brandId.toUpperCase()}
         </p>
-        <p className="text-primary font-body font-bold text-base line-clamp-2">
+        <p className="line-clamp-2 text-base font-body font-semibold text-primary">
           {shoe.name}
         </p>
-        <p className="text-primary font-body font-bold text-lg mt-1">
+        <p className="mt-1 text-lg font-body font-bold text-accent">
           {shoe.priceFormatted}
         </p>
 
         {/* Spec bars */}
-        <div className="mt-3 grid grid-cols-2 gap-x-3 gap-y-2">
+        <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2">
           {SPEC_BARS.map(({ key, label }) => {
             const val = (shoe.specs[key as keyof typeof shoe.specs] as number) ?? 0
             return (
               <div key={key} className="flex items-center gap-2">
                 <div className="flex-1 h-1 bg-elevated rounded-full overflow-hidden">
                   <div
-                    className={`h-full ${specColors[key]} rounded-full`}
+                    className={`h-full rounded-full ${specColors[key]}`}
                     style={{ width: `${(val / 10) * 100}%` }}
                   />
                 </div>

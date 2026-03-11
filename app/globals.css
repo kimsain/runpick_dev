@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +14,10 @@
   --text-muted: #848484;
 
   --accent: #c8ff00;
+  --accent-dim: #a8d600;
+
+  --border: #222222;
+  --border-hover: #333333;
 
   --spec-cushion: #38bdf8;
   --spec-response: #c8ff00;
@@ -42,15 +46,18 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-surface);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
-  border-radius: 2px;
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
 }
 
 .scrollbar-hide {
@@ -85,6 +92,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: var(--slider-color, var(--accent));
   margin-top: -8px;
   border: 2px solid var(--bg-dark);
+  box-shadow: 0 0 8px rgba(200,255,0,0.2);
 }
 
 input[type="range"]::-moz-range-track {
@@ -100,6 +108,7 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   background: var(--slider-color, var(--accent));
   border: 2px solid var(--bg-dark);
+  box-shadow: 0 0 8px rgba(200,255,0,0.2);
 }
 
 input[type="range"]:focus-visible::-webkit-slider-thumb {
@@ -110,6 +119,14 @@ input[type="range"]:focus-visible::-webkit-slider-thumb {
 input[type="range"]:focus-visible::-moz-range-thumb {
   outline: 2px solid var(--slider-color, var(--accent));
   outline-offset: 2px;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

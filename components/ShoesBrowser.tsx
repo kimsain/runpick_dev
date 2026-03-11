@@ -167,7 +167,7 @@ export default function ShoesBrowser({
       {/* Mobile header */}
       <div className="flex md:hidden items-center justify-between mb-6">
         <p className="text-secondary text-sm font-body" aria-live="polite" aria-atomic="true">
-          <span className="text-primary font-bold">{filtered.length}</span>개 결과
+          <span className="text-primary font-semibold">{filtered.length}</span>개 결과
         </p>
         <FilterDrawer
           brands={brands}
@@ -184,7 +184,7 @@ export default function ShoesBrowser({
       </div>
 
       {/* Desktop layout */}
-      <div className="flex gap-8">
+      <div className="flex gap-10">
         {/* Desktop filter panel */}
         <div className="hidden md:block">
           <FilterPanel
@@ -199,18 +199,18 @@ export default function ShoesBrowser({
         <div className="flex-1 min-w-0">
           {/* Results count on desktop */}
           <p className="hidden md:block text-secondary text-sm font-body mb-6" aria-live="polite" aria-atomic="true">
-            <span className="text-primary font-bold">{filtered.length}</span>개 결과
+            <span className="text-primary font-semibold">{filtered.length}</span>개 결과
           </p>
 
           {filtered.length === 0 ? (
             <div className="text-center py-24">
-              <p className="font-display text-lg text-muted">결과 없음</p>
-              <p className="text-secondary text-sm font-body mt-2">
+              <p className="mb-2 font-display text-lg text-muted">결과 없음</p>
+              <p className="text-secondary text-sm font-body">
                 필터 조건을 바꿔보세요
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {filtered.map((shoe) => (
                 <ShoeCard key={shoe.slug} shoe={shoe} />
               ))}

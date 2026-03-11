@@ -246,10 +246,10 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
             }
             commitSearch(inputValue, true)
           }}
-          className={`relative flex min-h-[56px] items-center gap-3 rounded-full border bg-card/95 px-4 py-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.18)] transition-all ${
+          className={`relative flex min-h-[56px] items-center gap-3 rounded-full border bg-card/95 px-4 py-2.5 shadow-card transition-all duration-200 backdrop-blur-sm ${
             showPanel
-              ? 'border-accent/60 shadow-[0_18px_48px_rgba(0,0,0,0.28)]'
-              : 'border-elevated hover:border-secondary'
+              ? 'border-accent/40 shadow-glow-sm'
+              : 'border-border hover:border-border-hover'
           }`}
           role="search"
         >
@@ -368,7 +368,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
           <button
             type="submit"
             aria-label="검색"
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-accent px-4 text-dark transition-transform hover:scale-[1.02] hover:bg-accent/90"
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-accent px-4 text-dark transition-transform hover:scale-[1.02] hover:bg-accent-dim"
           >
             <svg
               className="h-4 w-4"
@@ -390,8 +390,8 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
 
       {showPanel && (
         <div className="absolute inset-x-0 top-full z-20 mt-3">
-          <div className="mx-auto max-w-3xl overflow-hidden rounded-[28px] border border-elevated bg-surface/95 shadow-[0_18px_48px_rgba(0,0,0,0.35)] backdrop-blur">
-            <div className="border-b border-elevated px-5 py-3">
+          <div className="glass mx-auto max-w-3xl overflow-hidden rounded-[28px] border border-border shadow-elevated">
+            <div className="border-b border-border px-5 py-3">
               <p className="text-xs font-display tracking-[0.24em] text-secondary uppercase">
                 {hasSearchInput ? '추천 검색어' : '최근 검색어'}
               </p>

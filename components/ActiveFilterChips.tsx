@@ -121,15 +121,17 @@ export default function ActiveFilterChips() {
         <button
           key={i}
           onClick={chip.onRemove}
-          className="flex items-center gap-2 text-sm font-body px-3 py-2 bg-elevated border border-accent/30 text-accent hover:bg-accent hover:text-dark transition-colors min-h-[44px]"
+          className="flex min-h-[44px] items-center gap-2 rounded-full border border-accent/20 bg-accent/8 px-3 py-2 text-sm font-body text-accent transition-all hover:bg-accent hover:text-dark"
         >
           {chip.label}
-          <span className="text-base leading-none">×</span>
+          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </button>
       ))}
       <button
         onClick={() => router.push(pathname)}
-        className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] px-3 py-2 border border-elevated hover:border-secondary"
+        className="min-h-[44px] rounded-full border border-border px-3 py-2 text-sm font-body text-secondary transition-colors hover:border-border-hover hover:text-primary"
       >
         전체 초기화
       </button>

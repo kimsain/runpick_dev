@@ -43,7 +43,7 @@ export default function FilterDrawer({
     <>
       <button
         onClick={() => setOpen(true)}
-        className="flex items-center gap-2 text-sm font-body border border-elevated px-4 py-3 text-secondary hover:text-primary hover:border-secondary transition-colors min-h-[44px]"
+        className="flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-3 text-sm font-body text-secondary transition-all hover:border-border-hover hover:text-primary"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 4h18M7 12h10M11 20h2" />
@@ -54,7 +54,7 @@ export default function FilterDrawer({
       {/* Backdrop */}
       {open && (
         <div
-          className="fixed inset-0 bg-dark/80 z-40"
+          className="fixed inset-0 z-40 bg-dark/80 backdrop-blur-sm"
           onClick={() => setOpen(false)}
         />
       )}
@@ -66,21 +66,26 @@ export default function FilterDrawer({
         aria-hidden={!open}
         aria-label="필터"
         {...inactiveDrawerProps}
-        className={`fixed bottom-0 left-0 right-0 z-50 bg-surface border-t border-elevated max-h-[85vh] overflow-y-auto transition-transform duration-300 ${
+        className={`fixed bottom-0 left-0 right-0 z-50 max-h-[85vh] overflow-y-auto rounded-t-2xl border-t border-border bg-surface transition-transform duration-300 ${
           open ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
-        <div className="flex items-center justify-between px-4 py-4 border-b border-elevated">
+        <div className="flex justify-center pb-1 pt-3">
+          <div className="h-1 w-10 rounded-full bg-border" />
+        </div>
+        <div className="flex items-center justify-between border-b border-border px-5 py-3">
           <span className="font-display text-md text-primary">필터</span>
           <button
             onClick={() => setOpen(false)}
             aria-label="필터 닫기"
-            className="text-secondary hover:text-primary transition-colors p-2 min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg p-2 text-secondary transition-colors hover:bg-elevated/50 hover:text-primary"
           >
-            ✕
+            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
         </div>
-        <div className="p-4">
+        <div className="p-5">
           {/* Override sticky behavior inside drawer */}
           <div className="w-full">
             <FilterPanel
@@ -92,10 +97,10 @@ export default function FilterDrawer({
             />
           </div>
         </div>
-        <div className="px-4 pb-6" style={{ paddingBottom: `calc(1.5rem + env(safe-area-inset-bottom, 0px))` }}>
+        <div className="px-5 pb-6" style={{ paddingBottom: `calc(1.5rem + env(safe-area-inset-bottom, 0px))` }}>
           <button
             onClick={() => setOpen(false)}
-            className="w-full bg-accent text-dark font-display text-lg py-3 hover:bg-accent/90 transition-colors min-h-[44px]"
+            className="w-full min-h-[52px] rounded-xl bg-accent py-3.5 text-lg font-display text-dark shadow-glow-sm transition-colors hover:bg-accent-dim"
           >
             {totalCount}개 결과 보기
           </button>
