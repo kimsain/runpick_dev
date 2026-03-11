@@ -74,6 +74,7 @@
 
 | 파라미터 | 의미 | 실제 처리 위치 |
 |---|---|---|
+| `q` | 신발명/브랜드명 검색어 | `components/ShoesBrowser.tsx`, `components/ShoesSearchBar.tsx`, `components/ActiveFilterChips.tsx` |
 | `brands` | 쉼표 구분 브랜드 ID 목록 | `components/ShoesBrowser.tsx`, `components/FilterPanel.tsx` |
 | `category` | `daily`, `super-trainer`, `racing` | `components/ShoesBrowser.tsx` |
 | `maxPrice` | 최대 가격 | `components/ShoesBrowser.tsx` |
@@ -249,6 +250,7 @@
 
 ## Recent Context Updates
 
+- 2026-03-11: `/shoes`에 `q` query param 기반 검색을 추가했다. 영문/한글 자동완성과 최근 검색어 3개는 클라이언트에서 처리한다.
 - 2026-03-11: `nike/structure-plus`에 RunRepeat source(`https://runrepeat.com/nike-structure-plus`)를 연결하고 오늘자 research 스냅샷을 추가했다.
 - 2026-03-11: `structure-plus`를 Case B로 재정규화해 stability `10`, durability `7`, valueScore `8`, confidence `high`로 반영했다.
 - 2026-03-11: 운영 스냅샷을 재계산해 confidence 분포 `70/25/7/4`, research 스냅샷 JSON 수 `207`로 문서를 갱신했다.

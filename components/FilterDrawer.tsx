@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, type HTMLAttributes } from 'react'
 import FilterPanel from './FilterPanel'
 import type { Brand } from '@/lib/types'
 
@@ -20,6 +20,9 @@ export default function FilterDrawer({
   totalCount,
 }: Props) {
   const [open, setOpen] = useState(false)
+  const inactiveDrawerProps = !open
+    ? ({ inert: '' } as unknown as HTMLAttributes<HTMLDivElement>)
+    : undefined
 
   useEffect(() => {
     if (!open) return
@@ -62,7 +65,7 @@ export default function FilterDrawer({
         aria-modal={open ? true : undefined}
         aria-hidden={!open}
         aria-label="필터"
-        inert={!open ? true : undefined}
+        {...inactiveDrawerProps}
         className={`fixed bottom-0 left-0 right-0 z-50 bg-surface border-t border-elevated max-h-[85vh] overflow-y-auto transition-transform duration-300 ${
           open ? 'translate-y-0' : 'translate-y-full'
         }`}

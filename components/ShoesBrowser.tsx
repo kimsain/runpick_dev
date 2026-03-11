@@ -1,12 +1,14 @@
 'use client'
 
 import { useSearchParams } from 'next/navigation'
-import { useMemo } from 'react'
+import { useDeferredValue, useMemo } from 'react'
 import ShoeCard from './ShoeCard'
 import ActiveFilterChips from './ActiveFilterChips'
 import FilterDrawer from './FilterDrawer'
 import FilterPanel from './FilterPanel'
+import ShoesSearchBar from './ShoesSearchBar'
 import type { Shoe, Brand } from '@/lib/types'
+import { getShoeSearchRank, normalizeSearchText } from '@/lib/shoeSearch'
 
 function getSpecValue(shoe: Shoe, sort: string): number {
   switch (sort) {
@@ -17,6 +19,34 @@ function getSpecValue(shoe: Shoe, sort: string): number {
     case 'value-desc':          return (shoe.specs.valueScore ?? 0) * 100 + (shoe.specs.rawValueScore ?? shoe.specs.valueScore ?? 0)
     default: return 0
   }
+}
+
+function compareShoes(a: Shoe, b: Shoe, sort: string): number {
+  const isAsc = sort.endsWith('-asc')
+  const baseKey = sort.replace(/-(?:asc|desc)$/, '')
+
+  if (sort === 'name-asc') return a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
+  if (sort === 'name-desc') return b.name.localeCompare(a.name, 'en', { numeric: true, sensitivity: 'base' })
+
+  const specSortKeys = ['value', 'cushioning', 'responsiveness', 'stability', 'durability']
+
+  let diff = 0
+  if (specSortKeys.includes(baseKey)) {
+    const descKey = `${baseKey}-desc`
+    diff = isAsc
+      ? getSpecValue(a, descKey) - getSpecValue(b, descKey)
+      : getSpecValue(b, descKey) - getSpecValue(a, descKey)
+  } else {
+    switch (sort) {
+      case 'price-asc':   diff = a.price - b.price; break
+      case 'price-desc':  diff = b.price - a.price; break
+      case 'weight-asc':  diff = a.specs.weight - b.specs.weight; break
+      case 'weight-desc': diff = b.specs.weight - a.specs.weight; break
+    }
+  }
+
+  if (diff !== 0) return diff
+  return a.slug.localeCompare(b.slug)
 }
 
 interface Props {
@@ -35,8 +65,15 @@ export default function ShoesBrowser({
   dropRange,
 }: Props) {
   const searchParams = useSearchParams()
+  const deferredQuery = useDeferredValue(searchParams.get('q') ?? '')
+  const brandMap = useMemo(
+    () => new Map(brands.map((brand) => [brand.id, brand])),
+    [brands]
+  )
 
-  const filtered = useMemo(() => {
+  const currentSort = searchParams.get('sort') ?? 'name-asc'
+
+  const filteredWithoutQuery = useMemo(() => {
     let result = [...shoes]
 
     const brandFilter = searchParams.get('brands')?.split(',').filter(Boolean) ?? []
@@ -89,40 +126,44 @@ export default function ShoesBrowser({
       result = result.filter((s) => (s.specs.valueScore ?? 0) >= Number(minVS))
     }
 
-    const sort = searchParams.get('sort') ?? 'name-asc'
-
-    const SPEC_SORT_KEYS = ['value', 'cushioning', 'responsiveness', 'stability', 'durability']
-
-    result.sort((a, b) => {
-      const isAsc = sort.endsWith('-asc')
-      const baseKey = sort.replace(/-(?:asc|desc)$/, '')
-
-      if (sort === 'name-asc') return a.name.localeCompare(b.name, 'en', { numeric: true, sensitivity: 'base' })
-      if (sort === 'name-desc') return b.name.localeCompare(a.name, 'en', { numeric: true, sensitivity: 'base' })
-
-      let diff = 0
-      if (SPEC_SORT_KEYS.includes(baseKey)) {
-        const descKey = `${baseKey}-desc`
-        diff = isAsc
-          ? getSpecValue(a, descKey) - getSpecValue(b, descKey)
-          : getSpecValue(b, descKey) - getSpecValue(a, descKey)
-      } else {
-        switch (sort) {
-          case 'price-asc':   diff = a.price - b.price; break
-          case 'price-desc':  diff = b.price - a.price; break
-          case 'weight-asc':  diff = a.specs.weight - b.specs.weight; break
-          case 'weight-desc': diff = b.specs.weight - a.specs.weight; break
-        }
-      }
-      if (diff !== 0) return diff
-      return a.slug.localeCompare(b.slug)
-    })
+    result.sort((a, b) => compareShoes(a, b, currentSort))
 
     return result
-  }, [shoes, searchParams])
+  }, [currentSort, searchParams, shoes])
+
+  const filtered = useMemo(() => {
+    const normalizedQuery = normalizeSearchText(deferredQuery)
+    if (!normalizedQuery) {
+      return filteredWithoutQuery
+    }
+
+    return filteredWithoutQuery
+      .map((shoe) => {
+        const rank = getShoeSearchRank(shoe, brandMap.get(shoe.brandId), normalizedQuery)
+        if (!rank) {
+          return null
+        }
+
+        return { shoe, rank }
+      })
+      .filter((entry): entry is { shoe: Shoe; rank: NonNullable<ReturnType<typeof getShoeSearchRank>> } => entry !== null)
+      .sort((a, b) => {
+        const scoreDiff = b.rank.totalScore - a.rank.totalScore
+        if (scoreDiff !== 0) return scoreDiff
+
+        if (b.rank.directScore !== a.rank.directScore) {
+          return b.rank.directScore - a.rank.directScore
+        }
+
+        return compareShoes(a.shoe, b.shoe, currentSort)
+      })
+      .map((entry) => entry.shoe)
+  }, [brandMap, currentSort, deferredQuery, filteredWithoutQuery])
 
   return (
     <div>
+      <ShoesSearchBar shoes={filteredWithoutQuery} brands={brands} />
+
       {/* Mobile header */}
       <div className="flex md:hidden items-center justify-between mb-6">
         <p className="text-secondary text-sm font-body" aria-live="polite" aria-atomic="true">

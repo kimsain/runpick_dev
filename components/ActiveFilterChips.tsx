@@ -55,6 +55,14 @@ export default function ActiveFilterChips() {
     chips.push({ label: `브랜드: ${b.toUpperCase()}`, onRemove: () => removeParam('brands', b) })
   )
 
+  const query = searchParams.get('q')
+  if (query) {
+    chips.push({
+      label: `검색: ${query}`,
+      onRemove: () => removeParam('q'),
+    })
+  }
+
   const category = searchParams.get('category')
   if (category) {
     chips.push({
