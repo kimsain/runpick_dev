@@ -16,7 +16,7 @@ export default function ScoreMethodNotice({
 }: Props) {
   return (
     <div
-      className={`border border-spec-stability/25 bg-spec-stability/5 px-4 py-3 ${className}`.trim()}
+      className={`rounded-xl border border-spec-stability/25 bg-spec-stability/5 px-4 py-3 ${className}`.trim()}
     >
       <div className="flex gap-3">
         <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-spec-stability" />
@@ -31,9 +31,12 @@ export default function ScoreMethodNotice({
           {linkHref && linkLabel && (
             <Link
               href={linkHref}
-              className="mt-2 inline-flex min-h-[44px] items-center text-sm font-body text-spec-stability transition-colors hover:text-spec-stability/80"
+              className="mt-2 inline-flex min-h-[44px] items-center gap-2 text-sm font-body text-spec-stability transition-colors hover:text-spec-stability/80"
             >
-              {linkLabel} →
+              {linkLabel}
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           )}
         </div>

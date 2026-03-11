@@ -21,7 +21,7 @@ function ValueLabel({ x, y, value }: { x?: number; y?: number; value?: number })
   if (x === undefined || y === undefined || value === undefined) return null
   return (
     <g>
-      <rect x={x - 9} y={y - 8} width={18} height={16} fill="#080808" rx={2} />
+      <rect x={x - 12} y={y - 10} width={24} height={20} fill="#141414" rx={6} stroke="#222222" strokeWidth={0.5} />
       <text
         x={x}
         y={y}
@@ -57,13 +57,13 @@ export default function SpecRadar({ specs, confidence }: Props) {
   ]
 
   return (
-    <ResponsiveContainer width="100%" height={280}>
-      <RadarChart data={data} margin={{ top: 10, right: 30, bottom: 10, left: 30 }}>
-        <PolarGrid stroke="#1c1c1c" strokeWidth={1} />
+    <ResponsiveContainer width="100%" height={300}>
+      <RadarChart data={data} margin={{ top: 16, right: 36, bottom: 16, left: 36 }}>
+        <PolarGrid stroke="#222222" strokeWidth={0.5} />
         <PolarRadiusAxis angle={90} domain={[0, 10]} tick={false} axisLine={false} />
         <PolarAngleAxis
           dataKey="subject"
-          tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit' }}
+          tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit', fontWeight: 500 }}
         />
         <Radar
           name="specs"

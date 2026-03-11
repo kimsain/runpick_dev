@@ -47,42 +47,43 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
   const imagePath = `/images${shoe.imageUrl}`
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12">
+    <main className="max-w-7xl mx-auto px-6 py-12 sm:py-16">
       {/* Desktop: 2-col sticky layout */}
       <div className="md:grid md:grid-cols-2 md:gap-16">
         {/* Left: sticky image */}
         <div className="md:sticky md:top-24 md:h-[calc(100vh-8rem)] flex items-center justify-center mb-8 md:mb-0">
-          <div className="relative w-full max-w-sm aspect-square">
+          <div className="relative aspect-square w-full max-w-md rounded-2xl bg-card/60 p-6">
+            <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/[0.03] to-transparent" />
             <Image
               src={imagePath}
               alt={shoe.name}
               fill
               sizes="(max-width: 768px) 90vw, 40vw"
-              className="object-contain"
+              className="object-contain p-4"
               priority
             />
           </div>
         </div>
 
         {/* Right: scrollable content */}
-        <div className="min-w-0">
+        <div className="min-w-0 space-y-8">
           {/* Header */}
-          <div className="mb-8">
-            <p className="font-display text-sm text-secondary tracking-widest uppercase mb-1">
+          <div>
+            <p className="mb-2 text-sm font-display uppercase tracking-widest text-secondary">
               {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
             </p>
-            <h1 className="font-display text-xl text-primary leading-tight break-keep mb-3">
+            <h1 className="mb-3 text-xl font-display leading-tight text-primary break-keep sm:text-2xl">
               {shoe.name}
             </h1>
-            <p className="font-display text-lg text-accent mb-4">{shoe.priceFormatted}</p>
-            <p className="text-secondary text-sm font-body leading-relaxed">
+            <p className="mb-4 text-lg font-display text-accent">{shoe.priceFormatted}</p>
+            <p className="max-w-lg text-sm font-body leading-relaxed text-secondary">
               {shoe.shortDescription}
             </p>
           </div>
 
           {/* Low confidence warning banner */}
           {shoe.confidence === 'low' && (
-            <div className="mb-8 bg-conf-low/5 border border-conf-low/20 p-4 flex gap-3" role="alert">
+            <div className="flex gap-3 rounded-xl border border-conf-low/20 bg-conf-low/5 p-5" role="alert">
               <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-low" />
               <div>
                 <p className="text-sm font-body text-conf-low font-medium mb-1">
@@ -98,7 +99,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Medium confidence info banner */}
           {shoe.confidence === 'medium' && (
-            <div className="mb-8 bg-conf-medium/5 border border-conf-medium/20 p-4 flex gap-3" role="status">
+            <div className="flex gap-3 rounded-xl border border-conf-medium/20 bg-conf-medium/5 p-5" role="status">
               <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-medium" />
               <div>
                 <p className="text-sm font-body text-conf-medium font-medium mb-1">
@@ -113,8 +114,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           )}
 
           {/* Spec radar + stat cards */}
-          <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
+          <section className="rounded-2xl border border-border bg-card p-6">
+            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
               스펙
               {shoe.confidence === 'medium' && (
                 <span className="ml-2 inline-block w-1.5 h-1.5 rounded-full bg-conf-medium align-middle" />
@@ -129,27 +130,27 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
             <SpecRadar specs={shoe.specs} confidence={shoe.confidence} />
 
             {/* Numeric specs */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 mt-6">
-              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
-                <p className="font-display text-base sm:text-lg text-accent">{shoe.specs.weight}</p>
-                <p className="text-secondary text-sm font-body mt-1">g / 무게</p>
+            <div className="mt-6 grid grid-cols-3 gap-3">
+              <div className="rounded-xl bg-elevated p-4 text-center">
+                <p className="text-base font-display text-accent sm:text-lg">{shoe.specs.weight}</p>
+                <p className="mt-1 text-xs font-body text-muted sm:text-sm">g / 무게</p>
               </div>
-              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
-                <p className="font-display text-base sm:text-lg text-accent">{shoe.specs.drop}</p>
-                <p className="text-secondary text-sm font-body mt-1">mm / 드롭</p>
+              <div className="rounded-xl bg-elevated p-4 text-center">
+                <p className="text-base font-display text-accent sm:text-lg">{shoe.specs.drop}</p>
+                <p className="mt-1 text-xs font-body text-muted sm:text-sm">mm / 드롭</p>
               </div>
-              <div className="bg-card border border-elevated p-3 sm:p-4 text-center">
-                <p className="font-display text-base sm:text-lg text-accent whitespace-nowrap">
+              <div className="rounded-xl bg-elevated p-4 text-center">
+                <p className="whitespace-nowrap text-base font-display text-accent sm:text-lg">
                   {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
                 </p>
-                <p className="text-secondary text-sm font-body mt-1">mm / 스택</p>
+                <p className="mt-1 text-xs font-body text-muted sm:text-sm">mm / 스택</p>
               </div>
             </div>
           </section>
 
           {/* Description */}
-          <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
+          <section>
+            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
               리뷰
             </h2>
             <p className="text-secondary text-sm font-body leading-relaxed">
@@ -158,10 +159,10 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           </section>
 
           {/* Pros / Cons */}
-          <section className="mb-8">
+          <section>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <h3 className="font-display text-sm text-spec-response tracking-widest uppercase break-keep mb-3">
+              <div className="rounded-xl border border-spec-response/10 bg-spec-response/[0.04] p-5">
+                <h3 className="mb-4 text-sm font-display uppercase tracking-widest text-spec-response break-keep">
                   장점
                 </h3>
                 <ul className="space-y-2">
@@ -173,8 +174,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   ))}
                 </ul>
               </div>
-              <div>
-                <h3 className="font-display text-sm text-spec-durability tracking-widest uppercase break-keep mb-3">
+              <div className="rounded-xl border border-spec-durability/10 bg-spec-durability/[0.04] p-5">
+                <h3 className="mb-4 text-sm font-display uppercase tracking-widest text-spec-durability break-keep">
                   단점
                 </h3>
                 <ul className="space-y-2">
@@ -190,15 +191,15 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           </section>
 
           {/* Best For */}
-          <section className="mb-8">
-            <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
+          <section>
+            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
               이런 러너에게 추천
             </h2>
             <div className="flex flex-wrap gap-2">
               {shoe.bestFor.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-sm font-body px-3 py-2 bg-accent/10 text-accent border border-accent/20"
+                  className="rounded-full border border-accent/20 bg-accent/8 px-4 py-2 text-sm font-body text-accent"
                 >
                   {tag}
                 </span>
@@ -208,15 +209,15 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Technologies */}
           {shoe.technologies.length > 0 && (
-            <section className="mb-8">
-              <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-4">
+            <section>
+              <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
                 주요 기술
               </h2>
               <div className="flex flex-wrap gap-2">
                 {shoe.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="text-sm font-body px-3 py-2 bg-elevated text-secondary border border-elevated"
+                    className="rounded-full border border-border bg-elevated px-4 py-2 text-sm font-body text-secondary"
                   >
                     {tech}
                   </span>
@@ -226,29 +227,37 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           )}
 
           {/* 링크 버튼 그룹 */}
-          <div className="flex flex-wrap gap-2 items-start">
-            {brand?.officialUrl && (
-              <a
-                href={brand.officialUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
-              >
-                공식 사이트 ↗
-              </a>
-            )}
-            {reviewLinks.map(({ key, url, label }) => (
-              <a
-                key={key}
-                href={url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-body text-secondary hover:text-accent transition-colors border border-elevated px-4 py-2 hover:border-accent/30 min-h-[44px]"
-              >
-                {label} ↗
-              </a>
-            ))}
-          </div>
+          <section className="border-t border-border pt-4">
+            <div className="flex flex-wrap items-start gap-2">
+              {brand?.officialUrl && (
+                <a
+                  href={brand.officialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-body text-secondary transition-all hover:border-accent/20 hover:bg-accent/5 hover:text-accent"
+                >
+                  공식 사이트
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              )}
+              {reviewLinks.map(({ key, url, label }) => (
+                <a
+                  key={key}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-body text-secondary transition-all hover:border-accent/20 hover:bg-accent/5 hover:text-accent"
+                >
+                  {label}
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          </section>
         </div>
       </div>
 

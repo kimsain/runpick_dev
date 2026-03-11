@@ -48,7 +48,7 @@ export default function SpecCardsSection({ items }: Props) {
           <button
             key={spec.id}
             onClick={() => openModal(spec)}
-            className="bg-card border border-elevated p-6 text-left hover:ring-1 hover:ring-accent/50 transition-shadow cursor-pointer"
+            className="group cursor-pointer rounded-xl border border-border bg-card p-6 text-left transition-all hover:border-accent/30 hover:shadow-glow-sm"
           >
             <div className="mb-3 flex flex-wrap items-center gap-2">
               <span
@@ -64,8 +64,14 @@ export default function SpecCardsSection({ items }: Props) {
                 </span>
               )}
             </div>
-            <p className="text-secondary text-sm font-body mb-3">{spec.summary}</p>
+            <p className="mb-3 text-sm font-body leading-relaxed text-secondary">{spec.summary}</p>
             <p className="text-xs font-body text-muted">{spec.basis}</p>
+            <span className="mt-3 inline-flex items-center gap-1 text-xs font-body text-muted transition-colors group-hover:text-accent">
+              자세히 보기
+              <svg className="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
           </button>
         ))}
       </div>
@@ -78,12 +84,12 @@ export default function SpecCardsSection({ items }: Props) {
           aria-labelledby="spec-modal-title"
         >
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black/60" onClick={() => setSelected(null)} />
+          <div className="absolute inset-0 bg-dark/80 backdrop-blur-sm" onClick={() => setSelected(null)} />
 
           {/* Modal panel */}
-          <div className="relative bg-card border border-elevated w-full max-w-lg max-h-[85vh] flex flex-col overflow-hidden">
+          <div className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
             {/* Header — 고정 */}
-            <div className="flex items-baseline justify-between px-6 pt-6 pb-4 border-b border-elevated shrink-0">
+            <div className="flex items-baseline justify-between border-b border-border px-6 pb-4 pt-6 shrink-0">
               <div className="flex min-w-0 flex-wrap items-baseline gap-2">
                 <span
                   id="spec-modal-title"
@@ -98,14 +104,16 @@ export default function SpecCardsSection({ items }: Props) {
                 ref={closeButtonRef}
                 onClick={() => setSelected(null)}
                 aria-label="모달 닫기"
-                className="text-muted hover:text-primary transition-colors ml-4 text-xl leading-none min-h-[44px] min-w-[44px] flex items-center justify-center"
+                className="ml-4 flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg text-muted transition-colors hover:bg-elevated/50 hover:text-primary"
               >
-                ×
+                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                </svg>
               </button>
             </div>
 
             {/* Tabs — 고정 */}
-            <div className="flex border-b border-elevated shrink-0">
+            <div className="flex border-b border-border shrink-0">
               {(
                 [
                   { key: 'general', label: '쉬운 설명' },
@@ -115,7 +123,7 @@ export default function SpecCardsSection({ items }: Props) {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`px-6 py-3 text-sm font-body transition-colors border-b-2 -mb-px ${
+                  className={`-mb-px border-b-2 px-6 py-3 text-sm font-body transition-colors ${
                     activeTab === key
                       ? 'text-primary border-accent'
                       : 'text-muted border-transparent hover:text-secondary'
@@ -136,7 +144,7 @@ export default function SpecCardsSection({ items }: Props) {
                     {selected.modalContent.general.description}
                   </p>
                   {selected.modalContent.general.impact && (
-                    <div className="bg-surface border border-elevated p-4">
+                    <div className="rounded-xl border border-border bg-surface p-5">
                       <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
                         점수별 체감
                       </p>
@@ -163,7 +171,7 @@ export default function SpecCardsSection({ items }: Props) {
                     <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
                       공식
                     </p>
-                    <pre className="bg-surface border border-elevated text-secondary text-xs font-mono p-4 overflow-x-auto whitespace-pre leading-relaxed">
+                    <pre className="overflow-x-auto whitespace-pre rounded-xl border border-border bg-surface p-5 text-xs font-mono leading-relaxed text-secondary">
                       {selected.modalContent.expert.formula}
                     </pre>
                   </div>
@@ -183,9 +191,9 @@ export default function SpecCardsSection({ items }: Props) {
                         <p className="text-xs font-body text-accent tracking-widest uppercase mb-3">
                           주요 상수
                         </p>
-                        <div className="border border-elevated divide-y divide-elevated">
+                        <div className="overflow-hidden rounded-xl border border-border divide-y divide-border">
                           {selected.modalContent.expert.constants.map((c) => (
-                            <div key={c.name} className="px-4 py-3 flex flex-col gap-1">
+                            <div key={c.name} className="flex flex-col gap-1 px-5 py-3">
                               <div className="flex items-baseline gap-3">
                                 <span className="text-xs font-mono text-accent shrink-0">
                                   {c.name}
