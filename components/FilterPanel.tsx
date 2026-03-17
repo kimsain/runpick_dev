@@ -176,6 +176,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setBrandsOpen(!brandsOpen)}
+            aria-expanded={brandsOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
@@ -230,6 +231,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setRangeOpen(!rangeOpen)}
+            aria-expanded={rangeOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
@@ -257,6 +259,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   max={priceRange.max}
                   step={10000}
                   value={maxPrice}
+                  aria-label="최대 가격"
+                  aria-valuetext={`${formatPrice(maxPrice)}원`}
                   onChange={(e) =>
                     updateParam('maxPrice', Number(e.target.value) === priceRange.max ? '' : e.target.value)
                   }
@@ -279,6 +283,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   max={sliderWeightMax}
                   step={10}
                   value={maxWeight}
+                  aria-label="최대 무게"
+                  aria-valuetext={`${maxWeight}g`}
                   onChange={(e) =>
                     updateParam('maxWeight', Number(e.target.value) >= sliderWeightMax ? '' : e.target.value)
                   }
@@ -301,6 +307,8 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   max={dropRange.max}
                   step={1}
                   value={maxDrop}
+                  aria-label="최대 드롭"
+                  aria-valuetext={`${maxDrop}mm`}
                   onChange={(e) =>
                     updateParam('maxDrop', Number(e.target.value) === dropRange.max ? '' : e.target.value)
                   }
@@ -319,6 +327,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
         <section>
           <button
             onClick={() => setSpecOpen(!specOpen)}
+            aria-expanded={specOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
           >
             <span>
@@ -344,7 +353,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                           <button
                             onClick={() => updateParam(f.param, '')}
                             aria-label={`${f.label} 필터 초기화`}
-                            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg p-2 text-sm text-muted transition-colors hover:bg-elevated/50 hover:text-primary"
+                            className="-my-2 flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg p-2 text-sm text-muted transition-colors hover:bg-elevated/50 hover:text-primary"
                           >
                             ×
                           </button>

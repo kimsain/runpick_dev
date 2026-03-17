@@ -249,7 +249,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
           className={`relative flex min-h-[56px] items-center gap-3 rounded-full border bg-card/95 px-4 py-2.5 shadow-card transition-all duration-200 backdrop-blur-sm ${
             showPanel
               ? 'border-accent/40 shadow-glow-sm'
-              : 'border-border hover:border-border-hover'
+              : 'border-border hover:border-border-hover focus-within:border-accent/40'
           }`}
           role="search"
         >
@@ -398,7 +398,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
             </div>
 
             {showEmptyState ? (
-              <div className="px-5 py-6">
+              <div className="px-5 py-6" role="status" aria-live="polite">
                 <p className="font-body text-sm text-secondary">
                   일치하는 러닝화가 없습니다. Enter로 현재 검색어를 그대로 적용할 수 있습니다.
                 </p>

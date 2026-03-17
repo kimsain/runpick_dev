@@ -199,7 +199,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
               {shoe.bestFor.map((tag, i) => (
                 <span
                   key={i}
-                  className="rounded-full border border-accent/20 bg-accent/8 px-4 py-2 text-sm font-body text-accent"
+                  className="rounded-full bg-elevated px-4 py-2 text-sm font-body text-secondary"
                 >
                   {tag}
                 </span>

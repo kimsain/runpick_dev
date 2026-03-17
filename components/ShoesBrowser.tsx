@@ -179,9 +179,7 @@ export default function ShoesBrowser({
       </div>
 
       {/* Active chips */}
-      <div className="mb-6">
-        <ActiveFilterChips />
-      </div>
+      <ActiveFilterChips />
 
       {/* Desktop layout */}
       <div className="flex gap-10">

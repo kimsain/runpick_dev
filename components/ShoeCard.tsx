@@ -35,7 +35,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
   return (
     <Link
       href={`/shoes/${shoe.slug}`}
-      className="group block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/20 hover:shadow-card-hover"
+      className="group block overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-accent/20 hover:shadow-card-hover"
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden rounded-t-xl bg-elevated/70 md:aspect-[3/4]">
@@ -47,12 +47,16 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           const tooltipText = CONF_TOOLTIPS[conf] ?? ''
           return (
             <div className="absolute right-3 top-3 z-10">
-              <div
-                className={`glass flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-body ${colorClass}`}
-                title={tooltipText}
-              >
-                <span className={`inline-block h-1.5 w-1.5 rounded-full ${dotClass}`} />
-                {label}
+              <div className="group/badge relative">
+                <div
+                  className={`glass flex items-center gap-1.5 rounded-full border border-border px-2.5 py-1 text-xs font-body ${colorClass}`}
+                >
+                  <span className={`inline-block h-1.5 w-1.5 rounded-full ${dotClass}`} />
+                  {label}
+                </div>
+                <span className="invisible absolute right-0 top-full z-20 mt-1 w-max max-w-[200px] rounded-lg bg-elevated px-3 py-2 text-xs text-secondary shadow-elevated group-hover/badge:visible">
+                  {tooltipText}
+                </span>
               </div>
             </div>
           )
@@ -66,7 +70,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
           priority={priority}
         />
         {/* Hover overlay — desktop only */}
-        <div className="absolute inset-0 hidden translate-y-full flex-col items-start justify-end rounded-t-xl bg-dark/85 p-5 transition-transform duration-300 md:flex md:backdrop-blur-sm group-hover:translate-y-0">
+        <div className="absolute inset-0 hidden translate-y-full flex-col items-start justify-end rounded-t-xl bg-dark/85 p-5 transition-transform duration-300 md:flex md:backdrop-blur-sm group-hover:translate-y-0 group-focus-within:translate-y-0">
           <p className="mb-3 text-sm font-body leading-relaxed text-primary">
             {shoe.shortDescription}
           </p>
@@ -81,7 +85,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
 
       {/* Mobile: always-visible short description */}
       <div className="px-5 pt-3 md:hidden">
-        <p className="mt-0 line-clamp-2 text-xs font-body leading-relaxed text-secondary">
+        <p className="line-clamp-2 text-xs font-body leading-relaxed text-secondary">
           {shoe.shortDescription}
         </p>
       </div>
@@ -107,10 +111,10 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
                 <div className="flex-1 h-1 bg-elevated rounded-full overflow-hidden">
                   <div
                     className={`h-full rounded-full ${specColors[key]}`}
-                    style={{ width: `${(val / 10) * 100}%` }}
+                    style={{ width: `${Math.max(2, (val / 10) * 100)}%` }}
                   />
                 </div>
-                <span className="text-muted text-xs font-body w-9 shrink-0">
+                <span className="text-muted text-xs font-body w-9 shrink-0 truncate">
                   {label}
                 </span>
               </div>

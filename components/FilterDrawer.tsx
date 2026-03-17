@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect, type HTMLAttributes } from 'react'
+import { useState, useEffect, useRef, type HTMLAttributes } from 'react'
 import FilterPanel from './FilterPanel'
 import type { Brand } from '@/lib/types'
+import { useFocusTrap } from '@/lib/useFocusTrap'
 
 interface Props {
   brands: Brand[]
@@ -20,6 +21,19 @@ export default function FilterDrawer({
   totalCount,
 }: Props) {
   const [open, setOpen] = useState(false)
+  const drawerRef = useRef<HTMLDivElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const wasOpenRef = useRef(false)
+
+  useFocusTrap(drawerRef, open)
+
+  useEffect(() => {
+    if (wasOpenRef.current && !open) {
+      triggerRef.current?.focus()
+    }
+    wasOpenRef.current = open
+  }, [open])
+
   const inactiveDrawerProps = !open
     ? ({ inert: '' } as unknown as HTMLAttributes<HTMLDivElement>)
     : undefined
@@ -42,6 +56,7 @@ export default function FilterDrawer({
   return (
     <>
       <button
+        ref={triggerRef}
         onClick={() => setOpen(true)}
         className="flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-3 text-sm font-body text-secondary transition-all hover:border-border-hover hover:text-primary"
       >
@@ -54,6 +69,7 @@ export default function FilterDrawer({
       {/* Backdrop */}
       {open && (
         <div
+          aria-hidden="true"
           className="fixed inset-0 z-40 bg-dark/80 backdrop-blur-sm"
           onClick={() => setOpen(false)}
         />
@@ -61,6 +77,7 @@ export default function FilterDrawer({
 
       {/* Drawer */}
       <div
+        ref={drawerRef}
         role="dialog"
         aria-modal={open ? true : undefined}
         aria-hidden={!open}

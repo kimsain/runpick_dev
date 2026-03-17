@@ -88,7 +88,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
       }
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-[#080808]">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-dark">
       {/* Desktop: left-right split / Mobile: stacked */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col px-6 py-20 md:flex-row md:items-center md:gap-16">
 
@@ -136,7 +136,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
             {STATS(totalCount, brandCount).map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm"
+                className="pointer-events-none select-none rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm"
               >
                 <span className="text-lg font-display text-accent">{stat.value}</span>
                 <span className="ml-1.5 text-secondary">{stat.label}</span>
@@ -149,22 +149,19 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
             initial={{ opacity: 0, scale: prefersReduced ? 1 : 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={transition(0.6)}
+            whileHover={prefersReduced ? {} : { scale: 1.03 }}
+            whileTap={prefersReduced ? {} : { scale: 0.97 }}
+            className="inline-block"
           >
-            <motion.div
-              whileHover={prefersReduced ? {} : { scale: 1.03 }}
-              whileTap={prefersReduced ? {} : { scale: 0.97 }}
-              className="inline-block"
+            <Link
+              href="/shoes"
+              className="inline-flex min-h-[52px] items-center gap-3 rounded-xl bg-accent px-8 py-4 text-xl font-display text-dark transition-all hover:bg-accent-dim hover:shadow-glow"
             >
-              <Link
-                href="/shoes"
-                className="inline-flex min-h-[52px] items-center gap-3 rounded-xl bg-accent px-8 py-4 text-xl font-display text-dark transition-all hover:bg-accent-dim hover:shadow-glow"
-              >
-                신발 탐색
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            </motion.div>
+              신발 탐색
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </motion.div>
         </motion.div>
 

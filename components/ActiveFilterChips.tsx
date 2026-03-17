@@ -116,10 +116,10 @@ export default function ActiveFilterChips() {
   if (chips.length === 0) return null
 
   return (
-    <div className="flex flex-wrap gap-2 items-center">
-      {chips.map((chip, i) => (
+    <div className="mb-6 flex flex-wrap gap-2 items-center">
+      {chips.map((chip) => (
         <button
-          key={i}
+          key={chip.label}
           onClick={chip.onRemove}
           className="flex min-h-[44px] items-center gap-2 rounded-full border border-accent/20 bg-accent/8 px-3 py-2 text-sm font-body text-accent transition-all hover:bg-accent hover:text-dark"
         >

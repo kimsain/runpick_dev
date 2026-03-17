@@ -106,7 +106,7 @@ export default function MethodologyPage() {
                 <h3 className="font-body text-primary font-bold text-base">
                   {source.name}
                 </h3>
-                <span className={`rounded-full border px-2.5 py-1 text-sm font-body ${source.typeClass}`}>
+                <span className={`rounded-full border px-2.5 py-1 text-xs font-body ${source.typeClass}`}>
                   {source.type}
                 </span>
               </div>

@@ -82,7 +82,10 @@ export default function SpecRadar({ specs, confidence }: Props) {
     { subject: SPEC_LABELS.weightScore,    value: specs.weightScore ?? 0,   fullMark: 10 },
   ]
 
+  const ariaLabel = `스펙 차트: 쿠션성 ${specs.cushioning}, 반응성 ${specs.responsiveness}, 안정성 ${specs.stability}, 내구성 ${specs.durability}, 경량성 ${specs.weightScore ?? 0}`
+
   return (
+    <div role="img" aria-label={ariaLabel}>
     <ResponsiveContainer width="100%" height={300}>
       <RadarChart data={data} margin={{ top: 18, right: 42, bottom: 18, left: 42 }}>
         <PolarGrid stroke="#222222" strokeWidth={0.5} />
@@ -107,5 +110,6 @@ export default function SpecRadar({ specs, confidence }: Props) {
         />
       </RadarChart>
     </ResponsiveContainer>
+    </div>
   )
 }

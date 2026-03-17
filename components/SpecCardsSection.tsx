@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { useFocusTrap } from '@/lib/useFocusTrap'
 import type { SpecItem } from '@/app/methodology/data/specItems'
 import ScoreMethodNotice from '@/components/ScoreMethodNotice'
 
@@ -14,6 +15,20 @@ export default function SpecCardsSection({ items }: Props) {
   const [selected, setSelected] = useState<SpecItem | null>(null)
   const [activeTab, setActiveTab] = useState<Tab>('general')
   const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const modalRef = useRef<HTMLDivElement>(null)
+  const triggerRefs = useRef(new Map<string, HTMLButtonElement>())
+  const prevSelectedIdRef = useRef<string | null>(null)
+
+  useFocusTrap(modalRef, !!selected)
+
+  useEffect(() => {
+    if (selected) {
+      prevSelectedIdRef.current = selected.id
+    } else if (prevSelectedIdRef.current) {
+      triggerRefs.current.get(prevSelectedIdRef.current)?.focus()
+      prevSelectedIdRef.current = null
+    }
+  }, [selected])
 
   function openModal(spec: SpecItem) {
     setSelected(spec)
@@ -47,6 +62,7 @@ export default function SpecCardsSection({ items }: Props) {
         {items.map((spec) => (
           <button
             key={spec.id}
+            ref={(el) => { if (el) triggerRefs.current.set(spec.id, el) }}
             onClick={() => openModal(spec)}
             className="group cursor-pointer rounded-xl border border-border bg-card p-6 text-left transition-all hover:border-accent/30 hover:shadow-glow-sm"
           >
@@ -87,7 +103,7 @@ export default function SpecCardsSection({ items }: Props) {
           <div className="absolute inset-0 bg-dark/80 backdrop-blur-sm" onClick={() => setSelected(null)} />
 
           {/* Modal panel */}
-          <div className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
+          <div ref={modalRef} className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
             {/* Header — 고정 */}
             <div className="flex items-baseline justify-between border-b border-border px-6 pb-4 pt-6 shrink-0">
               <div className="flex min-w-0 flex-wrap items-baseline gap-2">
@@ -113,7 +129,7 @@ export default function SpecCardsSection({ items }: Props) {
             </div>
 
             {/* Tabs — 고정 */}
-            <div className="flex border-b border-border shrink-0">
+            <div className="flex border-b border-border shrink-0" role="tablist">
               {(
                 [
                   { key: 'general', label: '쉬운 설명' },
@@ -123,7 +139,9 @@ export default function SpecCardsSection({ items }: Props) {
                 <button
                   key={key}
                   onClick={() => setActiveTab(key)}
-                  className={`-mb-px border-b-2 px-6 py-3 text-sm font-body transition-colors ${
+                  role="tab"
+                  aria-selected={activeTab === key}
+                  className={`-mb-px min-h-[44px] border-b-2 px-6 py-3 text-sm font-body transition-colors ${
                     activeTab === key
                       ? 'text-primary border-accent'
                       : 'text-muted border-transparent hover:text-secondary'
@@ -135,7 +153,7 @@ export default function SpecCardsSection({ items }: Props) {
             </div>
 
             {/* Body — 스크롤 */}
-            <div className="flex-1 overflow-y-auto p-6 space-y-6">
+            <div className="flex-1 overflow-y-auto p-6 space-y-6" role="tabpanel">
               {selected.notice && <ScoreMethodNotice notice={selected.notice} />}
 
               {activeTab === 'general' && (

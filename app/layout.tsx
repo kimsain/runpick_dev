@@ -21,12 +21,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <body className="bg-dark text-primary font-body antialiased">
         {/* Nav */}
-        <header className="fixed top-0 left-0 right-0 z-30 bg-dark/90 backdrop-blur-sm border-b border-elevated">
+        <header className="fixed top-0 left-0 right-0 z-30 bg-dark/90 backdrop-blur-sm border-b border-border">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link href="/" className="font-display text-xl text-primary tracking-widest">
               RUNPICK
             </Link>
-            <nav className="flex items-center gap-6">
+            <nav className="flex items-center gap-4 sm:gap-6">
               <Link
                 href="/methodology"
                 className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] flex items-center"
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="pt-16">{children}</div>
 
         {/* Footer */}
-        <footer className="border-t border-elevated mt-24 py-12 px-6">
+        <footer className="border-t border-border mt-24 py-12 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <span className="font-display text-lg text-muted tracking-widest">RUNPICK</span>
             <p className="text-secondary text-sm font-body">
