@@ -20,11 +20,35 @@ npm run lint     # ESLint
 data/brands/*.json   — 신발 데이터 원본 (12개 브랜드, { brand, shoes[] } 구조)
 scripts/             — Python 데이터 파이프라인
 lib/data.ts          — 브랜드 JSON 통합 진입점 (getAllShoes, getSimilarShoes 등)
-lib/types.ts         — TypeScript 타입 정의
+lib/types.ts         — TypeScript 타입 정의 (Shoe, Brand, Specs, FilterState 등)
+lib/constants.ts     — CATEGORY_LABELS, SPEC_LABELS, SOURCE_LABELS
+lib/confidence.ts    — confidence 레벨별 색상·뱃지·툴팁 토큰 (단일 소스)
+lib/shoeSearch.ts    — 검색 랭킹 로직 + localStorage 최근 검색어
+lib/scoreMethodNotice.ts — 점수 방법론 면책 문구
 app/                 — Next.js 14 App Router (SSG)
 components/          — React UI 컴포넌트
 research/            — 신발별 리서치 원본 JSON
 ```
+
+### App Routes
+
+| Route | 파일 | 특이사항 |
+|-------|------|---------|
+| `/` | `app/page.tsx` | SSG. 카테고리별 top-4 추천 (rawScore 정렬) |
+| `/shoes` | `app/shoes/page.tsx` | SSG 렌더 → `ShoesBrowser` (client) |
+| `/shoes/[slug]` | `app/shoes/[slug]/page.tsx` | SSG (`generateStaticParams`). `SpecRadar`는 `dynamic(..., {ssr:false})` |
+| `/methodology` | `app/methodology/page.tsx` | 정적 콘텐츠 |
+
+### Client/Server 경계
+
+- `ShoesBrowser` — `'use client'`, 필터·정렬 상태를 **URL searchParams**로 관리 (새로고침 유지)
+- `SpecRadar` — `dynamic` lazy-load (차트 라이브러리 SSR 불가)
+- 나머지 컴포넌트는 서버 컴포넌트
+
+### Shoe 점수 이중 구조
+
+모든 스펙에 정수 `score`(1–10, 표시용)와 소수 `raw*`(정렬 정밀도용) 두 가지 존재.
+`lib/data.ts`의 `specVec()` 및 홈 `getRawScore()`는 `raw*` 우선 사용.
 
 ## Script Pipeline (신발 추가/수정 후 실행 순서)
 
