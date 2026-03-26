@@ -3,6 +3,7 @@
 import { useSearchParams } from 'next/navigation'
 import { useDeferredValue, useMemo } from 'react'
 import ShoeCard from './ShoeCard'
+import AnimatedCardGrid from './AnimatedCardGrid'
 import ActiveFilterChips from './ActiveFilterChips'
 import FilterDrawer from './FilterDrawer'
 import FilterPanel from './FilterPanel'
@@ -208,11 +209,14 @@ export default function ShoesBrowser({
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <AnimatedCardGrid
+              key={filtered.map(s => s.slug).slice(0, 3).join(',')}
+              className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {filtered.map((shoe) => (
                 <ShoeCard key={shoe.slug} shoe={shoe} />
               ))}
-            </div>
+            </AnimatedCardGrid>
           )}
         </div>
       </div>

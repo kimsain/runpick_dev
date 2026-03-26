@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import HeroSection from '@/components/HeroSection'
 import ShoeCard from '@/components/ShoeCard'
+import ScrollRevealSection from '@/components/ScrollRevealSection'
+import AnimatedCardGrid from '@/components/AnimatedCardGrid'
 import { getAllShoes, getBrands } from '@/lib/data'
 import type { Shoe, Specs } from '@/lib/types'
 
@@ -61,7 +63,7 @@ export default function HomePage() {
       <HeroSection />
 
       {/* Brand Bar */}
-      <section className="border-y border-border bg-surface/40 px-6 py-8">
+      <ScrollRevealSection className="border-y border-border bg-surface/40 px-6 py-8">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-2 gap-y-1">
           {brands.map((brand) => (
             <Link
@@ -73,11 +75,11 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
+      </ScrollRevealSection>
 
       {/* Curation Sections */}
       {sections.map((section, sectionIdx) => (
-        <section key={section.title} className="max-w-7xl mx-auto px-6 py-20">
+        <ScrollRevealSection key={section.title} className="max-w-7xl mx-auto px-6 py-20">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
@@ -97,7 +99,7 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {section.shoes.map((shoe, i) => (
               <ShoeCard
                 key={shoe.slug}
@@ -105,8 +107,8 @@ export default function HomePage() {
                 priority={sectionIdx === 0 && i < 2}
               />
             ))}
-          </div>
-        </section>
+          </AnimatedCardGrid>
+        </ScrollRevealSection>
       ))}
     </main>
   )

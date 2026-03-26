@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Shoe } from '@/lib/types'
 import { CONF_TEXT, CONF_DOT, CONF_BADGE_LABELS, CONF_TOOLTIPS } from '@/lib/confidence'
 import { SPEC_LABELS } from '@/lib/constants'
+import AnimatedSpecBar from '@/components/AnimatedSpecBar'
 
 interface Props {
   shoe: Shoe
@@ -104,20 +105,16 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
 
         {/* Spec bars */}
         <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2">
-          {SPEC_BARS.map(({ key, label }) => {
+          {SPEC_BARS.map(({ key, label }, idx) => {
             const val = (shoe.specs[key as keyof typeof shoe.specs] as number) ?? 0
             return (
-              <div key={key} className="flex items-center gap-2">
-                <div className="flex-1 h-1 bg-elevated rounded-full overflow-hidden">
-                  <div
-                    className={`h-full rounded-full ${specColors[key]}`}
-                    style={{ width: `${Math.max(2, (val / 10) * 100)}%` }}
-                  />
-                </div>
-                <span className="text-muted text-xs font-body w-9 shrink-0 truncate">
-                  {label}
-                </span>
-              </div>
+              <AnimatedSpecBar
+                key={key}
+                label={label}
+                value={val}
+                colorClass={specColors[key]}
+                delay={idx * 0.05}
+              />
             )
           })}
         </div>

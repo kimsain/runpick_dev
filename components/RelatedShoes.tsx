@@ -1,4 +1,5 @@
 import ShoeCard from './ShoeCard'
+import AnimatedCardGrid from './AnimatedCardGrid'
 import type { Shoe } from '@/lib/types'
 
 interface Props {
@@ -13,11 +14,11 @@ export default function RelatedShoes({ shoes }: Props) {
       <h2 className="font-display text-md text-primary tracking-widest uppercase break-keep mb-8">
         유사한 러닝화
       </h2>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
+      <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3">
         {shoes.map((shoe) => (
           <ShoeCard key={shoe.slug} shoe={shoe} />
         ))}
-      </div>
+      </AnimatedCardGrid>
     </section>
   )
 }
