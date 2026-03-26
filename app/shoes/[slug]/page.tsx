@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import dynamic from 'next/dynamic'
+import DetailImageViewer from '@/components/DetailImageViewer'
 import { getShoeBySlug, getAllSlugs, getSimilarShoes, getBrands } from '@/lib/data'
 import { CATEGORY_LABELS, SOURCE_LABELS } from '@/lib/constants'
 import RelatedShoes from '@/components/RelatedShoes'
@@ -52,16 +52,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
       <div className="md:grid md:grid-cols-2 md:gap-16">
         {/* Left: sticky image */}
         <div className="md:sticky md:top-24 md:h-[calc(100vh-8rem)] flex items-center justify-center mb-8 md:mb-0">
-          <div className="relative aspect-square w-full max-w-md rounded-2xl bg-card/60 p-6">
-            <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-accent/[0.03] to-transparent" />
-            <Image
-              src={imagePath}
-              alt={shoe.name}
-              fill
-              sizes="(max-width: 768px) 90vw, 40vw"
-              className="object-contain p-4"
-              priority
-            />
+          <div className="w-full max-w-md">
+            <DetailImageViewer src={imagePath} alt={shoe.name} priority />
           </div>
         </div>
 

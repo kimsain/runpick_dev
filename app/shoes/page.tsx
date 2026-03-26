@@ -9,11 +9,29 @@ export function generateMetadata() {
   }
 }
 
+function CardSkeleton() {
+  return (
+    <div className="overflow-hidden rounded-xl border border-border bg-card">
+      <div className="aspect-[4/3] bg-elevated/70 animate-pulse" />
+      <div className="p-5 space-y-3">
+        <div className="h-3 w-16 rounded bg-elevated animate-pulse" />
+        <div className="h-5 w-3/4 rounded bg-elevated animate-pulse" />
+        <div className="h-5 w-20 rounded bg-elevated animate-pulse" />
+        <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="h-1 rounded-full bg-elevated animate-pulse" />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function GridSkeleton() {
   return (
     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {Array.from({ length: 6 }).map((_, i) => (
-        <div key={i} className="aspect-[3/4] rounded-xl bg-card animate-pulse" />
+        <CardSkeleton key={i} />
       ))}
     </div>
   )

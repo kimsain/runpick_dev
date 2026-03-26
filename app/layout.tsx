@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Link from 'next/link'
 import { getBrands } from '@/lib/data'
+import Navbar from '@/components/Navbar'
 
 const brandCount = getBrands().length
 
@@ -20,31 +20,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body className="bg-dark text-primary font-body antialiased">
-        {/* Nav */}
-        <header className="fixed top-0 left-0 right-0 z-30 bg-dark/90 backdrop-blur-sm border-b border-border">
-          <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <Link href="/" className="font-display text-xl text-primary tracking-widest">
-              RUNPICK
-            </Link>
-            <nav className="flex items-center gap-4 sm:gap-6">
-              <Link
-                href="/methodology"
-                className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] flex items-center"
-              >
-                점수 산정 방법
-              </Link>
-              <Link
-                href="/shoes"
-                className="text-sm font-body text-secondary hover:text-primary transition-colors min-h-[44px] flex items-center"
-              >
-                탐색
-              </Link>
-            </nav>
-          </div>
-        </header>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:text-dark focus:font-body focus:text-sm focus:shadow-elevated"
+        >
+          본문으로 건너뛰기
+        </a>
+        <Navbar />
 
         {/* Page content — offset for nav */}
-        <div className="pt-16">{children}</div>
+        <div id="main-content" className="pt-16">{children}</div>
 
         {/* Footer */}
         <footer className="border-t border-border mt-24 py-12 px-6">

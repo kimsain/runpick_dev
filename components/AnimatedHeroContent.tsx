@@ -9,13 +9,13 @@ import {
   useTransform,
   useReducedMotion,
 } from 'framer-motion'
+import AnimatedCounter from '@/components/AnimatedCounter'
+import { EASE_OUT_QUART } from '@/lib/motion'
 
 interface Props {
   totalCount: number
   brandCount: number
 }
-
-const EASE_OUT_QUART = [0.25, 0.46, 0.45, 0.94] as const
 
 const HERO_SHOES = [
   { src: '/images/shoes/alphafly-3.webp', alt: 'Nike Alphafly 3' },
@@ -32,9 +32,9 @@ const HERO_SHOES = [
 ] as const
 
 const STATS = (totalCount: number, brandCount: number) => [
-  { value: String(brandCount), label: '개 브랜드' },
-  { value: String(totalCount), label: '개 신발' },
-  { value: '실측', label: '데이터 기반' },
+  { numeric: brandCount, value: null, label: '개 브랜드' },
+  { numeric: totalCount, value: null, label: '개 신발' },
+  { numeric: null, value: '실측', label: '데이터 기반' },
 ]
 
 export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
@@ -138,7 +138,9 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
                 key={stat.label}
                 className="pointer-events-none select-none rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm"
               >
-                <span className="text-lg font-display text-accent">{stat.value}</span>
+                <span className="text-lg font-display text-accent">
+                  {stat.numeric !== null ? <AnimatedCounter target={stat.numeric} /> : stat.value}
+                </span>
                 <span className="ml-1.5 text-secondary">{stat.label}</span>
               </div>
             ))}
