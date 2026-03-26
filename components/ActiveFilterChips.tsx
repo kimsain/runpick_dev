@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback } from 'react'
 import { CATEGORY_LABELS, SPEC_LABELS } from '@/lib/constants'
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 
 const SORT_LABELS: Record<string, string> = {
   'name-asc': '이름↑', 'name-desc': '이름↓',
@@ -28,6 +29,7 @@ export default function ActiveFilterChips() {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  const reduced = useReducedMotion()
 
   const removeParam = useCallback(
     (key: string, value?: string) => {
@@ -117,24 +119,45 @@ export default function ActiveFilterChips() {
 
   return (
     <div className="mb-6 flex flex-wrap gap-2 items-center">
-      {chips.map((chip) => (
-        <button
-          key={chip.label}
-          onClick={chip.onRemove}
-          className="flex min-h-[44px] items-center gap-2 rounded-full border border-accent/20 bg-accent/8 px-3 py-2 text-sm font-body text-accent transition-all hover:bg-accent hover:text-dark"
-        >
-          {chip.label}
-          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      ))}
-      <button
+      <AnimatePresence mode="popLayout">
+        {chips.map((chip) =>
+          reduced ? (
+            <button
+              key={chip.label}
+              onClick={chip.onRemove}
+              className="flex min-h-[44px] items-center gap-2 rounded-full border border-accent/20 bg-accent/8 px-3 py-2 text-sm font-body text-accent transition-all hover:bg-accent hover:text-dark"
+            >
+              {chip.label}
+              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          ) : (
+            <motion.button
+              key={chip.label}
+              onClick={chip.onRemove}
+              className="flex min-h-[44px] items-center gap-2 rounded-full border border-accent/20 bg-accent/8 px-3 py-2 text-sm font-body text-accent transition-all hover:bg-accent hover:text-dark"
+              layout
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.85 }}
+              transition={{ duration: 0.15 }}
+            >
+              {chip.label}
+              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </motion.button>
+          )
+        )}
+      </AnimatePresence>
+      <motion.button
+        layout
         onClick={() => router.push(pathname)}
         className="min-h-[44px] rounded-full border border-border px-3 py-2 text-sm font-body text-secondary transition-colors hover:border-border-hover hover:text-primary"
       >
         전체 초기화
-      </button>
+      </motion.button>
     </div>
   )
 }
