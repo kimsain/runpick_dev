@@ -13,8 +13,3 @@ export const staggerContainer = (staggerDelay = 0.08): Variants => ({
   hidden: {},
   visible: { transition: { staggerChildren: staggerDelay } },
 })
-
-export const specBarVariants: Variants = {
-  hidden: { scaleX: 0 },
-  visible: { scaleX: 1, transition: { duration: 0.5, ease: EASE_OUT_QUART } },
-}

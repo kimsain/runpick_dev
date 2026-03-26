@@ -28,5 +28,5 @@ export default function AnimatedCounter({ target, duration = 1.2 }: Props) {
     return () => cancelAnimationFrame(rafId)
   }, [isInView, target, duration, reduced])
 
-  return <span ref={ref}>{value}</span>
+  return <span ref={ref} aria-live="off">{value}</span>
 }

@@ -151,13 +151,22 @@ export default function ActiveFilterChips() {
           )
         )}
       </AnimatePresence>
-      <motion.button
-        layout
-        onClick={() => router.push(pathname)}
-        className="min-h-[44px] rounded-full border border-border px-3 py-2 text-sm font-body text-secondary transition-colors hover:border-border-hover hover:text-primary"
-      >
-        전체 초기화
-      </motion.button>
+      {reduced ? (
+        <button
+          onClick={() => router.push(pathname)}
+          className="min-h-[44px] rounded-full border border-border px-3 py-2 text-sm font-body text-secondary transition-colors hover:border-border-hover hover:text-primary"
+        >
+          전체 초기화
+        </button>
+      ) : (
+        <motion.button
+          layout
+          onClick={() => router.push(pathname)}
+          className="min-h-[44px] rounded-full border border-border px-3 py-2 text-sm font-body text-secondary transition-colors hover:border-border-hover hover:text-primary"
+        >
+          전체 초기화
+        </motion.button>
+      )}
     </div>
   )
 }

@@ -10,13 +10,12 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 import AnimatedCounter from '@/components/AnimatedCounter'
+import { EASE_OUT_QUART } from '@/lib/motion'
 
 interface Props {
   totalCount: number
   brandCount: number
 }
-
-const EASE_OUT_QUART = [0.25, 0.46, 0.45, 0.94] as const
 
 const HERO_SHOES = [
   { src: '/images/shoes/alphafly-3.webp', alt: 'Nike Alphafly 3' },
