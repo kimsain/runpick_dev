@@ -25,6 +25,7 @@ lib/constants.ts     — CATEGORY_LABELS, SPEC_LABELS, SOURCE_LABELS
 lib/confidence.ts    — confidence 레벨별 색상·뱃지·툴팁 토큰 (단일 소스)
 lib/shoeSearch.ts    — 검색 랭킹 로직 + localStorage 최근 검색어
 lib/scoreMethodNotice.ts — 점수 방법론 면책 문구
+lib/motion.ts        — Framer Motion 공유 variants/easing (fadeUpVariants, staggerContainer, EASE_OUT_QUART)
 app/                 — Next.js 14 App Router (SSG)
 components/          — React UI 컴포넌트
 research/            — 신발별 리서치 원본 JSON
@@ -43,6 +44,8 @@ research/            — 신발별 리서치 원본 JSON
 
 - `ShoesBrowser` — `'use client'`, 필터·정렬 상태를 **URL searchParams**로 관리 (새로고침 유지)
 - `SpecRadar` — `dynamic` lazy-load (차트 라이브러리 SSR 불가)
+- `Navbar` — `'use client'`, `usePathname`으로 active 상태 표시
+- `ScrollRevealSection`, `AnimatedCardGrid`, `AnimatedSpecBar`, `AnimatedCounter`, `DetailImageViewer` — `'use client'` 애니메이션 컴포넌트, 모두 `useReducedMotion()` 지원
 - 나머지 컴포넌트는 서버 컴포넌트
 
 ### Shoe 점수 이중 구조
@@ -114,6 +117,7 @@ python3 scripts/verify_all_specs.py
 
 ## Gotchas
 
+- 애니메이션 컴포넌트 신규 추가 시: `lib/motion.ts`에서 variants import, `useReducedMotion()` 필수, `whileInView`에 `viewport={{ once: true }}` 항상 사용
 - `rawCushioning: null` → Case C-KNN → `impute_scores.py` 필요
 - 스택 수치는 반올림 (39.5mm → 40mm)
 - RTINGS ER%는 0–100 스케일 (0–10 아님)
