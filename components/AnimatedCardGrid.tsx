@@ -11,18 +11,22 @@ interface Props {
 
 export default function AnimatedCardGrid({ children, className }: Props) {
   const reduced = useReducedMotion()
+  const count = Children.count(children)
+  const shouldStagger = count <= 12
 
   return (
     <motion.div
       className={className}
-      variants={staggerContainer()}
+      variants={shouldStagger ? staggerContainer() : fadeUpVariants}
       initial={reduced ? undefined : 'hidden'}
       whileInView="visible"
-      viewport={{ once: true, amount: 0.1 }}
+      viewport={{ once: true }}
     >
-      {Children.map(children, (child) => (
-        <motion.div variants={fadeUpVariants}>{child}</motion.div>
-      ))}
+      {shouldStagger
+        ? Children.map(children, (child) => (
+            <motion.div variants={fadeUpVariants}>{child}</motion.div>
+          ))
+        : children}
     </motion.div>
   )
 }
