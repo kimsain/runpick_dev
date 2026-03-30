@@ -7,12 +7,13 @@ import { fadeUpVariants, staggerContainer } from '@/lib/motion'
 interface Props {
   children: React.ReactNode
   className?: string
+  disableStagger?: boolean
 }
 
-export default function AnimatedCardGrid({ children, className }: Props) {
+export default function AnimatedCardGrid({ children, className, disableStagger }: Props) {
   const reduced = useReducedMotion()
   const count = Children.count(children)
-  const shouldStagger = count <= 12
+  const shouldStagger = !disableStagger && count <= 12
 
   return (
     <motion.div

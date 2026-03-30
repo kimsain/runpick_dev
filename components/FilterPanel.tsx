@@ -121,6 +121,25 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   useEffect(() => { setLocalMaxPrice(urlMaxPrice) }, [urlMaxPrice])
   useEffect(() => { setLocalMaxWeight(urlMaxWeight) }, [urlMaxWeight])
   useEffect(() => { setLocalMaxDrop(urlMaxDrop) }, [urlMaxDrop])
+
+  useEffect(() => {
+    if (localMaxPrice === urlMaxPrice) return
+    const t = setTimeout(() => updateParam('maxPrice', localMaxPrice >= priceRange.max ? '' : String(localMaxPrice)), 200)
+    return () => clearTimeout(t)
+  }, [localMaxPrice, urlMaxPrice, priceRange.max, updateParam])
+
+  useEffect(() => {
+    if (localMaxWeight === urlMaxWeight) return
+    const t = setTimeout(() => updateParam('maxWeight', localMaxWeight >= sliderWeightMax ? '' : String(localMaxWeight)), 200)
+    return () => clearTimeout(t)
+  }, [localMaxWeight, urlMaxWeight, sliderWeightMax, updateParam])
+
+  useEffect(() => {
+    if (localMaxDrop === urlMaxDrop) return
+    const t = setTimeout(() => updateParam('maxDrop', localMaxDrop >= dropRange.max ? '' : String(localMaxDrop)), 200)
+    return () => clearTimeout(t)
+  }, [localMaxDrop, urlMaxDrop, dropRange.max, updateParam])
+
   const currentSort = searchParams.get('sort') ?? 'name-asc'
   const [activeKey, activeDir] = parseSort(currentSort)
 
@@ -279,8 +298,6 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   aria-label="최대 가격"
                   aria-valuetext={`${formatPrice(localMaxPrice)}원`}
                   onChange={(e) => setLocalMaxPrice(Number(e.target.value))}
-                  onMouseUp={() => updateParam('maxPrice', localMaxPrice >= priceRange.max ? '' : String(localMaxPrice))}
-                  onTouchEnd={() => updateParam('maxPrice', localMaxPrice >= priceRange.max ? '' : String(localMaxPrice))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
@@ -303,8 +320,6 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   aria-label="최대 무게"
                   aria-valuetext={`${localMaxWeight}g`}
                   onChange={(e) => setLocalMaxWeight(Number(e.target.value))}
-                  onMouseUp={() => updateParam('maxWeight', localMaxWeight >= sliderWeightMax ? '' : String(localMaxWeight))}
-                  onTouchEnd={() => updateParam('maxWeight', localMaxWeight >= sliderWeightMax ? '' : String(localMaxWeight))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
@@ -327,8 +342,6 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   aria-label="최대 드롭"
                   aria-valuetext={`${localMaxDrop}mm`}
                   onChange={(e) => setLocalMaxDrop(Number(e.target.value))}
-                  onMouseUp={() => updateParam('maxDrop', localMaxDrop >= dropRange.max ? '' : String(localMaxDrop))}
-                  onTouchEnd={() => updateParam('maxDrop', localMaxDrop >= dropRange.max ? '' : String(localMaxDrop))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
