@@ -1,4 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: '평가 방법론 — RunPick',
+  description: 'RunPick의 러닝화 평가 기준과 점수 산출 방법을 설명합니다.',
+  openGraph: {
+    title: '평가 방법론 — RunPick',
+    description: 'RunPick의 러닝화 평가 기준과 점수 산출 방법을 설명합니다.',
+  },
+}
 import { CONF_COLORS } from '@/lib/confidence'
 import SpecCardsSection from '@/components/SpecCardsSection'
 import { SPEC_ITEMS } from './data/specItems'

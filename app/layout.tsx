@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
 
         {/* Page content — offset for nav */}
-        <div id="main-content" className="pt-16">{children}</div>
+        <div id="main-content" tabIndex={-1} className="pt-16 outline-none">{children}</div>
 
         {/* Footer */}
         <footer className="border-t border-border mt-24 py-12 px-6">

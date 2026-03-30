@@ -38,7 +38,6 @@ export default function DetailImageViewer({ src, alt, priority }: Props) {
         className="cursor-zoom-in overflow-hidden"
         onMouseMove={handleMouseMove}
         onMouseLeave={() => setZoomed(false)}
-        aria-hidden="true"
       >
         <Image
           src={src}

@@ -12,10 +12,11 @@ export default function AnimatedCounter({ target, duration = 1.2 }: Props) {
   const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref, { once: true })
   const reduced = useReducedMotion()
-  const [value, setValue] = useState(reduced ? target : 0)
+  const [value, setValue] = useState(0)
 
   useEffect(() => {
-    if (!isInView || reduced) { setValue(target); return }
+    if (!isInView) return
+    if (reduced) { setValue(target); return }
     let rafId = 0
     const startTime = performance.now()
     function tick(now: number) {

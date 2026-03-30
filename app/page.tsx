@@ -83,26 +83,28 @@ export default function HomePage() {
 
       {/* Curation Sections */}
       {sections.map((section, sectionIdx) => (
-        <ScrollRevealSection key={section.title} className="max-w-7xl mx-auto px-6 py-20">
-          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
-                {section.title}
-              </h2>
-              {section.subtitle && (
-                <p className="mt-2 max-w-lg text-xs font-body text-muted sm:text-sm">{section.subtitle}</p>
-              )}
+        <div key={section.title} className="max-w-7xl mx-auto px-6 py-20">
+          <ScrollRevealSection>
+            <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
+                  {section.title}
+                </h2>
+                {section.subtitle && (
+                  <p className="mt-2 max-w-lg text-xs font-body text-muted sm:text-sm">{section.subtitle}</p>
+                )}
+              </div>
+              <Link
+                href="/shoes"
+                className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-body text-secondary transition-colors self-start hover:bg-accent/5 hover:text-accent sm:self-auto"
+              >
+                전체 보기
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
             </div>
-            <Link
-              href="/shoes"
-              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-body text-secondary transition-colors self-start hover:bg-accent/5 hover:text-accent sm:self-auto"
-            >
-              전체 보기
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
+          </ScrollRevealSection>
           <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {section.shoes.map((shoe, i) => (
               <ShoeCard
@@ -112,7 +114,7 @@ export default function HomePage() {
               />
             ))}
           </AnimatedCardGrid>
-        </ScrollRevealSection>
+        </div>
       ))}
     </main>
   )

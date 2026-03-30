@@ -8,7 +8,10 @@ import RelatedShoes from '@/components/RelatedShoes'
 import ScoreMethodNotice from '@/components/ScoreMethodNotice'
 import { STABILITY_METHOD_NOTICE } from '@/lib/scoreMethodNotice'
 
-const SpecRadar = dynamic(() => import('@/components/SpecRadar'), { ssr: false })
+const SpecRadar = dynamic(() => import('@/components/SpecRadar'), {
+  ssr: false,
+  loading: () => <div className="h-[300px] w-full animate-pulse rounded-lg bg-elevated/50" />,
+})
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }))
