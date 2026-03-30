@@ -26,9 +26,8 @@ export default function AnimatedSpecBar({ label, value, colorClass, delay }: Pro
         <motion.div
           className={`h-full rounded-full ${colorClass}`}
           style={{ width: widthPct, transformOrigin: 'left' }}
-          initial={reduced ? undefined : { scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
+          initial={reduced ? false : { scaleX: 0 }}
+          animate={{ scaleX: 1 }}
           transition={reduced ? { duration: 0 } : { duration: 0.5, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
         />
       </div>
