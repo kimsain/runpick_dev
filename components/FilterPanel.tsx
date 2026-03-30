@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
-import { useCallback, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import type { Brand } from '@/lib/types'
 import { CATEGORIES, SPEC_LABELS } from '@/lib/constants'
 
@@ -57,6 +57,14 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
+  const pushParams = useCallback(
+    (params: URLSearchParams) => {
+      const qs = params.toString()
+      router.push(qs ? `${pathname}?${qs}` : pathname)
+    },
+    [router, pathname]
+  )
+
   const updateParam = useCallback(
     (key: string, value: string) => {
       const params = new URLSearchParams(searchParams.toString())
@@ -65,9 +73,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
       } else {
         params.delete(key)
       }
-      router.push(`${pathname}?${params.toString()}`)
+      pushParams(params)
     },
-    [router, pathname, searchParams]
+    [pushParams, searchParams]
   )
 
   const toggleBrand = useCallback(
@@ -82,28 +90,37 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
       } else {
         params.delete('brands')
       }
-      router.push(`${pathname}?${params.toString()}`)
+      pushParams(params)
     },
-    [router, pathname, searchParams]
-  )
-
-  const [specOpen, setSpecOpen] = useState(false)
-  const [brandsOpen, setBrandsOpen] = useState(!!(searchParams.get('brands')))
-  const [rangeOpen, setRangeOpen] = useState(
-    !!(searchParams.get('maxPrice') || searchParams.get('maxWeight') || searchParams.get('maxDrop'))
+    [pushParams, searchParams]
   )
 
   const activeSpecCount = SPEC_FILTERS.filter(
     (f) => Number(searchParams.get(f.param) ?? 1) > 1
   ).length
 
+  const [specOpen, setSpecOpen] = useState(activeSpecCount > 0)
+  const [brandsOpen, setBrandsOpen] = useState(!!(searchParams.get('brands')))
+  const [rangeOpen, setRangeOpen] = useState(
+    !!(searchParams.get('maxPrice') || searchParams.get('maxWeight') || searchParams.get('maxDrop'))
+  )
+
   const selectedBrands = searchParams.get('brands')?.split(',').filter(Boolean) ?? []
   const category = searchParams.get('category') ?? 'all'
-  const maxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
   const sliderWeightMin = Math.floor(weightRange.min / 10) * 10
   const sliderWeightMax = Math.ceil(weightRange.max / 10) * 10
-  const maxWeight = Number(searchParams.get('maxWeight') ?? sliderWeightMax)
-  const maxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
+
+  const urlMaxPrice = Number(searchParams.get('maxPrice') ?? priceRange.max)
+  const urlMaxWeight = Number(searchParams.get('maxWeight') ?? sliderWeightMax)
+  const urlMaxDrop = Number(searchParams.get('maxDrop') ?? dropRange.max)
+
+  const [localMaxPrice, setLocalMaxPrice] = useState(urlMaxPrice)
+  const [localMaxWeight, setLocalMaxWeight] = useState(urlMaxWeight)
+  const [localMaxDrop, setLocalMaxDrop] = useState(urlMaxDrop)
+
+  useEffect(() => { setLocalMaxPrice(urlMaxPrice) }, [urlMaxPrice])
+  useEffect(() => { setLocalMaxWeight(urlMaxWeight) }, [urlMaxWeight])
+  useEffect(() => { setLocalMaxDrop(urlMaxDrop) }, [urlMaxDrop])
   const currentSort = searchParams.get('sort') ?? 'name-asc'
   const [activeKey, activeDir] = parseSort(currentSort)
 
@@ -158,7 +175,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                     params.set('category', c.id)
                   }
                   params.delete('subcategory')
-                  router.push(`${pathname}?${params.toString()}`)
+                  pushParams(params)
                 }}
                 className={`flex min-h-[44px] items-center justify-center rounded-lg border px-3 py-2 text-center text-sm font-body transition-all ${
                   category === c.id
@@ -251,19 +268,19 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 가격(원)</span>
-                  <span className="text-primary font-semibold">{formatPrice(maxPrice)}</span>
+                  <span className="text-primary font-semibold">{formatPrice(localMaxPrice)}</span>
                 </div>
                 <input
                   type="range"
                   min={priceRange.min}
                   max={priceRange.max}
                   step={10000}
-                  value={maxPrice}
+                  value={localMaxPrice}
                   aria-label="최대 가격"
-                  aria-valuetext={`${formatPrice(maxPrice)}원`}
-                  onChange={(e) =>
-                    updateParam('maxPrice', Number(e.target.value) === priceRange.max ? '' : e.target.value)
-                  }
+                  aria-valuetext={`${formatPrice(localMaxPrice)}원`}
+                  onChange={(e) => setLocalMaxPrice(Number(e.target.value))}
+                  onMouseUp={() => updateParam('maxPrice', localMaxPrice >= priceRange.max ? '' : String(localMaxPrice))}
+                  onTouchEnd={() => updateParam('maxPrice', localMaxPrice >= priceRange.max ? '' : String(localMaxPrice))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
@@ -275,43 +292,43 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 무게(g)</span>
-                  <span className="text-primary font-semibold">{maxWeight}</span>
+                  <span className="text-primary font-semibold">{localMaxWeight}</span>
                 </div>
                 <input
                   type="range"
                   min={sliderWeightMin}
                   max={sliderWeightMax}
                   step={10}
-                  value={maxWeight}
+                  value={localMaxWeight}
                   aria-label="최대 무게"
-                  aria-valuetext={`${maxWeight}g`}
-                  onChange={(e) =>
-                    updateParam('maxWeight', Number(e.target.value) >= sliderWeightMax ? '' : e.target.value)
-                  }
+                  aria-valuetext={`${localMaxWeight}g`}
+                  onChange={(e) => setLocalMaxWeight(Number(e.target.value))}
+                  onMouseUp={() => updateParam('maxWeight', localMaxWeight >= sliderWeightMax ? '' : String(localMaxWeight))}
+                  onTouchEnd={() => updateParam('maxWeight', localMaxWeight >= sliderWeightMax ? '' : String(localMaxWeight))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{weightRange.min}</span>
-                  <span>{weightRange.max}</span>
+                  <span>{sliderWeightMin}</span>
+                  <span>{sliderWeightMax}</span>
                 </div>
               </div>
               {/* 최대 드롭 */}
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">드롭(mm)</span>
-                  <span className="text-primary font-semibold">{maxDrop}</span>
+                  <span className="text-primary font-semibold">{localMaxDrop}</span>
                 </div>
                 <input
                   type="range"
                   min={dropRange.min}
                   max={dropRange.max}
                   step={1}
-                  value={maxDrop}
+                  value={localMaxDrop}
                   aria-label="최대 드롭"
-                  aria-valuetext={`${maxDrop}mm`}
-                  onChange={(e) =>
-                    updateParam('maxDrop', Number(e.target.value) === dropRange.max ? '' : e.target.value)
-                  }
+                  aria-valuetext={`${localMaxDrop}mm`}
+                  onChange={(e) => setLocalMaxDrop(Number(e.target.value))}
+                  onMouseUp={() => updateParam('maxDrop', localMaxDrop >= dropRange.max ? '' : String(localMaxDrop))}
+                  onTouchEnd={() => updateParam('maxDrop', localMaxDrop >= dropRange.max ? '' : String(localMaxDrop))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-muted text-xs font-body mt-1">

@@ -12,7 +12,7 @@ export function generateMetadata() {
 function CardSkeleton() {
   return (
     <div className="overflow-hidden rounded-xl border border-border bg-card">
-      <div className="aspect-[4/3] bg-elevated/70 animate-pulse" />
+      <div className="aspect-[4/3] md:aspect-[3/4] bg-elevated/70 animate-pulse" />
       <div className="p-5 space-y-3">
         <div className="h-3 w-16 rounded bg-elevated animate-pulse" />
         <div className="h-5 w-3/4 rounded bg-elevated animate-pulse" />

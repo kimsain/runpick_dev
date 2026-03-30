@@ -55,6 +55,15 @@ const config: Config = {
         "card-hover": "0 4px 16px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.2)",
         elevated: "0 8px 32px rgba(0,0,0,0.4)",
       },
+      keyframes: {
+        'scale-x': {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
+      },
+      animation: {
+        'scale-x': 'scale-x 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+      },
     },
   },
   plugins: [],
