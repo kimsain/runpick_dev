@@ -1519,7 +1519,7 @@
       "specs": {
         "weight": 206,
         "drop": 8,
-        "cushioning": 6,
+        "cushioning": 5,
         "responsiveness": 8,
         "stability": 8,
         "durability": 5,
@@ -1529,37 +1529,37 @@
         },
         "weightScore": 7,
         "valueScore": 5,
-        "rawCushioning": 5.91,
-        "rawResponsiveness": 8.21,
-        "rawValueScore": 4.64,
+        "rawCushioning": 5.5,
+        "rawResponsiveness": 8.41,
+        "rawValueScore": 4.56,
         "rawLightness": 6.88,
-        "rawStability": 7.69,
-        "rawDurability": 4.54,
+        "rawStability": 7.54,
+        "rawDurability": 4.57,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
+          "structureScore": 6.96,
           "platformScore": 7.89,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 7.88,
             "rtingsOutsoleScore": 7.16,
             "rtingsWidthToStackScore": 9.18
           },
-          "coreScore": 7.89,
+          "coreScore": 7.38,
           "subcategoryDelta": -0.5,
-          "swayPenalty": -0.07,
+          "swayPenalty": -0.38,
           "qualitativeModifier": 0.2,
-          "intermediateRaw": 7.66,
+          "intermediateRaw": 7.46,
           "stackInput": {
-            "source": "rtings",
-            "heel": 38.2,
-            "forefoot": 28.1
+            "source": "runrepeat",
+            "heel": 36.5,
+            "forefoot": 27.8
           },
           "softnessInput": {
-            "source": "rtings_firmness",
-            "softnessScalar": 0.81,
-            "proxyAc": null,
-            "heelFirmness1100": 107.9,
-            "forefootFirmness1300": 228.0
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.58,
+            "proxyAc": 33.3,
+            "heelAc": 33.3,
+            "secondaryAc": 29.8
           },
           "qualitativeSignals": {
             "sourceCount": 3,
@@ -1574,20 +1574,20 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 6.56,
+          "upperScore": 2.8,
           "midsoleLongevityScore": 6.43,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.21,
-          "coreScore": null,
+          "coreScore": 5.62,
           "compoundModifier": 0.0,
-          "qualitativeModifier": 0.18,
-          "intermediateRaw": 5.89,
+          "qualitativeModifier": 0.08,
+          "intermediateRaw": 5.91,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 0.6,
+            "outsoleThicknessMm": 1.6,
+            "toeboxDurability": 1,
+            "heelPaddingDurability": 3,
             "midsoleRetentionRatio": 0.9483,
             "outsoleHardnessHc": null
           },
@@ -1596,8 +1596,8 @@
             "shares": {
               "outsole_coverage": 0.0,
               "upper_reinforcement": 0.3333,
-              "durable": 0.6667,
-              "early_wear": 0.0,
+              "durable": 1.0,
+              "early_wear": 0.3333,
               "exposed_foam": 0.0,
               "midsole_breakdown": 0.0
             }
@@ -1632,12 +1632,13 @@
       ],
       "slug": "endorphin-pro-5",
       "officialUrl": "https://www.saucony.com/en/endorphin-pro-5/60803M.html",
-      "confidence": "high",
+      "confidence": "very-high",
       "sources": {
         "rtings": "https://www.rtings.com/running-shoes/reviews/saucony/endorphin-pro-5-pink",
         "dor": "https://www.doctorsofrunning.com/2026/01/saucony-endorphin-pro-5-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2026/01/saucony-endorphin-pro-5-review.html",
-        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-pro-5-review/"
+        "bitr": "https://believeintherun.com/shoe-reviews/saucony-endorphin-pro-5-review/",
+        "runrepeat": "https://runrepeat.com/saucony-endorphin-pro-5"
       }
     }
   ]
