@@ -18,7 +18,7 @@ HEAVY_G = 351          # 최중량 기준 (g) — vomero-premium
 # 가성비 앵커 (경량성 weightScore와 동일 설계: 고정 min/max 기준)
 # 앵커 업데이트 조건: 새 신발이 기존 앵커보다 극단값(더 낮거나 높은 ratio)을 가질 때만 변경
 VALUE_RATIO_MIN = 22 / 599_000  # 최악 가성비: adizero-pro-evo-2 (sum=22, price=599,000)
-VALUE_RATIO_MAX = 0.0001638934  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
+VALUE_RATIO_MAX = 0.0001687417  # 동적 보정 (top-5 경계, --calibrate 자동 갱신)
 
 # 쿠션성 앵커 (고정 — ratchet rule: 새 신발이 범위 벗어날 때만 확장)
 # 2026-02-23 멀티에이전트 토론 합의 (CUSHIONING_DEBATE_2026-02-23.md)
@@ -99,8 +99,8 @@ MIDSOLE_LONGRUN_MODIFIER_CAP = 1.00
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 2.4418987303  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.3481369037  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 2.1891495971  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.3630044998  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
 

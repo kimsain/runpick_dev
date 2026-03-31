@@ -33,8 +33,8 @@
           "forefoot": 27
         },
         "weightScore": 5,
-        "valueScore": 10,
-        "rawValueScore": 9.84,
+        "valueScore": 9,
+        "rawValueScore": 9.52,
         "rawLightness": 4.53,
         "rawCushioning": 6.13,
         "rawResponsiveness": 4.47,
@@ -83,53 +83,53 @@
       "subcategoryId": "max-cushion",
       "price": 199000,
       "priceFormatted": "₩199,000",
-      "description": "슈퍼노바 프리마 2는 안정감이 탄탄해서 이지페이스로 거리를 쌓기 좋은 데일리 러닝화예요. 8mm 드롭과 Support Rods 덕분에 뒤꿈치 착지에서도 발 전환이 차분하고, 내구성이 좋아서 주간 마일리지를 꾸준히 소화하기 편해요. 다만 쿠션이 과하게 부드럽지 않고 반발감이 약해서 템포런이나 빠른 가속에서는 답답하게 느껴질 수 있어요.",
-      "shortDescription": "이지페이스 장거리 안정 데일리",
+      "description": "안정감이 탄탄하고 반응성이 좋아서 이지페이스 데일리로 두루 쓰기 좋아요. 8mm 드롭과 힐 37mm·전족부 29mm 스택이 뒤꿈치 착지를 받쳐줘서 꾸준한 거리 누적에 잘 맞아요. 다만 마모가 빠른 편이라 오래 굴리는 로테이션에서는 수명 관리를 신경 써야 해요.",
+      "shortDescription": "안정형 이지런 장거리 데일리",
       "imageUrl": "/shoes/supernova-prima-2.webp",
       "specs": {
         "weight": 279,
         "drop": 8,
         "cushioning": 5,
-        "responsiveness": 5,
+        "responsiveness": 7,
         "stability": 7,
-        "durability": 4,
+        "durability": 3,
         "stackHeight": {
           "heel": 37,
           "forefoot": 29
         },
         "weightScore": 4,
         "valueScore": 6,
-        "rawCushioning": 4.95,
-        "rawResponsiveness": 4.59,
-        "rawValueScore": 5.73,
+        "rawCushioning": 5.23,
+        "rawResponsiveness": 6.52,
+        "rawValueScore": 5.94,
         "rawLightness": 3.92,
-        "rawStability": 7.15,
-        "rawDurability": 3.92,
+        "rawStability": 7.47,
+        "rawDurability": 2.51,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
-          "platformScore": 7.41,
+          "structureScore": 8.35,
+          "platformScore": 6.56,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 5.53,
             "rtingsOutsoleScore": 7.06,
             "rtingsWidthToStackScore": 8.02
           },
-          "coreScore": 7.41,
+          "coreScore": 7.54,
           "subcategoryDelta": -0.5,
-          "swayPenalty": -0.36,
+          "swayPenalty": -0.37,
           "qualitativeModifier": 0.0,
-          "intermediateRaw": 7.27,
+          "intermediateRaw": 7.41,
           "stackInput": {
-            "source": "rtings",
-            "heel": 36.3,
+            "source": "runrepeat",
+            "heel": 36.7,
             "forefoot": 28.7
           },
           "softnessInput": {
-            "source": "rtings_firmness",
-            "softnessScalar": 0.61,
-            "proxyAc": null,
-            "heelFirmness1100": 115.5,
-            "forefootFirmness1300": 246.2
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.0,
+            "proxyAc": 45.2,
+            "heelAc": 33.7,
+            "secondaryAc": 45.2
           },
           "qualitativeSignals": {
             "sourceCount": 0,
@@ -144,20 +144,20 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 3.86,
+          "upperScore": 6.85,
           "midsoleLongevityScore": null,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.0,
-          "coreScore": null,
+          "coreScore": 4.61,
           "compoundModifier": 0.0,
           "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "intermediateRaw": 4.61,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 2.1,
+            "outsoleThicknessMm": 2.0,
+            "toeboxDurability": 4,
+            "heelPaddingDurability": 3,
             "midsoleRetentionRatio": null,
             "outsoleHardnessHc": null
           },
@@ -175,19 +175,18 @@
         }
       },
       "pros": [
-        "힐 37mm·전족부 29mm 스택의 안정적인 충격 보호",
-        "8mm 드롭과 Support Rods 기반의 편안한 뒤꿈치 착지 전환",
-        "내구성이 좋아 장거리 데일리 로테이션에 유리한 설계"
+        "힐 37mm·전족부 29mm 스택의 안정적인 충격 완화",
+        "8mm 드롭의 편안한 뒤꿈치 착지 전환",
+        "반응성이 좋아 이지런에서 둔하지 않은 발 전환"
       ],
       "cons": [
         "279g 무게로 경쾌한 템포 전개 제한",
-        "단단한 전족부 감각으로 부드러운 발 구름 부족",
-        "반발감이 약해 빠른 페이스 훈련 비효율"
+        "마모가 빠른 편인 아웃솔 내구성"
       ],
       "bestFor": [
-        "빠른 인터벌보다 이지페이스로 거리 누적하는 러너",
-        "뒤꿈치 착지에서 안정적인 전환을 원하는 러너",
-        "한 켤레로 데일리 훈련을 오래 돌리고 싶은 러너"
+        "이지페이스로 거리 쌓는 러너",
+        "뒤꿈치 착지에서 안정감을 중시하는 러너",
+        "매일 훈련을 꾸준히 돌리는 러너"
       ],
       "technologies": [
         "Dreamstrike+",
@@ -203,8 +202,9 @@
       ],
       "slug": "supernova-prima-2",
       "officialUrl": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2-running-shoe",
-      "confidence": "high",
+      "confidence": "very-high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-supernova-prima-2",
         "rtings": "https://www.rtings.com/running-shoes/reviews/adidas/supernova-prima-2"
       }
     },
@@ -225,7 +225,7 @@
         "drop": 10,
         "cushioning": 4,
         "responsiveness": 6,
-        "stability": 7,
+        "stability": 8,
         "durability": 4,
         "stackHeight": {
           "heel": 36,
@@ -235,9 +235,9 @@
         "valueScore": 7,
         "rawCushioning": 3.85,
         "rawResponsiveness": 6.44,
-        "rawValueScore": 7.11,
+        "rawValueScore": 6.92,
         "rawLightness": 4.65,
-        "rawStability": 7.49,
+        "rawStability": 7.6,
         "rawDurability": 4.24,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -341,6 +341,131 @@
       }
     },
     {
+      "id": "supernova-solution-3",
+      "brandId": "adidas",
+      "name": "SUPERNOVA SOLUTION 3",
+      "nameKo": "슈퍼노바 솔루션 3",
+      "categoryId": "daily",
+      "subcategoryId": "stability",
+      "price": 179000,
+      "priceFormatted": "₩179,000",
+      "slug": "supernova-solution-3",
+      "confidence": "high",
+      "specs": {
+        "weight": 281,
+        "drop": 8,
+        "cushioning": 6,
+        "responsiveness": 2,
+        "stability": 9,
+        "durability": 4,
+        "stackHeight": {
+          "heel": 35,
+          "forefoot": 26
+        },
+        "weightScore": 4,
+        "valueScore": 6,
+        "rawCushioning": 5.89,
+        "rawResponsiveness": 2.33,
+        "rawStability": 9.06,
+        "rawDurability": 3.79,
+        "rawLightness": 3.84,
+        "rawValueScore": 6.52,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": 8.35,
+          "platformScore": 5.63,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 5.63,
+            "rtingsOutsoleScore": null,
+            "rtingsWidthToStackScore": null
+          },
+          "coreScore": 7.13,
+          "subcategoryDelta": 1.0,
+          "swayPenalty": -0.5,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 8.63,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 34.7,
+            "forefoot": 26.4
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.0,
+            "proxyAc": 48.5,
+            "heelAc": 33.8,
+            "secondaryAc": 48.5
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 5.7,
+          "upperScore": 4.6,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 5.42,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 5.42,
+          "inputs": {
+            "abrasionMm": 1.3,
+            "outsoleThicknessMm": 2.6,
+            "toeboxDurability": 3,
+            "heelPaddingDurability": 2,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        }
+      },
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-supernova-solution-3"
+      },
+      "shortDescription": "안정감 탄탄한 데일리 러닝화",
+      "description": "합리적인 가격에 일상 러닝을 든든하게 받쳐주는 안정형 데일리 러닝화예요. 쿠션이 적당하고 안정감이 탄탄해서 편안한 조깅이나 기본 훈련에 잘 맞아요. 다만 반응성이 낮아서 빠른 템포나 민첩한 페이스 전환에서는 답답하게 느껴질 수 있어요.",
+      "pros": [
+        "힐 35mm 스택의 안정적인 착지 여유",
+        "8mm 드롭의 무난한 체중 이동",
+        "안정감이 탄탄한 데일리 지지감"
+      ],
+      "cons": [
+        "281g의 묵직한 무게감",
+        "반응성이 낮은 느린 전환감",
+        "마모가 빠른 편"
+      ],
+      "bestFor": [
+        "데일리 조깅 러너",
+        "안정감 중시 러너",
+        "기본 훈련 러너"
+      ],
+      "imageUrl": "/shoes/supernova-solution-3.webp",
+      "technologies": [],
+      "releaseYear": 2025,
+      "colorways": [],
+      "officialUrl": "https://runrepeat.com/adidas-supernova-solution-3"
+    },
+    {
       "id": "adizero-sl-2",
       "brandId": "adidas",
       "name": "ADIZERO SL 2",
@@ -365,11 +490,11 @@
         },
         "weightScore": 6,
         "valueScore": 7,
-        "rawValueScore": 7.77,
+        "rawValueScore": 7.67,
         "rawLightness": 5.66,
         "rawCushioning": 5.42,
         "rawResponsiveness": 4.43,
-        "rawStability": 3.79,
+        "rawStability": 4.13,
         "rawDurability": 6.08,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -505,9 +630,9 @@
         "valueScore": 4,
         "rawCushioning": 1.08,
         "rawResponsiveness": 9.08,
-        "rawStability": 1.0,
+        "rawStability": 1.15,
         "rawDurability": 2.89,
-        "rawValueScore": 4.28,
+        "rawValueScore": 4.22,
         "rawLightness": 8.09,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -636,12 +761,12 @@
           "forefoot": 32
         },
         "weightScore": 6,
-        "valueScore": 8,
+        "valueScore": 7,
         "rawCushioning": 7.72,
         "rawResponsiveness": 8.19,
-        "rawStability": 6.3,
-        "rawDurability": 5.26,
-        "rawValueScore": 7.7,
+        "rawStability": 6.48,
+        "rawDurability": 5.25,
+        "rawValueScore": 7.51,
         "rawLightness": 6.15,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -774,9 +899,9 @@
         "valueScore": 10,
         "rawCushioning": 4.96,
         "rawResponsiveness": 6.24,
-        "rawStability": 9.77,
-        "rawDurability": 7.5,
-        "rawValueScore": 9.66,
+        "rawStability": 9.75,
+        "rawDurability": 7.51,
+        "rawValueScore": 9.34,
         "rawLightness": 4.89,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -912,9 +1037,9 @@
         "valueScore": 4,
         "rawCushioning": 3.97,
         "rawResponsiveness": 9.21,
-        "rawStability": 2.0,
+        "rawStability": 2.44,
         "rawDurability": 2.72,
-        "rawValueScore": 4.19,
+        "rawValueScore": 4.21,
         "rawLightness": 7.77,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -1050,9 +1175,9 @@
         "valueScore": 3,
         "rawCushioning": 8.39,
         "rawResponsiveness": 8.68,
-        "rawStability": 3.8,
+        "rawStability": 4.14,
         "rawDurability": 3.72,
-        "rawValueScore": 3.39,
+        "rawValueScore": 3.37,
         "rawLightness": 3.43,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -1189,9 +1314,9 @@
         "valueScore": 4,
         "rawCushioning": 6.62,
         "rawResponsiveness": 10.1,
-        "rawStability": 3.89,
+        "rawStability": 4.22,
         "rawDurability": 2.11,
-        "rawValueScore": 3.75,
+        "rawValueScore": 3.73,
         "rawLightness": 7.12,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -1327,8 +1452,8 @@
         "valueScore": 1,
         "rawCushioning": 8.58,
         "rawResponsiveness": 8.25,
-        "rawStability": 3.82,
-        "rawDurability": 1.27,
+        "rawStability": 4.15,
+        "rawDurability": 1.0,
         "rawValueScore": 1.0,
         "rawLightness": 9.64,
         "stabilityComponents": {
@@ -1462,10 +1587,10 @@
         "valueScore": 6,
         "rawCushioning": 9.77,
         "rawResponsiveness": 7.98,
-        "rawStability": 4.92,
+        "rawStability": 5.19,
         "rawDurability": 6.74,
         "rawLightness": 5.22,
-        "rawValueScore": 5.6,
+        "rawValueScore": 5.5,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 6.96,
