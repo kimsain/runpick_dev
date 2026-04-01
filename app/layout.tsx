@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: 'RunPick — 러닝화 탐색',
     description: `${brandCount}개 브랜드 러닝화 데이터 기반 러닝화 탐색 플랫폼`,
     type: 'website',
+    images: ['/images/shoes/alphafly-3.webp'],
   },
 }
 
