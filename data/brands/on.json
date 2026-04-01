@@ -1191,57 +1191,59 @@
       "subcategoryId": "light-plate",
       "price": 319000,
       "priceFormatted": "₩319,000",
-      "description": "쿠션이 풍부하고 안정감이 탄탄해서 장거리 이지런을 꾸준히 소화하기 좋아요. 210g 무게와 6mm 드롭, 힐 45mm·전족부 39mm 스택 조합이라 후반에도 충격을 부드럽게 넘기며 페이스를 유지하기 좋아요. 가격 부담이 있는 편이라 레이스 겸용 데일리로 자주 활용할 러너에게 더 잘 맞아요.",
-      "shortDescription": "장거리 이지런 경량 슈퍼트레이너",
+      "description": "쿠션이 풍부하고 안정감이 탄탄해서 장거리 이지런과 지속주를 꾸준히 소화하기 좋은 신발이에요. 210g 무게에 6mm 드롭, 힐 45mm·전족부 39mm 스택이라 후반에도 충격을 부드럽게 넘기면서 발을 차분하게 받쳐줘요. 가격 부담이 있는 편이고 반발감이 과하게 튀는 타입은 아니라, 레이스 전력용보다 장거리 훈련 비중이 높은 러너에게 더 잘 맞아요.",
+      "shortDescription": "장거리 훈련용 경량 슈퍼트레이너",
       "imageUrl": "/shoes/cloudmonster-3-hyper-ls.webp",
       "specs": {
         "weight": 210,
         "drop": 6,
         "cushioning": 7,
         "responsiveness": 6,
-        "stability": 5,
-        "durability": 4,
+        "stability": 9,
+        "durability": 9,
         "stackHeight": {
           "heel": 45,
           "forefoot": 39
         },
         "weightScore": 7,
-        "valueScore": 3,
-        "rawCushioning": 6.55,
-        "rawResponsiveness": 5.99,
-        "rawStability": 4.7,
-        "rawDurability": 3.9,
+        "valueScore": 5,
+        "rawCushioning": 6.88,
+        "rawResponsiveness": 6.49,
+        "rawStability": 8.66,
+        "rawDurability": 9.42,
         "rawLightness": 6.72,
-        "rawValueScore": 3.01,
+        "rawValueScore": 5.22,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
-          "platformScore": null,
+          "structureScore": 8.99,
+          "platformScore": 7.83,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 7.83,
             "rtingsOutsoleScore": null,
             "rtingsWidthToStackScore": null
           },
-          "coreScore": null,
+          "coreScore": 8.47,
           "subcategoryDelta": 0.0,
-          "swayPenalty": 0.0,
-          "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "swayPenalty": 0.5,
+          "qualitativeModifier": 0.35,
+          "intermediateRaw": 8.32,
           "stackInput": {
-            "source": "production",
-            "heel": 45,
-            "forefoot": 39
+            "source": "runrepeat",
+            "heel": 43.4,
+            "forefoot": 34.2
           },
           "softnessInput": {
-            "source": "subcategory_prior",
-            "softnessScalar": 0.3,
-            "proxyAc": 37.5
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.0,
+            "proxyAc": 51.2,
+            "heelAc": 37.2,
+            "secondaryAc": 51.2
           },
           "qualitativeSignals": {
-            "sourceCount": 0,
+            "sourceCount": 1,
             "shares": {
               "lockdown": 0.0,
-              "guidance_sidewall": 0.0,
+              "guidance_sidewall": 1.0,
               "wide_base": 0.0,
               "heel_slip": 0.0,
               "instability": 0.0
@@ -1250,29 +1252,29 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 9.35,
+          "upperScore": 7.3,
           "midsoleLongevityScore": null,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.0,
-          "coreScore": null,
+          "coreScore": 8.84,
           "compoundModifier": 0.0,
-          "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "qualitativeModifier": 0.15,
+          "intermediateRaw": 8.99,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 0.53,
+            "outsoleThicknessMm": 3.2,
+            "toeboxDurability": 3,
+            "heelPaddingDurability": 5,
             "midsoleRetentionRatio": null,
             "outsoleHardnessHc": null
           },
           "qualitativeSignals": {
-            "sourceCount": 0,
+            "sourceCount": 1,
             "shares": {
               "outsole_coverage": 0.0,
               "upper_reinforcement": 0.0,
-              "durable": 0.0,
+              "durable": 1.0,
               "early_wear": 0.0,
               "exposed_foam": 0.0,
               "midsole_breakdown": 0.0
@@ -1281,19 +1283,19 @@
         }
       },
       "pros": [
-        "210g 경량 설계로 장거리 후반 피로 누적 완화",
+        "210g 경량 설계로 장거리 후반 피로 부담 완화",
         "힐 45mm·전족부 39mm 스택의 풍부한 충격 흡수",
-        "6mm 드롭과 라이트 플레이트 기반의 매끄러운 전진 전환",
+        "6mm 드롭 기반의 매끄러운 체중 이동과 전진 전환",
         "내구성이 좋아 높은 주간 주행량 대응"
       ],
       "cons": [
         "라이트 플레이트 대비 폭발적 반발감 제한",
-        "높은 스택 구조에서 급격한 코너링 민첩성 제한"
+        "높은 스택 구조에서 급격한 방향 전환 민첩성 제한"
       ],
       "bestFor": [
         "장거리 이지런 비중이 높은 러너",
-        "쿠션 우선 데일리 트레이닝 러너",
-        "가벼운 슈퍼트레이너를 찾는 러너"
+        "안정감 있는 슈퍼트레이너를 찾는 러너",
+        "높은 스택 훈련화를 선호하는 러너"
       ],
       "technologies": [
         "LightSpray™",
@@ -1306,7 +1308,7 @@
       ],
       "slug": "cloudmonster-3-hyper-ls",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": {
         "dor": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2026/02/lightspray-cloudmonster-3-hyper-review.html"
