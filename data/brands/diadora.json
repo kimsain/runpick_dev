@@ -33,11 +33,11 @@
         "rawCushioning": 6.15,
         "rawResponsiveness": 8.4,
         "rawStability": 2.56,
-        "rawDurability": 5.44,
+        "rawDurability": 5.42,
         "weightScore": 7,
         "rawLightness": 6.8,
         "valueScore": 3,
-        "rawValueScore": 3.17,
+        "rawValueScore": 3.16,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": null,

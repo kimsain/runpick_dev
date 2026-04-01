@@ -37,9 +37,9 @@
         "rawCushioning": 4.91,
         "rawResponsiveness": 2.2,
         "rawStability": 4.37,
-        "rawDurability": 7.84,
+        "rawDurability": 7.8,
         "rawLightness": 4.65,
-        "rawValueScore": 5.11,
+        "rawValueScore": 5.1,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 4.68,
@@ -166,9 +166,9 @@
         "rawCushioning": 3.67,
         "rawResponsiveness": 3.06,
         "rawStability": 6.72,
-        "rawDurability": 5.0,
+        "rawDurability": 4.98,
         "rawLightness": 4.16,
-        "rawValueScore": 5.15,
+        "rawValueScore": 5.14,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 6.33,
@@ -296,7 +296,7 @@
         "rawCushioning": 5.65,
         "rawResponsiveness": 4.62,
         "rawStability": 6.09,
-        "rawDurability": 3.92,
+        "rawDurability": 3.9,
         "rawLightness": 2.62,
         "rawValueScore": 5.44,
         "stabilityComponents": {
@@ -425,7 +425,7 @@
         "rawCushioning": 6.01,
         "rawResponsiveness": 1.0,
         "rawStability": 6.72,
-        "rawDurability": 4.38,
+        "rawDurability": 4.36,
         "rawLightness": 3.96,
         "rawValueScore": 4.13,
         "stabilityComponents": {
@@ -553,9 +553,9 @@
         "rawCushioning": 5.45,
         "rawResponsiveness": 3.66,
         "rawStability": 1.27,
-        "rawDurability": 3.92,
+        "rawDurability": 3.9,
         "rawLightness": 4.08,
-        "rawValueScore": 3.16,
+        "rawValueScore": 3.15,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 2.65,
@@ -685,9 +685,9 @@
         "rawCushioning": 6.18,
         "rawResponsiveness": 3.76,
         "rawStability": 3.23,
-        "rawDurability": 7.54,
+        "rawDurability": 7.5,
         "rawLightness": 3.07,
-        "rawValueScore": 4.94,
+        "rawValueScore": 4.93,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 4.68,
@@ -797,51 +797,53 @@
       "subcategoryId": "max-cushion",
       "price": 229000,
       "priceFormatted": "₩229,000",
-      "description": "클라우드몬스터 3는 장거리 이지런과 데일리 조깅에 무난하게 쓰기 좋은 모델이에요. 힐 35mm와 전족부 29mm 스택, 6mm 드롭 조합이라 페이스를 급하게 올리지 않는 주행에서 편하게 굴리기 좋아요. 반응성이 낮아서 템포런에서는 반발감이 약하고 295g 무게로 빠른 가속 구간은 답답할 수 있어요.",
-      "shortDescription": "장거리 이지런 데일리 쿠션형",
+      "description": "클라우드몬스터 3는 장거리 이지런과 데일리 조깅에 편하게 가져가기 좋은 쿠션형 모델이에요. 힐 35mm와 전족부 29mm 스택, 6mm 드롭 조합이라 페이스를 무리하게 끌어올리지 않는 구간에서 안정적으로 리듬을 이어가기 좋아요. 반응성이 낮아서 템포런이나 빠른 페이스 전환에서는 반발감이 약하고 295g 무게가 다소 둔하게 느껴질 수 있어요.",
+      "shortDescription": "이지런 장거리 데일리 쿠션형",
       "imageUrl": "/shoes/cloudmonster-3.webp",
       "specs": {
         "weight": 295,
         "drop": 6,
         "cushioning": 6,
-        "responsiveness": 4,
-        "stability": 4,
-        "durability": 4,
+        "responsiveness": 3,
+        "stability": 5,
+        "durability": 7,
         "stackHeight": {
           "heel": 35,
           "forefoot": 29
         },
         "weightScore": 3,
-        "valueScore": 4,
-        "rawCushioning": 6.18,
-        "rawResponsiveness": 3.66,
-        "rawStability": 4.01,
-        "rawDurability": 3.92,
+        "valueScore": 5,
+        "rawCushioning": 5.73,
+        "rawResponsiveness": 3.39,
+        "rawStability": 5.44,
+        "rawDurability": 7.16,
         "rawLightness": 3.27,
-        "rawValueScore": 3.79,
+        "rawValueScore": 4.96,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
-          "platformScore": null,
+          "structureScore": 7.34,
+          "platformScore": 5.08,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 5.08,
             "rtingsOutsoleScore": null,
             "rtingsWidthToStackScore": null
           },
-          "coreScore": null,
+          "coreScore": 6.32,
           "subcategoryDelta": -0.5,
-          "swayPenalty": 0.0,
+          "swayPenalty": -0.03,
           "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.0,
+          "intermediateRaw": 5.85,
           "stackInput": {
-            "source": "production",
-            "heel": 35,
-            "forefoot": 29
+            "source": "runrepeat",
+            "heel": 38.6,
+            "forefoot": 32.2
           },
           "softnessInput": {
-            "source": "subcategory_prior",
-            "softnessScalar": 0.63,
-            "proxyAc": 32.5
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.0,
+            "proxyAc": 49.9,
+            "heelAc": 49.9,
+            "secondaryAc": null
           },
           "qualitativeSignals": {
             "sourceCount": 0,
@@ -856,20 +858,20 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 8.55,
+          "upperScore": 4.6,
           "midsoleLongevityScore": null,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.0,
-          "coreScore": null,
+          "coreScore": 7.56,
           "compoundModifier": 0.0,
           "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "intermediateRaw": 7.56,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 0.66,
+            "outsoleThicknessMm": 3.2,
+            "toeboxDurability": 1,
+            "heelPaddingDurability": 5,
             "midsoleRetentionRatio": null,
             "outsoleHardnessHc": null
           },
@@ -887,18 +889,18 @@
         }
       },
       "pros": [
-        "힐 35mm·전족부 29mm 스택 기반의 충격 완화",
-        "6mm 드롭 설계로 안정적인 체중 이동",
+        "힐 35mm·전족부 29mm 스택의 편안한 충격 완화",
+        "6mm 드롭 기반의 부드러운 체중 이동",
         "내구성이 좋아 누적 주행거리 대응"
       ],
       "cons": [
-        "295g 무게로 빠른 페이스 전환 부담",
-        "반응성이 낮아 템포런·인터벌 비효율"
+        "295g 무게로 경쾌한 가속감 부족",
+        "낮은 반응성으로 템포런 부적합"
       ],
       "bestFor": [
         "장거리 이지런 중심 러너",
         "데일리 조깅 위주 러너",
-        "기록보다 완주 안정성을 우선하는 러너"
+        "빠른 페이스보다 편한 리듬을 선호하는 러너"
       ],
       "technologies": [
         "CloudTec®",
@@ -911,8 +913,9 @@
       ],
       "slug": "cloudmonster-3",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-m-3mg1005/mens/limelight-seedling-shoes-3MG10054859",
-      "confidence": "low",
+      "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-3",
         "fleetfeet": "https://www.fleetfeet.com/blog/on-cloudmonster-3-review-third-times-the-charm"
       }
     },
@@ -944,9 +947,9 @@
         "rawCushioning": 6.55,
         "rawResponsiveness": 3.5,
         "rawStability": 5.71,
-        "rawDurability": 8.36,
+        "rawDurability": 8.32,
         "rawLightness": 4.49,
-        "rawValueScore": 4.85,
+        "rawValueScore": 4.83,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 6.33,
@@ -1056,57 +1059,59 @@
       "subcategoryId": "light-plate",
       "price": 259000,
       "priceFormatted": "₩259,000",
-      "description": "장거리와 데일리 러닝을 안정적으로 소화하기 좋은 슈퍼 트레이너예요. 쿠션이 풍부해서 충격을 부드럽게 줄여주고 반응성이 좋아서 이지런부터 롱런까지 리듬을 이어가기 편해요. 다만 274g 무게감이 있어서 스피드 인터벌이나 급가속 구간에서는 경쾌함이 덜해요.",
-      "shortDescription": "장거리 이지런 쿠션 트레이너",
+      "description": "장거리 이지런과 데일리 러닝을 안정적으로 이어가기 좋은 슈퍼 트레이너예요. 힐 40mm와 전족부 34mm 스택으로 쿠션이 풍부해서 충격을 부드럽게 줄여주고, 안정감이 탄탄해서 롱런 후반에도 리듬을 유지하기 편해요. 다만 274g 무게감이 있어서 빠른 템포 전환이나 짧은 인터벌에서는 발놀림이 둔하게 느껴질 수 있어요.",
+      "shortDescription": "장거리 이지런 안정형 슈퍼트레이너",
       "imageUrl": "/shoes/cloudmonster-3-hyper.webp",
       "specs": {
         "weight": 274,
         "drop": 6,
         "cushioning": 7,
         "responsiveness": 6,
-        "stability": 5,
-        "durability": 4,
+        "stability": 9,
+        "durability": 9,
         "stackHeight": {
           "heel": 40,
           "forefoot": 34
         },
         "weightScore": 4,
-        "valueScore": 4,
-        "rawCushioning": 6.55,
-        "rawResponsiveness": 5.99,
-        "rawStability": 4.7,
-        "rawDurability": 3.92,
+        "valueScore": 7,
+        "rawCushioning": 6.88,
+        "rawResponsiveness": 6.49,
+        "rawStability": 8.66,
+        "rawDurability": 9.42,
         "rawLightness": 4.12,
-        "rawValueScore": 4.07,
+        "rawValueScore": 6.77,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "structureScore": null,
-          "platformScore": null,
+          "structureScore": 8.99,
+          "platformScore": 7.83,
           "platformInputs": {
-            "runRepeatMidsoleScore": null,
+            "runRepeatMidsoleScore": 7.83,
             "rtingsOutsoleScore": null,
             "rtingsWidthToStackScore": null
           },
-          "coreScore": null,
+          "coreScore": 8.47,
           "subcategoryDelta": 0.0,
-          "swayPenalty": 0.0,
-          "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "swayPenalty": 0.5,
+          "qualitativeModifier": 0.35,
+          "intermediateRaw": 8.32,
           "stackInput": {
-            "source": "production",
-            "heel": 40,
-            "forefoot": 34
+            "source": "runrepeat",
+            "heel": 43.4,
+            "forefoot": 34.2
           },
           "softnessInput": {
-            "source": "subcategory_prior",
-            "softnessScalar": 0.3,
-            "proxyAc": 37.5
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.0,
+            "proxyAc": 51.2,
+            "heelAc": 37.2,
+            "secondaryAc": 51.2
           },
           "qualitativeSignals": {
-            "sourceCount": 0,
+            "sourceCount": 1,
             "shares": {
               "lockdown": 0.0,
-              "guidance_sidewall": 0.0,
+              "guidance_sidewall": 1.0,
               "wide_base": 0.0,
               "heel_slip": 0.0,
               "instability": 0.0
@@ -1115,29 +1120,29 @@
         },
         "durabilityComponents": {
           "scoreVersion": "durability-stability-v3",
-          "outsoleScore": null,
-          "upperScore": null,
+          "outsoleScore": 9.35,
+          "upperScore": 7.3,
           "midsoleLongevityScore": null,
           "midsoleLongevityMode": "modifier",
           "midsoleLongevityModifier": 0.0,
-          "coreScore": null,
+          "coreScore": 8.84,
           "compoundModifier": 0.0,
-          "qualitativeModifier": 0.0,
-          "intermediateRaw": 5.5,
+          "qualitativeModifier": 0.15,
+          "intermediateRaw": 8.99,
           "inputs": {
-            "abrasionMm": null,
-            "outsoleThicknessMm": null,
-            "toeboxDurability": null,
-            "heelPaddingDurability": null,
+            "abrasionMm": 0.53,
+            "outsoleThicknessMm": 3.2,
+            "toeboxDurability": 3,
+            "heelPaddingDurability": 5,
             "midsoleRetentionRatio": null,
             "outsoleHardnessHc": null
           },
           "qualitativeSignals": {
-            "sourceCount": 0,
+            "sourceCount": 1,
             "shares": {
               "outsole_coverage": 0.0,
               "upper_reinforcement": 0.0,
-              "durable": 0.0,
+              "durable": 1.0,
               "early_wear": 0.0,
               "exposed_foam": 0.0,
               "midsole_breakdown": 0.0
@@ -1152,7 +1157,7 @@
       ],
       "cons": [
         "274g 무게에서 오는 둔한 가속감",
-        "빠른 템포 구간에서 제한적인 반발 스냅감"
+        "빠른 템포 전환에서 부족한 발놀림 경쾌함"
       ],
       "bestFor": [
         "장거리 이지런 중심 러너",
@@ -1170,8 +1175,9 @@
       ],
       "slug": "cloudmonster-3-hyper",
       "officialUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-m-3mg1006/mens/",
-      "confidence": "medium",
+      "confidence": "high",
       "sources": {
+        "runrepeat": "https://runrepeat.com/on-cloudmonster-3-hyper",
         "dor": "https://www.doctorsofrunning.com/2026/02/on-cloudmonster-3-hyper-review-2026.html",
         "rtr": "https://www.roadtrailrun.com/2026/02/on-cloudmonster-3-hyper-review.html"
       }
@@ -1204,9 +1210,9 @@
         "rawCushioning": 6.55,
         "rawResponsiveness": 5.99,
         "rawStability": 4.7,
-        "rawDurability": 3.92,
+        "rawDurability": 3.9,
         "rawLightness": 6.72,
-        "rawValueScore": 3.02,
+        "rawValueScore": 3.01,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": null,
@@ -1334,9 +1340,9 @@
         "rawCushioning": 6.55,
         "rawResponsiveness": 5.99,
         "rawStability": 4.7,
-        "rawDurability": 3.92,
+        "rawDurability": 3.9,
         "rawLightness": 6.72,
-        "rawValueScore": 4.07,
+        "rawValueScore": 4.06,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": null,
@@ -1461,9 +1467,9 @@
         "rawCushioning": 5.25,
         "rawResponsiveness": 5.99,
         "rawStability": 7.9,
-        "rawDurability": 7.66,
+        "rawDurability": 7.62,
         "rawLightness": 3.23,
-        "rawValueScore": 5.04,
+        "rawValueScore": 5.03,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 8.35,
@@ -1592,7 +1598,7 @@
         "rawCushioning": 7.36,
         "rawResponsiveness": 7.91,
         "rawStability": 5.36,
-        "rawDurability": 3.27,
+        "rawDurability": 3.26,
         "rawLightness": 6.72,
         "rawValueScore": 3.45,
         "stabilityComponents": {
@@ -1721,7 +1727,7 @@
         "rawCushioning": 7.36,
         "rawResponsiveness": 7.91,
         "rawStability": 5.36,
-        "rawDurability": 3.27,
+        "rawDurability": 3.26,
         "rawLightness": 8.34,
         "rawValueScore": 2.48,
         "stabilityComponents": {
@@ -1845,7 +1851,7 @@
         "cushioning": 7,
         "responsiveness": 1,
         "stability": 4,
-        "durability": 7,
+        "durability": 6,
         "stackHeight": {
           "heel": 37,
           "forefoot": 29
@@ -1855,9 +1861,9 @@
         "rawCushioning": 6.87,
         "rawResponsiveness": 1.0,
         "rawStability": 3.5,
-        "rawDurability": 6.52,
+        "rawDurability": 6.49,
         "rawLightness": 3.39,
-        "rawValueScore": 4.07,
+        "rawValueScore": 4.06,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
           "structureScore": 4.68,

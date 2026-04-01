@@ -37,8 +37,8 @@
         "rawCushioning": 7.35,
         "rawResponsiveness": 2.71,
         "rawStability": 6.47,
-        "rawDurability": 6.4,
-        "rawValueScore": 6.35,
+        "rawDurability": 6.37,
+        "rawValueScore": 6.34,
         "rawLightness": 4.08,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -175,7 +175,7 @@
         "rawCushioning": 8.29,
         "rawResponsiveness": 4.2,
         "rawStability": 7.3,
-        "rawDurability": 7.38,
+        "rawDurability": 7.35,
         "rawValueScore": 6.58,
         "rawLightness": 3.19,
         "stabilityComponents": {
@@ -311,7 +311,7 @@
         "rawCushioning": 6.1,
         "rawResponsiveness": 3.62,
         "rawStability": 10.03,
-        "rawDurability": 10.41,
+        "rawDurability": 10.36,
         "rawValueScore": 8.68,
         "rawLightness": 4.53,
         "stabilityComponents": {
@@ -446,8 +446,8 @@
         "rawCushioning": 7.86,
         "rawResponsiveness": 5.63,
         "rawStability": 4.11,
-        "rawDurability": 5.81,
-        "rawValueScore": 4.91,
+        "rawDurability": 5.78,
+        "rawValueScore": 4.9,
         "rawLightness": 4.53,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",
@@ -719,8 +719,8 @@
         "rawCushioning": 6.93,
         "rawResponsiveness": 8.93,
         "rawStability": 2.08,
-        "rawDurability": 6.95,
-        "rawValueScore": 4.17,
+        "rawDurability": 6.92,
+        "rawValueScore": 4.16,
         "rawLightness": 6.72,
         "stabilityComponents": {
           "scoreVersion": "durability-stability-v3",

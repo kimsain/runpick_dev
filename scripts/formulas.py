@@ -48,8 +48,8 @@ DUR_HEEL_PAD_WEIGHT  = 0.10
 # 내구성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawDurability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-DUR_RAW_MIN = 3.6574798136  # bottom-5 경계 (--calibrate 자동 갱신)
-DUR_RAW_MAX = 9.3334864638  # top-5 경계 (--calibrate 자동 갱신)
+DUR_RAW_MIN = 3.6590564821  # bottom-5 경계 (--calibrate 자동 갱신)
+DUR_RAW_MAX = 9.3634431656  # top-5 경계 (--calibrate 자동 갱신)
 
 # 안정성 Sway 패널티 앵커 (2026-02-23 Codex+Gemini 합의)
 # ratchet rule: 새 신발이 범위 벗어날 때만 변경
@@ -99,8 +99,8 @@ MIDSOLE_LONGRUN_MODIFIER_CAP = 1.00
 # 안정성 보정 앵커 (ratchet rule + --calibrate 갱신)
 # intermediate rawStability를 1-10 스케일로 rescale
 # 초기값: identity (변환 없음). 첫 --calibrate 실행 시 실제 값으로 갱신.
-STAB_RAW_MIN = 2.1891495971  # bottom-5 경계 (--calibrate 자동 갱신)
-STAB_RAW_MAX = 9.3630044998  # top-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MIN = 1.9266064350  # bottom-5 경계 (--calibrate 자동 갱신)
+STAB_RAW_MAX = 9.3784482152  # top-5 경계 (--calibrate 자동 갱신)
 
 STAB_KEYWORD_MODIFIER = 0.3  # 정성 리뷰 키워드 안정성 조정 계수
 
