@@ -34,6 +34,9 @@ const config: Config = {
         "conf-high":      "#4ade80",
         "conf-medium":    "#facc15",
         "conf-low":       "#f87171",
+        // semantic notice tones (separated from spec-* to avoid collision)
+        "notice":         "#facc15",  // attention/info — distinct from spec-stability
+        "notice-soft":    "rgba(250,204,21,0.08)",
       },
       fontFamily: {
         display: ["var(--font-bebas)", "Bebas Neue", "sans-serif"],
@@ -86,6 +89,8 @@ const config: Config = {
         "card-hover": "0 0 0 1px rgba(200,255,0,0.18), 0 4px 16px rgba(0,0,0,0.5), 0 16px 40px -16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.06)",
         // featured (액센트 틴트 섀도우)
         feature: "0 0 0 1px rgba(200,255,0,0.22), 0 8px 24px -8px rgba(200,255,0,0.18), 0 24px 48px -16px rgba(0,0,0,0.6)",
+        // floating panel — heavier than card-hover, used by modals/drawers
+        modal: "0 0 0 1px rgba(255,255,255,0.08), 0 24px 64px -16px rgba(0,0,0,0.7), 0 12px 32px -8px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
       },
       transitionTimingFunction: {
         "out-quart": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
