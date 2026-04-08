@@ -7,6 +7,8 @@ import { CATEGORY_LABELS, SOURCE_LABELS } from '@/lib/constants'
 import RelatedShoes from '@/components/RelatedShoes'
 import ScoreMethodNotice from '@/components/ScoreMethodNotice'
 import { STABILITY_METHOD_NOTICE } from '@/lib/scoreMethodNotice'
+import Eyebrow from '@/components/ui/Eyebrow'
+import SectionHeading from '@/components/ui/SectionHeading'
 
 const SpecRadar = dynamic(() => import('@/components/SpecRadar'), {
   ssr: false,
@@ -64,13 +66,11 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
         <div className="min-w-0 space-y-8">
           {/* Header */}
           <div>
-            <p className="mb-2 text-sm font-display uppercase tracking-widest text-secondary">
-              {shoe.brandId.toUpperCase()} · {CATEGORY_LABELS[shoe.categoryId]}
-            </p>
-            <h1 className="mb-3 text-xl font-display leading-tight text-primary break-keep sm:text-2xl">
+            <Eyebrow className="mb-2">{shoe.brandId} · {CATEGORY_LABELS[shoe.categoryId]}</Eyebrow>
+            <h1 className="mb-3 text-2xl sm:text-hero font-display tracking-tight-4 text-primary break-keep">
               {shoe.name}
             </h1>
-            <p className="mb-4 text-lg font-display text-accent">{shoe.priceFormatted}</p>
+            <p className="mb-4 text-xl font-display tabular-nums tracking-tight-2 text-accent">{shoe.priceFormatted}</p>
             <p className="max-w-lg text-sm font-body leading-relaxed text-secondary">
               {shoe.shortDescription}
             </p>
@@ -78,7 +78,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Low confidence warning banner */}
           {shoe.confidence === 'low' && (
-            <div className="flex gap-3 rounded-xl border border-conf-low/20 bg-conf-low/5 p-5" role="alert">
+            <div className="flex gap-3 rounded-xl shadow-ring bg-conf-low/5 p-5" role="alert">
               <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-low" />
               <div>
                 <p className="text-sm font-body text-conf-low font-medium mb-1">
@@ -94,7 +94,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Medium confidence info banner */}
           {shoe.confidence === 'medium' && (
-            <div className="flex gap-3 rounded-xl border border-conf-medium/20 bg-conf-medium/5 p-5" role="status">
+            <div className="flex gap-3 rounded-xl shadow-ring bg-conf-medium/5 p-5" role="status">
               <span className="w-2 h-2 mt-1.5 shrink-0 rounded-full bg-conf-medium" />
               <div>
                 <p className="text-sm font-body text-conf-medium font-medium mb-1">
@@ -109,13 +109,13 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           )}
 
           {/* Spec radar + stat cards */}
-          <section className="rounded-2xl border border-border bg-card p-6">
-            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
+          <section className="rounded-2xl shadow-card bg-card p-6">
+            <SectionHeading eyebrow="SPEC RADAR" className="mb-6">
               스펙
               {shoe.confidence === 'medium' && (
                 <span className="ml-2 inline-block w-1.5 h-1.5 rounded-full bg-conf-medium align-middle" />
               )}
-            </h2>
+            </SectionHeading>
             <ScoreMethodNotice
               notice={STABILITY_METHOD_NOTICE}
               linkHref="/methodology"
@@ -126,28 +126,30 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
             {/* Numeric specs */}
             <div className="mt-6 grid grid-cols-3 gap-3">
-              <div className="rounded-xl bg-elevated p-4 text-center">
-                <p className="text-base font-display text-accent sm:text-lg">{shoe.specs.weight}</p>
-                <p className="mt-1 text-xs font-body text-muted sm:text-sm">g / 무게</p>
-              </div>
-              <div className="rounded-xl bg-elevated p-4 text-center">
-                <p className="text-base font-display text-accent sm:text-lg">{shoe.specs.drop}</p>
-                <p className="mt-1 text-xs font-body text-muted sm:text-sm">mm / 드롭</p>
-              </div>
-              <div className="rounded-xl bg-elevated p-4 text-center">
-                <p className="whitespace-nowrap text-base font-display text-accent sm:text-lg">
-                  {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}
+              <div className="rounded-xl shadow-card bg-card p-5 text-center">
+                <p className="text-2xl font-display tabular-nums tracking-tight-3 text-primary">
+                  {shoe.specs.weight}<span className="text-sm text-tertiary ml-1">g</span>
                 </p>
-                <p className="mt-1 text-xs font-body text-muted sm:text-sm">mm / 스택</p>
+                <Eyebrow className="mt-2">무게</Eyebrow>
+              </div>
+              <div className="rounded-xl shadow-card bg-card p-5 text-center">
+                <p className="text-2xl font-display tabular-nums tracking-tight-3 text-primary">
+                  {shoe.specs.drop}<span className="text-sm text-tertiary ml-1">mm</span>
+                </p>
+                <Eyebrow className="mt-2">드롭</Eyebrow>
+              </div>
+              <div className="rounded-xl shadow-card bg-card p-5 text-center">
+                <p className="whitespace-nowrap text-2xl font-display tabular-nums tracking-tight-3 text-primary">
+                  {shoe.specs.stackHeight.heel}/{shoe.specs.stackHeight.forefoot}<span className="text-sm text-tertiary ml-1">mm</span>
+                </p>
+                <Eyebrow className="mt-2">스택</Eyebrow>
               </div>
             </div>
           </section>
 
           {/* Description */}
           <section>
-            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
-              리뷰
-            </h2>
+            <SectionHeading eyebrow="REVIEW" className="mb-6">리뷰</SectionHeading>
             <p className="text-secondary text-sm font-body leading-relaxed">
               {shoe.description}
             </p>
@@ -157,9 +159,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           <section>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-xl border border-spec-response/10 bg-spec-response/[0.04] p-5">
-                <h3 className="mb-4 text-sm font-display uppercase tracking-widest text-spec-response break-keep">
-                  장점
-                </h3>
+                <Eyebrow as="div" className="mb-3 text-spec-response">+ 장점</Eyebrow>
                 <ul className="space-y-2">
                   {shoe.pros.map((pro, i) => (
                     <li key={i} className="flex gap-2 text-sm font-body text-secondary">
@@ -170,9 +170,7 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                 </ul>
               </div>
               <div className="rounded-xl border border-spec-durability/10 bg-spec-durability/[0.04] p-5">
-                <h3 className="mb-4 text-sm font-display uppercase tracking-widest text-spec-durability break-keep">
-                  단점
-                </h3>
+                <Eyebrow as="div" className="mb-3 text-spec-durability">– 단점</Eyebrow>
                 <ul className="space-y-2">
                   {shoe.cons.map((con, i) => (
                     <li key={i} className="flex gap-2 text-sm font-body text-secondary">
@@ -187,14 +185,12 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
 
           {/* Best For */}
           <section>
-            <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
-              이런 러너에게 추천
-            </h2>
+            <Eyebrow as="div" className="mb-3">이런 러너에게</Eyebrow>
             <div className="flex flex-wrap gap-2">
               {shoe.bestFor.map((tag, i) => (
                 <span
                   key={i}
-                  className="rounded-full bg-elevated px-4 py-2 text-sm font-body text-secondary"
+                  className="inline-flex items-center rounded-full bg-spec-value/10 text-spec-value px-3 py-1.5 text-xs font-medium tracking-tight-1"
                 >
                   {tag}
                 </span>
@@ -205,14 +201,12 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           {/* Technologies */}
           {shoe.technologies.length > 0 && (
             <section>
-              <h2 className="mb-4 text-md font-display uppercase tracking-widest text-primary break-keep">
-                주요 기술
-              </h2>
+              <Eyebrow as="div" className="mb-3">주요 기술</Eyebrow>
               <div className="flex flex-wrap gap-2">
                 {shoe.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="rounded-full border border-border bg-elevated px-4 py-2 text-sm font-body text-secondary"
+                    className="inline-flex items-center rounded-full shadow-ring font-mono text-eyebrow uppercase text-tertiary px-3 py-1.5"
                   >
                     {tech}
                   </span>
@@ -229,12 +223,9 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   href={brand.officialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-body text-secondary transition-all hover:border-accent/20 hover:bg-accent/5 hover:text-accent"
+                  className="inline-flex items-center justify-center rounded-xl bg-accent text-dark font-display text-md tracking-tight-2 px-5 py-3 shadow-feature hover:shadow-card-hover transition-shadow duration-250 ease-out-quart"
                 >
                   공식 사이트
-                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
                 </a>
               )}
               {reviewLinks.map(({ key, url, label }) => (
@@ -243,12 +234,9 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-body text-secondary transition-all hover:border-accent/20 hover:bg-accent/5 hover:text-accent"
+                  className="inline-flex items-center justify-between rounded-xl shadow-ring hover:shadow-card font-mono text-eyebrow uppercase text-tertiary hover:text-primary px-4 py-3 transition-shadow duration-200 ease-out-quart"
                 >
-                  {label}
-                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
+                  {label} →
                 </a>
               ))}
             </div>

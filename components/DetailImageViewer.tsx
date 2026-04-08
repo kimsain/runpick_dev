@@ -26,7 +26,7 @@ export default function DetailImageViewer({ src, alt, priority }: Props) {
 
   return (
     <motion.div
-      className="relative overflow-hidden rounded-2xl bg-card border border-border"
+      className="relative overflow-hidden rounded-2xl bg-card shadow-card"
       initial={reduced ? undefined : { opacity: 0, scale: 0.97 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
@@ -45,7 +45,7 @@ export default function DetailImageViewer({ src, alt, priority }: Props) {
           width={600}
           height={600}
           priority={priority}
-          className="w-full object-contain transition-transform duration-300"
+          className="w-full object-contain transition-transform duration-700 ease-out-expo"
           style={{
             transform: zoomed && !reduced ? 'scale(1.6)' : 'scale(1)',
             transformOrigin: origin,
