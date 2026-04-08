@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     description: 'RunPick의 러닝화 평가 기준과 점수 산출 방법을 설명합니다.',
   },
 }
-import { CONF_COLORS } from '@/lib/confidence'
 import SpecCardsSection from '@/components/SpecCardsSection'
 import { SPEC_ITEMS } from './data/specItems'
 import Eyebrow from '@/components/ui/Eyebrow'
@@ -22,7 +21,6 @@ const DATA_SOURCES = [
     description:
       '힐/포어풋 충격흡수(SA), 에너지 리턴(ER%), 무게 등 실측 장비로 측정한 정량 데이터를 제공합니다.',
     data: ['Heel SA · Forefoot SA', 'Energy Return %', 'Weight (g)'],
-    typeClass: 'border-spec-cushion/20 bg-spec-cushion/10 text-spec-cushion',
   },
   {
     name: 'RTINGS',
@@ -30,7 +28,6 @@ const DATA_SOURCES = [
     description:
       '자체 장비 측정과 표준화된 착용 테스트를 병행하여 스펙과 실착 데이터를 모두 수집합니다.',
     data: ['무게 · 스택 하이트', '플랫폼 폭 · width-to-stack', 'long-run 에너지 유지율'],
-    typeClass: 'border-spec-response/20 bg-spec-response/10 text-spec-response',
   },
   {
     name: 'Doctors of Running',
@@ -38,7 +35,6 @@ const DATA_SOURCES = [
     description:
       '물리치료사 · 생체역학 전문가가 안정성, 착지감, 주법별 적합성을 분석합니다.',
     data: ['안정성 분석', '착지감 · 전환 평가', '주법 적합성'],
-    typeClass: 'border-spec-stability/20 bg-spec-stability/10 text-spec-stability',
   },
   {
     name: 'Road Trail Run',
@@ -46,7 +42,6 @@ const DATA_SOURCES = [
     description:
       '장거리 실착 테스트를 통해 내구성과 다양한 노면에서의 활용성을 평가합니다.',
     data: ['내구성 평가', '다목적 활용', '장거리 착용감'],
-    typeClass: 'border-spec-durability/20 bg-spec-durability/10 text-spec-durability',
   },
   {
     name: 'Believe in the Run',
@@ -54,7 +49,6 @@ const DATA_SOURCES = [
     description:
       '실제 레이스와 훈련에서의 퍼포먼스, 착용감을 중심으로 리뷰합니다.',
     data: ['착용감 분석', '레이스 퍼포먼스', '가성비 평가'],
-    typeClass: 'border-spec-value/20 bg-spec-value/10 text-spec-value',
   },
 ]
 
@@ -62,29 +56,36 @@ const DATA_SOURCES = [
 const CONFIDENCE_LEVELS = [
   {
     label: 'VERIFIED',
-    badge: CONF_COLORS['very-high'],
+    key: 'very-high',
     description:
       'RunRepeat와 RTINGS 두 실측 측정 데이터가 모두 확인된 경우. 계측 장비 기반 데이터 2종과 전문가 리뷰를 종합한 최고 신뢰도입니다.',
   },
   {
     label: 'RELIABLE',
-    badge: CONF_COLORS['high'],
+    key: 'high',
     description:
       'RunRepeat 또는 RTINGS 중 하나의 실측 데이터가 확인된 경우. 전문가 리뷰 수와 무관하게 정량 데이터 1종을 확보한 상태입니다.',
   },
   {
     label: 'LIMITED',
-    badge: CONF_COLORS['medium'],
+    key: 'medium',
     description:
       '실측 데이터 없이 전문가 리뷰 2개 이상이 확인된 경우.',
   },
   {
     label: 'PENDING',
-    badge: CONF_COLORS['low'],
+    key: 'low',
     description:
       '정량 데이터가 없고 전문가 리뷰도 1개 이하이거나, 전체 데이터가 매우 제한적인 경우.',
   },
 ]
+
+const CONF_RAIL: Record<string, string> = {
+  'very-high': 'before:bg-conf-very-high',
+  'high':      'before:bg-conf-high',
+  'medium':    'before:bg-conf-medium',
+  'low':       'before:bg-conf-low',
+}
 
 export default function MethodologyPage() {
   return (
@@ -108,13 +109,13 @@ export default function MethodologyPage() {
           {DATA_SOURCES.map((source) => (
             <div
               key={source.name}
-              className="rounded-xl border border-border bg-card p-6 transition-colors hover:border-border-hover"
+              className="rounded-xl bg-card shadow-card hover:shadow-card-hover transition-shadow duration-250 ease-out-quart p-5"
             >
               <div className="flex items-baseline gap-3 mb-3">
-                <h3 className="font-body text-primary font-bold text-base">
+                <h3 className="font-display text-md text-primary tracking-tight-2">
                   {source.name}
                 </h3>
-                <span className={`rounded-full border px-2.5 py-1 text-xs font-body ${source.typeClass}`}>
+                <span className="inline-flex items-center rounded-full shadow-ring font-mono text-eyebrow uppercase text-tertiary px-3 py-1">
                   {source.type}
                 </span>
               </div>
@@ -160,10 +161,10 @@ export default function MethodologyPage() {
           {CONFIDENCE_LEVELS.map((level) => (
             <div
               key={level.label}
-              className="flex items-start gap-4 rounded-xl border border-border bg-card p-5"
+              className={`relative flex items-start gap-4 rounded-xl bg-card shadow-card p-5 pl-6 before:absolute before:left-0 before:top-3 before:bottom-3 before:w-[3px] before:rounded-r ${CONF_RAIL[level.key] ?? ''}`}
             >
               <span
-                className={`shrink-0 rounded-full px-3 py-1 text-xs font-body ${level.badge}`}
+                className="shrink-0 inline-flex items-center rounded-full shadow-ring font-mono text-eyebrow uppercase text-tertiary px-2 py-0.5"
               >
                 {level.label}
               </span>
@@ -220,14 +221,8 @@ export default function MethodologyPage() {
 
       {/* 돌아가기 */}
       <div className="border-t border-border pt-8">
-        <Link
-          href="/"
-          className="inline-flex min-h-[44px] items-center gap-2 rounded-lg px-3 py-2 text-sm font-body text-secondary transition-colors hover:bg-accent/5 hover:text-accent"
-        >
-          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
-          </svg>
-          홈으로 돌아가기
+        <Link href="/" className="inline-flex items-center gap-2 text-sm font-body text-tertiary hover:text-accent transition-colors duration-200 ease-out-quart underline-offset-4 hover:underline">
+          ← 홈으로 돌아가기
         </Link>
       </div>
     </main>
