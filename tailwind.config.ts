@@ -35,7 +35,7 @@ const config: Config = {
         "conf-medium":    "#facc15",
         "conf-low":       "#f87171",
         // semantic notice tones (separated from spec-* to avoid collision)
-        "notice":         "#facc15",  // attention/info — distinct from spec-stability
+        "notice":         "#facc15",  // attention/info — same hue as conf-medium, different semantic role (UI surface)
         "notice-soft":    "rgba(250,204,21,0.08)",
       },
       fontFamily: {
