@@ -66,8 +66,8 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
         <div className="min-w-0 space-y-8">
           {/* Header */}
           <div>
-            <Eyebrow className="mb-2">{shoe.brandId} · {CATEGORY_LABELS[shoe.categoryId]}</Eyebrow>
-            <h1 className="mb-3 text-2xl sm:text-hero font-display tracking-tight-4 text-primary break-keep">
+            <Eyebrow className="mb-2">{brand?.name ?? shoe.brandId} · {CATEGORY_LABELS[shoe.categoryId]}</Eyebrow>
+            <h1 className="mb-3 text-2xl md:text-hero font-display tracking-tight-4 text-primary break-keep">
               {shoe.name}
             </h1>
             <p className="mb-4 text-xl font-display tabular-nums tracking-tight-2 text-accent">{shoe.priceFormatted}</p>
@@ -216,14 +216,15 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
           )}
 
           {/* 링크 버튼 그룹 */}
-          <section className="border-t border-border pt-4">
+          <div className="border-t border-border pt-4" aria-label="구매 및 리뷰 링크">
             <div className="flex flex-wrap items-start gap-2">
               {brand?.officialUrl && (
                 <a
                   href={brand.officialUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-xl bg-accent text-dark font-display text-md tracking-tight-2 px-5 py-3 shadow-feature hover:shadow-card-hover transition-shadow duration-250 ease-out-quart"
+                  aria-label="공식 사이트 (새 탭에서 열림)"
+                  className="inline-flex items-center justify-center min-h-[44px] rounded-xl bg-accent text-dark font-display text-md tracking-tight-2 px-5 py-3 shadow-feature hover:shadow-card-hover transition-shadow duration-250 ease-out-quart"
                 >
                   공식 사이트
                 </a>
@@ -234,13 +235,13 @@ export default function ShoeDetailPage({ params }: { params: { slug: string } })
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between rounded-xl shadow-ring hover:shadow-card font-mono text-eyebrow uppercase text-tertiary hover:text-primary px-4 py-3 transition-shadow duration-200 ease-out-quart"
+                  className="inline-flex items-center justify-between min-h-[44px] rounded-xl shadow-ring hover:shadow-card font-mono text-eyebrow uppercase text-tertiary hover:text-primary px-4 py-3 transition-shadow duration-200 ease-out-quart"
                 >
                   {label} →
                 </a>
               ))}
             </div>
-          </section>
+          </div>
         </div>
       </div>
 
