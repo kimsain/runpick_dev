@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 import { CONF_COLORS } from '@/lib/confidence'
 import SpecCardsSection from '@/components/SpecCardsSection'
 import { SPEC_ITEMS } from './data/specItems'
+import Eyebrow from '@/components/ui/Eyebrow'
+import SectionHeading from '@/components/ui/SectionHeading'
 
 const DATA_SOURCES = [
   {
@@ -89,10 +91,8 @@ export default function MethodologyPage() {
     <main className="max-w-4xl mx-auto px-6 py-12 sm:py-16">
       {/* Hero */}
       <div className="mb-16 sm:mb-20">
-        <p className="text-accent text-sm font-body tracking-widest uppercase mb-4">
-          METHODOLOGY
-        </p>
-        <h1 className="mb-5 text-lg font-display leading-none text-primary break-keep sm:text-xl md:text-2xl">
+        <Eyebrow className="mb-4 text-accent">METHODOLOGY</Eyebrow>
+        <h1 className="mb-5 text-lg font-display leading-none text-primary tracking-tight-4 break-keep sm:text-xl md:text-2xl">
           점수 산정 방법
         </h1>
         <p className="max-w-2xl text-sm font-body leading-relaxed text-secondary sm:text-base md:text-md">
@@ -103,9 +103,7 @@ export default function MethodologyPage() {
 
       {/* 데이터 수집 방법 */}
       <section className="mb-16 sm:mb-20">
-        <h2 className="mb-8 text-md font-display uppercase tracking-widest text-primary break-keep sm:text-lg">
-          데이터 소스
-        </h2>
+        <SectionHeading eyebrow="DATA SOURCES" className="mb-8">데이터 소스</SectionHeading>
         <div className="space-y-4">
           {DATA_SOURCES.map((source) => (
             <div
@@ -140,9 +138,7 @@ export default function MethodologyPage() {
 
       {/* 점수 산정 방식 */}
       <section className="mb-16 sm:mb-20">
-        <h2 className="mb-8 text-md font-display uppercase tracking-widest text-primary break-keep sm:text-lg">
-          {SPEC_ITEMS.length}개 스펙 점수
-        </h2>
+        <SectionHeading eyebrow="METHODOLOGY" className="mb-8">{SPEC_ITEMS.length}개 스펙 점수</SectionHeading>
         <p className="mb-8 max-w-2xl text-sm font-body leading-relaxed text-secondary">
           각 스펙은 0–10점으로 정규화됩니다. 쿠션성·반응성은 실측 데이터(SA, ER%)를
           최우선으로 적용하고, 안정성은 TR/HCS·플랫폼 폭·스택/소프트니스 sway·정성 신호를
@@ -155,9 +151,7 @@ export default function MethodologyPage() {
 
       {/* 신뢰도 등급 */}
       <section className="mb-16 sm:mb-20">
-        <h2 className="mb-8 text-md font-display uppercase tracking-widest text-primary break-keep sm:text-lg">
-          신뢰도 등급
-        </h2>
+        <SectionHeading eyebrow="CONFIDENCE" className="mb-8">신뢰도 등급</SectionHeading>
         <p className="mb-8 text-sm font-body text-secondary">
           수집된 데이터의 양과 출처 수에 따라 각 신발의 점수 신뢰도를 4단계로
           구분합니다.
@@ -183,9 +177,7 @@ export default function MethodologyPage() {
 
       {/* 한계 및 주의사항 */}
       <section className="mb-16 sm:mb-20">
-        <h2 className="mb-8 text-md font-display uppercase tracking-widest text-primary break-keep sm:text-lg">
-          한계 및 주의사항
-        </h2>
+        <SectionHeading eyebrow="DISCLAIMER" className="mb-8">한계 및 주의사항</SectionHeading>
         <div className="space-y-4 rounded-xl border border-border bg-card p-6">
           <p className="text-sm font-body leading-relaxed text-secondary">
             RunPick의 점수는 공개된 데이터를 기반으로 산출한{' '}

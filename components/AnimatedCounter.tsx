@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useInView, useReducedMotion } from 'framer-motion'
+import { easeOutExpo } from '@/lib/easing'
 
 interface Props {
   target: number
@@ -21,7 +22,7 @@ export default function AnimatedCounter({ target, duration = 1.2 }: Props) {
     const startTime = performance.now()
     function tick(now: number) {
       const elapsed = Math.min((now - startTime) / (duration * 1000), 1)
-      const eased = 1 - Math.pow(1 - elapsed, 3)
+      const eased = easeOutExpo(elapsed)
       setValue(Math.round(eased * target))
       if (elapsed < 1) rafId = requestAnimationFrame(tick)
     }
@@ -29,5 +30,5 @@ export default function AnimatedCounter({ target, duration = 1.2 }: Props) {
     return () => cancelAnimationFrame(rafId)
   }, [isInView, target, duration, reduced])
 
-  return <span ref={ref} aria-live="off">{value}</span>
+  return <span ref={ref} aria-live="off" className="font-mono tabular-nums">{value}</span>
 }

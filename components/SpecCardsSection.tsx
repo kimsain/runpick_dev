@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useFocusTrap } from '@/lib/useFocusTrap'
 import type { SpecItem } from '@/app/methodology/data/specItems'
 import ScoreMethodNotice from '@/components/ScoreMethodNotice'
+import Eyebrow from '@/components/ui/Eyebrow'
 
 interface Props {
   items: SpecItem[]
@@ -163,9 +164,7 @@ export default function SpecCardsSection({ items }: Props) {
                   </p>
                   {selected.modalContent.general.impact && (
                     <div className="rounded-xl border border-border bg-surface p-5">
-                      <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
-                        점수별 체감
-                      </p>
+                      <Eyebrow className="mb-2 text-accent">점수별 체감</Eyebrow>
                       <p className="text-secondary text-sm font-body leading-relaxed">
                         {selected.modalContent.general.impact}
                       </p>
@@ -177,27 +176,21 @@ export default function SpecCardsSection({ items }: Props) {
               {activeTab === 'expert' && (
                 <>
                   <div>
-                    <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
-                      데이터 소스
-                    </p>
+                    <Eyebrow className="mb-2 text-accent">데이터 소스</Eyebrow>
                     <p className="text-secondary text-sm font-body leading-relaxed">
                       {selected.modalContent.expert.dataSource}
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
-                      공식
-                    </p>
+                    <Eyebrow className="mb-2 text-accent">공식</Eyebrow>
                     <pre className="overflow-x-auto whitespace-pre rounded-xl border border-border bg-surface p-5 text-xs font-mono leading-relaxed text-secondary">
                       {selected.modalContent.expert.formula}
                     </pre>
                   </div>
 
                   <div>
-                    <p className="text-xs font-body text-accent tracking-widest uppercase mb-2">
-                      설계 근거
-                    </p>
+                    <Eyebrow className="mb-2 text-accent">설계 근거</Eyebrow>
                     <p className="text-secondary text-sm font-body leading-relaxed">
                       {selected.modalContent.expert.rationale}
                     </p>
@@ -206,9 +199,7 @@ export default function SpecCardsSection({ items }: Props) {
                   {selected.modalContent.expert.constants &&
                     selected.modalContent.expert.constants.length > 0 && (
                       <div>
-                        <p className="text-xs font-body text-accent tracking-widest uppercase mb-3">
-                          주요 상수
-                        </p>
+                        <Eyebrow className="mb-3 text-accent">주요 상수</Eyebrow>
                         <div className="overflow-hidden rounded-xl border border-border divide-y divide-border">
                           {selected.modalContent.expert.constants.map((c) => (
                             <div key={c.name} className="flex flex-col gap-1 px-5 py-3">
