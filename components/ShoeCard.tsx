@@ -37,7 +37,7 @@ export default function ShoeCard({ shoe, priority = false }: Props) {
   return (
     <Link
       href={`/shoes/${shoe.slug}`}
-      className="group block overflow-hidden rounded-xl bg-card shadow-card transition-[transform,box-shadow] duration-400 ease-out-quart will-change-transform hover:-translate-y-1 hover:shadow-card-hover"
+      className="group block overflow-hidden rounded-xl bg-card shadow-card transition-[transform,box-shadow] duration-400 ease-out-quart hover:will-change-transform hover:-translate-y-1 hover:shadow-card-hover"
     >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden rounded-t-xl bg-elevated/70 md:aspect-[3/4]">
