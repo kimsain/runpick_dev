@@ -8,9 +8,12 @@
   --bg-elevated: #1c1c1c;
   --bg-card: #161616;
 
-  --text-primary: #f2f2f2;
-  --text-secondary: #8c8c8c;
-  --text-muted: #8b8b8b;
+  /* 4-tier text tone (tailwind 토큰과 동기화) */
+  --text-primary: #f7f8f8;
+  --text-secondary: #b4b8c0;
+  --text-tertiary: #8a8f98;
+  --text-quaternary: #62666d;
+  --text-muted: #8a8f98;        /* alias */
 
   --accent: #c8ff00;
   --accent-dim: #a8d600;
@@ -24,6 +27,10 @@
   --spec-durability: #f87171;
   --spec-weight: #a78bfa;
   --spec-value: #fb923c;
+
+  /* easing tokens */
+  --ease-out-quart: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 html {
@@ -33,7 +40,10 @@ html {
 body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-pretendard), 'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  /* tabular numerals + contextual alternates */
+  font-feature-settings: "tnum" 1, "calt" 1, "ss03" 1, "cv11" 1;
+  font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,6 +52,9 @@ body {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.05;
+  /* display font: disable tabular nums for natural proportional spacing */
+  font-variant-numeric: normal;
+  font-feature-settings: normal;
 }
 
 ::-webkit-scrollbar {
