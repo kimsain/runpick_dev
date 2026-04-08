@@ -82,13 +82,13 @@ const config: Config = {
         ring: "0 0 0 1px rgba(255,255,255,0.06)",
         "ring-strong": "0 0 0 1px rgba(255,255,255,0.10)",
         // multi-layer 카드 (inner highlight + 고도)
-        card: "0 0 0 1px rgba(255,255,255,0.06), 0 1px 3px rgba(0,0,0,0.4), 0 8px 24px -12px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.04)",
+        card: "0 0 0 1px rgba(255,255,255,0.06), 0 1px 3px rgba(0,0,0,0.4), 0 8px 24px -12px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.06)",
         "card-hover": "0 0 0 1px rgba(200,255,0,0.18), 0 4px 16px rgba(0,0,0,0.5), 0 16px 40px -16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.06)",
         // featured (액센트 틴트 섀도우)
         feature: "0 0 0 1px rgba(200,255,0,0.22), 0 8px 24px -8px rgba(200,255,0,0.18), 0 24px 48px -16px rgba(0,0,0,0.6)",
       },
       transitionTimingFunction: {
-        "out-quart": "cubic-bezier(0.165, 0.84, 0.44, 1)",
+        "out-quart": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
         "out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
       },
       transitionDuration: {
