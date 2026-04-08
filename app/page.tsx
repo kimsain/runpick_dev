@@ -3,6 +3,8 @@ import HeroSection from '@/components/HeroSection'
 import ShoeCard from '@/components/ShoeCard'
 import ScrollRevealSection from '@/components/ScrollRevealSection'
 import AnimatedCardGrid from '@/components/AnimatedCardGrid'
+import Eyebrow from '@/components/ui/Eyebrow'
+import SectionHeading from '@/components/ui/SectionHeading'
 import { getAllShoes, getBrands } from '@/lib/data'
 import type { Shoe, Specs } from '@/lib/types'
 
@@ -52,18 +54,14 @@ export default function HomePage() {
   const responsivenessBest = pickTop(allShoes, 'responsiveness', highConfidence)
   const cushioningBest = pickTop(allShoes, 'cushioning', highConfidence)
 
-  const sections = [
-    { title: '최고의 가성비', subtitle: '쿠션성·반응성·안정성·내구성 합산 ÷ 출시가 기준', shoes: valueBest },
-    { title: '최고의 에너지리턴', subtitle: '에너지리턴(ER%) 실측 측정값 기준', shoes: responsivenessBest },
-    { title: '최고의 쿠션성', subtitle: '충격흡수(SA) 실측 측정값 기준', shoes: cushioningBest },
-  ]
-
   return (
     <main>
       <HeroSection />
 
       {/* Brand Bar */}
       <ScrollRevealSection className="border-y border-border bg-surface/40 px-6 py-8">
+        <div className="text-center">
+          <Eyebrow className="mb-4">브랜드</Eyebrow>
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-2 gap-y-1">
           {brands.map((brand) => (
             <Link
@@ -79,43 +77,92 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        </div>
       </ScrollRevealSection>
 
-      {/* Curation Sections */}
-      {sections.map((section, sectionIdx) => (
-        <div key={section.title} className="max-w-7xl mx-auto px-6 py-20">
+      {/* Curation Section 0: 가성비 */}
+      <section className="bg-dark py-20">
+        <div className="max-w-7xl mx-auto px-6">
           <ScrollRevealSection>
             <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <h2 className="font-display text-md sm:text-lg text-primary tracking-widest uppercase break-keep">
-                  {section.title}
-                </h2>
-                {section.subtitle && (
-                  <p className="mt-2 max-w-lg text-xs font-body text-muted sm:text-sm">{section.subtitle}</p>
-                )}
-              </div>
+              <SectionHeading
+                eyebrow="01 · 가성비"
+                subhead="쿠션성·반응성·안정성·내구성 합산 ÷ 출시가 기준"
+                eyebrowClassName="text-spec-value"
+              >
+                최고의 가성비
+              </SectionHeading>
               <Link
                 href="/shoes"
-                className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-body text-secondary transition-colors self-start hover:bg-accent/5 hover:text-accent sm:self-auto"
+                className="font-mono text-eyebrow uppercase text-tertiary hover:text-accent transition-colors duration-200 ease-out-quart self-start sm:self-auto"
               >
-                전체 보기
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-                </svg>
+                전체 보기 →
               </Link>
             </div>
           </ScrollRevealSection>
           <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {section.shoes.map((shoe, i) => (
-              <ShoeCard
-                key={shoe.slug}
-                shoe={shoe}
-                priority={sectionIdx === 0 && i < 2}
-              />
+            {valueBest.map((shoe, i) => (
+              <ShoeCard key={shoe.slug} shoe={shoe} priority={i < 2} />
             ))}
           </AnimatedCardGrid>
         </div>
-      ))}
+      </section>
+
+      {/* Curation Section 1: 반응성 */}
+      <section className="bg-surface/30 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <ScrollRevealSection>
+            <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <SectionHeading
+                eyebrow="02 · 반응성"
+                subhead="에너지리턴(ER%) 실측 측정값 기준"
+                eyebrowClassName="text-spec-response"
+              >
+                최고의 에너지리턴
+              </SectionHeading>
+              <Link
+                href="/shoes"
+                className="font-mono text-eyebrow uppercase text-tertiary hover:text-accent transition-colors duration-200 ease-out-quart self-start sm:self-auto"
+              >
+                전체 보기 →
+              </Link>
+            </div>
+          </ScrollRevealSection>
+          <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {responsivenessBest.map((shoe) => (
+              <ShoeCard key={shoe.slug} shoe={shoe} />
+            ))}
+          </AnimatedCardGrid>
+        </div>
+      </section>
+
+      {/* Curation Section 2: 쿠션성 */}
+      <section className="bg-dark py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <ScrollRevealSection>
+            <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <SectionHeading
+                eyebrow="03 · 쿠션성"
+                subhead="충격흡수(SA) 실측 측정값 기준"
+                eyebrowClassName="text-spec-cushion"
+              >
+                최고의 쿠션성
+              </SectionHeading>
+              <Link
+                href="/shoes"
+                className="font-mono text-eyebrow uppercase text-tertiary hover:text-accent transition-colors duration-200 ease-out-quart self-start sm:self-auto"
+              >
+                전체 보기 →
+              </Link>
+            </div>
+          </ScrollRevealSection>
+          <AnimatedCardGrid className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {cushioningBest.map((shoe) => (
+              <ShoeCard key={shoe.slug} shoe={shoe} />
+            ))}
+          </AnimatedCardGrid>
+        </div>
+      </section>
     </main>
   )
 }

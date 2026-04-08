@@ -10,7 +10,8 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 import AnimatedCounter from '@/components/AnimatedCounter'
-import { EASE_OUT_QUART } from '@/lib/motion'
+import Eyebrow from '@/components/ui/Eyebrow'
+import { EASE_OUT_QUART, EASE_OUT_EXPO } from '@/lib/motion'
 
 interface Props {
   totalCount: number
@@ -98,31 +99,28 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           style={isDesktop ? { y: textY } : undefined}
         >
           {/* Label */}
-          <motion.p
-            {...fadeLeft(0)}
-            className="mb-5 flex items-center gap-3 text-sm font-body uppercase tracking-widest text-secondary"
-          >
-            러닝화 탐색 플랫폼
+          <motion.div {...fadeLeft(0)} className="flex items-center gap-3">
+            <Eyebrow className="mb-5">러닝화 탐색 플랫폼</Eyebrow>
             <motion.span
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={transition(0.15)}
               style={{ originX: 0 }}
-              className="inline-block h-px w-12 bg-accent"
+              className="inline-block h-px w-12 bg-accent mb-5"
             />
-          </motion.p>
+          </motion.div>
 
           {/* Headline */}
           <h1 className="mb-8 font-display leading-none">
             <motion.span
               {...fadeUp(0.25)}
-              className="block text-[clamp(3rem,10vw,7rem)] text-accent"
+              className="block text-2xl md:text-hero font-display tracking-tight-4 leading-none text-accent"
             >
               FIND YOUR
             </motion.span>
             <motion.span
               {...fadeUp(0.35)}
-              className="block text-[clamp(3rem,10vw,7rem)] text-accent"
+              className="block text-2xl md:text-hero font-display tracking-tight-4 leading-none text-accent"
             >
               RUN
             </motion.span>
@@ -136,9 +134,9 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
             {STATS(totalCount, brandCount).map((stat) => (
               <div
                 key={stat.label}
-                className="pointer-events-none select-none rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm"
+                className="pointer-events-none select-none rounded-lg bg-card/50 px-4 py-2.5 text-sm font-body backdrop-blur-sm shadow-ring"
               >
-                <span className="text-lg font-display text-accent">
+                <span className="tabular-nums text-lg font-display text-accent">
                   {stat.numeric !== null ? <AnimatedCounter target={stat.numeric} /> : stat.value}
                 </span>
                 <span className="ml-1.5 text-secondary">{stat.label}</span>
@@ -157,7 +155,7 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           >
             <Link
               href="/shoes"
-              className="inline-flex min-h-[52px] items-center gap-3 rounded-xl bg-accent px-8 py-4 text-xl font-display text-dark transition-all hover:bg-accent-dim hover:shadow-glow"
+              className="inline-flex min-h-[52px] items-center gap-3 rounded-xl bg-accent px-8 py-4 text-xl font-display tracking-tight-2 text-dark transition-all hover:bg-accent-dim hover:shadow-feature"
             >
               신발 탐색
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -213,6 +211,15 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
                     />
                   </motion.div>
                 ))}
+                <motion.div
+                  key={activeIndex}
+                  initial={{ opacity: 0, y: 4 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, ease: EASE_OUT_EXPO }}
+                  className="absolute bottom-4 left-1/2 -translate-x-1/2"
+                >
+                  <Eyebrow>{HERO_SHOES[activeIndex].alt}</Eyebrow>
+                </motion.div>
               </div>
               </motion.div>
             </motion.div>
