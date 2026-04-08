@@ -62,21 +62,21 @@ export default function HomePage() {
       <ScrollRevealSection className="border-y border-border bg-surface/40 px-6 py-8">
         <div className="text-center">
           <Eyebrow className="mb-4">브랜드</Eyebrow>
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-2 gap-y-1">
-          {brands.map((brand) => (
-            <Link
-              key={brand.id}
-              href={`/shoes?brands=${brand.id}`}
-              className="flex min-h-[44px] items-center gap-2 rounded-lg px-3 py-2 font-display text-md tracking-widest text-muted transition-all hover:bg-accent/5 hover:text-accent"
-            >
-              <span
-                className="w-1.5 h-1.5 rounded-full shrink-0 opacity-70"
-                style={{ backgroundColor: brand.color ?? '#8c8c8c' }}
-              />
-              {brand.name}
-            </Link>
-          ))}
-        </div>
+          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-2 gap-y-1">
+            {brands.map((brand) => (
+              <Link
+                key={brand.id}
+                href={`/shoes?brands=${brand.id}`}
+                className="flex min-h-[44px] items-center gap-2 rounded-lg px-3 py-2 font-display text-md tracking-widest text-muted transition-all hover:bg-accent/5 hover:text-accent"
+              >
+                <span
+                  className="w-1.5 h-1.5 rounded-full shrink-0 opacity-70"
+                  style={{ backgroundColor: brand.color ?? '#8c8c8c' }}
+                />
+                {brand.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </ScrollRevealSection>
 
