@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import ShoesBrowser from '@/components/ShoesBrowser'
+import SectionHeading from '@/components/ui/SectionHeading'
 import { getAllShoes, getBrands, getPriceRange, getWeightRange, getDropRange } from '@/lib/data'
 
 export function generateMetadata() {
@@ -11,7 +12,7 @@ export function generateMetadata() {
 
 function CardSkeleton() {
   return (
-    <div className="overflow-hidden rounded-xl border border-border bg-card">
+    <div className="overflow-hidden rounded-xl shadow-card bg-card">
       <div className="aspect-[4/3] md:aspect-[3/4] bg-elevated/70 animate-pulse" />
       <div className="p-5 space-y-3">
         <div className="h-3 w-16 rounded bg-elevated animate-pulse" />
@@ -46,14 +47,14 @@ export default function ShoesPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-6 py-12 sm:py-16">
-      <div className="mb-10">
-        <h1 className="font-display text-xl text-primary tracking-widest uppercase break-keep sm:text-2xl">
-          러닝화 탐색
-        </h1>
-        <p className="mt-2 text-secondary text-sm font-body">
+      <header className="mb-10">
+        <SectionHeading eyebrow="BROWSE / 탐색" as="h1">
+          러닝화 전체
+        </SectionHeading>
+        <p className="mt-2 text-sm text-tertiary font-mono tabular-nums tracking-tight-1">
           {shoes.length}개 러닝화 · {brands.length}개 브랜드
         </p>
-      </div>
+      </header>
 
       <Suspense fallback={<GridSkeleton />}>
         <ShoesBrowser

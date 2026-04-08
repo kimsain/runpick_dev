@@ -1,6 +1,6 @@
 'use client'
 
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import { useDeferredValue, useMemo } from 'react'
 import ShoeCard from './ShoeCard'
 import AnimatedCardGrid from './AnimatedCardGrid'
@@ -8,6 +8,7 @@ import ActiveFilterChips from './ActiveFilterChips'
 import FilterDrawer from './FilterDrawer'
 import FilterPanel from './FilterPanel'
 import ShoesSearchBar from './ShoesSearchBar'
+import EmptyState from '@/components/ui/EmptyState'
 import type { Shoe, Brand } from '@/lib/types'
 import { getShoeSearchRank, normalizeSearchText } from '@/lib/shoeSearch'
 
@@ -65,6 +66,8 @@ export default function ShoesBrowser({
   weightRange,
   dropRange,
 }: Props) {
+  const router = useRouter()
+  const pathname = usePathname()
   const searchParams = useSearchParams()
   const deferredQuery = useDeferredValue(searchParams.get('q') ?? '')
   const brandMap = useMemo(
@@ -167,8 +170,8 @@ export default function ShoesBrowser({
 
       {/* Mobile header */}
       <div className="flex md:hidden items-center justify-between mb-6">
-        <p className="text-secondary text-sm font-body" aria-live="polite" aria-atomic="true">
-          <span className="text-primary font-semibold">{filtered.length}</span>개 결과
+        <p className="text-sm text-tertiary font-mono tabular-nums tracking-tight-1" aria-live="polite" aria-atomic="true">
+          <span className="text-primary font-medium">{filtered.length}</span> 개 결과
         </p>
         <FilterDrawer
           brands={brands}
@@ -197,21 +200,28 @@ export default function ShoesBrowser({
         {/* Grid */}
         <div className="flex-1 min-w-0">
           {/* Results count on desktop */}
-          <p className="hidden md:block text-secondary text-sm font-body mb-6" aria-live="polite" aria-atomic="true">
-            <span className="text-primary font-semibold">{filtered.length}</span>개 결과
+          <p className="hidden md:block text-sm text-tertiary font-mono tabular-nums tracking-tight-1 mb-6" aria-live="polite" aria-atomic="true">
+            <span className="text-primary font-medium">{filtered.length}</span> 개 결과
           </p>
 
           {filtered.length === 0 ? (
-            <div className="text-center py-24">
-              <p className="mb-2 font-display text-lg text-muted">결과 없음</p>
-              <p className="text-secondary text-sm font-body">
-                필터 조건을 바꿔보세요
-              </p>
-            </div>
+            <EmptyState
+              eyebrow="NO MATCHES"
+              title="결과 없음"
+              description="필터 조건을 바꿔보세요"
+              action={
+                <button
+                  onClick={() => router.push(pathname)}
+                  className="rounded-full bg-accent text-dark font-display text-sm tracking-tight-1 px-4 py-2 hover:shadow-feature transition-shadow duration-250 ease-out-quart"
+                >
+                  필터 초기화
+                </button>
+              }
+            />
           ) : (
             <AnimatedCardGrid
               disableStagger
-              className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
             >
               {filtered.map((shoe) => (
                 <ShoeCard key={shoe.slug} shoe={shoe} />

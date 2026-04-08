@@ -4,6 +4,7 @@ import { useRouter, useSearchParams, usePathname } from 'next/navigation'
 import { useCallback, useEffect, useState } from 'react'
 import type { Brand } from '@/lib/types'
 import { CATEGORIES, SPEC_LABELS } from '@/lib/constants'
+import Eyebrow from '@/components/ui/Eyebrow'
 
 interface Props {
   brands: Brand[]
@@ -148,7 +149,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
       <div className="space-y-8 pb-8">
         {/* Sort */}
         <section>
-          <h3 className="mb-3 text-sm font-display tracking-widest uppercase text-secondary">정렬</h3>
+          <Eyebrow className="mb-3">정렬</Eyebrow>
           <div className="grid grid-cols-2 gap-1.5">
             {SORTS_META.map((s) => {
               const isActive = activeKey === s.key
@@ -165,10 +166,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                       updateParam('sort', `${s.key}-${nextDir}`)
                     }
                   }}
-                  className={`flex min-h-[44px] items-center justify-between rounded-lg border px-3 py-2 text-sm font-body transition-all ${
+                  className={`flex min-h-[44px] items-center justify-between rounded-md px-3 py-2 text-sm font-body transition-[box-shadow,color] duration-200 ease-out-quart ${
                     isActive
-                      ? 'border-accent/40 bg-accent/8 text-accent shadow-glow-sm'
-                      : 'border-border text-secondary hover:border-border-hover hover:text-primary'
+                      ? 'shadow-card text-primary bg-card'
+                      : 'text-tertiary hover:text-primary shadow-ring'
                   }`}
                 >
                   <span>{s.label}</span>
@@ -181,7 +182,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
 
         {/* Category */}
         <section>
-          <h3 className="mb-3 text-sm font-display tracking-widest uppercase text-secondary">카테고리</h3>
+          <Eyebrow className="mb-3">카테고리</Eyebrow>
           <div className="grid grid-cols-2 gap-1.5">
             {CATEGORIES.map((c) => (
               <button
@@ -196,10 +197,10 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   params.delete('subcategory')
                   pushParams(params)
                 }}
-                className={`flex min-h-[44px] items-center justify-center rounded-lg border px-3 py-2 text-center text-sm font-body transition-all ${
+                className={`flex min-h-[44px] items-center justify-center rounded-full px-3 py-2 text-center text-sm font-body transition-all duration-200 ease-out-quart ${
                   category === c.id
-                    ? 'border-accent/40 bg-accent/8 text-accent shadow-glow-sm'
-                    : 'border-border text-secondary hover:border-border-hover hover:text-primary'
+                    ? 'bg-accent text-dark shadow-feature'
+                    : 'text-tertiary hover:text-primary shadow-ring'
                 }`}
               >
                 {c.label}
@@ -213,11 +214,11 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
           <button
             onClick={() => setBrandsOpen(!brandsOpen)}
             aria-expanded={brandsOpen}
-            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span>
+            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
               브랜드{selectedBrands.length > 0 && (
-                <span className="ml-1 text-accent normal-case font-body">({selectedBrands.length})</span>
+                <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">{selectedBrands.length}</span>
               )}
             </span>
             <svg className={`h-4 w-4 transition-transform duration-200 ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -226,10 +227,12 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
           </button>
           {brandsOpen && (
             <div className={mobile ? 'grid grid-cols-2 gap-1.5' : 'space-y-1'}>
-              {brands.map((brand) => (
+              {brands.map((brand) => {
+                const isChecked = selectedBrands.includes(brand.id)
+                return (
                 <label
                   key={brand.id}
-                  className="group flex min-h-[44px] cursor-pointer items-center gap-2.5 rounded-lg px-2 py-1 transition-colors hover:bg-elevated/50"
+                  className={`group flex min-h-[44px] cursor-pointer items-center gap-2.5 rounded-md px-2 py-1.5 transition-colors duration-200 ease-out-quart ${isChecked ? 'bg-accent/5 shadow-ring text-primary' : 'text-tertiary hover:text-primary'}`}
                 >
                   <input
                     type="checkbox"
@@ -258,7 +261,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                     {brand.name}
                   </span>
                 </label>
-              ))}
+              )})}
             </div>
           )}
         </section>
@@ -268,12 +271,12 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
           <button
             onClick={() => setRangeOpen(!rangeOpen)}
             aria-expanded={rangeOpen}
-            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span>
+            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
               범위 필터{[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length > 0 && (
-                <span className="text-accent normal-case font-body ml-1">
-                  ({[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length}개 활성)
+                <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">
+                  {[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length}
                 </span>
               )}
             </span>
@@ -287,7 +290,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 가격(원)</span>
-                  <span className="text-primary font-semibold">{formatPrice(localMaxPrice)}</span>
+                  <span className="font-mono text-sm text-primary tabular-nums tracking-tight-1">{formatPrice(localMaxPrice)}</span>
                 </div>
                 <input
                   type="range"
@@ -300,16 +303,16 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) => setLocalMaxPrice(Number(e.target.value))}
                   className="w-full"
                 />
-                <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{formatPrice(priceRange.min)}</span>
-                  <span>{formatPrice(priceRange.max)}</span>
+                <div className="flex justify-between mt-1">
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{formatPrice(priceRange.min)}</span>
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{formatPrice(priceRange.max)}</span>
                 </div>
               </div>
               {/* 최대 무게 */}
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">최대 무게(g)</span>
-                  <span className="text-primary font-semibold">{localMaxWeight}</span>
+                  <span className="font-mono text-sm text-primary tabular-nums tracking-tight-1">{localMaxWeight}</span>
                 </div>
                 <input
                   type="range"
@@ -322,16 +325,16 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) => setLocalMaxWeight(Number(e.target.value))}
                   className="w-full"
                 />
-                <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{sliderWeightMin}</span>
-                  <span>{sliderWeightMax}</span>
+                <div className="flex justify-between mt-1">
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{sliderWeightMin}</span>
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{sliderWeightMax}</span>
                 </div>
               </div>
               {/* 최대 드롭 */}
               <div>
                 <div className="mb-1.5 flex justify-between text-sm font-body">
                   <span className="text-secondary">드롭(mm)</span>
-                  <span className="text-primary font-semibold">{localMaxDrop}</span>
+                  <span className="font-mono text-sm text-primary tabular-nums tracking-tight-1">{localMaxDrop}</span>
                 </div>
                 <input
                   type="range"
@@ -344,9 +347,9 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                   onChange={(e) => setLocalMaxDrop(Number(e.target.value))}
                   className="w-full"
                 />
-                <div className="flex justify-between text-muted text-xs font-body mt-1">
-                  <span>{dropRange.min}</span>
-                  <span>{dropRange.max}</span>
+                <div className="flex justify-between mt-1">
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{dropRange.min}</span>
+                  <span className="font-mono text-eyebrow text-quaternary tabular-nums">{dropRange.max}</span>
                 </div>
               </div>
             </div>
@@ -358,11 +361,11 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
           <button
             onClick={() => setSpecOpen(!specOpen)}
             aria-expanded={specOpen}
-            className="mb-3 flex min-h-[44px] w-full items-center justify-between text-sm font-display uppercase tracking-widest text-secondary"
+            className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span>
+            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
               스펙 필터{activeSpecCount > 0 && (
-                <span className="text-accent normal-case font-body ml-1">({activeSpecCount}개 활성)</span>
+                <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">{activeSpecCount}</span>
               )}
             </span>
             <svg className={`h-4 w-4 transition-transform duration-200 ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -378,7 +381,7 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
                     <div className="mb-1.5 flex items-center justify-between text-sm font-body">
                       <span className={f.textClass}>{f.label}</span>
                       <div className="flex items-center gap-1">
-                        <span className="text-primary font-semibold">{val}</span>
+                        <span className="font-mono text-sm text-primary tabular-nums tracking-tight-1">{val}</span>
                         {val > 1 && (
                           <button
                             onClick={() => updateParam(f.param, '')}

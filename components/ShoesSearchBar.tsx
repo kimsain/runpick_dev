@@ -11,6 +11,7 @@ import {
   useState,
 } from 'react'
 import type { Brand, Shoe } from '@/lib/types'
+import Eyebrow from '@/components/ui/Eyebrow'
 import {
   MAX_SEARCH_SUGGESTIONS,
   getShoeSearchRank,
@@ -246,10 +247,10 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
             }
             commitSearch(inputValue, true)
           }}
-          className={`relative flex min-h-[56px] items-center gap-3 rounded-full border bg-card/95 px-4 py-2.5 shadow-card transition-all duration-200 backdrop-blur-sm ${
+          className={`relative flex min-h-[56px] items-center gap-3 rounded-full bg-card/80 px-4 py-2.5 backdrop-blur-md transition-shadow duration-250 ease-out-quart ${
             showPanel
-              ? 'border-accent/40 shadow-glow-sm'
-              : 'border-border hover:border-border-hover focus-within:border-accent/40'
+              ? 'shadow-feature'
+              : 'shadow-card hover:shadow-card-hover focus-within:shadow-feature'
           }`}
           role="search"
         >
@@ -365,36 +366,17 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
             </button>
           )}
 
-          <button
-            type="submit"
-            aria-label="검색"
-            className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-accent px-4 text-dark transition-transform hover:scale-[1.02] hover:bg-accent-dim"
-          >
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
+          <kbd className="hidden md:inline-flex items-center gap-1 rounded shadow-ring font-mono text-eyebrow text-tertiary px-2 py-1">
+            ↵
+          </kbd>
         </form>
       </div>
 
       {showPanel && (
         <div className="absolute inset-x-0 top-full z-20 mt-3">
-          <div className="glass mx-auto max-w-3xl overflow-hidden rounded-[28px] border border-border shadow-elevated">
-            <div className="border-b border-border px-5 py-3">
-              <p className="text-xs font-display tracking-[0.24em] text-secondary uppercase">
-                {hasSearchInput ? '추천 검색어' : '최근 검색어'}
-              </p>
+          <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl bg-card/95 backdrop-blur-md shadow-modal">
+            <div className="border-b border-border">
+              <Eyebrow className="px-5 py-3">{hasSearchInput ? '추천 검색어' : '최근 검색어'}</Eyebrow>
             </div>
 
             {showEmptyState ? (
@@ -417,10 +399,11 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
                         aria-selected={isActive}
                         onMouseEnter={() => setActiveIndex(index)}
                         onClick={() => handleSuggestionSelect(item)}
-                        className={`flex w-full items-center gap-3 px-5 py-3 text-left transition-colors ${
-                          isActive ? 'bg-accent/10' : 'hover:bg-elevated/80'
+                        className={`relative flex w-full items-center gap-3 px-5 py-3 text-left transition-colors ${
+                          isActive ? 'bg-elevated/60' : 'hover:bg-elevated/40'
                         }`}
                       >
+                        {isActive && <span className="absolute inset-y-2 left-0 w-[3px] rounded-r bg-accent" />}
                         <span
                           className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border ${
                             item.type === 'recent'
@@ -441,7 +424,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
                         </span>
 
                         <span className="min-w-0 flex-1">
-                          <span className="block truncate font-body text-sm font-bold text-primary">
+                          <span className="block truncate font-body text-sm font-medium tracking-tight-1 text-primary">
                             {item.label}
                           </span>
                           {item.type === 'shoe' ? (
