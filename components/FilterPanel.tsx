@@ -216,11 +216,11 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             aria-expanded={brandsOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
+            <Eyebrow as="span" className="flex items-center">
               브랜드{selectedBrands.length > 0 && (
                 <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">{selectedBrands.length}</span>
               )}
-            </span>
+            </Eyebrow>
             <svg className={`h-4 w-4 transition-transform duration-200 ${brandsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
@@ -273,13 +273,13 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             aria-expanded={rangeOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
+            <Eyebrow as="span" className="flex items-center">
               범위 필터{[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length > 0 && (
                 <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">
                   {[searchParams.get('maxPrice'), searchParams.get('maxWeight'), searchParams.get('maxDrop')].filter(Boolean).length}
                 </span>
               )}
-            </span>
+            </Eyebrow>
             <svg className={`h-4 w-4 transition-transform duration-200 ${rangeOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>
@@ -363,11 +363,11 @@ export default function FilterPanel({ brands, priceRange, weightRange, dropRange
             aria-expanded={specOpen}
             className="mb-3 flex min-h-[44px] w-full items-center justify-between"
           >
-            <span className="flex items-center font-mono text-eyebrow uppercase text-tertiary">
+            <Eyebrow as="span" className="flex items-center">
               스펙 필터{activeSpecCount > 0 && (
                 <span className="ml-2 inline-flex items-center rounded-full bg-accent/15 px-1.5 font-mono text-eyebrow text-accent tabular-nums">{activeSpecCount}</span>
               )}
-            </span>
+            </Eyebrow>
             <svg className={`h-4 w-4 transition-transform duration-200 ${specOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
             </svg>

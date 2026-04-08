@@ -80,7 +80,7 @@ export default function FilterDrawer({
       <div
         ref={drawerRef}
         role="dialog"
-        aria-modal={open ? true : undefined}
+        aria-modal={true}
         aria-hidden={!open}
         aria-label="필터"
         {...inactiveDrawerProps}

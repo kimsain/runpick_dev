@@ -193,7 +193,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
     }
 
     document.addEventListener('mousedown', handlePointerDown)
-    document.addEventListener('touchstart', handlePointerDown)
+    document.addEventListener('touchstart', handlePointerDown, { passive: true })
 
     return () => {
       document.removeEventListener('mousedown', handlePointerDown)
@@ -324,7 +324,7 @@ export default function ShoesSearchBar({ shoes, brands }: Props) {
                 handleSuggestionSelect(suggestionItems[activeIndex])
               }
             }}
-            className="min-w-0 flex-1 bg-transparent text-[15px] text-primary outline-none placeholder:text-muted md:text-base"
+            className="min-w-0 flex-1 bg-transparent text-[15px] text-primary tracking-tight-1 outline-none placeholder:text-quaternary md:text-base"
             role="combobox"
             aria-autocomplete="list"
             aria-expanded={showPanel}
