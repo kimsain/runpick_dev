@@ -42,14 +42,14 @@ body {
   color: var(--text-primary);
   font-family: var(--font-pretendard), 'Outfit', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   /* tabular numerals + contextual alternates */
-  font-feature-settings: "tnum" 1, "calt" 1, "ss03" 1, "cv11" 1;
+  font-feature-settings: "tnum" 1, "calt" 1;
   font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .font-display {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-bebas), 'Bebas Neue', sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.05;
   /* display font: disable tabular nums for natural proportional spacing */

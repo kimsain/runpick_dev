@@ -36,7 +36,7 @@ const config: Config = {
         "conf-low":       "#f87171",
       },
       fontFamily: {
-        display: ["Bebas Neue", "sans-serif"],
+        display: ["var(--font-bebas)", "Bebas Neue", "sans-serif"],
         body: [
           "var(--font-pretendard)",
           "Outfit",

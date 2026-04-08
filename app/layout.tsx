@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { Bebas_Neue } from 'next/font/google'
 import './globals.css'
 import { getBrands } from '@/lib/data'
 import Navbar from '@/components/Navbar'
@@ -9,6 +10,13 @@ const pretendard = localFont({
   display: 'swap',
   weight: '45 920',
   variable: '--font-pretendard',
+})
+
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-bebas',
 })
 
 const brandCount = getBrands().length
@@ -27,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className={pretendard.variable}>
+    <html lang="ko" className={`${pretendard.variable} ${bebasNeue.variable}`}>
       <body className="bg-dark text-primary font-body antialiased">
         <a
           href="#main-content"
