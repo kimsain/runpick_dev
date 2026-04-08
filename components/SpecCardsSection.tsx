@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, Fragment } from 'react'
 import { useFocusTrap } from '@/lib/useFocusTrap'
 import type { SpecItem } from '@/app/methodology/data/specItems'
 import ScoreMethodNotice from '@/components/ScoreMethodNotice'
@@ -65,11 +65,11 @@ export default function SpecCardsSection({ items }: Props) {
             key={spec.id}
             ref={(el) => { if (el) triggerRefs.current.set(spec.id, el) }}
             onClick={() => openModal(spec)}
-            className="group cursor-pointer rounded-xl border border-border bg-card p-6 text-left transition-all hover:border-accent/30 hover:shadow-glow-sm"
+            className="group cursor-pointer rounded-xl bg-card shadow-card hover:shadow-card-hover transition-shadow duration-250 ease-out-quart p-6 text-left"
           >
             <div className="mb-3 flex flex-wrap items-center gap-2">
               <span
-                className="font-display text-lg sm:text-xl break-keep"
+                className="font-display text-lg sm:text-xl break-keep tracking-tight-2"
                 style={{ color: spec.color }}
               >
                 {spec.name}
@@ -83,11 +83,8 @@ export default function SpecCardsSection({ items }: Props) {
             </div>
             <p className="mb-3 text-sm font-body leading-relaxed text-secondary">{spec.summary}</p>
             <p className="text-xs font-body text-muted">{spec.basis}</p>
-            <span className="mt-3 inline-flex items-center gap-1 text-xs font-body text-muted transition-colors group-hover:text-accent">
-              자세히 보기
-              <svg className="h-3 w-3 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+            <span className="mt-3 inline-flex items-center gap-1 font-mono text-eyebrow uppercase text-tertiary transition-colors duration-200 ease-out-quart group-hover:text-accent">
+              자세히 보기 →
             </span>
           </button>
         ))}
@@ -104,7 +101,7 @@ export default function SpecCardsSection({ items }: Props) {
           <div className="absolute inset-0 bg-dark/80 backdrop-blur-sm" onClick={() => setSelected(null)} />
 
           {/* Modal panel */}
-          <div ref={modalRef} className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-elevated">
+          <div ref={modalRef} className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-modal">
             {/* Header — 고정 */}
             <div className="flex items-baseline justify-between border-b border-border px-6 pb-4 pt-6 shrink-0">
               <div className="flex min-w-0 flex-wrap items-baseline gap-2">
@@ -184,7 +181,7 @@ export default function SpecCardsSection({ items }: Props) {
 
                   <div>
                     <Eyebrow className="mb-2 text-accent">공식</Eyebrow>
-                    <pre className="overflow-x-auto whitespace-pre rounded-xl border border-border bg-surface p-5 text-xs font-mono leading-relaxed text-secondary">
+                    <pre className="font-mono text-xs text-secondary bg-dark p-4 rounded-lg shadow-[inset_0_0_0_1px_rgba(255,255,255,0.04)] overflow-x-auto">
                       {selected.modalContent.expert.formula}
                     </pre>
                   </div>
@@ -200,17 +197,12 @@ export default function SpecCardsSection({ items }: Props) {
                     selected.modalContent.expert.constants.length > 0 && (
                       <div>
                         <Eyebrow className="mb-3 text-accent">주요 상수</Eyebrow>
-                        <div className="overflow-hidden rounded-xl border border-border divide-y divide-border">
+                        <div className="grid grid-cols-[1fr_auto] gap-x-6 gap-y-2 rounded-lg bg-dark/40 shadow-ring p-4">
                           {selected.modalContent.expert.constants.map((c) => (
-                            <div key={c.name} className="flex flex-col gap-1 px-5 py-3">
-                              <div className="flex items-baseline gap-3">
-                                <span className="text-xs font-mono text-accent shrink-0">
-                                  {c.name}
-                                </span>
-                                <span className="text-xs font-mono text-primary">{c.value}</span>
-                              </div>
-                              <p className="text-xs font-body text-muted">{c.meaning}</p>
-                            </div>
+                            <Fragment key={c.name}>
+                              <span className="font-mono text-xs text-tertiary tabular-nums">{c.name}</span>
+                              <span className="font-mono text-xs text-primary tabular-nums text-right">{c.value}</span>
+                            </Fragment>
                           ))}
                         </div>
                       </div>

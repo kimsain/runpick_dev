@@ -1,33 +1,38 @@
+'use client'
+
+import { useReducedMotion } from 'framer-motion'
+
 interface Props {
   label: string
   value: number
   colorClass: string
-  delay: number
+  delay?: number
 }
 
-export default function AnimatedSpecBar({ label, value, colorClass, delay }: Props) {
+export default function AnimatedSpecBar({ label, value, colorClass, delay = 0 }: Props) {
+  const prefersReduced = useReducedMotion()
   const widthPct = `${Math.max(2, (value / 10) * 100)}%`
 
   return (
     <div
-      className="flex items-center gap-2"
+      className="flex items-center gap-2.5"
       role="meter"
       aria-label={label}
       aria-valuenow={value}
       aria-valuemin={0}
       aria-valuemax={10}
     >
-      <div className="flex-1 h-1 bg-elevated rounded-full overflow-hidden">
+      <div className="relative flex-1 h-1.5 rounded-full bg-dark/60 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.04)] overflow-hidden">
         <div
-          className={`h-full rounded-full ${colorClass} animate-scale-x`}
+          className={`absolute inset-y-0 left-0 rounded-full ${colorClass} shadow-[inset_0_1px_0_rgba(255,255,255,0.15)] ${prefersReduced ? '' : 'animate-scale-x'}`}
           style={{
             width: widthPct,
             transformOrigin: 'left',
-            animationDelay: `${delay}s`,
+            animationDelay: prefersReduced ? undefined : `${delay}s`,
           }}
         />
       </div>
-      <span className="text-tertiary text-xs font-body font-medium w-9 shrink-0 truncate tracking-tight-1">
+      <span className="font-mono text-eyebrow uppercase text-tertiary w-9 shrink-0 truncate">
         {label}
       </span>
     </div>

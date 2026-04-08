@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { ScoreMethodNoticeContent } from '@/lib/scoreMethodNotice'
+import Eyebrow from '@/components/ui/Eyebrow'
 
 interface Props {
   notice: ScoreMethodNoticeContent
@@ -12,34 +13,29 @@ export default function ScoreMethodNotice({
   notice,
   linkHref,
   linkLabel,
-  className = '',
+  className,
 }: Props) {
   return (
-    <div
-      className={`rounded-xl border border-spec-stability/25 bg-spec-stability/5 px-4 py-3 ${className}`.trim()}
-    >
-      <div className="flex gap-3">
-        <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-spec-stability" />
-        <div className="min-w-0">
-          <div className="mb-1 flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center rounded-full border border-spec-stability/25 bg-spec-stability/10 px-2 py-1 text-xs font-body text-spec-stability">
-              {notice.label}
-            </span>
-            <p className="text-sm font-body font-medium text-primary">{notice.title}</p>
-          </div>
-          <p className="text-sm font-body leading-relaxed text-secondary">{notice.description}</p>
-          {linkHref && linkLabel && (
-            <Link
-              href={linkHref}
-              className="mt-2 inline-flex min-h-[44px] items-center gap-2 text-sm font-body text-spec-stability transition-colors hover:text-spec-stability/80"
-            >
-              {linkLabel}
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          )}
-        </div>
+    <div className={`rounded-lg shadow-ring bg-notice-soft px-3 py-2.5 flex items-start gap-3 ${className ?? ''}`}>
+      <svg
+        className="mt-0.5 h-4 w-4 shrink-0 text-notice"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4M12 16h.01" />
+      </svg>
+      <div className="flex-1 min-w-0">
+        <Eyebrow className="text-notice mb-1">방법론 안내</Eyebrow>
+        <p className="text-sm font-body text-secondary leading-relaxed">{notice.description}</p>
+        {linkHref && (
+          <Link href={linkHref} className="mt-2 inline-block font-mono text-eyebrow uppercase text-tertiary hover:text-notice transition-colors duration-200 ease-out-quart">
+            {linkLabel ?? '방법론 →'}
+          </Link>
+        )}
       </div>
     </div>
   )

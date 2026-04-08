@@ -11,6 +11,7 @@ import {
 } from 'recharts'
 import type { Specs } from '@/lib/types'
 import { SPEC_LABELS } from '@/lib/constants'
+import { chartTokens, chartFontFamily, chartMonoFamily } from '@/lib/chartTokens'
 
 interface Props {
   specs: Specs
@@ -30,11 +31,13 @@ function ValueLabel({
   y,
   value,
   index,
+  isLow,
 }: {
   x?: number
   y?: number
   value?: number
   index?: number
+  isLow?: boolean
 }) {
   if (x === undefined || y === undefined || value === undefined) return null
 
@@ -47,16 +50,17 @@ function ValueLabel({
 
   return (
     <g>
-      <rect x={badgeX - 12} y={badgeY - 10} width={24} height={20} fill="#141414" rx={6} stroke="#222222" strokeWidth={0.5} />
+      <rect x={badgeX - 12} y={badgeY - 10} width={24} height={20} fill={chartTokens.bgCard} rx={6} stroke={chartTokens.border} strokeWidth={0.5} />
       <text
         x={badgeX}
         y={badgeY}
-        fill="#c8ff00"
+        fill={isLow ? chartTokens.confLow : chartTokens.accent}
         fontSize={11}
-        fontFamily="Outfit"
+        fontFamily={chartMonoFamily}
         textAnchor="middle"
         dominantBaseline="middle"
         fontWeight="600"
+        style={{ fontFeatureSettings: '"tnum"' }}
       >
         {value}
       </text>
@@ -88,25 +92,25 @@ export default function SpecRadar({ specs, confidence }: Props) {
     <div role="img" aria-label={ariaLabel}>
     <ResponsiveContainer width="100%" height={300}>
       <RadarChart data={data} margin={{ top: 18, right: 42, bottom: 18, left: 42 }}>
-        <PolarGrid stroke="#222222" strokeWidth={0.5} />
+        <PolarGrid stroke={chartTokens.gridStroke} strokeWidth={chartTokens.gridWidth} />
         <PolarRadiusAxis angle={90} domain={[0, 10]} tick={false} axisLine={false} />
         <PolarAngleAxis
           dataKey="subject"
           tickSize={14}
-          tick={{ fill: '#8c8c8c', fontSize: 12, fontFamily: 'Outfit', fontWeight: 500 }}
+          tick={{ fill: chartTokens.textTertiary, fontSize: 12, fontFamily: chartFontFamily, fontWeight: 500 }}
         />
         <Radar
           name="specs"
           dataKey="value"
-          stroke={isLow ? '#f87171' : '#c8ff00'}
-          fill={isLow ? '#f87171' : '#c8ff00'}
+          stroke={isLow ? chartTokens.confLow : chartTokens.accent}
+          fill={isLow ? chartTokens.confLow : chartTokens.accent}
           fillOpacity={isLow ? 0.05 : isMedium ? 0.10 : 0.15}
           strokeWidth={2}
           strokeDasharray={isLow ? '4 4' : undefined}
           isAnimationActive={animate}
-          animationDuration={800}
+          animationDuration={600}
           animationEasing="ease-out"
-          label={<ValueLabel />}
+          label={<ValueLabel isLow={isLow} />}
         />
       </RadarChart>
     </ResponsiveContainer>
