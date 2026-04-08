@@ -101,7 +101,7 @@ export default function SpecCardsSection({ items }: Props) {
           <div className="absolute inset-0 bg-dark/80 backdrop-blur-sm" onClick={() => setSelected(null)} />
 
           {/* Modal panel */}
-          <div ref={modalRef} className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-modal">
+          <div ref={modalRef} className="relative flex max-h-[85vh] w-full max-w-lg flex-col overflow-hidden rounded-2xl bg-card shadow-modal">
             {/* Header — 고정 */}
             <div className="flex items-baseline justify-between border-b border-border px-6 pb-4 pt-6 shrink-0">
               <div className="flex min-w-0 flex-wrap items-baseline gap-2">
@@ -160,7 +160,7 @@ export default function SpecCardsSection({ items }: Props) {
                     {selected.modalContent.general.description}
                   </p>
                   {selected.modalContent.general.impact && (
-                    <div className="rounded-xl border border-border bg-surface p-5">
+                    <div className="rounded-xl shadow-ring bg-elevated/30 p-5">
                       <Eyebrow className="mb-2 text-accent">점수별 체감</Eyebrow>
                       <p className="text-secondary text-sm font-body leading-relaxed">
                         {selected.modalContent.general.impact}

@@ -126,7 +126,7 @@ export default function MethodologyPage() {
                 {source.data.map((d) => (
                   <span
                     key={d}
-                    className="rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-body text-muted"
+                    className="inline-flex items-center rounded-full shadow-ring font-mono text-eyebrow uppercase text-tertiary px-3 py-1"
                   >
                     {d}
                   </span>
