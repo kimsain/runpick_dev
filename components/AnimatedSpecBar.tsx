@@ -27,7 +27,7 @@ export default function AnimatedSpecBar({ label, value, colorClass, delay }: Pro
           }}
         />
       </div>
-      <span className="text-muted text-xs font-body w-9 shrink-0 truncate">
+      <span className="text-tertiary text-xs font-body font-medium w-9 shrink-0 truncate tracking-tight-1">
         {label}
       </span>
     </div>
