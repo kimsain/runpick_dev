@@ -99,14 +99,14 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
           style={isDesktop ? { y: textY } : undefined}
         >
           {/* Label */}
-          <motion.div {...fadeLeft(0)} className="flex items-center gap-3">
-            <Eyebrow className="mb-5">러닝화 탐색 플랫폼</Eyebrow>
+          <motion.div {...fadeLeft(0)} className="flex items-center gap-3 mb-5">
+            <Eyebrow>러닝화 탐색 플랫폼</Eyebrow>
             <motion.span
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={transition(0.15)}
               style={{ originX: 0 }}
-              className="inline-block h-px w-12 bg-accent mb-5"
+              className="inline-block h-px w-12 bg-accent"
             />
           </motion.div>
 
@@ -213,12 +213,12 @@ export default function AnimatedHeroContent({ totalCount, brandCount }: Props) {
                 ))}
                 <motion.div
                   key={activeIndex}
-                  initial={{ opacity: 0, y: 4 }}
+                  initial={{ opacity: 0, y: prefersReduced ? 0 : 4 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, ease: EASE_OUT_EXPO }}
+                  transition={{ duration: prefersReduced ? 0 : 0.4, ease: EASE_OUT_EXPO }}
                   className="absolute bottom-4 left-1/2 -translate-x-1/2"
                 >
-                  <Eyebrow>{HERO_SHOES[activeIndex].alt}</Eyebrow>
+                  <Eyebrow as="span">{HERO_SHOES[activeIndex].alt}</Eyebrow>
                 </motion.div>
               </div>
               </motion.div>
