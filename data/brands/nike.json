@@ -148,6 +148,135 @@
       }
     },
     {
+      "id": "pegasus-42",
+      "brandId": "nike",
+      "name": "PEGASUS 42",
+      "nameKo": "페가수스 42",
+      "categoryId": "daily",
+      "subcategoryId": "entry",
+      "price": 169000,
+      "priceFormatted": "₩169,000",
+      "description": "페가수스 42는 입문 러너가 이지런과 조깅을 부담 없이 이어가기 좋은 데일리예요. 14mm 드롭과 힐 36mm·전족부 22mm 스택 조합이라 뒤꿈치 착지에서 안정감이 들고 아웃솔이 무난해서 누적 거리가 늘어요. 다만 쿠션이 두텁지 않고 반응성이 낮아 푹신한 착화감이나 빠른 페이스 전환을 기대하면 아쉽게 느껴질 수 있어요.",
+      "shortDescription": "입문 러너 힐착지 이지런 데일리",
+      "imageUrl": "/shoes/pegasus-42.webp",
+      "specs": {
+        "weight": 286,
+        "drop": 14,
+        "cushioning": 4,
+        "responsiveness": 4,
+        "stability": 4,
+        "durability": 5,
+        "stackHeight": {
+          "heel": 36,
+          "forefoot": 22
+        },
+        "rawCushioning": 3.74,
+        "rawResponsiveness": 3.99,
+        "rawStability": 4.11,
+        "rawDurability": 5.29,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 4.17,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 4.17,
+            "rtingsOutsoleScore": null,
+            "rtingsWidthToStackScore": null
+          },
+          "coreScore": 4.17,
+          "subcategoryDelta": 0.0,
+          "swayPenalty": -0.5,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 4.67,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 36,
+            "forefoot": 22
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 0.29,
+            "proxyAc": 37.6,
+            "heelAc": 37.6,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 7.27,
+          "upperScore": 3.7,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 6.38,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 6.38,
+          "inputs": {
+            "abrasionMm": 0.78,
+            "outsoleThicknessMm": 2.6,
+            "toeboxDurability": 1,
+            "heelPaddingDurability": 4,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        },
+        "weightScore": 4,
+        "rawLightness": 3.64,
+        "valueScore": 5,
+        "rawValueScore": 5.41
+      },
+      "pros": [
+        "아웃솔이 무난해서 누적 거리 소화 용이",
+        "14mm 드롭으로 뒤꿈치 착지 안정감",
+        "힐 36mm 스택의 안정적인 착지 지점"
+      ],
+      "cons": [
+        "쿠션이 두텁지 않아 장거리에서 발바닥 피로",
+        "반응성이 낮아 빠른 페이스 전환 시 둔함",
+        "286g 무게로 가벼운 발놀림 부족"
+      ],
+      "bestFor": [
+        "이지런·조깅 위주의 입문 러너",
+        "뒤꿈치 착지 주법으로 안정감을 원하는 러너",
+        "내구성 좋은 데일리 한 켤레가 필요한 입문 러너"
+      ],
+      "technologies": [
+        "ReactX",
+        "Air Zoom",
+        "Flywire"
+      ],
+      "releaseYear": 2026,
+      "colorways": [],
+      "slug": "pegasus-42",
+      "officialUrl": "https://runrepeat.com/nike-pegasus-42",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/nike-pegasus-42"
+      }
+    },
+    {
       "id": "vomero-18",
       "brandId": "nike",
       "name": "VOMERO 18",

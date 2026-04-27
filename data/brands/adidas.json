@@ -1561,6 +1561,136 @@
       }
     },
     {
+      "id": "adizero-pro-evo-3",
+      "brandId": "adidas",
+      "name": "ADIZERO ADIOS PRO EVO 3",
+      "nameKo": "아디제로 프로 에보 3",
+      "categoryId": "racing",
+      "subcategoryId": "full",
+      "price": 599000,
+      "priceFormatted": "₩599,000",
+      "description": "아디제로 프로 에보 3는 풀코스 기록을 다듬는 초경량 레이스화예요. 99g 무게와 6mm 드롭, 힐 38mm·전족부 32mm 스택 조합이라 전족부 착지로 빠른 페이스를 밀 때 쿠션이 풍부하면서도 반응성이 즉각 살아나서 추진이 날카롭게 이어져요. 마모가 매우 빠르고 안정성이 낮아 코너나 후반 피로 구간에서 흔들림이 쉽게 올라오기 때문에 레이스 데이 전용으로 아껴 쓰는 운용이 맞아요.",
+      "shortDescription": "초경량 풀코스 기록 레이싱화",
+      "imageUrl": "/shoes/adizero-pro-evo-3.webp",
+      "specs": {
+        "weight": 99,
+        "drop": 6,
+        "cushioning": 9,
+        "responsiveness": 10,
+        "stability": 3,
+        "durability": 1,
+        "stackHeight": {
+          "heel": 38,
+          "forefoot": 32
+        },
+        "rawCushioning": 9.44,
+        "rawResponsiveness": 9.66,
+        "rawStability": 2.66,
+        "rawDurability": 1.0,
+        "stabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "structureScore": null,
+          "platformScore": 4.39,
+          "platformInputs": {
+            "runRepeatMidsoleScore": 4.39,
+            "rtingsOutsoleScore": null,
+            "rtingsWidthToStackScore": null
+          },
+          "coreScore": 4.39,
+          "subcategoryDelta": -0.5,
+          "swayPenalty": 0.38,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 3.51,
+          "stackInput": {
+            "source": "runrepeat",
+            "heel": 38.1,
+            "forefoot": 32.2
+          },
+          "softnessInput": {
+            "source": "runrepeat_ac",
+            "softnessScalar": 1.4,
+            "proxyAc": 21,
+            "heelAc": 21,
+            "secondaryAc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "lockdown": 0.0,
+              "guidance_sidewall": 0.0,
+              "wide_base": 0.0,
+              "heel_slip": 0.0,
+              "instability": 0.0
+            }
+          }
+        },
+        "durabilityComponents": {
+          "scoreVersion": "durability-stability-v3",
+          "outsoleScore": 1.63,
+          "upperScore": 2.8,
+          "midsoleLongevityScore": null,
+          "midsoleLongevityMode": "modifier",
+          "midsoleLongevityModifier": 0.0,
+          "coreScore": 1.92,
+          "compoundModifier": 0.0,
+          "qualitativeModifier": 0.0,
+          "intermediateRaw": 1.92,
+          "inputs": {
+            "abrasionMm": 6.3,
+            "outsoleThicknessMm": 1.0,
+            "toeboxDurability": 1,
+            "heelPaddingDurability": 3,
+            "midsoleRetentionRatio": null,
+            "outsoleHardnessHc": null
+          },
+          "qualitativeSignals": {
+            "sourceCount": 0,
+            "shares": {
+              "outsole_coverage": 0.0,
+              "upper_reinforcement": 0.0,
+              "durable": 0.0,
+              "early_wear": 0.0,
+              "exposed_foam": 0.0,
+              "midsole_breakdown": 0.0
+            }
+          }
+        },
+        "weightScore": 10,
+        "rawLightness": 11.22,
+        "valueScore": 1,
+        "rawValueScore": 1.09
+      },
+      "pros": [
+        "99g 초경량으로 풀코스 후반 페이스 유지 용이",
+        "전족부 추진의 즉각적인 반응감",
+        "힐 38mm·전족부 32mm 스택의 부드러운 충격 흡수",
+        "6mm 드롭과 강한 롤링감의 빠른 전진 전개"
+      ],
+      "cons": [
+        "마모가 매우 빨라 짧은 누적 거리",
+        "안정성이 낮아 코너링·후반 흔들림",
+        "낮은 토박스 내구성으로 외피 손상 빠름"
+      ],
+      "bestFor": [
+        "풀마라톤 기록을 노리는 서브엘리트~엘리트 러너",
+        "전족부 착지로 빠른 페이스를 밀어붙이는 레이스 러너",
+        "훈련화와 분리해 레이스 데이 전용으로 운용하는 기록 지향 러너"
+      ],
+      "technologies": [
+        "Lightstrike Pro Evo",
+        "EnergyRods 2.0",
+        "Celermesh 2.0"
+      ],
+      "releaseYear": 2026,
+      "colorways": [],
+      "slug": "adizero-pro-evo-3",
+      "officialUrl": "https://runrepeat.com/adidas-adizero-adios-pro-evo-3",
+      "confidence": "high",
+      "sources": {
+        "runrepeat": "https://runrepeat.com/adidas-adizero-adios-pro-evo-3"
+      }
+    },
+    {
       "id": "hyperboost-edge",
       "brandId": "adidas",
       "name": "HYPERBOOST EDGE",
